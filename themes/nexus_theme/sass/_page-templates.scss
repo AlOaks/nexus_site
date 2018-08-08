@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+button {
+box-shadow: none;
+background-color: $color__background-white;
+border: none;
+border-radius: 0px;
+}
+button:hover {
+  box-shadow: none;
+  background-color: $color__background-white;
+  border: none;
+  border-radius: 0px;
+}
+
+
+/* Front page */
+
+body.page-template-archive-nexus_program main{
+  padding-top: 65px;
+}

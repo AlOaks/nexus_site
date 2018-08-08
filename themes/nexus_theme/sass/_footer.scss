@@ -1,0 +1,452 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+/********************* Shared between media *************************/
+/********************* Shared between media *************************/
+/********************* Shared between media *************************/
+
+footer#colophon.site-footer {
+  color: $color__text-white;
+  letter-spacing: 2px;
+  font-family: $font__accent;
+  h2 {
+    font-family: $font__main;
+  }
+}
+
+div.footer__contact p a,
+div.footer__site-info a,
+div.footer__desktop--nav li a {
+  text-decoration: none;
+}
+
+div.footer__social-media {
+  background-color: $color__footer-background;
+}
+
+div#secondary.widget-area,
+div.footer__contact p a,
+.hidden a {
+  font-family: $font__accent;
+  color: $color__background-hr;
+}
+
+div.widget_info_contain a {
+  text-decoration: none;
+  color: $color__text-white;
+}
+
+aside.widget.widget_text {
+  margin-bottom: 0px;
+}
+
+
+/**************  Mobile MEDIA BREAK  ****************************/
+/**************  Mobile MEDIA BREAK  ****************************/
+/**************  Mobile MEDIA BREAK  ****************************/
+/**************  Mobile MEDIA BREAK  ****************************/
+
+@media screen and (max-width: 550px) {
+  div.footer__site-info.hidden {
+    display: none;
+  }
+  div.footer__why-nexus {
+    display: none;
+  }
+  .widget_fa {
+    display: show;
+  }
+  div.footer__social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      padding: 20px 0 0px 0;
+      text-align: center;
+      color: $color__text-white;
+      margin-bottom: 0;
+      letter-spacing: 2px;
+    }
+  }
+  div.socialmedia-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    img {
+      height: 45px;
+      width: 45px;
+      margin: 0 10px;
+      max-width: 100px;
+    }
+  }
+  div.widget_fa {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+  section.footer_contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div.footer__contact,
+  div.footer__office {
+    justify-content: center;
+  }
+  div.widget_info_contain.one {
+    margin-top: 1rem;
+  }
+  div.widget_info_contain a,
+  div.widget_info_contain p,
+  p.footer__office--hours {
+    margin-left: 24px;
+    max-width: 197px;
+  }
+  div.widget_info_contain p a {
+    margin-left: 0px;
+  }
+  p.footer__office--hours a {
+    margin-left: 0px;
+  }
+  div.widget_info_contain {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    margin-bottom: 1rem;
+    a {
+      text-decoration: none;
+      color: $color__text-white;
+    }
+  }
+  div.footer__contact h2 {
+    padding: 20px 0 5px 0;
+    text-align: center;
+    color: $color__text-white;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  div.widget-fa i {
+    color: $color__text-white;
+  }
+  .footer__contact,
+  .footer__office {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    p {
+      text-align: left;
+      color: $color__text-white;
+    }
+    a {
+      margin-left: 0px;
+    }
+  }
+  div.footer__contact {
+    h2 {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        padding-top: 10px;
+        width: 49px;
+        border-bottom: 3px solid $color__accent-underline;
+      }
+    }
+  }
+  div.footer__social-media-container {
+    .underline-footer {
+      margin: auto;
+      width: 49px;
+      border-bottom: 3px solid $color__accent-underline;
+    }
+  }
+}
+
+
+/**************  Tablet MEDIA BREAK  ****************************/
+/**************  Tablet MEDIA BREAK  ****************************/
+/**************  Tablet MEDIA BREAK  ****************************/
+/**************  Tablet MEDIA BREAK  ****************************/
+
+@media screen and (max-width: 1019px) {
+  @media screen and (min-width: 551px) {
+    div.footer__site-info.hidden {
+      display: none;
+    }
+    div.footer__why-nexus {
+      display: none;
+    }
+    .widget_fa {
+      display: none;
+    }
+    div.widget-fa {
+      height: 10px;
+    }
+    div.footer__social-media {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      max-height: 400px;
+    }
+    div.footer__contact h2 {
+      text-align: left;
+    }
+    .widget-info-contain {
+      p {
+        font-family: $font__accent;
+      }
+      a {
+        font-family: $font__accent;
+      }
+    }
+    .footer__social-media-container,
+    .footer__contact {
+      color: $color__text-white;
+      h2 {
+        font-family: $font__main;
+        color: $color__text-white;
+        text-align: left;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+      }
+    }
+    div.footer__social-media-container,
+    section.footer_contact_info {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer__social-media-container,
+    section.footer_contact_info {
+      width: 220px;
+    }
+    div.socialmedia-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-top: 10px;
+      img {
+        height: 45px;
+        width: 45px;
+        padding: 0 0px 0 0px;
+        margin: 0 10px;
+        max-width: 100px;
+      }
+    }
+    div.footer__contact,
+    div.footer__social-media-container {
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 30px;
+          left: 0px;
+          padding-top: 10px;
+          width: 74px;
+          border-bottom: 3px solid $color__accent-underline;
+        }
+      }
+    }
+    div.widget_info_contain.one {
+      margin-top: 32px;
+    }
+  }
+}
+
+
+/**************  NAV FOOTER MEDIA BREAK  ****************************/
+/**************  NAV FOOTER MEDIA BREAK  ****************************/
+/**************  NAV FOOTER MEDIA BREAK  ****************************/
+/**************  NAV FOOTER MEDIA BREAK  ****************************/
+
+@media screen and (min-width: 900px) {
+  div.footer__site-info.hidden {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 551px;
+    height: 61px;
+    background-color: $color__footer-navbkgrnd;
+  }
+  div.footer__desktop--nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 auto;
+    padding-right: 1rem;
+    ul.footer_desktop--nav--ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .footer__desktop--nav .menu-header-mobile-container ul {
+    display: flex;
+    li a {
+      margin: 0 15px;
+    }
+  }
+  .footer--nav--li {
+    padding-left: 1rem;
+  }
+  aside#text-3.widget.widget_text {
+    margin-bottom: 0px;
+  }
+  div.footer_hidden_anchor {
+    display: flex;
+    flex: 1 0 auto;
+    padding-left: 3rem;
+  }
+}
+
+
+/**************  Desktop MEDIA BREAK  ****************************/
+/**************  Desktop MEDIA BREAK  ****************************/
+/**************  Desktop MEDIA BREAK  ****************************/
+/**************  Desktop MEDIA BREAK  ****************************/
+
+@media screen and (min-width: 1020px) {
+  div.footer__site-info.hidden {
+    display: show;
+  }
+  div.footer__why-nexus {
+    display: show;
+  }
+  .widget_fa {
+    display: none;
+  }
+  div.widget-fa {
+    height: 10px;
+  }
+  div.footer__site-info.hidden {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 551px;
+    height: 61px;
+    background-color: $color__footer-navbkgrnd;
+  }
+  div.footer__desktop--nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 auto;
+    padding-right: 1rem;
+    ul.footer_desktop--nav--ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .footer--nav--li {
+    padding-left: 1rem;
+  }
+  div.footer_hidden_anchor {
+    display: flex;
+    flex: 1 0 auto;
+    padding-left: 3rem;
+  }
+  div.footer__social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-height: 400px;
+  }
+  .footer__why-nexus {
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    color: $color__text-white;
+    h2 {
+      text-align: left;
+    }
+    p {
+      font-family: $font__accent;
+    }
+  }
+  div.footer__contact h2 {
+    text-align: left;
+  }
+  .widget-info-contain {
+    p {
+      font-family: $font__accent;
+    }
+    a {
+      font-family: $font__accent;
+    }
+  }
+  .footer__why-nexus,
+  .footer__social-media-container,
+  .footer__contact {
+    color: $color__text-white;
+    h2 {
+      font-family: $font__main;
+      color: $color__text-white;
+      text-align: left;
+      margin-bottom: 0;
+      letter-spacing: 2px;
+    }
+  }
+  div.footer__social-media-container {
+    margin-top: 2rem;
+  }
+  section.footer_contact_info {
+    margin-right: 5rem;
+    margin-top: 2rem;
+  }
+  .footer__why-nexus,
+  .footer__social-media-container,
+  section.footer_contact_info {
+    width: 220px;
+  }
+  .footer__why-nexus p {
+    margin-top: 32px;
+    width: 300px;
+  }
+  div.socialmedia-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    img {
+      height: 45px;
+      width: 45px;
+      padding: 0 0px 0 0px;
+      margin: 0 10px;
+      max-width: 100px;
+    }
+  }
+  div.footer__contact,
+  div.footer__social-media-container,
+  div.footer__why-nexus {
+    h2 {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        padding-top: 10px;
+        width: 99px;
+        border-bottom: 3px solid $color__accent-underline;
+      }
+    }
+  }
+  div.widget_info_contain.one {
+    margin-top: 32px;
+  }
+  div.footer__social-media {
+    padding-bottom: 20px;
+  }
+}

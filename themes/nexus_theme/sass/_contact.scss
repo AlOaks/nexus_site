@@ -1,0 +1,266 @@
+.page-template-contact {
+  
+  h1.entry-title {
+    display: none;
+  }
+  .wpcf7-textarea {
+    resize: none;
+  }
+  .wpcf7-response-output {
+    background-color: lightgreen;
+    font-size: 18px;
+    border: none;
+    color: white;
+  }
+  .wpcf7-validation-errors {
+    background-color: red;
+    border: none;
+    color: white;
+  }
+  .desktop-contact-display {
+     display: none;
+      @media #{$tablet} {
+        display: block;
+        height: 595px;
+        width:435px;
+        padding: 38px;
+        position: relative;
+        bottom: 720px;
+        left:40vw;
+        font-family: $font__accent;
+        font-size: 18px;   
+        background-color: $color__info-main;    
+        color: $color__footer-navbkgrnd;
+          h2 {
+            font-size: 42px;
+          }
+          i {
+            color:$color__icon-element;
+            font-size: 31px;
+            margin-right: 20px;
+             margin-bottom: 44px;
+          }
+          .contact-address {
+            display: inline-block;
+            width: 300px; 
+            margin-left: 14px;
+          }  
+          .contact-hours {
+            display: inline-block;
+            width: 300px;    
+          }
+      }
+  }
+
+  .contact-form {
+    padding-top: 24px;
+    background-color: $color__textbox-background;
+    width: 90vw;
+    margin: 0 auto;
+    padding-left:10%;
+    padding-right:10%;
+      @media #{$tablet} {
+        width: 80vw;
+        height: 1000px;
+        margin-left: 70px;
+        margin-top: 64px;
+        padding-left: 100px;
+      }
+      label {
+        color: black;
+      }
+      .wpcf7-form {
+  
+        @media #{$tablet-test} {
+          position: relative;
+          bottom:12px;
+        }
+      }
+    .wpcf7-form-control {
+      height: 44px;
+      width: 90%;
+    }
+    .wpcf7-textarea {
+      height: 300px;
+    }
+    .submit {
+      letter-spacing: 1pt;
+      width: 145px;
+      height: 40px;
+      padding: 0;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      border-radius: 25px 0px 25px 0px;
+      box-shadow: none;
+      text-shadow: none;
+      font-size: 18px;
+      background: $color__icon-element;
+      color: $color__text-white;   
+    }
+    h2.title {
+      margin-top: 0;
+      text-align: center;
+      color: $color__footer-background;
+      font-size: 34px;
+      font-weight: bold;
+      @media #{$tablet} {
+        width: 300px;
+        margin: 24px;
+        font-size: 50px;
+        text-align: left;
+        
+      }
+    }
+    .contact-content {
+      max-width: 345px;
+      margin: 0 auto;  
+      @media #{$tablet} {
+        margin: 0;
+      color: $color__contact-input; 
+      }
+    }
+    .underline {
+      margin: 0 auto;
+      width: 49px;
+      text-align: center;
+      border-bottom: 3px solid $color__accent-underline;
+      position: relative;
+      bottom: 20px;
+      @media #{$tablet-test} {
+       right: 10vw;
+        bottom: 34px;
+        width: 109px;
+      }
+    }
+}
+
+// Hero 
+
+  .hero-wrapper {
+    .contact-hero-title {
+      position: relative;
+      top: 100px;
+      text-align: center;
+      color: $color__footer-background;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 900;  
+      @media #{$desktop} {
+        font-size: 60px;
+        padding-bottom: 10px;
+        top: 140px;
+      }
+    }
+    .contact-hero-title:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 49px;
+      margin: 0 0 0 -25px;
+      border-bottom: 3px solid $color__accent-underline;
+      @media #{$desktop} {
+        margin: 0 0 0 -73px;
+        border-bottom: 6px solid $color__accent-underline;
+        width: 144px;
+      }
+    }
+    .hero-image {
+      height: 35vh;
+      width: 100vw;
+      background-image: url("../../assets/images/moritz-matlik-76601.jpg");
+      background-size: cover;
+      background-position: bottom;
+      @media #{$desktop} {
+        height: 51.5vh;
+      }
+    }
+  }
+
+  //Contact Journey
+  
+  .contact-journey {
+    height: 195px;
+    background-color: $color__textbox-background;
+    @media #{$desktop} {
+      height: 300px; 
+    }
+    .contact-journey-h2 {
+      font-size: 24px;
+      text-align: center;
+      color: $color__footer-background;
+      font-weight: 900;
+      position: relative;
+      top: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1pt;
+      padding-bottom: 5px;
+      @media #{$desktop} {
+        top: 50px;
+        font-size: 46px;
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+    }
+    .contact-journey-h2:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 49px;
+      margin: 0 0 0 -25px;
+      border-bottom: 3px solid $color__accent-underline;
+      @media #{$desktop} {
+        margin: 0 0 0 -73px;
+        border-bottom: 6px solid $color__accent-underline;
+        width: 144px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: $color__text-accent;
+      font-style: italic;
+      font-weight: 200;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      bottom: 30px;
+      @media #{$desktop} {
+      
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .consult {
+      letter-spacing: 1pt;
+      width: 175px;
+      height: 40px;
+      padding: 0;
+      border-radius: 25px 0px 25px 0px;
+      box-shadow: none;
+      text-shadow: none;
+      font-size: 18px;
+      text-align: center;
+      background: $color__icon-element;
+      color: $color__text-white;
+      position: relative;
+      bottom: 20px;
+      text-transform: capitalize;
+      margin: 0 auto;
+      padding: 6px;
+      @media #{$desktop} {
+        width: 272px;
+        height: 55px;
+        bottom: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 8px;
+      }
+      &:hover {
+        background: darken($color__icon-element, 10%);
+      }
+    }
+  }
+}  
+
+

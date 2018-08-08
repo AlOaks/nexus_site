@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# New Page
+--------------------------------------------------------------*/
+
+fieldset {
+  max-width: 260px;
+  width: 100%;
+}
+
+div.hero {  // Hero image
+  background-image: url('../../assets/images/jay-toor-105107.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vw;
+  width: 100%; 
+  min-height: 800px;
+  max-height: 981px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+body.page-template-default.page {
+  h1.entry-title {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  div.entry-content p {
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+
+
+

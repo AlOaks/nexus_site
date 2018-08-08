@@ -1,0 +1,82 @@
+// Structure
+
+$base__space-unit: 1rem;
+
+// Breakpoints
+
+$desktop: "all and (min-width: 950px)";
+$desktop-wide: "(min-width: 1250px)";
+$header-mid: "all and (min-width:700px)";
+$tablet: "all and (min-width: 850px)";
+$tablet-test: "all and (min-width: 450px)";
+// Colors
+
+
+
+// Decoration colors
+
+$color__icon-element: #E91C35;
+$color__accent-underline: #FF8A2A;
+$color__info-main: #FFC54C;
+
+// Borders
+$color__border-hamnav: #55ACEE;
+$color__dot-border-empty: #8193A6;
+$color__shadow-bottom: rgb(209, 209, 209);
+
+
+// Text colors
+
+$color__text-main: #123048;
+$color__text-blue-large: #14304A;
+$color__text-white: #FFFFFF;
+$color__text-nav: #14304A;
+$color__text-accent: #E00029;
+$color__text-quoteform: #898989;
+$color__text-bookform: #183049;
+$color__text-hamburger: #34495E;
+$color__consultant-name: #9CAFC3;
+$color__consultant-pos: #595E65;
+$color__blog-textlarge: #28384B;
+$color__quoteform-x: #8C8C8C;
+$color__contact-input: #CFCFCF;
+$color__contact-msg: #636363;
+$color__fp_quotes: #FFBC4A;
+
+// Background colors for text areas
+
+$color__background-white: #FFFFFF;
+$color__textbox-background: #F3F5F8;
+$color__footer-background: #15405A;
+$color__footer-navbkgrnd: #122E3F;
+$color__quoteform-background: #FFD479;
+$color__bookform-background: rgba(255,197,76,0.75);
+$color__navmenu-hover: #F8F4F4;
+$color__background-dot-empty: #FFFFFF;
+$color__background-dot-select: #E91C35;
+
+// Animation
+$color__animated-dot: #FFBC4A;
+
+// Typography
+
+$font__main: 'Roboto', Arial, Helvetica, sans-serif;
+$font__accent: 'Raleway', Arial, Helvetica, sans-serif;
+
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+
+
+// Fallbacks
+$color__background-pre: #eee;
+$color__background-body: #ffffff;
+$color__background-hr: #ffffff;
+$color__background-screen: #ffffff;
+$color__text-screen: #123048;
+$color__link: #123048;
+$color__link-visited: #123048;
+$color__link-hover: lighten($color__link, 50%);

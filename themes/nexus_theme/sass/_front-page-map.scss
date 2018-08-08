@@ -1,0 +1,474 @@
+.home {
+
+// Map Icons
+  .choose-province-wrapper {
+    display: none;
+    @media #{$desktop} {
+      display: flex; 
+      height: 800px;  
+      margin: 0 auto;
+      margin-top: -44px;
+      margin-bottom: 220px;
+      background: url('../../assets/images/map_nexus01@3x.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      .fa {
+        color:$color__quoteform-x; 
+      }
+      .fa:hover {
+        color: $color__icon-element;
+      }
+      .bc {
+        height: 70px;
+        position: relative;
+        left: 212px;
+        top: 560px;
+        color:$color__quoteform-x;
+      }
+      .ab {
+        height: 70px;
+        position: relative;
+        left: 275px;
+        top: 475px; 
+      }
+      .sk {
+        height: 70px;
+        position: relative;
+        left: 350px;
+        top: 510px;
+      }
+      .man {
+        height: 70px;
+        position: relative;
+        left: 440px;
+        top: 570px;
+      }
+      .on {
+        height: 70px;
+        position: relative;
+        left: 660px;
+        top: 710px;
+      }
+      .qc {
+        height: 70px;
+        position: relative;
+        left: 670px;
+        top: 620px;
+      }
+      .bc:hover > .bc-text {
+          display: block;
+      }
+      .ab:hover > .ab-text {
+        display: block;
+      }
+      .sk:hover > .sk-text {
+       display: block;
+      }
+      .man:hover > .man-text {
+        display: block;
+      }
+      .on:hover > .on-text {
+        display: block;
+     }
+      .qc:hover > .qc-text {
+        display: block;
+    }
+      h3 {
+        display: none;
+        font-family: $font__main;
+        position: absolute;
+        font-size: 18px;
+        color: $color__footer-background;
+        z-index: 1;
+      }
+  }
+ }
+
+// Choose province header
+  .choose-province {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__info {
+      position: relative;
+      left: 560px;
+      width: 320px;
+      font-size: 22px;
+      font-family: $font__accent;
+      top: 38px;
+      color: $color__footer-background;
+    }
+    &__header {
+      position: relative;
+      font-size: 48px;
+      top: 38px;
+      left: 560px;
+      color: $color__footer-background;
+      font-family: $font__main;
+      font-weight: bold;
+    }
+    .underline {
+      position: relative;
+      left: 560px;
+      width: 120px;
+      top: 38px;
+    }
+    button {
+      width: 135px;
+      height: 40px;
+      padding: 0;
+      border-radius: 25px 0px 25px 0px;
+      box-shadow: none;
+      text-shadow: none;
+      background: $color__icon-element;
+      color: $color__text-white;
+      }
+    }
+  
+// Province Display
+    
+// Choose BC
+  .choose-wrapper-bc {
+    display: none;
+    @media #{$desktop} {
+      display: flex;
+      justify-content: flex-end;
+      height:  444px;
+      margin-top: -200px;
+      background: linear-gradient(180deg,rgba(255,255,255,.3) 0,rgba(255,255,255,.4)),url('../../assets/images/bc-map.jpg');
+    }
+    i {
+      position: relative;
+      top: 120px;
+      right: 398px;
+      color: red;
+      font-size: 66px;
+    }
+    h2 {
+      text-align: center;
+      position: relative;
+      top: 200px;
+      right: 190px;
+      width: 400px;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {
+      width: 500px;
+      font-size: 23px;
+      font-family: $font__accent;
+    }
+    .choose-program {
+      @media #{$desktop} {
+        display: flex;
+        flex-basis: 50%;     
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__info-main;
+      a {
+        width: 205px;
+        height: 40px;
+        margin-top: 24px;
+        padding: 9px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 25px 0px 25px 0px;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__icon-element;
+        color: $color__text-white;
+      }
+      }
+    }
+  }
+
+// Choose Alberta
+  .choose-wrapper-ab {
+    display: none;
+    @media #{$desktop} {
+      display: flex;
+      justify-content: flex-end;
+      height:  444px;
+      margin-top: -200px;
+      background: linear-gradient(180deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4)),url('../../assets/images/calgary.jpg');
+    }
+    i {
+      position: relative;
+      top: 120px;
+      right: 398px;
+      color: red;
+      font-size: 66px;      
+    }
+    h2 {
+      position: relative;   
+      top: 200px;
+      right: 280px;
+      width: 200px;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;     
+    }
+    p {    
+      width: 500px;
+      font-size: 23px;
+      font-family: $font__accent;
+    }
+    .choose-program {
+      @media #{$desktop} {
+        display: flex;
+        flex-basis: 50%;       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__info-main;
+      a {
+        width: 205px;
+        height: 40px;
+        margin-top: 24px;
+        padding: 9px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 25px 0px 25px 0px;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__icon-element;
+        color: $color__text-white;
+      }
+      }
+    }
+  }
+// Choose Manitoba
+  .choose-wrapper-man {
+    display: none;
+    @media #{$desktop} {
+      display: flex;
+      justify-content: flex-end;
+      height:  444px;
+      margin-top: -200px;
+      background: linear-gradient(180deg,rgba(255,255,255,.3) 0,rgba(255,255,255,.4)),url('../../assets/images/manitoba.jpg');
+      background-size: 60% 100%;
+    }
+    i {
+      position: relative;
+      top: 120px;
+      right: 398px;
+      color: red;
+      font-size: 66px;     
+    }
+    h2 {
+      position: relative;
+      top: 200px;
+      right: 280px;
+      width: 200px;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;   
+    }
+    p {  
+      width: 500px;
+      font-size: 23px;
+      font-family: $font__accent;
+    }
+    .choose-program {
+      @media #{$desktop} {
+        flex-basis: 50%;
+        background: $color__info-main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      a {
+        width: 205px;
+        height: 40px;
+        margin-top: 24px;
+        padding: 9px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 25px 0px 25px 0px;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__icon-element;
+        color: $color__text-white;
+      }
+      }
+    }
+  }
+// Choose Saskatchewan
+  .choose-wrapper-sk {
+    display: none;
+    @media #{$desktop} {
+      display: flex;
+      justify-content: flex-end;
+      height:  444px;
+      margin-top: -200px;
+      background: linear-gradient(180deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4)),url('../../assets/images/saskatchewan.jpg');
+    }
+    i {
+      position: relative;
+      top: 120px;
+      right: 398px;
+      color: red;
+      font-size: 66px;   
+    }
+    h2 {
+      position: relative;
+      top: 200px;
+      right: 370px;
+      width: 200px;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {
+      width: 500px;
+      font-size: 23px;
+      font-family: $font__accent;
+    }
+    .choose-program {
+      @media #{$desktop} {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__info-main;
+      a {
+        width: 205px;
+        height: 40px;
+        margin-top: 24px;
+        padding: 9px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 25px 0px 25px 0px;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__icon-element;
+        color: $color__text-white;
+      }
+      }
+    }
+  }
+// Choose Ontario
+  .choose-wrapper-on {
+    display: none;
+    @media #{$desktop} {
+      display: flex;
+      justify-content: flex-end;
+      height:  444px;
+      margin-top: -200px;
+      background: linear-gradient(180deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4)),url('../../assets/images/toronto.jpg');
+      background-size: cover;
+    }
+    i {
+      position: relative;
+      top: 120px;
+      right: 398px;
+      color: red;
+      font-size: 66px;
+    }
+    h2 {
+      position: relative;
+      top: 200px;
+      right: 280px;
+      width: 200px;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;   
+    }
+    p {    
+      width: 500px;
+      font-size: 23px;
+      font-family: $font__accent;
+    }
+    .choose-program {
+      @media #{$desktop} {
+        flex-basis: 50%;
+        background: $color__info-main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      a {
+        width: 205px;
+        height: 40px;
+        margin-top: 24px;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 25px 0px 25px 0px;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__icon-element;
+        color: $color__text-white;
+      }
+      }
+    }
+  }
+// Choose Quebec
+  .choose-wrapper-qc {
+    display: none;
+    @media #{$desktop} {
+      display: flex;
+      justify-content: flex-end;
+      height:  444px;
+      margin-top: -200px;
+      background: linear-gradient(180deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4)),url('../../assets/images/quebec.jpg');
+      background-position-y: 30%;
+    }
+    i {   
+      position: relative;
+      top: 120px;
+      right: 398px;
+      color: red;
+      font-size: 66px;
+    }
+    h2 {
+      position: relative;
+      top: 200px;
+      right: 280px;
+      width: 200px;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {   
+      width: 500px;
+      font-size: 23px;
+      font-family: $font__accent;
+    }
+    .choose-program {
+      @media #{$desktop} {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__info-main;
+      a  {
+        width: 205px;
+        height: 40px;
+        margin-top: 24px;
+        padding: 9px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 25px 0px 25px 0px;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__icon-element;
+        color: $color__text-white;
+      }
+      }
+    }
+  }
+ 
+
+
+
+
+
+
+
+
+}

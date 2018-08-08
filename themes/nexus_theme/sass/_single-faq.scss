@@ -1,0 +1,366 @@
+//Top Banner
+div.banner-faq-single {
+  height: 44.5vh;
+  width: 100vw;
+  background-image: url("../../assets/images/wade-gardner-26236.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+  margin-top: -65px;
+  @media #{$desktop} {
+    height: 50.5vh;
+    margin-top: 30px;
+
+  }
+  .faq-single-title {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: $color__footer-background;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 5px;
+    top: 130px;
+    @media #{$desktop} {
+      top: 110px;
+      font-size: 70px;
+      padding-bottom: 10px;
+    }
+    .title-span {
+      display: block;
+      font-style: italic;
+      position: relative;
+      top: 10px;
+      font-size: 25px;
+      color: $color__text-accent;
+      font-weight: 200;
+      overflow-wrap: break-word; 
+      text-transform: capitalize;
+      @media #{$desktop} {
+        display: block;
+        font-style: italic;
+        position: relative;
+        top: 20px;
+        color: $color__text-accent;
+        font-size: 50px;
+        font-weight: 200;
+        text-transform: capitalize; 
+        overflow-wrap: break-word;
+      }  
+    }
+  }
+  .faq-single-title:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 49px;
+    margin: 0 0 0 -25px;
+    border-bottom: 3px solid $color__accent-underline;
+    @media #{$desktop} {
+      margin: 0 0 0 -73px;
+      border-bottom: 6px solid $color__accent-underline;
+      width: 144px;
+    }
+  }
+}
+.nexus_faq-template-default {
+  .site-main {
+    .thumb {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      width: 325px;
+      height: 211.9px;
+      @media #{$desktop} {
+        margin: 50px;
+        width: 402px;
+      }
+    }
+  }
+}
+.nexus_faq-template-default {
+  .desktop-metaboxes {
+    @media #{$desktop} {
+      padding-top: 40px;
+    }
+  }
+  .faq-homestay {
+    height: 55px;
+    width: 92vw;
+    background-color: $color__textbox-background;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    @media #{$desktop} { 
+      height: 89px;  
+      margin-top: 30px;
+    }
+    &:hover {
+      transition: box-shadow .2s;
+      box-shadow: 1px 1px 5px 1px #d3d3d3;
+      opacity: 1;
+    }
+    .faq-meta-title {
+      margin: 15px;
+      font-weight: 600;
+      color: $color__footer-background;
+      @media #{$desktop} { 
+        font-size: 28px;
+        margin: 20px;  
+      }
+    }
+    .homestay-button {
+      height: 55px;
+      width: 53px;
+      background-color: $color__icon-element;
+      @media #{$desktop} {
+        height: 89px;
+        width: 89px;
+      }
+      &:hover {
+        background: darken($color__icon-element, 10%);
+      }
+      .fa {
+        color: $color__text-white;
+        text-shadow: none;
+        position: relative;
+        bottom: 6px;
+        right: 5.5px;
+        @media #{$desktop} { 
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  .faq-meta-text {
+    margin-left: 7vw;
+    margin-right: 4vw;
+    @media #{$desktop} {
+      width: 650px;
+      font-size: 23px;
+      margin: auto;
+    }  
+  }
+  .faq-dropdown {
+    display: none;
+    @media #{$desktop} { 
+      display: none;
+    }
+    .faq-dropdown-info {
+      @media #{$desktop} {
+        display: flex;
+        flex-direction: row-reverse;
+        border: 1px solid #979797;
+        border-top: none;
+        margin-left: 53px;
+        margin-right: 53px;
+      }
+    }
+
+  }
+  .visible {
+    display: block;
+  }
+}
+//Keep Looking
+.faq-single-homestay {
+  .keep-looking-h2 {
+    font-size: 24px;
+    text-align: center;
+    color: $color__footer-background;
+    position: relative;
+    top: 10px;
+    padding-bottom: 5px;
+    @media #{$desktop} {
+      font-size: 60px;
+      font-weight: 500;
+      top: -10px;
+      padding-bottom: 30px;
+    }
+  }
+  .keep-looking-h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 49px;
+    margin: 0 0 0 -25px;
+    border-bottom: 3px solid $color__accent-underline;
+    @media #{$desktop} {
+      display: none;
+    }
+  }
+  .homestay-button-wrapper {
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+    @media #{$desktop} {
+      display: flex;
+      flex-direction: row;
+      flex-flow: row;
+      justify-content: center;
+      // width: 90vw;
+      bottom: 80px;
+      margin: 0 auto;
+      img {
+        width: 200px;
+        height: 171px;
+      }
+    }
+  .homestay-looking-button, .return-to-top-button {
+    border-radius: 8px;
+    width: 165px;
+    height: 47px;
+    background-color: $color__icon-element;
+    margin: 10px;
+    font-size: 18px;
+    color: $color__text-white;
+    text-shadow: none;
+    @media #{$desktop} {
+      display: none;
+    }
+    &:hover {
+      background: darken($color__icon-element, 10%);
+    }
+    p {
+      position: relative;
+      bottom: 14px;
+    }
+    .button-faq-title {
+      position: relative;
+      bottom: 3px;
+      color: $color__text-white;
+      @media #{$desktop} {
+        color: $color__text-main;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .homestay-looking-button {
+    @media #{$desktop} {
+      display: inline;
+      width: 200px;
+      position: relative;
+      right: 10px;
+      color: $color__footer-background;
+      background-color: white;
+      &:hover {
+        background-color: white;
+      }
+    }  
+  }
+  .desktop-thumbnail {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+    }
+  }
+  a {
+    @media #{$desktop} {
+      height: 220px;
+    }
+  }
+  button.return-to-top-button {
+    background-color: rgb(172, 25, 44);
+    @media #{$desktop} {
+      display: none;
+    }
+  }
+}
+// Journey
+.faq-single-journey {
+  height: 195px;
+  background-color: $color__textbox-background;
+  margin-bottom: -20px;
+  @media #{$desktop} {
+    height: 300px;
+  }
+  .single-journey-h2 {
+    font-size: 24px;
+    text-align: center;
+    color: $color__footer-background;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    padding-bottom: 5px;
+    @media #{$desktop} {
+      top: 50px;
+      font-size: 46px;
+      padding-bottom: 10px;
+    }
+  }
+  .single-journey-h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 49px;
+    margin: 0 0 0 -25px;
+    border-bottom: 3px solid $color__accent-underline;
+    @media #{$desktop} {
+      margin: 0 0 0 -73px;
+      border-bottom: 6px solid $color__accent-underline;
+      width: 144px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: $color__text-accent;
+    font-style: italic;
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    bottom: 60px;
+    @media #{$desktop} {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .consult {
+    letter-spacing: 1pt;
+    width: 175px;
+    height: 40px;
+    padding: 0;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 18px;
+    text-align: center;
+    background: $color__icon-element;
+    color: $color__text-white;
+    position: relative;
+    bottom: 50px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding: 6px;
+    @media #{$desktop} {
+      width: 272px;
+      height: 55px;
+      bottom: 40px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 8px;
+    }
+    &:hover {
+      background: darken($color__icon-element, 10%);
+    }
+  }
+}
+}
