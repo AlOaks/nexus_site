@@ -10,44 +10,41 @@
 
 
 // Register Custom Taxonomy Team types
-function teams_custom_taxonomy() {
+// Register Custom Taxonomy
+function province_taxonomy() {
 
 	$labels = array(
-		'name'                       => _x( 'Team Types', 'Taxonomy General Name', 'text-domain' ),
-		'singular_name'              => _x( 'Team Type', 'Taxonomy Singular Name', 'text-domain' ),
-		'menu_name'                  => __( 'Team Types', 'text-domain' ),
-		'all_items'                  => __( 'All Team Types', 'text-domain' ),
-		'parent_item'                => __( 'Parent Team Type', 'text-domain' ),
-		'parent_item_colon'          => __( 'Parent Team Type', 'text-domain' ),
-		'new_item_name'              => __( 'New Team Type', 'text-domain' ),
-		'add_new_item'               => __( 'Add Team Type', 'text-domain' ),
-		'edit_item'                  => __( 'Edit Team Type', 'text-domain' ),
-		'update_item'                => __( 'Update Team Type', 'text-domain' ),
-		'view_item'                  => __( 'View Team Type', 'text-domain' ),
-		'separate_items_with_commas' => __( 'Separate Team Type with commas', 'text-domain' ),
-		'add_or_remove_items'        => __( 'Add or remove Team Type', 'text-domain' ),
-		'choose_from_most_used'      => __( 'Choose from the most used', 'text-domain' ),
-		'popular_items'              => __( 'Popular Team Type', 'text-domain' ),
-		'search_items'               => __( 'Search Team Type', 'text-domain' ),
-		'not_found'                  => __( 'Not Found', 'text-domain' ),
-		'no_terms'                   => __( 'No items', 'text-domain' ),
-		'items_list'                 => __( 'Items list', 'text-domain' ),
-		'items_list_navigation'      => __( 'Items list navigation', 'text-domain' ),
+		'name'                       => _x( 'Provinces', 'Taxonomy General Name', 'nexus_theme' ),
+		'singular_name'              => _x( 'Province', 'Taxonomy Singular Name', 'nexus_theme' ),
+		'menu_name'                  => __( 'Province', 'nexus_theme' ),
+		'all_items'                  => __( 'All Provinces', 'nexus_theme' ),
+		'parent_item'                => __( 'Parent Item', 'nexus_theme' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'nexus_theme' ),
+		'new_item_name'              => __( 'New Province Name', 'nexus_theme' ),
+		'add_new_item'               => __( 'Add New Province', 'nexus_theme' ),
+		'edit_item'                  => __( 'Edit Province', 'nexus_theme' ),
+		'update_item'                => __( 'Update Province', 'nexus_theme' ),
+		'view_item'                  => __( 'View Province', 'nexus_theme' ),
+		'separate_items_with_commas' => __( 'Separate Provinces with commas', 'nexus_theme' ),
+		'add_or_remove_items'        => __( 'Add or remove Provinces', 'nexus_theme' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'nexus_theme' ),
+		'popular_items'              => __( 'Popular Provinces', 'nexus_theme' ),
+		'search_items'               => __( 'Search Provinces', 'nexus_theme' ),
+		'not_found'                  => __( 'Not Found', 'nexus_theme' ),
+		'no_terms'                   => __( 'No Provinces', 'nexus_theme' ),
+		'items_list'                 => __( 'Provinces List', 'nexus_theme' ),
+		'items_list_navigation'      => __( 'Provinces List Nagivation', 'nexus_theme' ),
 	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => false,
 		'public'                     => true,
-		'show_ui'                    => true, 
+		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'team_type', array( 'team' ), $args ); 
+	register_taxonomy( 'province', array ('programs'), $args );
 
 }
-add_action( 'init', 'teams_custom_taxonomy', 0 ); 
-
-// donations  Custom Taxonomy (create donations & scholarships categories)
-
-
+add_action( 'init', 'province_taxonomy', 0 );
