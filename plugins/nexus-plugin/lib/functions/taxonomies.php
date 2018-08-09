@@ -44,7 +44,7 @@ function province_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'province', array ('programs'), $args );
+	register_taxonomy( 'province', array ( 'programs' ), $args );
 
 }
 add_action( 'init', 'province_taxonomy', 0 );
