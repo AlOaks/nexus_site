@@ -10,7 +10,7 @@
 
 
 // Register Custom Taxonomy Team types
-// Register Custom Taxonomy
+// // Register Custom Taxonomy
 function province_taxonomy() {
 
 	$labels = array(
@@ -44,7 +44,7 @@ function province_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'province', array ( 'programs' ), $args );
+	register_taxonomy( 'provinces', array ( 'programs' ), $args );
 
 }
 add_action( 'init', 'province_taxonomy', 0 );
