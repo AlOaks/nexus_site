@@ -66,13 +66,13 @@ function nexus_programs() {
 add_action( 'init', 'nexus_programs', 0 );
 
 // Register Custom Post Type
-function restricted_posts() {
+function premium_posts() {
 
 	$labels = array(
-		'name'                  => _x( 'Restricted Posts', 'Post Type General Name', 'nexus_theme' ),
-		'singular_name'         => _x( 'Restricted Post', 'Post Type Singular Name', 'nexus_theme' ),
-		'menu_name'             => __( 'Restricted Posts', 'nexus_theme' ),
-		'name_admin_bar'        => __( 'Restricted Blog', 'nexus_theme' ),
+		'name'                  => _x( 'Premium Content', 'Post Type General Name', 'nexus_theme' ),
+		'singular_name'         => _x( 'Premium Content', 'Post Type Singular Name', 'nexus_theme' ),
+		'menu_name'             => __( 'Premium Content', 'nexus_theme' ),
+		'name_admin_bar'        => __( 'Premium Blog', 'nexus_theme' ),
 		'archives'              => __( 'Blog Archives', 'nexus_theme' ),
 		'attributes'            => __( 'Blog Attributes', 'nexus_theme' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'nexus_theme' ),
@@ -98,8 +98,8 @@ function restricted_posts() {
 		'filter_items_list'     => __( 'Filter Posts list', 'nexus_theme' ),
 	);
 	$args = array(
-		'label'                 => __( 'Restricted Post', 'nexus_theme' ),
-		'description'           => __( 'The section for all restricted content', 'nexus_theme' ),
+		'label'                 => __( 'Premium Content', 'nexus_theme' ),
+		'description'           => __( 'The section for all Premium content', 'nexus_theme' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -108,7 +108,7 @@ function restricted_posts() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'				=> 'dashicons-lock',
+		'menu_icon'				=> 'dashicons-awards',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -117,7 +117,7 @@ function restricted_posts() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'restricted_blog', $args );
+	register_post_type( 'premium_content', $args );
 
 }
-add_action( 'init', 'restricted_posts', 0 );
+add_action( 'init', 'premium_posts', 0 );
