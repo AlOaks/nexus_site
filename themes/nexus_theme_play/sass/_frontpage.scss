@@ -1,0 +1,102 @@
+
+// HERO IMAGE
+
+.hero-image {
+    background: url('../../themes/nexus_theme_play/assets/images/blog_photo_post03@2x.png.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    margin: $center;
+    margin-top: 10vh;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-label {
+    position: relative;
+    font-family: $sans;
+    color: white;
+    z-index: 100;
+    width: 60%;
+    font-size: 2.5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    margin: $center;
+    top: 25%;
+
+    span {
+        color: $font-red;
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-style: normal;
+    }
+}
+
+// PROGRAM SELECTORS
+
+.program-selectors {
+    background: $div-red;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.programs-form {
+    display: flex;
+    width: 90%;
+    margin: $center;
+}
+
+.selector {
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+
+    &::placeholder {
+        color: $font-blue;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+}
+
+option {
+    color: $font-blue;
+}
+
+.program-types {
+    width: 31%;
+    margin-right: 2%;
+    
+   
+}
+
+.cities {
+    width: 20%;
+    margin-right: 13%;
+}
+
+input[type="submit"] {
+    background-color: $div-yellow;
+    border-color: $div-yellow;
+    padding: 10px 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    width: 33%;
+    color: $font-blue;
+    font-size: 1.5rem;
+    font-family: $roboto;
+    font-weight: 900;
+}
+

@@ -41,6 +41,8 @@ themes/*
 # Ignore npm packages #
 # =================== #
 themes/nexus_theme/node_modules/*
+themes/nexus_theme_play/node_modules/*
+themes/nexus_theme_scratch/node_modules/*
 
 # Ignore build files #
 # ================== #
