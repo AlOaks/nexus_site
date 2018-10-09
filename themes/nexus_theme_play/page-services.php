@@ -36,7 +36,7 @@ get_header();
                         <button class="learn-btn">Learn More</button>
                     </div>
                 </div>
-                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/path-img.png'; ?> />
+                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-2@3x.png'; ?> />
                 <div class="applying steps-div">
                     <div class="div-content">
                         <h1 class="div-title">Applying for School</h1>
@@ -45,7 +45,7 @@ get_header();
                     </div>
                     <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/02@2x.png'; ?> />
                 </div>
-                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/path2-img.png'; ?> />
+                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-4@3x.png'; ?> />
                 <div class="arriving steps-div">
                     <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/03@2x.png'; ?> />
                     <div class="div-content">
@@ -54,7 +54,7 @@ get_header();
                         <button class="learn-btn">Learn More</button>
                     </div>
                 </div>
-                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/path-img.png'; ?> />
+                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-2@3x.png'; ?> />
                 <div class="first-days steps-div">
                     <div class="div-content">
                         <h1 class="div-title">First Days in Canada</h1>
@@ -63,7 +63,7 @@ get_header();
                     </div>
                     <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/04@2x.png'; ?> />
                 </div>
-                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/path2-img.png'; ?> />
+                <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-4@3x.png'; ?> />
                 <div class="living steps-div">
                     <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/05@2x.png'; ?> />
                     <div class="div-content">
