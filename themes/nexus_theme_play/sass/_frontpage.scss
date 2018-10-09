@@ -100,3 +100,291 @@ input[type="submit"] {
     font-weight: 900;
 }
 
+// WHY NEXUS
+
+.why-nexus-section {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.why-title {
+    color: $font-blue;
+    width: 40%;
+    text-align: center;
+    border-bottom: 5px solid $div-yellow;
+    margin: $center;
+    padding-top: 3%;
+    font-size: 3.8rem;
+}
+
+i {
+    color: $div-red;
+    font-size: 5rem;
+}
+
+.why-items-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: $center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.why-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.why-paragraph {
+    width: 85%;
+    text-align: justify;
+    color: $font-blue;
+    font-size: 1.4rem;
+}
+
+.get-quote-btn {
+    background: $div-red;
+    color: white;
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 10px 90px;
+    box-shadow: 2px 2px 5px black;
+    font-family: $roboto;
+    border-color: $div-red;
+    margin-bottom: 4%;
+}
+
+// WHY CANADA SECTION 
+
+.why-canada-title, .curious-title {
+    width: 30%;
+    margin: 4% auto 4% auto;
+    text-align: center;
+    color: white;
+    font-family: $roboto;
+    font-size: 3rem;
+    text-decoration: underline $div-yellow;
+}
+
+
+.slider-canada {
+    width: 70%;
+    height: 70vh;
+    margin: $center;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    
+    h1 {
+        text-align: center;
+        color: $div-red;
+        font-size: 5rem;
+    }
+}
+
+.slider-btn {
+    position: absolute;
+    background: transparent;
+    height: 70vh;
+    border: none;
+    font-size: 2rem;
+    color: transparent;
+    transition-duration: .5s;
+    z-index: 100;
+
+    &:hover {
+        transition-duration: .5s;
+        color: black;
+        background: rgba(255,255,255, 0.5);
+    }
+}
+
+.btn-lft {
+    right: 15%;
+}
+
+.btn-right {
+    left: 15%;
+}
+
+// CURIOUS SECTION
+
+.curious-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curious-title {
+    width: 40%;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.visit-faq-btn {
+    background: $div-red;
+    border: none;
+    color: white;
+    font-family: $sans;
+    margin: $center;
+    width: 22%;
+    font-size: 1rem;
+    padding: 12px 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px 5px black;
+}
+
+// CHOOSE A CITY SECTION
+
+.choose-city-section {
+    margin-top: 5%;
+    width: 100%;
+    background: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-map {
+    background: url("../../themes/nexus_theme_play/assets/images/map_nexus01@3x.png.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 75%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.fa-map-marker-alt {
+    color: grey;
+    font-size: 3rem;
+    position: absolute;
+
+    &:hover {
+        color: $div-red;
+    }
+}
+
+.mark1 {
+    left: 12%;
+    top: 50%;
+}
+
+.mark2 {
+    left: 19%;
+    top: 65%;
+}
+
+.mark3 {
+    left: 26%;
+    top: 55%;
+}
+
+.mark4 {
+    left: 32%;
+    top: 66%;
+}
+
+.mark5 {
+    left: 42%;
+    top: 63%;
+}
+
+.mark6 {
+    left: 53%;
+    top: 58%;
+}
+
+.choose-title {
+    text-align: center;
+    margin-top: 4%;
+    text-decoration: underline $div-yellow;
+    font-size: 3rem;
+    color: $font-blue;
+}
+
+.choose-faq-btn {
+    position: absolute;
+    left: 39%;
+    bottom: 2%;
+    
+}
+
+// STUDENT REVIEW SECTION
+
+.reviews-section {
+    width: 100%;
+    background: white;
+}
+
+.reviews-slider {
+    overflow-x: auto;
+    width: 90%;
+    height: 50vh;
+    margin: $center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.review-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    margin: $center;
+    background: $div-white;
+    
+}
+
+.review-img {
+    height: 50vh;
+    width: 23%;
+}
+
+.review-content {
+    width: 75%;
+    height: 80%;
+    padding-left: 5%;
+    color: $font-blue;
+    font-size: 1.7rem;
+    font-family: $sans;
+    position: relative;
+    margin: $center;
+}
+
+.quote, .unquote {
+    color: $div-yellow;
+    font-size: 4rem;
+    position: absolute;
+}
+
+.quote {
+    left: 1rem;
+    top: -2rem;
+}
+
+.unquote {
+    right: 1rem;
+    bottom: -2rem;
+}
