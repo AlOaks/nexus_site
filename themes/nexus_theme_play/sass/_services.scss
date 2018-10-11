@@ -1,4 +1,4 @@
-.services-title-container {
+.page-title-container {
     margin-top: 10vh;
     background: $div-yellow;
     width: 100%;
@@ -84,10 +84,16 @@
     width: 20rem;
 }
 
+.living {
+    margin-bottom: 5%;
+}
+
 .div-content {
     display: flex;
     flex-direction: column;
     width: 50%;
+
+
 
     h1 {
         margin-top: 0;
@@ -110,4 +116,67 @@
         font-family: $roboto;
         font-size: 1.1rem;
     }
+}
+
+// CONSULTANTS
+
+.consultants-section {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.consultants-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.consultant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+
+    h1 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: $font-grey;
+        font-size: 1.5rem;
+        font-family: $sans;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: $font-grey;
+        font-family: $sans;
+    }
+}
+
+
+.consul-img {
+    height: 35%;
+}
+
+.consul-contact {    
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+
+    i {
+        font-size: 2rem;
+    }
+}
+
+
+.consultants-title {
+    font-family: $roboto;
+    color: $font-blue;
+    text-decoration: underline $div-yellow;
+    font-size: 3rem;
+    width: 40%;
+    text-align: center;
 }

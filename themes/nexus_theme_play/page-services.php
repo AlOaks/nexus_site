@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <div class="services-title-container">
+            <div class="page-title-container">
                 <h1 class="services-header">Services</h1>
             </div>
             <section class="about-container">
@@ -76,25 +76,27 @@ get_header();
 
             <section class="consultants-section">
                 <h1 class="consultants-title">Our Education Consultants</h1>
-                <div class="consultant cons1">
-                    <img class="consul-img" src="" />
-                    <h1 class="consul-name"></h1>
-                    <h2 class="consul-position"></h2>
-                    <div class="consul-contact">
-                        <a class="social-consul-link" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-consul-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                        <a class="social-consul-link" href="https://outlook.com"><i class="fas fa-envelope"></i></a>
+                <div class="consultants-container">
+                    <div class="consultant cons1">
+                        <img class="consul-img" src=<?php echo get_template_directory_uri().'/assets/images/TeamMember01@2x.png'; ?> />
+                        <h1 class="consul-name">Rafael Schafer Marques</h1>
+                        <h2 class="consul-position">Director of International Studies</h2>
+                        <div class="consul-contact">
+                            <a class="social-consul-link" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-consul-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                            <a class="social-consul-link" href="https://outlook.com"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="consultant cons2">
-                    <img class="consul-img" src="" />
-                    <h1 class="consul-name"></h1>
-                    <h2 class="consul-position"></h2>
-                    <div class="consul-contact">
-                        <a class="social-consul-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                        <a class="social-consul-link" href="https://outlook.com"><i class="fas fa-envelope"></i></a>
+                    <div class="consultant cons2">
+                        <img class="consul-img" src=<?php echo get_template_directory_uri().'/assets/images/TeamMember02@2x.png'; ?>  />
+                        <h1 class="consul-name">Carolina Ribeiro</h1>
+                        <h2 class="consul-position">Advisor</h2>
+                        <div class="consul-contact">
+                            <a class="social-consul-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                            <a class="social-consul-link" href="https://outlook.com"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
-                </div>
+                </div>    
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
