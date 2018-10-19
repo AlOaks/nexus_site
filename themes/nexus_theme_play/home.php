@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blog Archives
+ * Template Name: Blog
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -22,11 +22,34 @@ get_header();
 			</div>
 			<section class="blog-body">
 
+				<div class="popular-slider">
+					<h1 class="popular-banner">Popular posts</h1>
+					<button class="slider-btn-blog blog-btn-right"><</button>
+					<button class="slider-btn-blog blog-btn-lft">></button>
+                	
+					<?php 
+
+
+						query_posts('posts_per_page=3');
+						
+
+						while ( have_posts() ): the_post(); 
+					?>
+
+						<div class="slider-item">
+							<?php the_post_thumbnail(); ?>
+							<h1 class="slider-item-title"><?php the_title(); ?></h1>
+						</div>
+
+
+					<?php endwhile; ?>
+				</div>
+
+
 				<?php
-					$args = array('post_type' => 'posts');
-					$cats = get_categories($args);
+					$cat_args = array('post_type' => 'posts');
+					$cats = get_categories($cat_args);
 				?>
-			
 				<ul class="blog-cats">
 					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All</a></li>
 					<?php
@@ -41,6 +64,7 @@ get_header();
 				</ul>
 				<?php		
 
+				query_posts('posts_per_page=-1');			
 				while ( have_posts() ) : the_post(); ?>
 
 				<?php 
@@ -60,12 +84,18 @@ get_header();
 							the_post_thumbnail();
 							the_title();
 				?>
-							<p class="post-excerpt"><?php echo $excerpt ?></p>	
+							<p class="post-excerpt"><?php echo $excerpt ?></p>
+							<a class="post-link" href=<?php the_permalink(); ?>>Read</a>	
 				<?php
 						}
 				endwhile; 
 				?>
 		</section>
+		<section class="start-journey-section">
+				<h1 class="start-title">Can't find what you're looking for?</h1>
+				<p class="start-description">We have more to offer</p>
+				<a class="contact-btn">Join Nexus Club</a>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

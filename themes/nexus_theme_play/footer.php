@@ -16,11 +16,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 
-			<section class="start-journey-section">
-				<h1 class="start-title">Start Your Journey</h1>
-				<p class="start-description">Let us help you find your path to success</p>
-				<button class="contact-btn">Contact Us</button>
-			</section>
+			
 
 			<section class="general-info">
 				<div class="why-nexus-footer info-div">
@@ -40,7 +36,7 @@
 						<a href="https://www.youtube.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube_logo1@3x.png'; ?> /></a>
 						<a href="https://www.instagram.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram@3x.png'; ?> /></a>
 					</div>
-					<button class="join-nexus-fam-btn">Join Nexus Family</button>
+					<a class="join-nexus-fam-btn">Join Nexus Family</a>
 				</div>
 
 				<div class="contact-footer info-div">

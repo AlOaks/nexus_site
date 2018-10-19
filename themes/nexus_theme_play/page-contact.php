@@ -51,7 +51,11 @@ get_header();
                     </div>
                 </div>
             </div>
-
+            <section class="start-journey-section">
+				<h1 class="start-title">Questions?</h1>
+				<p class="start-description">We've got you covered</p>
+				<a class="contact-btn">See FAQ</a>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

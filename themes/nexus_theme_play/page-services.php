@@ -29,47 +29,57 @@ get_header();
             <section class="how-we-help-section">
                 <h1 class="how-we-help-title">How We Help</h1>
                 <div class="planning steps-div">
-                    <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/01@2x.png'; ?> />
-                    <div class="div-content">
-                        <h1 class="div-title">Planning and Organizing</h1>
-                        <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
-                        <button class="learn-btn">Learn More</button>
+                    <div class="step-container">
+                        <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/01@2x.png'; ?> />
+                        <div class="div-content">
+                            <h1 class="div-title">Planning and Organizing</h1>
+                            <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
+                            <button class="learn-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
                 <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-2@3x.png'; ?> />
                 <div class="applying steps-div">
-                    <div class="div-content">
-                        <h1 class="div-title">Applying for School</h1>
-                        <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
-                        <button class="learn-btn">Learn More</button>
+                    <div class="step-container">
+                        <div class="div-content">
+                            <h1 class="div-title">Applying for School</h1>
+                            <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
+                            <button class="learn-btn">Learn More</button>
+                        </div>
+                        <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/02@2x.png'; ?> />
                     </div>
-                    <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/02@2x.png'; ?> />
                 </div>
                 <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-4@3x.png'; ?> />
                 <div class="arriving steps-div">
-                    <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/03@2x.png'; ?> />
-                    <div class="div-content">
-                        <h1 class="div-title">Preparing for Arriving</h1>
-                        <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
-                        <button class="learn-btn">Learn More</button>
+                    <div class="step-container">
+                        <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/03@2x.png'; ?> />
+                        <div class="div-content">
+                            <h1 class="div-title">Preparing for Arriving</h1>
+                            <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
+                            <button class="learn-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
                 <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-2@3x.png'; ?> />
                 <div class="first-days steps-div">
-                    <div class="div-content">
-                        <h1 class="div-title">First Days in Canada</h1>
-                        <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
-                        <button class="learn-btn">Learn More</button>
+                    <div class="step-container">
+                        <div class="div-content">
+                            <h1 class="div-title">First Days in Canada</h1>
+                            <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
+                            <button class="learn-btn">Learn More</button>
+                        </div>
+                        <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/04@2x.png'; ?> />
                     </div>
-                    <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/04@2x.png'; ?> />
                 </div>
                 <img class="path" src=<?php echo get_template_directory_uri().'/assets/images/Path-4@3x.png'; ?> />
                 <div class="living steps-div">
-                    <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/05@2x.png'; ?> />
-                    <div class="div-content">
-                        <h1 class="div-title">Living in Canada</h1>
-                        <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
-                        <button class="learn-btn">Learn More</button>
+                    <div class="step-container">
+                        <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/05@2x.png'; ?> />
+                        <div class="div-content">
+                            <h1 class="div-title">Living in Canada</h1>
+                            <p class="div-description">We are passionate about graphic design and bring it to life and pride ourselves on creating memorable. We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.We are passionate about graphic design and bring it to life and pride ourselves on creating memorable.</p>
+                            <button class="learn-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -98,6 +108,11 @@ get_header();
                     </div>
                 </div>    
             </section>
+            <section class="start-journey-section">
+				<h1 class="start-title">Start Your Journey</h1>
+				<p class="start-description">Let us help you find your path to success</p>
+				<a class="contact-btn">Contact Us</a>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

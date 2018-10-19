@@ -15,4 +15,7 @@ $(".btn-right").click(function() {
  });
 
 
+/* BLOG FUNCTIONS */
+
+
 })(jQuery);

@@ -70,7 +70,7 @@ get_header();
 						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 				</div>
-				<button class="get-quote-btn">Get Quote</button>
+				<a class="get-quote-btn">Get Quote</a>
 			</section>
 
 			<section class="why-canada-section">
@@ -86,7 +86,7 @@ get_header();
 
 			<section class="curious-section">
 				<h1 class="curious-title">Curious About Canada?</h1>
-				<button class="visit-faq-btn">Visit FAQ Section</button>
+				<a class="visit-faq-btn">Visit FAQ Section</a>
 			</section>
 
 
@@ -99,7 +99,7 @@ get_header();
 					<i class="fas fa-map-marker-alt mark4"></i>
 					<i class="fas fa-map-marker-alt mark5"></i>
 					<i class="fas fa-map-marker-alt mark6"></i>
-					<button class="visit-faq-btn choose-faq-btn">Visit FAQ Section</button>
+					<a class="visit-faq-btn choose-faq-btn">Visit FAQ Section</a>
 				</div>
 			</section>	
 
@@ -128,7 +128,11 @@ get_header();
 					
 				</div>
 			</section>
-
+			<section class="start-journey-section">
+				<h1 class="start-title">Start Your Journey</h1>
+				<p class="start-description">Let us help you find your path to success</p>
+				<a class="contact-btn">Contact Us</a>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

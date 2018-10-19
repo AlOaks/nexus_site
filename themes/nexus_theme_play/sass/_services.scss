@@ -55,7 +55,7 @@
 
 .how-we-help-section {
     width: 100%;
-    background: $div-white;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,9 +74,22 @@
 }
 
 .steps-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(5) {
+        background: $div-white;
+    }
+    
+}
+
+.step-container {
     display: flex;
     width: 55%;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
 .round-img {

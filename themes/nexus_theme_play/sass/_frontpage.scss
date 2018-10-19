@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 86vh;
     margin: $center;
     margin-top: 10vh;
     position: relative;
@@ -159,6 +159,7 @@ i {
     font-family: $roboto;
     border-color: $div-red;
     margin-bottom: 4%;
+    text-align: center;
 }
 
 // WHY CANADA SECTION 
@@ -250,6 +251,7 @@ i {
     font-weight: bold;
     letter-spacing: 2px;
     box-shadow: 3px 3px 5px black;
+    text-align: center;
 }
 
 // CHOOSE A CITY SECTION
@@ -327,6 +329,7 @@ i {
     position: absolute;
     left: 39%;
     bottom: 2%;
+    text-align: center;
     
 }
 
