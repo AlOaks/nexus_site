@@ -16,6 +16,19 @@ $(".btn-right").click(function() {
 
 
 /* BLOG FUNCTIONS */
+$(".bttn-right").click(function() {
+    var currentLeft = $(".slides").scrollLeft();
+    var slideWidth = $(".popular-item").width();
 
+
+    $(".slides").scrollLeft((currentLeft + slideWidth));
+});
+
+$(".bttn-lft").click(function() {
+    var currentRight = $(".slides").scrollLeft();
+    var slideWidth = $(".popular-item").width();
+
+    $(".slides").scrollLeft((currentRight - slideWidth));
+});
 
 })(jQuery);

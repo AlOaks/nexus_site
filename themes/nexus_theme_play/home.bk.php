@@ -23,31 +23,28 @@ get_header();
 			<section class="blog-body">
 
 				<div class="popular-section">
-					<div class="popular-slider">
-						<button class="popular-btn bttn-lft"><</button>
-						<button class="popular-btn bttn-right">></button>
+					<button class="slider-btn btn-right"><</button>
+					<button class="slider-btn btn-lft">></button>
+					<div class="slider-canada">
 						<h1 class="popular-banner">Popular posts</h1>
 						
 						
 						<?php 
-							query_posts('posts_per_page=3'); ?>
-							
-						<ul class="slides">
-						<?php
-							while ( have_posts() ): the_post(); 
-							$video = CFS()->get('post_video');
 
-							if(empty($video)) { ?>
-							<a class="popular-title" href=<?php echo the_permalink(); ?>>
-								<li class="popular-item">
-									<?php the_post_thumbnail(); ?>
-									<p class="slider-item-title"><?php the_title(); ?></p>
-								</li>
-							</a>
-						<?php 
-							}
-							endwhile; ?>
-						</ul>
+
+							query_posts('posts_per_page=3');
+							
+
+							while ( have_posts() ): the_post(); 
+						?>
+
+							<div class="slider-item-blog">
+								<?php the_post_thumbnail(); ?>
+								<h1 class="slider-item-title"><?php the_title(); ?></h1>
+							</div>
+
+
+						<?php endwhile; ?>
 					</div>
 				</div>
 
@@ -56,8 +53,7 @@ get_header();
 					$cats = get_categories($cat_args);
 				?>
 				<ul class="blog-cats">
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Category</a></li>
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Media</a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All</a></li>
 					<?php
 						foreach ($cats as $cat) {
 							$cat_id = get_cat_ID($cat->name);
@@ -70,6 +66,7 @@ get_header();
 				</ul>
 
 				<section class="blog-section">
+					<div class="videos-container">
 						<?php		
 
 						query_posts('posts_per_page=-1');			
@@ -77,27 +74,40 @@ get_header();
 							
 								$video = CFS()->get('post_video');
 								$title = get_the_title();
-								$excerpt = get_the_excerpt();
-								$img = get_the_post_thumbnail();
 
 								if (!empty($video)) { ?>
-									<div class="video-container">
-										<div class="post-video"><?php echo $video ?></div>
-										<h1 class="video-title"><?php echo $title ?></h1>
-									</div>
-								<?php	
-								} elseif(empty($video)) {
-								?>
-									<div class="post-container">
-										<?php echo $img; ?>
-										<h1 class="post-title"><?php echo $title; ?></h1>
-										<p class="post-excerpt"><?php echo $excerpt; ?></p>
-										<a class="post-link" href=<?php echo the_permalink(); ?>>Read</a>
-									</div>
+								<div class="video-container">
+									<div class="post-video"><?php echo $video ?></div>
+									<h1 class="video-title"><?php echo $title ?></h1>
+								</div>
 								<?php
-								}
+									
+								} 
 						endwhile; 
 						?>
+					</div>
+					<div class="articles-container">
+						<?php
+						query_posts('posts_per_page=-1');			
+						while ( have_posts() ) : the_post(); 
+
+								$video = CFS()->get('post_video');
+								$excerpt = get_the_excerpt(); 
+								$title = get_the_title();
+							
+							if (empty($video)) { ?>
+							<div class="post-container">
+								<?php the_post_thumbnail(); ?>
+								<h1 class="post-title"><?php echo $title; ?></h1>
+								<p class="post-excerpt"><?php echo $excerpt; ?></p>
+								<a class="post-link" href=<?php echo the_permalink(); ?>>Read</a>
+							</div>
+						<?php
+							}	
+						
+						endwhile;
+						?>
+					</div>
 				</section>
 		</section>
 		<section class="start-journey-section">

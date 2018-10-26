@@ -1,0 +1,117 @@
+.single-post {
+    background: white;
+}
+
+.single-hero {
+    width: 85%;
+    height: 70vh;
+    margin: $center;
+    margin-top: 15vh;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        background: rgba(0,0,0,.5);
+        position: absolute;
+        color: white;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        text-align: right;
+        padding: 1% 5%;
+        font-family: $sans;
+    }
+}
+
+.single-content {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+        color: $font-blue;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-family: $sans;
+        font-weight: 300;
+        color: $font-blue;
+        border-left: 2px solid $div-yellow;
+        padding-left: 1%;
+    }
+
+    p {
+        font-family: $sans;
+        color: $font-blue;
+        line-height: 2rem;
+    }    
+}
+
+.share-links-container {
+    width: 50%;
+    margin: $center;
+    display: flex;
+    flex-direction: column; 
+
+    h3 {
+        margin: $center;
+        color: $font-red;
+        margin-bottom: 4%;
+        font-size: 1.5rem;
+    }
+}
+
+.share-list {
+    display: flex;
+    width: 70%;
+    padding: 0;
+    margin: $center;
+    justify-content: space-between;
+
+    li {
+        list-style-type: none;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+.comments-title {
+    display: none;
+}
+
+.comments-header {
+    width: 18%;
+    text-align: center;
+    color: $font-blue;
+    font-size: 2rem;
+    font-family: $roboto;
+    // border-bottom: 2px solid $div-yellow;
+    margin: $center;
+    margin-top: 5%;
+    position: relative;
+
+    &:before {
+        content: "";
+        border-bottom: 3px solid $div-yellow;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        left: 25%;
+    }
+}
+
+.comments-area  {
+    width: 75%;
+    margin: $center;
+    margin-top: 10%;
+}

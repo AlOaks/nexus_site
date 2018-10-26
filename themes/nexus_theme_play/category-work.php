@@ -38,12 +38,12 @@ get_header();
 							$video = CFS()->get('post_video');
 
 							if(empty($video)) { ?>
-							<a class="popular-title" href=<?php echo the_permalink(); ?>>
-								<li class="popular-item">
-									<?php the_post_thumbnail(); ?>
-									<p class="slider-item-title"><?php the_title(); ?></p>
-								</li>
-							</a>
+								<a class="popular-title" href=<?php echo the_permalink(); ?>>
+									<li class="popular-item">
+										<?php the_post_thumbnail(); ?>
+										<p class="slider-item-title"><?php the_title(); ?></p>
+									</li>
+								</a>
 						<?php 
 							}
 							endwhile; ?>
@@ -71,9 +71,10 @@ get_header();
 
 				<section class="blog-section">
 						<?php		
-
-						query_posts('posts_per_page=-1');			
-						while ( have_posts() ) : the_post(); 
+                        $args = array('posts_per_page'=>-1, 'category_name'=>'work');
+                        $cat_query = new WP_query($args);
+                        
+						while ( $cat_query->have_posts() ) : $cat_query->the_post(); 
 							
 								$video = CFS()->get('post_video');
 								$title = get_the_title();

@@ -38,12 +38,12 @@ get_header();
 							$video = CFS()->get('post_video');
 
 							if(empty($video)) { ?>
-							<a class="popular-title" href=<?php echo the_permalink(); ?>>
-								<li class="popular-item">
-									<?php the_post_thumbnail(); ?>
-									<p class="slider-item-title"><?php the_title(); ?></p>
-								</li>
-							</a>
+								<a class="popular-title" href=<?php echo the_permalink(); ?>>
+									<li class="popular-item">
+										<?php the_post_thumbnail(); ?>
+										<p class="slider-item-title"><?php the_title(); ?></p>
+									</li>
+								</a>
 						<?php 
 							}
 							endwhile; ?>
@@ -80,13 +80,7 @@ get_header();
 								$excerpt = get_the_excerpt();
 								$img = get_the_post_thumbnail();
 
-								if (!empty($video)) { ?>
-									<div class="video-container">
-										<div class="post-video"><?php echo $video ?></div>
-										<h1 class="video-title"><?php echo $title ?></h1>
-									</div>
-								<?php	
-								} elseif(empty($video)) {
+								if(empty($video)) {
 								?>
 									<div class="post-container">
 										<?php echo $img; ?>

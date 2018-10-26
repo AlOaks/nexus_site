@@ -1,6 +1,6 @@
 .page-title-container {
     margin-top: 10vh;
-    background: $div-yellow;
+    background: white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,6 +15,12 @@
     }
 }
 
+.page-template-page-contact {
+    .footer-copy {
+        background: $bg-blue;
+    }
+}
+
 .about-container {
     height: 65vh;
     display: flex;
@@ -23,7 +29,7 @@
     justify-content: space-around;
 
     h1 {
-        color: $div-yellow;
+        color: white;
         text-decoration: underline #FF8A2A;
         font-family: $roboto;
         font-size: 3rem;
@@ -32,7 +38,7 @@
     }
 
     p {
-        color: $div-yellow;
+        color: white;
         width: 55%;
         font-family: $sans;
         margin: 0;
@@ -67,6 +73,11 @@
     color: $font-blue;
     text-decoration: underline $div-yellow;
     font-size: 3.5rem;
+    background: $div-white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5% 0;
 }
 
 .path {

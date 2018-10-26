@@ -1,11 +1,6 @@
 <?php
 /**
- * Template Name: Blog Archives
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * The template for displaying archive pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -17,58 +12,35 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="page-title-container">
-                <h1 class="services-header">Blog</h1>
-			</div>
-			<section class="blog-body">
 
-				<?php
-					$args = array('post_type' => 'posts');
-					$cats = get_categories($args);
-				?>
-			
-				<ul class="blog-cats">
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All</a></li>
-					<?php
-						foreach ($cats as $cat) {
-							$cat_id = get_cat_ID($cat->name);
-							$cat_link = get_category_link($cat_id);
-					?>
-							<li class="post-cat"><a href=<?php echo $cat_link; ?>><?php echo $cat->name; ?></a></li>
-					<?php		
-						}
-					?>
-				</ul>
-				<?php		
+		<?php if ( have_posts() ) : ?><!-- .page-header -->
 
-				while ( have_posts() ) : the_post(); ?>
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
 
-				<?php 
-					
-						$video = CFS()->get('post_video');
-						$excerpt = get_the_excerpt();
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', get_post_type() );
 
+			endwhile;
 
-						if (!empty($video)) { ?>
+			the_posts_navigation();
 
-							<div class="post-video"><?php echo $video; ?></div>
-				<?php
-							the_title();
+		else :
 
-						} else { 
+			get_template_part( 'template-parts/content', 'none' );
 
-							the_post_thumbnail();
-							the_title();
-				?>
-							<p class="post-excerpt"><?php echo $excerpt ?></p>	
-				<?php
-						}
-				endwhile; 
-				?>
-		</section>
+		endif;
+		?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-
+get_sidebar();
 get_footer();
