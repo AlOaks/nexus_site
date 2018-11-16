@@ -14,26 +14,26 @@
 function province_taxonomy() {
 
 	$labels = array(
-		'name'                       => _x( 'Provinces', 'Taxonomy General Name', 'nexus_theme_play' ),
-		'singular_name'              => _x( 'Province', 'Taxonomy Singular Name', 'nexus_theme_play' ),
-		'menu_name'                  => __( 'Province', 'nexus_theme_play' ),
-		'all_items'                  => __( 'All Provinces', 'nexus_theme_play' ),
+		'name'                       => _x( 'Cities', 'Taxonomy General Name', 'nexus_theme_play' ),
+		'singular_name'              => _x( 'City', 'Taxonomy Singular Name', 'nexus_theme_play' ),
+		'menu_name'                  => __( 'City', 'nexus_theme_play' ),
+		'all_items'                  => __( 'All Cities', 'nexus_theme_play' ),
 		'parent_item'                => __( 'Parent Item', 'nexus_theme_play' ),
 		'parent_item_colon'          => __( 'Parent Item:', 'nexus_theme_play' ),
-		'new_item_name'              => __( 'New Province Name', 'nexus_theme_play' ),
-		'add_new_item'               => __( 'Add New Province', 'nexus_theme_play' ),
-		'edit_item'                  => __( 'Edit Province', 'nexus_theme_play' ),
-		'update_item'                => __( 'Update Province', 'nexus_theme_play' ),
-		'view_item'                  => __( 'View Province', 'nexus_theme_play' ),
-		'separate_items_with_commas' => __( 'Separate Provinces with commas', 'nexus_theme_play' ),
-		'add_or_remove_items'        => __( 'Add or remove Provinces', 'nexus_theme_play' ),
+		'new_item_name'              => __( 'New Citie Name', 'nexus_theme_play' ),
+		'add_new_item'               => __( 'Add New City', 'nexus_theme_play' ),
+		'edit_item'                  => __( 'Edit City', 'nexus_theme_play' ),
+		'update_item'                => __( 'Update City', 'nexus_theme_play' ),
+		'view_item'                  => __( 'View City', 'nexus_theme_play' ),
+		'separate_items_with_commas' => __( 'Separate Cities with commas', 'nexus_theme_play' ),
+		'add_or_remove_items'        => __( 'Add or remove Cities', 'nexus_theme_play' ),
 		'choose_from_most_used'      => __( 'Choose from the most used', 'nexus_theme_play' ),
-		'popular_items'              => __( 'Popular Provinces', 'nexus_theme_play' ),
-		'search_items'               => __( 'Search Provinces', 'nexus_theme_play' ),
+		'popular_items'              => __( 'Popular Cities', 'nexus_theme_play' ),
+		'search_items'               => __( 'Search Cities', 'nexus_theme_play' ),
 		'not_found'                  => __( 'Not Found', 'nexus_theme_play' ),
-		'no_terms'                   => __( 'No Provinces', 'nexus_theme_play' ),
-		'items_list'                 => __( 'Provinces List', 'nexus_theme_play' ),
-		'items_list_navigation'      => __( 'Provinces List Nagivation', 'nexus_theme_play' ),
+		'no_terms'                   => __( 'No Cities', 'nexus_theme_play' ),
+		'items_list'                 => __( 'Cities List', 'nexus_theme_play' ),
+		'items_list_navigation'      => __( 'Cities List Nagivation', 'nexus_theme_play' ),
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -42,9 +42,13 @@ function province_taxonomy() {
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
+		'query_var'					 => true,
 		'show_tagcloud'              => true,
+		'show_in_rest'				 => true,
+		'rest_base'             	 => 'cities',
+		'rest_controller_class' 	 => 'WP_REST_Terms_Controller',
 	);
-	register_taxonomy( 'provinces', array ( 'programs' ), $args );
+	register_taxonomy( 'Cities', array ( 'programs' ), $args );
 
 }
 add_action( 'init', 'province_taxonomy', 0 );
@@ -81,8 +85,13 @@ function programs_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
+		'show_in_rest'				 => true,
+		'query_var'					 => true,
+		'rest_base'             	 => 'programsTypes',
+		'rest_controller_class' 	 => 'WP_REST_Terms_Controller',
+
 	);
-	register_taxonomy( 'programs-types', array ( 'programs' ), $args );
+	register_taxonomy( 'programsTypes', array ( 'programs' ), $args );
 
 }
 add_action( 'init', 'programs_taxonomy', 0 );

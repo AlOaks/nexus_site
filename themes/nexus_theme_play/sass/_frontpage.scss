@@ -2,7 +2,7 @@
 // HERO IMAGE
 
 .hero-image {
-    background: url('../../themes/nexus_theme_play/assets/images/blog_photo_post03@2x.png.jpg');
+    background: url('../../themes/nexus_theme_play/assets/images/home-hero-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,10 +115,20 @@ input[type="submit"] {
     color: $font-blue;
     width: 40%;
     text-align: center;
-    border-bottom: 5px solid $div-yellow;
     margin: $center;
     padding-top: 3%;
     font-size: 3.8rem;
+    position: relative;
+    
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 30%;
+        position: absolute;
+        height: 1px;
+        left: 35%;
+        bottom: -8px;
+    }
 }
 
 i {
@@ -171,7 +181,17 @@ i {
     color: white;
     font-family: $roboto;
     font-size: 3rem;
-    text-decoration: underline $div-yellow;
+    position: relative;
+
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 20%;
+        position: absolute;
+        height: 1px;
+        left: 40%;
+        bottom: -8px;
+    }
 }
 
 
@@ -320,9 +340,19 @@ i {
 .choose-title {
     text-align: center;
     margin-top: 4%;
-    text-decoration: underline $div-yellow;
     font-size: 3rem;
     color: $font-blue;
+    position: relative;
+    
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 20%;
+        position: absolute;
+        height: 1px;
+        left: 40%;
+        bottom: -8px;
+    }
 }
 
 .choose-faq-btn {

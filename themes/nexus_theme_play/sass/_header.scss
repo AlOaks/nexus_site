@@ -11,10 +11,33 @@ body {
     height: 15vh;
     background: white;
     display: flex;
-    border-bottom: 1px solid grey;
     position: fixed;
     top: 0;
     z-index: 1000;
+
+    .current-menu-item {
+        border-bottom: 3px solid $div-yellow;
+    }
+
+    .sub-menu {
+        background: white;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+
+
+        li {
+            padding: 1% 2%;
+
+            a {
+                font-size: .8rem;
+            }
+
+            &:hover {
+                background: $div-yellow;
+            }
+        }
+    }
 }
 
 .header-content {

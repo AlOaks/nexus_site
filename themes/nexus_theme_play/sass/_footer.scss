@@ -11,9 +11,19 @@
         margin: 0;
         font-size: 4rem;
         color: white;
-        text-decoration: underline $div-yellow;
         font-family: $roboto;
         margin-top: 3%;
+        position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 30%;
+            bottom: -8px;
+        }
     }
 
     p {
@@ -52,8 +62,19 @@
 
 .footer-title {
     color: $font-blue;
-    text-decoration: underline $div-yellow;
     font-size: 2rem;
+
+    position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 0;
+            bottom: -8px;
+        }
 }
 
 .info-div {
@@ -67,6 +88,12 @@
     
     a {
         text-decoration: underline;
+    }
+}
+
+.footer-copy {
+    .sub-menu {
+        display: none;
     }
 }
 

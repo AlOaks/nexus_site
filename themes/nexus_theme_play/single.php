@@ -42,7 +42,8 @@ get_header();
 				<li class="share-link"><a href="https://www.google.com/sharer.php"><i class="fab fa-google-plus"></i></a></li>
 			</ul>
 		</div>
-			<h3 class="comments-header">Comments</h3>
+		<section class="comments-section">
+			<h3 class="comments-header">Leave a Comment</h3>
 			<?php 
 			
 			if ( comments_open() || get_comments_number() ) :
@@ -50,6 +51,30 @@ get_header();
 			endif;
 
 			?>
+		</section>
+
+		<section class="people-likes">
+				<p class="people-title">People Also Read</p>
+				<div class="programs-container-people">
+					<?php 
+						$args = array('post_type' => 'post', 'posts_per_page' => 3);
+						$recommended = new WP_query($args);
+						
+						while( $recommended->have_posts() ) : $recommended-> the_post();
+
+					?>	
+						<div class="people-program-container">
+							<?php the_post_thumbnail(); ?>
+							<p class="people-post-name"><?php the_title(); ?></p>
+							<p class="people-excerpt"><?php echo get_the_excerpt(); ?></p>
+							<a class="post-link-single" href=<?php echo get_the_permalink(); ?>>Read</a>
+						</div>
+					<?php		
+
+						endwhile; // End of the loop.
+					?>
+				</div>			
+			</section>
 
 		<section class="start-journey-section">
 			<h1 class="start-title">Want to read even better posts?</h1>

@@ -1,0 +1,122 @@
+.search-program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+
+    h2 {
+        color: white;
+        font-size: 3rem;
+        font-family: $roboto;
+        position: relative;
+        text-align: center;
+        margin-bottom: 5%;
+
+        &:before {
+            content: "";
+            border-bottom: 3px solid $div-yellow;
+            width: 8%;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 46%;
+        }
+    }
+}
+
+.search-container {
+    width: 30%;
+    margin: $center;
+    display: flex;
+    justify-content: space-around;
+}
+
+select {
+    padding: 1% 2%;
+    color: $font-blue;
+    border-radius: 2px;
+    box-shadow: $shadow;
+}
+
+.see-programs-btn {
+    width: 15%;
+    background: $div-yellow;
+    color: $font-blue;
+    border: none;
+    box-shadow: $shadow;
+    font-size: 1.2rem;
+    font-family: $sans;
+    font-weight: bold;
+    text-align: center;
+    margin: 5% auto;
+}
+
+
+// EXPLORE MORE SECTION
+
+.xplore-more-container {
+    background: white;
+
+    .xplore-more-title {
+        color: $font-blue;
+        font-family: $sans;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 3%;
+        position: relative;
+
+        &:before {
+            content: "";
+            border-bottom: 3px solid $div-yellow;
+            width: 8%;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 46%;
+        }
+    }
+}
+
+.more-programs-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+    
+    &:nth-of-type(odd) {
+        background: $div-white;
+    }
+}
+
+.more-prg-desc {
+    width: 40%;
+    color: $font-blue;
+    font-family: $sans;
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.more-prg-icons {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.more-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    color: $font-blue;
+    font-family: $sans;
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

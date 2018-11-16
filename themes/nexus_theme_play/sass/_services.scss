@@ -8,10 +8,20 @@
 
     h1 {
         color: $font-blue;
-        text-decoration: underline #FF8A2A;
         font-family: $roboto;
         font-size: 3rem;
         font-weight: bold;
+        position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 30%;
+            bottom: 0;
+        }
     }
 }
 
@@ -30,11 +40,23 @@
 
     h1 {
         color: white;
-        text-decoration: underline #FF8A2A;
+
         font-family: $roboto;
         font-size: 3rem;
         font-weight: bold;
         margin-bottom: 0;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 30%;
+            bottom: 0;
+        }
     }
 
     p {
@@ -71,13 +93,23 @@
 
 .how-we-help-title {
     color: $font-blue;
-    text-decoration: underline $div-yellow;
     font-size: 3.5rem;
     background: $div-white;
     width: 100%;
     text-align: center;
     margin: 0;
     padding: 5% 0;
+    position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 10%;
+            position: absolute;
+            height: 1px;
+            left: 45%;
+            bottom: 30%;
+        }
 }
 
 .path {
@@ -199,8 +231,18 @@
 .consultants-title {
     font-family: $roboto;
     color: $font-blue;
-    text-decoration: underline $div-yellow;
     font-size: 3rem;
     width: 40%;
     text-align: center;
+    position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 30%;
+            bottom: 0;
+        }
 }

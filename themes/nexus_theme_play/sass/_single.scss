@@ -1,5 +1,9 @@
 .single-post {
     background: white;
+
+    .footer-copy {
+        background: $bg-blue !important;
+    }
 }
 
 .single-hero {
@@ -84,12 +88,19 @@
     }
 }
 
+// COMMENTS
+
+.comments-section {
+    width: 100%;
+    background: $div-white;
+}
+
 .comments-title {
     display: none;
 }
 
 .comments-header {
-    width: 18%;
+    width: 30%;
     text-align: center;
     color: $font-blue;
     font-size: 2rem;
@@ -98,6 +109,7 @@
     margin: $center;
     margin-top: 5%;
     position: relative;
+    padding-top: 3%;
 
     &:before {
         content: "";
@@ -110,8 +122,93 @@
     }
 }
 
-.comments-area  {
-    width: 75%;
+.comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
     margin: $center;
-    margin-top: 10%;
+    margin-top: 5%;
+    color: $font-blue;
+    font-family: $sans;
+    font-weight: bold;
+}
+
+.comment-form-author {
+    order: 1;
+    width: 35%;
+    input {
+        width: 100%;
+    }
+}
+
+.comment-form-email {
+    order: 2;
+    width: 60%;
+
+    input {
+        width: 100%;
+    }
+}
+
+.comment-form-comment {
+    order: 3;
+    width: 100%;
+}
+
+.form-submit {
+    order: 4;
+    width: 100%;
+}
+
+.comment-form-url {
+    display: none;
+}
+
+
+#reply-title {
+    display: none;
+}
+
+.comment-notes {
+    display: none;
+}
+
+// PEOPLE ALSO READ SECTION
+
+.post-link-single {
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%;
+    background: $div-red;
+    margin: 2% auto 2% auto;
+    color: white;
+    font-family: $sans;
+    font-weight: bold;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: $div-yellow;
+    }
+}
+
+.people-post-name {
+    font-weight: bold;
+    width: 95%;
+    margin: $center !important;
+}
+
+.people-excerpt {
+    font-size: .8rem;
+    width: 95%;
+    margin: $center !important;
+}
+
+// COMMENTS  
+
+.comment {
+    list-style-type: none;
 }

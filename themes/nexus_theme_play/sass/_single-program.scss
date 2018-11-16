@@ -1,0 +1,338 @@
+.program-hero {
+
+    display: flex;
+    flex-direction: column;
+    margin: $center;
+    margin-top: 12vh;
+    width: 80%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-family: $roboto;
+    position: relative;
+    margin-bottom: 10%;
+
+}
+
+.school-logo {
+    height: 100px;
+    margin: $center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.program-name {
+    position: relative;
+    margin: $center;
+    font-family: $roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 30%;
+        position: absolute;
+        height: 1px;
+        left: 35%;
+        bottom: 0;
+        
+    }
+}
+
+.program-info {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: $div-yellow;
+    color: $font-blue;
+    width: 82%;
+    margin: $center;
+    padding: 1%;
+    position: absolute;
+    bottom: -65%;
+    left: 8%;
+
+    li {
+        display: flex; 
+        flex-direction: column;
+        margin: 0;
+        border-right: 3px solid darken($div-yellow, 20%);
+        width: 25%;
+        text-align: center;
+        padding: 2% 1%;
+        
+
+        .li-title {
+            font-family: $roboto;
+            margin: 0;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1rem;
+            
+        }
+
+        .li-field {
+            font-family: $sans;
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+}
+
+// ABOUT SECTION
+
+.program-container {
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.about-program {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 5%;
+
+    img {
+        width: 47%;
+        max-height: 250px;
+    }
+}
+
+.about-program-title, .about-school-title, .about-city-title {
+    position: relative;
+    font-size: 3rem;
+    font-family: $roboto;
+    margin-bottom: 5% !important;
+    font-weight: bold;
+
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 20%;
+        position: absolute;
+        height: 1px;
+        left: 0;
+        bottom: -8px;
+    }
+}
+
+.program-description, .about-school-description, .city-description {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+
+    p {
+        color: $font-blue;
+        width: 100%;
+        font-family: $sans;
+        line-height: 36px;
+    }
+}
+
+.explore-more, .program-apply-btn {
+    text-align: center;
+    padding: .5% 5%;
+    background: $div-red;
+    box-shadow: $shadow;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: $sans;
+}
+
+
+// ABOUT SCHOOL SECTION
+
+.school-container {
+    background: $div-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+
+}
+
+.about-school {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.school-video {
+    width: 47%;
+}
+
+.about-school-description {
+    width: 47%;
+}
+
+// ABOUT CITY SECTION
+
+.city-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.about-city {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.city-img {
+    width: 47%;
+    height: 60%;
+}
+
+.city-description {
+    width: 47%;
+}
+
+// STUDENT REVIEW SECTION
+
+.student-review {
+    background: $div-white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.review-title, .people-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 3rem;
+    font-family: $roboto;
+    font-weight: bold;
+    color: $font-blue;
+
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 40%;
+        position: absolute;
+        height: 1px;
+        left: 30%;
+        bottom: -8px;
+    }
+}
+
+.review-container-program {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: $center;
+
+    img{
+        height: 15rem;
+        max-width: 20%;
+    }
+
+
+    i {
+        color: $div-yellow;
+        font-size: 2rem;
+    }
+
+    p {
+        color: $font-blue;
+        width: 70%;
+        font-family: $sans;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+
+// PEOPLE ALSO LIKE
+
+.people-likes {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+.people-title {
+    margin-top: 2%;
+}
+
+.programs-container-people {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: $center;
+}
+
+.people-program-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    border: 1px solid #979797;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+    img {
+        height: 50%;
+    }
+
+    p {
+        color: $font-blue;
+        font-family: $sans;
+        margin: 0;
+    }
+}
+
+.people-school-name {
+    height: 10%;
+    font-size: 1.2rem;
+    
+}
+
+.people-prg-name {
+    font-weight: bold;
+    height: 25%;
+    font-size: 1.5rem;
+    
+    a {
+        text-decoration: none;
+        color: $font-blue;
+
+        &:visited {
+            color: $font-blue;
+        }
+
+        &:hover {
+            color: lighten($font-blue, 20%);
+        }
+    }
+}
+
+.people-prg-category {
+    height: 15%;
+    font-size: 1.2rem;
+}
+
+
