@@ -2921,12 +2921,12 @@ select {
       font-weight: 600;
       font-size: 1.1rem; }
 
-#popmake-155 {
+#popmake-155, #popmake-87 {
   padding: 0;
   top: 5% !important; }
-  #popmake-155 .popmake-content {
+  #popmake-155 .popmake-content, #popmake-87 .popmake-content {
     background: rgba(255, 197, 76, 0.75); }
-    #popmake-155 .popmake-content h2 {
+    #popmake-155 .popmake-content h2, #popmake-87 .popmake-content h2 {
       margin-top: 0;
       color: #193F5C;
       text-align: center;
@@ -2934,12 +2934,12 @@ select {
       font-family: "Roboto";
       font-size: 3rem;
       font-weight: bold; }
-    #popmake-155 .popmake-content p {
+    #popmake-155 .popmake-content p, #popmake-87 .popmake-content p {
       margin-bottom: 0;
       width: 40%;
       margin: 0 auto 0 auto;
       padding-bottom: 3%; }
-    #popmake-155 .popmake-content input[type="submit"] {
+    #popmake-155 .popmake-content input[type="submit"], #popmake-87 .popmake-content input[type="submit"] {
       background: #E91C35;
       color: white;
       width: 100%;
