@@ -2774,3 +2774,132 @@ select {
 .people-prg-category {
   height: 15%;
   font-size: 1.2rem; }
+
+#popmake-144, #popmake-88 {
+  top: 5% !important;
+  padding: 0; }
+  #popmake-144 .popmake-content, #popmake-88 .popmake-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.form-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #15405A;
+  width: 50%; }
+  .form-book img {
+    margin-top: 5%; }
+  .form-book h2 {
+    color: white;
+    font-family: "Roboto";
+    font-size: 2.3rem;
+    font-weight: bold;
+    position: relative; }
+    .form-book h2:before {
+      content: "";
+      border-bottom: 3px solid #FFC54C;
+      width: 40%;
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      left: 30%; }
+  .form-book input {
+    line-height: 0; }
+    .form-book input::-webkit-input-placeholder {
+      padding-left: 2%;
+      color: gray;
+      font-size: .8rem; }
+    .form-book input:-ms-input-placeholder {
+      padding-left: 2%;
+      color: gray;
+      font-size: .8rem; }
+    .form-book input::-ms-input-placeholder {
+      padding-left: 2%;
+      color: gray;
+      font-size: .8rem; }
+    .form-book input::placeholder {
+      padding-left: 2%;
+      color: gray;
+      font-size: .8rem; }
+  .form-book select {
+    width: 100%;
+    font-size: .8rem;
+    color: gray;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .form-book select option {
+      color: gray; }
+  .form-book .wpcf7-list-item-label {
+    color: white;
+    font-size: .8rem;
+    margin-top: -5%; }
+  .form-book p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .form-book .wpcf7-submit {
+    background: #E91C35;
+    color: white;
+    width: 100%;
+    border: none;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+
+.why-nexus-book {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto"; }
+  .why-nexus-book h2 {
+    color: #193F5C;
+    font-size: 2.3rem;
+    font-weight: bold;
+    position: relative;
+    margin-top: 15%; }
+    .why-nexus-book h2:before {
+      content: "";
+      border-bottom: 3px solid #FFC54C;
+      width: 40%;
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      left: 30%; }
+  .why-nexus-book ul {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto 0 auto; }
+    .why-nexus-book ul li {
+      color: #193F5C;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 1.1rem; }

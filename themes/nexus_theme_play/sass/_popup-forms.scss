@@ -1,0 +1,126 @@
+#popmake-144, #popmake-88 {
+    top: 5% !important;
+    padding: 0;
+
+    .popmake-content {
+        display: flex;
+        justify-content: space-between;
+    }  
+}
+
+
+.form-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: $bg-blue;
+    width: 50%;
+
+    img {
+        margin-top: 5%;
+    }
+
+    h2 {
+        color: white;
+        font-family: $roboto;
+        font-size: 2.3rem;
+        font-weight: bold;
+        position: relative;
+
+        &:before {
+            content: "";
+            border-bottom: 3px solid $div-yellow;
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 30%;
+        }
+    }
+
+    input {
+
+        line-height: 0;
+    
+        &::placeholder {
+        padding-left: 2%;
+        color: gray;
+        font-size: .8rem;
+        }
+    }
+
+    select {
+        width: 100%;
+        font-size: .8rem;
+        color: gray;
+        box-shadow: none;
+
+        option {
+            color: gray;
+        }
+    }
+    
+    .wpcf7-list-item-label {
+        color: white;
+        font-size: .8rem;
+        margin-top: -5%;
+    }
+
+    p {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .wpcf7-submit {
+        background: $div-red;
+        color: white;
+        width: 100%;
+        border: none;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.why-nexus-book {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $roboto;
+
+    h2 {
+        color: $font-blue;
+        font-size: 2.3rem;
+        font-weight: bold;
+        position: relative;
+        margin-top: 15%;
+
+        &:before {
+            content: "";
+            border-bottom: 3px solid $div-yellow;
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 30%;
+        }
+    }
+
+    ul {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: $center;
+
+        li {
+            color: $font-blue;
+            font-family: $sans;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    }
+}
