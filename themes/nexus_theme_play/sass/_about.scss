@@ -43,11 +43,21 @@
     }
 }
 
+.nexus-mission {
+    font-family: $sans;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $font-blue;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 .nexus-information {
     background: $div-yellow;
     width: 30%;
     position: absolute;
-    top: 55%;
+    top: 86%;
     right: 12%;
     color: $font-blue;
 

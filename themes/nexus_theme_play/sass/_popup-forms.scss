@@ -1,3 +1,11 @@
+
+
+.pum-theme-default-theme {
+    background: rgba(0,0,0,.8) !important;
+}
+
+// BOOK CONSULT FORM
+
 #popmake-144, #popmake-88 {
     top: 5% !important;
     padding: 0;
@@ -39,9 +47,18 @@
         }
     }
 
+    span {
+        width: 100%;
+    }
+
+    input[type="checkbox"] {
+        width: 5%;
+    }
+
     input {
 
         line-height: 0;
+        width: 100%;
     
         &::placeholder {
         padding-left: 2%;
@@ -51,8 +68,8 @@
     }
 
     select {
-        width: 100%;
         font-size: .8rem;
+        width: 100%;
         color: gray;
         box-shadow: none;
 
@@ -123,4 +140,85 @@
             font-size: 1.1rem;
         }
     }
+}
+
+
+// START YOUR JOURNEY FORM
+
+#popmake-155 {
+    padding: 0;
+    top: 5% !important;
+
+    .popmake-content {
+        background: $div-yellow-form;
+
+
+        h2 {
+            margin-top: 0;
+            color: $font-blue;
+            text-align: center;
+            padding-top: 5%;
+            font-family: $roboto;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 0;
+            width: 40%;
+            margin: $center;
+            padding-bottom: 3%;
+        }
+
+        input[type="submit"]{
+            background: $div-red;
+            color: white;
+            width: 100%;
+            border: none;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+    }
+}
+
+
+
+.form-start-form {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: $center;
+
+    span {
+        width: 45%;
+        margin: 5% 5% 5% 0;
+        
+
+        input {
+            width: 100%;
+            line-height: 0;
+
+            &::placeholder {
+                padding: 1% 2%;
+                font-family: $sans;
+                font-size: .8rem;
+                color: gray;
+            }
+        }
+
+        select {
+            width: 100%;
+            box-shadow: none;
+            color: gray;
+            font-size: .8rem;
+
+            option {
+                color: gray;
+            }
+        }
+    }
+
+    
+
 }

@@ -111,7 +111,7 @@ get_header();
             <section class="start-journey-section">
 				<h1 class="start-title">Start Your Journey</h1>
 				<p class="start-description">Let us help you find your path to success</p>
-				<a class="contact-btn">Contact Us</a>
+				<a class="contact-btn start-trigger">Contact Us</a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1859,11 +1859,20 @@ i {
     width: 80%;
     margin: 0 auto 0 auto; }
 
+.nexus-mission {
+  font-family: "Open Sans";
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #193F5C;
+  font-size: 1.3rem;
+  text-align: center; }
+
 .nexus-information {
   background: #FFC54C;
   width: 30%;
   position: absolute;
-  top: 55%;
+  top: 86%;
   right: 12%;
   color: #193F5C; }
   .nexus-information h1 {
@@ -2775,6 +2784,9 @@ select {
   height: 15%;
   font-size: 1.2rem; }
 
+.pum-theme-default-theme {
+  background: rgba(0, 0, 0, 0.8) !important; }
+
 #popmake-144, #popmake-88 {
   top: 5% !important;
   padding: 0; }
@@ -2817,8 +2829,13 @@ select {
       bottom: 0;
       height: 1px;
       left: 30%; }
+  .form-book span {
+    width: 100%; }
+  .form-book input[type="checkbox"] {
+    width: 5%; }
   .form-book input {
-    line-height: 0; }
+    line-height: 0;
+    width: 100%; }
     .form-book input::-webkit-input-placeholder {
       padding-left: 2%;
       color: gray;
@@ -2836,8 +2853,8 @@ select {
       color: gray;
       font-size: .8rem; }
   .form-book select {
-    width: 100%;
     font-size: .8rem;
+    width: 100%;
     color: gray;
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -2903,3 +2920,75 @@ select {
       font-family: "Open Sans";
       font-weight: 600;
       font-size: 1.1rem; }
+
+#popmake-155 {
+  padding: 0;
+  top: 5% !important; }
+  #popmake-155 .popmake-content {
+    background: rgba(255, 197, 76, 0.75); }
+    #popmake-155 .popmake-content h2 {
+      margin-top: 0;
+      color: #193F5C;
+      text-align: center;
+      padding-top: 5%;
+      font-family: "Roboto";
+      font-size: 3rem;
+      font-weight: bold; }
+    #popmake-155 .popmake-content p {
+      margin-bottom: 0;
+      width: 40%;
+      margin: 0 auto 0 auto;
+      padding-bottom: 3%; }
+    #popmake-155 .popmake-content input[type="submit"] {
+      background: #E91C35;
+      color: white;
+      width: 100%;
+      border: none;
+      padding-bottom: 20px;
+      padding-top: 20px; }
+
+.form-start-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto 0 auto; }
+  .form-start-form span {
+    width: 45%;
+    margin: 5% 5% 5% 0; }
+    .form-start-form span input {
+      width: 100%;
+      line-height: 0; }
+      .form-start-form span input::-webkit-input-placeholder {
+        padding: 1% 2%;
+        font-family: "Open Sans";
+        font-size: .8rem;
+        color: gray; }
+      .form-start-form span input:-ms-input-placeholder {
+        padding: 1% 2%;
+        font-family: "Open Sans";
+        font-size: .8rem;
+        color: gray; }
+      .form-start-form span input::-ms-input-placeholder {
+        padding: 1% 2%;
+        font-family: "Open Sans";
+        font-size: .8rem;
+        color: gray; }
+      .form-start-form span input::placeholder {
+        padding: 1% 2%;
+        font-family: "Open Sans";
+        font-size: .8rem;
+        color: gray; }
+    .form-start-form span select {
+      width: 100%;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: gray;
+      font-size: .8rem; }
+      .form-start-form span select option {
+        color: gray; }
