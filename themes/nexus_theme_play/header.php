@@ -29,7 +29,7 @@
 		
 			<a href=<?php echo esc_url( home_url( '/' ) ); ?> ><img class="nexuslogo" src=<?php echo get_template_directory_uri().'/assets/images/nexus_logo_04.png' ?>></a>
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nexus_theme_scratch' ); ?></button>
+			<button class="menu-btn-toggle"><i class="fas fa-bars"></i></button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

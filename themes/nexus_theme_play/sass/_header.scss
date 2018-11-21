@@ -47,15 +47,45 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include mobile {
+        justify-content: space-around;
+        margin: 0;
+    }
 }
 
 .main-navigation {
     width: 80%;
 
-    ul {
+    .menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile {
+            position: absolute;
+            flex-direction: column;
+            right: 10%;
+            top: 15vh;
+            background: white;
+            padding: 2%;
+            display: none;
+        }
+    }
+
+    .menu-btn-toggle {
+        display: none;
+        
+        @include mobile {
+            float: right;
+            background: white;
+            display: block;
+
+            i {
+                font-size: 2rem !important;
+            }
+
+        }
     }
 }
 

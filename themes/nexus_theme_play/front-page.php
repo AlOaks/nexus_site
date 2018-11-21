@@ -74,7 +74,7 @@ get_header();
 			</section>
 
 			<section class="why-canada-section">
-				<h1 class="why-canada-title">Why Canada?</h1>
+				<h2 class="why-canada-title">Why Canada?</h2>
 				<button class="slider-btn btn-lft">></button>
                 <button class="slider-btn btn-right"><</button>
 				<div class="slider-canada">			
@@ -85,7 +85,7 @@ get_header();
 			</section>
 
 			<section class="curious-section">
-				<h1 class="curious-title">Curious About Canada?</h1>
+				<h3 class="curious-title">Curious About Canada?</h3>
 				<a class="visit-faq-btn">Visit FAQ Section</a>
 			</section>
 

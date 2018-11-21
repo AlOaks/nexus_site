@@ -24,6 +24,10 @@
             left: 30%;
             bottom: -8px;
         }
+
+        @include mobile {
+            font-size: 2rem;
+        }
     }
 
     p {
@@ -31,6 +35,10 @@
         font-style: italic;
         font-family: $sans;
         font-size: 2rem;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 
     a {
@@ -57,6 +65,12 @@
     justify-content: space-around;
     align-items: flex-start;
     height: 45vh;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
     
 }
 
@@ -75,7 +89,18 @@
             left: 0;
             bottom: -8px;
         }
+
+    @include mobile {
+        font-size: 1.3rem;
+
+        &::before {
+            left: 30%;
+        }
+    }    
 }
+
+
+
 
 .info-div {
     flex-basis: 22%;
@@ -89,7 +114,13 @@
     a {
         text-decoration: underline;
     }
+
+    @include mobile {
+        flex-basis: 100%;
+    }
+   
 }
+
 
 .footer-copy {
     .sub-menu {
@@ -102,6 +133,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
+
+    @include mobile {
+        margin-top: 5%;
+    }
+
 }
 
 .social-logo {
@@ -119,10 +155,49 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none !important;
+
+    @include mobile {
+        margin-top: 40%;
+        padding: 1%;
+        width: 100%;
+    }
+}
+
+.nexus-social {
+    @include mobile {
+        align-items: center;
+    }
 }
 
 .contact-footer {
     align-items: left;
+
+    @include mobile {
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .phone {
+        @include mobile {
+            order: 1;
+        }
+    }
+
+    .address-nexus {
+        @include mobile {
+            order: 3;
+        }
+    }
+
+    .office-hours {
+        @include mobile {
+            order: 2;
+        }
+    }
 }
 
 
@@ -135,15 +210,37 @@
     align-items: center;
     height: 5vh;
 
+    @include mobile {
+        height: 30vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .copyright {
         color: white;
         font-size: 1.1rem;
         margin: 0;
+
+        @include mobile {
+            order: 2;
+        }
     }
 
     .menu-menu-1-container {
         width: 60%;
         height: 90%;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            li {
+                text-align: center;
+            }
+        }
 
     }
 
@@ -154,6 +251,12 @@
         justify-content: space-between;
         margin: 0;
 
+        @include mobile {
+            flex-direction: column;
+            padding-left: 0;
+            margin-top: 10%;
+        }
+
 
         a {
             color: white;
@@ -162,5 +265,11 @@
             font-weight: 300;
             font-size: .9rem;
         }
+    }
+}
+
+.why-nexus-footer {
+    @include mobile {
+        display: none;
     }
 }
