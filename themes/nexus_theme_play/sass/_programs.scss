@@ -12,6 +12,12 @@
         text-align: center;
         margin-bottom: 5%;
 
+        @include mobile {
+            font-size: 2rem;
+            width: 60%;
+            margin: $center;
+        }
+
         &:before {
             content: "";
             border-bottom: 3px solid $div-yellow;
@@ -29,6 +35,10 @@
     margin: $center;
     display: flex;
     justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 select {

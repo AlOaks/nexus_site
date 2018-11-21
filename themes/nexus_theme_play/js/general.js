@@ -14,6 +14,13 @@ $('.btn-right').click(function() {
  $('.slider-canada').scrollLeft((currentRight - slideWidth));
  });
 
+ /* HEADER */
+
+$('.menu-btn-active').click(function(e) {
+    e.preventDefault;
+    $('.menu').slideToggle('slow');
+})
+
 
 /* BLOG FUNCTIONS */
 $('.bttn-right').click(function() {

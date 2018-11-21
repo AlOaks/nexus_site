@@ -15,6 +15,10 @@ body {
     top: 0;
     z-index: 1000;
 
+    @include mobile {
+      width: 100%;
+    }
+
     .current-menu-item {
         border-bottom: 3px solid $div-yellow;
     }
@@ -63,17 +67,28 @@ body {
         align-items: center;
 
         @include mobile {
+            display: none;
+            right: 0;
+            top: 15vh;
+            background: $div-white;
+            padding: 4%;
             position: absolute;
             flex-direction: column;
-            right: 10%;
-            top: 15vh;
-            background: white;
-            padding: 2%;
-            display: none;
+
+            li {
+                float: none;
+                text-align: center;
+                margin-top: 10%;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+
         }
     }
 
-    .menu-btn-toggle {
+    .menu-btn-active {
         display: none;
         
         @include mobile {
