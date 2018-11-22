@@ -64,10 +64,11 @@ get_header();
                 <h2 class="xplore-more-title">Explore More Options</h2>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Language Programs</h2>
+                        <h2 class="more-prg-title">Language Programs <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
-                    <div class="more-prg-icons">
+                    <div class="more-prg-icons icons-1">
+                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title">Duration</h2>
@@ -88,10 +89,11 @@ get_header();
                 <div class="more-programs-container">
 
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Work & Study</h2>
+                        <h2 class="more-prg-title">Work & Study <i class="fas fa-chevron-down chevron-2"></i><i class="fas fa-chevron-up chev-up-2"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
-                    <div class="more-prg-icons">
+                    <div class="more-prg-icons icons-2">
+                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title">Duration</h2>
@@ -111,10 +113,11 @@ get_header();
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Diplomas</h2>
+                        <h2 class="more-prg-title">Diplomas <i class="fas fa-chevron-down chevron-3"></i><i class="fas fa-chevron-up chev-up-3"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
-                    <div class="more-prg-icons">
+                    <div class="more-prg-icons icons-3">
+                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title">Duration</h2>
@@ -134,10 +137,11 @@ get_header();
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Degrees</h2>
+                        <h2 class="more-prg-title">Degrees <i class="fas fa-chevron-down chevron-4"></i><i class="fas fa-chevron-up chev-up-4"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
-                    <div class="more-prg-icons">
+                    <div class="more-prg-icons icons-4">
+                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title">Duration</h2>
@@ -157,10 +161,11 @@ get_header();
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Certificates</h2>
+                        <h2 class="more-prg-title">Certificates<i class="fas fa-chevron-down chevron-5"></i><i class="fas fa-chevron-up chev-up-5"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
-                    <div class="more-prg-icons">
+                    <div class="more-prg-icons icons-5">
+                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title">Duration</h2>

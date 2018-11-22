@@ -56,6 +56,8 @@ get_header();
 		<section class="people-likes">
 				<p class="people-title">People Also Read</p>
 				<div class="programs-container-people">
+				<button class="peo-btn-left peo-btn"><i class="fas fa-chevron-left"></i></button>
+				<button class="peo-btn-right peo-btn"><i class="fas fa-chevron-right"></i></button>
 					<?php 
 						$args = array('post_type' => 'post', 'posts_per_page' => 3);
 						$recommended = new WP_query($args);

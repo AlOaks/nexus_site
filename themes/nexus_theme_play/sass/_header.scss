@@ -17,6 +17,7 @@ body {
 
     @include mobile {
       width: 100%;
+      justify-content: space-around;
     }
 
     .current-menu-item {
@@ -97,7 +98,7 @@ body {
             display: block;
 
             i {
-                font-size: 2rem !important;
+                font-size: 3rem !important;
             }
 
         }
@@ -124,5 +125,40 @@ body {
 
     a {
         color: white;
+    }
+}
+
+.page-title-container {
+    margin-top: 10vh;
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        margin-top: 8vh;
+    }
+
+    h1 {
+        color: $font-blue;
+        font-family: $roboto;
+        font-size: 3rem;
+        font-weight: bold;
+        position: relative;
+
+        @include mobile {
+            font-size: 2rem;
+        }
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 30%;
+            bottom: 0;
+        }
     }
 }

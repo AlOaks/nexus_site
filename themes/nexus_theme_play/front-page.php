@@ -49,6 +49,8 @@ get_header();
 			<section class="why-nexus-section">
 				<h1 class="why-title">Why use Nexus?</h1>
 				<div class="why-items-container">
+				<button class="why-btn-left why-btn"><i class="fas fa-chevron-left"></i></button>
+				<button class="why-btn-right why-btn"><i class="fas fa-chevron-right"></i></button>
 					<div class="why-item">
 						<i class="far fa-clock"></i>
 						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -70,7 +72,7 @@ get_header();
 						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 				</div>
-				<a class="get-quote-btn">Get Quote</a>
+				<a class="get-quote-btn menu-item-51 menu-item-25">Get Quote</a>
 			</section>
 
 			<section class="why-canada-section">

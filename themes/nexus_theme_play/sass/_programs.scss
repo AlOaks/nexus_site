@@ -4,6 +4,10 @@
     justify-content: center;
     height: 60vh;
 
+    @include mobile {
+        justify-content: space-around;
+    }
+
     h2 {
         color: white;
         font-size: 3rem;
@@ -14,18 +18,18 @@
 
         @include mobile {
             font-size: 2rem;
-            width: 60%;
+            width: 65%;
             margin: $center;
         }
 
         &:before {
             content: "";
             border-bottom: 3px solid $div-yellow;
-            width: 8%;
+            width: 20%;
             position: absolute;
             bottom: 0;
             height: 1px;
-            left: 46%;
+            left: 40%;
         }
     }
 }
@@ -38,6 +42,9 @@
 
     @include mobile {
         flex-direction: column;
+        justify-content: space-around;
+        height: 25%;
+        width: 90%;
     }
 }
 
@@ -46,6 +53,10 @@ select {
     color: $font-blue;
     border-radius: 2px;
     box-shadow: $shadow;
+
+    @include mobile {
+        padding: 2% 2%;
+    }
 }
 
 .see-programs-btn {
@@ -59,6 +70,10 @@ select {
     font-weight: bold;
     text-align: center;
     margin: 5% auto;
+
+    @include mobile {
+        width: 60%;
+    }
 }
 
 
@@ -67,6 +82,10 @@ select {
 .xplore-more-container {
     background: white;
 
+    @include mobile {
+        padding-bottom: 5%;
+    }
+
     .xplore-more-title {
         color: $font-blue;
         font-family: $sans;
@@ -74,6 +93,10 @@ select {
         text-align: center;
         padding-top: 3%;
         position: relative;
+
+        @include mobile {
+            font-size: 1.4rem;
+        }
 
         &:before {
             content: "";
@@ -95,6 +118,30 @@ select {
     &:nth-of-type(odd) {
         background: $div-white;
     }
+
+    @include mobile {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+
+        &:nth-of-type(odd) {
+            background: white;
+        }
+    }
+}
+
+.more-prg-title {
+    margin-bottom: 0;
+    background: $div-white;
+}
+
+.more-prg-paragraph-2 {
+    color: $font-blue;
+    font-family: $sans;
+    font-size: 1rem;
+    flex-basis: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .more-prg-desc {
@@ -102,20 +149,84 @@ select {
     color: $font-blue;
     font-family: $sans;
 
+
     h2 {
         font-size: 2.1rem;
+        font-family: $roboto;
     }
 
     p {
         font-size: 1.2rem;
     }
+
+    i {
+        display: none;
+    }
+
+
+    @include mobile {
+        width: 100%;
+
+        h2 {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 2%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            i {
+                display: block;
+                font-size: 1.2rem;
+                color: $font-blue;
+            }
+
+            .fa-chevron-up {
+                display: none;
+            }
+        }
+
+        .more-prg-paragraph {
+            display: none;
+        }
+
+    }
 }
+
+
+
 
 .more-prg-icons {
     width: 40%;
     display: flex;
     justify-content: space-around;
+
+    @include mobile {
+        display: none;
+        width: 90%;
+        border: 1px solid lighten(gray, 30%);
+        border-radius: 5px;
+        margin: $center;
+        flex-wrap: wrap;
+    
+
+        i {
+            font-size: 2rem;
+        }
+
+    }
 }
+
+.more-prg-icons-shown {
+    @include mobile {
+        display: flex;
+    }
+}
+
 
 .more-icon {
     display: flex;
@@ -125,8 +236,19 @@ select {
     width: 30%;
     color: $font-blue;
     font-family: $sans;
+    flex-basis: 30%;
 
     h2 {
         font-size: 1.2rem;
+
+        @include mobile {
+            font-size: 1rem;
+        }
+    }
+}
+
+.more-icon-desc {
+    @include mobile {
+        display: none;
     }
 }

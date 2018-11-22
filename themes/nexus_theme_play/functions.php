@@ -123,6 +123,7 @@ function nexus_theme_scratch_scripts() {
 	wp_enqueue_style( 'nexus_theme_scratch-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('general-js', get_template_directory_uri().'/build/js/general.min.js', array('jquery'), null, true);
+	wp_enqueue_script('ajax-js', get_template_directory_uri().'/build/js/ajax-call.min.js', array('jquery'), null, true);
 
 	wp_enqueue_script( 'nexus_theme_scratch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
