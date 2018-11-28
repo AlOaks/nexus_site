@@ -68,11 +68,27 @@ get_header();
 						}
 					?>
 				</ul>
+				
+
+				<div class="blog-categories-dropdown">Categories <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></div>
+				<ul class="blog-cats-dropdown">
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Category</a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Media</a></li>
+					<?php
+						foreach ($cats as $cat) {
+							$cat_id = get_cat_ID($cat->name);
+							$cat_link = get_category_link($cat_id);
+					?>
+							<li class="post-cat"><a href=<?php echo $cat_link; ?>><?php echo $cat->name; ?></a></li>
+					<?php		
+						}
+					?>
+				</ul>
 
 				<section class="blog-section">
 						<?php		
 
-						query_posts('posts_per_page=-1');			
+						query_posts('posts_per_page=4');			
 						while ( have_posts() ) : the_post(); 
 							
 								$video = CFS()->get('post_video');
@@ -86,7 +102,7 @@ get_header();
 										<h1 class="video-title"><?php echo $title ?></h1>
 									</div>
 								<?php	
-								} elseif(empty($video)) {
+								} else if(empty($video)) {
 								?>
 									<div class="post-container">
 										<?php echo $img; ?>
@@ -96,9 +112,14 @@ get_header();
 									</div>
 								<?php
 								}
+
 						endwhile; 
 						?>
+							
+						
+						
 				</section>
+				<button id="more_posts">Load More</button>
 		</section>
 		<section class="start-journey-section">
 			<h1 class="start-title">Can't find what you're looking for?</h1>

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: FAQ
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -20,18 +20,10 @@ get_header();
 			<div class="page-title-container">
 				<h1 class="type-page-title"><?php the_title() ?></h1>
 			</div>
-		<?php 
-
-			$type = get_the_title();
-			$args = array(
-				'post_type' => 'programs'
-			);
-
-			$prog_query = new WP_query($args);
-		
-		while ( $prog_query->have_posts() ) : $prog_query->the_post(); ?>
+        <?php 
+        		
+		while ( have_posts() ) : the_post(); ?>
 			
-		 	<?php the_title(); ?>
 			
 		<?php
 		endwhile; // End of the loop.

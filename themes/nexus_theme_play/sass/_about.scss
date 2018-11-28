@@ -1,5 +1,25 @@
 .page-template-page-contact {
     background: white;
+
+    .footer-copy {
+        background: $bg-blue;
+    }
+
+    @include mobile {
+        .site-main {
+            display: flex;
+            flex-direction: column;
+    
+            .page-title-container {
+                order: 1;
+            }
+
+            .start-journey-section {
+                order: 10;
+            }
+
+        }
+    }
 }
 
 .contact-form-container {
@@ -10,6 +30,14 @@
     margin-top: 5%;
     position: relative;
     margin-bottom: 5%;
+
+    @include mobile {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     
     h1 {
         margin-top: 0;
@@ -19,6 +47,14 @@
         border-bottom: 5px solid $div-yellow-dark;
         margin-left: 10%;
         padding-top: 5%;
+
+        @include mobile {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-left: auto; 
+            margin-right: auto;
+            width: 70%;
+        }
     }
 
     input[type="submit"] {
@@ -27,14 +63,27 @@
         color: white;
         margin: 0 auto 0 15%;
         width: 50%;
+
+        @include mobile {
+            width: 70%;
+        }
+        
     }
 
     input[type="text"], input[type="email"] {
         width: 80%;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     textarea {
         width: 80%;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     .wpcf7 {
@@ -51,6 +100,10 @@
     color: $font-blue;
     font-size: 1.3rem;
     text-align: center;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .nexus-information {
@@ -61,8 +114,23 @@
     right: 12%;
     color: $font-blue;
 
+    @include mobile {
+        position: relative;
+        order: 2;
+        background: $div-white;
+        width: 100%;
+        right: 0;
+    }
+
     h1 {
         margin-left: 10%;
+
+        @include mobile {
+            font-size: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
     }
 
     .info-description {

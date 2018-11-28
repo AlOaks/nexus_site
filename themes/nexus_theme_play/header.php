@@ -25,6 +25,19 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nexus_theme_scratch' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<?php 
+			if(is_user_logged_in()) { 
+				$current_user = get_currentuserinfo();		
+		?>
+
+			<p class="login-link">Hello, <?php echo $current_user->user_login; ?> </p>
+		
+		<?php } else { ?>
+			
+			<a class="login-link join-link">Join Nexus Club</a>
+		
+
+		<?php } ?>
 		<section class="header-content">
 		
 			<a href=<?php echo esc_url( home_url( '/' ) ); ?> ><img class="nexuslogo" src=<?php echo get_template_directory_uri().'/assets/images/nexus_logo_04.png' ?>></a>

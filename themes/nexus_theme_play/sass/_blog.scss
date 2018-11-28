@@ -13,6 +13,8 @@
 .popular-section {
     width: 85%;
     margin: $center;
+
+    
 }
 
 
@@ -24,6 +26,10 @@
     // &::-webkit-scrollbar {
     //     display: none;
     // }
+
+    @include mobile {
+        height: 30vh;
+    }
 
 }
 
@@ -39,6 +45,10 @@
     &:hover {
         background: rgba(255,255,255, .5);
         transition-duration: .5s;
+    }
+
+    @include mobile {
+        font-size: 2rem;
     }
 
 }
@@ -79,6 +89,10 @@
             font-family: $roboto;
             margin: 0;
             z-index: 2;
+
+            @include mobile {
+                font-size: 1.3rem;
+            }
         }
 
         img {
@@ -94,6 +108,10 @@
     background: $div-red;
     color: white;
     padding: 1% 2%;
+
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 
 
@@ -107,6 +125,67 @@
     margin: $center;
 }
 
+.misha_loadmore {
+    background: red;
+}
+
+.blog-categories-dropdown {
+    display: none;
+
+    @include mobile {
+        display: block;
+        width: 40%;
+        background: $div-red;
+        color: white;
+        font-family: $roboto;
+        font-size: 1rem;
+        margin-left: 7.5%;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        i {
+            font-size: 1rem;
+            color: white;
+        }
+
+        .fa-chevron-up {
+            display: none;
+        }
+    }
+}
+
+.blog-cats-dropdown {
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: $div-white;
+    margin: $center;
+    width: 85%;
+    margin-bottom: 5%;
+    margin-top: -5%;
+    padding-left: 10px;
+
+    li {
+        padding: 5px 0;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $roboto;
+        font-weight: bold;
+
+        &:visited {
+            color: $font-blue;
+        }
+    }
+    
+}
+
 .blog-cats {
     display: flex;
     justify-content: space-between;
@@ -114,6 +193,10 @@
     margin: $center;
     padding: 0;
     margin-bottom: 3%;
+
+    @include mobile {
+        display: none;
+    }
 
     li {
         border-right: 1px solid #ECECEC;
@@ -175,10 +258,18 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include mobile {
+        width: 100%;
+    }
+
 
     h1 {
         margin: 0 0 2.5% 1%;
         color: $font-blue;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -196,6 +287,10 @@
 .post-container {
     height: 25rem;
 
+    @include mobile {
+        height: 40vh;
+    }
+
     h1 {
         margin-bottom: 0;
         margin-top: -1rem;
@@ -207,6 +302,10 @@
         margin-top: -3%;
         margin-left: 1%;
         font-family: $sans;
+
+        @include mobile {
+            display: none;
+        }
     }
 }
 

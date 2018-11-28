@@ -18,7 +18,8 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div class="page-title-container">
-                <h1>Programs</h1>
+                <h1 class="programs-page-title">Programs</h1>
+                <p class="programs-description-hero">TEST</p>
             </div>
             <section class="search-program">
                 <h2 class="hero-title-programs">Already made up your mind?</h2>
@@ -64,7 +65,7 @@ get_header();
                 <h2 class="xplore-more-title">Explore More Options</h2>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Language Programs <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <h2 class="more-prg-title box-1">Language Programs <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="more-prg-icons icons-1">
@@ -89,7 +90,7 @@ get_header();
                 <div class="more-programs-container">
 
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Work & Study <i class="fas fa-chevron-down chevron-2"></i><i class="fas fa-chevron-up chev-up-2"></i></h2>
+                        <h2 class="more-prg-title box-2">Work & Study <i class="fas fa-chevron-down chevron-2"></i><i class="fas fa-chevron-up chev-up-2"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="more-prg-icons icons-2">
@@ -113,7 +114,7 @@ get_header();
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Diplomas <i class="fas fa-chevron-down chevron-3"></i><i class="fas fa-chevron-up chev-up-3"></i></h2>
+                        <h2 class="more-prg-title box-3">Diplomas <i class="fas fa-chevron-down chevron-3"></i><i class="fas fa-chevron-up chev-up-3"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="more-prg-icons icons-3">
@@ -137,7 +138,7 @@ get_header();
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Degrees <i class="fas fa-chevron-down chevron-4"></i><i class="fas fa-chevron-up chev-up-4"></i></h2>
+                        <h2 class="more-prg-title box-4">Degrees <i class="fas fa-chevron-down chevron-4"></i><i class="fas fa-chevron-up chev-up-4"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="more-prg-icons icons-4">
@@ -161,7 +162,7 @@ get_header();
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title">Certificates<i class="fas fa-chevron-down chevron-5"></i><i class="fas fa-chevron-up chev-up-5"></i></h2>
+                        <h2 class="more-prg-title box-5">Certificates<i class="fas fa-chevron-down chevron-5"></i><i class="fas fa-chevron-up chev-up-5"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="more-prg-icons icons-5">

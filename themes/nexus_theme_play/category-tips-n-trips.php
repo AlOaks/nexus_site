@@ -69,6 +69,21 @@ get_header();
 					?>
 				</ul>
 
+				<div class="blog-categories-dropdown">Tips & Trips <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></div>
+				<ul class="blog-cats-dropdown">
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Category</a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Media</a></li>
+					<?php
+						foreach ($cats as $cat) {
+							$cat_id = get_cat_ID($cat->name);
+							$cat_link = get_category_link($cat_id);
+					?>
+							<li class="post-cat"><a href=<?php echo $cat_link; ?>><?php echo $cat->name; ?></a></li>
+					<?php		
+						}
+					?>
+				</ul>
+
 				<section class="blog-section">
 						<?php		
                         $args = array('posts_per_page'=>-1, 'category_name'=>'tips-n-trips');

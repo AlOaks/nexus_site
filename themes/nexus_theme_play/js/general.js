@@ -76,132 +76,56 @@ $('.bttn-lft').click(function() {
 
 
 
-$('.chevron-1').click(function() {
+$('.box-1').click(function() {
     $('.icons-1').toggleClass('more-prg-icons-shown');
     $('.chevron-1').toggle();
     $('.chev-up-1').toggle();
 });
 
-$('.chev-up-1').click(function() {
-    $('.icons-1').toggleClass('more-prg-icons-shown');
-    $('.chev-up-1').toggle();
-    $('.chevron-1').toggle();
-    
-});
 
-$('.chevron-2').click(function() {
+
+$('.box-2').click(function() {
     $('.icons-2').toggleClass('more-prg-icons-shown');
     $('.chevron-2').toggle();
     $('.chev-up-2').toggle();
 });
 
-$('.chev-up-2').click(function() {
-    $('.icons-2').toggleClass('more-prg-icons-shown');
-    $('.chev-up-2').toggle();
-    $('.chevron-2').toggle();
-    
-});
 
-$('.chevron-3').click(function() {
+
+$('.box-3').click(function() {
     $('.icons-3').toggleClass('more-prg-icons-shown');
     $('.chevron-3').toggle();
     $('.chev-up-3').toggle();
 });
 
-$('.chev-up-3').click(function() {
-    $('.icons-3').toggleClass('more-prg-icons-shown');
-    $('.chev-up-3').toggle();
-    $('.chevron-3').toggle();
-    
-});
 
-$('.chevron-4').click(function() {
+
+$('.box-4').click(function() {
     $('.icons-4').toggleClass('more-prg-icons-shown');
     $('.chevron-4').toggle();
     $('.chev-up-4').toggle();
 });
 
-$('.chev-up-4').click(function() {
-    $('.icons-4').toggleClass('more-prg-icons-shown');
-    $('.chev-up-4').toggle();
-    $('.chevron-4').toggle();
-    
-});
 
-$('.chevron-5').click(function() {
+
+$('.box-5').click(function() {
     $('.icons-5').toggleClass('more-prg-icons-shown');
     $('.chevron-5').toggle();
     $('.chev-up-5').toggle();
 });
 
-$('.chev-up-5').click(function() {
-    $('.icons-5').toggleClass('more-prg-icons-shown');
-    $('.chev-up-5').toggle();
-    $('.chevron-5').toggle();
-    
-});
 
 
 
+// BLOG
 
 
 
-
-
-
-// AJAX CALL
-
-
-
-    $('.see-programs-btn').click(function(e){
-        e.preventDefault;
-        $('.retrieved-programs-container').empty();
-        var urlProg = nexus_vars.rest_url+'wp/v2/programs';
-        var typeID = $('.prg-type-select').val().toLowerCase();
-        var cityID = $('.prg-location-select').val().toLowerCase();
-    
-        console.log(typeID);
-        console.log(cityID);
-    
-        $.ajax({
-    
-            method: 'GET',
-            cache: false,
-            url: urlProg+'?_embed',
-            dataType: 'json',
-    
-        })
-        .done(function(progs) {
-            console.log(progs);
-            
-    
-                for(var i = 0; i < progs.length; i++) {
-                    var thename = progs[i].title.rendered;
-                    var thecityID = progs[i]._embedded["wp:term"][1][0].slug;
-                    var thetypeID = progs[i]._embedded["wp:term"][2][0].slug;
-                    var theimg = progs[i]._embedded["wp:featuredmedia"][0].source_url;
-                    var thetype = progs[i]._embedded["wp:term"][2][0].name;
-                    var thelink = progs[i].link; 
-    
-                    if(typeID == thetypeID && cityID == thecityID) {
-                        $(".retrieved-programs-container").append("<div class='prg-retrieved-container'></div>");
-                        $(".prg-retrieved-container").append("<img class=prg-img src='"+theimg+"'>");
-                        $(".prg-retrieved-container").append("<h2 class='prg-name'><a href='"+thelink+"'>"+thename+"</a></h2>");
-                        $(".prg-retrieved-container").append("<p class='prg-type'>"+thetype+"</p>");
-                    } 
-                }     
-           
-        })
-        .fail(function() {
-            console.log( "error" );
-        })
-        .always(function() {
-            console.log( "complete" );
-        });
-    
-    });
-    
-
+$(".blog-categories-dropdown").click(function(){
+    $(".blog-cats-dropdown").slideToggle();
+    $(".fa-chevron-down").toggle();
+    $(".fa-chevron-up").toggle();
+})
 
 
 })(jQuery);

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Home
+ * Template name: FrontPage
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -111,21 +111,21 @@ get_header();
 				
 					<div class="review-container">
 						<img class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
-						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help, attention and patience with me both before and during my trip. 
+						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
 						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
-						and all of your help was instrumental in making this trip even more wonderful!<span class="unquote">"</span></p>
+						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p>
 					</div>
 					<div class="review-container">
 						<img class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
-						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help, attention and patience with me both before and during my trip. 
+						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
 						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
-						and all of your help was instrumental in making this trip even more wonderful!<span class="unquote">"</span></p></p>
+						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p></p>
 					</div>
 					<div class="review-container">
 						<img class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
-						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help, attention and patience with me both before and during my trip. 
+						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
 						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
-						and all of your help was instrumental in making this trip even more wonderful!<span class="unquote">"</span></p></p>
+						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p></p>
 					</div>
 					
 				</div>

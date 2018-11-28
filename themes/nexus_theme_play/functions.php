@@ -120,20 +120,27 @@ add_action( 'widgets_init', 'nexus_theme_scratch_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nexus_theme_scratch_scripts() {
-	wp_enqueue_style( 'nexus_theme_scratch-style', get_stylesheet_uri() );
+
 
 	wp_enqueue_script('general-js', get_template_directory_uri().'/build/js/general.min.js', array('jquery'), null, true);
+	wp_enqueue_style( 'nexus_theme_scratch-style', get_stylesheet_uri() );
 	wp_enqueue_script('ajax-js', get_template_directory_uri().'/build/js/ajax-call.min.js', array('jquery'), null, true);
-
+	wp_enqueue_script('ajax-pagination', get_template_directory_uri().'/build/js/ajax-pagination.min.js', array('jquery'), null, true);
 	wp_enqueue_script( 'nexus_theme_scratch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'nexus_theme_scratch-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
 
 	wp_localize_script( 'general-js', 'nexus_vars', array(
 		'rest_url' => esc_url_raw( rest_url() ),
 		'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
 		'post_id' => get_the_ID()
 	) );
+
+	wp_localize_script('ajax-pagination', 'ajaxpagination', array(
+		'ajaxurl' => admin_url('admin-ajax.php')
+	));
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -172,3 +179,47 @@ function custom_excerpt_length( $length ) {
 	return 18;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function more_post_ajax(){
+    $offset = $_POST["offset"];
+    $ppp = $_POST["ppp"];
+    header("Content-Type: text/html");
+
+    $args = array(
+        'posts_per_page' => 2,
+		'offset' => $offset,
+		'post_type' => 'post'
+	);
+	
+
+	query_posts($args);
+	while (have_posts()) { the_post(); 
+
+		$video = CFS()->get('post_video');
+		$title = get_the_title();
+		$excerpt = get_the_excerpt();
+		$img = get_the_post_thumbnail();
+
+		if (!empty($video)) { ?>
+			<div class="video-container">
+				<div class="post-video"><?php echo $video ?></div>
+				<h1 class="video-title"><?php echo $title ?></h1>
+			</div>
+		<?php	
+		} else if(empty($video)) {
+		?>
+			<div class="post-container">
+				<?php echo $img; ?>
+				<h1 class="post-title"><?php echo $title; ?></h1>
+				<p class="post-excerpt"><?php echo $excerpt; ?></p>
+				<a class="post-link" href="<?php echo the_permalink(); ?>">Read</a>
+			</div>
+		<?php
+		}  
+
+	exit; 
+	}
+}
+
+add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax'); 
+add_action('wp_ajax_more_post_ajax', 'more_post_ajax');

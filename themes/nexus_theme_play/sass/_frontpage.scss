@@ -302,7 +302,7 @@ i {
 
 .slider-canada {
     width: 70%;
-    height: 70vh;
+    height: auto;
     margin: $center;
     display: flex;
     overflow-x: auto;
@@ -313,7 +313,7 @@ i {
     }
 
     @include mobile {
-        height: 50vh;
+        height: auto;
         width: 80%;
     }
 }
@@ -573,12 +573,26 @@ i {
     
     margin: $center;
     background: $div-white;
+
+    @include mobile {
+        flex-direction: column;
+    }
     
+}
+
+.text-gone {
+    @include mobile {
+        display: none;
+    }
 }
 
 .review-img {
     height: 100%;
     width: 23%;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .review-content {
@@ -590,6 +604,11 @@ i {
     font-family: $sans;
     position: relative;
     margin: $center;
+
+    @include mobile {
+        font-size: 1.3rem;
+        margin-top: 10%;
+    }
 }
 
 .quote, .unquote {
@@ -601,9 +620,18 @@ i {
 .quote {
     left: 1rem;
     top: -2rem;
+
+    @include mobile {
+        left: -1rem;
+    }
 }
 
 .unquote {
     right: 1rem;
     bottom: -2rem;
+
+    @include mobile {
+        right: 0;
+        bottom: 0;
+    }
 }

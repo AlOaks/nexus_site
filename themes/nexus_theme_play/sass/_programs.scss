@@ -142,6 +142,11 @@ select {
     flex-basis: 90%;
     margin-left: auto;
     margin-right: auto;
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
 }
 
 .more-prg-desc {
