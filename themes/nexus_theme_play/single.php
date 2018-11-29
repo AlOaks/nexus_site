@@ -34,7 +34,7 @@ get_header();
 		?>
 
 		<div class="share-links-container">
-			<h3 class="sharing-title">Like this post? Share it with your friends!</h1>
+			<h3 class="sharing-title"><?php _e('Like this post? Share it with your friends!', 'nexus'); ?></h1>
 			<ul class="share-list">
 				<li class="share-link"><a href="https://www.facebook.com/sharer.php"><i class="fab fa-facebook"></i></a></li>
 				<li class="share-link"><a href="https://www.linkedin.com/shareArticle"><i class="fab fa-linkedin"></i></a></li>
@@ -43,7 +43,7 @@ get_header();
 			</ul>
 		</div>
 		<section class="comments-section">
-			<h3 class="comments-header">Leave a Comment</h3>
+			<h3 class="comments-header"><?php _e('Leave a Comment', 'nexus'); ?></h3>
 			<?php 
 			
 			if ( comments_open() || get_comments_number() ) :
@@ -54,7 +54,7 @@ get_header();
 		</section>
 
 		<section class="people-likes">
-				<p class="people-title">People Also Read</p>
+				<p class="people-title"><?php _e('People Also Read', 'nexus'); ?></p>
 				<div class="programs-container-people">
 				<button class="peo-btn-left peo-btn"><i class="fas fa-chevron-left"></i></button>
 				<button class="peo-btn-right peo-btn"><i class="fas fa-chevron-right"></i></button>
@@ -69,7 +69,7 @@ get_header();
 							<?php the_post_thumbnail(); ?>
 							<p class="people-post-name"><?php the_title(); ?></p>
 							<p class="people-excerpt"><?php echo get_the_excerpt(); ?></p>
-							<a class="post-link-single" href=<?php echo get_the_permalink(); ?>>Read</a>
+							<a class="post-link-single" href=<?php echo get_the_permalink(); ?>><?php _e('Read', 'nexus'); ?></a>
 						</div>
 					<?php		
 
@@ -79,9 +79,9 @@ get_header();
 			</section>
 
 		<section class="start-journey-section">
-			<h1 class="start-title">Want to read even better posts?</h1>
-			<p class="start-description">Get access to our club member exclusive content.</p>
-			<a class="contact-btn">Join Nexus Club</a>
+			<h1 class="start-title"><?php _e('Want to read even better posts?', 'nexus'); ?></h1>
+			<p class="start-description"><?php _e('Get access to our club member exclusive content.','nexus'); ?></p>
+			<a class="contact-btn"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

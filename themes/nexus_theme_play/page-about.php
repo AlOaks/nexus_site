@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: AboutNexus
+ * Template Name: Contact
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -18,19 +18,13 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div class="page-title-container">
-                <h1 class="contact-header">About</h1>
+                <h1 class="contact-header"><?php the_title(); ?></h1>
             </div>
             <div class="nexus-mission">
-                <p>
-                    Nexus Intercambio introduction Mission statement, etc.<br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p><?php echo CFS()->get('mission'); ?></p>
             </div>
             <div class="contact-form-container">
-                <h1 class="contact-form-title">Send Us A Message</h1>
+                <h1 class="contact-form-title"><?php _e('Send Us A Message', 'nexus'); ?></h1>
                 <?php 
                     while (have_posts() ): the_post();
                         the_content();
@@ -39,13 +33,13 @@ get_header();
                 ?>
             </div>
             <div class="nexus-information">
-                <h1 class="info-title">Nexus in Canada</h1>
-                <p class="info-description">Come and give us a visit and talk to our exchange experts or ask for a quote here</p>
+                <h1 class="info-title"><?php _e('Nexus in Canada', 'nexus'); ?></h1>
+                <p class="info-description"><?php echo CFS()->get('cta_about'); ?></p>
                 <div class="info-container">
                     <div class="info-item">
                         <i class="fas fa-map-marker"></i>
                         <div class="address-map-container">
-                            <p class="address-info">970 Burrard St<br> Room 119 - 1st floor<br> Vancouver, BC - V6Z 2R4</p>
+                            <p class="address-info">970 Burrard St<br> <?php _e('Room 119', 'nexus'); ?> - <?php _e('1st floor','nexus'); ?><br> Vancouver, BC - V6Z 2R4</p>
                             <img class="nexus-map" src=<?php echo get_template_directory_uri().'/assets/images/map-nexus.png'; ?> />
                             <a class="open-in-maps-link" href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2810287,-123.1265783,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">Open in Google Maps</a>
                         </div>
@@ -56,14 +50,14 @@ get_header();
                     </div>
                     <div class="info-item">
                         <i class="fas fa-hourglass-half"></i>
-                        <p class="work-hours">Monday to Friday<br>9am to 5pm</p>
+                        <p class="work-hours"><?php _e('Monday to Friday', 'nexus'); ?><br>9am to 5pm</p>
                     </div>
                 </div>
             </div>
             <section class="start-journey-section">
-				<h1 class="start-title">Questions?</h1>
-				<p class="start-description">We've got you covered</p>
-				<a class="contact-btn">See FAQ</a>
+				<h1 class="start-title"><?php _e('Questions?', 'nexus'); ?></h1>
+				<p class="start-description"><?php _e("We've got you covered", 'nexus'); ?></p>
+				<a class="contact-btn"><?php _e('See FAQ', 'nexus'); ?></a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

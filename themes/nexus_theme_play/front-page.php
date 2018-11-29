@@ -21,14 +21,14 @@ get_header();
 
 			<section class="hero-image">
 				<div class="hero-overlay"></div>
-				<h1 class="hero-label">Dreaming of <br><span>Canada?</span> <br>We will make your dream come true.</h1>
+				<h1 class="hero-label"><?php _e('Dreaming of', 'nexus'); ?> <br><span><?php _e('Canada?' ,'nexus'); ?> </span> <br><?php _e('We will make your dream come true.', 'nexus'); ?></h1>
 			</section>
 
 
 			<section class="program-selectors">
 				<form class="programs-form">
 					<select class="selector program-types">
-						<option value="Choose type of program" selected>Choose type of program</option>
+						<option value="Choose type of program" selected><?php _e('Choose type of program', 'nexus'); ?></option>
 						<?php 
 						
 						$progTypes = get_the_terms('programs', 'programs-types');
@@ -38,7 +38,7 @@ get_header();
 						?>
 					</select>
 					<select class="selector cities">
-						<option value="Choose location" selected>Choose location</option>
+						<option value="Choose location" selected><?php _e('Choose location', 'nexus'); ?></option>
 						
 					</select>
 					<input class="submit" type="submit" value="See Schools on Promotion" >
@@ -47,7 +47,7 @@ get_header();
 
 
 			<section class="why-nexus-section">
-				<h1 class="why-title">Why use Nexus?</h1>
+				<h1 class="why-title"><?php _e('Why use Nexus?', 'nexus'); ?></h1>
 				<div class="why-items-container">
 				<button class="why-btn-left why-btn"><i class="fas fa-chevron-left"></i></button>
 				<button class="why-btn-right why-btn"><i class="fas fa-chevron-right"></i></button>
@@ -76,7 +76,7 @@ get_header();
 			</section>
 
 			<section class="why-canada-section">
-				<h2 class="why-canada-title">Why Canada?</h2>
+				<h2 class="why-canada-title"><?php _e('Why Canada?', 'nexus'); ?></h2>
 				<button class="slider-btn btn-lft">></button>
                 <button class="slider-btn btn-right"><</button>
 				<div class="slider-canada">			
@@ -87,26 +87,26 @@ get_header();
 			</section>
 
 			<section class="curious-section">
-				<h3 class="curious-title">Curious About Canada?</h3>
-				<a class="visit-faq-btn">Visit FAQ Section</a>
+				<h3 class="curious-title"><?php _e('Curious About Canada?', 'nexus'); ?></h3>
+				<a class="visit-faq-btn"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
 			</section>
 
 
 			<section class="choose-city-section">
 				<div class="choose-map">
-					<h1 class="choose-title">Choose a City</h1>
+					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
 					<i class="fas fa-map-marker-alt mark1"></i>
 					<i class="fas fa-map-marker-alt mark2"></i>
 					<i class="fas fa-map-marker-alt mark3"></i>
 					<i class="fas fa-map-marker-alt mark4"></i>
 					<i class="fas fa-map-marker-alt mark5"></i>
 					<i class="fas fa-map-marker-alt mark6"></i>
-					<a class="visit-faq-btn choose-faq-btn">Visit FAQ Section</a>
+					<a class="visit-faq-btn choose-faq-btn"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
 				</div>
 			</section>	
 
 			<section class="reviews-section">
-				<h1 class="reviews-title">Student's Review</h1>
+				<h1 class="reviews-title"><?php _e("Student's Review", 'nexus'); ?></h1>
 				<div class="reviews-slider">
 				
 					<div class="review-container">
@@ -131,9 +131,9 @@ get_header();
 				</div>
 			</section>
 			<section class="start-journey-section">
-				<h1 class="start-title">Start Your Journey</h1>
-				<p class="start-description">Let us help you find your path to success</p>
-				<a class="contact-btn start-trigger">Contact Us</a>
+				<h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>
+				<p class="start-description"><?php _e('Let us help you find your path to success', 'nexus'); ?></p>
+				<a class="contact-btn start-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -26,7 +26,7 @@ get_header();
 					<div class="popular-slider">
 						<button class="popular-btn bttn-lft"><</button>
 						<button class="popular-btn bttn-right">></button>
-						<h1 class="popular-banner">Popular posts</h1>
+						<h1 class="popular-banner"><?php _e('Popular posts', 'nexus'); ?></h1>
 						
 						
 						<?php 
@@ -38,12 +38,12 @@ get_header();
 							$video = CFS()->get('post_video');
 
 							if(empty($video)) { ?>
-								<a class="popular-title" href=<?php echo the_permalink(); ?>>
-									<li class="popular-item">
-										<?php the_post_thumbnail(); ?>
-										<p class="slider-item-title"><?php the_title(); ?></p>
-									</li>
-								</a>
+							<a class="popular-title" href=<?php echo the_permalink(); ?>>
+								<li class="popular-item">
+									<?php the_post_thumbnail(); ?>
+									<p class="slider-item-title"><?php the_title(); ?></p>
+								</li>
+							</a>
 						<?php 
 							}
 							endwhile; ?>
@@ -56,8 +56,8 @@ get_header();
 					$cats = get_categories($cat_args);
 				?>
 				<ul class="blog-cats">
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Category</a></li>
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Media</a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Category', 'nexus'); ?></a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Media', 'nexus'); ?></a></li>
 					<?php
 						foreach ($cats as $cat) {
 							$cat_id = get_cat_ID($cat->name);
@@ -68,11 +68,12 @@ get_header();
 						}
 					?>
 				</ul>
+				
 
-				<div class="blog-categories-dropdown">Video <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></div>
+				<div class="blog-categories-dropdown"><?php _e('Categories', 'nexus'); ?> <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></div>
 				<ul class="blog-cats-dropdown">
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Category</a></li>
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>>All Media</a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Category', 'nexus'); ?></a></li>
+					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Media', 'nexus'); ?></a></li>
 					<?php
 						foreach ($cats as $cat) {
 							$cat_id = get_cat_ID($cat->name);
@@ -87,7 +88,7 @@ get_header();
 				<section class="blog-section">
 						<?php		
 
-						query_posts('posts_per_page=-1');			
+						query_posts('posts_per_page=4');			
 						while ( have_posts() ) : the_post(); 
 							
 								$video = CFS()->get('post_video');
@@ -101,15 +102,29 @@ get_header();
 										<h1 class="video-title"><?php echo $title ?></h1>
 									</div>
 								<?php	
+								} else if(empty($video)) {
+								?>
+									<div class="post-container">
+										<?php echo $img; ?>
+										<h1 class="post-title"><?php echo $title; ?></h1>
+										<p class="post-excerpt"><?php echo $excerpt; ?></p>
+										<a class="post-link" href=<?php echo the_permalink(); ?>><?php _e('Read', 'nexus'); ?></a>
+									</div>
+								<?php
 								}
+
 						endwhile; 
 						?>
+							
+						
+						
 				</section>
+				<button id="more_posts"><?php _e('Load More', 'nexus'); ?></button>
 		</section>
 		<section class="start-journey-section">
-			<h1 class="start-title">Can't find what you're looking for?</h1>
-			<p class="start-description">We have more to offer</p>
-			<a class="contact-btn">Join Nexus Club</a>
+			<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
+			<p class="start-description"><?php _e('We have more to offer', 'nexus'); ?></p>
+			<a class="contact-btn"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

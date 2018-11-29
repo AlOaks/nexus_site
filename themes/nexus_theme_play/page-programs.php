@@ -18,14 +18,14 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div class="page-title-container">
-                <h1 class="programs-page-title">Programs</h1>
+                <h1 class="programs-page-title"><?php the_title(); ?></h1>
                 <p class="programs-description-hero">TEST</p>
             </div>
             <section class="search-program">
-                <h2 class="hero-title-programs">Already made up your mind?</h2>
+                <h2 class="hero-title-programs"><?php _e('Already made up your mind?', 'nexus'); ?></h2>
                 <div class="search-container">
                     <select class="prg-type-select">
-                        <option value="">Choose the program type</option>
+                        <option value=""><?php _e('Choose the program type', 'nexus'); ?></option>
                         <?php 
                                                        
                                 $types = get_terms([
@@ -42,7 +42,7 @@ get_header();
                             <?php endforeach; ?>
                     </select>
                     <select class="prg-location-select">
-                        <option value="">Choose location</option>
+                        <option value=""><?php _e('Choose location', 'nexus'); ?></option>
                         <?php 
 
                                 $cities = get_terms([
@@ -58,31 +58,31 @@ get_header();
                         
                     </select>
                 </div>
-                <button class="see-programs-btn">See Programs</button>
+                <button class="see-programs-btn"><?php _e('See Programs', 'nexus'); ?></button>
             </section>
             <section class="retrieved-programs-container"></section>
             <section class="xplore-more-container">
-                <h2 class="xplore-more-title">Explore More Options</h2>
+                <h2 class="xplore-more-title"><?php _e('Explore More Options', 'nexus'); ?></h2>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-1">Language Programs <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <h2 class="more-prg-title box-1"><?php _e('Language Programs', 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="more-prg-icons icons-1">
                         <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
-                            <h2 class="more-icon-title">Duration</h2>
+                            <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
-                            <h2 class="more-icon-title">Tuition Fee</h2>
+                            <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
-                            <h2 class="more-icon-title">Outcome</h2>
+                            <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
                         </div>
                     </div>
@@ -97,17 +97,17 @@ get_header();
                         <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
-                            <h2 class="more-icon-title">Duration</h2>
+                            <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
-                            <h2 class="more-icon-title">Tuition Fee</h2>
+                            <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
-                            <h2 class="more-icon-title">Outcome</h2>
+                            <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
                         </div>
                     </div>
@@ -121,17 +121,17 @@ get_header();
                         <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
-                            <h2 class="more-icon-title">Duration</h2>
+                            <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
-                            <h2 class="more-icon-title">Tuition Fee</h2>
+                            <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
-                            <h2 class="more-icon-title">Outcome</h2>
+                            <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
                         </div>
                     </div>
@@ -145,17 +145,17 @@ get_header();
                         <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
-                            <h2 class="more-icon-title">Duration</h2>
+                            <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
-                            <h2 class="more-icon-title">Tuition Fee</h2>
+                            <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
-                            <h2 class="more-icon-title">Outcome</h2>
+                            <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
                         </div>
                     </div>
@@ -169,26 +169,26 @@ get_header();
                         <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
-                            <h2 class="more-icon-title">Duration</h2>
+                            <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
-                            <h2 class="more-icon-title">Tuition Fee</h2>
+                            <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
-                            <h2 class="more-icon-title">Outcome</h2>
+                            <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
                         </div>
                     </div>
                 </div>
             </section>
             <section class="start-journey-section">
-			    <h1 class="start-title">Start Your Journey</h1>
-			    <p class="start-description">Let us help you find your path to success.</p>
-			    <a class="contact-btn start-trigger">Contact Us</a>
+			    <h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>
+			    <p class="start-description"><?php _e('Let us help you find your path to success.', 'nexus'); ?></p>
+			    <a class="contact-btn start-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
 		    </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

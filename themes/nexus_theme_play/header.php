@@ -30,11 +30,11 @@
 				$current_user = get_currentuserinfo();		
 		?>
 
-			<p class="login-link">Hello, <?php echo $current_user->user_login; ?> </p>
+			<p class="login-link"><?php _e('Hello' ,' nexus'); ?>, <?php echo $current_user->user_login; ?> </p>
 		
 		<?php } else { ?>
 			
-			<a class="login-link join-link">Join Nexus Club</a>
+			<a class="login-link join-link"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		
 
 		<?php } ?>

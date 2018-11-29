@@ -20,29 +20,29 @@
 
 			<section class="general-info">
 				<div class="why-nexus-footer info-div">
-					<h2 class="why-nexus-title-footer footer-title">Why Nexus?</h2>
+					<h2 class="why-nexus-title-footer footer-title"><?php _e('Why Nexus?', 'nexus'); ?></h2>
 					<p class="why-nexus-desc-footer">
-						Our passion is helping our clients to learn how to
+						<?php _e('Our passion is helping our clients to learn how to
 						prepare a powerful action plan and execute their life-changing
-						journey of living in Canada.
+						journey of living in Canada.', 'nexus'); ?>
 					</p>
 				</div>
 
 				<div class="nexus-social info-div">
-					<h2 class="social-title-footer footer-title">Stay Connected</h2>
+					<h2 class="social-title-footer footer-title"><?php _e('Stay Connected', 'nexus'); ?></h2>
 					<div class="social-logos-container">
 						<a href="https://www.facebook.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/face_logo1@3x.png'; ?> /></a>
 						<a href="https://www.twitter.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/twitter_logo1@3x.png'; ?> /></a>
 						<a href="https://www.youtube.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube_logo1@3x.png'; ?> /></a>
 						<a href="https://www.instagram.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram@3x.png'; ?> /></a>
 					</div>
-					<a class="join-nexus-fam-btn">Join Nexus Family</a>
+					<a class="join-nexus-fam-btn"><?php _e('Join Nexus Family','nexus'); ?></a>
 				</div>
 
 				<div class="contact-footer info-div">
-					<h2 class="contact-title-footer footer-title">Contact Us</h2>
+					<h2 class="contact-title-footer footer-title"><?php _e('Contact Us', 'nexus'); ?></h2>
 					<a class="address-nexus" href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2779062,-123.129072,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">119-970 Burard St Vancouver, BC V6Z 2R4</a>
-					<p class="office-hours">Office hours: Monday - Friday, 9am - 5pm PST</p>
+					<p class="office-hours"><?php _e('Office hours: Monday - Friday', 'nexus'); ?>, 9am - 5pm PST</p>
 					<a class="phone">(604)288-6787</a>
 				</div>
 			</section>
