@@ -78,6 +78,7 @@
     display: flex;
     width: 90%;
     margin: $center;
+    justify-content: space-around;
 
     @include mobile {
         flex-direction: column;
@@ -90,6 +91,9 @@
     border-radius: 5px;
     padding: 10px 15px;
     display: flex;
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
 
     &::placeholder {
         color: $font-blue;
@@ -105,6 +109,12 @@
 
 option {
     color: $font-blue;
+}
+
+.prog-type {
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
 }
 
 .program-types {
@@ -128,7 +138,7 @@ option {
     }
 }
 
-input[type="submit"] {
+.submit-btn-front{
     background-color: $div-yellow;
     border-color: $div-yellow;
     padding: 10px 5px;
@@ -332,18 +342,18 @@ i {
 
 .slider-btn {
     position: absolute;
-    background: transparent;
-    height: 70vh;
+    background: rgba(255, 255, 255, .5);
+    height: auto;
     border: none;
     font-size: 2rem;
-    color: transparent;
-    transition-duration: .5s;
+    color: black;
     z-index: 100;
+    transition-duration: .5s;
 
     &:hover {
+        background: $div-red;
+        color: white;
         transition-duration: .5s;
-        color: black;
-        background: rgba(255,255,255, 0.5);
     }
 
     @include mobile {

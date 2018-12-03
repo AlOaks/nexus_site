@@ -26,23 +26,25 @@ get_header();
 
 
 			<section class="program-selectors">
-				<form class="programs-form">
+				<div class="programs-form">
 					<select class="selector program-types">
-						<option value="Choose type of program" selected><?php _e('Choose type of program', 'nexus'); ?></option>
+						<option class="prog-type" value="Choose type of program" selected><?php _e('Choose type of program', 'nexus'); ?></option>
 						<?php 
 						
-						$progTypes = get_the_terms('programs', 'programs-types');
+						$progTypes = get_terms([
+							'taxonomy' => 'programsTypes',
+							'hide_empty' => false
+						]);
 
-						var_dump($progTypes);
-
+							foreach($progTypes as $progType) : ?>
+								<option class='prog-type' value="<?php echo $progType->name; ?>"><?php _e($progType->name, 'nexus'); ?></option>
+							
+						<?php
+							endforeach;
 						?>
 					</select>
-					<select class="selector cities">
-						<option value="Choose location" selected><?php _e('Choose location', 'nexus'); ?></option>
-						
-					</select>
-					<input class="submit" type="submit" value="See Schools on Promotion" >
-				</form>
+					<button class="submit-btn-front"><?php _e('Search Programs', 'nexus'); ?></button>
+				</div>
 			</section>
 
 

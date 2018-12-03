@@ -137,7 +137,7 @@ function nexus_theme_scratch_scripts() {
 	) );
 
 	wp_localize_script('ajax-pagination', 'ajaxpagination', array(
-		'ajaxurl' => admin_url('admin-ajax.php')
+		'ajaxurl' => admin_url('admin-ajax.php'),
 	));
 
 
@@ -217,9 +217,11 @@ function more_post_ajax(){
 		<?php
 		}  
 
-	exit; 
+	exit;
 	}
 }
 
 add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax'); 
 add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
+
+

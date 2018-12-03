@@ -30,7 +30,7 @@
 				$current_user = get_currentuserinfo();		
 		?>
 
-			<p class="login-link"><?php _e('Hello' ,' nexus'); ?>, <?php echo $current_user->user_login; ?> </p>
+			<p class="login-link"><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?> </p>
 		
 		<?php } else { ?>
 			

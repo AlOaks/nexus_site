@@ -19,7 +19,6 @@ get_header();
 		<main id="main" class="site-main">
             <div class="page-title-container">
                 <h1 class="programs-page-title"><?php the_title(); ?></h1>
-                <p class="programs-description-hero">TEST</p>
             </div>
             <section class="search-program">
                 <h2 class="hero-title-programs"><?php _e('Already made up your mind?', 'nexus'); ?></h2>
@@ -41,24 +40,8 @@ get_header();
 
                             <?php endforeach; ?>
                     </select>
-                    <select class="prg-location-select">
-                        <option value=""><?php _e('Choose location', 'nexus'); ?></option>
-                        <?php 
-
-                                $cities = get_terms([
-                                    'taxonomy' => 'Cities',
-                                    'hide_empty' => false
-                                ]);
-
-                            foreach($cities as $city) : ?> 
-
-                        <option value=<?php echo $city->name; ?>><?php echo $city->name; ?></option>       
-
-                        <?php endforeach; ?>
-                        
-                    </select>
                 </div>
-                <button class="see-programs-btn"><?php _e('See Programs', 'nexus'); ?></button>
+                <button class="see-programs-btn"><?php _e('Search Programs', 'nexus'); ?></button>
             </section>
             <section class="retrieved-programs-container"></section>
             <section class="xplore-more-container">

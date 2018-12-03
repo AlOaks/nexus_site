@@ -1,0 +1,113 @@
+.tax-programsTypes {
+    background: white;
+
+    .footer-copy {
+        background: $bg-blue;
+    }
+}
+
+.page-title-container {
+    p {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        color: $font-blue;
+        font-family: $sans;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+.filters-container {
+    width: 100%;
+    display: flex;
+    background: $div-red;
+    height: 20vh;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.duration-selector, .location-selector {
+    height: 30%;
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
+    flex-basis: 30%;
+
+    option {
+        color: $font-blue;
+    }
+}
+
+.apply-filters-btn {
+    flex-basis: 15%;
+    height: 30%;
+    background: $div-yellow;
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: $shadow;
+}
+
+
+.type-programs-container {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: $font-blue;
+        }
+    }
+
+    
+
+}
+
+.type-prog-container {
+    width: 30%;
+    height: 20rem;
+    margin-bottom: 5%;
+    box-shadow: $shadow;
+    background: $div-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        font-family: $roboto;
+        color: $font-blue;
+        font-size: 1.3rem;
+        margin: 0;
+        margin-left: 5%;
+    }
+
+    .prog-name-single {
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 0;
+        margin-left: 5%;
+    }
+
+    .prog-city-single {
+        font-style: italic;
+    }
+
+    
+
+    .wp-post-image {
+        height: 12rem;
+    }
+
+}
+

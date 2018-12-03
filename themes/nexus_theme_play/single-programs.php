@@ -52,7 +52,7 @@ get_header();
 						</li>
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
-							<p class="li-field"><?php echo $duration; ?></p>
+							<p class="li-field"><?php echo $duration; ?> months</p>
 						</li>
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('City', 'nexus'); ?></p>

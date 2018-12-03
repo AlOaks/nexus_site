@@ -128,4 +128,24 @@ $(".blog-categories-dropdown").click(function(){
 })
 
 
+
+
+
+
+$('.submit-btn-front').click(function(e){
+    e.preventDefault;
+    var type = $('.selector').val().toLowerCase();
+    window.location.href = 'programstypes/'+type;
+
+    console.log(type);
+});
+
+$('.see-programs-btn').click(function(e){
+    e.preventDefault;
+    var type = $('.prg-type-select').val().toLowerCase();
+});
+
+
+
+
 })(jQuery);
