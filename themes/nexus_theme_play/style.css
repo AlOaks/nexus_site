@@ -3827,7 +3827,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   background: #DD3333;
-  height: 20vh;
+  height: 15vh;
   margin-bottom: 5%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -3843,7 +3843,8 @@ select {
   font-family: "Roboto";
   font-weight: bold;
   -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
+      flex-basis: 30%;
+  padding: 0; }
   .duration-selector option, .location-selector option {
     color: #193F5C; }
 
@@ -3858,7 +3859,8 @@ select {
   font-size: 1.5rem;
   border: none;
   -webkit-box-shadow: 3px 3px 5px black;
-          box-shadow: 3px 3px 5px black; }
+          box-shadow: 3px 3px 5px black;
+  padding: 0; }
 
 .type-programs-container {
   display: -webkit-box;
