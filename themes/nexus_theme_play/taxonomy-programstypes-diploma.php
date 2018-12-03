@@ -13,7 +13,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="page-title-container">
-				<h1><?php _e('Diplomas', 'nexus'); ?></h1>
+				<h1><?php _e('Diploma', 'nexus'); ?></h1>
 				<p><?php _e(term_description(), 'nexus'); ?></p>
 			</div>
 			<div class="filters-container">
