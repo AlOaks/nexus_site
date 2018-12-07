@@ -28,16 +28,16 @@ get_header();
 			<section class="program-selectors">
 				<div class="programs-form">
 					<select class="selector program-types">
-						<option class="prog-type" value="Choose type of program" selected><?php _e('Choose type of program', 'nexus'); ?></option>
+						<option class="prog-type" value="Choose type of program" selected><?php _e('Choose City', 'nexus'); ?></option>
 						<?php 
 						
-						$progTypes = get_terms([
-							'taxonomy' => 'programsTypes',
+						$progCities = get_terms([
+							'taxonomy' => 'Cities',
 							'hide_empty' => false
 						]);
 
-							foreach($progTypes as $progType) : ?>
-								<option class='prog-type' value="<?php echo $progType->name; ?>"><?php _e($progType->name, 'nexus'); ?></option>
+							foreach($progCities as $progCity) : ?>
+								<option class='prog-type' value="<?php echo $progCity->name; ?>"><?php _e($progCity->name, 'nexus'); ?></option>
 							
 						<?php
 							endforeach;

@@ -135,7 +135,7 @@ $(".blog-categories-dropdown").click(function(){
 $('.submit-btn-front').click(function(e){
     e.preventDefault;
     var type = $('.selector').val().toLowerCase();
-    window.location.href = 'programstypes/'+type;
+    window.location = 'cities/'+type;
 
     console.log(type);
 });
@@ -143,6 +143,7 @@ $('.submit-btn-front').click(function(e){
 $('.see-programs-btn').click(function(e){
     e.preventDefault;
     var type = $('.prg-type-select').val().toLowerCase();
+    window.location = '../cities/'+type;
 });
 
 

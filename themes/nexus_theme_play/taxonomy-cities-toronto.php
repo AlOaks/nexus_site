@@ -13,22 +13,22 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="page-title-container">
-				<h1><?php _e('Certificate', 'nexus'); ?></h1>
+				<h1><?php _e('Toronto', 'nexus'); ?></h1>
 				<p><?php _e(term_description(), 'nexus'); ?></p>
 			</div>
 			<div class="filters-container">
 				<select class="location-selector">
-					<option value="" selected><?php _e('Location', 'nexus'); ?></option>
+					<option value="" selected><?php _e('Type of Program', 'nexus'); ?></option>
 					<?php 
 
-                                $cities = get_terms([
-                                    'taxonomy' => 'Cities',
+                                $types = get_terms([
+                                    'taxonomy' => 'programsTypes',
                                     'hide_empty' => false
                                 ]);
 
-                            foreach($cities as $city) : ?> 
+                            foreach($types as $type) : ?> 
 
-                        <option value=<?php echo $city->name; ?>><?php echo $city->name; ?></option>       
+                        <option value=<?php echo $type->name; ?>><?php echo $type->name; ?></option>       
 
                         <?php endforeach; ?>
 				</select>
@@ -49,9 +49,9 @@ get_header();
 					'post_type' => 'programs',
 					'tax_query' => array(
 						array(
-						'taxonomy' => 'programsTypes',
+						'taxonomy' => 'Cities',
 						'field' => 'slug',
-						'terms' => 'certificate'
+						'terms' => 'toronto'
 						)	
 					)
 				);

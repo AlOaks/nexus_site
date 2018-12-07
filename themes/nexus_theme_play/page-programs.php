@@ -21,14 +21,14 @@ get_header();
                 <h1 class="programs-page-title"><?php the_title(); ?></h1>
             </div>
             <section class="search-program">
-                <h2 class="hero-title-programs"><?php _e('Already made up your mind?', 'nexus'); ?></h2>
+                <h2 class="hero-title-programs"><?php _e('Where is going to be your next adventure? ', 'nexus'); ?></h2>
                 <div class="search-container">
                     <select class="prg-type-select">
-                        <option value=""><?php _e('Choose the program type', 'nexus'); ?></option>
+                        <option value=""><?php _e('Choose City', 'nexus'); ?></option>
                         <?php 
                                                        
                                 $types = get_terms([
-                                    'taxonomy' => 'programsTypes',
+                                    'taxonomy' => 'Cities',
                                     'hide_empty' => false
                                 ]);
 

@@ -13,8 +13,33 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="page-title-container">
-				<h1><?php _e('Degree', 'nexus'); ?></h1>
+				<h1><?php _e('Calgary', 'nexus'); ?></h1>
 				<p><?php _e(term_description(), 'nexus'); ?></p>
+			</div>
+			<div class="filters-container">
+				<select class="location-selector">
+					<option value="" selected><?php _e('Type of Program', 'nexus'); ?></option>
+					<?php 
+
+                                $types = get_terms([
+                                    'taxonomy' => 'programsTypes',
+                                    'hide_empty' => false
+                                ]);
+
+                            foreach($types as $type) : ?> 
+
+                        <option value=<?php echo $type->name; ?>><?php echo $type->name; ?></option>       
+
+                        <?php endforeach; ?>
+				</select>
+				<select class="duration-selector">
+					<option value="" selected><?php _e('Duration', 'nexus'); ?></option>
+					<option value="3"><?php _e('1-3 months', 'nexus'); ?></option>
+					<option value="6"><?php _e('4-6 months', 'nexus'); ?></option>
+					<option value="12"><?php _e('7-12 months', 'nexus'); ?></option>
+					<option value="13"><?php _e('More than 12 months', 'nexus'); ?></option>
+				</select>
+				<button class="apply-filters-btn"><?php _e('Apply Filters', 'nexus'); ?></button>
 			</div>
 			<div class="type-programs-container">
 				<?php
@@ -24,9 +49,9 @@ get_header();
 					'post_type' => 'programs',
 					'tax_query' => array(
 						array(
-						'taxonomy' => 'programsTypes',
+						'taxonomy' => 'Cities',
 						'field' => 'slug',
-						'terms' => 'degree',
+						'terms' => 'calgary'
 						)	
 					)
 				);
@@ -49,7 +74,7 @@ get_header();
 			</div>
 			<section class="start-journey-section">
 				<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
-				<p class="start-description"><?php _e('We have more to offer', 'nexus'); ?></p>
+				<p class="start-description"><?php _e('Let us help you fin the perfet fit!', 'nexus'); ?></p>
 				<a class="contact-btn"><?php _e('Contact us', 'nexus'); ?></a>
 			</section>
 		</main><!-- #main -->
