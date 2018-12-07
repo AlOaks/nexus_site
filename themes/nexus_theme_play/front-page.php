@@ -95,16 +95,52 @@ get_header();
 
 
 			<section class="choose-city-section">
-				<div class="choose-map">
 					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
-					<i class="fas fa-map-marker-alt mark1"></i>
-					<i class="fas fa-map-marker-alt mark2"></i>
-					<i class="fas fa-map-marker-alt mark3"></i>
-					<i class="fas fa-map-marker-alt mark4"></i>
-					<i class="fas fa-map-marker-alt mark5"></i>
-					<i class="fas fa-map-marker-alt mark6"></i>
+					<div class="cities-container-front">
+						<a class="city-link-front fifty-div">
+							<div class="city-container-frontpage cal-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Calgary</h2>
+							</div>
+						</a>
+						<a class="city-link-front fifty-div">
+							<div class="city-container-frontpage mon-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Montreal</h2>
+							</div>
+						</a>
+						<a class="city-link-front fifty-div">
+							<div class="city-container-frontpage otta-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Ottawa</h2>
+							</div>
+						</a>
+						<a class="city-link-front third-div">
+							<div class="city-container-frontpage toro-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Toronto</h2>
+							</div>
+						</a>
+						<a class="city-link-front third-div">
+							<div class="city-container-frontpage van-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Vancouver</h2>
+							</div>
+						</a>
+						<a class="city-link-front third-div">
+							<div class="city-container-frontpage vic-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Victoria</h2>
+							</div>
+						</a>
+						<a class="city-link-front third-div">
+							<div class="city-container-frontpage winni-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Winnipeg</h2>
+							</div>
+						</a>
+					</div>
 					<a class="visit-faq-btn choose-faq-btn"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
-				</div>
 			</section>	
 
 			<section class="reviews-section">
