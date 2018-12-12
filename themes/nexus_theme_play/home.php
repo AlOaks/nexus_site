@@ -56,8 +56,6 @@ get_header();
 					$cats = get_categories($cat_args);
 				?>
 				<ul class="blog-cats">
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Category', 'nexus'); ?></a></li>
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Media', 'nexus'); ?></a></li>
 					<?php
 						foreach ($cats as $cat) {
 							$cat_id = get_cat_ID($cat->name);
@@ -72,8 +70,6 @@ get_header();
 
 				<div class="blog-categories-dropdown"><?php _e('Categories', 'nexus'); ?> <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></div>
 				<ul class="blog-cats-dropdown">
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Category', 'nexus'); ?></a></li>
-					<li class="post-cat"><a href=<?php echo esc_url( home_url('/blog') ); ?>><?php _e('All Media', 'nexus'); ?></a></li>
 					<?php
 						foreach ($cats as $cat) {
 							$cat_id = get_cat_ID($cat->name);
@@ -114,12 +110,15 @@ get_header();
 								}
 
 						endwhile; 
+
+						wp_reset_query();
 						?>
 							
 						
 						
 				</section>
-				<button id="more_posts"><?php _e('Load More', 'nexus'); ?></button>
+				<div id="more_posts"><?php _e('More Posts', 'nexus'); ?></div>;
+					
 		</section>
 		<section class="start-journey-section">
 			<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>

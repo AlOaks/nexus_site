@@ -125,10 +125,13 @@ $(".blog-categories-dropdown").click(function(){
     $(".blog-cats-dropdown").slideToggle();
     $(".fa-chevron-down").toggle();
     $(".fa-chevron-up").toggle();
-})
+});
 
-
-
+$(".other-categories").click(function(){
+    $(".categories-list-arc2").slideToggle();
+    $(".fa-chevron-down").toggle();
+    $(".fa-chevron-up").toggle();
+});
 
 
 

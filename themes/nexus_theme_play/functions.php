@@ -186,7 +186,7 @@ function more_post_ajax(){
     header("Content-Type: text/html");
 
     $args = array(
-        'posts_per_page' => 2,
+        'posts_per_page' => $ppp,
 		'offset' => $offset,
 		'post_type' => 'post'
 	);
@@ -225,3 +225,80 @@ add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
 add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
 
 
+function misha_filter_function() {
+
+	$filter = $_POST['categoryfilter'];
+	
+	$args = array(
+		'post_type' => 'programs',
+		'orderby' => 'date',
+		'order' => $_POST['date']
+	);
+
+	if ( isset( $_POST['categoryfilter'] ) )
+		$args['tax_query'] = array(
+			array(
+				'taxonomy' => 'programsTypes',
+				'field' => 'slug',
+				'terms' => $filter
+				
+			)
+		);
+
+
+	if ( isset( $_POST['duration-select'] ) && $_POST['duration-select'] ) 
+		$args['meta_query'] = array( 'relation' => 'AND');
+	
+
+	if ( isset( $_POST['duration-select'] ) && $_POST['duration-select'] < 13) 
+	    $args['meta_query'][] = array(
+			'key' => 'duration',
+			'value' => $_POST['duration-select'],
+			'type' => 'numeric',
+			'compare' => '<'
+		);
+
+	// if ( isset( $duration ) && $duration >= 13) 
+	// 	$args['meta_query'][] = array(
+	// 		'meta_key' => 'duration',
+	// 		'meta_value' => $duration,
+	// 		'meta_type' => 'numeric',
+	// 		'compare' => '>='
+	// );
+	
+
+	$query = new WP_query($args);
+
+	if($query->have_posts()) : 
+
+		while( $query->have_posts() ): $query->the_post();
+		
+		$postID = get_the_ID();
+		$prog_type = wp_get_post_terms($postID, 'programsTypes');	?>		
+
+		<div class="type-prog-container">
+			<a href=<?php the_permalink(); ?>>
+				<?php the_post_thumbnail(); ?>
+				<p class="prog-school-single"><?php echo $prog_type[0]->name; ?></p>
+				<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+				<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+			</a>
+		</div>
+	<?php 
+	endwhile;
+	wp_reset_postdata();
+
+	else : ?>
+	<div class="no-programs">
+		<p class="no-programs-title">No Programs Found!</p>
+		<h2 class="no-programs-head"><span>We're sorry!</span> Please, contact us to help you find the perfect fit for you!</h2>
+		<a class="contact-btn">Book Consult</a>
+	</div>
+
+	<?php 
+	endif;
+	die();
+}
+
+add_action('wp_ajax_myfilter', 'misha_filter_function'); 
+add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');

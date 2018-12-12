@@ -8,17 +8,18 @@
  */
 
 get_header();
+
 ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="page-title-container">
-				<h1><?php _e('Calgary', 'nexus'); ?></h1>
+				<h1><?php single_term_title(); ?></h1>
 				<p><?php _e(term_description(), 'nexus'); ?></p>
 			</div>
-			<div class="filters-container">
-				<select class="location-selector">
-					<option value="" selected><?php _e('Type of Program', 'nexus'); ?></option>
+			<form id="filter" class="filters-container" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST">
+				<select class="location-selector" name="categoryfilter">
+					<option selected><?php _e('Type of Program', 'nexus'); ?></option>
 					<?php 
 
                                 $types = get_terms([
@@ -28,50 +29,46 @@ get_header();
 
                             foreach($types as $type) : ?> 
 
-                        <option value=<?php echo $type->name; ?>><?php echo $type->name; ?></option>       
+                        <option value=<?php echo $type->slug; ?>><?php echo $type->name; ?></option>       
 
                         <?php endforeach; ?>
 				</select>
-				<select class="duration-selector">
-					<option value="" selected><?php _e('Duration', 'nexus'); ?></option>
-					<option value="3"><?php _e('1-3 months', 'nexus'); ?></option>
-					<option value="6"><?php _e('4-6 months', 'nexus'); ?></option>
-					<option value="12"><?php _e('7-12 months', 'nexus'); ?></option>
+				<select class="duration-selector" name="duration-select">
+					<option value="999" selected><?php _e('Duration', 'nexus'); ?></option>
+					<option value="4"><?php _e('Up to 3 months', 'nexus'); ?></option>
+					<option value="7"><?php _e('Up to 6 months', 'nexus'); ?></option>
+					<option value="12"><?php _e('Up to 12 months', 'nexus'); ?></option>
 					<option value="13"><?php _e('More than 12 months', 'nexus'); ?></option>
 				</select>
 				<button class="apply-filters-btn"><?php _e('Apply Filters', 'nexus'); ?></button>
-			</div>
+				<input type="hidden" name="action" value="myfilter">
+			</form>
 			<div class="type-programs-container">
 				<?php
 
-				$args = array(
-					'posts_per_page' => 6,
-					'post_type' => 'programs',
-					'tax_query' => array(
-						array(
-						'taxonomy' => 'Cities',
-						'field' => 'slug',
-						'terms' => 'calgary'
-						)	
-					)
-				);
+							
+				while (have_posts() ) : the_post(); ?>
 
-				$certificates = new WP_query($args);
-							/* Start the Loop */
-				while ($certificates->have_posts() ) : $certificates->the_post(); ?>
-
+				<?php 
+					$postID = get_the_ID();
+					$prog_type = wp_get_post_terms($postID, 'programsTypes');
+					
+					
+				?>						
 					<div class="type-prog-container">
 						<a href=<?php the_permalink(); ?>>
 							<?php the_post_thumbnail(); ?>
-							<p class="prog-school-single"><?php echo CFS()->get('school'); ?></p>
+							<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
 							<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
-							<p class="prog-city-single"><?php echo CFS()->get('city'); ?></p>
+							<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
 						</a>
 					</div>
 
 				<?php endwhile; 
+				wp_reset_query();
 				?>
 			</div>
+			<div id="more_programs">More Programs</div>
 			<section class="start-journey-section">
 				<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
 				<p class="start-description"><?php _e('Let us help you fin the perfet fit!', 'nexus'); ?></p>

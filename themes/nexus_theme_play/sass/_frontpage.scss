@@ -2,7 +2,7 @@
 // HERO IMAGE
 
 .hero-image {
-    background: url('../../themes/nexus_theme_play/assets/images/home-hero-desktop.png');
+    background: url('../../themes/nexus_theme_play/assets/images/bc.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +43,7 @@
     span {
         color: $font-red;
         text-transform: uppercase;
-        font-size: 6rem;
+        font-size: 4.5rem;
         font-style: normal;
     }
 
@@ -254,11 +254,16 @@ i {
     }
 }
 
+.why-item-title {
+    font-family: $roboto;
+    color: $bg-blue;
+}
+
 .why-paragraph {
     width: 85%;
-    text-align: justify;
+    text-align: center;
     color: $font-blue;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     @include mobile {
         font-size: 1rem;

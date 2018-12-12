@@ -21,7 +21,8 @@ get_header();
 
 			<section class="hero-image">
 				<div class="hero-overlay"></div>
-				<h1 class="hero-label"><?php _e('Dreaming of', 'nexus'); ?> <br><span><?php _e('Canada?' ,'nexus'); ?> </span> <br><?php _e('We will make your dream come true.', 'nexus'); ?></h1>
+				<h1 class="hero-label"><?php _e('Want to', 'nexus'); ?> <br><span><?php _e('STUDY ABROAD?' ,'nexus'); ?> </span></h1>
+				<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>
 			</section>
 
 
@@ -54,24 +55,29 @@ get_header();
 				<button class="why-btn-left why-btn"><i class="fas fa-chevron-left"></i></button>
 				<button class="why-btn-right why-btn"><i class="fas fa-chevron-right"></i></button>
 					<div class="why-item">
-						<i class="far fa-clock"></i>
-						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<i class="fas fa-brain"></i>
+						<h3 class="why-item-title">Experts in Education</h3>
+						<p class="why-paragraph">Thanks to our years of experience, we have experts in education ready to advise you.</p>
 					</div>
 					<div class="why-item">
-						<i class="fas fa-check-circle"></i>
-						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<i class="fas fa-book"></i>
+						<h3 class="why-item-title">Program Variety</h3>
+						<p class="why-paragraph">We have hundreds of different programs! From English for basic levels to post-doctoral programs. Check them out!</p>
 					</div>
 					<div class="why-item">
-						<i class="far fa-clock"></i>
-						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<i class="fas fa-plus"></i>
+						<h3 class="why-item-title">Health Insurance</h3>
+						<p class="why-paragraph">Your health is as important for us as it is to you! That's why Nexus offers one of the most complete student health insurances in Canada.</p>
 					</div>
 					<div class="why-item">
-						<i class="fas fa-check-circle"></i>
-						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<i class="fas fa-bed"></i>
+						<h3 class="why-item-title">Accommodation</h3>
+						<p class="why-paragraph">Having a good accommodation, according to your needs and preferences, is part of a successful experience abroad.</p>
 					</div>
 					<div class="why-item">
-						<i class="far fa-clock"></i>
-						<p class="why-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<i class="fas fa-passport"></i>
+						<h3 class="why-item-title">Visa Procedure</h3>
+						<p class="why-paragraph">Need a visa to study abroad? Don’t worry, we got you covered! Nexus makes all the visa procedure for you. Just pick the program you like the most and we´ll do the rest.</p>
 					</div>
 				</div>
 				<a class="get-quote-btn menu-item-51 menu-item-25">Get Quote</a>
@@ -97,43 +103,43 @@ get_header();
 			<section class="choose-city-section">
 					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
 					<div class="cities-container-front">
-						<a class="city-link-front fifty-div">
+						<a href="cities/calgary/"  class="city-link-front fifty-div">
 							<div class="city-container-frontpage cal-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Calgary</h2>
 							</div>
 						</a>
-						<a class="city-link-front fifty-div">
+						<a href="cities/montreal/" class="city-link-front fifty-div">
 							<div class="city-container-frontpage mon-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Montreal</h2>
 							</div>
 						</a>
-						<a class="city-link-front fifty-div">
+						<a href="cities/ottawa/" class="city-link-front fifty-div">
 							<div class="city-container-frontpage otta-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Ottawa</h2>
 							</div>
 						</a>
-						<a class="city-link-front third-div">
+						<a href="cities/toronto/" class="city-link-front third-div">
 							<div class="city-container-frontpage toro-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Toronto</h2>
 							</div>
 						</a>
-						<a class="city-link-front third-div">
+						<a href="cities/vancouver/" class="city-link-front third-div">
 							<div class="city-container-frontpage van-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Vancouver</h2>
 							</div>
 						</a>
-						<a class="city-link-front third-div">
+						<a href="cities/victoria/" class="city-link-front third-div">
 							<div class="city-container-frontpage vic-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Victoria</h2>
 							</div>
 						</a>
-						<a class="city-link-front third-div">
+						<a href="cities/winnipeg/" class="city-link-front third-div">
 							<div class="city-container-frontpage winni-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Winnipeg</h2>

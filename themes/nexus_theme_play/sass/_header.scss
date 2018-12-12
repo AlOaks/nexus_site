@@ -139,6 +139,10 @@ body {
     a {
         color: white;
     }
+
+    &:hover {
+        background: red;
+    }
 }
 
 .page-title-container {
@@ -150,7 +154,7 @@ body {
     align-items: center;
 
     @include mobile {
-        margin-top: 8vh;
+        margin-top: 11vh;
     }
 
     h1 {

@@ -24,6 +24,9 @@ get_header();
 				$school_vid = CFS()->get('school_video');
 				$logo = CFS()->get('logo');
 
+				$postID = get_the_ID();
+				$prog_type = wp_get_post_terms($postID, 'programsTypes');
+
 				$van = 'The perfect balanced between nature and urban lifestyle! Parks, gardens and beaches make up this city. With plenty of things to do around the city its ranked as one of the best places to live all over the world. no matter the time of year Vancouver has it all!';
 				$montreal = 'With a little more than 1.5 million inhabitants, is called the Paris of the Americas. And the reasons go beyond the French, language that is also spoken in the bilingual city. Montreal maintains not only the architecture style, but it also keeps the culture that will make you feel as if you´re living in Europe.';
 				$ottawa = 'The capital of Canada! Ottawa has an impressive cultural offer, a variety of museums available for those who reside in this city. Like almost all cities in Canada, it has parks where you can do different activities both in summer and in winter. If you want to live in a quiet city, Ottawa is the most appropriate';
@@ -55,7 +58,7 @@ get_header();
 							<p class="li-field"><?php echo $duration; ?> months</p>
 						</li>
 						<li class="program-info-item">
-							<p class="li-title"><?php _e('City', 'nexus'); ?></p>
+							<p class="li-title"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
 							<p class="li-field"><?php echo $city; ?></p>
 						</li>
 						<li class="program-info-item">

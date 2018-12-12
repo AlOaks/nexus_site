@@ -164,10 +164,11 @@
 
 
 
-    h1 {
+    h3 {
         margin-top: 0;
         margin-bottom: 2%;
         color: $font-blue;
+        font-size: 1.5rem;
 
         @include mobile {
             text-align: center;
@@ -186,7 +187,7 @@
         }
     }
 
-    button {
+    a {
         color: white;
         background: $div-red;
         width: 43%;
@@ -194,6 +195,10 @@
         font-weight: 900;
         font-family: $roboto;
         font-size: 1.1rem;
+        text-align: center;
+        padding: 2% 5%;
+        border-radius: 5px;
+        box-shadow: $shadow;
 
         @include mobile {
             margin-left: auto;

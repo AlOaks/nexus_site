@@ -46,13 +46,21 @@ get_header();
             <section class="retrieved-programs-container"></section>
             <section class="xplore-more-container">
                 <h2 class="xplore-more-title"><?php _e('Explore More Options', 'nexus'); ?></h2>
+                <?php 
+                        $prog_types = get_terms([
+                            'taxonomy' => 'programsTypes',
+                            'hide_empty' => false
+                            ]);
+
+                        foreach($prog_types as $prog_type) : ?>
+
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-1"><?php _e('Language Programs', 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
-                        <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <h2 class="more-prg-title box-1"><?php _e($prog_type->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <p class="more-prg-paragraph"><?php _e($prog_type->description, 'nexus'); ?></p>
                     </div>
                     <div class="more-prg-icons icons-1">
-                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="more-prg-paragraph-2"><?php _e($prog_type->description, 'nexus'); ?></p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
@@ -70,8 +78,12 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="more-programs-container">
 
+                <?php endforeach; ?>    
+
+
+                <!-- <div class="more-programs-container">
+                
                     <div class="more-prg-desc">
                         <h2 class="more-prg-title box-2">Work & Study <i class="fas fa-chevron-down chevron-2"></i><i class="fas fa-chevron-up chev-up-2"></i></h2>
                         <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
@@ -166,7 +178,7 @@ get_header();
                             <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <section class="start-journey-section">
 			    <h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>

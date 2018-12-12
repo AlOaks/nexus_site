@@ -1,4 +1,4 @@
-.tax-programsTypes {
+.tax-Cities {
     background: white;
 
     .footer-copy {
@@ -27,6 +27,10 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .duration-selector, .location-selector {
@@ -38,6 +42,12 @@
     padding: 0;
     option {
         color: $font-blue;
+    }
+
+    @include mobile {
+        width: 50%;
+        margin-bottom: 2.5%;
+        margin-top: 2.5%;
     }
 }
 
@@ -52,6 +62,13 @@
     border: none;
     box-shadow: $shadow;
     padding: 0;
+
+    @include mobile {
+        font-size: 1.2rem;
+        flex-basis: 35%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
 
 
@@ -85,12 +102,21 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include mobile {
+        width: 48%;
+        height: auto;
+    }
+
     p {
         font-family: $roboto;
         color: $font-blue;
         font-size: 1.3rem;
         margin: 0;
         margin-left: 5%;
+        
+        @include mobile {
+            font-size: .9rem;
+        }
     }
 
     .prog-name-single {
@@ -98,6 +124,10 @@
         font-size: 2rem;
         margin: 0;
         margin-left: 5%;
+
+        @include mobile {
+            font-size: 1.1rem;
+        }
     }
 
     .prog-city-single {
@@ -110,5 +140,95 @@
         height: 12rem;
     }
 
+}
+
+#more_programs {
+    background: $div-red;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 5%;
+    color: white;
+    margin-bottom: 5%;
+    display: none;
+
+    &:hover {
+        background: red;
+    }
+
+    @include mobile {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+
+.no-programs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+
+    p {
+        color: $div-red;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: $sans;
+        font-size: 2rem;
+        color: $font-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        span {
+            font-size: 4rem;
+            position: relative;
+            margin-bottom: 10%;
+            font-family: $roboto;
+
+            &::before {
+                content: "";
+                border-bottom: 3px solid #FFC54C;
+                width: 40%;
+                position: absolute;
+                height: 1px;
+                left: 30%;
+                bottom: 0;
+            }
+        }
+    }
+
+    .contact-btn {
+        background: $bg-blue;
+        color: white;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        padding: 2% 5%;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        font-weight: bold;
+
+        &:hover {
+            background: lighten($bg-blue, 10%);
+        }
+
+    }
 }
 
