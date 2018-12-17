@@ -1,5 +1,20 @@
 (function($) {
 
+    /* HEADER */
+    var prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+
+        var currentScrollPos = window.pageYOffset;
+
+        if (prevScrollpos > currentScrollPos) {
+            $('.site-header').slideDown('fast');
+        } else {
+            $('.site-header').slideUp('fast');
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
     /* SLIDERS */
 
 $('.btn-lft').click(function() {

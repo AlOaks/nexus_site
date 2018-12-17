@@ -31,10 +31,10 @@
 				<div class="nexus-social info-div">
 					<h2 class="social-title-footer footer-title"><?php _e('Stay Connected', 'nexus'); ?></h2>
 					<div class="social-logos-container">
-						<a href="https://www.facebook.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/face_logo1@3x.png'; ?> /></a>
-						<a href="https://www.twitter.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/twitter_logo1@3x.png'; ?> /></a>
-						<a href="https://www.youtube.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube_logo1@3x.png'; ?> /></a>
-						<a href="https://www.instagram.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram@3x.png'; ?> /></a>
+						<a href="https://www.facebook.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?> /></a>
+						<a href="https://www.twitter.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/twitter.png'; ?> /></a>
+						<a href="https://www.youtube.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
+						<a href="https://www.instagram.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
 					</div>
 					<a class="join-nexus-fam-btn"><?php _e('Join Nexus Family','nexus'); ?></a>
 				</div>

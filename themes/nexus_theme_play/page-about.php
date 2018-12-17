@@ -20,9 +20,7 @@ get_header();
             <div class="page-title-container">
                 <h1 class="contact-header"><?php the_title(); ?></h1>
             </div>
-            <div class="nexus-mission">
-                <p><?php echo CFS()->get('mission'); ?></p>
-            </div>
+            
             <div class="contact-form-container">
                 <h1 class="contact-form-title"><?php _e('Send Us A Message', 'nexus'); ?></h1>
                 <?php 

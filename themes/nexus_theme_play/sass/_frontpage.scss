@@ -8,7 +8,7 @@
     background-position: center;
     height: 86vh;
     margin: $center;
-    margin-top: 10vh;
+    margin-top: 5vh;
     position: relative;
 
     @include mobile {
@@ -662,10 +662,10 @@ i {
 .reviews-slider {
     overflow-x: auto;
     width: 90%;
-    height: 50vh;
+    height: 35vh;
     margin: $center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding-bottom: 5%;
 
     &::-webkit-scrollbar {
@@ -679,9 +679,10 @@ i {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    
+    position: relative;
     margin: $center;
     background: $div-white;
+    box-shadow: $shadow;
 
     @include mobile {
         flex-direction: column;
@@ -705,13 +706,10 @@ i {
 }
 
 .review-content {
-    width: 75%;
-    height: 80%;
-    padding-left: 5%;
+    width: 65%;
     color: $font-blue;
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-family: $sans;
-    position: relative;
     margin: $center;
 
     @include mobile {
@@ -724,11 +722,12 @@ i {
     color: $div-yellow;
     font-size: 4rem;
     position: absolute;
+
 }
 
 .quote {
-    left: 1rem;
-    top: -2rem;
+    left: 25%;
+    top: 0rem;
 
     @include mobile {
         left: -1rem;

@@ -2,11 +2,10 @@ $roboto : 'Roboto';
 $sans : 'Open Sans';
 
 $bg-blue: #15405A;
-$div-red : #DD3333;
-$div-yellow : #FFC54C;
-$div-yellow-dark : #FF8A2A;
+$div-red : darken(#DD3333, 10%);
+$div-yellow : darken(#FFC54C, 10%);
+$div-yellow-dark : darken(#FF8A2A, 10%);
 $div-white : #F3F5F8;
-$div-yellow-form: rgba(255,197,76,0.75);
 
 $font-blue : #193F5C;
 $font-red : #FF2F49;

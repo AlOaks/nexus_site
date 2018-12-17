@@ -33,9 +33,10 @@
 			<p class="login-link"><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?> </p>
 		
 		<?php } else { ?>
-			
-			<a class="login-link join-link"><?php _e('Join Nexus Club', 'nexus'); ?></a>
-		
+			<div class="links-header">
+				<a class="join-link"><?php _e('Join Nexus Club', 'nexus'); ?></a>
+				<a class="log-in-link"><?php _e('Log In', 'nexus'); ?></a>
+			</div>
 
 		<?php } ?>
 		<section class="header-content">

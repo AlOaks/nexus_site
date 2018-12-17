@@ -19,21 +19,16 @@ get_header();
 				$school = CFS()->get('school');
 				$price = CFS()->get('price');
 				$hrs = CFS()->get('hours');
-				$city = CFS()->get('city');
 				$school_info = CFS()->get('school_info');
 				$school_vid = CFS()->get('school_video');
 				$logo = CFS()->get('logo');
 
 				$postID = get_the_ID();
-				$prog_type = wp_get_post_terms($postID, 'programsTypes');
+				$prog_city = wp_get_post_terms($postID, 'Cities');
 
-				$van = 'The perfect balanced between nature and urban lifestyle! Parks, gardens and beaches make up this city. With plenty of things to do around the city its ranked as one of the best places to live all over the world. no matter the time of year Vancouver has it all!';
-				$montreal = 'With a little more than 1.5 million inhabitants, is called the Paris of the Americas. And the reasons go beyond the French, language that is also spoken in the bilingual city. Montreal maintains not only the architecture style, but it also keeps the culture that will make you feel as if you´re living in Europe.';
-				$ottawa = 'The capital of Canada! Ottawa has an impressive cultural offer, a variety of museums available for those who reside in this city. Like almost all cities in Canada, it has parks where you can do different activities both in summer and in winter. If you want to live in a quiet city, Ottawa is the most appropriate';
-				$winni = 'Winnipeg, the capital of Manitoba. This city is famous for its lakes and numerous parks. You can also find a lot of museums, theaters, places with incredibles historic value and more. Commonly visited when traveling from coast to coast in Canada, it is almost half of the Canadian territory.';
-				$victoria = 'The capital of British Columbia! Located on the huge island of Vancouver, Victoria is a beautiful city to explore. They call it "city of the gardens" for its floral wealth. It is the city with the best climate in Canada, during the summer it is mild and in the winter the temperatures oscillate from 0 to 10 degrees Celsius. Excellent for practicing all kinds of sports especially those that are outdoors.';
-				$calgary = 'It is one of the most dynamic cities in Canada. It is located one hour from the Rocky Mountains, in the province of Alberta. Calgary is a vibrant business center. Summer is mild and winter is cold, with occasional warmer periods. The lifestyle of this city is ideal for active people, and during the summer you can participate in the Stampede, the largest rodeo in the world.';
-				$toronto = 'If you want live in a modern city, Toronto is the place to go! Located in Ontario it is the most cosmopolitan, a city of modern buildings where people from all over the world coexist. It is the financial center of the country and also the largest city , with a population of more than 2.5 million inhabitants.';
+				$city_name = $prog_city[0]->name;
+
+
 
 				$van_img = get_template_directory_uri().'/assets/images/vancouver.jpg';
 				$mon_img = get_template_directory_uri().'/assets/images/montreal.jpg';
@@ -58,8 +53,8 @@ get_header();
 							<p class="li-field"><?php echo $duration; ?> months</p>
 						</li>
 						<li class="program-info-item">
-							<p class="li-title"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
-							<p class="li-field"><?php echo $city; ?></p>
+							<p class="li-title"><?php echo _e('City', 'nexus'); ?></p>
+							<p class="li-field"><?php echo _e($city_name, 'nexus'); ?></p>
 						</li>
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('Hrs / Week', 'nexus'); ?></p>
@@ -67,7 +62,6 @@ get_header();
 						</li>
 					</ul>
 				</section>
-
 				
 
 				<section class="about-container program-container">
@@ -97,44 +91,26 @@ get_header();
 				<section class="about-container city-container">
 					<div class="about-city">
 						<div class="city-description">
-							<p class="about-city-title"><?php echo $city; ?></p>
-							<p class="city-description">
-							<?php 
-							if ($city == 'Vancouver') { 
-									echo $van;
-								} else if ($city == 'Toronto') {
-									echo $toronto;
-								} else if ($city == 'Montreal') {
-									echo $montreal;
-								} else if ($city == 'Ottawa') {
-									echo $ottawa;
-								} else if ($city == 'Calgary') {
-									echo $calgary;
-								} else if ($city == 'Victoria') {
-									_e($victoria, 'nexus');
-								} else if ($city == 'Winnipeg') {
-									echo $winni;
-								}
-							 ?>
-							</p>
+							<p class="about-city-title"><?php echo $prog_city[0]->name; ?></p>
+							<p class="city-description"><?php echo _e($prog_city[0]->description, 'nexus'); ?></p>
 						</div>
 						<img class="city-img" src=<?php
-							if ($city == 'Vancouver') { 
-										echo $van_img;
-									} else if ($city == 'Toronto') {
-										echo $tor_img;
-									} else if ($city == 'Montreal') {
-										echo $mon_img;
-									} else if ($city == 'Ottawa') {
-										echo $ott_img;
-									} else if ($city == 'Calgary') {
-										echo $cal_img;
-									} else if ($city == 'Victoria') {
-										echo $vic_img;
-									} else if ($city == 'Winnipeg') {
-										echo $win_img;
-									}
-								?>
+								if ($city_name == 'Vancouver') { 
+									echo $van_img;
+								} else if ($city_name == 'Toronto') {
+									echo $tor_img;
+								} else if ($city_name == 'Montreal') {
+									echo $mon_img;
+								} else if ($city_name == 'Ottawa') {
+									echo $ott_img;
+								} else if ($city_name == 'Calgary') {
+									echo $cal_img;
+								} else if ($city_name == 'Victoria') {
+									echo $vic_img;
+								} else if ($city_name == 'Winnipeg') {
+									echo $win_img;
+								}
+							?>
 						>
 					</div>
 				</section>

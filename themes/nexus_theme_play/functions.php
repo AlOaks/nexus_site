@@ -302,3 +302,4 @@ function misha_filter_function() {
 
 add_action('wp_ajax_myfilter', 'misha_filter_function'); 
 add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
+

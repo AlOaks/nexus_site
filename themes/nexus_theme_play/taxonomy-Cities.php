@@ -45,8 +45,7 @@ get_header();
 			</form>
 			<div class="type-programs-container">
 				<?php
-
-							
+						
 				while (have_posts() ) : the_post(); ?>
 
 				<?php 

@@ -6,7 +6,7 @@
 
 // BOOK CONSULT FORM
 
-#popmake-144, #popmake-88 {
+#popmake-144, #popmake-88, #popmake-168 {
     top: 5% !important;
     padding: 0;
 
@@ -153,41 +153,7 @@
 
 // START YOUR JOURNEY FORM
 
-#popmake-155, #popmake-87 {
-    padding: 0;
-    top: 5% !important;
 
-    .popmake-content {
-        background: $div-yellow-form;
-
-
-        h2 {
-            margin-top: 0;
-            color: $font-blue;
-            text-align: center;
-            padding-top: 5%;
-            font-family: $roboto;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        p {
-            margin-bottom: 0;
-            width: 40%;
-            margin: $center;
-            padding-bottom: 3%;
-        }
-
-        input[type="submit"]{
-            background: $div-red;
-            color: white;
-            width: 100%;
-            border: none;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-    }
-}
 
 
 
@@ -226,7 +192,49 @@
             }
         }
     }
+}
 
-    
+#popmake-168 {
+    height: 60vh;
 
+    .form-book {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// SING UP FORM 
+.swpm-validate-form {
+
+    label {
+        font-size: .8rem;
+        font-family: $roboto;
+        color: white;
+    }
+
+}
+
+.swpm-registration-membership-level-row {
+    display: none;
+}
+
+.swpm-registration-submit-section input[type="submit"] {
+    background: $div-red;
+    font-family: $roboto;
+    font-weight: bold;
+    box-shadow: $shadow;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 0;
 }
