@@ -211,6 +211,9 @@ select {
     width: 40%;
     display: flex;
     justify-content: space-around;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     @include mobile {
         display: none;
@@ -219,6 +222,9 @@ select {
         border-radius: 5px;
         margin: $center;
         flex-wrap: wrap;
+        height: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
     
 
         i {
@@ -239,11 +245,11 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 30%;
     color: $font-blue;
     font-family: $sans;
     flex-basis: 30%;
+    text-align: center;
 
     h2 {
         font-size: 1.2rem;

@@ -20,38 +20,24 @@ get_header();
             <div class="page-title-container">
                 <h1 class="contact-header"><?php the_title(); ?></h1>
             </div>
+            <section class="about-container about-content-div">
+                <p class="about-description"><?php _e('Canadian Universities, Language Schools or even Work and Study programs. Nexus Education Consulting helps international students to find their ideal school to study in Canada. Our services go from education consulting, to accommodation and health insurance services. With more than 10 years of experience and hundreds of students who have successfully studied through our services, Nexus is one of the best options to study in Canada!', 'nexus'); ?></p>
+            </section>
+            <section class="purpose-container about-content-div">
+                <img src=<?php echo get_template_directory_uri().'/assets/images/programs_home_01_nexus@3x.png.jpg'; ?> />
+                <h2 class="container-title"><?php _e('Our Purpose', 'nexus'); ?></h2>
+                <p class="purpose-description"><?php _e('The purpose of Nexus is to empower people to lead transformations in their lives through and educational experience in Canada.', 'nexus'); ?></p>
+            </section>
+            <section class="history-container about-content-div">
+                <h2 class="container-title"><?php _e('Our History', 'nexus'); ?></h2>
+                <p class="history-description"><?php _e('', 'nexus'); ?></p>
+            </section>
+            <section class="manifest-container about-content-div">
+                <img src=<?php echo get_template_directory_uri().'/assets/images/program_info.png'; ?> />
+                <h2 class="container-title"><?php _e('Manifest', 'nexus'); ?></h2>
+                <p class="manifest-description"><?php _e("Your chance to challenge yourself is now. It's time to seek for new experiences and goals. Time to dare, create changes and to make an impact. Open yourself to infinite possibilities of growth and  development. The stage is ready, just waiting for people who dare to take the next step.", 'nexus'); ?></p>
+            </section>
             
-            <div class="contact-form-container">
-                <h1 class="contact-form-title"><?php _e('Send Us A Message', 'nexus'); ?></h1>
-                <?php 
-                    while (have_posts() ): the_post();
-                        the_content();
-
-                    endwhile; 
-                ?>
-            </div>
-            <div class="nexus-information">
-                <h1 class="info-title"><?php _e('Nexus in Canada', 'nexus'); ?></h1>
-                <p class="info-description"><?php echo CFS()->get('cta_about'); ?></p>
-                <div class="info-container">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker"></i>
-                        <div class="address-map-container">
-                            <p class="address-info">970 Burrard St<br> <?php _e('Room 119', 'nexus'); ?> - <?php _e('1st floor','nexus'); ?><br> Vancouver, BC - V6Z 2R4</p>
-                            <img class="nexus-map" src=<?php echo get_template_directory_uri().'/assets/images/map-nexus.png'; ?> />
-                            <a class="open-in-maps-link" href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2810287,-123.1265783,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">Open in Google Maps</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p class="phone-number">+1 (604) 288-0787</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-hourglass-half"></i>
-                        <p class="work-hours"><?php _e('Monday to Friday', 'nexus'); ?><br>9am to 5pm</p>
-                    </div>
-                </div>
-            </div>
             <section class="start-journey-section">
 				<h1 class="start-title"><?php _e('Questions?', 'nexus'); ?></h1>
 				<p class="start-description"><?php _e("We've got you covered", 'nexus'); ?></p>

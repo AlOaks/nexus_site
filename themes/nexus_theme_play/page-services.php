@@ -20,12 +20,6 @@ get_header();
             <div class="page-title-container">
                 <h1 class="services-header"><?php the_title(); ?></h1>
             </div>
-            <section class="about-container">
-                <h1 class="about-title"><?php _e('About Nexus', 'nexus'); ?></h1>
-                <p class="about-description"><?php _e('Canadian Universities, Language Schools or even Work and Study programs. Nexus Education Consulting helps international students to find their ideal school to study in Canada. Our services go from education consulting, to accommodation and health insurance services. With more than 10 years of experience and hundreds of students who have successfully studied through our services, Nexus is one of the best options to study in Canada!', 'nexus'); ?></p>
-                <button class="get-in-touch contact-btn"><?php _e('Get in Touch', 'nexus'); ?></button>
-            </section>
-
             <section class="how-we-help-section">
                 <h1 class="how-we-help-title"><?php _e('How We Help', 'nexus'); ?></h1>
                 <div class="planning steps-div">
@@ -82,31 +76,6 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="consultants-section">
-                <h1 class="consultants-title"><?php _e('Our Education Consultants' , 'nexus'); ?></h1>
-                <div class="consultants-container">
-                    <div class="consultant cons1">
-                        <img class="consul-img" src=<?php echo get_template_directory_uri().'/assets/images/TeamMember01@2x.png'; ?> />
-                        <h1 class="consul-name">Rafael Schafer Marques</h1>
-                        <h2 class="consul-position"><?php _e('Director of International Studies', 'nexus'); ?></h2>
-                        <div class="consul-contact">
-                            <a class="social-consul-link" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="social-consul-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                            <a class="social-consul-link" href="https://outlook.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="consultant cons2">
-                        <img class="consul-img" src=<?php echo get_template_directory_uri().'/assets/images/TeamMember02@2x.png'; ?>  />
-                        <h1 class="consul-name">Carolina Ribeiro</h1>
-                        <h2 class="consul-position"><?php _e('Advisor','nexus'); ?></h2>
-                        <div class="consul-contact">
-                            <a class="social-consul-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                            <a class="social-consul-link" href="https://outlook.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>    
             </section>
             <section class="start-journey-section">
 				<h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>

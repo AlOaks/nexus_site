@@ -52,133 +52,129 @@ get_header();
                             'hide_empty' => false
                             ]);
 
-                        foreach($prog_types as $prog_type) : ?>
+                         ?>
 
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-1"><?php _e($prog_type->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
-                        <p class="more-prg-paragraph"><?php _e($prog_type->description, 'nexus'); ?></p>
+                        <h2 class="more-prg-title box-1"><?php _e($prog_types[0]->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <p class="more-prg-paragraph"><?php _e($prog_types[0]->description, 'nexus'); ?></p>
                     </div>
                     <div class="more-prg-icons icons-1">
-                        <p class="more-prg-paragraph-2"><?php _e($prog_type->description, 'nexus'); ?></p>
+                        <p class="more-prg-paragraph-2"><?php _e($prog_types[0]->description, 'nexus'); ?></p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('The duration may vary, however the average duration its from 2 months to 1 year.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
                             <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average cost is from $3,500 to $10,000 CAD depending on the program and the school.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
                             <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
+                            <p class="more-icon-desc"><?php _e('New technical skills and knowledge in the specific area of choice, and the Certificate granted by the School.', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
-
-                <?php endforeach; ?>    
-
-
-                <!-- <div class="more-programs-container">
-                
+                <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-2">Work & Study <i class="fas fa-chevron-down chevron-2"></i><i class="fas fa-chevron-up chev-up-2"></i></h2>
-                        <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <h2 class="more-prg-title box-2"><?php _e($prog_types[1]->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <p class="more-prg-paragraph"><?php _e($prog_types[1]->description, 'nexus'); ?></p>
                     </div>
                     <div class="more-prg-icons icons-2">
-                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="more-prg-paragraph-2"><?php _e($prog_types[1]->description, 'nexus'); ?></p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average duration is 4 years.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
                             <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average cost is from $14,000 to $40,000 CAD a year.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
                             <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
+                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-3">Diplomas <i class="fas fa-chevron-down chevron-3"></i><i class="fas fa-chevron-up chev-up-3"></i></h2>
-                        <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <h2 class="more-prg-title box-3"><?php _e($prog_types[2]->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <p class="more-prg-paragraph"><?php _e($prog_types[2]->description, 'nexus'); ?></p>
                     </div>
                     <div class="more-prg-icons icons-3">
-                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="more-prg-paragraph-2"><?php _e($prog_types[2]->description, 'nexus'); ?></p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average duration sif rom 6 months to 2 years.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
                             <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average cost is from $9,000 to $14,000 CAD.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
                             <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
+                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-4">Degrees <i class="fas fa-chevron-down chevron-4"></i><i class="fas fa-chevron-up chev-up-4"></i></h2>
-                        <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <h2 class="more-prg-title box-4"><?php _e($prog_types[3]->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <p class="more-prg-paragraph"><?php _e($prog_types[3]->description, 'nexus'); ?></p>
                     </div>
                     <div class="more-prg-icons icons-4">
-                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="more-prg-paragraph-2"><?php _e($prog_types[3]->description, 'nexus'); ?></p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('From 2 weeks to 1 year; or as long as needed.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
                             <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average cost is from $1,200 to $1,400 CAD per month.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
                             <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
+                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
                 <div class="more-programs-container">
                     <div class="more-prg-desc">
-                        <h2 class="more-prg-title box-5">Certificates<i class="fas fa-chevron-down chevron-5"></i><i class="fas fa-chevron-up chev-up-5"></i></h2>
-                        <p class="more-prg-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <h2 class="more-prg-title box-5"><?php _e($prog_types[4]->name, 'nexus'); ?> <i class="fas fa-chevron-down chevron-1"></i><i class="fas fa-chevron-up chev-up-1"></i></h2>
+                        <p class="more-prg-paragraph"><?php _e($prog_types[4]->description, 'nexus'); ?></p>
                     </div>
                     <div class="more-prg-icons icons-5">
-                        <p class="more-prg-paragraph-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="more-prg-paragraph-2"><?php _e($prog_types[4]->description, 'nexus'); ?></p>
                         <div class="more-icon">
                             <i class="far fa-clock"></i>
                             <h2 class="more-icon-title"><?php _e('Duration', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('From 6 months to 2 years.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-dollar-sign"></i>
                             <h2 class="more-icon-title"><?php _e('Tuition Fee', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>           
+                            <p class="more-icon-desc"><?php _e('Average cost is from $9,000 to $14,000 CAD.', 'nexus'); ?></p>           
                         </div>
                         <div class="more-icon">
                             <i class="fas fa-check-circle"></i>
                             <h2 class="more-icon-title"><?php _e('Outcome', 'nexus'); ?></h2>
-                            <p class="more-icon-desc">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>                                       
+                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
-                </div> -->
+                </div>
+
             </section>
             <section class="start-journey-section">
 			    <h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>

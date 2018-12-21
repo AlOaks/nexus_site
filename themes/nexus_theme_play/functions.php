@@ -180,6 +180,8 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+remove_filter( 'the_content', 'wpautop' );
+
 function more_post_ajax(){
     $offset = $_POST["offset"];
     $ppp = $_POST["ppp"];

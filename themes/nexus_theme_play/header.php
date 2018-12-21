@@ -34,8 +34,8 @@
 		
 		<?php } else { ?>
 			<div class="links-header">
-				<a class="join-link"><?php _e('Join Nexus Club', 'nexus'); ?></a>
-				<a class="log-in-link"><?php _e('Log In', 'nexus'); ?></a>
+				<a href="#" class="join-link"><?php _e('Join Nexus Club', 'nexus'); ?></a>
+				<a href="#" class="log-in-link"><?php _e('Log In', 'nexus'); ?></a>
 			</div>
 
 		<?php } ?>

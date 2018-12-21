@@ -195,10 +195,10 @@
 }
 
 #popmake-168 {
-    height: 60vh;
+    height: 70vh;
 
     .form-book {
-        height: 60vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -212,6 +212,15 @@
 
 // SING UP FORM 
 .swpm-validate-form {
+
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     label {
         font-size: .8rem;

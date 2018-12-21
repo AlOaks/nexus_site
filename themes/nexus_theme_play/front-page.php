@@ -57,7 +57,7 @@ get_header();
 					<div class="why-item">
 						<i class="fas fa-brain"></i>
 						<h3 class="why-item-title"><?php _e('Experts in Education', 'nexus'); ?></h3>
-						<p class="why-paragraph"><?php _e('Thanks to our years of experience, we have experts in education ready to advise you.', 'nexus'); ?></p>
+						<p class="why-paragraph"><?php _e('Thanks to our years of experience, we have experts in education ready to advise you. We´ll gladly help you with any questions you have!', 'nexus'); ?></p>
 					</div>
 					<div class="why-item">
 						<i class="fas fa-book"></i>
@@ -77,7 +77,7 @@ get_header();
 					<div class="why-item">
 						<i class="fas fa-passport"></i>
 						<h3 class="why-item-title"><?php _e('Visa Procedure', 'nexus'); ?></h3>
-						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! Nexus makes all the visa procedure for you. Just pick the program you like the most and we´ll do the rest.', 'nexus'); ?></p>
+						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! Just pick the program you like the most and we´ll do the rest.', 'nexus'); ?></p>
 					</div>
 				</div>
 				<a class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Get Quote', 'nexus'); ?></a>
@@ -88,9 +88,9 @@ get_header();
 				<button class="slider-btn btn-lft">></button>
                 <button class="slider-btn btn-right"><</button>
 				<div class="slider-canada">			
-					<img class="slider-item" src=<?php echo get_template_directory_uri().'/assets/images/blog_photo_post01@3x.png' ?>>
-					<img class="slider-item" src=<?php echo get_template_directory_uri().'/assets/images/blog_photo_post02@3x.png' ?>>
-					<img class="slider-item" src=<?php echo get_template_directory_uri().'/assets/images/blog_photo_post03@3x.png' ?>>
+					<img class="slider-item" src=<?php echo get_template_directory_uri().'/assets/images/manitoba.jpg' ?>>
+					<img class="slider-item" src=<?php echo get_template_directory_uri().'/assets/images/vancouver.jpg' ?>>
+					<img class="slider-item" src=<?php echo get_template_directory_uri().'/assets/images/toronto.jpg' ?>>
 				</div>
 			</section>
 
