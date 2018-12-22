@@ -85,7 +85,6 @@ get_header();
 							<p class="about-school-desc"><?php echo $school_info; ?></p>
 						</div>
 					</div>
-					<a class="explore-more"><?php _e('Explore Other Programs', 'nexus'); ?></a>
 				</section>
 
 				<section class="about-container city-container">
