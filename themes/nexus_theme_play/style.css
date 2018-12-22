@@ -3667,6 +3667,67 @@ select {
       font-weight: 600;
       font-size: 1.1rem; }
 
+#popmake-206 {
+  padding: 0;
+  width: 30%; }
+  #popmake-206 .popmake-content {
+    background: #15405A;
+    padding: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    color: white; }
+    #popmake-206 .popmake-content .login-title {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-family: "Roboto"; }
+    #popmake-206 .popmake-content img {
+      width: 50%;
+      margin-left: 22%; }
+    #popmake-206 .popmake-content input {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+    #popmake-206 .popmake-content input[type="checkbox"] {
+      width: 5%; }
+    #popmake-206 .popmake-content input[type="submit"] {
+      background: #bd2020;
+      color: white;
+      font-family: "Open Sans";
+      -webkit-box-shadow: 3px 3px 5px #5a5a5a;
+              box-shadow: 3px 3px 5px #5a5a5a;
+      border: none;
+      font-size: 1.5rem;
+      padding: .5rem; }
+
+.swpm-login-form-inner {
+  width: 100%;
+  margin-left: 10%; }
+  .swpm-login-form-inner a {
+    color: white; }
+    .swpm-login-form-inner a:visited {
+      color: #F3F5F8; }
+
+.swpm-login-submit {
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 2%; }
+
+.pum-close {
+  background: #15405A !important; }
+
 .form-start-form {
   display: -webkit-box;
   display: -ms-flexbox;

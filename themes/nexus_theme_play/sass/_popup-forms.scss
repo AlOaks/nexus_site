@@ -152,11 +152,85 @@
     }
 }
 
+// LOG IN FORM
+
+#popmake-206 {
+    padding: 0;
+    width: 30%;
+    
+    .popmake-content {
+        background: $bg-blue;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        color: white;
+
+        .login-title {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-family: $roboto;
+        }
+
+        img {
+            width: 50%;
+            margin-left: 22%;
+        }
+
+        input {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type="checkbox"] {
+            width: 5%;
+        }
+
+        input[type="submit"] {
+            background: $div-red;
+            color: white;
+            font-family: $sans;
+            box-shadow: $shadow;
+            border: none;
+            font-size: 1.5rem;
+            padding: .5rem;
+            
+        }
+    }
+}
+
+.swpm-login-form-inner {
+    width: 100%;
+    margin-left: 10%;
+
+    a {
+        color: white;
+        &:visited {
+            color: $div-white;
+        }
+    }
+}
+
+.swpm-login-submit {
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 2%;
+}
+
+.pum-close {
+    background: $bg-blue !important;
+    
+}
+
+
 
 // START YOUR JOURNEY FORM
-
-
-
 
 
 .form-start-form {
