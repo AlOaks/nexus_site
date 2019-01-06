@@ -305,3 +305,64 @@ function misha_filter_function() {
 add_action('wp_ajax_myfilter', 'misha_filter_function'); 
 add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
 
+
+function update_postviews($postid) {
+	if (function_exists('wpp_get_views')) {
+			$post_views7 = wpp_get_views( $postid, 'weekly' );
+			if ( ! update_post_meta ($postid, 'postviews_7days', $post_views7) ) {
+				   add_post_meta($postid, 'postviews_7days', $post_views7, true );
+				   }
+		   }
+   }
+   
+add_action('wpp_update_views','update_postviews');
+
+
+function more_post_club(){
+    $offset = $_POST["offset"];
+    $ppp = $_POST["ppp"];
+    header("Content-Type: text/html");
+
+    $args = array(
+        'posts_per_page' => $ppp,
+		'offset' => $offset,
+		'post_type' => 'premium_content'
+	);
+
+	
+	$premposts = new WP_query($args);
+
+	while ( $premposts->have_posts() ): $premposts->the_post();
+
+		$video = CFS()->get('post_video');
+		$title = get_the_title();
+		$excerpt = get_the_excerpt();
+		$img = get_the_post_thumbnail();
+
+		if (!empty($video)) { ?>
+			<div class="video-container">
+				<div class="post-video"><?php echo $video ?></div>
+				<h1 class="video-title"><?php echo $title ?></h1>
+			</div>
+		<?php	
+		} else if(empty($video)) {
+		?>
+			<div class="post-container">
+				<?php echo $img; ?>
+				<h1 class="post-title"><?php echo $title; ?></h1>
+				<p class="post-excerpt"><?php echo $excerpt; ?></p>
+				<a class="post-link" href="<?php echo the_permalink(); ?>">Read</a>
+			</div>
+		<?php
+		}  
+
+	endwhile;
+
+	wp_reset_query();
+	}
+
+
+add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_club'); 
+add_action('wp_ajax_more_post_ajax', 'more_post_club');
+
+   

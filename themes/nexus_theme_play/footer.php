@@ -36,7 +36,12 @@
 						<a href="https://www.youtube.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
 						<a href="https://www.instagram.com"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
 					</div>
-					<a class="join-nexus-fam-btn"><?php _e('Join Nexus Club','nexus'); ?></a>
+					<?php 
+					if (is_user_logged_in()) { ?>
+						<a class="join-logged-in" href="../nexus-club/"><?php _e('Nexus Club', 'nexus'); ?></a>
+					<?php } else { ?>
+						<a class="join-nexus-fam-btn"><?php _e('Join Nexus Club','nexus'); ?></a>
+					<?php } ?>
 				</div>
 
 				<div class="contact-footer info-div">

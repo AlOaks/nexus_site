@@ -27,6 +27,29 @@
 
    });
 
+   $('#more_posts_club').click(function(e){ 
+    // When btn is pressed.
+    e.preventDefault;
+    $("#more_posts_club").attr("disabled",true); // Disable the button, temp.
+    $.post(ajaxurl, {
+        action:"more_post_club",
+        offset: (page + ppp) + 1,
+        ppp: ppp,
+        beforeSend : function(xhr) {
+            $("#more_posts_club").text('Loading...');
+        }
+    }).success(function(posts){
+        page++;
+        $(".blog-section").append(posts); // CHANGE THIS!
+        $("#more_posts_club").attr("disabled",false);
+        $("#more_posts_club").text("Load More");
+
+       
+        
+    });
+
+});
+
    
 	$('#filter').submit(function(){
 		var filter = $('#filter');

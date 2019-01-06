@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     height: 65vh;
+    background: $bg-blue;
 
     @include mobile {
         justify-content: space-around;

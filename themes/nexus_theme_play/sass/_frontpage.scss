@@ -22,7 +22,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(255,255,255,.3);
+    background: rgba(0,0,0,.3);
     width: 100%;
     height: 100%;
 }
@@ -289,9 +289,16 @@ i {
 
 // WHY CANADA SECTION 
 
+.why-canada-section {
+    background: $bg-blue;
+}
+
+
+
 .why-canada-title, .curious-title {
     width: 30%;
-    margin: 4% auto 4% auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color: white;
     font-family: $roboto;
@@ -312,6 +319,11 @@ i {
         left: 40%;
         bottom: -8px;
     }
+
+}
+
+.why-canada-title {
+    padding-top: 3%;
 }
 
 
@@ -345,6 +357,8 @@ i {
     }
 
 }
+
+
 
 .slider-btn {
     position: absolute;
@@ -392,6 +406,12 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: $bg-blue;
+    padding-bottom: 3%;
+
+    @include mobile {
+        position: relative;
+    }
 }
 
 .curious-title {
@@ -425,13 +445,13 @@ i {
 
     @include mobile {
         width: 70%;
+        
     }
 }
 
 // CHOOSE A CITY SECTION
 
 .choose-city-section {
-    margin-top: 5%;
     width: 100%;
     background: white;
     display: flex;
@@ -441,6 +461,13 @@ i {
 
     @include mobile {
         height: 70vh;
+    }
+
+    .visit-faq-btn {
+        @include mobile {
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
 
@@ -452,6 +479,8 @@ i {
 
     @include mobile {
         height: 60%;
+
+        
     }
 }
 
@@ -641,7 +670,7 @@ i {
     color: $font-blue;
     font-size: 3rem;
     margin-top: 0;
-    padding-top: 15%;
+    padding-top: 5%;
     position: relative;
 
     @include mobile {
@@ -671,6 +700,10 @@ i {
 
     &::-webkit-scrollbar {
         display: none;
+    }
+
+    @include mobile {
+        height: 50vh;
     }
 }
 
@@ -714,8 +747,10 @@ i {
     margin: $center;
 
     @include mobile {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-top: 10%;
+        width: 50%;
+        text-align: center;
     }
 }
 
@@ -731,7 +766,8 @@ i {
     top: 0rem;
 
     @include mobile {
-        left: -1rem;
+        left: 2rem;
+        top: 13rem;
     }
 }
 
@@ -740,7 +776,7 @@ i {
     bottom: -2rem;
 
     @include mobile {
-        right: 0;
-        bottom: 0;
+        right: 2rem;
+        
     }
 }

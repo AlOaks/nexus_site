@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<?php 
 			if(is_user_logged_in()) { 
-				$current_user = get_currentuserinfo();		
+				$current_user = wp_get_current_user();		
 		?>
 
 			<p class="login-link"><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?> </p>

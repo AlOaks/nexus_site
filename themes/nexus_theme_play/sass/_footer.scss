@@ -14,6 +14,7 @@
         font-family: $roboto;
         margin-top: 3%;
         position: relative;
+        text-align: center;
 
         @include mobile {
             text-align: center;
@@ -151,7 +152,7 @@
     width: 3rem;
 }
 
-.join-nexus-fam-btn {
+.join-nexus-fam-btn, .join-logged-in {
     background: $div-red;
     border: none;
     box-shadow: 3px 3px 5px black;
@@ -215,6 +216,7 @@
     width: 100%;
     align-items: center;
     height: 5vh;
+    background: $bg-blue;
 
     @include mobile {
         height: 30vh;

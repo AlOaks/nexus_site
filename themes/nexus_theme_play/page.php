@@ -18,25 +18,18 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="page-title-container">
-				<h1 class="type-page-title"><?php the_title() ?></h1>
+				<h1 class="type-page-title"><?php _e(the_title(), 'nexus'); ?></h1>
 			</div>
-		<?php 
-
-			$type = get_the_title();
-			$args = array(
-				'post_type' => 'programs'
-			);
-
-			$prog_query = new WP_query($args);
-		
-		while ( $prog_query->have_posts() ) : $prog_query->the_post(); ?>
+			<div class="login-page-form">
+		<?php while ( have_posts() ) : the_post(); ?>
 			
-		 	<?php the_title(); ?>
+
+		 	<?php the_content(); ?>
 			
 		<?php
 		endwhile; // End of the loop.
 		?>
-
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

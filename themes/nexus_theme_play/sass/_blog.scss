@@ -125,7 +125,7 @@
     margin: $center;
 }
 
-#more_posts{
+#more_posts, #more_posts_club{
     background: $div-red;
     width: 20%;
     border-radius: 5px;
@@ -137,9 +137,16 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1% 5%;
+    color: white;
 
     &:hover {
         background: red;
+    }
+
+    @include mobile {
+        font-size: 1rem;
+        width: 30%;
+        margin-bottom: 5%;
     }
 }
 
@@ -280,6 +287,10 @@
 
     @include mobile {
         height: 40vh;
+    }
+
+    img {
+        width: 100%;
     }
 
     h1 {
