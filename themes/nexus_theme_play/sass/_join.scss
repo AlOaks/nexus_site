@@ -1,0 +1,94 @@
+.page-template-page-join-us {
+
+    .login-page-form {
+        
+        input[type="submit"] {
+            width: 20%;
+            padding: 1% 0 1% 0;
+    
+            @include mobile {
+                width: 50%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+        }
+    }
+}
+
+.login-page-container {
+    background: $bg-blue;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.login-page-info {
+    width: 48%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: $roboto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-left: 1px solid $div-white;
+
+    img {
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    ul {
+        margin-top: -5%;
+        padding: 0;
+
+        @include mobile {
+            margin-top: 5%;
+        }
+    }
+
+    @include mobile {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: none;
+        order: 1;
+    }
+}
+
+.login-page-form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include mobile {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+#swpm-registration-form > table > tbody > tr:nth-child(8) > td > label > a {
+    color: white;
+}
+
+#swpm-registration-form > table > tbody > tr:nth-child(9) > td > label > a {
+    color: white;
+}

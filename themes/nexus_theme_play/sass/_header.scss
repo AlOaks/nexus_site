@@ -17,6 +17,11 @@
     }
 }
 
+.join-link, .log-in-link {
+    @include mobile {
+        display: none;
+    }
+}
 
 
 .links-header {
@@ -179,7 +184,7 @@
 }
 
 .page-title-container {
-    margin-top: 9vh;
+    margin-top: 12vh;
     background: white;
     width: 100%;
     display: flex;

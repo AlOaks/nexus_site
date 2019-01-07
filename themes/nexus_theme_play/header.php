@@ -30,7 +30,7 @@
 				$current_user = wp_get_current_user();		
 		?>
 
-			<p class="login-link"><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?> </p>
+			<p class="login-link"><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?> <a href=<?php echo wp_logout_url( get_permalink() ); ?>>Logout</a></p>
 		
 		<?php } else { ?>
 			<div class="links-header">

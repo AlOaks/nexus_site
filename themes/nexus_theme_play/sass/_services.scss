@@ -135,6 +135,7 @@
         padding: 2% 5%;
         border-radius: 5px;
         box-shadow: $shadow;
+        display: none;
 
         @include mobile {
             margin-left: auto;
