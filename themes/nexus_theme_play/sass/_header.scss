@@ -191,9 +191,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include mobile {
-        margin-top: 6vh;
-    }
+    
 
     h1 {
         color: $font-blue;

@@ -24,12 +24,11 @@ get_header();
 				$logo = CFS()->get('logo');
 
 				$postID = get_the_ID();
-				$prog_city = wp_get_post_terms($postID, 'Cities');
+				$prog_cities = wp_get_post_terms($postID, 'Cities', array('fields' => 'names'));
 
-				$city_name = $prog_city[0]->name;
+	
 
-
-
+				
 				$van_img = get_template_directory_uri().'/assets/images/vancouver.jpg';
 				$mon_img = get_template_directory_uri().'/assets/images/montreal.jpg';
 				$ott_img = get_template_directory_uri().'/assets/images/ottawa.jpg';
@@ -53,8 +52,14 @@ get_header();
 							<p class="li-field"><?php echo $duration; ?> months</p>
 						</li>
 						<li class="program-info-item">
-							<p class="li-title"><?php echo _e('City', 'nexus'); ?></p>
-							<p class="li-field"><?php echo _e($city_name, 'nexus'); ?></p>
+							<p class="li-title"><?php echo _e('Cities', 'nexus'); ?></p>
+							<ul class="cities-list">
+							<?php
+								foreach($prog_cities as $city) { 
+									echo "<li class='cities-single-program'>".$city."</li>";
+								}
+							?>
+							</ul>
 						</li>
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('Hrs / Week', 'nexus'); ?></p>
@@ -62,14 +67,14 @@ get_header();
 						</li>
 					</ul>
 				</section>
-				
+		
 
 				<section class="about-container program-container">
 					
 					<div class="about-program">
 						<div class="program-description">
 							<p class="about-program-title"><?php _e('About Program', 'nexus'); ?></p>
-							<?php the_content(); ?>
+							<p><?php the_content(); ?></p>
 						</div>
 						<?php the_post_thumbnail(); ?>
 					</div>
@@ -84,33 +89,6 @@ get_header();
 							<p class="about-school-title"><?php echo $school; ?></p>
 							<p class="about-school-desc"><?php echo $school_info; ?></p>
 						</div>
-					</div>
-				</section>
-
-				<section class="about-container city-container">
-					<div class="about-city">
-						<div class="city-description">
-							<p class="about-city-title"><?php echo $prog_city[0]->name; ?></p>
-							<p class="city-description"><?php echo _e($prog_city[0]->description, 'nexus'); ?></p>
-						</div>
-						<img class="city-img" src=<?php
-								if ($city_name == 'Vancouver') { 
-									echo $van_img;
-								} else if ($city_name == 'Toronto') {
-									echo $tor_img;
-								} else if ($city_name == 'Montreal') {
-									echo $mon_img;
-								} else if ($city_name == 'Ottawa') {
-									echo $ott_img;
-								} else if ($city_name == 'Calgary') {
-									echo $cal_img;
-								} else if ($city_name == 'Victoria') {
-									echo $vic_img;
-								} else if ($city_name == 'Winnipeg') {
-									echo $win_img;
-								}
-							?>
-						>
 					</div>
 				</section>
 

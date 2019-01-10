@@ -2,20 +2,20 @@
 
     display: flex;
     flex-direction: column;
-    margin: $center;
-    margin-top: 12vh;
-    width: 80%;
+    padding-top: 12vh;
+    width: 100%;
     text-align: center;
     font-size: 4rem;
     color: white;
     font-family: $roboto;
     position: relative;
-    margin-bottom: 10%;
+    padding-bottom: 10%;
+    background: $bg-blue;
 
     @include mobile {
         width: 100%;
         margin-bottom: 0;
-        margin-top: 10vh;
+        padding-bottom: 0;
     }
 
 }
@@ -25,6 +25,11 @@
     margin: $center;
     margin-top: 3%;
     margin-bottom: 3%;
+
+    @include mobile {
+        max-width: 80%;
+        margin-top: 0;
+    }
 }
 
 .program-name {
@@ -62,14 +67,14 @@
     margin: $center;
     padding: 1%;
     position: absolute;
-    bottom: -65%;
+    bottom: -10%;
     left: 8%;
 
     @include mobile {
-        position: relative;
         width: 100%;
         left: 0;
-        bottom: 0;
+        position: relative;
+        margin-top: 5%;
     }
 
     li {
@@ -113,6 +118,29 @@
     }
 }
 
+.cities-list {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+        font-size: 1rem;
+        border-right: none;
+        color: $font-blue;
+        font-weight: bold;
+        width: 100%;
+
+        @include mobile {
+            font-size: .8rem;
+        }
+    }
+}
+
+
+
 // ABOUT SECTION
 
 .program-container {
@@ -121,7 +149,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    height: 60vh;
+    
     
 }
 
@@ -129,7 +158,7 @@
     display: flex;
     width: 85%;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -166,15 +195,15 @@
     &::before {
         content: "";
         border-bottom: 3px solid #FFC54C;
-        width: 20%;
+        width: 15%;
         position: absolute;
         height: 1px;
-        left: 40%;
+        left: 0;
         bottom: -8px;
     }
 }
 
-.program-description, .about-school-description, .city-description {
+.program-description, .about-school-description{
     display: flex;
     flex-direction: column;
     width: 47%;
@@ -221,7 +250,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    height: 60vh;
 
 }
 
@@ -247,64 +276,21 @@
     }
 }
 
-// ABOUT CITY SECTION
 
-.city-container {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 70vh;
-
-    @include mobile {
-        height: 80vh;
-    }
-}
-
-.about-city {
-    display: flex;
-    width: 85%;
-    justify-content: space-between;
-
-    @include mobile {
-        flex-direction: column;
-    }
-}
-
-.city-img {
-    width: 47%;
-    height: 60%;
-
-    @include mobile {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        height: 60%;
-        margin-top: 5%;
-    }
-
-}
-
-.city-description {
-    width: 47%;
-
-    @include mobile {
-        width: 100%;
-        order: 2;
-        margin-top: 1%;
-    }
-
-}
 
 // STUDENT REVIEW SECTION
 
 .student-review {
     background: $div-white;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    @include mobile {
+        display: none;
+    }
 
 }
 
@@ -396,6 +382,10 @@
     margin-top: 2%;
     margin-bottom: 3%;
 
+    @include mobile {
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
     img {
         height: 50%;
     }
@@ -405,6 +395,8 @@
         font-family: $sans;
         margin: 0;
     }
+
+    
 }
 
 .people-school-name {

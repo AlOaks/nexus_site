@@ -102,7 +102,7 @@ function premium_posts() {
 		'label'                 => __( 'Premium Content', 'nexus_theme' ),
 		'description'           => __( 'The section for all Premium content', 'nexus_theme' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments' ),
 		'taxonomies'            => array(  ),
 		'hierarchical'          => false,
 		'public'                => true,

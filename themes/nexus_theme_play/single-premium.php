@@ -65,7 +65,7 @@ get_header();
 						$args = array(
 							'post_type' => 'post', 	
 							'posts_per_page' => 3,
-							'cat' => 'article'
+							'cat' => 'Article'
 							// 'meta_key' => 'postviews_7days',
 							// 'orderby' => 'meta_value_num',
 							// 'order' => 'DESC',
@@ -73,11 +73,8 @@ get_header();
 						$recommended = new WP_query($args);
 
 						
-						while( $recommended->have_posts() ) : $recommended-> the_post();
+						while( $recommended->have_posts() ) : $recommended-> the_post(); ?>	
 
-						
-
-					?>	
 						<div class="people-program-container">
 							<?php the_post_thumbnail(); ?>
 							<p class="people-post-name"><?php the_title(); ?></p>

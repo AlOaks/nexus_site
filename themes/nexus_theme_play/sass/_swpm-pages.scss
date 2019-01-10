@@ -16,11 +16,11 @@
 }
 
 .login-page-container {
-    background: $bg-blue;
     height: 70vh;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
+    margin: auto;
 
     @include mobile {
         flex-direction: column;
@@ -28,17 +28,22 @@
     }
 }
 
+.swpm-validate-form label {
+    color: $font-blue;
+}
+
+
 .login-page-info {
-    width: 48%;
+    width: 60%;
     height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: white;
+    justify-content: space-around;
+    color: $font-blue;
     font-family: $roboto;
     margin-top: auto;
     margin-bottom: auto;
-    border-left: 1px solid $div-white;
+    border-left: 1px solid $font-blue;
 
     img {
         width: 50%;
@@ -49,6 +54,12 @@
         @include mobile {
             display: none;
         }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 0;
     }
 
     ul {
@@ -69,6 +80,7 @@
     }
 }
 
+
 .login-page-form {
     width: 48%;
     display: flex;
@@ -86,9 +98,56 @@
 }
 
 #swpm-registration-form > table > tbody > tr:nth-child(8) > td > label > a {
-    color: white;
+    color: $font-blue;
 }
 
 #swpm-registration-form > table > tbody > tr:nth-child(9) > td > label > a {
-    color: white;
+    color: $font-blue;;
+}
+
+// MEMBER LOGIN PAGE
+
+
+.page-template-page-member-login {
+    .login-page-info {
+        justify-content: center;
+    }
+}
+
+
+#swpm-login-form > div > div.swpm-username-label > label {
+    color: $font-blue;
+}
+
+#swpm-login-form > div > div.swpm-password-label > label {
+    color: $font-blue;
+}
+#swpm-login-form > div > div.swpm-remember-me > span.swpm-rember-label {
+    color: $font-blue;
+}
+
+#forgot_pass {
+    color: $font-blue;
+}
+
+#register {
+    color: $font-blue;
+}
+
+// PASS RESET
+
+.page-template-page-password-reset {
+
+
+    .login-page-container {
+        height: 45vh;
+        justify-content: center;
+    }
+
+    .login-page-form {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        color: $font-blue;
+    }
 }

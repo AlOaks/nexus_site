@@ -1106,9 +1106,6 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (max-width: 600px) {
-    .page-title-container {
-      margin-top: 6vh; } }
   .page-title-container h1 {
     color: #193F5C;
     font-family: "Roboto";
@@ -2702,7 +2699,8 @@ i {
 .single-content {
   width: 75%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #193F5C; }
   @media (max-width: 600px) {
     .single-content {
       width: 85%; } }
@@ -3119,26 +3117,30 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto 0 auto;
-  margin-top: 12vh;
-  width: 80%;
+  padding-top: 12vh;
+  width: 100%;
   text-align: center;
   font-size: 4rem;
   color: white;
   font-family: "Roboto";
   position: relative;
-  margin-bottom: 10%; }
+  padding-bottom: 10%;
+  background: #15405A; }
   @media (max-width: 600px) {
     .program-hero {
       width: 100%;
       margin-bottom: 0;
-      margin-top: 10vh; } }
+      padding-bottom: 0; } }
 
 .school-logo {
   height: 100px;
   margin: 0 auto 0 auto;
   margin-top: 3%;
   margin-bottom: 3%; }
+  @media (max-width: 600px) {
+    .school-logo {
+      max-width: 80%;
+      margin-top: 0; } }
 
 .program-name {
   position: relative;
@@ -3174,14 +3176,14 @@ select {
   margin: 0 auto 0 auto;
   padding: 1%;
   position: absolute;
-  bottom: -65%;
+  bottom: -10%;
   left: 8%; }
   @media (max-width: 600px) {
     .program-info {
-      position: relative;
       width: 100%;
       left: 0;
-      bottom: 0; } }
+      position: relative;
+      margin-top: 5%; } }
   .program-info li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3216,6 +3218,30 @@ select {
     .program-info li:last-of-type {
       border-right: none; }
 
+.cities-list {
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .cities-list li {
+    font-size: 1rem;
+    border-right: none;
+    color: #193F5C;
+    font-weight: bold;
+    width: 100%; }
+    @media (max-width: 600px) {
+      .cities-list li {
+        font-size: .8rem; } }
+
 .program-container {
   background: white;
   width: 100%;
@@ -3228,7 +3254,7 @@ select {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 70vh; }
+  height: 60vh; }
 
 .about-program {
   display: -webkit-box;
@@ -3238,8 +3264,9 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto; }
@@ -3267,13 +3294,13 @@ select {
   .about-program-title::before, .about-school-title::before, .about-city-title::before {
     content: "";
     border-bottom: 3px solid #FFC54C;
-    width: 20%;
+    width: 15%;
     position: absolute;
     height: 1px;
-    left: 40%;
+    left: 0;
     bottom: -8px; }
 
-.program-description, .about-school-description, .city-description {
+.program-description, .about-school-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3283,14 +3310,14 @@ select {
           flex-direction: column;
   width: 47%; }
   @media (max-width: 600px) {
-    .program-description, .about-school-description, .city-description {
+    .program-description, .about-school-description {
       width: 95%;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
       margin-left: auto;
       margin-right: auto; } }
-  .program-description p, .about-school-description p, .city-description p {
+  .program-description p, .about-school-description p {
     color: #193F5C;
     width: 100%;
     font-family: "Open Sans";
@@ -3325,7 +3352,7 @@ select {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 70vh; }
+  height: 60vh; }
 
 .about-school {
   display: -webkit-box;
@@ -3348,61 +3375,9 @@ select {
     .about-school-description {
       width: 100%; } }
 
-.city-container {
-  background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 70vh; }
-  @media (max-width: 600px) {
-    .city-container {
-      height: 80vh; } }
-
-.about-city {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 85%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  @media (max-width: 600px) {
-    .about-city {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-
-.city-img {
-  width: 47%;
-  height: 60%; }
-  @media (max-width: 600px) {
-    .city-img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: 60%;
-      margin-top: 5%; } }
-
-.city-description {
-  width: 47%; }
-  @media (max-width: 600px) {
-    .city-description {
-      width: 100%;
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-      margin-top: 1%; } }
-
 .student-review {
   background: #F3F5F8;
-  height: 70vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3415,6 +3390,9 @@ select {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  @media (max-width: 600px) {
+    .student-review {
+      display: none; } }
 
 .review-title, .people-title {
   margin-top: 0;
@@ -3511,6 +3489,10 @@ select {
           box-shadow: 3px 3px 5px #5a5a5a;
   margin-top: 2%;
   margin-bottom: 3%; }
+  @media (max-width: 600px) {
+    .people-program-container {
+      -webkit-box-shadow: 0 4px 2px -2px gray;
+              box-shadow: 0 4px 2px -2px gray; } }
   .people-program-container img {
     height: 50%; }
   .people-program-container p {
@@ -4338,14 +4320,14 @@ select {
       padding-bottom: 2%; } }
 
 .login-page-container {
-  background: #15405A;
   height: 70vh;
-  width: 100%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin: auto; }
   @media (max-width: 600px) {
     .login-page-container {
       -webkit-box-orient: vertical;
@@ -4354,8 +4336,11 @@ select {
               flex-direction: column;
       height: auto; } }
 
+.swpm-validate-form label {
+  color: #193F5C; }
+
 .login-page-info {
-  width: 48%;
+  width: 60%;
   height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4364,14 +4349,13 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #193F5C;
   font-family: "Roboto";
   margin-top: auto;
   margin-bottom: auto;
-  border-left: 1px solid #F3F5F8; }
+  border-left: 1px solid #193F5C; }
   .login-page-info img {
     width: 50%;
     height: auto;
@@ -4380,6 +4364,10 @@ select {
     @media (max-width: 600px) {
       .login-page-info img {
         display: none; } }
+  .login-page-info h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0; }
   .login-page-info ul {
     margin-top: -5%;
     padding: 0; }
@@ -4419,7 +4407,39 @@ select {
       padding-bottom: 5%; } }
 
 #swpm-registration-form > table > tbody > tr:nth-child(8) > td > label > a {
-  color: white; }
+  color: #193F5C; }
 
 #swpm-registration-form > table > tbody > tr:nth-child(9) > td > label > a {
-  color: white; }
+  color: #193F5C; }
+
+.page-template-page-member-login .login-page-info {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#swpm-login-form > div > div.swpm-username-label > label {
+  color: #193F5C; }
+
+#swpm-login-form > div > div.swpm-password-label > label {
+  color: #193F5C; }
+
+#swpm-login-form > div > div.swpm-remember-me > span.swpm-rember-label {
+  color: #193F5C; }
+
+#forgot_pass {
+  color: #193F5C; }
+
+#register {
+  color: #193F5C; }
+
+.page-template-page-password-reset .login-page-container {
+  height: 45vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-page-password-reset .login-page-form {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  color: #193F5C; }
