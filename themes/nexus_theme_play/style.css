@@ -1219,7 +1219,8 @@ object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 30vh; }
+  height: 50vh;
+  padding: 5vh 0; }
   @media (max-width: 600px) {
     .general-info {
       -webkit-box-orient: vertical;
@@ -1260,8 +1261,9 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #193F5C;
   font-family: "Roboto"; }
   .info-div a {
@@ -1432,7 +1434,7 @@ object {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 86vh;
+  height: 76vh;
   margin: 0 auto 0 auto;
   margin-top: 5vh;
   position: relative; }
@@ -1465,8 +1467,7 @@ object {
   text-align: center;
   font-style: italic;
   font-weight: 600;
-  margin: 0 auto 0 auto;
-  top: 25%; }
+  margin: 0 auto 0 auto; }
   .hero-label span {
     color: #FF2F49;
     text-transform: uppercase;
@@ -1742,7 +1743,7 @@ i {
   padding-top: 3%; }
 
 .slider-canada {
-  width: 70%;
+  width: 55%;
   height: auto;
   margin: 0 auto 0 auto;
   display: -webkit-box;
@@ -1766,6 +1767,16 @@ i {
     color: #bd2020;
     font-size: 5rem; }
 
+.mobile-slide {
+  display: none; }
+  @media (max-width: 600px) {
+    .mobile-slide {
+      display: block; } }
+
+@media (max-width: 600px) {
+  .desktop-slide {
+    display: none; } }
+
 .slider-btn {
   position: absolute;
   background: rgba(255, 255, 255, 0.5);
@@ -1788,13 +1799,13 @@ i {
       color: black; } }
 
 .btn-lft {
-  right: 15%; }
+  right: 22.5%; }
   @media (max-width: 600px) {
     .btn-lft {
       right: 10%; } }
 
 .btn-right {
-  left: 15%; }
+  left: 22.5%; }
   @media (max-width: 600px) {
     .btn-right {
       left: 10%; } }
@@ -3003,8 +3014,7 @@ i {
           box-shadow: 3px 3px 5px #5a5a5a;
   width: 80%;
   height: 6vh;
-  font-family: "Roboto";
-  font-size: 2rem; }
+  font-family: "Roboto"; }
   @media (max-width: 600px) {
     .prg-type-select {
       height: auto;
@@ -3322,6 +3332,23 @@ i {
       .cities-list li {
         font-size: .8rem; } }
 
+.apply-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5vh; }
+
 .program-container {
   background: #F3F5F8;
   width: 100%;
@@ -3334,7 +3361,8 @@ i {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 60vh; }
+  height: auto;
+  padding-bottom: 5vh; }
 
 .about-program {
   display: -webkit-box;
@@ -3377,7 +3405,7 @@ i {
     width: 10%;
     position: absolute;
     height: 1px;
-    left: 0;
+    left: 45%;
     bottom: -8px; }
 
 .program-description, .about-school-description {
@@ -3403,7 +3431,16 @@ i {
     font-family: "Open Sans";
     line-height: 36px; }
 
-.explore-more, .program-apply-btn {
+.program-apply-btn {
+  padding: .5% 5%;
+  background: #bd2020;
+  -webkit-box-shadow: 3px 3px 5px #5a5a5a;
+          box-shadow: 3px 3px 5px #5a5a5a;
+  color: white;
+  border-radius: 5px;
+  font-family: "Open Sans"; }
+
+.explore-more {
   text-align: center;
   padding: .5% 5%;
   background: #bd2020;
@@ -3417,7 +3454,7 @@ i {
   margin-left: auto;
   margin-right: auto; }
   @media (max-width: 600px) {
-    .explore-more, .program-apply-btn {
+    .explore-more {
       width: 50%;
       padding: 1.5% 5%; } }
 
@@ -3425,13 +3462,17 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 60vh; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin-top: 10vh;
+  padding-bottom: 5vh; }
+  @media (max-width: 600px) {
+    .school-container {
+      margin-top: 0; } }
 
 .about-school {
   display: -webkit-box;
@@ -3441,7 +3482,10 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5vh; }
+  padding-top: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .school-video {
   width: 47%; }

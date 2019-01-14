@@ -90,7 +90,6 @@ get_header();
 						<?php the_post_thumbnail(); ?>
 					</div>
 					
-					<a class="program-apply-btn"><?php _e('Apply Now', 'nexus'); ?></a>
 				</section>
 
 				<section class="program-details">
@@ -110,14 +109,15 @@ get_header();
 						<h2>Specifications</h2>
 						<?php echo CFS()->get('specs'); ?>
 					</div>	
+
 				</section>
 
-				
-
+				<div class="apply-div">
+					<a class="program-apply-btn"><?php _e('Apply Now', 'nexus'); ?></a>
+				</div>
 				<?php endwhile; ?>
 
 				
-		
 
 				<section class="student-review">
 					<p class="review-title"><?php _e('Student Review', 'nexus'); ?></p>

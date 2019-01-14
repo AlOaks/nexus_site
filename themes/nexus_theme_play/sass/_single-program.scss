@@ -143,15 +143,23 @@
 
 // ABOUT SECTION
 
+.apply-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
 .program-container {
     background: $div-white;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 60vh;
-    
-    
+    height: auto;
+    padding-bottom: 5vh;
 }
 
 .about-program {
@@ -199,7 +207,7 @@
         width: 10%;
         position: absolute;
         height: 1px;
-        left: 0;
+        left: 45%;
         bottom: -8px;
     }
 }
@@ -224,7 +232,18 @@
     }
 }
 
-.explore-more, .program-apply-btn {
+.program-apply-btn {
+        padding: .5% 5%;
+        background: $div-red;
+        box-shadow: $shadow;
+        color: white;
+        border-radius: 5px;
+        font-family: $sans;
+        
+    }
+
+
+.explore-more {
     text-align: center;
     padding: .5% 5%;
     background: $div-red;
@@ -244,13 +263,20 @@
 }
 
 
+
 // ABOUT SCHOOL SECTION
 
 .school-container {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    height: 60vh;
+    align-items: center;
+    height: auto;
+    margin-top: 10vh;
+    padding-bottom: 5vh;
+
+    @include mobile {
+        margin-top: 0;
+    }
 
 }
 
@@ -259,6 +285,7 @@
     width: 85%;
     justify-content: space-between;
     padding-top: 5vh;
+    align-items: center;
 }
 
 .school-video {

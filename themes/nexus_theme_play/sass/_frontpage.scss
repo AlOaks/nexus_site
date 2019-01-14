@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 86vh;
+    height: 76vh;
     margin: $center;
     margin-top: 5vh;
     position: relative;
@@ -44,7 +44,7 @@
     font-style: italic;
     font-weight: 600;
     margin: $center;
-    top: 25%;
+    
 
     span {
         color: $font-red;
@@ -336,7 +336,7 @@ i {
 
 
 .slider-canada {
-    width: 70%;
+    width: 55%;
     height: auto;
     margin: $center;
     display: flex;
@@ -366,6 +366,21 @@ i {
 
 }
 
+.mobile-slide {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.desktop-slide {
+
+    @include mobile {
+        display: none;
+    }
+}
+
 
 
 .slider-btn {
@@ -392,7 +407,7 @@ i {
 }
 
 .btn-lft {
-    right: 15%;
+    right: 22.5%;
 
     @include mobile {
         right: 10%;
@@ -400,7 +415,7 @@ i {
 }
 
 .btn-right {
-    left: 15%;
+    left: 22.5%;
 
     @include mobile {
         left: 10%;
