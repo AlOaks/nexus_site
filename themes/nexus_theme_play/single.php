@@ -46,10 +46,9 @@ get_header();
 			<h3 class="comments-header"><?php _e('Leave a Comment', 'nexus'); ?></h3>
 			<?php 
 			
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 			?>
 		</section>
 

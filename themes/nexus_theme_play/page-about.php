@@ -30,7 +30,9 @@ get_header();
             </section>
             <section class="history-container about-content-div">
                 <h2 class="container-title"><?php _e('Our History', 'nexus'); ?></h2>
-                <p class="history-description"><?php _e('', 'nexus'); ?></p>
+                <p class="history-description"><?php _e('Founded in 1987 as a tourism agency, Nexus has acquired expertise in developing travel packages for its customers. In 2006, it expanded its horizons and inaugurated a specialized sector in operation for travel agencies.
+With the promise of investing more and more in the industry, Nexus went further and opened its Vancouver office focused on disseminating cultural exchange in Brazil. Today, in 2019, Nexus is proud to say that beyond cultural exchange, our reason to exist is to empower people, through accurate information and expert advice, to lead transformations in their lives and realize their dream of living Canada, whether they goal is to develop a language, study and work or immigrate.
+', 'nexus'); ?></p>
             </section>
             <section class="manifest-container about-content-div">
                 <img src=<?php echo get_template_directory_uri().'/assets/images/program_info.png'; ?> />
@@ -41,7 +43,7 @@ get_header();
             <section class="start-journey-section">
 				<h1 class="start-title"><?php _e('Questions?', 'nexus'); ?></h1>
 				<p class="start-description"><?php _e("We've got you covered", 'nexus'); ?></p>
-				<a class="contact-btn"><?php _e('See FAQ', 'nexus'); ?></a>
+				<a class="contact-btn-faq" href="../faq"><?php _e('See FAQ', 'nexus'); ?></a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

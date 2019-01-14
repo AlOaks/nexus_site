@@ -18,19 +18,30 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="page-title-container">
-				<h1 class="type-page-title"><?php the_title() ?></h1>
+				<h1 class="type-page-title"><?php _e('Frequently Asked Questions', 'nexus'); ?></h1>
 			</div>
-        <?php 
-        		
-		while ( have_posts() ) : the_post(); ?>
-			
-			
-		<?php
-		endwhile; // End of the loop.
-		?>
+			<section class="questions-container">
+					<?php 
+						$faqLoop = CFS()->get('faq'); 
+						
+						foreach($faqLoop as $question) {
+							
+							echo '<h2>'.$question['question'].'</h2>';
+							echo '<p>'.$question['answer'].'</p>';	
 
+						}
+					?>
+			</section>
+			<section class="start-journey-section">
+				<h1 class="start-title"><?php _e('Have more questions?', 'nexus'); ?></h1>
+				<p class="start-description"><?php _e('Chat with one of our advisors!', 'nexus'); ?></p>
+				<a class="contact-btn start-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
 get_footer();
+
+
+  

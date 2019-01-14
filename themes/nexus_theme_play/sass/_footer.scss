@@ -27,7 +27,7 @@
             position: absolute;
             height: 1px;
             left: 30%;
-            bottom: -8px;
+            bottom: -16px;
         }
 
         @include mobile {
@@ -71,7 +71,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    height: 45vh;
+    height: 30vh;
 
     @include mobile {
         flex-direction: column;
@@ -114,7 +114,7 @@
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     color: $font-blue;
     font-family: $roboto;
     
@@ -162,6 +162,10 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none !important;
+
+    &:visited {
+        color: white;
+    }
 
     @include mobile {
         margin-top: 40%;
@@ -275,6 +279,8 @@
         }
     }
 }
+
+
 
 .why-nexus-footer {
     @include mobile {

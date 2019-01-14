@@ -47,7 +47,6 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: $shadow;
 
     @include mobile {
       height: 12vh;  
@@ -56,7 +55,7 @@
     }
 
     .current-menu-item {
-        border-bottom: 3px solid $bg-blue;
+        border-bottom: 3px solid $div-yellow;
         
     }
 
@@ -129,6 +128,7 @@
                 text-align: center;
                 margin-top: 10%;
 
+
                 &:first-of-type {
                     margin-top: 0;
                 }
@@ -158,11 +158,11 @@
     font-family: $roboto;
     
     a {
-        color: black;
+        color: $font-blue;
         font-size: 1rem;
 
         &:visited {
-            color: black;
+            color: $font-blue;
         }
     }
 }
@@ -212,7 +212,7 @@
             position: absolute;
             height: 1px;
             left: 30%;
-            bottom: 0;
+            bottom: -8px;
         }
     }
 }

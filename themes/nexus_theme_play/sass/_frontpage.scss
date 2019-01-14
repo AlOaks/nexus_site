@@ -2,7 +2,7 @@
 // HERO IMAGE
 
 .hero-image {
-    background: url('../../themes/nexus_theme_play/assets/images/quebec.jpg');
+    background: url('../../themes/nexus_theme_play/assets/images/hero-gif.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,6 +25,12 @@
     background: rgba(0,0,0,.3);
     width: 100%;
     height: 100%;
+}
+
+.hero-label-div {
+    height: 60%;
+    margin: 0 auto 0 auto;
+    padding-top: 15%;
 }
 
 .hero-label {
@@ -54,7 +60,7 @@
         width: 80%;
 
         span {
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 }
@@ -94,6 +100,7 @@
     color: $font-blue;
     font-family: $roboto;
     font-weight: bold;
+    font-size: 1.5rem;
 
     &::placeholder {
         color: $font-blue;
@@ -261,8 +268,8 @@ i {
 
 .why-paragraph {
     width: 85%;
-    text-align: center;
     color: $font-blue;
+    text-align: left;
     font-size: 1.2rem;
 
     @include mobile {
@@ -281,6 +288,7 @@ i {
     border-color: $div-red;
     margin-bottom: 4%;
     text-align: center;
+    text-decoration: none;
 
     @include mobile {
         width: 80%;
@@ -442,6 +450,7 @@ i {
     letter-spacing: 2px;
     box-shadow: 3px 3px 5px black;
     text-align: center;
+    text-decoration: none;
 
     @include mobile {
         width: 70%;
@@ -484,6 +493,35 @@ i {
     }
 }
 
+.montreal {
+    order: 1;
+}
+
+.toronto {
+    order: 2;
+}
+
+.vancouver {
+    order: 3;
+}
+
+.ottawa {
+    order: 4;
+}
+
+.victoria {
+    order: 5;
+}
+
+.winnipeg {
+    order: 6;
+}
+
+.calgary {
+    order: 7;
+}
+
+
 
 .cal-div {
     background: url("../../themes/nexus_theme_play/assets/images/calgary.jpg");
@@ -491,7 +529,7 @@ i {
 
 .mon-div {
     background: url("../../themes/nexus_theme_play/assets/images/montreal.jpg");
-
+    
 }
 
 .otta-div {
@@ -501,12 +539,12 @@ i {
 
 .toro-div {
     background: url("../../themes/nexus_theme_play/assets/images/toronto.jpg");
-
+    
 }
 
 .van-div {
     background: url("../../themes/nexus_theme_play/assets/images/vancouver.jpg");
-
+    
 }
 
 .vic-div {

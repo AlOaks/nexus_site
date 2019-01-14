@@ -49,14 +49,20 @@
     }
 }
 
-select {
+.prg-type-select {
     padding: 1% 2%;
     color: $font-blue;
     border-radius: 2px;
     box-shadow: $shadow;
+    width: 80%;
+    height: 6vh;
+    font-family: $roboto;
+    font-size: 2rem;
 
     @include mobile {
-        padding: 2% 2%;
+        height: auto;   
+        margin-left: auto;
+        margin-right: auto;     
     }
 }
 
@@ -215,6 +221,10 @@ select {
     margin-top: auto;
     margin-bottom: auto;
 
+    img {
+        width: 50%;
+    }
+
     @include mobile {
         display: none;
         width: 90%;
@@ -227,8 +237,8 @@ select {
         margin-bottom: auto;
     
 
-        i {
-            font-size: 2rem;
+        img {
+            width: 20%;
         }
 
     }

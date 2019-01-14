@@ -22,7 +22,7 @@ get_header();
             </div>
             <section class="login-page-container">
 			    <div class="login-page-form">
-                    <p>Forgot your password? Enter your email addres and we'll send you a recovery link.</p>                   
+                    <p><?php _e("Forgot your password? Enter your email addres and we'll send you a recovery link.", 'nexus'); ?></p>                   
                     <?php the_content(); ?>                        
                 </div>
             </section>

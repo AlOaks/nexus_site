@@ -49,7 +49,7 @@ get_header();
 						</li>
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
-							<p class="li-field"><?php echo $duration; ?> months</p>
+							<p class="li-field"><?php echo $duration; ?></p>
 						</li>
 						<li class="program-info-item">
 							<p class="li-title"><?php echo _e('Cities', 'nexus'); ?></p>
@@ -67,7 +67,18 @@ get_header();
 						</li>
 					</ul>
 				</section>
-		
+
+				<section class="about-container school-container">
+					<div class="about-school">
+						<div class="school-video"><?php echo $school_vid; ?></div>
+						<div class="about-school-description">
+							<p class="about-school-title"><?php echo $school; ?></p>
+							<p class="about-school-desc"><?php echo $school_info; ?></p>
+						</div>
+					</div>
+				</section>
+
+				
 
 				<section class="about-container program-container">
 					
@@ -82,22 +93,36 @@ get_header();
 					<a class="program-apply-btn"><?php _e('Apply Now', 'nexus'); ?></a>
 				</section>
 
-				<section class="about-container school-container">
-					<div class="about-school">
-						<div class="school-video"><?php echo $school_vid; ?></div>
-						<div class="about-school-description">
-							<p class="about-school-title"><?php echo $school; ?></p>
-							<p class="about-school-desc"><?php echo $school_info; ?></p>
-						</div>
+				<section class="program-details">
+					<div class="courses-div">
+						<h2>Courses</h2>
+						<ul>
+						<?php  
+							$coursesLoop = CFS()->get('program_course'); 
+
+							foreach($coursesLoop as $course) {
+								echo '<li>'.$course['course'].'</li>';
+							}
+						?>
+						</ul>
 					</div>
+					<div class="specifications-div">
+						<h2>Specifications</h2>
+						<?php echo CFS()->get('specs'); ?>
+					</div>	
 				</section>
 
+				
+
 				<?php endwhile; ?>
+
+				
+		
 
 				<section class="student-review">
 					<p class="review-title"><?php _e('Student Review', 'nexus'); ?></p>
 					<div class="review-container-program">
-						<img class="review-img-prg" src=<?php echo get_template_directory_uri().'/assets/images/photo-review@3x.png'; ?> >
+						<img class="review-img-prg" src=<?php echo get_template_directory_uri().'/assets/images/photo_review.png'; ?> >
 						<p class="review-paragraph">
 							<i class='fas fa-quote-left'></i>
 							<?php _e('When I started the UX Professional Program I appreciated that it wasn’t all lecture-style teaching, and involved a lot of interactive learning. 

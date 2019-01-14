@@ -144,7 +144,7 @@
 // ABOUT SECTION
 
 .program-container {
-    background: white;
+    background: $div-white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -163,9 +163,10 @@
     margin-left: auto;
     margin-right: auto;
 
+
     img {
-        width: 47%;
-        max-height: 250px;
+        width: 45%;
+        max-height: auto;
 
         @include mobile {
             display: none;
@@ -195,7 +196,7 @@
     &::before {
         content: "";
         border-bottom: 3px solid #FFC54C;
-        width: 15%;
+        width: 10%;
         position: absolute;
         height: 1px;
         left: 0;
@@ -246,7 +247,6 @@
 // ABOUT SCHOOL SECTION
 
 .school-container {
-    background: $div-white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -258,6 +258,7 @@
     display: flex;
     width: 85%;
     justify-content: space-between;
+    padding-top: 5vh;
 }
 
 .school-video {
@@ -273,6 +274,67 @@
 
     @include mobile {
         width: 100%;
+    }
+}
+
+// DETAILS
+
+.program-details {
+    display: flex;
+    width: 85%;
+    margin: 10vh auto;
+    justify-content: space-between;
+    color: $font-blue;
+    font-family: $sans;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.specifications-div, .courses-div {
+    width: 45%;
+    font-family: $sans;
+
+    @include mobile {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        width: auto;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 20%;
+            position: absolute;
+            height: 1px;
+            left: 40%;
+            bottom: -8px;
+        }
+    }
+}
+
+.courses-div {
+
+    ul {
+        font-family: $sans;
+    }
+    @include mobile {
+
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
     }
 }
 

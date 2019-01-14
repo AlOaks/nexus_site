@@ -1,5 +1,6 @@
 .page-template-page-about {
     background: white;
+    line-height: 36px;
 
     .footer-copy {
         background: $bg-blue;
@@ -26,16 +27,17 @@
     justify-content: space-evenly;
     padding-bottom: 5%;
     padding-top: 2.5%;
+    margin-top: 5vh;
 
     &:nth-of-type(odd) {
-        background: $bg-blue;
+        background: $div-white;
         
         h2 {
-            color: white;
+            color: $font-blue;
         }
 
         p {
-            color: white;
+            color: $font-blue;
         }
     }
 
@@ -51,6 +53,7 @@
         font-family: $roboto;
         margin: 0;
         text-align: center;
+        color: $font-blue;
 
         @include mobile {
             width: 85%;
@@ -67,6 +70,21 @@
         height: auto;
     }
 }
+
+.container-title {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 30%;
+        position: absolute;
+        border-bottom: 3px solid $div-yellow;
+        height: 1px;
+        bottom: 0;
+        left: 35%;
+    }
+}
+
 
 
 .purpose-container {
@@ -118,6 +136,10 @@
         }
 
     }
+}
+
+.contact-btn-faq {
+    text-decoration: none;
 }
 
 

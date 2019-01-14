@@ -38,11 +38,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $font-blue;
 
     @include mobile {
         flex-direction: column;
         width: 90%;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid $div-yellow;
         padding-bottom: 5%;
 
         &:last-of-type {
@@ -64,7 +65,7 @@
     &:nth-of-type(even) {
 
         .member-info {
-            border-right: 1px solid gray;
+            border-right: 1px solid $div-yellow;
 
             @include mobile {
                 border-right: none;
@@ -77,14 +78,18 @@
         }
 
         img {
-            order: 1;   
+            order: 3;   
+
+            @include mobile {
+                order: 2;
+            }
         }
     }
 
     &:nth-of-type(odd) {
 
         .member-info {
-            border-left: 1px solid gray;
+            border-left: 1px solid $div-yellow;
             padding-left: 5%;
 
             @include mobile {

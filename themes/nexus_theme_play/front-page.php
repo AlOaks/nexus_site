@@ -21,8 +21,10 @@ get_header();
 
 			<section class="hero-image">
 				<div class="hero-overlay"></div>
-				<h1 class="hero-label"><?php _e('Want to', 'nexus'); ?> <br><span><?php _e('STUDY ABROAD?' ,'nexus'); ?> </span></h1>
-				<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>
+				<div class="hero-label-div">
+					<h1 class="hero-label"><?php _e('Want to', 'nexus'); ?> <br><span><?php _e('STUDY ABROAD?' ,'nexus'); ?> </span></h1>
+					<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>
+				</div>
 			</section>
 
 
@@ -80,7 +82,7 @@ get_header();
 						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! Just pick the program you like the most and we´ll do the rest.', 'nexus'); ?></p>
 					</div>
 				</div>
-				<a class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Get Quote', 'nexus'); ?></a>
+				<a class="get-quote-btn menu-item-51 menu-item-25" href="../faq"><?php _e('Get Quote', 'nexus'); ?></a>
 			</section>
 
 			<section class="why-canada-section">
@@ -96,50 +98,50 @@ get_header();
 
 			<section class="curious-section">
 				<h3 class="curious-title"><?php _e('Curious About Canada?', 'nexus'); ?></h3>
-				<a class="visit-faq-btn"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
+				<a class="visit-faq-btn" href="../faq"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
 			</section>
 
 
 			<section class="choose-city-section">
 					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
 					<div class="cities-container-front">
-						<a href="cities/calgary/"  class="city-link-front fifty-div">
+						<a href="cities/calgary/"  class="city-link-front third-div calgary">
 							<div class="city-container-frontpage cal-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Calgary</h2>
 							</div>
 						</a>
-						<a href="cities/montreal/" class="city-link-front fifty-div">
+						<a href="cities/montreal/" class="city-link-front fifty-div montreal">
 							<div class="city-container-frontpage mon-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Montreal</h2>
 							</div>
 						</a>
-						<a href="cities/ottawa/" class="city-link-front fifty-div">
+						<a href="cities/ottawa/" class="city-link-front third-div ottawa">
 							<div class="city-container-frontpage otta-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Ottawa</h2>
 							</div>
 						</a>
-						<a href="cities/toronto/" class="city-link-front third-div">
+						<a href="cities/toronto/" class="city-link-front fifty-div toronto">
 							<div class="city-container-frontpage toro-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Toronto</h2>
 							</div>
 						</a>
-						<a href="cities/vancouver/" class="city-link-front third-div">
+						<a href="cities/vancouver/" class="city-link-front fifty-div vancouver">
 							<div class="city-container-frontpage van-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Vancouver</h2>
 							</div>
 						</a>
-						<a href="cities/victoria/" class="city-link-front third-div">
+						<a href="cities/victoria/" class="city-link-front third-div victoria">
 							<div class="city-container-frontpage vic-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Victoria</h2>
 							</div>
 						</a>
-						<a href="cities/winnipeg/" class="city-link-front third-div">
+						<a href="cities/winnipeg/" class="city-link-front third-div winnipeg">
 							<div class="city-container-frontpage winni-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Winnipeg</h2>

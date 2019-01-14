@@ -1,0 +1,13 @@
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: $font-blue;
+
+    p {
+        padding-left: 5vw;
+    }
+}
