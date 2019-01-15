@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contact
+ * Template Name: The Company
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -24,7 +24,6 @@ get_header();
                 <p class="about-description"><?php _e('Canadian Universities, Language Schools or even Work and Study programs. Nexus Education Consulting helps international students to find their ideal school to study in Canada. Our services go from education consulting, to accommodation and health insurance services. With more than 10 years of experience and hundreds of students who have successfully studied through our services, Nexus is one of the best options to study in Canada!', 'nexus'); ?></p>
             </section>
             <section class="purpose-container about-content-div">
-                <img src=<?php echo get_template_directory_uri().'/assets/images/programs_home_01_nexus@3x.png.jpg'; ?> />
                 <h2 class="container-title"><?php _e('Our Purpose', 'nexus'); ?></h2>
                 <p class="purpose-description"><?php _e('The purpose of Nexus is to empower people to lead transformations in their lives through and educational experience in Canada.', 'nexus'); ?></p>
             </section>
@@ -35,10 +34,43 @@ With the promise of investing more and more in the industry, Nexus went further 
 ', 'nexus'); ?></p>
             </section>
             <section class="manifest-container about-content-div">
-                <img src=<?php echo get_template_directory_uri().'/assets/images/program_info.png'; ?> />
                 <h2 class="container-title"><?php _e('Manifest', 'nexus'); ?></h2>
                 <p class="manifest-description"><?php _e("Your chance to challenge yourself is now. It's time to seek for new experiences and goals. Time to dare, create changes and to make an impact. Open yourself to infinite possibilities of growth and  development. The stage is ready, just waiting for people who dare to take the next step.", 'nexus'); ?></p>
             </section>
+
+
+            <div class="team-container">
+                <h2 class="the-team-title">The Team</h2>
+
+				<?php 
+
+				$args = array(
+					'post_type' => 'team',
+					'posts_per_page' => -1,
+					'order' => DESC
+				);
+
+				$member = new WP_query($args);
+
+			
+				while ( $member->have_posts() ) : $member->the_post(); 
+					$position = CFS()->get('position');
+				?>
+
+				
+				<div class="member-container">
+					<?php the_post_thumbnail(); ?>
+					<div class="member-info">
+						<h2 class="member-name"><?php echo the_title(); ?></h2>
+						<p id="member-pos"><?php echo $position; ?></p>
+						<?php _e(the_content(), 'nexus'); ?>
+					</div>
+				</div>
+				
+				<?php
+				endwhile; // End of the loop.
+				?>
+			</div>
             
             <section class="start-journey-section">
 				<h1 class="start-title"><?php _e('Questions?', 'nexus'); ?></h1>

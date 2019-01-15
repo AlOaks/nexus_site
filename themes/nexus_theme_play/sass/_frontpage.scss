@@ -150,12 +150,15 @@ option {
     border-color: $div-yellow;
     padding: 10px 5px;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px black;
     width: 33%;
     color: $font-blue;
     font-size: 1.5rem;
     font-family: $roboto;
     font-weight: 900;
+
+    &:hover {
+        background: lighten($div-yellow, 10%);
+    }
 
     @include mobile {
         width: 60%;
@@ -283,12 +286,17 @@ i {
     width: 30%;
     font-size: 1.5rem;
     padding: 10px 90px;
-    box-shadow: 2px 2px 5px black;
     font-family: $roboto;
     border-color: $div-red;
     margin-bottom: 4%;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
+
+    &:hover {
+        background: red;
+        color: white;
+    }
 
     @include mobile {
         width: 80%;
@@ -463,9 +471,14 @@ i {
     padding: 12px 15px;
     font-weight: bold;
     letter-spacing: 2px;
-    box-shadow: 3px 3px 5px black;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
+
+    &:hover {
+        background: red;
+        color: white;
+    }
 
     @include mobile {
         width: 70%;
@@ -628,7 +641,6 @@ i {
 
     @include mobile {
         background: darken($div-white, 5%);
-        box-shadow: $shadow;
     }
 }
 

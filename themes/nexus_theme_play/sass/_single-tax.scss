@@ -92,15 +92,23 @@
 
 }
 
+
+
 .type-prog-container {
+    order: 2;
     width: 30%;
     height: 20rem;
     margin-bottom: 5%;
-    box-shadow: $shadow;
     background: $div-white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &:hover {
+        background: lighten($div-yellow, 20%);
+
+       
+    }
 
     @include mobile {
         width: 48%;
@@ -113,6 +121,7 @@
         font-size: 1.3rem;
         margin: 0;
         margin-left: 5%;
+
         
         @include mobile {
             font-size: .9rem;
@@ -140,6 +149,21 @@
         height: 12rem;
     }
 
+}
+
+.featured {
+    order: 1;
+    position: relative;
+}
+
+#feat-label {
+    background: $div-red;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    padding: 1% 5%;
+    color: white;
+    margin-left: 0;
 }
 
 #more_programs {

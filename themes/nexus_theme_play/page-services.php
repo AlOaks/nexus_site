@@ -21,7 +21,7 @@ get_header();
                 <h1 class="services-header"><?php the_title(); ?></h1>
             </div>
             <section class="how-we-help-section">
-                <h1 class="how-we-help-title"><?php _e('How We Help', 'nexus'); ?></h1>
+                <h1 class="how-we-help-title"><?php _e('How We Help You', 'nexus'); ?></h1>
                 <div class="planning steps-div">
                     <div class="step-container">
                         <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/01@2x.png'; ?> />

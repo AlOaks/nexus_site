@@ -11,6 +11,9 @@
     font-size: .8rem;
     color: $font-blue;
     font-family: $roboto;
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
 
     @include mobile {
         display: none;
@@ -38,6 +41,8 @@
         margin-left: 5%;
     }
 }
+
+
 
 .site-header {
     width: 100%;
@@ -172,7 +177,6 @@
     letter-spacing: 2px;
     background: $div-red;
     border-radius: 5px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,.5);
 
     a {
         color: white;
@@ -236,7 +240,7 @@
 }
 
 .wpml-ls-item-br {
-    right: 18%; 
+    right: 24%; 
 
     @include mobile {
         right: auto;
@@ -244,7 +248,7 @@
 }
 
 .wpml-ls-item-es {
-    right: 20%;
+    right: 22%;
 
     @include mobile {
         right: auto;

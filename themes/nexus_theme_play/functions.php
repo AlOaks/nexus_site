@@ -342,7 +342,6 @@ function more_post_club(){
 		if (!empty($video)) { ?>
 			<div class="video-container">
 				<div class="post-video"><?php echo $video ?></div>
-				<h1 class="video-title"><?php echo $title ?></h1>
 			</div>
 		<?php	
 		} else if(empty($video)) {

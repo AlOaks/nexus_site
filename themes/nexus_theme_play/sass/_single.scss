@@ -8,14 +8,10 @@
 
 .single-hero {
     width: 85%;
-    height: 70vh;
+    height: auto;
     margin: $center;
     margin-top: 15vh;
     position: relative;
-
-    @include mobile {
-        height: 35vh;
-    }
 
     img {
         width: 100%;
@@ -27,8 +23,8 @@
         position: absolute;
         color: white;
         width: 100%;
-        bottom: 0;
-        margin: 0;
+        margin-bottom: 0;
+        bottom: 7px;
         text-align: right;
         padding: 1% 5%;
         font-family: $sans;
@@ -120,6 +116,11 @@
     font-family: $roboto;
     font-size: 2rem;
     text-align: center;
+    margin-top: 5vh;
+    
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 
 .comments-section {

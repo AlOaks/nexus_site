@@ -29,11 +29,13 @@
 			if(is_user_logged_in()) { 
 				$current_user = wp_get_current_user();		
 		?>
+				
+			<p class="login-link"><a class="search-link" href="/../search/"><?php _e('Search', 'nexus'); ?></a><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?><a href=<?php echo wp_logout_url( get_permalink() ); ?>>Logout</a></p>
+				
 
-			<p class="login-link"><?php _e('Hello' ,'nexus'); ?>, <?php echo $current_user->user_login; ?> <a href=<?php echo wp_logout_url( get_permalink() ); ?>>Logout</a></p>
-		
 		<?php } else { ?>
 			<div class="links-header">
+				<a class="search-link" href="../search/">Search</a>
 				<a href="#" class="join-link"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 				<a href="#" class="log-in-link"><?php _e('Log In', 'nexus'); ?></a>
 			</div>

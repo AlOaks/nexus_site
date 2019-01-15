@@ -53,7 +53,6 @@
     padding: 1% 2%;
     color: $font-blue;
     border-radius: 2px;
-    box-shadow: $shadow;
     width: 80%;
     height: 6vh;
     font-family: $roboto;
@@ -66,16 +65,16 @@
 }
 
 .see-programs-btn {
-    width: 15%;
+    width: 20%;
     background: $div-yellow;
     color: $font-blue;
     border: none;
-    box-shadow: $shadow;
     font-size: 1.2rem;
     font-family: $sans;
     font-weight: bold;
     text-align: center;
     margin: 5% auto;
+    padding: 10px 0;
 
     @include mobile {
         width: 60%;
@@ -188,7 +187,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: $shadow;
             background: darken($div-white, 5%);
 
             i {

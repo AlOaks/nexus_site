@@ -43,6 +43,7 @@ get_header();
 				<button class="apply-filters-btn"><?php _e('Apply Filters', 'nexus'); ?></button>
 				<input type="hidden" name="action" value="myfilter">
 			</form>
+			
 			<div class="type-programs-container">
 				<?php
 						
@@ -51,18 +52,28 @@ get_header();
 				<?php 
 					$postID = get_the_ID();
 					$prog_type = wp_get_post_terms($postID, 'programsTypes');
+					$feat = CFS()->get('featured');
 					
-					
-				?>						
-					<div class="type-prog-container">
-						<a href=<?php the_permalink(); ?>>
-							<?php the_post_thumbnail(); ?>
-							<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
-							<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
-							<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
-						</a>
-					</div>
-
+					if($feat == false) { ?>						
+						<div class="type-prog-container">
+							<a href=<?php the_permalink(); ?>>
+								<?php the_post_thumbnail(); ?>
+								<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+								<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+								<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+							</a>
+						</div>
+					<?php } else { ?>
+						<div class="type-prog-container featured">
+							<a href=<?php the_permalink(); ?>>
+								<?php the_post_thumbnail(); ?>
+								<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+								<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+								<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								<p id="feat-label"><?php _e('Featured', 'nexus'); ?></p>
+							</a>
+						</div>
+					<?php } ?>		
 				<?php endwhile; 
 				wp_reset_query();
 				?>

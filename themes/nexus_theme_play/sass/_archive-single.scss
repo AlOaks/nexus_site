@@ -14,16 +14,16 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    border-right: 1px solid lightgray;
 
-    &:after {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 5px;
-        box-shadow: $shadow;
-        content: " ";
-        right: 0;
-    }
+    // &:after {
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     width: 5px;
+    //     content: " ";
+    //     right: 0;
+    // }
 
     @include mobile {
 
@@ -35,7 +35,7 @@
     }
 }
 
-.post-container-archive, .video-container-archive {
+.post-container-archive {
     width: 80%;
     height: 65vh;
     background: $div-white;
@@ -46,13 +46,20 @@
         height: 65%;
     }
 
-    iframe {
-        height: 42vh;
-    }
+    
 
     @include mobile {
         height: 50vh;
     }
+}
+
+.video-container-archive {
+
+    width: 80%;
+
+    // iframe {
+    //     height: 42vh;
+    // }
 }
 
 
@@ -116,7 +123,6 @@
     margin-bottom: 5%;
     margin-top: -5%;
     padding-left: 10px;
-    box-shadow: $shadow;
 
     li {
         padding: 5px 0;

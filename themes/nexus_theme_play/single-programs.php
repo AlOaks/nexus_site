@@ -26,7 +26,7 @@ get_header();
 				$postID = get_the_ID();
 				$prog_cities = wp_get_post_terms($postID, 'Cities', array('fields' => 'names'));
 
-	
+				$prog_img = get_the_post_thumbnail();
 
 				
 				$van_img = get_template_directory_uri().'/assets/images/vancouver.jpg';
@@ -40,7 +40,9 @@ get_header();
 		?>
 
 				<section class="program-hero">
-					<img class="school-logo" src=<?php echo $logo; ?> />
+					<div class="school-logo-container">
+						<img class="school-logo" src=<?php echo $logo; ?> />
+					</div>
 					<p class="program-name"><?php the_title(); ?></p>
 					<ul class="program-info">
 						<li class="program-info-item">

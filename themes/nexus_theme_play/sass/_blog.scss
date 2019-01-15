@@ -129,7 +129,6 @@
     background: $div-red;
     width: 20%;
     border-radius: 5px;
-    box-shadow: $shadow;
     text-align: center;
     font-family: $roboto;
     font-size: 1.3rem;
@@ -167,7 +166,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        box-shadow: $shadow;
 
         i {
             font-size: 1rem;
@@ -189,7 +187,6 @@
     margin-bottom: 5%;
     margin-top: -5%;
     padding-left: 10px;
-    box-shadow: $shadow;
 
     li {
         padding: 5px 0;
@@ -273,13 +270,12 @@
 
 .video-container, .video-container-archive {
     height: 25rem;
+    box-shadow: none;
 }
 
-.post-video {
     
-    iframe {
-        width: 100%;
-    }
+iframe {
+    width: 100%;
 }
 
 .post-container, .post-container-archive {
@@ -326,7 +322,6 @@
     font-weight: 900;
     padding: 1% 3%;
     font-family: $roboto;
-    box-shadow: $shadow;
     border-radius: 5px;
 
     &:hover {

@@ -1,6 +1,10 @@
 .page-template-page-about {
     background: white;
-    line-height: 36px;
+
+    p {
+        line-height: 36px;
+
+    }
 
     .footer-copy {
         background: $bg-blue;
@@ -30,7 +34,6 @@
     margin-top: 5vh;
 
     &:nth-of-type(odd) {
-        background: $div-white;
         
         h2 {
             color: $font-blue;
@@ -42,6 +45,9 @@
     }
 
     &:nth-of-type(even) {
+        
+        background: $div-white;
+
 
         h2 {
             color: $bg-blue;

@@ -21,7 +21,7 @@ get_header();
                 <h1 class="programs-page-title"><?php the_title(); ?></h1>
             </div>
             <section class="search-program">
-                <h2 class="hero-title-programs"><?php _e('Where is going to be your next adventure? ', 'nexus'); ?></h2>
+                <h2 class="hero-title-programs"><?php _e('Where is your next adventure going to be? ', 'nexus'); ?></h2>
                 <div class="search-container">
                     <select class="prg-type-select">
                         <option value=""><?php _e('Choose City', 'nexus'); ?></option>
@@ -74,7 +74,7 @@ get_header();
                         <div class="more-icon">
                             <img class="checklist-icon" src=<?php echo get_template_directory_uri().'/assets/images/checklist-icon.png'; ?>>
                             <h2 class="more-icon-title"><?php _e('Requirements', 'nexus'); ?></h2>
-                            <p class="more-icon-desc"><?php _e('New technical skills and knowledge in the specific area of choice, and the Certificate granted by the School.', 'nexus'); ?>.</p>                                       
+                            <p class="more-icon-desc"><?php _e('Minimum intermediate level of language. No prior knowledge required', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ get_header();
                         <div class="more-icon">
                             <img class="checklist-icon" src=<?php echo get_template_directory_uri().'/assets/images/checklist-icon.png'; ?>>
                             <h2 class="more-icon-title"><?php _e('Requirements', 'nexus'); ?></h2>
-                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
+                            <p class="more-icon-desc"><?php _e('Complete high school certificate, Advance English level. Depending on the program a portfolio might be required', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@ get_header();
                         <div class="more-icon">
                             <img class="checklist-icon" src=<?php echo get_template_directory_uri().'/assets/images/checklist-icon.png'; ?>>
                             <h2 class="more-icon-title"><?php _e('Requirements', 'nexus'); ?></h2>
-                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
+                            <p class="more-icon-desc"><?php _e('Depending on the school prior knowledge related to the program might be required. Intermedium to advance english level', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ get_header();
                         <div class="more-icon">
                             <img class="checklist-icon" src=<?php echo get_template_directory_uri().'/assets/images/checklist-icon.png'; ?>>
                             <h2 class="more-icon-title"><?php _e('Requirements', 'nexus'); ?></h2>
-                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
+                            <p class="more-icon-desc"><?php _e('Not necessary to have any language knowledge. Minimum age 16 years old. Valid Immigration documents', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@ get_header();
                         <div class="more-icon">
                             <img class="checklist-icon" src=<?php echo get_template_directory_uri().'/assets/images/checklist-icon.png'; ?>>
                             <h2 class="more-icon-title"><?php _e('Requirements', 'nexus'); ?></h2>
-                            <p class="more-icon-desc"><?php _e('', 'nexus'); ?>.</p>                                       
+                            <p class="more-icon-desc"><?php _e('Minimum intermediate level of language. No prior knowledge required', 'nexus'); ?>.</p>                                       
                         </div>
                     </div>
                 </div>

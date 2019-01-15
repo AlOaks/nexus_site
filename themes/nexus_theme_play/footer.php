@@ -46,9 +46,9 @@
 
 				<div class="contact-footer info-div">
 					<h2 class="contact-title-footer footer-title"><?php _e('Contact Us', 'nexus'); ?></h2>
-					<a class="address-nexus" href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2779062,-123.129072,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">119-970 Burard St Vancouver, BC V6Z 2R4</a>
-					<p class="office-hours"><?php _e('Office hours: Monday - Friday', 'nexus'); ?>, 9am - 5pm PST</p>
-					<a class="phone">(604)288-6787</a>
+					<a class="address-nexus" href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2779062,-123.129072,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">119-970 Burrard St, Vancouver, BC, V6Z 2R4</a>
+					<p class="office-hours"><?php _e('Office hours: Mon - Fri', 'nexus'); ?>, 9am - 5pm PST</p>
+					<p class="phone">+1 604 288-0787</p>
 				</div>
 			</section>
 
