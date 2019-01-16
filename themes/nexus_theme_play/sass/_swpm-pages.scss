@@ -17,10 +17,11 @@
 
 .login-page-container {
     height: 70vh;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    background: $bg-blue;
 
     @include mobile {
         flex-direction: column;
@@ -29,7 +30,7 @@
 }
 
 .swpm-validate-form label {
-    color: $font-blue;
+    color: white; 
 }
 
 
@@ -39,11 +40,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: $font-blue;
+    color: white;
     font-family: $roboto;
     margin-top: auto;
     margin-bottom: auto;
-    border-left: 1px solid $font-blue;
+    border-left: 1px solid $div-white;
 
     img {
         width: 50%;
@@ -98,11 +99,11 @@
 }
 
 #swpm-registration-form > table > tbody > tr:nth-child(8) > td > label > a {
-    color: $font-blue;
+    color: white;
 }
 
 #swpm-registration-form > table > tbody > tr:nth-child(9) > td > label > a {
-    color: $font-blue;;
+    color: white;
 }
 
 // MEMBER LOGIN PAGE
@@ -116,22 +117,22 @@
 
 
 #swpm-login-form > div > div.swpm-username-label > label {
-    color: $font-blue;
+    color: white;
 }
 
 #swpm-login-form > div > div.swpm-password-label > label {
-    color: $font-blue;
+    color: white;
 }
 #swpm-login-form > div > div.swpm-remember-me > span.swpm-rember-label {
-    color: $font-blue;
+    color: white;
 }
 
 #forgot_pass {
-    color: $font-blue;
+    color: white;
 }
 
 #register {
-    color: $font-blue;
+    color: white;
 }
 
 // PASS RESET

@@ -176,7 +176,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function custom_excerpt_length( $length ) {
-	return 18;
+	return 15;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
@@ -202,6 +202,7 @@ function more_post_ajax(){
 		$excerpt = get_the_excerpt();
 		$img = get_the_post_thumbnail();
 
+		
 		if (!empty($video)) { ?>
 			<div class="video-container">
 				<div class="post-video"><?php echo $video ?></div>
@@ -342,6 +343,7 @@ function more_post_club(){
 		if (!empty($video)) { ?>
 			<div class="video-container">
 				<div class="post-video"><?php echo $video ?></div>
+				<h1 class="video-title"><?php echo $title ?></h1>
 			</div>
 		<?php	
 		} else if(empty($video)) {

@@ -9,6 +9,7 @@
 #popmake-144, #popmake-88, #popmake-168, #popmake-108 {
     top: 5% !important;
     padding: 0;
+    
 
     .popmake-content {
         display: flex;
@@ -161,6 +162,7 @@
 #popmake-206, #popmake-162 {
     padding: 0;
     width: 30%;
+
     
     .popmake-content {
         background: $bg-blue;
@@ -206,7 +208,13 @@
             padding: .5rem;
             
         }
+
+        
     }
+}
+
+#swpm-login-form > div > div.swpm-username-label > label {
+    color:white;
 }
 
 .swpm-login-form-inner {

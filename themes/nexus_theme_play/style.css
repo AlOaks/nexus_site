@@ -2826,10 +2826,8 @@ i {
     text-decoration: none;
     color: #6B6B6B; }
 
-.video-container, .post-container, .post-container-archive, .video-container-archive {
+.post-container, .post-container-archive {
   width: 45%;
-  -webkit-box-shadow: 3px 3px 5px #5a5a5a;
-          box-shadow: 3px 3px 5px #5a5a5a;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2842,22 +2840,14 @@ i {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   @media (max-width: 600px) {
-    .video-container, .post-container, .post-container-archive, .video-container-archive {
+    .post-container, .post-container-archive {
       width: 100%; } }
-  .video-container h1, .post-container h1, .post-container-archive h1, .video-container-archive h1 {
-    margin: 0 0 2.5% 1%;
+  .post-container h1, .post-container-archive h1 {
+    margin: 0 0 2.5% 3%;
     color: #193F5C; }
     @media (max-width: 600px) {
-      .video-container h1, .post-container h1, .post-container-archive h1, .video-container-archive h1 {
+      .post-container h1, .post-container-archive h1 {
         font-size: 1.5rem; } }
-
-.video-container, .video-container-archive {
-  height: 25rem;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
-iframe {
-  width: 100%; }
 
 .post-container, .post-container-archive {
   height: 25rem; }
@@ -2873,7 +2863,7 @@ iframe {
     color: #193F5C;
     margin: 0;
     margin-top: -3%;
-    margin-left: 1%;
+    margin-left: 3%;
     font-family: "Open Sans"; }
     @media (max-width: 600px) {
       .post-container p, .post-container-archive p {
@@ -2940,15 +2930,24 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start; }
-  .videos-category-container .video-container {
-    width: 47.5%; }
+
+.video-container-archive {
+  margin-bottom: 5%; }
+
+.video-container {
+  width: 45%; }
+  @media (max-width: 600px) {
+    .video-container {
+      width: 100%; } }
 
 .single-post {
   background: white; }
@@ -4143,6 +4142,9 @@ iframe {
       font-size: 1.5rem;
       padding: .5rem; }
 
+#swpm-login-form > div > div.swpm-username-label > label {
+  color: white; }
+
 .swpm-login-form-inner {
   width: 100%;
   margin-left: 10%; }
@@ -4546,9 +4548,6 @@ iframe {
     .post-container-archive {
       height: 50vh; } }
 
-.video-container-archive {
-  width: 80%; }
-
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4751,13 +4750,14 @@ iframe {
 
 .login-page-container {
   height: 70vh;
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: auto; }
+  margin: auto;
+  background: #15405A; }
   @media (max-width: 600px) {
     .login-page-container {
       -webkit-box-orient: vertical;
@@ -4767,7 +4767,7 @@ iframe {
       height: auto; } }
 
 .swpm-validate-form label {
-  color: #193F5C; }
+  color: white; }
 
 .login-page-info {
   width: 60%;
@@ -4781,11 +4781,11 @@ iframe {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #193F5C;
+  color: white;
   font-family: "Roboto";
   margin-top: auto;
   margin-bottom: auto;
-  border-left: 1px solid #193F5C; }
+  border-left: 1px solid #F3F5F8; }
   .login-page-info img {
     width: 50%;
     height: auto;
@@ -4837,10 +4837,10 @@ iframe {
       padding-bottom: 5%; } }
 
 #swpm-registration-form > table > tbody > tr:nth-child(8) > td > label > a {
-  color: #193F5C; }
+  color: white; }
 
 #swpm-registration-form > table > tbody > tr:nth-child(9) > td > label > a {
-  color: #193F5C; }
+  color: white; }
 
 .page-template-page-member-login .login-page-info {
   -webkit-box-pack: center;
@@ -4848,19 +4848,19 @@ iframe {
           justify-content: center; }
 
 #swpm-login-form > div > div.swpm-username-label > label {
-  color: #193F5C; }
+  color: white; }
 
 #swpm-login-form > div > div.swpm-password-label > label {
-  color: #193F5C; }
+  color: white; }
 
 #swpm-login-form > div > div.swpm-remember-me > span.swpm-rember-label {
-  color: #193F5C; }
+  color: white; }
 
 #forgot_pass {
-  color: #193F5C; }
+  color: white; }
 
 #register {
-  color: #193F5C; }
+  color: white; }
 
 .page-template-page-password-reset .login-page-container {
   height: 45vh;

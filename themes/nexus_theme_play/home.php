@@ -46,7 +46,10 @@ get_header();
 							</a>
 						<?php 
 							}
-							endwhile; ?>
+							endwhile; 
+							
+							wp_reset_query();
+							?>
 						</ul>
 					</div>
 				</div>
@@ -84,17 +87,21 @@ get_header();
 				<section class="blog-section">
 						<?php		
 
-						query_posts('posts_per_page=4');			
+
+						query_posts('posts_per_page=4'); 
+
 						while ( have_posts() ) : the_post(); 
-							
-								$video = CFS()->get('post_video');
+
+								$video = CFS()->get('post_video');	
 								$title = get_the_title();
 								$excerpt = get_the_excerpt();
 								$img = get_the_post_thumbnail();
 
+								
 								if (!empty($video)) { ?>
 									<div class="video-container">
 										<div class="post-video"><?php echo $video ?></div>
+										<h1 class="video-title"><?php echo $title ?></h1>
 									</div>
 								<?php	
 								} else if(empty($video)) {
@@ -106,8 +113,8 @@ get_header();
 										<a class="post-link" href=<?php echo the_permalink(); ?>><?php _e('Read', 'nexus'); ?></a>
 									</div>
 								<?php
+								
 								}
-
 						endwhile; 
 
 						wp_reset_query();
