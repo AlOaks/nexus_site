@@ -1142,10 +1142,10 @@ object {
     .wpml-ls-item-en {
       right: auto; } }
 
-.wpml-ls-item-br {
+.wpml-ls-item-pt-br {
   right: 24%; }
   @media (max-width: 600px) {
-    .wpml-ls-item-br {
+    .wpml-ls-item-pt-br {
       right: auto; } }
 
 .wpml-ls-item-es {
@@ -3430,8 +3430,8 @@ i {
   margin-left: 5%; }
 
 .school-logo {
-  max-width: 50%;
-  height: auto;
+  max-width: 30vw;
+  max-height: 30vh;
   margin: 0 auto 0 auto;
   margin-top: 3%;
   margin-bottom: 3%; }
@@ -3778,7 +3778,8 @@ i {
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  display: none; }
   @media (max-width: 600px) {
     .student-review {
       display: none; } }
@@ -3874,21 +3875,28 @@ i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 32%;
-  -webkit-box-shadow: 3px 3px 5px #5a5a5a;
-          box-shadow: 3px 3px 5px #5a5a5a;
   margin-top: 2%;
-  margin-bottom: 3%; }
+  margin-bottom: 3%;
+  position: relative;
+  height: auto; }
   @media (max-width: 600px) {
     .people-program-container {
       -webkit-box-shadow: 0 4px 2px -2px gray;
               box-shadow: 0 4px 2px -2px gray; } }
   .people-program-container img {
-    height: 50%; }
+    height: 20rem; }
   .people-program-container p {
     color: #193F5C;
     font-family: "Open Sans";
     margin: 0;
     margin-left: 5%; }
+
+.people-info-div {
+  position: absolute;
+  bottom: 7px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 2% 1%; }
 
 .people-school-name {
   height: 10%;
@@ -4263,6 +4271,8 @@ i {
 
 .tax-Cities {
   background: white; }
+  .tax-Cities .tax-programs-btn {
+    margin-top: 3vh; }
   .tax-Cities .footer-copy {
     background: #15405A; }
 
@@ -4343,9 +4353,9 @@ i {
   margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
   .type-programs-container a {
     text-decoration: none; }
     .type-programs-container a:visited {
@@ -4356,7 +4366,7 @@ i {
       -ms-flex-order: 2;
           order: 2;
   width: 30%;
-  height: 20rem;
+  height: auto;
   margin-bottom: 5%;
   background: #F3F5F8;
   display: -webkit-box;
@@ -4368,9 +4378,11 @@ i {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .type-prog-container:hover {
-    background: #ffd67f; }
+          justify-content: space-between;
+  position: relative;
+  margin-right: 3.3333%; }
+  .type-prog-container:hover .program-info-div {
+    background: rgba(255, 255, 255, 0.8); }
   @media (max-width: 600px) {
     .type-prog-container {
       width: 48%;
@@ -4395,7 +4407,13 @@ i {
   .type-prog-container .prog-city-single {
     font-style: italic; }
   .type-prog-container .wp-post-image {
-    height: 12rem; }
+    height: 20rem; }
+
+.program-info-div {
+  position: absolute;
+  bottom: 7px;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%; }
 
 .featured {
   -webkit-box-ordinal-group: 2;
@@ -4965,3 +4983,9 @@ article {
 
 .posts-navigation {
   margin-left: 10% !important; }
+
+.not-found {
+  margin-top: 25vh;
+  color: #193F5C;
+  padding-left: 15vw;
+  margin-bottom: 20vh; }

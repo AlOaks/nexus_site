@@ -16,6 +16,26 @@ get_header();
 			<div class="page-title-container">
 				<h1><?php single_term_title(); ?></h1>
 				<p><?php _e(term_description(), 'nexus'); ?></p>
+				<div class="search-container">
+                    <select class="prg-type-select">
+                        <option value=""><?php _e('Choose City', 'nexus'); ?></option>
+                        <?php 
+                                                       
+                                $types = get_terms([
+                                    'taxonomy' => 'Cities',
+                                    'hide_empty' => false
+                                ]);
+
+                            foreach($types as $type) :
+
+                        ?>
+                        <option value=<?php echo $type->name; ?>><?php echo $type->name; ?></option>
+
+
+                            <?php endforeach; ?>
+                    </select>
+                </div>
+                <button class="see-programs-btn tax-programs-btn"><?php _e('Change City', 'nexus'); ?></button>
 			</div>
 			<form id="filter" class="filters-container" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST">
 				<select class="location-selector" name="categoryfilter">
@@ -58,18 +78,24 @@ get_header();
 						<div class="type-prog-container">
 							<a href=<?php the_permalink(); ?>>
 								<?php the_post_thumbnail(); ?>
-								<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
-								<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
-								<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								<div class="program-info-div">
+									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
+									<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								</div>
 							</a>
 						</div>
 					<?php } else { ?>
 						<div class="type-prog-container featured">
 							<a href=<?php the_permalink(); ?>>
 								<?php the_post_thumbnail(); ?>
-								<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
-								<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
-								<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								<div class="program-info-div">
+									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
+									<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								</div>
 								<p id="feat-label"><?php _e('Featured', 'nexus'); ?></p>
 							</a>
 						</div>

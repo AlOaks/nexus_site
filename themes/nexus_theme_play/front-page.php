@@ -153,7 +153,7 @@ get_header();
 							</div>
 						</a>
 					</div>
-					<a class="visit-faq-btn"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
+					<a class="visit-faq-btn" href="../faq"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
 			</section>	
 
 			<section class="reviews-section">

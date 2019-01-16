@@ -40,10 +40,12 @@ get_header();
 		?>
 
 				<section class="program-hero">
+					
 					<div class="school-logo-container">
 						<img class="school-logo" src=<?php echo $logo; ?> />
 					</div>
 					<p class="program-name"><?php the_title(); ?></p>
+					
 					<ul class="program-info">
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('Price', 'nexus'); ?></p>
@@ -64,7 +66,7 @@ get_header();
 							</ul>
 						</li>
 						<li class="program-info-item">
-							<p class="li-title"><?php _e('Hrs / Week', 'nexus'); ?></p>
+							<p class="li-title"><?php _e('Hrs/Lessons per week', 'nexus'); ?></p>
 							<p class="li-field"><?php echo $hrs; ?></p>
 						</li>
 					</ul>
@@ -152,10 +154,14 @@ get_header();
 
 						?>	
 							<div class="people-program-container">
+								<a href=<?php get_the_permalink(); ?> >
 								<?php the_post_thumbnail(); ?>
-								<p class="people-school-name"><?php echo CFS()->get('school'); ?></p>
-								<p class="people-prg-name"><a href=<?php echo get_the_permalink(); ?>><?php the_title(); ?></a></p>
-								<p class="people-prg-category"><?php echo $term->name; ?></p>
+									<div class="people-info-div">
+										<p class="people-school-name"><?php echo CFS()->get('school'); ?></p>
+										<p class="people-prg-name"><?php the_title(); ?></p>
+										<p class="people-prg-category"><?php echo $term->name; ?></p>
+									</div>
+								</a>
 							</div>
 						<?php		
 							endforeach;	

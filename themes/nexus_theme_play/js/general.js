@@ -164,6 +164,12 @@ $('.see-programs-btn').click(function(e){
     window.location = '../cities/'+type;
 });
 
+$('.tax-programs-btn').click(function(e){
+    e.preventDefault;
+    var type = $('.prg-type-select').val().toLowerCase();
+    window.location = '../'+type;
+});
+
 
 
 

@@ -1,6 +1,10 @@
 .tax-Cities {
     background: white;
 
+    .tax-programs-btn {
+        margin-top: 3vh;
+    }
+
     .footer-copy {
         background: $bg-blue;
     }
@@ -78,7 +82,7 @@
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     a {
         text-decoration: none;
@@ -97,17 +101,20 @@
 .type-prog-container {
     order: 2;
     width: 30%;
-    height: 20rem;
+    height: auto;
     margin-bottom: 5%;
     background: $div-white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    margin-right: 3.3333%;
 
     &:hover {
-        background: lighten($div-yellow, 20%);
-
-       
+        
+        .program-info-div {
+            background: rgba(255,255,255, .8);
+        }
     }
 
     @include mobile {
@@ -146,9 +153,16 @@
     
 
     .wp-post-image {
-        height: 12rem;
+        height: 20rem;
     }
 
+}
+
+.program-info-div {
+    position: absolute;
+    bottom: 7px;
+    background: rgba(255,255,255,.4);
+    width: 100%;
 }
 
 .featured {
