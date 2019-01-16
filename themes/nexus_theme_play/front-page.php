@@ -110,7 +110,7 @@ get_header();
 			<section class="choose-city-section">
 					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
 					<div class="cities-container-front">
-						<a href="cities/calgary/"  class="city-link-front third-div calgary">
+						<a href="cities/calgary/"  class="city-link-front fifty-div calgary">
 							<div class="city-container-frontpage cal-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Calgary</h2>
@@ -122,7 +122,7 @@ get_header();
 								<h2 class="city-name-front">Montreal</h2>
 							</div>
 						</a>
-						<a href="cities/ottawa/" class="city-link-front third-div ottawa">
+						<a href="cities/ottawa/" class="city-link-front fifty-div ottawa">
 							<div class="city-container-frontpage otta-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Ottawa</h2>
@@ -140,16 +140,22 @@ get_header();
 								<h2 class="city-name-front">Vancouver</h2>
 							</div>
 						</a>
-						<a href="cities/victoria/" class="city-link-front third-div victoria">
+						<a href="cities/victoria/" class="city-link-front fifty-div victoria">
 							<div class="city-container-frontpage vic-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Victoria</h2>
 							</div>
 						</a>
-						<a href="cities/winnipeg/" class="city-link-front third-div winnipeg">
+						<a href="cities/winnipeg/" class="city-link-front fifty-div winnipeg">
 							<div class="city-container-frontpage winni-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Winnipeg</h2>
+							</div>
+						</a>
+						<a href="cities/halifax/" class="city-link-front fifty-div winnipeg">
+							<div class="city-container-frontpage hali-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Halifax</h2>
 							</div>
 						</a>
 					</div>

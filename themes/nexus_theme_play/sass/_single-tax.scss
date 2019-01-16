@@ -19,6 +19,10 @@
         font-family: $sans;
         font-size: 1.3rem;
         line-height: 2rem;
+
+        @include mobile {
+            font-size: .8rem;
+        }
     }
 }
 
@@ -64,8 +68,11 @@
     font-weight: bold;
     font-size: 1.5rem;
     border: none;
-    box-shadow: $shadow;
     padding: 0;
+
+    &:hover {
+        background: lighten($div-yellow, 20%);
+    }
 
     @include mobile {
         font-size: 1.2rem;
@@ -118,8 +125,14 @@
     }
 
     @include mobile {
-        width: 48%;
-        height: auto;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 0;
+
+        .program-info-div {
+            background: rgba(255,255,255,.8);
+        }
+
     }
 
     p {
@@ -161,8 +174,12 @@
 .program-info-div {
     position: absolute;
     bottom: 7px;
-    background: rgba(255,255,255,.4);
+    background: rgba(255,255,255,.6);
     width: 100%;
+
+    @include mobile {
+        bottom: 0;
+    }
 }
 
 .featured {
@@ -184,7 +201,6 @@
     background: $div-red;
     width: 30%;
     border-radius: 5px;
-    box-shadow: $shadow;
     text-align: center;
     font-family: $roboto;
     font-size: 1.3rem;
@@ -260,7 +276,6 @@
         font-size: 1.5rem;
         padding: 2% 5%;
         border-radius: 5px;
-        box-shadow: $shadow;
         font-weight: bold;
 
         &:hover {

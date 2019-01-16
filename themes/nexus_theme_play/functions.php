@@ -277,19 +277,37 @@ function misha_filter_function() {
 		while( $query->have_posts() ): $query->the_post();
 		
 		$postID = get_the_ID();
-		$prog_type = wp_get_post_terms($postID, 'programsTypes');	?>		
-
-		<div class="type-prog-container">
-			<a href=<?php the_permalink(); ?>>
-				<?php the_post_thumbnail(); ?>
-				<p class="prog-school-single"><?php echo $prog_type[0]->name; ?></p>
-				<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
-				<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
-			</a>
-		</div>
-	<?php 
-	endwhile;
-	wp_reset_postdata();
+		$prog_type = wp_get_post_terms($postID, 'programsTypes');			
+		$feat = CFS()->get('featured'); 
+					
+					if($feat == false) { ?>						
+						<div class="type-prog-container">
+							<a href=<?php the_permalink(); ?>>
+								<?php the_post_thumbnail(); ?>
+								<div class="program-info-div">
+									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
+									<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								</div>
+							</a>
+						</div>
+					<?php } else { ?>
+						<div class="type-prog-container featured">
+							<a href=<?php the_permalink(); ?>>
+								<?php the_post_thumbnail(); ?>
+								<div class="program-info-div">
+									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
+									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
+									<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+								</div>
+								<p id="feat-label"><?php _e('Featured', 'nexus'); ?></p>
+							</a>
+						</div>
+					<?php } ?>		
+				<?php endwhile; 
+				wp_reset_postdata();
 
 	else : ?>
 	<div class="no-programs">

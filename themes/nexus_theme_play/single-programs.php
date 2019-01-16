@@ -142,7 +142,10 @@ get_header();
 					<button class="peo-btn-left peo-btn"><i class="fas fa-chevron-left"></i></button>
 					<button class="peo-btn-right peo-btn"><i class="fas fa-chevron-right"></i></button>
 						<?php 
-							$args = array('post_type' => 'programs', 'posts_per_page' => 3);
+							$args = array(
+								'post_type' => 'programs', 
+								'posts_per_page' => 3,
+							);
 							$recommended = new WP_query($args);
 							
 
@@ -154,7 +157,7 @@ get_header();
 
 						?>	
 							<div class="people-program-container">
-								<a href=<?php get_the_permalink(); ?> >
+								<a href=<?php echo get_the_permalink(); ?> >
 								<?php the_post_thumbnail(); ?>
 									<div class="people-info-div">
 										<p class="people-school-name"><?php echo CFS()->get('school'); ?></p>

@@ -18,7 +18,7 @@ get_header();
 				<p><?php _e(term_description(), 'nexus'); ?></p>
 				<div class="search-container">
                     <select class="prg-type-select">
-                        <option value=""><?php _e('Choose City', 'nexus'); ?></option>
+                        <option value=""><?php _e('Choose city', 'nexus'); ?></option>
                         <?php 
                                                        
                                 $types = get_terms([
@@ -82,7 +82,7 @@ get_header();
 									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
 									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
 									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
-									<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+									<p class="prog-city-single"><?php echo CFS()->get('duration'); ?></p>
 								</div>
 							</a>
 						</div>
@@ -91,10 +91,10 @@ get_header();
 							<a href=<?php the_permalink(); ?>>
 								<?php the_post_thumbnail(); ?>
 								<div class="program-info-div">
-									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
+									<p class="prog-school-single"><?php _e($prog_type[0]->name, 'nexus'); ?></p>
 									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
-									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
-									<p class="prog-city-single"><?php echo CFS()->get('duration').' Months'; ?></p>
+									<p class="prog-school"><?php _e(CFS()->get('school'), 'nexus'); ?></p>
+									<p class="prog-city-single"><?php _e(CFS()->get('duration'), 'nexus'); ?></p>
 								</div>
 								<p id="feat-label"><?php _e('Featured', 'nexus'); ?></p>
 							</a>
