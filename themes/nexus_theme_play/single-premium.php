@@ -50,7 +50,7 @@ get_header();
 			<?php 
 			
 			if ( comments_open() || get_comments_number() ) :
-				comments_template('', true);
+				comments_template();
 			endif;
 
 			?>
