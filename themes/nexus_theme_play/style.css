@@ -968,7 +968,7 @@ object {
           justify-content: flex-end;
   font-size: .8rem;
   right: 5%;
-  width: 15%; }
+  width: 30%; }
   .links-header a {
     margin-left: 5%; }
 
@@ -1137,19 +1137,19 @@ object {
       position: relative !important; } }
 
 .wpml-ls-item-en {
-  right: 20%; }
+  right: 26%; }
   @media (max-width: 600px) {
     .wpml-ls-item-en {
       right: auto; } }
 
 .wpml-ls-item-pt-br {
-  right: 24%; }
+  right: 30%; }
   @media (max-width: 600px) {
     .wpml-ls-item-pt-br {
       right: auto; } }
 
 .wpml-ls-item-es {
-  right: 22%; }
+  right: 28%; }
   @media (max-width: 600px) {
     .wpml-ls-item-es {
       right: auto; } }
@@ -2077,7 +2077,8 @@ i {
 
 .reviews-section {
   width: 100%;
-  background: white; }
+  background: white;
+  display: none; }
 
 .reviews-title {
   text-align: center;
@@ -3424,6 +3425,7 @@ i {
       padding-bottom: 0; } }
 
 .school-logo-container {
+  margin-top: 3%;
   background: white;
   width: 90%;
   margin-left: 5%; }
@@ -3477,7 +3479,7 @@ i {
   margin: 0 auto 0 auto;
   padding: 1%;
   position: absolute;
-  bottom: -10%;
+  bottom: -12%;
   left: 8%; }
   @media (max-width: 600px) {
     .program-info {
@@ -3583,9 +3585,9 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto; }

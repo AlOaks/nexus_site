@@ -35,7 +35,7 @@
     justify-content: flex-end;
     font-size: .8rem;
     right: 5%;
-    width: 15%;
+    width: 30%;
 
     a {
         margin-left: 5%;
@@ -233,7 +233,7 @@
 }
 
 .wpml-ls-item-en {
-    right: 20%;
+    right: 26%;
 
     @include mobile {
         right: auto;
@@ -241,7 +241,7 @@
 }
 
 .wpml-ls-item-pt-br {
-    right: 24%; 
+    right: 30%; 
 
     @include mobile {
         right: auto;
@@ -249,7 +249,7 @@
 }
 
 .wpml-ls-item-es {
-    right: 22%;
+    right: 28%;
 
     @include mobile {
         right: auto;
