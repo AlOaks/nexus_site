@@ -110,10 +110,10 @@ get_header();
 			<section class="choose-city-section">
 					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
 					<div class="cities-container-front">
-						<a href="cities/calgary/"  class="city-link-front fifty-div calgary">
-							<div class="city-container-frontpage cal-div">
+						<a href="cities/vancouver/" class="city-link-front fifty-div vancouver">
+							<div class="city-container-frontpage van-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Calgary</h2>
+								<h2 class="city-name-front">Vancouver</h2>
 							</div>
 						</a>
 						<a href="cities/montreal/" class="city-link-front fifty-div montreal">
@@ -122,24 +122,24 @@ get_header();
 								<h2 class="city-name-front">Montreal</h2>
 							</div>
 						</a>
-						<a href="cities/ottawa/" class="city-link-front fifty-div ottawa">
-							<div class="city-container-frontpage otta-div">
-								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Ottawa</h2>
-							</div>
-						</a>
 						<a href="cities/toronto/" class="city-link-front fifty-div toronto">
 							<div class="city-container-frontpage toro-div">
 								<div class="black-ovrlay-city"></div>
 								<h2 class="city-name-front">Toronto</h2>
 							</div>
 						</a>
-						<a href="cities/vancouver/" class="city-link-front fifty-div vancouver">
-							<div class="city-container-frontpage van-div">
+						<a href="cities/ottawa/" class="city-link-front fifty-div ottawa">
+							<div class="city-container-frontpage otta-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Vancouver</h2>
+								<h2 class="city-name-front">Ottawa</h2>
 							</div>
 						</a>
+						<a href="cities/calgary/"  class="city-link-front fifty-div calgary">
+							<div class="city-container-frontpage cal-div">
+								<div class="black-ovrlay-city"></div>
+								<h2 class="city-name-front">Calgary</h2>
+							</div>
+						</a>					
 						<a href="cities/victoria/" class="city-link-front fifty-div victoria">
 							<div class="city-container-frontpage vic-div">
 								<div class="black-ovrlay-city"></div>

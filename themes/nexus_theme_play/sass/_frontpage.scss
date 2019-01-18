@@ -532,38 +532,6 @@ option {
     }
 }
 
-// .montreal {
-//     order: 1;
-// }
-
-// .toronto {
-//     order: 2;
-// }
-
-// .vancouver {
-//     order: 3;
-// }
-
-// .ottawa {
-//     order: 4;
-// }
-
-// .victoria {
-//     order: 5;
-// }
-
-// .winnipeg {
-//     order: 6;
-// }
-
-// .calgary {
-//     order: 7;
-// }
-
-// .halifax {
-//     order:8;
-// }
-
 
 
 .cal-div {
@@ -630,10 +598,11 @@ option {
 
 .fifty-div {
     margin-bottom: 5%;
-    flex-basis: 13.5%;
+    flex-basis: 49%;
+    height: 15rem;
 
-    &:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(6), &:nth-of-type(8) {
-        flex-basis: 33.5%;
+    &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8) {
+        flex-basis: 24%;
     }
 
     @include mobile {
@@ -682,7 +651,7 @@ option {
 .city-name-front {
     color: white;
     font-family: $sans;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     position: absolute;
     margin: 0;
