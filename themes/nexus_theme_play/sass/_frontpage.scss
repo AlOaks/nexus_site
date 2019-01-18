@@ -293,6 +293,10 @@ i {
     text-decoration: none;
     border-radius: 5px;
 
+    &:visited {
+        color: white;
+    }
+
     &:hover {
         background: red;
         color: white;
@@ -475,6 +479,10 @@ i {
     text-decoration: none;
     border-radius: 5px;
 
+    &:visited {
+        color: white;
+    }
+
     &:hover {
         background: red;
         color: white;
@@ -495,6 +503,7 @@ i {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 5vh;
 
     @include mobile {
         height: 70vh;
@@ -521,37 +530,37 @@ i {
     }
 }
 
-.montreal {
-    order: 1;
-}
+// .montreal {
+//     order: 1;
+// }
 
-.toronto {
-    order: 2;
-}
+// .toronto {
+//     order: 2;
+// }
 
-.vancouver {
-    order: 3;
-}
+// .vancouver {
+//     order: 3;
+// }
 
-.ottawa {
-    order: 4;
-}
+// .ottawa {
+//     order: 4;
+// }
 
-.victoria {
-    order: 5;
-}
+// .victoria {
+//     order: 5;
+// }
 
-.winnipeg {
-    order: 6;
-}
+// .winnipeg {
+//     order: 6;
+// }
 
-.calgary {
-    order: 7;
-}
+// .calgary {
+//     order: 7;
+// }
 
-.halifax {
-    order:8;
-}
+// .halifax {
+//     order:8;
+// }
 
 
 
@@ -594,7 +603,7 @@ i {
 }
 
 .city-link-front {
-    height: 25rem;
+    height: 10rem;
 
     @include mobile {
         height: 14%;
@@ -618,14 +627,20 @@ i {
 
 
 .fifty-div {
-    flex-basis: 48%;
     margin-bottom: 5%;
+    flex-basis: 13.5%;
+
+    &:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(6), &:nth-of-type(8) {
+        flex-basis: 33.5%;
+    }
 
     @include mobile {
         flex-basis: 100%;
         margin-top: 0;
         margin-bottom: 3%;
     }
+
+    
 }
 
 .city-container-frontpage {
@@ -714,6 +729,10 @@ i {
     left: 39%;
     bottom: 0;
     text-align: center;
+
+    &:visited {
+        color: white;
+    }
 
     @include mobile {
         left: 10%;

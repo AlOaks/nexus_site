@@ -14,13 +14,29 @@
     display: flex;
     width: 13%;
     justify-content: space-between;
+    
 
     @include mobile {
         display: none;
     }
 }
 
+.search-link {
+    color: gray;
+
+    &:visited {
+        color: gray;
+    }
+}
+
 .join-link, .log-in-link {
+
+    color: $div-red;
+
+    &:visited {
+        color: $div-red;
+    }
+
     @include mobile {
         display: none;
     }
@@ -69,12 +85,14 @@
         background: white;
         display: flex;
         flex-direction: column;
-        box-shadow: $shadow;
+        justify-content: flex-start;
 
 
         li {
-            padding: 1% 2%;
             border-top: 1px solid grey;
+            margin: 0;
+           
+            
 
             &:first-of-type {
                 border-top: none;
@@ -83,7 +101,7 @@
             a {
                 font-size: .8rem;
                 width: 8rem;
-                padding: 4px 5px;
+                padding: 6px;
             }
 
             &:hover {
@@ -92,6 +110,17 @@
             }
         }
     }
+}
+
+.white-overlay-menu {
+    background: rgba(255,255,255,.7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: none;
 }
 
 .header-content {
@@ -145,7 +174,9 @@
 
     .menu-btn-active {
         display: none;
-        
+        z-index: 100;
+        position: relative;
+
         @include mobile {
             float: right;
             background: white;
@@ -224,7 +255,7 @@
 
 .wpml-ls-item {
     position: absolute !important;
-    top: 8%;
+    top: 10%;
     right: 16%;   
     
     @include mobile {

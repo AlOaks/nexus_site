@@ -41,19 +41,19 @@
     }
 
     .page-header {
-        margin-top: 15vh;
+        margin-top: 17vh;
         color: $font-blue;
         font-family: $sans;
         font-size: 1.5rem;
-        margin-left: 5%;
         position: relative;
+        text-align: center;
 
         &:before {
             content: "";
             height: 1px;
             width: 20%;
             position: absolute;
-            left: 0;
+            left: 40%;
             bottom: 0;
             border-bottom: 3px solid $div-yellow;
         }
@@ -65,24 +65,33 @@
 }
 
 article {
-    background: $div-white;
-    padding: 2%;
-    margin-left: 10% !important;
-    width: 80%;
+    margin-left: 7.5% !important;
+    width: 85%;  
+    color: $font-blue;  
 
-    @include mobile {
-        padding: 3%;
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
     }
 
     .entry-header {
+
+
         a {
             color: $font-blue;
         }
 
     }
 
+    .entry-summary {
+        margin: 0;
+    }
+
     .entry-meta {
-        font-size: .8rem;
+       display: none;
     }
 }
 

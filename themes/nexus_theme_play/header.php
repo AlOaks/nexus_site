@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nexus_theme_scratch' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -42,7 +43,9 @@
 
 		<?php } ?>
 		<section class="header-content">
-		
+			
+		<div class="white-overlay-menu"></div>
+			
 			<a href=<?php echo esc_url( home_url( '/' ) ); ?> ><img class="nexuslogo" src=<?php echo get_template_directory_uri().'/assets/images/nexus_logo_04.png' ?>></a>
 			<nav id="site-navigation" class="main-navigation">
 			<a class="menu-btn-active"><i class="fas fa-bars"></i></a>
@@ -54,6 +57,6 @@
 				?>
 			</nav><!-- #site-navigation -->
 		</section>
-	</header><!-- #masthead -->
 
+	</header><!-- #masthead -->
 	<div id="content" class="site-content">

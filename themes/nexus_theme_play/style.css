@@ -952,9 +952,18 @@ object {
     .login-link {
       display: none; } }
 
-@media (max-width: 600px) {
-  .join-link, .log-in-link {
-    display: none; } }
+.search-link {
+  color: gray; }
+  .search-link:visited {
+    color: gray; }
+
+.join-link, .log-in-link {
+  color: #bd2020; }
+  .join-link:visited, .log-in-link:visited {
+    color: #bd2020; }
+  @media (max-width: 600px) {
+    .join-link, .log-in-link {
+      display: none; } }
 
 .links-header {
   position: absolute;
@@ -999,20 +1008,30 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-shadow: 3px 3px 5px #5a5a5a;
-            box-shadow: 3px 3px 5px #5a5a5a; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
     .site-header .sub-menu li {
-      padding: 1% 2%;
-      border-top: 1px solid grey; }
+      border-top: 1px solid grey;
+      margin: 0; }
       .site-header .sub-menu li:first-of-type {
         border-top: none; }
       .site-header .sub-menu li a {
         font-size: .8rem;
         width: 8rem;
-        padding: 4px 5px; }
+        padding: 6px; }
       .site-header .sub-menu li:hover {
         background: #F3F5F8;
         color: black; }
+
+.white-overlay-menu {
+  background: rgba(255, 255, 255, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none; }
 
 .header-content {
   -ms-flex-item-align: center;
@@ -1068,7 +1087,9 @@ object {
           .main-navigation .menu li:first-of-type {
             margin-top: 0; } }
   .main-navigation .menu-btn-active {
-    display: none; }
+    display: none;
+    z-index: 100;
+    position: relative; }
     @media (max-width: 600px) {
       .main-navigation .menu-btn-active {
         float: right;
@@ -1130,7 +1151,7 @@ object {
 
 .wpml-ls-item {
   position: absolute !important;
-  top: 8%;
+  top: 10%;
   right: 16%; }
   @media (max-width: 600px) {
     .wpml-ls-item {
@@ -1717,6 +1738,8 @@ i {
   text-align: center;
   text-decoration: none;
   border-radius: 5px; }
+  .get-quote-btn:visited {
+    color: white; }
   .get-quote-btn:hover {
     background: red;
     color: white; }
@@ -1863,6 +1886,8 @@ i {
   text-align: center;
   text-decoration: none;
   border-radius: 5px; }
+  .visit-faq-btn:visited {
+    color: white; }
   .visit-faq-btn:hover {
     background: red;
     color: white; }
@@ -1883,7 +1908,8 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  margin-bottom: 5vh; }
   @media (max-width: 600px) {
     .choose-city-section {
       height: 70vh; } }
@@ -1905,46 +1931,6 @@ i {
   @media (max-width: 600px) {
     .cities-container-front {
       height: 60%; } }
-
-.montreal {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
-
-.toronto {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
-
-.vancouver {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3; }
-
-.ottawa {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4; }
-
-.victoria {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5; }
-
-.winnipeg {
-  -webkit-box-ordinal-group: 7;
-      -ms-flex-order: 6;
-          order: 6; }
-
-.calgary {
-  -webkit-box-ordinal-group: 8;
-      -ms-flex-order: 7;
-          order: 7; }
-
-.halifax {
-  -webkit-box-ordinal-group: 9;
-      -ms-flex-order: 8;
-          order: 8; }
 
 .cal-div {
   background: url("../../themes/nexus_theme_play/assets/images/calgary.jpg"); }
@@ -1971,7 +1957,7 @@ i {
   background: url("../../themes/nexus_theme_play/assets/images/halifax.jpg"); }
 
 .city-link-front {
-  height: 25rem; }
+  height: 10rem; }
   @media (max-width: 600px) {
     .city-link-front {
       height: 14%;
@@ -1986,9 +1972,12 @@ i {
     display: block; }
 
 .fifty-div {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  -ms-flex-preferred-size: 13.5%;
+      flex-basis: 13.5%; }
+  .fifty-div:nth-of-type(1), .fifty-div:nth-of-type(3), .fifty-div:nth-of-type(6), .fifty-div:nth-of-type(8) {
+    -ms-flex-preferred-size: 33.5%;
+        flex-basis: 33.5%; }
   @media (max-width: 600px) {
     .fifty-div {
       -ms-flex-preferred-size: 100%;
@@ -2068,6 +2057,8 @@ i {
   left: 39%;
   bottom: 0;
   text-align: center; }
+  .choose-faq-btn:visited {
+    color: white; }
   @media (max-width: 600px) {
     .choose-faq-btn {
       left: 10%;
@@ -3970,10 +3961,8 @@ i {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-
-#popmake-108 {
-  height: 60vh; }
+            justify-content: space-between;
+    height: 100%; }
 
 .form-book {
   display: -webkit-box;
@@ -4953,18 +4942,18 @@ i {
     margin-left: 5%; } }
 
 .search-results .page-header {
-  margin-top: 15vh;
+  margin-top: 17vh;
   color: #193F5C;
   font-family: "Open Sans";
   font-size: 1.5rem;
-  margin-left: 5%;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .search-results .page-header:before {
     content: "";
     height: 1px;
     width: 20%;
     position: absolute;
-    left: 0;
+    left: 40%;
     bottom: 0;
     border-bottom: 3px solid #ffb419; }
   @media (max-width: 600px) {
@@ -4972,17 +4961,19 @@ i {
       font-size: 1rem; } }
 
 article {
-  background: #F3F5F8;
-  padding: 2%;
-  margin-left: 10% !important;
-  width: 80%; }
-  @media (max-width: 600px) {
-    article {
-      padding: 3%; } }
+  margin-left: 7.5% !important;
+  width: 85%;
+  color: #193F5C; }
+  article h2 {
+    margin: 0; }
+  article p {
+    margin: 0; }
   article .entry-header a {
     color: #193F5C; }
+  article .entry-summary {
+    margin: 0; }
   article .entry-meta {
-    font-size: .8rem; }
+    display: none; }
 
 .byline {
   display: none; }

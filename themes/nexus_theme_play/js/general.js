@@ -67,6 +67,7 @@ $('.btn-right').click(function() {
 $('.menu-btn-active').click(function(e) {
     e.preventDefault;
     $('.menu').slideToggle('slow');
+    $('.white-overlay-menu').toggle();
 })
 
 
