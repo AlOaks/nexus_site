@@ -171,6 +171,25 @@ $('.tax-programs-btn').click(function(e){
     window.location = '../'+type;
 });
 
+// CITIES FILTERS 
+
+$('.filters-container').hide();
+
+$('.advanced-filters').click(function(e) {
+    e.preventDefault;
+    $('.filters-container').slideToggle();
+});
+
+
+// FAQ
+
+var answers = $('.answer').hide();
+
+$('.question').click(function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass('question-active');
+    return false;
+});
 
 
 

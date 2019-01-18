@@ -26,8 +26,8 @@ get_header();
 						
 						foreach($faqLoop as $question) {
 							
-							echo '<h2>'.$question['question'].'</h2>';
-							echo '<p>'.$question['answer'].'</p>';	
+							echo '<a href="" class="question">'.$question['question'].'</a>';
+							echo '<p class="answer">'.$question['answer'].'</p>';	
 
 						}
 					?>

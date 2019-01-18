@@ -16,7 +16,8 @@ get_header();
 			<div class="page-title-container">
 				<h1><?php single_term_title(); ?></h1>
 				<p><?php _e(term_description(), 'nexus'); ?></p>
-				<div class="search-container">
+			</div>
+			<div class="search-city-container-tax">
                     <select class="prg-type-select">
                         <option value=""><?php _e('Choose city', 'nexus'); ?></option>
                         <?php 
@@ -34,10 +35,16 @@ get_header();
 
                             <?php endforeach; ?>
                     </select>
-                </div>
                 <button class="see-programs-btn tax-programs-btn"><?php _e('Change City', 'nexus'); ?></button>
 			</div>
+			<button class="advanced-filters">Advanced Filters</button>
+
+			<?php $tax = $wp_query->get_queried_object(); ?>
+			
 			<form id="filter" class="filters-container" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST">
+				<select class="city-selector" name="cityfilter">
+					<option selected value="<?php echo $tax->slug; ?>">Toronto</option>
+				</select>
 				<select class="location-selector" name="categoryfilter">
 					<option selected><?php _e('Type of Program', 'nexus'); ?></option>
 					<?php 
@@ -107,7 +114,7 @@ get_header();
 			<div id="more_programs">More Programs</div>
 			<section class="start-journey-section">
 				<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
-				<p class="start-description"><?php _e('Let us help you fin the perfet fit!', 'nexus'); ?></p>
+				<p class="start-description"><?php _e('Let us help you fin the perfect fit!', 'nexus'); ?></p>
 				<a class="contact-btn"><?php _e('Contact us', 'nexus'); ?></a>
 			</section>
 		</main><!-- #main -->

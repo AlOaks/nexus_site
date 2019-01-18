@@ -52,37 +52,37 @@ get_header();
 
 
 			<section class="why-nexus-section">
-				<h1 class="why-title"><?php _e('Why use Nexus?', 'nexus'); ?></h1>
+				<h1 class="why-title"><?php _e('Why hire Nexus?', 'nexus'); ?></h1>
 				<div class="why-items-container">
 				<button class="why-btn-left why-btn"><i class="fas fa-chevron-left"></i></button>
 				<button class="why-btn-right why-btn"><i class="fas fa-chevron-right"></i></button>
 					<div class="why-item">
-						<i class="fas fa-brain"></i>
+					<img src=<?php echo get_template_directory_uri().'/assets/images/expert.png'; ?> >
 						<h3 class="why-item-title"><?php _e('Experts in Education', 'nexus'); ?></h3>
 						<p class="why-paragraph"><?php _e('Thanks to our years of experience, we have experts in education ready to advise you. We´ll gladly help you with any questions you have!', 'nexus'); ?></p>
 					</div>
 					<div class="why-item">
-						<i class="fas fa-book"></i>
+					<img src=<?php echo get_template_directory_uri().'/assets/images/programs.png'; ?> >
 						<h3 class="why-item-title"><?php _e('Program Variety', 'nexus'); ?></h3>
 						<p class="why-paragraph"><?php _e('We have hundreds of different programs! From English for basic levels to post-doctoral programs. Check them out!', 'nexus'); ?></p>
 					</div>
 					<div class="why-item">
-						<i class="fas fa-plus"></i>
+					<img src=<?php echo get_template_directory_uri().'/assets/images/health.png'; ?> >
 						<h3 class="why-item-title"><?php _e('Health Insurance', 'nexus'); ?></h3>
 						<p class="why-paragraph"><?php _e("Your health is as important for us as it is to you! That's why Nexus offers one of the most complete student health insurances in Canada.", 'nexus'); ?></p>
 					</div>
 					<div class="why-item">
-						<i class="fas fa-bed"></i>
+						<img src=<?php echo get_template_directory_uri().'/assets/images/accommodation.png'; ?> >
 						<h3 class="why-item-title"><?php _e('Accommodation', 'nexus'); ?></h3>
 						<p class="why-paragraph"><?php _e('Having a good accommodation, according to your needs and preferences, is part of a successful experience abroad.', 'nexus'); ?></p>
 					</div>
 					<div class="why-item">
-						<i class="fas fa-passport"></i>
+						<img src=<?php echo get_template_directory_uri().'/assets/images/visa.png'; ?> >
 						<h3 class="why-item-title"><?php _e('Visa Procedure', 'nexus'); ?></h3>
 						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! Just pick the program you like the most and we´ll do the rest.', 'nexus'); ?></p>
 					</div>
 				</div>
-				<a class="get-quote-btn menu-item-51 menu-item-25" href="../faq"><?php _e('Get Quote', 'nexus'); ?></a>
+				<a class="get-quote-btn menu-item-51 menu-item-25" href="../faq"><?php _e('Book Consultation', 'nexus'); ?></a>
 			</section>
 
 			<section class="why-canada-section">

@@ -2,12 +2,41 @@
     display: flex;
     flex-direction: column;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    margin: 5% auto;
     color: $font-blue;
+    justify-content: space-evenly;
+   
+}
 
-    p {
-        padding-left: 5vw;
+.question {
+    padding: 2.5%;
+    background: $div-white;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    color: $font-blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: $sans;
+    text-decoration: none;
+    margin-bottom: 2.5%;
+
+    &:visited {
+        color: $font-blue;
     }
+}
+
+.answer {
+    border: 1px solid gray;
+    border-radius: 5px;
+    border-top: none;
+    width: 98%;
+    margin: 0 auto 2.5% auto; 
+    padding: 3%;
+    font-family: $sans;
+    line-height: 30px;
+}
+
+.question-active {
+    background: $div-yellow;
+    margin-bottom: 0;
 }

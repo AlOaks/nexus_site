@@ -58,59 +58,33 @@
             left: 30%;
         }
     }
+}
 
-    span {
-        width: 100%;
-    }
+.edvisor-form {
+    width: 80%;
+    margin: 0 auto;
 
-    input[type="checkbox"] {
-        width: 5%;
-    }
-
-    input {
-
-        line-height: 0;
-        width: 100%;
-    
-        &::placeholder {
-        padding-left: 2%;
-        color: gray;
-        font-size: .8rem;
-        }
-    }
-
-    select {
-        font-size: .8rem;
-        width: 100%;
-        color: gray;
-        box-shadow: none;
-
-        option {
-            color: gray;
-        }
-    }
-    
-    .wpcf7-list-item-label {
+    .edvisor-row > label {
         color: white;
         font-size: .8rem;
-        margin-top: -5%;
     }
 
-    p {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    .wpcf7-submit {
+    .edvisor-button {
         background: $div-red;
         color: white;
-        width: 100%;
+        width: 60%;
         border: none;
         padding-bottom: 20px;
         padding-top: 20px;
+        margin-left: 20%;
     }
+
+    .edvisor-row > select {
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    
 }
 
 .why-nexus-book {
@@ -154,6 +128,17 @@
             font-family: $sans;
             font-weight: 600;
             font-size: 1.1rem;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 80%;
+
+            img {
+                width: 20%;
+                height: auto;
+                margin-right: 5%;
+            }
         }
     }
 }

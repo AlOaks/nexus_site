@@ -231,6 +231,7 @@ add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
 function misha_filter_function() {
 
 	$filter = $_POST['categoryfilter'];
+	$cityfilter = $_POST['cityfilter'];
 	
 	$args = array(
 		'post_type' => 'programs',
@@ -243,9 +244,14 @@ function misha_filter_function() {
 			array(
 				'taxonomy' => 'programsTypes',
 				'field' => 'slug',
-				'terms' => $filter
-				
+				'terms' => $filter	
+			),
+			array(
+				'taxonomy' => 'Cities',
+				'field' => 'slug',
+				'terms' => $cityfilter
 			)
+
 		);
 
 

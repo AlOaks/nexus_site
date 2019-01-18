@@ -46,23 +46,64 @@
 
 				<div class="contact-footer info-div">
 					<h2 class="contact-title-footer footer-title"><?php _e('Contact Us', 'nexus'); ?></h2>
-					<a class="address-nexus" href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2779062,-123.129072,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">119-970 Burrard St, Vancouver, BC, V6Z 2R4</a>
-					<p class="office-hours"><?php _e('Office hours: Mon - Fri', 'nexus'); ?>, 9am - 5pm PST</p>
-					<p class="phone">+1 604 288-0787</p>
+					<ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2779062,-123.129072,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">970 Burrard St<br><?php _e('Room 119 - 1st Floor', 'nexus'); ?><br>Vancouver, BC - V6Z 2R4</a>    
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <p class="phone-info"> +1 604 288-0787</p>
+                        </li>
+                        <li>
+                            <i class="far fa-hourglass"></i>
+                            <p class="hours-info"><?php _e('Mon - Fri', 'nexus'); ?> <span>9am to 5pm</span></p>
+                        </li>
+                    </ul>
 				</div>
 			</section>
 
 			<section class="footer-copy">
-				<p class="copyright">© Copyright @ Nexus Exchange 2018</p>
-				
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-				?>
+				<div class="sitemap-item">
+					<h4>Sitemap</h4>
+					<ul class="site-map">
+						<li><a href="../programs">Programs</a></li>
+						<li><a href="../services">Services</a></li>
+						<li><a href="../blog">Blog</a></li>
+						<li><a href="../nexus-club">Nexus Club</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-item">
+					<h4>Cities</h4>
+					<ul class="cities">
+						<?php 
+						
+						$cities = get_terms( array(
+								'taxonomy' => 'Cities',
+								'hide_empty' => false
+							));
+						
+						foreach($cities as $city) {
 
+							$link = get_term_link($city);
+							echo '<li><a href="'. esc_url($link).'">'.$city->name.'</a></li>';
+						}
+						
+						?>
+					</ul>
+				</div>
+				<div class="sitemap-item">
+					<h4>Company</h4>
+					<ul class="about">
+						<li><a href="../about">About</a></li>
+						<li><a href="../contact">Contact</a></li>
+						<li><a href="../faq">FAQ</a></li>
+					</ul>
+				</div>
+				<p class="copyright">©2018 Nexus Intercambio</p>
 			</section>
+
+
 
 		</div><!-- .site-info1 -->
 	</footer><!-- #colophon -->
@@ -72,3 +113,4 @@
 
 </body>
 </html>
+
