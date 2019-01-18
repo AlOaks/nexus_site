@@ -58,7 +58,7 @@
     }
 }
 
-.duration-selector, .location-selector, .prg-type-select {
+.duration-selector, .location-selector, .prg-type-select-tax {
     height: 40%;
     color: $font-blue;
     font-family: $roboto;
@@ -82,12 +82,16 @@
     text-align: center;
     color: $font-blue;
     text-decoration: underline;
-    margin-left: 40%;
-    width: 20%;
     background: none;
     border: none;
+    width: 20%;
     font-size: 1rem;
     margin-bottom: 5vh;
+    margin-left: 40%;
+
+    i {
+        margin-left: 1%;
+    }
 }
 
 .apply-filters-btn {

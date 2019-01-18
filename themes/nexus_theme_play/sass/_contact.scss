@@ -66,6 +66,7 @@
 
 }
 
+
 #wpcf7-f47-o2 > form > p {
     width: 80%;
     margin: auto;
@@ -78,34 +79,34 @@
         margin-bottom: 0;
     }
 
-    input {
-        width: 30%;
-        margin-left: 20%;
-        margin-bottom: 3vh;
-        box-shadow: none;
-        background: $div-red;
-        color: white;
-        font-family: $sans;
-        font-weight: bold;
-        border: none;
-        padding: 1% 5%;
-        font-size: 1.5rem;
-
-        @include mobile {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 0;
-            font-size: 1.5rem;
-            width: 50%;
-        }
-
-    }
-
     span {
         position: absolute;
         right: 0;
     }
 }
+
+.wpcf7-submit {
+    width: 30%;
+    margin-left: 20%;
+    margin-bottom: 3vh;
+    box-shadow: none;
+    background: $div-red;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: bold;
+    border: none;
+    padding: 1% 5%;
+    font-size: 1.5rem;
+
+    @include mobile {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        width: 50%;
+    }
+}
+
 
 .wpcf7-text {
     width: 70%;

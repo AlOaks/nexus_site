@@ -18,7 +18,7 @@ get_header();
 				<p><?php _e(term_description(), 'nexus'); ?></p>
 			</div>
 			<div class="search-city-container-tax">
-                    <select class="prg-type-select">
+                    <select class="prg-type-select-tax">
                         <option value=""><?php _e('Choose city', 'nexus'); ?></option>
                         <?php 
                                                        
@@ -37,7 +37,7 @@ get_header();
                     </select>
                 <button class="see-programs-btn tax-programs-btn"><?php _e('Change City', 'nexus'); ?></button>
 			</div>
-			<button class="advanced-filters">Advanced Filters</button>
+			<button class="advanced-filters"><?php _e('Advanced Filters', 'nexus'); ?><i class="fas fa-angle-double-down"></i></button>
 
 			<?php $tax = $wp_query->get_queried_object(); ?>
 			
