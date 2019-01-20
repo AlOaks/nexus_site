@@ -1138,6 +1138,9 @@ object {
   #menu-item-25:hover, #menu-item-399:hover {
     background: red; }
 
+#menu-item-399 .current-menu-item {
+  border-bottom: none; }
+
 .page-title-container {
   margin-top: 12vh;
   background: white;
@@ -5153,6 +5156,9 @@ article {
   width: 65%;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 600px) {
+    .quote-page-form {
+      width: 100%; } }
   .quote-page-form .edvisor-form button {
     margin-top: 5vh; }
 

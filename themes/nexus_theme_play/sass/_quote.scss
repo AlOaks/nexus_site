@@ -3,6 +3,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include mobile {
+        width: 100%;
+    }
+
     .edvisor-form {
         button {
             margin-top: 5vh;
