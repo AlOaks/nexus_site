@@ -5153,9 +5153,11 @@ article {
   width: 65%;
   margin-left: auto;
   margin-right: auto; }
+  .quote-page-form .edvisor-form button {
+    margin-top: 5vh; }
 
 .edvisor-row > label {
-  color: #193F5C;
+  color: #193F5C !important;
   font-family: "Open Sans"; }
 
 .edvisor-row input, .edvisor-row textarea {

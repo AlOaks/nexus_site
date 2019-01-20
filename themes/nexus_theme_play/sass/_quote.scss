@@ -2,10 +2,16 @@
     width: 65%;
     margin-left: auto;
     margin-right: auto;
+
+    .edvisor-form {
+        button {
+            margin-top: 5vh;
+        }
+    }
 }
 
 .edvisor-row > label {
-    color: $font-blue;
+    color: $font-blue !important;
     font-family: $sans;
 }
 
