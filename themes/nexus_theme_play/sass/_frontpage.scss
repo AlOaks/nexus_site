@@ -313,6 +313,7 @@ option {
 
 .why-canada-section {
     background: $bg-blue;
+    position: relative;
 }
 
 
@@ -368,8 +369,8 @@ option {
 }
 
 .slider-item {
-    min-width: 100%;
-    width: 100%;
+    min-width: 99.9%;
+    width: 99.9%;
     height: 100%;
     
     h1 {
@@ -399,40 +400,45 @@ option {
 
 .slider-btn {
     position: absolute;
-    background: rgba(255, 255, 255, .5);
     height: auto;
     border: none;
     font-size: 2rem;
     color: black;
     z-index: 100;
     transition-duration: .5s;
+    background: none;
 
     &:hover {
         background: $div-red;
-        color: white;
         transition-duration: .5s;
     }
 
     @include mobile {
         height: 10vh;
-        background: rgba(255, 255, 255, 0.3);
         color: black;
+        background: none;
+
+        &:hover {
+            background: none;
+        }
     }
 }
 
 .btn-lft {
     right: 22.5%;
+    top: 50%;
 
     @include mobile {
-        right: 10%;
+        right: 5%;
     }
 }
 
 .btn-right {
     left: 22.5%;
+    top: 50%;
 
     @include mobile {
-        left: 10%;
+        left: 5%;
     }
 }
 
@@ -508,7 +514,7 @@ option {
     margin-bottom: 5vh;
 
     @include mobile {
-        height: 70vh;
+        min-height: 75vh;
     }
 
     .visit-faq-btn {
@@ -603,12 +609,17 @@ option {
 
     &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8) {
         flex-basis: 24%;
+
+        @include mobile {
+            flex-basis: 100%;
+        }
     }
 
     @include mobile {
         flex-basis: 100%;
         margin-top: 0;
         margin-bottom: 3%;
+        height: auto;
     }
 
     
@@ -648,6 +659,11 @@ option {
     }
 }
 
+.city-link-front {
+    text-decoration: none;
+
+}
+
 .city-name-front {
     color: white;
     font-family: $sans;
@@ -666,6 +682,9 @@ option {
         display: block;
         font-size: 1rem;
         color: $font-blue;
+        position: relative;
+        top: auto;
+        padding: 1%;
     }
 }
 

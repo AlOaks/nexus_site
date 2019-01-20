@@ -99,7 +99,7 @@ get_header();
 						
 						
 				</section>
-				<div id="more_posts_club"><?php _e('More Posts', 'nexus'); ?></div>
+				<div id="more_posts_club"> <?php _e('More Posts', 'nexus'); ?></div>
 					
 		</section>
 		<section class="start-journey-section">

@@ -5,6 +5,10 @@
     margin: 5% auto;
     color: $font-blue;
     justify-content: space-evenly;
+
+    @include mobile {
+        width: 85%;
+    }
    
 }
 
@@ -19,9 +23,15 @@
     font-family: $sans;
     text-decoration: none;
     margin-bottom: 2.5%;
+    transition-duration: 2s;
+
 
     &:visited {
         color: $font-blue;
+    }
+
+    @include mobile {
+        font-size: 1rem;
     }
 }
 
@@ -37,6 +47,7 @@
 }
 
 .question-active {
-    background: $div-yellow;
+    background: lighten($div-yellow, 20%);
     margin-bottom: 0;
+    transition-duration: .5s;
 }

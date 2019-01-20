@@ -156,7 +156,6 @@ $('.submit-btn-front').click(function(e){
     var type = $('.selector').val().toLowerCase();
     window.location = 'cities/'+type;
 
-    console.log(type);
 });
 
 $('.see-programs-btn').click(function(e){
@@ -167,7 +166,8 @@ $('.see-programs-btn').click(function(e){
 
 $('.tax-programs-btn').click(function(e){
     e.preventDefault;
-    var type = $('.prg-type-select').val().toLowerCase();
+    var type = $('.prg-type-select-tax').val();
+    console.log(type);
     window.location = '../'+type;
 });
 
@@ -183,7 +183,7 @@ $('.advanced-filters').click(function(e) {
 
 // FAQ
 
-var answers = $('.answer').hide();
+$('.answer').hide();
 
 $('.question').click(function() {
     $(this).next().slideToggle();

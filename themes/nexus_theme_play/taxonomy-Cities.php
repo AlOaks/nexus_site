@@ -30,12 +30,12 @@ get_header();
                             foreach($types as $type) :
 
                         ?>
-                        <option value=<?php echo $type->name; ?>><?php echo $type->name; ?></option>
+                        <option value=<?php echo $type->slug; ?>><?php echo $type->name; ?></option>
 
 
                             <?php endforeach; ?>
                     </select>
-                <button class="see-programs-btn tax-programs-btn"><?php _e('Change City', 'nexus'); ?></button>
+                <button class="tax-programs-btn"><?php _e('Change City', 'nexus'); ?></button>
 			</div>
 			<button class="advanced-filters"><?php _e('Advanced Filters', 'nexus'); ?><i class="fas fa-angle-double-down"></i></button>
 

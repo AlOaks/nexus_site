@@ -208,14 +208,32 @@
 
 .contact-footer {
     align-items: left;
+    
 
     @include mobile {
         align-items: center;
         margin-top: 10%;
         margin-bottom: 10%;
-        width: 50%;
         text-align: center;
         font-weight: bold;
+        width: 50%;
+    }
+
+    ul {
+        li {
+            @include mobile {
+                margin-bottom: 8%;
+            }
+
+            a {
+                width: 100%;
+                
+                &:visited {
+                    color: $font-blue;
+                }
+            }
+            
+        }
     }
 
     .phone {
@@ -253,9 +271,10 @@
 
     @include mobile {
         height: 30vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-size: .8rem;
+
     }
 
     .copyright {
@@ -310,6 +329,7 @@
         }
     }
 }
+
 
 .sitemap-item {
     flex-basis: 22%;

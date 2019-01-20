@@ -34,10 +34,28 @@
 
     .tax-programs-btn {
         margin: 0;
+        width: 20%;
+        background: #ffb419;
+        color: #193F5C;
+        border: none;
+        font-size: 1.2rem;
+        font-family: "Open Sans";
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+
+        @include mobile {
+            font-size: .9rem;
+            width: 30%;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
     }
 
     
 }
+
+
 
 .city-selector {
     display: none;
@@ -76,6 +94,12 @@
     }
 }
 
+.prg-type-select-tax {
+    @include mobile {
+        font-size: .8rem;
+    }
+}
+
 
 
 .advanced-filters {
@@ -91,6 +115,12 @@
 
     i {
         margin-left: 1%;
+    }
+
+    @include mobile {
+        font-size: .8rem;
+        width: 60%;
+        margin-left: 20%;
     }
 }
 

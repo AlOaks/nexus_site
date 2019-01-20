@@ -23,10 +23,20 @@
 
 .nexuslogo {
     width: 75%;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .nexuslogo-link {
     width: 25%;
+    display: flex;
+    align-items: flex-end;
+
+    @include mobile {
+        width: 70%;
+    }
 }
 
 .search-link {
@@ -82,6 +92,7 @@
       height: 12vh;  
       width: 100%;
       justify-content: space-around;
+      align-items: flex-end;
     }
 
     .current-menu-item {
@@ -189,6 +200,7 @@
             float: right;
             background: white;
             display: block;
+            color: $div-red;
 
             i {
                 font-size: 2rem !important;

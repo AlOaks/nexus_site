@@ -954,9 +954,21 @@ object {
 
 .nexuslogo {
   width: 75%; }
+  @media (max-width: 600px) {
+    .nexuslogo {
+      width: 100%; } }
 
 .nexuslogo-link {
-  width: 25%; }
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  @media (max-width: 600px) {
+    .nexuslogo-link {
+      width: 70%; } }
 
 .search-link {
   color: gray; }
@@ -1002,7 +1014,10 @@ object {
       height: 12vh;
       width: 100%;
       -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+          justify-content: space-around;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; } }
   .site-header .current-menu-item {
     border-bottom: 3px solid #ffb419; }
   .site-header .sub-menu {
@@ -1100,7 +1115,8 @@ object {
       .main-navigation .menu-btn-active {
         float: right;
         background: white;
-        display: block; }
+        display: block;
+        color: #bd2020; }
         .main-navigation .menu-btn-active i {
           font-size: 2rem !important; } }
 
@@ -1382,9 +1398,16 @@ object {
               align-items: center;
       margin-top: 10%;
       margin-bottom: 10%;
-      width: 50%;
       text-align: center;
-      font-weight: bold; } }
+      font-weight: bold;
+      width: 50%; } }
+  @media (max-width: 600px) {
+    .contact-footer ul li {
+      margin-bottom: 8%; } }
+  .contact-footer ul li a {
+    width: 100%; }
+    .contact-footer ul li a:visited {
+      color: #193F5C; }
   @media (max-width: 600px) {
     .contact-footer .phone {
       -webkit-box-ordinal-group: 2;
@@ -1418,16 +1441,12 @@ object {
   @media (max-width: 600px) {
     .footer-copy {
       height: 30vh;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      font-size: .8rem; } }
   .footer-copy .copyright {
     color: gray;
     font-size: 1.1rem;
@@ -1794,7 +1813,8 @@ option {
       width: 80%; } }
 
 .why-canada-section {
-  background: #15405A; }
+  background: #15405A;
+  position: relative; }
 
 .why-canada-title, .curious-title {
   width: 30%;
@@ -1838,8 +1858,8 @@ option {
       width: 80%; } }
 
 .slider-item {
-  min-width: 100%;
-  width: 100%;
+  min-width: 99.9%;
+  width: 99.9%;
   height: 100%; }
   .slider-item h1 {
     text-align: center;
@@ -1858,36 +1878,39 @@ option {
 
 .slider-btn {
   position: absolute;
-  background: rgba(255, 255, 255, 0.5);
   height: auto;
   border: none;
   font-size: 2rem;
   color: black;
   z-index: 100;
   -webkit-transition-duration: .5s;
-          transition-duration: .5s; }
+          transition-duration: .5s;
+  background: none; }
   .slider-btn:hover {
     background: #bd2020;
-    color: white;
     -webkit-transition-duration: .5s;
             transition-duration: .5s; }
   @media (max-width: 600px) {
     .slider-btn {
       height: 10vh;
-      background: rgba(255, 255, 255, 0.3);
-      color: black; } }
+      color: black;
+      background: none; }
+      .slider-btn:hover {
+        background: none; } }
 
 .btn-lft {
-  right: 22.5%; }
+  right: 22.5%;
+  top: 50%; }
   @media (max-width: 600px) {
     .btn-lft {
-      right: 10%; } }
+      right: 5%; } }
 
 .btn-right {
-  left: 22.5%; }
+  left: 22.5%;
+  top: 50%; }
   @media (max-width: 600px) {
     .btn-right {
-      left: 10%; } }
+      left: 5%; } }
 
 .curious-section {
   width: 100%;
@@ -1958,7 +1981,7 @@ option {
   margin-bottom: 5vh; }
   @media (max-width: 600px) {
     .choose-city-section {
-      height: 70vh; } }
+      min-height: 75vh; } }
   @media (max-width: 600px) {
     .choose-city-section .visit-faq-btn {
       position: absolute;
@@ -2025,12 +2048,17 @@ option {
   .fifty-div:nth-of-type(5), .fifty-div:nth-of-type(6), .fifty-div:nth-of-type(7), .fifty-div:nth-of-type(8) {
     -ms-flex-preferred-size: 24%;
         flex-basis: 24%; }
+    @media (max-width: 600px) {
+      .fifty-div:nth-of-type(5), .fifty-div:nth-of-type(6), .fifty-div:nth-of-type(7), .fifty-div:nth-of-type(8) {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
   @media (max-width: 600px) {
     .fifty-div {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       margin-top: 0;
-      margin-bottom: 3%; } }
+      margin-bottom: 3%;
+      height: auto; } }
 
 .city-container-frontpage {
   position: relative;
@@ -2061,6 +2089,9 @@ option {
     .black-ovrlay-city {
       display: none; } }
 
+.city-link-front {
+  text-decoration: none; }
+
 .city-name-front {
   color: white;
   font-family: "Open Sans";
@@ -2079,7 +2110,10 @@ option {
     .city-name-front {
       display: block;
       font-size: 1rem;
-      color: #193F5C; } }
+      color: #193F5C;
+      position: relative;
+      top: auto;
+      padding: 1%; } }
 
 .choose-title {
   text-align: center;
@@ -2257,7 +2291,7 @@ option {
     bottom: 30%; }
 
 .path {
-  width: 30%; }
+  width: 40%; }
   @media (max-width: 600px) {
     .path {
       display: none; } }
@@ -2269,24 +2303,24 @@ option {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 5%;
-  padding-top: 5%; }
+          justify-content: center; }
   @media (max-width: 600px) {
     .steps-div {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
-  .steps-div:nth-of-type(odd) {
-    background: #F3F5F8; }
   .steps-div:nth-of-type(5) {
     margin-bottom: 0; }
+  .steps-div:first-of-type {
+    margin-top: 5vh; }
+  .steps-div:last-of-type {
+    margin-bottom: 5vh; }
 
 .step-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55%;
+  width: 60%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3549,6 +3583,9 @@ option {
       font-weight: 900;
       text-transform: uppercase;
       font-size: 1rem; }
+      @media (max-width: 600px) {
+        .program-info li .li-title {
+          font-size: .7rem; } }
     .program-info li .li-field {
       font-family: "Open Sans";
       font-size: 2rem;
@@ -3556,7 +3593,7 @@ option {
       font-weight: 600; }
       @media (max-width: 600px) {
         .program-info li .li-field {
-          font-size: 1rem; } }
+          font-size: .8rem; } }
     .program-info li:last-of-type {
       border-right: none; }
 
@@ -3918,13 +3955,15 @@ option {
   margin-top: 2%;
   margin-bottom: 3%;
   position: relative;
-  height: auto; }
+  height: 20rem; }
   @media (max-width: 600px) {
     .people-program-container {
-      -webkit-box-shadow: 0 4px 2px -2px gray;
-              box-shadow: 0 4px 2px -2px gray; } }
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 100%; } }
   .people-program-container img {
-    height: 20rem; }
+    height: 20rem;
+    width: 100%; }
   .people-program-container p {
     color: #193F5C;
     font-family: "Open Sans";
@@ -3973,18 +4012,12 @@ option {
     .programs-container-people::-webkit-scrollbar {
       display: none; } }
 
-@media (max-width: 600px) {
-  .people-program-container {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 100%;
-    height: 90%; } }
-
 .peo-btn {
   position: absolute;
   background: none;
   display: none;
-  border: none; }
+  border: none;
+  color: #bd2020; }
   @media (max-width: 600px) {
     .peo-btn {
       display: block; } }
@@ -4325,7 +4358,22 @@ option {
           align-items: center;
   height: 10vh; }
   .search-city-container-tax .tax-programs-btn {
-    margin: 0; }
+    margin: 0;
+    width: 20%;
+    background: #ffb419;
+    color: #193F5C;
+    border: none;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0; }
+    @media (max-width: 600px) {
+      .search-city-container-tax .tax-programs-btn {
+        font-size: .9rem;
+        width: 30%;
+        padding-left: 3px;
+        padding-right: 3px; } }
 
 .city-selector {
   display: none; }
@@ -4368,6 +4416,10 @@ option {
       margin-bottom: 2.5%;
       margin-top: 2.5%; } }
 
+@media (max-width: 600px) {
+  .prg-type-select-tax {
+    font-size: .8rem; } }
+
 .advanced-filters {
   text-align: center;
   color: #193F5C;
@@ -4380,6 +4432,11 @@ option {
   margin-left: 40%; }
   .advanced-filters i {
     margin-left: 1%; }
+  @media (max-width: 600px) {
+    .advanced-filters {
+      font-size: .8rem;
+      width: 60%;
+      margin-left: 20%; } }
 
 .apply-filters-btn {
   -ms-flex-preferred-size: 15%;
@@ -4816,6 +4873,9 @@ option {
 .page-template-page-nexus-club {
   background: white; }
 
+#more_posts_club {
+  display: none; }
+
 .page-template-page-join-us .login-page-form input[type="submit"] {
   width: 20%;
   padding: 1% 0 1% 0; }
@@ -4965,6 +5025,9 @@ option {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
+  @media (max-width: 600px) {
+    .questions-container {
+      width: 85%; } }
 
 .question {
   padding: 2.5%;
@@ -4977,9 +5040,14 @@ option {
   font-weight: bold;
   font-family: "Open Sans";
   text-decoration: none;
-  margin-bottom: 2.5%; }
+  margin-bottom: 2.5%;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }
   .question:visited {
     color: #193F5C; }
+  @media (max-width: 600px) {
+    .question {
+      font-size: 1rem; } }
 
 .answer {
   border: 1px solid gray;
@@ -4992,8 +5060,10 @@ option {
   line-height: 30px; }
 
 .question-active {
-  background: #ffb419;
-  margin-bottom: 0; }
+  background: #ffd67f;
+  margin-bottom: 0;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
 
 .search-page {
   background: #15405A;

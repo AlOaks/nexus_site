@@ -41,7 +41,7 @@
 }
 
 .path {
-    width: 30%;
+    width: 40%;
 
     @include mobile {
         display: none;
@@ -52,28 +52,29 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
 
     @include mobile {
         align-items: center;
-    }
-
-
-    &:nth-of-type(odd) {
-        background: $div-white;
     }
 
     &:nth-of-type(5) {
         margin-bottom: 0;
         
     }
+
+    &:first-of-type {
+        margin-top: 5vh;
+    }
+
+    &:last-of-type {
+        margin-bottom: 5vh;
+    }
     
 }
 
 .step-container {
     display: flex;
-    width: 55%;
+    width: 60%;
     justify-content: space-between;
     align-items: center;
 
