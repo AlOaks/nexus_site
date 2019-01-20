@@ -13,11 +13,12 @@
 .edvisor-row > label {
     color: $font-blue !important;
     font-family: $sans;
+    font-size: 1.2rem;
 }
 
 .edvisor-row {
     
-    input, textarea {
+    input, textarea, select {
         background: $div-white;
     }
 }

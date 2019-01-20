@@ -5158,7 +5158,8 @@ article {
 
 .edvisor-row > label {
   color: #193F5C !important;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  font-size: 1.2rem; }
 
-.edvisor-row input, .edvisor-row textarea {
+.edvisor-row input, .edvisor-row textarea, .edvisor-row select {
   background: #F3F5F8; }
