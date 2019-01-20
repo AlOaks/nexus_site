@@ -1128,14 +1128,14 @@ object {
     .menu-item a:visited {
       color: #193F5C; }
 
-#menu-item-25, #menu-item-51 {
+#menu-item-25, #menu-item-399 {
   padding: 5px 15px;
   letter-spacing: 2px;
   background: #bd2020;
   border-radius: 5px; }
-  #menu-item-25 a, #menu-item-51 a {
+  #menu-item-25 a, #menu-item-399 a {
     color: white; }
-  #menu-item-25:hover, #menu-item-51:hover {
+  #menu-item-25:hover, #menu-item-399:hover {
     background: red; }
 
 .page-title-container {
@@ -5148,3 +5148,15 @@ article {
   color: #193F5C;
   padding-left: 15vw;
   margin-bottom: 20vh; }
+
+.quote-page-form {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.edvisor-row > label {
+  color: #193F5C;
+  font-family: "Open Sans"; }
+
+.edvisor-row input, .edvisor-row textarea {
+  background: #F3F5F8; }

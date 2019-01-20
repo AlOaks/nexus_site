@@ -1,0 +1,17 @@
+.quote-page-form {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edvisor-row > label {
+    color: $font-blue;
+    font-family: $sans;
+}
+
+.edvisor-row {
+    
+    input, textarea {
+        background: $div-white;
+    }
+}
