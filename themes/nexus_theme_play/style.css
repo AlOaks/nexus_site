@@ -2710,6 +2710,21 @@ option {
 .contact-btn-faq {
   text-decoration: none; }
 
+.beliefs-container ul {
+  padding: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 600px) {
+    .beliefs-container ul {
+      width: 80%; } }
+
+.beliefs-container li {
+  color: #193F5C;
+  font-family: "Open Sans";
+  list-style-type: circle;
+  margin-bottom: 3vh; }
+
 .blog, .category {
   color: white;
   background: white; }
