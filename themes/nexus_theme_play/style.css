@@ -3092,7 +3092,9 @@ option {
     color: #193F5C;
     line-height: 2rem; }
   .single-content ul {
-    color: #193F5C; }
+    color: #193F5C;
+    margin-left: 0;
+    font-family: "Open Sans"; }
 
 .share-links-container {
   width: 50%;

@@ -8,9 +8,9 @@
         var currentScrollPos = window.pageYOffset;
 
         if (prevScrollpos > currentScrollPos) {
-            $('.site-header').slideDown('fast');
+            $('.site-header').show('fast');
         } else {
-            $('.site-header').slideUp('fast');
+            $('.site-header').hide('fast');
         }
         prevScrollpos = currentScrollPos;
     }
@@ -64,7 +64,7 @@ $('.btn-right').click(function() {
 
  /* HEADER */
 
-$('.menu-btn-active').click(function(e) {
+$('.menu-btn-active').on('click touchstart', function(e) {
     e.preventDefault;
     $('.menu').slideToggle('slow');
     $('.white-overlay-menu').toggle();
