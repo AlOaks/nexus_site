@@ -133,13 +133,19 @@ function nexus_theme_scratch_scripts() {
 	wp_localize_script( 'general-js', 'nexus_vars', array(
 		'rest_url' => esc_url_raw( rest_url() ),
 		'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-		'post_id' => get_the_ID()
+		'post_id' => get_the_ID(),
 	) );
 
 	wp_localize_script('ajax-pagination', 'ajaxpagination', array(
 		'ajaxurl' => admin_url('admin-ajax.php'),
 	));
 
+	wp_localize_script('general-js', 'prices_vars', array(
+		'price4' => CFS()->get('price_4'),
+		'price8' => CFS()->get('price_8'),
+		'price12' => CFS()->get('price_12'),
+		'price24' => CFS()->get('price_24'),
+	));
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

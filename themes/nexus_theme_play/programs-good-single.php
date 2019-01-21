@@ -48,6 +48,14 @@ get_header();
 					
 					<ul class="program-info">
 						<li class="program-info-item">
+							<p class="li-title"><?php _e('Price', 'nexus'); ?></p>
+							<p class="li-field"><?php echo $price; ?></p>
+						</li>
+						<li class="program-info-item">
+							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
+							<p class="li-field"><?php echo $duration; ?></p>
+						</li>
+						<li class="program-info-item">
 							<p class="li-title"><?php echo _e('Cities', 'nexus'); ?></p>
 							<ul class="cities-list">
 							<?php
@@ -60,48 +68,6 @@ get_header();
 						<li class="program-info-item">
 							<p class="li-title"><?php _e('Hrs/Lessons per week', 'nexus'); ?></p>
 							<p class="li-field"><?php echo $hrs; ?></p>
-						</li>
-						<li class="program-info-item">
-                            <?php 
-                                $price4 = CFS()->get('price_4');
-                                $price8 = CFS()->get('price_8');
-                                $price12 = CFS()->get('price_12');
-                                $price24 = CFS()->get('price_24');
-
-								
-								$postID = get_the_ID();
-
-								$postTerms = get_the_terms($postID, 'programsTypes');
-
-								$programType = $postTerms[0]->slug;
-
-							
-								
-                            ?>
-							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
-                                <?php 
-                                    if($programType == 'language') { ?>
-                                        <select class="duration-selector-single">
-                                            <option value='4' selected><?php _e('4 weeks', 'nexus'); ?></option>
-                                            <option value='8'><?php _e('8 weeks', 'nexus'); ?></option>
-                                            <option value='12'><?php _e('12 weeks', 'nexus'); ?></option>
-                                            <option value='24'><?php _e('24 weeks', 'nexus'); ?></option>
-                                        </select>
-                                
-								<?php } else { ?>
-										<p class='li-field'><?php _e($duration, 'nexus'); ?></p>
-								<?php } ?>
-						</li>
-						<li class="program-info-item">
-							<p class="li-title"><?php _e('Price', 'nexus'); ?></p>
-
-							<?php 
-								if($programType == 'language') { ?>
-									<p class="li-field li-price"></p>
-							<?php } else { ?>
-									<p class="li-field"><?php echo $price; ?></p>
-							<?php } ?>
-
 						</li>
 					</ul>
 				</section>
@@ -117,6 +83,7 @@ get_header();
 				</section>
 
 				
+
 				<section class="about-container program-container">
 					
 					<div class="about-program">

@@ -192,5 +192,37 @@ $('.question').click(function() {
 });
 
 
+// PROGRAMS DURATION FUNCTIONS
+
+var price4 = prices_vars.price4;
+var price8 = prices_vars.price8;
+var price12 = prices_vars.price12;
+var price24 = prices_vars.price24;
+
+function price() {
+    $('.li-price').html(price4);
+}
+
+price();
+
+$('.duration-selector-single').change(function(e) {
+    e.preventDefault;
+
+    var val = $('.duration-selector-single').val();
+
+    var price;
+
+    if(val == 4) {  
+        price = price4;
+    } else if(val == 8) {
+        price = price8;
+    } else if(val == 12) {
+        price = price12;
+    } else if(val == 24) {
+        price = price24
+    }
+
+    $('.li-price').html(price);
+});
 
 })(jQuery);

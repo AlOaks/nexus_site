@@ -1128,14 +1128,14 @@ object {
     .menu-item a:visited {
       color: #193F5C; }
 
-#menu-item-25, #menu-item-399 {
+#menu-item-25, #menu-item-399, #menu-item-469 {
   padding: 5px 15px;
   letter-spacing: 2px;
   background: #bd2020;
   border-radius: 5px; }
-  #menu-item-25 a, #menu-item-399 a {
+  #menu-item-25 a, #menu-item-399 a, #menu-item-469 a {
     color: white; }
-  #menu-item-25:hover, #menu-item-399:hover {
+  #menu-item-25:hover, #menu-item-399:hover, #menu-item-469:hover {
     background: red; }
 
 #menu-item-399 .current-menu-item {
@@ -3599,6 +3599,15 @@ option {
           font-size: .8rem; } }
     .program-info li:last-of-type {
       border-right: none; }
+
+.duration-selector-single {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  padding: 3px;
+  color: #193F5C;
+  font-weight: bold; }
 
 .cities-list {
   padding-left: 0;
