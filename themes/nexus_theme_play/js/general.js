@@ -64,7 +64,7 @@ $('.btn-right').click(function() {
 
  /* HEADER */
 
-$('.menu-btn-active').on('click touchstart', function(e) {
+$('.menu-btn-active').on('click', function(e) {
     e.preventDefault;
     $('.menu').slideToggle('slow');
     $('.white-overlay-menu').toggle();
