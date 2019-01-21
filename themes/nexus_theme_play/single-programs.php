@@ -76,7 +76,7 @@ get_header();
 					<div class="about-school">
 						<div class="school-video"><?php echo $school_vid; ?></div>
 						<div class="about-school-description">
-							<p class="about-school-title"><?php _e('About School', 'nexus'); ?></p>
+							<p class="about-school-title"><?php _e('About the School', 'nexus'); ?></p>
 							<p class="about-school-desc"><?php echo $school_info; ?></p>
 						</div>
 					</div>
@@ -88,7 +88,7 @@ get_header();
 					
 					<div class="about-program">
 						<div class="program-description">
-							<p class="about-program-title"><?php _e('About Program', 'nexus'); ?></p>
+							<p class="about-program-title"><?php _e('About the Program', 'nexus'); ?></p>
 							<p><?php the_content(); ?></p>
 						</div>
 						<?php the_post_thumbnail(); ?>

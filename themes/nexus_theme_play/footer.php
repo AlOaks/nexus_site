@@ -67,8 +67,8 @@
 				<div class="sitemap-item">
 					<h4>Sitemap</h4>
 					<ul class="site-map">
-						<li><a href="../programs">Programs</a></li>
-						<li><a href="../services">Services</a></li>
+						<li><a href="../programs"><?php _e('Programs', 'nexus'); ?></a></li>
+						<li><a href="../services"><?php _e('Services', 'nexus'); ?></a></li>
 						<li><a href="../blog">Blog</a></li>
 						<li><a href="../nexus-club">Nexus Club</a></li>
 					</ul>
@@ -95,9 +95,9 @@
 				<div class="sitemap-item">
 					<h4>Company</h4>
 					<ul class="about">
-						<li><a href="../about">About</a></li>
-						<li><a href="../contact">Contact</a></li>
-						<li><a href="../faq">FAQ</a></li>
+						<li><a href="../about"><?php _e('About', 'nexus'); ?></a></li>
+						<li><a href="../contact"><?php _e('Contact', 'nexus'); ?></a></li>
+						<li><a href="../faq"><?php _e('FAQ', 'nexus'); ?></a></li>
 					</ul>
 				</div>
 				<p class="copyright">©2018 Nexus Intercambio</p>

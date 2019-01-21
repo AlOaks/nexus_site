@@ -30,7 +30,7 @@ get_header();
                             foreach($types as $type) :
 
                         ?>
-                        <option value=<?php echo $type->slug; ?>><?php echo $type->name; ?></option>
+                        <option value=<?php echo $type->name; ?>><?php echo $type->name; ?></option>
 
 
                             <?php endforeach; ?>

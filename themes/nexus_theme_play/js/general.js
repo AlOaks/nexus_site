@@ -166,7 +166,7 @@ $('.see-programs-btn').click(function(e){
 
 $('.tax-programs-btn').click(function(e){
     e.preventDefault;
-    var type = $('.prg-type-select-tax').val();
+    var type = $('.prg-type-select-tax').val().toLowerCase();
     console.log(type);
     window.location = '../'+type;
 });
