@@ -8,9 +8,9 @@
         var currentScrollPos = window.pageYOffset;
 
         if (prevScrollpos > currentScrollPos) {
-            $('.site-header').show('fast');
+            $('.site-header').slideDown('fast');
         } else {
-            $('.site-header').hide('fast');
+            $('.site-header').slideUp('fast');
         }
         prevScrollpos = currentScrollPos;
     }
