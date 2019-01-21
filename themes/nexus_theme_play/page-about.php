@@ -38,11 +38,11 @@ get_header();
 			<section class="beliefs-container about-content-div">
 				<h2 class="container-title"><?php _e('Beliefs', 'nexus'); ?></h2>
 				<ul>
-					<li><?php_e('We believe that each individual has the potential to pursue their dreams and transform their lives.','nexus'); ?></li>
-					<li><?php_e('We believe that education is the key to a fair world.','nexus'); ?></li>
-					<li><?php_e('We believe in an increasingly connected and accessible world that needs people who want to make a positive impact.','nexus'); ?></li>
-					<li><?php_e('We believe that self-knowledge sets you free, journeys inspire and experiences transform.','nexus'); ?></li>
-					<li><?php_e('We believe in humanization as a premise of all that we are and do.','nexus'); ?></li>
+					<li><?php _e('We believe that each individual has the potential to pursue their dreams and transform their lives.','nexus'); ?></li>
+					<li><?php _e('We believe that education is the key to a fair world.','nexus'); ?></li>
+					<li><?php _e('We believe in an increasingly connected and accessible world that needs people who want to make a positive impact.','nexus'); ?></li>
+					<li><?php _e('We believe that self-knowledge sets you free, journeys inspire and experiences transform.','nexus'); ?></li>
+					<li><?php _e('We believe in humanization as a premise of all that we are and do.','nexus'); ?></li>
 				</ul>
 			</section>
 
