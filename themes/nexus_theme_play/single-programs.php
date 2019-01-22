@@ -80,7 +80,7 @@ get_header();
                             ?>
 							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
                                 <?php 
-                                    if($programType == 'language') { ?>
+                                    if($programType == 'language' || $programType == 'idioma') { ?>
                                         <select class="duration-selector-single">
                                             <option value='4' selected><?php _e('4 weeks', 'nexus'); ?></option>
                                             <option value='8'><?php _e('8 weeks', 'nexus'); ?></option>
