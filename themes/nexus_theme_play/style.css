@@ -3872,6 +3872,9 @@ option {
     margin-left: 0;
     padding-left: 0; } }
 
+.intensities-list li {
+  list-style-type: disc; }
+
 .answer-strong {
   font-weight: bold; }
 
