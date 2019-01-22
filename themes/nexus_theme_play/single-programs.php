@@ -96,7 +96,7 @@ get_header();
 							<p class="li-title"><?php _e('Price', 'nexus'); ?></p>
 
 							<?php 
-								if($programType == 'language') { ?>
+								if($programType == 'language' || $programType == 'idioma') { ?>
 									<p class="li-field li-price"></p>
 							<?php } else { ?>
 									<p class="li-field"><?php echo $price; ?></p>
@@ -131,7 +131,7 @@ get_header();
 
 				<section class="program-details">
 					<div class="courses-div">
-						<h2>Courses</h2>
+						<h2><?php _e('Courses', 'nexus'); ?></h2>
 						<ul>
 						<?php  
 							$coursesLoop = CFS()->get('program_course'); 
@@ -143,7 +143,7 @@ get_header();
 						</ul>
 					</div>
 					<div class="specifications-div">
-						<h2>Specifications</h2>
+						<h2><?php _e('Specifications', 'nexus'); ?></h2>
 						<?php echo CFS()->get('specs'); ?>
 					</div>	
 
