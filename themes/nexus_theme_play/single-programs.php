@@ -154,7 +154,7 @@ get_header();
 							
 									<li>
 										<i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?>
-										<ul class="intensities-list">
+										<ul class="intensities-list answer-strong">
 											<?php 
 												$intensities = CFS()->get('intensities'); 
 
@@ -181,7 +181,7 @@ get_header();
 										<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e($time, 'nexus'); ?></span></li>
 										<li>
 											<i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?>
-											<ul>
+											<ul class="answer-strong">
 											<?php 
 												$dates = CFS()->get('dates'); 
 												foreach($dates as $date) {
@@ -192,7 +192,7 @@ get_header();
 										</li>
 							<?php } ?>
 										<?php if($programType == 'idiomas' || $programType == 'language') { ?>
-											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="accomoodation-span"></span></li>
+											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="answer-strong accommodation-span"></span></li>
 										<?php } else { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?><span class="answer-strong"><?php _e('4 weeks', 'nexus'); ?></span></li>
 										<?php } ?>
