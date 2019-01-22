@@ -234,7 +234,7 @@ $('.duration-selector-single').change(function(e) {
     }
 
     $('.li-price').html(price);
-    $('.acommodation-span').html(accommodation);
+    $('.accommodation-span').html(accommodation);
     $('.disclaimer-accomodation').show();
 });
 
