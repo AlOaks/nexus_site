@@ -230,8 +230,8 @@ get_header();
 						<?php 
 							$args = array(
 								'post_type' => 'programs', 
-								'posts_per_page' => 3
-								'orderby' => rand,
+								'posts_per_page' => 3,
+								'orderby' => rand
 							);
 							$recommended = new WP_query($args);
 							
