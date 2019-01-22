@@ -3571,8 +3571,6 @@ option {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
   background: #193F5C;
   color: #F3F5F8;
   width: 82%;
@@ -3697,9 +3695,6 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto; }
@@ -3757,7 +3752,8 @@ option {
     color: #193F5C;
     width: 100%;
     font-family: "Open Sans";
-    line-height: 36px; }
+    line-height: 36px;
+    margin: 0; }
 
 .program-apply-btn {
   padding: .5% 5%;
@@ -3809,10 +3805,7 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  margin-top: 10vh; }
 
 .school-video {
   width: 47%; }
@@ -4525,9 +4518,9 @@ option {
   margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .type-programs-container a {
     text-decoration: none; }
     .type-programs-container a:visited {
@@ -4537,7 +4530,7 @@ option {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  width: 30%;
+  width: 31%;
   height: auto;
   margin-bottom: 5%;
   display: -webkit-box;
@@ -4550,10 +4543,9 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-  margin-right: 3.3333%; }
+  position: relative; }
   .type-prog-container:hover .program-info-div {
-    background: rgba(255, 255, 255, 0.8); }
+    background: #ffd67f; }
   @media (max-width: 600px) {
     .type-prog-container {
       width: 90%;
@@ -4564,33 +4556,46 @@ option {
   .type-prog-container p {
     font-family: "Roboto";
     color: #193F5C;
-    font-size: 1.3rem;
-    margin: 0;
-    margin-left: 5%; }
+    font-size: .8rem;
+    margin: 0; }
     @media (max-width: 600px) {
       .type-prog-container p {
         font-size: .9rem; } }
   .type-prog-container .prog-name-single {
     font-weight: bold;
-    font-size: 2rem;
-    margin: 0;
-    margin-left: 5%; }
+    font-size: 1rem;
+    margin: 0; }
     @media (max-width: 600px) {
       .type-prog-container .prog-name-single {
         font-size: 1.1rem; } }
   .type-prog-container .prog-city-single {
     font-style: italic; }
-  .type-prog-container .wp-post-image {
-    height: 20rem; }
+  .type-prog-container a {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .type-prog-container a img {
+      height: 13rem; }
 
 .program-info-div {
   position: absolute;
   bottom: 0;
   background: rgba(255, 255, 255, 0.6);
-  width: 100%; }
+  width: 100%;
+  height: 35%;
+  padding: 2%; }
   @media (max-width: 600px) {
     .program-info-div {
-      bottom: 0; } }
+      bottom: 0;
+      height: 40%; } }
 
 .featured {
   -webkit-box-ordinal-group: 2;

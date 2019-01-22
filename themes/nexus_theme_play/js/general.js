@@ -212,7 +212,7 @@ accommodation();
 price();
 
 
-$('.disclaimer-acommodation').hide();
+$('.disclaimer-accommodation').hide();
 
 $('.duration-selector-single').change(function(e) {
     e.preventDefault;
@@ -234,10 +234,13 @@ $('.duration-selector-single').change(function(e) {
         accommodation = 12 + ' weeks';
 
     } else if(val == 24) {
-        price = price24;
-        accommodation = 4 + ' weeks*';
-        $('.disclaimer-accommodation').show();
+        price = price24 + '*';
+        accommodation = 4 + ' weeks*';    
 
+    }
+
+    if(val == 24) {
+        $('.disclaimer-accommodation').show();
     }
 
     $('.li-price').html(price);

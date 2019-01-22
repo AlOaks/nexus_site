@@ -89,7 +89,6 @@ get_header();
 									<p class="prog-school-single"><?php echo _e($prog_type[0]->name, 'nexus'); ?></p>
 									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
 									<p class="prog-school"><?php echo CFS()->get('school'); ?></p>
-									<p class="prog-city-single"><?php echo CFS()->get('duration'); ?></p>
 								</div>
 							</a>
 						</div>
@@ -101,7 +100,6 @@ get_header();
 									<p class="prog-school-single"><?php _e($prog_type[0]->name, 'nexus'); ?></p>
 									<p class="prog-name-single"><?php _e(the_title(), 'nexus'); ?></p>
 									<p class="prog-school"><?php _e(CFS()->get('school'), 'nexus'); ?></p>
-									<p class="prog-city-single"><?php _e(CFS()->get('duration'), 'nexus'); ?></p>
 								</div>
 								<p id="feat-label"><?php _e('Featured', 'nexus'); ?></p>
 							</a>

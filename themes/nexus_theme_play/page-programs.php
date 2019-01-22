@@ -21,7 +21,7 @@ get_header();
                 <h1 class="programs-page-title"><?php the_title(); ?></h1>
             </div>
             <section class="search-program">
-                <h2 class="hero-title-programs"><?php _e('Where is your next adventure going to be? ', 'nexus'); ?></h2>
+                <h2 class="hero-title-programs"><?php _e('Where is your next experience going to be? ', 'nexus'); ?></h2>
                 <div class="search-container">
                     <select class="prg-type-select">
                         <option value=""><?php _e('Choose City', 'nexus'); ?></option>
