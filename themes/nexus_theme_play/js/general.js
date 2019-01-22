@@ -203,7 +203,16 @@ function price() {
     $('.li-price').html(price4);
 }
 
+function accommodation() {
+    $('.accommodation-span').html('4 weeks');
+}
+
+
+accommodation();
 price();
+
+
+$('.disclaimer-acommodation').hide();
 
 $('.duration-selector-single').change(function(e) {
     e.preventDefault;
@@ -211,6 +220,7 @@ $('.duration-selector-single').change(function(e) {
     var val = $('.duration-selector-single').val();
 
     var price;
+    var accommodation = val;
 
     if(val == 4) {  
         price = price4;
@@ -219,10 +229,16 @@ $('.duration-selector-single').change(function(e) {
     } else if(val == 12) {
         price = price12;
     } else if(val == 24) {
-        price = price24
+        price = price24;
+        accomodation = 4;
     }
 
     $('.li-price').html(price);
+    $('.acommodation-span').html(accommodation + ' weeks');
+    $('.disclaimer-accomodation').show();
 });
+
+
+
 
 })(jQuery);

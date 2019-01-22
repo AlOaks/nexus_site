@@ -80,7 +80,7 @@ get_header();
                             ?>
 							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
                                 <?php 
-                                    if($programType == 'language' || $programType == 'idioma') { ?>
+                                    if($programType == 'language' || $programType == 'idioma' || $programType = 'idiomas') { ?>
                                         <select class="duration-selector-single">
                                             <option value='4' selected><?php _e('4 weeks', 'nexus'); ?></option>
                                             <option value='8'><?php _e('8 weeks', 'nexus'); ?></option>
@@ -96,7 +96,7 @@ get_header();
 							<p class="li-title"><?php _e('Price', 'nexus'); ?></p>
 
 							<?php 
-								if($programType == 'language' || $programType == 'idioma') { ?>
+								if($programType == 'language' || $programType == 'idioma' || $programType = 'idiomas') { ?>
 									<p class="li-field li-price"></p>
 							<?php } else { ?>
 									<p class="li-field"><?php echo $price; ?></p>
@@ -131,7 +131,12 @@ get_header();
 
 				<section class="program-details">
 					<div class="courses-div">
+
+					<?php if($programType == 'language' || $programType == 'idiomas' || $programType == 'idioma') { ?>
 						<h2><?php _e('Courses', 'nexus'); ?></h2>
+					<?php } else { ?>
+						<h2><?php _e('Curriculum', 'nexus'); ?></h2>
+					<?php } ?>
 						<ul>
 						<?php  
 							$coursesLoop = CFS()->get('program_course'); 
@@ -144,7 +149,48 @@ get_header();
 					</div>
 					<div class="specifications-div">
 						<h2><?php _e('Specifications', 'nexus'); ?></h2>
-						<?php echo CFS()->get('specs'); ?>
+						<div class="spec-container">
+							<?php if($programType == 'language' || $programType == 'idioma') { ?>
+							
+									<h2 class="intensities-title"><i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?></h2>
+									<ul class="intensities-list">
+										<?php 
+											$intensities = CFS()->get('intensities'); 
+
+											foreach($intensities as $intensity) {
+												echo '<li>'.$intensity['intensity'].'</li>';
+											}
+										?>
+										<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e('Any', 'nexus'); ?></span></li>
+										<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e('Avg. 30 days', 'nexus'); ?></span></li>
+										<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e('Every Monday', 'nexus'); ?></span></li>
+									</ul>
+							<?php } else { ?>
+
+							<?php 
+							
+								$level = CFS()->get('level');
+								$time = CFS()->get('time');
+								$start = CFS()->get('start');
+								
+								
+							?>
+									<ul class="specs-list">
+										<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e($level, 'nexus'); ?></span></li>
+										<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e($time, 'nexus'); ?></span></li>
+										<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e($start, 'nexus'); ?></span></li>
+									</ul>										
+							<?php } ?>
+									<ul class="rest-of-list">
+											<li></li>
+										<?php if($programType == 'idiomas' || $programType == 'language') { ?>
+											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="accomoodation-span"></span></li>
+										<?php } else { ?>
+											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?><span class="answer-strong"><?php _e('4 weeks', 'nexus'); ?></span></li>
+										<?php } ?>
+											<li><i class="fas fa-medkit"></i><?php _e( 'Health Insurance Included', 'nexus'); ?></li>
+									</ul>
+						</div>
 					</div>	
 
 				</section>
