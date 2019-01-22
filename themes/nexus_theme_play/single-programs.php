@@ -149,22 +149,24 @@ get_header();
 					</div>
 					<div class="specifications-div">
 						<h2><?php _e('Specifications', 'nexus'); ?></h2>
-						<div class="spec-container">
+						<ul class="spec-container">
 							<?php if($programType == 'language' || $programType == 'idioma') { ?>
 							
 									<h2 class="intensities-title"><i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?></h2>
-									<ul class="intensities-list">
-										<?php 
-											$intensities = CFS()->get('intensities'); 
+									<li class="intensities-list">
+										<ul>
+											<?php 
+												$intensities = CFS()->get('intensities'); 
 
-											foreach($intensities as $intensity) {
-												echo '<li>'.$intensity['intensity'].'</li>';
-											}
-										?>
-										<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e('Any', 'nexus'); ?></span></li>
-										<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e('Avg. 30 days', 'nexus'); ?></span></li>
-										<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e('Every Monday', 'nexus'); ?></span></li>
-									</ul>
+												foreach($intensities as $intensity) {
+													echo '<li>'.$intensity['intensity'].'</li>';
+												}
+											?>
+											<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e('Any', 'nexus'); ?></span></li>
+											<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e('Avg. 30 days', 'nexus'); ?></span></li>
+											<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e('Every Monday', 'nexus'); ?></span></li>
+										</ul>
+									</li>
 							<?php } else { ?>
 
 							<?php 
@@ -175,22 +177,17 @@ get_header();
 								
 								
 							?>
-									<ul class="specs-list">
 										<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e($level, 'nexus'); ?></span></li>
 										<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e($time, 'nexus'); ?></span></li>
 										<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e($start, 'nexus'); ?></span></li>
-									</ul>										
 							<?php } ?>
-									<ul class="rest-of-list">
-											<li></li>
 										<?php if($programType == 'idiomas' || $programType == 'language') { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="accomoodation-span"></span></li>
 										<?php } else { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?><span class="answer-strong"><?php _e('4 weeks', 'nexus'); ?></span></li>
 										<?php } ?>
 											<li><i class="fas fa-medkit"></i><?php _e( 'Health Insurance Included', 'nexus'); ?></li>
-									</ul>
-						</div>
+						</ul>
 					</div>	
 
 				</section>
