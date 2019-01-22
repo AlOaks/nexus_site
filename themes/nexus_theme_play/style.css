@@ -1560,7 +1560,7 @@ object {
   color: white;
   z-index: 100;
   width: 60%;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
   font-style: italic;
   font-weight: 600;
@@ -1568,7 +1568,7 @@ object {
   .hero-label span {
     color: #FF2F49;
     text-transform: uppercase;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-style: normal; }
   @media (max-width: 600px) {
     .hero-label {

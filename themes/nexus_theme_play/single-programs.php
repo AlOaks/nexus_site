@@ -17,7 +17,7 @@ get_header();
 
 				$duration = CFS()->get('duration');
 				$school = CFS()->get('school');
-				$price = CFS()->get('price');
+				$prices = CFS()->get('price');
 				$hrs = CFS()->get('hours');
 				$school_info = CFS()->get('school_info');
 				$school_vid = CFS()->get('school_video');
@@ -99,7 +99,7 @@ get_header();
 								if($programType == 'language' || $programType == 'idioma' || $programType = 'idiomas') { ?>
 									<p class="li-field li-price"></p>
 							<?php } else { ?>
-									<p class="li-field"><?php echo $price; ?></p>
+									<p class="li-field"><?php echo $prices; ?></p>
 							<?php } ?>
 
 						</li>
