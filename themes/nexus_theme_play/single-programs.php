@@ -196,7 +196,7 @@ get_header();
 										<?php } else { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?><span class="answer-strong"><?php _e('4 weeks', 'nexus'); ?></span></li>
 										<?php } ?>
-											<li><i class="fas fa-medkit"></i><?php _e( 'Health Insurance:', 'nexus'); ?><span class="answer-strong"><?php _e('Included', 'nexus'); ?></span></li>
+											<li><i class="fas fa-medkit"></i><?php _e( 'Health Insurance:', 'nexus'); ?> <span class="answer-strong"><?php _e('Included', 'nexus'); ?></span></li>
 						</ul>
 					</div>	
 
@@ -230,7 +230,8 @@ get_header();
 						<?php 
 							$args = array(
 								'post_type' => 'programs', 
-								'posts_per_page' => 3,
+								'posts_per_page' => 3
+								'orderby' => rand,
 							);
 							$recommended = new WP_query($args);
 							

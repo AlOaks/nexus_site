@@ -3842,7 +3842,7 @@ option {
   font-family: "Open Sans"; }
   @media (max-width: 600px) {
     .specifications-div, .courses-div {
-      width: 85%;
+      width: 95%;
       margin-left: auto;
       margin-right: auto; } }
   .specifications-div h2, .courses-div h2 {
@@ -3863,7 +3863,8 @@ option {
       bottom: -8px; }
 
 .specs-list li {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-bottom: 1vh; }
   .specs-list li i {
     margin-right: 2vw; }
 
@@ -3874,6 +3875,10 @@ option {
 
 .intensities-list li {
   list-style-type: disc; }
+
+@media (max-width: 600px) {
+  .intensities-list {
+    margin-left: 2.5rem; } }
 
 .answer-strong {
   font-weight: bold; }
