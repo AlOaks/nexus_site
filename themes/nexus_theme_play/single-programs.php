@@ -152,8 +152,8 @@ get_header();
 						<ul class="spec-container">
 							<?php if($programType == 'language' || $programType == 'idioma') { ?>
 							
-									<h2 class="intensities-title"><i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?></h2>
 									<li class="intensities-list">
+										<h2 class="intensities-title"><i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?></h2>
 										<ul>
 											<?php 
 												$intensities = CFS()->get('intensities'); 
@@ -162,11 +162,11 @@ get_header();
 													echo '<li>'.$intensity['intensity'].'</li>';
 												}
 											?>
-											<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e('Any', 'nexus'); ?></span></li>
-											<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e('Avg. 30 days', 'nexus'); ?></span></li>
-											<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e('Every Monday', 'nexus'); ?></span></li>
 										</ul>
 									</li>
+									<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e('Any', 'nexus'); ?></span></li>
+									<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e('Avg. 30 days', 'nexus'); ?></span></li>
+									<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e('Every Monday', 'nexus'); ?></span></li>
 							<?php } else { ?>
 
 							<?php 
