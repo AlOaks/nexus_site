@@ -3521,7 +3521,8 @@ option {
   color: gray;
   width: 82%;
   margin: 0;
-  margin-left: 9%; }
+  margin-left: 9%;
+  font-size: .8rem; }
 
 .school-logo-container {
   margin-top: 3%;
