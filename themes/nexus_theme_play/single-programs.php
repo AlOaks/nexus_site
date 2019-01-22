@@ -153,7 +153,7 @@ get_header();
 							<?php if($programType == 'language' || $programType == 'idioma') { ?>
 							
 									<li class="intensities-list">
-										<h2 class="intensities-title"><i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?></h2>
+										<i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?>
 										<ul>
 											<?php 
 												$intensities = CFS()->get('intensities'); 
