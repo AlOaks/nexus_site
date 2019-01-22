@@ -3862,6 +3862,20 @@ option {
       left: 40%;
       bottom: -8px; }
 
+.specs-list li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .specs-list li i {
+    margin-right: 2vw; }
+
+.answer-strong {
+  font-weight: bold; }
+
 .courses-div ul {
   font-family: "Open Sans"; }
 

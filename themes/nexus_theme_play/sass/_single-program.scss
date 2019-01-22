@@ -383,6 +383,22 @@
     }
 }
 
+.specs-list {
+    li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 2vw;
+        }
+    }
+}
+
+.answer-strong {
+    font-weight: bold;
+}
+
 .courses-div {
 
     ul {

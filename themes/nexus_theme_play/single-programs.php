@@ -149,12 +149,12 @@ get_header();
 					</div>
 					<div class="specifications-div">
 						<h2><?php _e('Specifications', 'nexus'); ?></h2>
-						<ul class="spec-container">
+						<ul class="specs-list">
 							<?php if($programType == 'language' || $programType == 'idioma') { ?>
 							
-									<li class="intensities-list">
+									<li>
 										<i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?>
-										<ul>
+										<ul class="intensities-list">
 											<?php 
 												$intensities = CFS()->get('intensities'); 
 
@@ -179,7 +179,17 @@ get_header();
 							?>
 										<li><i class="fas fa-signal"></i><?php _e('English Level Required:', 'nexus'); ?> <span class="answer-strong"><?php _e($level, 'nexus'); ?></span></li>
 										<li><i class="fas fa-clock"></i><?php _e('Processing Time:', 'nexus'); ?> <span class="answer-strong"><?php _e($time, 'nexus'); ?></span></li>
-										<li><i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?> <span class="answer-strong"><?php _e($start, 'nexus'); ?></span></li>
+										<li>
+											<i class="fas fa-calendar-alt"></i><?php _e('Starting Dates:', 'nexus'); ?>
+											<ul>
+											<?php 
+												$dates = CFS()->get('dates'); 
+												foreach($dates as $date) {
+													echo '<li>'.$date['date'].'</li>';
+												}											
+											?>
+											</ul>
+										</li>
 							<?php } ?>
 										<?php if($programType == 'idiomas' || $programType == 'language') { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="accomoodation-span"></span></li>
