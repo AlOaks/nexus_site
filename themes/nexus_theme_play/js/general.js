@@ -220,7 +220,7 @@ $('.duration-selector-single').change(function(e) {
     var val = $('.duration-selector-single').val();
 
     var price;
-    var accommodation = val;
+    var accommodation = val + ' weeks';
 
     if(val == 4) {  
         price = price4;
@@ -230,11 +230,11 @@ $('.duration-selector-single').change(function(e) {
         price = price12;
     } else if(val == 24) {
         price = price24;
-        accomodation = 4;
+        accomodation = 4 + ' weeks*';
     }
 
     $('.li-price').html(price);
-    $('.acommodation-span').html(accommodation + ' weeks');
+    $('.acommodation-span').html(accommodation);
     $('.disclaimer-accomodation').show();
 });
 
