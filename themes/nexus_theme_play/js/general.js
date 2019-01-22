@@ -220,14 +220,19 @@ $('.duration-selector-single').change(function(e) {
     var val = $('.duration-selector-single').val();
 
     var price;
-    var accommodation = val + ' weeks';
+    var accommodation;
 
     if(val == 4) {  
         price = price4;
+        accomodation = 4 + ' weeks';
     } else if(val == 8) {
         price = price8;
+        accomodation = 8 + ' weeks';
+
     } else if(val == 12) {
         price = price12;
+        accomodation = 12 + ' weeks';
+
     } else if(val == 24) {
         price = price24;
         accomodation = 4 + ' weeks*';
