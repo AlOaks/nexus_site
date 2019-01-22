@@ -3867,6 +3867,11 @@ option {
   .specs-list li i {
     margin-right: 2vw; }
 
+@media (max-width: 600px) {
+  .specifications-div ul {
+    margin-left: 0;
+    padding-left: 0; } }
+
 .answer-strong {
   font-weight: bold; }
 
