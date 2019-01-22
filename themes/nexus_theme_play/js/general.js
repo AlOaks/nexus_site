@@ -224,18 +224,18 @@ $('.duration-selector-single').change(function(e) {
 
     if(val == 4) {  
         price = price4;
-        accomodation = 4 + ' weeks';
+        accommodation = 4 + ' weeks';
     } else if(val == 8) {
         price = price8;
-        accomodation = 8 + ' weeks';
+        accommodation = 8 + ' weeks';
 
     } else if(val == 12) {
         price = price12;
-        accomodation = 12 + ' weeks';
+        accommodation = 12 + ' weeks';
 
     } else if(val == 24) {
         price = price24;
-        accomodation = 4 + ' weeks*';
+        accommodation = 24 + ' weeks*';
     }
 
     $('.li-price').html(price);
