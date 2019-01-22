@@ -235,12 +235,13 @@ $('.duration-selector-single').change(function(e) {
 
     } else if(val == 24) {
         price = price24;
-        accommodation = 24 + ' weeks*';
+        accommodation = 4 + ' weeks*';
+        $('.disclaimer-accomodation').show();
+
     }
 
     $('.li-price').html(price);
     $('.accommodation-span').html(accommodation);
-    $('.disclaimer-accomodation').show();
 });
 
 

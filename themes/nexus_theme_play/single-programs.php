@@ -104,6 +104,7 @@ get_header();
 
 						</li>
 					</ul>
+					<p class="disclaimer-accommodation"><?php _e('*For programs longer than 5 months, 4 weeks of accommodation is recommended.', 'nexus'); ?></p>
 				</section>
 
 				<section class="about-container school-container">
