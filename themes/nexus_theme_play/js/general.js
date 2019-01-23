@@ -1,6 +1,6 @@
 (function($) {
 
-
+    alert($.fn.jquery);
 
     /* HEADER */
     var prevScrollpos = window.pageYOffset;
