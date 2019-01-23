@@ -1037,9 +1037,7 @@ object {
             flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
-    position: relative;
-    z-index: 100000; }
+            justify-content: flex-start; }
     .site-header .sub-menu li {
       border-top: 1px solid grey;
       margin: 0; }
