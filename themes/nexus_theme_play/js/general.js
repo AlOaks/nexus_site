@@ -10,7 +10,7 @@
         if (prevScrollpos > currentScrollPos) {
             $('.site-header').slideDown('fast');
         } else {
-            $('.site-header').slideUp('fast');
+            $('.site-header').slideUp('slow');
         }
         prevScrollpos = currentScrollPos;
     }
