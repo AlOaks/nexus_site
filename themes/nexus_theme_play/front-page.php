@@ -146,10 +146,10 @@ get_header();
 								<h2 class="city-name-front">Victoria</h2>
 							</div>
 						</a>
-						<a href="cities/winnipeg/" class="city-link-front fifty-div winnipeg">
+						<a href="cities/whistler/" class="city-link-front fifty-div winnipeg">
 							<div class="city-container-frontpage winni-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Winnipeg</h2>
+								<h2 class="city-name-front">Whistler</h2>
 							</div>
 						</a>
 						<a href="cities/halifax/" class="city-link-front fifty-div winnipeg">

@@ -999,6 +999,10 @@ object {
   .links-header a {
     margin-left: 5%; }
 
+#menu-item-246, #menu-item-247 > a {
+  position: relative;
+  z-index: 999999; }
+
 .site-header {
   width: 100%;
   height: 14vh;
@@ -2025,13 +2029,15 @@ option {
   background: url("../../themes/nexus_theme_play/assets/images/toronto.jpg"); }
 
 .van-div {
-  background: url("../../themes/nexus_theme_play/assets/images/vancouver.jpg"); }
+  background: url("../../themes/nexus_theme_play/assets/images/vancouver.jpeg");
+  background-position: left bottom;
+  background-size: cover; }
 
 .vic-div {
   background: url("../../themes/nexus_theme_play/assets/images/victoria.jpg"); }
 
 .winni-div {
-  background: url("../../themes/nexus_theme_play/assets/images/winnipeg.jpg"); }
+  background: url("../../themes/nexus_theme_play/assets/images/whistler.jpg"); }
 
 .hali-div {
   background: url("../../themes/nexus_theme_play/assets/images/halifax.jpg"); }

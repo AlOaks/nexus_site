@@ -16,6 +16,16 @@
         prevScrollpos = currentScrollPos;
     }
 
+
+
+    $('#menu-item-247').click(function() {
+        $(this).children('.sub-menu').show();
+    });
+
+    $('#menu-item-246').click(function() {
+        $(this).children('.sub-menu').show();
+    });
+
     /* SLIDERS */
 
     

@@ -106,7 +106,6 @@ get_header();
 						</div>
 					<?php } ?>		
 				<?php endwhile; 
-				wp_reset_query();
 				?>
 			</div>
 			<div id="more_programs">More Programs</div>

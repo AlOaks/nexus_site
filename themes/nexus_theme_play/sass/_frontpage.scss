@@ -557,10 +557,13 @@ option {
 .toro-div {
     background: url("../../themes/nexus_theme_play/assets/images/toronto.jpg");
     
+    
 }
 
 .van-div {
-    background: url("../../themes/nexus_theme_play/assets/images/vancouver.jpg");
+    background: url("../../themes/nexus_theme_play/assets/images/vancouver.jpeg");
+    background-position: left bottom;
+    background-size: cover;
     
 }
 
@@ -570,7 +573,7 @@ option {
 }
 
 .winni-div {
-    background: url("../../themes/nexus_theme_play/assets/images/winnipeg.jpg");
+    background: url("../../themes/nexus_theme_play/assets/images/whistler.jpg");
 
 }
 
