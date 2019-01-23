@@ -15,7 +15,7 @@ get_header();
 		<?php
 		while ( have_posts() ) : the_post(); 
 
-				$duration = CFS()->get('duration');
+				$duration = CFS()->get('durations');
 				$school = CFS()->get('school');
 				$prices = CFS()->get('price');
 				$hrs = CFS()->get('hours');
@@ -75,12 +75,13 @@ get_header();
 
 								$programType = $postTerms[0]->slug;
 
+								
 							
 								
                             ?>
 							<p class="li-title"><?php _e('Duration', 'nexus'); ?></p>
                                 <?php 
-                                    if($programType == 'language' || $programType == 'idioma' || $programType = 'idiomas') { ?>
+                                    if($programType == 'language' || $programType == 'idioma' || $programType == 'idiomas') { ?>
                                         <select class="duration-selector-single">
                                             <option value='4' selected><?php _e('4 weeks', 'nexus'); ?></option>
                                             <option value='8'><?php _e('8 weeks', 'nexus'); ?></option>
@@ -116,6 +117,10 @@ get_header();
 						</div>
 					</div>
 				</section>
+
+				<?php echo '<pre>';
+								var_dump($postTerms);
+								echo '</pre>'; ?>
 
 				
 				<section class="about-container program-container">

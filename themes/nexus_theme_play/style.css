@@ -3506,7 +3506,7 @@ option {
   padding-top: 10.5vh;
   width: 100%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   font-family: "Roboto";
   position: relative;
@@ -3551,7 +3551,7 @@ option {
   margin-bottom: 2%;
   background: white;
   color: #193F5C;
-  width: 50%; }
+  width: 80%; }
   @media (max-width: 600px) {
     .program-name {
       font-size: 1.5rem; } }

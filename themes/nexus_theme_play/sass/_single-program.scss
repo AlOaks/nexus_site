@@ -5,7 +5,7 @@
     padding-top: 10.5vh;
     width: 100%;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     font-family: $roboto;
     position: relative;
@@ -58,7 +58,7 @@
     margin-bottom: 2%;
     background: white;
     color: $font-blue;
-    width: 50%;
+    width: 80%;
 
     @include mobile {
         font-size: 1.5rem;
