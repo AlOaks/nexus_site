@@ -118,9 +118,7 @@ get_header();
 					</div>
 				</section>
 
-				<?php echo '<pre>';
-								var_dump($postTerms);
-								echo '</pre>'; ?>
+				
 
 				
 				<section class="about-container program-container">
