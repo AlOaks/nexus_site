@@ -1037,7 +1037,9 @@ object {
             flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    position: relative;
+    z-index: 100000; }
     .site-header .sub-menu li {
       border-top: 1px solid grey;
       margin: 0; }
@@ -1056,6 +1058,10 @@ object {
   overflow: hidden;
   -webkit-transition-duration: .3s;
           transition-duration: .3s; }
+  @media (max-width: 600px) {
+    .hiding {
+      height: 12vh;
+      overflow: visible; } }
 
 .white-overlay-menu {
   background: rgba(255, 255, 255, 0.7);

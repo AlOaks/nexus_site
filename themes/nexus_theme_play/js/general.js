@@ -19,11 +19,11 @@
 
 
     $('#menu-item-247').click(function() {
-        $(this).children('.sub-menu').show();
+        $(this).children('.sub-menu').toogle();
     });
 
     $('#menu-item-246').click(function() {
-        $(this).children('.sub-menu').show();
+        $(this).children('.sub-menu').toogle();
     });
 
     /* SLIDERS */
