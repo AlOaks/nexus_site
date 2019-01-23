@@ -250,4 +250,4 @@ $('.duration-selector-single').change(function(e) {
 
 
 
-})(jQuery);
+})(jQuery3);
