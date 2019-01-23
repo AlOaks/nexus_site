@@ -1008,7 +1008,9 @@ object {
   display: flex;
   position: fixed;
   top: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   @media (max-width: 600px) {
     .site-header {
       height: 12vh;
@@ -1044,6 +1046,12 @@ object {
       .site-header .sub-menu li:hover {
         background: #F3F5F8;
         color: black; }
+
+.hiding {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s; }
 
 .white-overlay-menu {
   background: rgba(255, 255, 255, 0.7);
