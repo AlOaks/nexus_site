@@ -1,5 +1,7 @@
 (function($) {
 
+    alert($.fn.jquery);
+
     /* HEADER */
     var prevScrollpos = window.pageYOffset;
 
@@ -250,4 +252,4 @@ $('.duration-selector-single').change(function(e) {
 
 
 
-})(jQuery3);
+})( jQuery );
