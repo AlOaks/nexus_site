@@ -4235,10 +4235,10 @@ option {
         height: auto;
         margin-right: 5%; }
 
-#popmake-206, #popmake-162 {
+#popmake-206, #popmake-162, #popmake-689, #popmake-694 {
   padding: 0;
   width: 30%; }
-  #popmake-206 .popmake-content, #popmake-162 .popmake-content {
+  #popmake-206 .popmake-content, #popmake-162 .popmake-content, #popmake-689 .popmake-content, #popmake-694 .popmake-content {
     background: #15405A;
     padding: 5%;
     display: -webkit-box;
@@ -4253,7 +4253,7 @@ option {
     -ms-flex-line-pack: center;
         align-content: center;
     color: white; }
-    #popmake-206 .popmake-content .login-title, #popmake-162 .popmake-content .login-title {
+    #popmake-206 .popmake-content .login-title, #popmake-162 .popmake-content .login-title, #popmake-689 .popmake-content .login-title, #popmake-694 .popmake-content .login-title {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
@@ -4261,16 +4261,16 @@ option {
       color: white;
       font-size: 2rem;
       font-family: "Roboto"; }
-    #popmake-206 .popmake-content img, #popmake-162 .popmake-content img {
+    #popmake-206 .popmake-content img, #popmake-162 .popmake-content img, #popmake-689 .popmake-content img, #popmake-694 .popmake-content img {
       width: 50%;
       margin-left: 22%; }
-    #popmake-206 .popmake-content input, #popmake-162 .popmake-content input {
+    #popmake-206 .popmake-content input, #popmake-162 .popmake-content input, #popmake-689 .popmake-content input, #popmake-694 .popmake-content input {
       width: 80%;
       margin-left: auto;
       margin-right: auto; }
-    #popmake-206 .popmake-content input[type="checkbox"], #popmake-162 .popmake-content input[type="checkbox"] {
+    #popmake-206 .popmake-content input[type="checkbox"], #popmake-162 .popmake-content input[type="checkbox"], #popmake-689 .popmake-content input[type="checkbox"], #popmake-694 .popmake-content input[type="checkbox"] {
       width: 5%; }
-    #popmake-206 .popmake-content input[type="submit"], #popmake-162 .popmake-content input[type="submit"] {
+    #popmake-206 .popmake-content input[type="submit"], #popmake-162 .popmake-content input[type="submit"], #popmake-689 .popmake-content input[type="submit"], #popmake-694 .popmake-content input[type="submit"] {
       background: #bd2020;
       color: white;
       font-family: "Open Sans";
