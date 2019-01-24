@@ -4151,13 +4151,14 @@ option {
       height: 1px;
       left: 30%; }
 
+#popmake-88 .edvisor-row > label {
+  color: white;
+  font-size: .8rem; }
+
 .edvisor-form {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 3%; }
-  .edvisor-form .edvisor-row > label {
-    color: white;
-    font-size: .8rem; }
   .edvisor-form .edvisor-button {
     background: #bd2020;
     color: white;

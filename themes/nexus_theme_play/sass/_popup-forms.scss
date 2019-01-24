@@ -60,15 +60,20 @@
     }
 }
 
-.edvisor-form {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 3%;
+#popmake-88 {
 
     .edvisor-row > label {
         color: white;
         font-size: .8rem;
     }
+}
+
+.edvisor-form {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+
+    
 
     .edvisor-button {
         background: $div-red;
