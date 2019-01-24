@@ -14,11 +14,17 @@
     }
 }
 
-.edvisor-row > label {
-    color: $font-blue !important;
-    font-family: $sans;
-    font-size: 1.2rem;
+.page-template-page-quote {
+    
+    .edvisor-row > label {
+        color: $font-blue;
+        font-family: $sans;
+        font-size: 1.2rem;
+    }
+
 }
+
+
 
 .edvisor-row {
     

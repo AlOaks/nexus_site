@@ -5241,8 +5241,8 @@ article {
   .quote-page-form .edvisor-form button {
     margin-top: 5vh; }
 
-.edvisor-row > label {
-  color: #193F5C !important;
+.page-template-page-quote .edvisor-row > label {
+  color: #193F5C;
   font-family: "Open Sans";
   font-size: 1.2rem; }
 
