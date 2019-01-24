@@ -4114,13 +4114,6 @@ option {
             justify-content: space-between;
     height: 100%; }
 
-.popmake-close {
-  top: 0;
-  right: 0;
-  background: white;
-  color: #193F5C;
-  font-size: .8rem; }
-
 .form-book {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4190,7 +4183,8 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  background: white; }
   @media (max-width: 600px) {
     .why-nexus-book {
       display: none; } }
@@ -4219,8 +4213,7 @@ option {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0 auto 0 auto;
-    background: white; }
+    margin: 0 auto 0 auto; }
     .why-nexus-book ul li {
       color: #193F5C;
       font-family: "Open Sans";
@@ -4304,7 +4297,11 @@ option {
   margin-top: 2%; }
 
 .pum-close {
-  background: #15405A !important; }
+  background: transparent !important;
+  color: red;
+  top: 0;
+  right: 0;
+  font-size: .8rem; }
 
 .form-start-form {
   display: -webkit-box;
