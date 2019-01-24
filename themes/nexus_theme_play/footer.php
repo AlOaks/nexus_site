@@ -32,7 +32,7 @@
 					<h2 class="social-title-footer footer-title"><?php _e('Stay Connected', 'nexus'); ?></h2>
 					<div class="social-logos-container">
 						<a target="_blank" href="https://www.facebook.com/nexusintercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?> /></a>
-						<a target="_blank" href="https://twitter.com/nexusviagens"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/twitter.png'; ?> /></a>
+						<a target="_blank" href="https://ca.linkedin.com/company/nexus-intercambio"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/twitter.png'; ?> /></a>
 						<a target="_blank" href="https://www.youtube.com/channel/UC9ZM-YLdyElsYY1Te8lbT3w/featured"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
 						<a target="_blank" href="https://www.instagram.com/nexus.intercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
 					</div>
@@ -74,7 +74,7 @@
 					</ul>
 				</div>
 				<div class="sitemap-item">
-					<h4>Cities</h4>
+					<h4><?php _e('Cities', 'nexus'); ?></h4>
 					<ul class="cities">
 						<?php 
 						
@@ -93,7 +93,7 @@
 					</ul>
 				</div>
 				<div class="sitemap-item">
-					<h4>Company</h4>
+					<h4><?php _e('Company', 'nexus'); ?></h4>
 					<ul class="about">
 						<li><a href="../about"><?php _e('About', 'nexus'); ?></a></li>
 						<li><a href="../contact"><?php _e('Contact', 'nexus'); ?></a></li>

@@ -1145,14 +1145,14 @@ object {
     .menu-item a:visited {
       color: #193F5C; }
 
-#menu-item-25, #menu-item-399, #menu-item-469 {
+#menu-item-25, #menu-item-399, #menu-item-469, #menu-item-655 {
   padding: 5px 15px;
   letter-spacing: 2px;
   background: #bd2020;
   border-radius: 5px; }
-  #menu-item-25 a, #menu-item-399 a, #menu-item-469 a {
+  #menu-item-25 a, #menu-item-399 a, #menu-item-469 a, #menu-item-655 a {
     color: white; }
-  #menu-item-25:hover, #menu-item-399:hover, #menu-item-469:hover {
+  #menu-item-25:hover, #menu-item-399:hover, #menu-item-469:hover, #menu-item-655:hover {
     background: red; }
 
 #menu-item-399 .current-menu-item {
@@ -4102,10 +4102,10 @@ option {
 .pum-theme-default-theme {
   background: rgba(0, 0, 0, 0.8) !important; }
 
-#popmake-144, #popmake-88, #popmake-168, #popmake-108 {
+#popmake-144, #popmake-88, #popmake-168, #popmake-108, #popmake-634, #popmake-639, #popmake-649, #popmake-645 {
   top: 5% !important;
   padding: 0; }
-  #popmake-144 .popmake-content, #popmake-88 .popmake-content, #popmake-168 .popmake-content, #popmake-108 .popmake-content {
+  #popmake-144 .popmake-content, #popmake-88 .popmake-content, #popmake-168 .popmake-content, #popmake-108 .popmake-content, #popmake-634 .popmake-content, #popmake-639 .popmake-content, #popmake-649 .popmake-content, #popmake-645 .popmake-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4113,6 +4113,13 @@ option {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100%; }
+
+.popmake-close {
+  top: 0;
+  right: 0;
+  background: white;
+  color: #193F5C;
+  font-size: .8rem; }
 
 .form-book {
   display: -webkit-box;
@@ -4151,7 +4158,7 @@ option {
       height: 1px;
       left: 30%; }
 
-#popmake-88 .edvisor-row > label {
+#popmake-88 .edvisor-row > label, #popmake-634 .edvisor-row > label, #popmake-639 .edvisor-row > label {
   color: white;
   font-size: .8rem; }
 
@@ -4212,7 +4219,8 @@ option {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0 auto 0 auto; }
+    margin: 0 auto 0 auto;
+    background: white; }
     .why-nexus-book ul li {
       color: #193F5C;
       font-family: "Open Sans";
@@ -4396,7 +4404,8 @@ option {
   width: 50%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 3vh; }
 
 .tax-Cities {
   background: white; }
