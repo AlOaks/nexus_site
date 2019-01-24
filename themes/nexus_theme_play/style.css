@@ -1038,7 +1038,7 @@ object {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    z-index: 100000; }
+    z-index: 1000000; }
     .site-header .sub-menu li {
       border-top: 1px solid grey;
       margin: 0; }
