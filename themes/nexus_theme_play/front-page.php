@@ -89,15 +89,23 @@ get_header();
 				<h2 class="why-canada-title"><?php _e('Why Canada?', 'nexus'); ?></h2>
 				<button class="slider-btn btn-lft">></button>
                 <button class="slider-btn btn-right"><</button>
-				<div class="slider-canada">			
-					<img class="slider-item desktop-slide" src=<?php echo get_template_directory_uri().'/assets/images/canada_basic_desktop.png' ?>>
-					<img class="slider-item desktop-slide" src=<?php echo get_template_directory_uri().'/assets/images/employment.png' ?>>
-					<img class="slider-item desktop-slide" src=<?php echo get_template_directory_uri().'/assets/images/safety_desktop.png' ?>>
-					<img class="slider-item desktop-slide" src=<?php echo get_template_directory_uri().'/assets/images/quality_education_desktop.png' ?>>
-					<img class="slider-item mobile-slide" src=<?php echo get_template_directory_uri().'/assets/images/canada_basic_mobile.png' ?>>
-					<img class="slider-item mobile-slide" src=<?php echo get_template_directory_uri().'/assets/images/employment_mobile.png' ?>>
-					<img class="slider-item mobile-slide" src=<?php echo get_template_directory_uri().'/assets/images/safety_mobile.png' ?>>
-					<img class="slider-item mobile-slide" src=<?php echo get_template_directory_uri().'/assets/images/quality_education_mobile.png' ?>>
+				<div class="slider-canada desktop-slider">			
+					<?php 
+						$infoDesk = CFS()->get('infographics');
+
+						foreach($infoDesk as $desk) {
+							echo '<img class="slider-item" src="'.$desk['infographic'].'" />';
+						}
+							
+					?>
+				</div>
+				<div class="slider-canada mobile-slider">			
+					<?php 
+						$infoMobile = CFS()->get('infographics-mobile');
+
+						
+							
+					?>
 				</div>
 			</section>
 
