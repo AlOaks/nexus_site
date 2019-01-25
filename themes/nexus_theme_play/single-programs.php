@@ -40,6 +40,7 @@ get_header();
 		?>
 
 				<section class="program-hero">
+					<a class="backtosearch" href="javascript:history:back()"><?php _e('< Back to Programs', 'nexus'); ?></a>
 					
 					<div class="school-logo-container">
 						<img class="school-logo" src=<?php echo $logo; ?> />
