@@ -255,23 +255,28 @@ $('.duration-selector-single').change(function(e) {
     if(val == 4) {  
         price = price4;
         accommodation = 4 + ' weeks';
+        $('.disclaimer-accommodation').hide();
+
     } else if(val == 8) {
         price = price8;
         accommodation = 8 + ' weeks';
+        $('.disclaimer-accommodation').hide();
+
 
     } else if(val == 12) {
         price = price12;
         accommodation = 12 + ' weeks';
+        $('.disclaimer-accommodation').hide();
+
 
     } else if(val == 24) {
         price = price24 + '*';
-        accommodation = 4 + ' weeks*';    
-
-    }
-
-    if(val == 24) {
+        accommodation = 4 + ' weeks*';   
         $('.disclaimer-accommodation').show();
+
+
     }
+
 
     $('.li-price').html(price);
     $('.accommodation-span').html(accommodation);
