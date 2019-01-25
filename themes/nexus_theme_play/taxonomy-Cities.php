@@ -111,9 +111,10 @@ get_header();
 					
 					endwhile; 
 					
-					the_posts_pagination();
 				?>
 			</div>
+			<?php the_posts_pagination(); ?>
+
 			<div id="more_programs">More Programs</div>
 			<section class="start-journey-section">
 				<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
