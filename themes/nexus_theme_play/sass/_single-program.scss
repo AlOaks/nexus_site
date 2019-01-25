@@ -227,11 +227,7 @@
         font-family: $sans;
     }
 
-    button {
-        background: $div-yellow;
-        color: $font-blue;
-        margin-bottom: 3vh;
-    }
+  
 
 }
 
@@ -321,14 +317,14 @@
 
 .program-apply-btn {
         padding: .5% 5%;
-        background: $div-red;
-        color: white;
+        background: $div-yellow;
+        color: $font-blue;
         border-radius: 5px;
         font-family: $sans;
+        margin-bottom: 3vh;
 
         &:hover {
-            background: red;
-            color: white;
+            background: lighten($div-yellow, 20%);
         }
         
     }

@@ -3722,10 +3722,6 @@ option {
     text-align: center;
     font-size: 2rem;
     font-family: "Open Sans"; }
-  .apply-div button {
-    background: #ffb419;
-    color: #193F5C;
-    margin-bottom: 3vh; }
 
 .program-container {
   background: #F3F5F8;
@@ -3812,13 +3808,13 @@ option {
 
 .program-apply-btn {
   padding: .5% 5%;
-  background: #bd2020;
-  color: white;
+  background: #ffb419;
+  color: #193F5C;
   border-radius: 5px;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  margin-bottom: 3vh; }
   .program-apply-btn:hover {
-    background: red;
-    color: white; }
+    background: #ffd67f; }
 
 .explore-more {
   text-align: center;
