@@ -976,9 +976,9 @@ object {
     color: gray; }
 
 .join-link, .log-in-link {
-  color: #bd2020; }
+  color: gray; }
   .join-link:visited, .log-in-link:visited {
-    color: #bd2020; }
+    color: gray; }
   @media (max-width: 600px) {
     .join-link, .log-in-link {
       display: none; } }
@@ -1148,12 +1148,12 @@ object {
 #menu-item-25, #menu-item-399, #menu-item-469, #menu-item-655 {
   padding: 5px 15px;
   letter-spacing: 2px;
-  background: #bd2020;
+  background: #15405A;
   border-radius: 5px; }
   #menu-item-25 a, #menu-item-399 a, #menu-item-469 a, #menu-item-655 a {
     color: white; }
   #menu-item-25:hover, #menu-item-399:hover, #menu-item-469:hover, #menu-item-655:hover {
-    background: red; }
+    background: #287bad; }
 
 #menu-item-399 .current-menu-item {
   border-bottom: none; }
@@ -1287,7 +1287,7 @@ object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 50vh;
+  height: auto;
   padding: 5vh 0; }
   @media (max-width: 600px) {
     .general-info {
@@ -1962,9 +1962,9 @@ option {
         content: none; } }
 
 .visit-faq-btn {
-  background: #bd2020;
+  background: #ffb419;
   border: none;
-  color: white;
+  color: #193F5C;
   font-family: "Open Sans";
   margin: 0 auto 0 auto;
   width: 22%;
@@ -1978,8 +1978,8 @@ option {
   .visit-faq-btn:visited {
     color: white; }
   .visit-faq-btn:hover {
-    background: red;
-    color: white; }
+    background: #ffd67f;
+    color: #193F5C; }
   @media (max-width: 600px) {
     .visit-faq-btn {
       width: 70%; } }
@@ -2002,10 +2002,13 @@ option {
   @media (max-width: 600px) {
     .choose-city-section {
       min-height: 75vh; } }
-  @media (max-width: 600px) {
-    .choose-city-section .visit-faq-btn {
-      position: absolute;
-      bottom: 0; } }
+  .choose-city-section .visit-faq-btn {
+    background: #15405A;
+    color: white; }
+    @media (max-width: 600px) {
+      .choose-city-section .visit-faq-btn {
+        position: absolute;
+        bottom: 0; } }
 
 .cities-container-front {
   width: 90%;
@@ -2509,13 +2512,13 @@ option {
   margin-bottom: 3vh;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #bd2020;
-  color: white;
+  background: #ffb419 !important;
+  color: #193F5C !important;
   font-family: "Open Sans";
   font-weight: bold;
-  border: none;
-  padding: 1% 5%;
-  font-size: 1.5rem; }
+  border: none !important;
+  padding: 2% 5% !important;
+  font-size: 1.2rem !important; }
   @media (max-width: 600px) {
     .wpcf7-submit {
       margin-left: auto;
@@ -3567,11 +3570,14 @@ option {
 .backtosearch {
   position: absolute;
   left: 10%;
-  top: 12vh;
+  top: 15vh;
   font-size: .8rem;
   color: gray; }
   .backtosearch:visited {
     color: gray; }
+  @media (max-width: 600px) {
+    .backtosearch {
+      display: none; } }
 
 .program-name {
   position: relative;
@@ -3607,7 +3613,7 @@ option {
   color: #F3F5F8;
   width: 82%;
   margin: 0 auto 0 auto;
-  padding: 1%;
+  padding: 0;
   position: absolute;
   bottom: -12%;
   left: 8%; }
@@ -3616,7 +3622,9 @@ option {
       width: 100%;
       left: 0;
       position: relative;
-      margin-top: 5%; } }
+      margin-top: 5%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   .program-info li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3633,7 +3641,8 @@ option {
     @media (max-width: 600px) {
       .program-info li {
         border-right: none;
-        padding: 1% 1%; } }
+        padding: 3% 1%;
+        width: 25%; } }
     .program-info li .li-title {
       font-family: "Roboto";
       margin: 0;
@@ -3645,7 +3654,7 @@ option {
           font-size: .7rem; } }
     .program-info li .li-field {
       font-family: "Open Sans";
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin: 0;
       font-weight: 600; }
       @media (max-width: 600px) {
@@ -3653,6 +3662,10 @@ option {
           font-size: .8rem; } }
     .program-info li:last-of-type {
       border-right: none; }
+
+.program-info-item:last-of-type {
+  background: #ffb419;
+  color: #193F5C; }
 
 .duration-selector-single {
   width: 60%;

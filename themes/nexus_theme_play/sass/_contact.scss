@@ -64,6 +64,8 @@
     flex-direction: column;
     justify-content: space-between;
 
+   
+
 }
 
 
@@ -90,13 +92,13 @@
     margin-left: 20%;
     margin-bottom: 3vh;
     box-shadow: none;
-    background: $div-red;
-    color: white;
+    background: $div-yellow !important;
+    color: $font-blue !important;
     font-family: "Open Sans";
     font-weight: bold;
-    border: none;
-    padding: 1% 5%;
-    font-size: 1.5rem;
+    border: none !important;
+    padding: 2% 5% !important;
+    font-size: 1.2rem !important;
 
     @include mobile {
         margin-left: auto;

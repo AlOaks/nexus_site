@@ -473,9 +473,9 @@ option {
 }
 
 .visit-faq-btn {
-    background: $div-red;
+    background: $div-yellow;
     border: none;
-    color: white;
+    color: $font-blue;
     font-family: $sans;
     margin: $center;
     width: 22%;
@@ -492,8 +492,8 @@ option {
     }
 
     &:hover {
-        background: red;
-        color: white;
+        background: lighten($div-yellow, 20%);
+        color: $font-blue;
     }
 
     @include mobile {
@@ -518,6 +518,9 @@ option {
     }
 
     .visit-faq-btn {
+        background: $bg-blue;
+        color: white;
+
         @include mobile {
             position: absolute;
             bottom: 0;

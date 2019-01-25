@@ -48,7 +48,7 @@ get_header();
 
 
             <div class="team-container">
-                <h2 class="the-team-title">The Team</h2>
+                <h2 class="the-team-title"><?php _e('The Team', 'nexus'); ?></h2>
 
 				<?php 
 
