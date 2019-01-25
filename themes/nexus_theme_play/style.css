@@ -3567,7 +3567,7 @@ option {
 .backtosearch {
   position: absolute;
   left: 10%;
-  top: 5%;
+  top: 12vh;
   font-size: .8rem;
   color: gray; }
   .backtosearch:visited {
