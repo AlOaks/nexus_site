@@ -283,6 +283,10 @@ $('.duration-selector-single').change(function(e) {
 });
 
 
+$('.backtosearch').click(function() {
+    window.history.back();
+});
+
 
 
 })( jQuery );
