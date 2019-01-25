@@ -104,8 +104,12 @@ get_header();
 								<p id="feat-label"><?php _e('Featured', 'nexus'); ?></p>
 							</a>
 						</div>
-					<?php } ?>		
-				<?php endwhile; 
+					<?php } ?>	
+
+						
+				<?php 
+					the_posts_pagination();
+					endwhile; 
 				?>
 			</div>
 			<div id="more_programs">More Programs</div>
