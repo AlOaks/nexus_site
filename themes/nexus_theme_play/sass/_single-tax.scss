@@ -269,6 +269,15 @@
     margin-left: 0;
 }
 
+.pagination {
+    font-size: .8rem;
+    color: gray;
+
+    &:visited {
+        color: gray;
+    }
+}
+
 #more_programs {
     background: $div-red;
     width: 30%;

@@ -4664,6 +4664,12 @@ option {
   color: white;
   margin-left: 0; }
 
+.pagination {
+  font-size: .8rem;
+  color: gray; }
+  .pagination:visited {
+    color: gray; }
+
 #more_programs {
   background: #bd2020;
   width: 30%;

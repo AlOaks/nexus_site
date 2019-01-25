@@ -117,6 +117,9 @@ get_header();
 								}
 						endwhile; 
 
+						the_posts_pagination();
+
+
 						wp_reset_query();
 						?>
 							

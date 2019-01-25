@@ -108,8 +108,10 @@ get_header();
 
 						
 				<?php 
-					the_posts_pagination();
+					
 					endwhile; 
+					
+					the_posts_pagination();
 				?>
 			</div>
 			<div id="more_programs">More Programs</div>
