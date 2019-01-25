@@ -205,7 +205,7 @@ get_header();
 					</div>	
 
 				</section>
-				<a href="#"><?php _e('Back to Top', 'nexus'); ?></a>
+				<a href="#" class="backtop"><?php _e('Back to Top', 'nexus'); ?></a>
 				<div class="apply-div">
 					<a class="program-apply-btn"><?php _e('Apply Now', 'nexus'); ?></a>
 				</div>
