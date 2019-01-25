@@ -3715,7 +3715,13 @@ option {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  background: #15405A; }
+  .apply-div h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Open Sans"; }
 
 .program-container {
   background: #F3F5F8;
@@ -4667,8 +4673,16 @@ option {
 .pagination {
   font-size: .8rem;
   color: gray; }
-  .pagination:visited {
-    color: gray; }
+  .pagination .nav-links {
+    float: right;
+    margin-right: 7.5%;
+    margin-bottom: 3vh; }
+    .pagination .nav-links a {
+      color: #193F5C;
+      font-family: "Open Sans";
+      font-size: .9rem; }
+      .pagination .nav-links a:visited {
+        color: #193F5C; }
 
 #more_programs {
   background: #bd2020;

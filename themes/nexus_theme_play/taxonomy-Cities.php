@@ -114,8 +114,6 @@ get_header();
 				?>
 			</div>
 			<?php the_posts_pagination(); ?>
-
-			<div id="more_programs">More Programs</div>
 			<section class="start-journey-section">
 				<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
 				<p class="start-description"><?php _e('Let us help you fin the perfect fit!', 'nexus'); ?></p>

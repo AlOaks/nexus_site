@@ -218,6 +218,15 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 5vh;
+    background: $bg-blue;
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $sans;
+    }
+
 }
 
 .program-container {

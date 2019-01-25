@@ -273,8 +273,20 @@
     font-size: .8rem;
     color: gray;
 
-    &:visited {
-        color: gray;
+    .nav-links {
+        float: right;
+        margin-right: 7.5%;
+        margin-bottom: 3vh;
+
+        a {
+            color: $font-blue;
+            font-family: $sans;
+            font-size: .9rem;
+
+            &:visited {
+                color: $font-blue;
+            }
+        }
     }
 }
 

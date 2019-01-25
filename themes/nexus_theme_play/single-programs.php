@@ -208,6 +208,7 @@ get_header();
 				</section>
 				<a href="#" class="backtop"><?php _e('Back to Top', 'nexus'); ?></a>
 				<div class="apply-div">
+					<h2><?php _e('Do you like this program?', 'nexus'); ?></h2>
 					<a class="program-apply-btn"><?php _e('Apply Now', 'nexus'); ?></a>
 				</div>
 				<?php endwhile; ?>
