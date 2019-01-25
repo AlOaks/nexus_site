@@ -58,6 +58,12 @@
     position: absolute;
     left: 10%;
     top: 5%;
+    font-size: .8rem;
+    color: gray;
+
+    &:visited {
+        color: gray;
+    }
 }
 .program-name {
     position: relative;

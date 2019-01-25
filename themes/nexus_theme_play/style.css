@@ -3567,7 +3567,11 @@ option {
 .backtosearch {
   position: absolute;
   left: 10%;
-  top: 5%; }
+  top: 5%;
+  font-size: .8rem;
+  color: gray; }
+  .backtosearch:visited {
+    color: gray; }
 
 .program-name {
   position: relative;
