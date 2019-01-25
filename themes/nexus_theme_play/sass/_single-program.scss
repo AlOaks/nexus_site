@@ -223,8 +223,14 @@
     h2 {
         color: white;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: $sans;
+    }
+
+    button {
+        background: $div-yellow;
+        color: $font-blue;
+        margin-bottom: 3vh;
     }
 
 }

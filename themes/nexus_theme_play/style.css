@@ -3720,8 +3720,12 @@ option {
   .apply-div h2 {
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Open Sans"; }
+  .apply-div button {
+    background: #ffb419;
+    color: #193F5C;
+    margin-bottom: 3vh; }
 
 .program-container {
   background: #F3F5F8;
