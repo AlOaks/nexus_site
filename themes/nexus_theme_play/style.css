@@ -3067,26 +3067,6 @@ option {
   .single-post .footer-copy {
     background: #15405A !important; }
 
-.single-hero {
-  width: 85%;
-  height: auto;
-  margin: 0 auto 0 auto;
-  margin-top: 15vh;
-  position: relative; }
-  .single-hero img {
-    width: 100%;
-    height: 100%; }
-  .single-hero p {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    color: white;
-    width: 100%;
-    margin-bottom: 0;
-    bottom: 7px;
-    text-align: right;
-    padding: 1% 5%;
-    font-family: "Open Sans"; }
-
 .single-content {
   width: 75%;
   margin-left: auto;

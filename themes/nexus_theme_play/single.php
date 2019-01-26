@@ -16,13 +16,9 @@ get_header();
 		<?php
 		while ( have_posts() ) : the_post(); ?>
 
-				<div class="single-hero">
-					<?php the_post_thumbnail(); ?>
-					<p><?php the_date(); ?></p>
-				</div>
-
 				<div class="single-content">
 					<h1><?php the_title(); ?></h1>
+					<p><?php the_date(); ?></p>
 					<p><?php the_content(); ?></p>
 				</div>	
 			
