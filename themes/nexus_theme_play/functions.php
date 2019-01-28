@@ -253,11 +253,11 @@ function misha_filter_function() {
 
 	$filter = $_POST['categoryfilter'];
 	$cityfilter = $_POST['cityfilter'];
+
 	
 	$args = array(
 		'post_type' => 'programs',
-		'orderby' => 'date',
-		'order' => $_POST['date']
+		'orderby' => 'rand',
 	);
 
 	if ( isset( $_POST['categoryfilter'] ) ) {
