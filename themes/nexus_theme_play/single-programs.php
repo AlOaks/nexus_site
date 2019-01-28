@@ -42,7 +42,7 @@ get_header();
 		?>
 
 				<section class="program-hero">
-					<a class="backtosearch"><?php _e('< Back to Programs', 'nexus'); ?></a>
+					<a href="../../program" class="backtosearch"><?php _e('< Back to Programs', 'nexus'); ?></a>
 					
 					<div class="school-logo-container">
 						<img class="school-logo" src=<?php echo $logo; ?> />
@@ -108,9 +108,9 @@ get_header();
 
 						</li>
 					</ul>
-					<p class="disclaimer-accommodation"><?php _e('*For programs longer than 5 months, 4 weeks of accommodation is recommended.', 'nexus'); ?></p>
 				</section>
-
+				<p class="disclaimer-accommodation"><?php _e('*For programs longer than 5 months, 4 weeks of accommodation is recommended.', 'nexus'); ?></p>
+				<p class="disclaimer-accommodation"><?php _e('**Prices may vary according to your preferences and needs.', 'nexus'); ?></p>	
 				<section class="about-container school-container">
 					<div class="about-school">
 						<div class="school-video"><?php echo $school_vid; ?></div>

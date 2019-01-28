@@ -24,7 +24,16 @@
     width: 82%;
     margin: 0;
     margin-left: 9%;
-    font-size: .8rem;
+    font-size: .6rem;
+
+    &:first-of-type {
+        margin-top: 12vh;
+
+        @include mobile {
+            margin-top: 1vh;
+        }
+    }
+    
     
 }
 
@@ -322,6 +331,7 @@
         border-radius: 5px;
         font-family: $sans;
         margin-bottom: 3vh;
+        font-weight: bold;
 
         &:hover {
             background: lighten($div-yellow, 20%);
@@ -357,7 +367,6 @@
     justify-content: space-around;
     align-items: center;
     height: auto;
-    margin-top: 10vh;
     padding-bottom: 5vh;
 
     @include mobile {

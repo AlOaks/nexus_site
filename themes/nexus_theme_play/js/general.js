@@ -242,7 +242,6 @@ accommodation();
 price();
 
 
-$('.disclaimer-accommodation').hide();
 
 $('.duration-selector-single').change(function(e) {
     e.preventDefault;

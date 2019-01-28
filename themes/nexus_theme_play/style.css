@@ -3492,7 +3492,12 @@ option {
   width: 82%;
   margin: 0;
   margin-left: 9%;
-  font-size: .8rem; }
+  font-size: .6rem; }
+  .disclaimer-accommodation:first-of-type {
+    margin-top: 12vh; }
+    @media (max-width: 600px) {
+      .disclaimer-accommodation:first-of-type {
+        margin-top: 1vh; } }
 
 .school-logo-container {
   margin-top: 3%;
@@ -3760,7 +3765,8 @@ option {
   color: #193F5C;
   border-radius: 5px;
   font-family: "Open Sans";
-  margin-bottom: 3vh; }
+  margin-bottom: 3vh;
+  font-weight: bold; }
   .program-apply-btn:hover {
     background: #ffd67f; }
 
@@ -3790,7 +3796,6 @@ option {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  margin-top: 10vh;
   padding-bottom: 5vh; }
   @media (max-width: 600px) {
     .school-container {
