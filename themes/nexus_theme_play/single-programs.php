@@ -24,9 +24,8 @@ get_header();
 				$logo = CFS()->get('logo');
 				$accom = CFS()->get('accommodation_field');
 				$healthBool = CFS()->get('health');
-				$health;
 
-				if($healthBool === true) {
+				if($healthBool == 1) {
 					$health = 'Included';
 				} else {
 					$health = 'Not Included';
@@ -37,19 +36,17 @@ get_header();
 
 				$prog_img = get_the_post_thumbnail();
 
-				
-				$van_img = get_template_directory_uri().'/assets/images/vancouver.jpg';
-				$mon_img = get_template_directory_uri().'/assets/images/montreal.jpg';
-				$ott_img = get_template_directory_uri().'/assets/images/ottawa.jpg';
-				$win_img = get_template_directory_uri().'/assets/images/winnipeg.jpg';
-				$cal_img = get_template_directory_uri().'/assets/images/calgary.jpg';
-				$tor_img = get_template_directory_uri().'/assets/images/toronto.jpg';
-				$vic_img = get_template_directory_uri().'/assets/images/victoria.jpg';
-				
+				$city = get_terms('Cities');
+
+				echo '<pre>';
+				var_dump($city);
+				echo '</pre>';
+
+
 		?>
 
 				<section class="program-hero">
-					<a href="../../program" class="backtosearch"><?php _e('< Back to Programs', 'nexus'); ?></a>
+					<a href=<?php echo $city->link; ?> class="backtosearch"><?php _e('< Back to Programs', 'nexus'); ?></a>
 					
 					<div class="school-logo-container">
 						<img class="school-logo" src=<?php echo $logo; ?> />
