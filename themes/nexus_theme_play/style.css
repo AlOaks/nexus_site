@@ -2490,54 +2490,17 @@ option {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-#wpcf7-f47-o2 > form > p {
-  width: 80%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin-top: 3vh; }
-  @media (max-width: 600px) {
-    #wpcf7-f47-o2 > form > p {
-      padding-bottom: 5vh;
-      margin-bottom: 0; } }
-  #wpcf7-f47-o2 > form > p span {
-    position: absolute;
-    right: 0; }
+.wpforms-container {
+  width: 65%;
+  margin-left: 10%; }
 
-.wpcf7-submit {
-  width: 30%;
-  margin-left: 20%;
-  margin-bottom: 3vh;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: #ffb419 !important;
-  color: #193F5C !important;
-  font-family: "Open Sans";
-  font-weight: bold;
-  border: none !important;
-  padding: 2% 5% !important;
-  font-size: 1.2rem !important; }
-  @media (max-width: 600px) {
-    .wpcf7-submit {
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 0;
-      font-size: 1.5rem;
-      width: 50%; } }
-
-.wpcf7-text {
-  width: 70%; }
-  @media (max-width: 600px) {
-    .wpcf7-text {
-      width: 100%; } }
-
-.wpcf7-textarea {
-  width: 70%; }
-  @media (max-width: 600px) {
-    .wpcf7-textarea {
-      width: 100%; } }
+.wpforms-submit {
+  background: red;
+  width: 50%;
+  margin-left: 25%;
+  border: none;
+  color: white;
+  border-radius: 5px; }
 
 .info-title {
   margin-left: 10%;
@@ -5281,3 +5244,9 @@ article {
 
 .edvisor-row input, .edvisor-row textarea, .edvisor-row select {
   background: #F3F5F8; }
+
+.legal-page-form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #193F5C; }
