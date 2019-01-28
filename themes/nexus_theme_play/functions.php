@@ -257,7 +257,6 @@ function misha_filter_function() {
 	
 	$args = array(
 		'post_type' => 'programs',
-		'orderby' => 'rand',
 	);
 
 	if ( isset( $_POST['categoryfilter'] ) ) {
