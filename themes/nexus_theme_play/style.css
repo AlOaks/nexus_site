@@ -4524,9 +4524,9 @@ option {
   margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
   .type-programs-container a {
     text-decoration: none; }
     .type-programs-container a:visited {

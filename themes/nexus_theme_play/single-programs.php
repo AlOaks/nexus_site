@@ -22,6 +22,15 @@ get_header();
 				$school_info = CFS()->get('school_info');
 				$school_vid = CFS()->get('school_video');
 				$logo = CFS()->get('logo');
+				$accom = CFS()->get('accommodation_field');
+				$healthBool = CFS()->get('health');
+				$health;
+
+				if($healthBool === true) {
+					$health = 'Included';
+				} else {
+					$health = 'Not Included';
+				}
 
 				$postID = get_the_ID();
 				$prog_cities = wp_get_post_terms($postID, 'Cities', array('fields' => 'names'));
@@ -199,9 +208,9 @@ get_header();
 										<?php if($programType == 'idiomas' || $programType == 'language') { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="answer-strong accommodation-span"></span></li>
 										<?php } else { ?>
-											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?> <span class="answer-strong"><?php _e('4 weeks', 'nexus'); ?></span></li>
+											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?> <span class="answer-strong"><?php _e($accom, 'nexus'); ?></span></li>
 										<?php } ?>
-											<li><i class="fas fa-medkit"></i><?php _e( 'Health Insurance:', 'nexus'); ?> <span class="answer-strong"><?php _e('Included', 'nexus'); ?></span></li>
+											<li><i class="fas fa-medkit"></i><?php _e( 'Health Insurance:', 'nexus'); ?> <span class="answer-strong"><?php _e($health, 'nexus'); ?></span></li>
 						</ul>
 					</div>	
 
@@ -239,7 +248,7 @@ get_header();
 							$args = array(
 								'post_type' => 'programs', 
 								'posts_per_page' => 3,
-								'orderby' => rand,
+								'orderby' => 'rand',
 								'post__not_in' => array($id)
 							);
 							$recommended = new WP_query($args);
