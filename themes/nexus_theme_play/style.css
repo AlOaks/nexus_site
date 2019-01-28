@@ -2502,6 +2502,10 @@ option {
   color: white !important;
   border-radius: 5px !important; }
 
+.wpforms-field-label-inline {
+  color: white !important;
+  font-size: .8rem !important; }
+
 .info-title {
   margin-left: 10%;
   color: #193F5C;
