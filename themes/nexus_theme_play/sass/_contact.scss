@@ -71,17 +71,17 @@
 // WP FORM
 
 .wpforms-container {
-    width: 65%;
-    margin-left: 10%;
+    width: 65% !important;
+    margin-left: 10% !important;
 }
 
 .wpforms-submit {
-    background: red;
-    width: 50%;
-    margin-left: 25%;
-    border: none;
-    color: white;
-    border-radius: 5px;
+    background: $div-red !important;
+    width: 50% !important;
+    margin-left: 25% v;
+    border: none !important;
+    color: white !important;
+    border-radius: 5px !important;
 }
 
 
