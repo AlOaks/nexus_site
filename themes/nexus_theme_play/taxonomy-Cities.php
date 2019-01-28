@@ -73,6 +73,21 @@ get_header();
 			
 			<div class="type-programs-container">
 				<?php
+
+				$obj = $wp_query->get_queried_object();
+
+				$args= array(
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'Cities',
+							'field' => 'slug',
+							'terms' => $obj->name
+							)
+						),
+						'orderby' => 'rand'
+					);
+
+				query_posts($args);
 						
 				while (have_posts() ) : the_post(); ?>
 

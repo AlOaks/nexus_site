@@ -234,10 +234,13 @@ get_header();
 					<button class="peo-btn-left peo-btn"><i class="fas fa-chevron-left"></i></button>
 					<button class="peo-btn-right peo-btn"><i class="fas fa-chevron-right"></i></button>
 						<?php 
+
+						$id = get_the_ID();
 							$args = array(
 								'post_type' => 'programs', 
 								'posts_per_page' => 3,
-								'orderby' => rand
+								'orderby' => rand,
+								'post__not_in' => array($id)
 							);
 							$recommended = new WP_query($args);
 							
