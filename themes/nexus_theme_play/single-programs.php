@@ -36,17 +36,13 @@ get_header();
 
 				$prog_img = get_the_post_thumbnail();
 
-				$city = get_terms('Cities');
+			
 
-				echo '<pre>';
-				var_dump($city);
-				echo '</pre>';
-
-
+				
 		?>
 
 				<section class="program-hero">
-					<a href=<?php echo $city->link; ?> class="backtosearch"><?php _e('< Back to Programs', 'nexus'); ?></a>
+					<a class="backtosearch"><?php _e('< Back to Programs', 'nexus'); ?></a>
 					
 					<div class="school-logo-container">
 						<img class="school-logo" src=<?php echo $logo; ?> />
