@@ -110,7 +110,7 @@ get_header();
 					</ul>
 				</section>
 				<p class="disclaimer-accommodation"><?php _e('*For programs longer than 5 months, 4 weeks of accommodation is recommended.', 'nexus'); ?></p>
-				<p class="disclaimer-accommodation"><?php _e('**Prices may vary according to your preferences and needs.', 'nexus'); ?></p>	
+				<p class="disclaimer-accommodation"><?php _e('**Prices subject to change without notice.', 'nexus'); ?></p>	
 				<section class="about-container school-container">
 					<div class="about-school">
 						<div class="school-video"><?php echo $school_vid; ?></div>
