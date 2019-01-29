@@ -234,7 +234,7 @@ function price() {
 }
 
 function accommodation() {
-    $('.accommodation-span').html('<?php _e("4 weeks", "nexus"); ?>');
+    $('.accommodation-span').html('4');
 }
 
 
