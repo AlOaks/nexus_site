@@ -2723,6 +2723,9 @@ option {
 .popular-section {
   width: 65%;
   margin: 0 auto 0 auto; }
+  @media (max-width: 1024px) {
+    .popular-section {
+      width: 90%; } }
 
 .popular-slider {
   width: 100%;
@@ -2744,13 +2747,23 @@ option {
   padding: 0; }
   @media (max-width: 1024px) {
     .popular-btn {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      color: #FF2F49;
+      top: 45%; } }
 
 .bttn-right {
   right: -10%; }
+  @media (max-width: 1024px) {
+    .bttn-right {
+      right: 2%;
+      z-index: 12; } }
 
 .bttn-lft {
   left: -10%; }
+  @media (max-width: 1024px) {
+    .bttn-lft {
+      left: 2%;
+      z-index: 12; } }
 
 .slides {
   margin: 0;

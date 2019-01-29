@@ -80,7 +80,7 @@ get_header();
                         <div class="more-icon">
                             <img class="checklist-icon" src=<?php echo get_template_directory_uri().'/assets/images/checklist-icon.png'; ?>>
                             <h2 class="more-icon-title"><?php _e('Requirements', 'nexus'); ?></h2>
-                            <p class="more-icon-desc"><?php _e($require, 'nexus'); ?>.</p>                                       
+                            <p class="more-icon-desc"><?php _e($require, 'nexus'); ?></p>                                       
                         </div>
                     </div>
                 </div>

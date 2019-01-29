@@ -14,6 +14,9 @@
     width: 65%;
     margin: $center;
 
+    @include mobile {
+        width: 90%;
+    }
     
 }
 
@@ -47,16 +50,28 @@
 
     @include mobile {
         font-size: 2rem;
+        color: $font-red;
+        top: 45%;
     }
 
 }
 
 .bttn-right {
     right: -10%;
+
+    @include mobile {
+        right: 2%;
+        z-index: 12;
+    }
 }
 
 .bttn-lft {
     left: -10%;
+
+    @include mobile {
+        left: 2%;
+        z-index: 12;
+    }
 }
 
 
