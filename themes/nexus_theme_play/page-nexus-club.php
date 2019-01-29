@@ -44,12 +44,13 @@ get_header();
 							$video = CFS()->get('post_video');
 
 							if(empty($video)) { ?>
-								<a class="popular-title" href=<?php echo the_permalink(); ?>>
 									<li class="popular-item">
-										<?php the_post_thumbnail(); ?>
-										<p class="slider-item-title"><?php the_title(); ?></p>
+										<a class="popular-title" href=<?php echo the_permalink(); ?>>
+											<?php the_post_thumbnail(); ?>
+											<p class="slider-item-title"><?php the_title(); ?></p>
+										</a>
 									</li>
-								</a>
+								
 						<?php 
 							}
 							endwhile; 

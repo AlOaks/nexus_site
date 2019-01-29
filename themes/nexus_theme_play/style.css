@@ -2721,12 +2721,12 @@ option {
     background: #15405A; }
 
 .popular-section {
-  width: 85%;
+  width: 65%;
   margin: 0 auto 0 auto; }
 
 .popular-slider {
   width: 100%;
-  height: 80vh;
+  height: 27rem;
   margin-bottom: 5%;
   position: relative; }
   @media (max-width: 1024px) {
@@ -2735,23 +2735,22 @@ option {
 
 .popular-btn {
   position: absolute;
-  height: 100%;
   background: transparent;
   border: none;
   font-size: 4rem;
-  color: #FF2F49;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s; }
-  .popular-btn:hover {
-    background: rgba(255, 255, 255, 0.5);
-    -webkit-transition-duration: .5s;
-            transition-duration: .5s; }
+  color: #193F5C;
+  height: 10%;
+  top: 35%;
+  padding: 0; }
   @media (max-width: 1024px) {
     .popular-btn {
       font-size: 2rem; } }
 
 .bttn-right {
-  right: 0; }
+  right: -10%; }
+
+.bttn-lft {
+  left: -10%; }
 
 .slides {
   margin: 0;
@@ -2766,10 +2765,12 @@ option {
     display: none; }
   .slides li {
     list-style-type: none;
-    z-index: -1;
+    z-index: 10;
     position: relative;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
     .slides li p {
       position: absolute;
       bottom: 0;
@@ -2787,15 +2788,15 @@ option {
         .slides li p {
           font-size: 1.3rem; } }
     .slides li img {
-      max-width: 100vw;
-      width: 85vw;
+      width: 100%;
       height: 100%; }
 
 .popular-banner {
   position: absolute;
   background: #bd2020;
   color: white;
-  padding: 1% 2%; }
+  padding: 1% 2%;
+  z-index: 11; }
   @media (max-width: 1024px) {
     .popular-banner {
       font-size: 1rem; } }
@@ -4762,8 +4763,7 @@ option {
 
 .post-container-archive {
   width: 80%;
-  height: 65vh;
-  background: #F3F5F8; }
+  height: 65vh; }
   .post-container-archive img {
     width: 100%;
     height: 65%; }

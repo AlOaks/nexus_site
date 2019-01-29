@@ -38,12 +38,14 @@ get_header();
 							$video = CFS()->get('post_video');
 
 							if(empty($video)) { ?>
-							<a class="popular-title" href=<?php echo the_permalink(); ?>>
+							
 								<li class="popular-item">
-									<?php the_post_thumbnail(); ?>
-									<p class="slider-item-title"><?php the_title(); ?></p>
+									<a class="popular-title" href=<?php echo the_permalink(); ?>>
+										<?php the_post_thumbnail(); ?>
+										<p class="slider-item-title"><?php the_title(); ?></p>
+									</a>
 								</li>
-							</a>
+							
 						<?php 
 							}
 							endwhile; 
@@ -117,7 +119,6 @@ get_header();
 								}
 						endwhile; 
 
-						the_posts_pagination();
 
 
 						wp_reset_query();
@@ -126,7 +127,8 @@ get_header();
 						
 						
 				</section>
-				<div id="more_posts"><?php _e('More Posts', 'nexus'); ?></div>;
+				<?php the_posts_pagination(); ?>
+
 					
 		</section>
 		<section class="start-journey-section">

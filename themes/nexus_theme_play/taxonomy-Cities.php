@@ -72,6 +72,7 @@ get_header();
 			</form>
 			
 			<div class="type-programs-container">
+				
 				<?php
 
 				$obj = $wp_query->get_queried_object();
