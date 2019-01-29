@@ -253,21 +253,21 @@ $('.duration-selector-single').change(function(e) {
 
     if(val == 4) {  
         price = price4;
-        accommodation = 4 + ' weeks';
+        accommodation = 4;
 
     } else if(val == 8) {
         price = price8;
-        accommodation = 8 + ' weeks';
+        accommodation = 8;
 
 
     } else if(val == 12) {
         price = price12;
-        accommodation = 12 + ' weeks';
+        accommodation = 12;
 
 
     } else if(val == 24) {
         price = price24 + '*';
-        accommodation = 4 + ' weeks*';   
+        accommodation = 4;  
 
     }
 

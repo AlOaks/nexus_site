@@ -200,7 +200,7 @@ get_header();
 										</li>
 							<?php } ?>
 										<?php if($programType == 'idiomas' || $programType == 'language' || $programType == 'idioma') { ?>
-											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="answer-strong accommodation-span"></span></li>
+											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="answer-strong accommodation-span"></span> <span class="answer-strong"><?php _e('weeks', 'nexus'); ?></span></li>
 										<?php } else { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?> <span class="answer-strong"><?php _e($accom, 'nexus'); ?></span></li>
 										<?php } ?>
