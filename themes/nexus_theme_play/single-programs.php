@@ -157,7 +157,7 @@ get_header();
 					<div class="specifications-div">
 						<h2><?php _e('Specifications', 'nexus'); ?></h2>
 						<ul class="specs-list">
-							<?php if($programType == 'language' || $programType == 'idioma') { ?>
+							<?php if($programType == 'language' || $programType == 'idioma' || $programType == 'idiomas') { ?>
 							
 									<li>
 										<i class="far fa-hand-point-right"></i><?php _e('Choose between:', 'nexus'); ?>
@@ -191,6 +191,7 @@ get_header();
 											<ul class="answer-strong">
 											<?php 
 												$dates = CFS()->get('dates'); 
+
 												foreach($dates as $date) {
 													echo '<li>'.$date['date'].'</li>';
 												}											
@@ -198,7 +199,7 @@ get_header();
 											</ul>
 										</li>
 							<?php } ?>
-										<?php if($programType == 'idiomas' || $programType == 'language') { ?>
+										<?php if($programType == 'idiomas' || $programType == 'language' || $programType == 'idioma') { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:' ,'nexus'); ?> <span class="answer-strong accommodation-span"></span></li>
 										<?php } else { ?>
 											<li><i class="fas fa-home"></i><?php _e( 'Accommodation:', 'nexus'); ?> <span class="answer-strong"><?php _e($accom, 'nexus'); ?></span></li>
