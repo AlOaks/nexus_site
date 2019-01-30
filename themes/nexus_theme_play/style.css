@@ -4403,6 +4403,10 @@ option {
   margin-top: 0;
   margin-bottom: 3vh; }
 
+.swpm-login-widget-action-msg {
+  color: #ffb419;
+  font-size: 1.1rem; }
+
 .tax-Cities {
   background: white; }
   .tax-Cities .footer-copy {
