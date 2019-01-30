@@ -79,20 +79,13 @@
 // FRONT PAGE DESCRIPTION
 
 .front-page-description {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $font-blue;
-    font-family: $roboto;
-    background: $div-white;
-    width: 100%;
-    height: auto;
-
-    div {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem 0;
-    }
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    font-size: .0000000000001px;  
 }
 
 // PROGRAM SELECTORS

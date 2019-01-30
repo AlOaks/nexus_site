@@ -1596,18 +1596,13 @@ object {
         font-size: 2rem; } }
 
 .front-page-description {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #193F5C;
-  font-family: "Roboto";
-  background: #F3F5F8;
-  width: 100%;
-  height: auto; }
-  .front-page-description div {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 0; }
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: .0000000000001px; }
 
 .program-selectors {
   background: #bd2020;
