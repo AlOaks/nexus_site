@@ -21,6 +21,9 @@ get_header();
 
 			<section class="hero-image">
 				<div class="hero-overlay"></div>
+				<!-- <video class="hero-video" loop autoplay muted preload="true" playsinline="true" poster="video.jpg">
+					<source src="https://www.youtube.com/watch?v=5lWkZ-JaEOc">
+				</video> -->
 				<div class="hero-label-div">
 					<h1 class="hero-label"><?php _e('Want to', 'nexus'); ?> <br><span><?php _e('STUDY ABROAD?' ,'nexus'); ?> </span></h1>
 					<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>
