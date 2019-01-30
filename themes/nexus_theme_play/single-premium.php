@@ -41,8 +41,6 @@ get_header();
 			<ul class="share-list">
 				<li class="share-link"><a href="https://www.facebook.com/sharer.php"><i class="fab fa-facebook"></i></a></li>
 				<li class="share-link"><a href="https://www.linkedin.com/shareArticle"><i class="fab fa-linkedin"></i></a></li>
-				<li class="share-link"><a href="https://www.twitter.com/intent/tweet"><i class="fab fa-twitter"></i></a></li>
-				<li class="share-link"><a href="https://www.google.com/sharer.php"><i class="fab fa-google-plus"></i></a></li>
 			</ul>
 		</div>
 		<section class="comments-section">
