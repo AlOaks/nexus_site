@@ -4404,8 +4404,8 @@ option {
   margin-bottom: 3vh; }
 
 .swpm-login-widget-action-msg {
-  color: #ffb419;
-  font-size: 1.1rem; }
+  color: #ffb419 !important;
+  font-size: 1.1rem !important; }
 
 .tax-Cities {
   background: white; }
