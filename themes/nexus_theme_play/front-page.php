@@ -55,7 +55,9 @@ get_header();
 
 			
 			<section class="front-page-description">
-					<?php the_content(); ?>
+				<p>
+					<?php echo get_the_content(); ?>
+				</p>
 			</section>
 
 
