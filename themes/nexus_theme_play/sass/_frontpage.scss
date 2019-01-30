@@ -49,7 +49,7 @@
     font-family: $sans;
     color: white;
     z-index: 100;
-    width: 60%;
+    width: 80%;
     font-size: 2.3rem;
     text-align: center;
     font-style: italic;
@@ -68,7 +68,7 @@
     @include mobile {
         font-size: 1.3rem;
         margin-top: 10%;
-        width: 80%;
+        width: 90%;
 
         span {
             font-size: 2rem;
@@ -191,7 +191,7 @@ option {
 
 .why-title {
     color: $font-blue;
-    width: 40%;
+    width: 80%;
     text-align: center;
     margin: $center;
     padding-top: 3%;
@@ -210,7 +210,6 @@ option {
 
     @include mobile {
         font-size: 2rem;
-        width: 80%;
     }
 }
 
@@ -330,7 +329,7 @@ option {
 
 
 .why-canada-title, .curious-title {
-    width: 30%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
