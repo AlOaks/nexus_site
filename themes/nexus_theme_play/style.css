@@ -1600,7 +1600,10 @@ object {
   font-size: 1.2rem;
   color: #193F5C;
   font-family: "Roboto";
-  background: #F3F5F8; }
+  background: #F3F5F8;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .program-selectors {
   background: #bd2020;

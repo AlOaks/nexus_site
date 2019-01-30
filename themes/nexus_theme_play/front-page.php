@@ -30,10 +30,6 @@ get_header();
 				</div>
 			</section>
 
-			<section class="front-page-description">
-				<?php the_content(); ?>
-			</section>
-
 
 			<section class="program-selectors">
 				<div class="programs-form">
@@ -56,6 +52,12 @@ get_header();
 					<button class="submit-btn-front"><?php _e('Search Programs', 'nexus'); ?></button>
 				</div>
 			</section>
+
+			
+			<section class="front-page-description">
+				<?php the_content(); ?>
+			</section>
+
 
 
 			<section class="why-nexus-section">
