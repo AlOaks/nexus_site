@@ -1595,6 +1595,13 @@ object {
       .hero-label span {
         font-size: 2rem; } }
 
+.front-page-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #193F5C;
+  font-family: "Roboto";
+  background: #F3F5F8; }
+
 .program-selectors {
   background: #bd2020;
   height: 15vh;
