@@ -241,6 +241,14 @@ option {
             display: none;
         }
     }
+
+    @include tablet {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 }
 
 .why-btn {
@@ -285,6 +293,11 @@ option {
         width: 100%;
         flex-shrink: 0;
     }
+
+    @include tablet {
+        width: 100%;
+        flex-shrink: 0;
+    }
 }
 
 .why-item-title {
@@ -299,6 +312,10 @@ option {
     font-size: 1.2rem;
 
     @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
         font-size: 1rem;
     }
 }
@@ -327,7 +344,11 @@ option {
     }
 
     @include mobile {
-        width: 80%;
+        width: 70%;
+    }
+    
+    @include tablet {
+        width: 60%;
     }
 }
 
@@ -492,6 +513,10 @@ option {
             content: none;
         }
     }
+
+    @include tablet {
+        width: 70%;
+    }
 }
 
 .visit-faq-btn {
@@ -521,6 +546,10 @@ option {
     @include mobile {
         width: 70%;
         
+    }
+
+    @include tablet {
+        width: 60%;
     }
 }
 
@@ -685,6 +714,10 @@ option {
         display: none;
 
     }
+
+    @include tablet {
+        display: block;
+    }
 }
 
 .city-link-front {
@@ -713,6 +746,11 @@ option {
         position: relative;
         top: auto;
         padding: 1%;
+    }
+
+    @include tablet {
+        font-size: 2rem;
+        display: block;
     }
 }
 

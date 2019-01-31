@@ -34,6 +34,10 @@
         height: 30vh;
     }
 
+    @include tablet {
+        height: 27rem;
+    }
+
 }
 
 .popular-btn {
@@ -278,7 +282,9 @@
         width: 100%;
     }
 
-    
+    @include tablet {
+        width: 45%;
+    }
 
 
     h1 {
@@ -307,7 +313,7 @@
     h1 {
         margin-bottom: 0;
         margin-top: -1rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     p {

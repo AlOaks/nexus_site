@@ -17,6 +17,10 @@
         padding-bottom: 0;
     }
 
+    @include tablet {
+        font-size: 2rem;
+    }
+
 }
 
 .disclaimer-accommodation {
@@ -155,6 +159,10 @@
             @include mobile {
                 font-size: .7rem;
             }
+
+            @include tablet {
+                font-size: .8rem;
+            }
             
         }
 
@@ -165,6 +173,10 @@
             font-weight: 600;
 
             @include mobile {
+                font-size: .8rem;
+            }
+
+            @include tablet {
                 font-size: .8rem;
             }
         }
@@ -288,6 +300,10 @@
         text-align: center;
     }
 
+    @include tablet {
+        font-size: 1.5rem !important;
+    }
+
     &::before {
         content: "";
         border-bottom: 3px solid #FFC54C;
@@ -321,7 +337,14 @@
         font-family: $sans;
         line-height: 36px;
         margin: 0;
+
+        @include tablet {
+            font-size: .8rem;
+            line-height: 27px;
+        }
     }
+
+    
 }
 
 .program-apply-btn {
@@ -433,6 +456,10 @@
             font-size: 1.5rem;
         }
 
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
         &::before {
             content: "";
             border-bottom: 3px solid #FFC54C;
@@ -450,9 +477,12 @@
         list-style-type: none;
         margin-bottom: 1vh;
         
-
         i {
             margin-right: 2vw;
+        }
+
+        @include tablet {
+            font-size: .8rem;
         }
     }
 }
@@ -461,6 +491,10 @@
     ul {
         @include mobile {
             margin-left: 0;
+            padding-left: 0;
+        }
+
+        @include tablet {
             padding-left: 0;
         }
     }
@@ -492,6 +526,14 @@
         ul {
             margin-left: 0;
             padding-left: 0;
+        }
+    }
+
+    @include tablet {
+        ul {
+            li {
+                font-size: .8rem;
+            }
         }
     }
 }
@@ -604,6 +646,10 @@
     position: relative;
     height: 20rem;
 
+    @include tablet {
+        height: 16rem;
+    }
+
 
     @include mobile {
         flex-shrink: 0;
@@ -613,6 +659,10 @@
     img {
         height: 20rem;
         width: 100%;
+
+        @include tablet {
+            height: 16rem;
+        }
     }
 
     p {
@@ -638,6 +688,10 @@
 .people-school-name {
     height: 10%;
     font-size: 1.2rem;
+
+    @include tablet {
+        font-size: .7rem;
+    }
     
 }
 
@@ -645,6 +699,10 @@
     font-weight: bold;
     height: 25%;
     font-size: 1.5rem;
+
+    @include tablet {
+        font-size: .8rem;
+    }
     
     a {
         text-decoration: none;
@@ -663,6 +721,10 @@
 .people-prg-category {
     height: 15%;
     font-size: 1.2rem;
+
+    @include tablet {
+        font-size: .7rem;
+    }
 }
 
 

@@ -81,6 +81,10 @@
     @include mobile {
         width: 85%;
     }
+
+    @include tablet {
+        width: 80%;
+    }
     
 }
 
@@ -106,7 +110,9 @@
         width: 100%;
     }
 
-
+    @include tablet {
+        margin-left: 3%;
+    }
 
     h3 {
         margin-top: 0;
@@ -128,6 +134,10 @@
 
         @include mobile {
             line-height: 1.4rem;
+        }
+
+        @include tablet {
+            font-size: .8rem;
         }
     }
 

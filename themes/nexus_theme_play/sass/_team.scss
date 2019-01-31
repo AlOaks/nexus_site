@@ -50,6 +50,11 @@
         @include mobile {
             width:100%;
         }
+
+        @include tablet {
+            font-size: .8rem;
+            line-height: 20px;
+        }
     }
 
    
