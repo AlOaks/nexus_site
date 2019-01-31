@@ -260,7 +260,7 @@
     }
 
     @include tablet {
-        flex-direction: none;
+        flex-direction: column;
         justify-content: space-between;
 
     }

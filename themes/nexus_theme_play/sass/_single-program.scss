@@ -222,6 +222,10 @@
         font-weight: bold;
         width: 100%;
 
+        @include tablet {
+            font-size: .8rem;
+        }
+
         @include mobile {
             font-size: .8rem;
         }
@@ -531,6 +535,7 @@
 
     @include tablet {
         ul {
+            padding-left: 0;
             li {
                 font-size: .8rem;
             }

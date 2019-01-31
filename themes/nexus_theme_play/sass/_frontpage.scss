@@ -260,6 +260,10 @@ option {
     @include mobile {
         display: block;
     }
+
+    @include tablet {
+        display: block;
+    }
 }
 
 .fa-chevron-left, .fa-chevron-right {

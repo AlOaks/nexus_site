@@ -30,11 +30,11 @@
     width: 75%;
 
     @include mobile {
-        width: 100%;
+        width: 80%;
     }
 
     @include tablet {
-        width: 50%;
+        width: 90%;
     }
 }
 
@@ -191,7 +191,7 @@
         width: 100%;
     }
 
-    @include mobile {
+    @include tablet {
         width: 65%;
     }
 
@@ -326,7 +326,7 @@
         right: auto;
     }
 
-    @include mobile {
+    @include tablet {
         right: 40%;
     }
 }
@@ -338,7 +338,7 @@
         right: auto;
     }
 
-    @include mobile {
+    @include tablet {
         right: 43%;
     }
 }
@@ -350,7 +350,7 @@
         right: auto;
     }
 
-    @include mobile {
+    @include tablet {
         right: 46%;
     }
 }
