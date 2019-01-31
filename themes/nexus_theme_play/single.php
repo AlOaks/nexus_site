@@ -18,7 +18,7 @@ get_header();
 
 				<div class="single-content">
 					<h1><?php the_title(); ?></h1>
-					<p><?php the_date(); ?></p>
+					<p class="post-date"><?php the_date(); ?></p>
 					<p><?php the_content(); ?></p>
 				</div>	
 			

@@ -3181,6 +3181,9 @@ option {
     margin-left: 0;
     font-family: "Open Sans"; }
 
+.post-date {
+  text-transform: capitalize; }
+
 .share-links-container {
   width: 50%;
   margin: 0 auto 0 auto;
