@@ -27,7 +27,7 @@ get_header();
                         <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/01@2x.png'; ?> />
                         <div class="div-content">
                             <h3 class="div-title"><?php _e('Why Nexus?', 'nexus'); ?></h3>
-                            <p class="div-description"><?php _e('We believe in bringing life changing opportunities to everyone. The way we do it is by providing personalized education consulting services, by listening and understanding the needs of our clients and by offering the necessary services for anyone to complete their dream of studying in Canada.', 'nexus'); ?>.</p>
+                            <p class="div-description"><?php _e('We believe in bringing life changing opportunities to everyone. The way we do it is by providing personalized education consulting services, by listening and understanding the needs of our clients and by offering the necessary services for anyone to complete their dream of studying in Canada', 'nexus'); ?>.</p>
                             <a class="learn-btn"><?php _e('Learn More', 'nexus'); ?></a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ get_header();
                         <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/03@2x.png'; ?> />
                         <div class="div-content">
                             <h3 class="div-title"><?php _e('Document Processing', 'nexus'); ?></h3>
-                            <p class="div-description"><?php _e('Yes, we do that as well! Nexus do all the document processing that you could need for studying in Canada. For getting your required visa to applying to the school or program that you choose.', 'nexus'); ?></p>
+                            <p class="div-description"><?php _e('Yes, we do that as well! Nexus do all the document processing that you could need for studying in Canada. For getting your required visa to applying to the school or program that you choose', 'nexus'); ?></p>
                             <a class="learn-btn"><?php _e('Learn More', 'nexus'); ?></a>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ get_header();
                     <div class="step-container">
                         <div class="div-content">
                             <h3 class="div-title"><?php _e('Accommodation', 'nexus'); ?></h3>
-                            <p class="div-description"><?php _e('Cause we understand that finding the right place to live while you study is as important as the studying program itself! Nexus will help you find the right accommodation for you.', 'nexus'); ?></p>
+                            <p class="div-description"><?php _e('Cause we understand that finding the right place to live while you study is as important as the studying program itself! Nexus will help you find the right accommodation for you', 'nexus'); ?></p>
                             <a class="learn-btn"><?php _e('Learn More', 'nexus'); ?></a>
                         </div>
                         <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/04@2x.png'; ?> />
@@ -71,7 +71,7 @@ get_header();
                         <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/05@2x.png'; ?> />
                         <div class="div-content">
                             <h3 class="div-title"><?php _e('Living in Canada', 'nexus'); ?></h3>
-                            <p class="div-description"><?php _e('Not only we help you prior your arrival, but also while you´re studying. Nexus services include providing information that will help you in your adaptation process in Canada. We also will keep in touch with you to help you with anything you need.', 'nexus'); ?></p>
+                            <p class="div-description"><?php _e('Not only we help you prior your arrival, but also while you´re studying. Nexus services include providing information that will help you in your adaptation process in Canada. We also will keep in touch with you to help you with anything you need', 'nexus'); ?></p>
                             <a class="learn-btn"><?php _e('Learn More', 'nexus'); ?></a>
                         </div>
                     </div>
