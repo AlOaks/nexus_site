@@ -83,7 +83,7 @@ get_header();
 		<section class="start-journey-section">
 			<h1 class="start-title"><?php _e('Want to read even better posts?', 'nexus'); ?></h1>
 			<p class="start-description"><?php _e('Get access to our club member exclusive content.','nexus'); ?></p>
-			<a class="contact-btn"><?php _e('Join Nexus Club', 'nexus'); ?></a>
+			<a class="contact-btn join-footer"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

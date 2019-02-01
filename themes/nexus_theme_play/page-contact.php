@@ -51,7 +51,7 @@ get_header();
             <section class="start-journey-section">
 			    <h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
 			    <p class="start-description"><?php _e('We have more to offer', 'nexus'); ?></p>
-			    <a class="contact-btn"><?php _e('Join Nexus Club', 'nexus'); ?></a>
+			    <a class="contact-btn join-footer"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
