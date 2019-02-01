@@ -54,7 +54,8 @@
 
     a {
         color: $font-blue;
-        background: $div-yellow;
+        background: linear-gradient(to left,$div-yellow, $div-yellow-dark);
+        transition-duration: 2s;
         border: none;
         font-size: 1.2rem;
         font-family: $sans;
@@ -64,7 +65,8 @@
         font-weight: bold;
 
         &:hover {
-            background: lighten($div-yellow, 10%);
+            background: linear-gradient(to left,$div-yellow-dark, $div-yellow);
+            transition-duration: 2s;
         }
     }
 }

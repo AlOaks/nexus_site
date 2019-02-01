@@ -1289,7 +1289,10 @@ object {
         width: 85%; } }
   .start-journey-section a {
     color: #193F5C;
-    background: #ffb419;
+    background: -webkit-gradient(linear, right top, left top, from(#ffb419), to(#f66f00));
+    background: linear-gradient(to left, #ffb419, #f66f00);
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
     border: none;
     font-size: 1.2rem;
     font-family: "Open Sans";
@@ -1298,7 +1301,10 @@ object {
     border-radius: 5px;
     font-weight: bold; }
     .start-journey-section a:hover {
-      background: #ffc54c; }
+      background: -webkit-gradient(linear, right top, left top, from(#f66f00), to(#ffb419));
+      background: linear-gradient(to left, #f66f00, #ffb419);
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s; }
 
 .general-info {
   background: white;
