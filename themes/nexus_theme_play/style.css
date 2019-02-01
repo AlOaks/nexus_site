@@ -5483,6 +5483,15 @@ article {
 .edvisor-row input, .edvisor-row textarea, .edvisor-row select {
   background: #F3F5F8; }
 
+.registration-page-form .wpforms-field-label {
+  color: #193F5C; }
+
+.registration-page-form .wpforms-form input[type=text] {
+  background: #F3F5F8; }
+
+.registration-page-form .wpforms-field-label-inline {
+  color: #193F5C !important; }
+
 .legal-page-form {
   width: 90%;
   margin-left: auto;

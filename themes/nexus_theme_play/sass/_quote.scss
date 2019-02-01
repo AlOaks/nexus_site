@@ -42,6 +42,18 @@
 
 // REGISTRATION FORM
 
-.wpforms-field-label {
-    
+
+.registration-page-form {
+
+    .wpforms-field-label {
+        color: $font-blue;
+    }
+
+    .wpforms-form input[type=text] {
+        background: $div-white;
+    }
+
+    .wpforms-field-label-inline {
+        color: $font-blue !important;
+    }
 }
