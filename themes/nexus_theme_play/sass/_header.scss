@@ -322,35 +322,41 @@
 .wpml-ls-item-en {
     right: 26%;
 
+    
+    @include tablet {
+        right: 40%;
+    }
+
     @include mobile {
         right: auto;
     }
 
-    @include tablet {
-        right: 40%;
-    }
 }
 
 .wpml-ls-item-pt-br {
     right: 30%; 
 
+    
+    @include tablet {
+        right: 43%;
+    }
+
     @include mobile {
         right: auto;
     }
 
-    @include tablet {
-        right: 43%;
-    }
 }
 
 .wpml-ls-item-es {
     right: 28%;
 
+    
+    @include tablet {
+        right: 46%;
+    }
+
     @include mobile {
         right: auto;
     }
 
-    @include tablet {
-        right: 46%;
-    }
 }

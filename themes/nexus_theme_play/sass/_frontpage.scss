@@ -569,7 +569,7 @@ option {
     margin-bottom: 5vh;
 
     @include mobile {
-        min-height: 75vh;
+        min-height: 55vh;
     }
 
     .visit-faq-btn {
@@ -577,7 +577,7 @@ option {
         color: white;
 
         @include mobile {
-            position: absolute;
+            margin-top: 2vh;
             bottom: 0;
         }
     }
@@ -714,13 +714,13 @@ option {
     transition-duration: .5s;
     border-radius: 5px;
 
+    @include tablet {
+        display: block;
+    }
+
     @include mobile {
         display: none;
 
-    }
-
-    @include tablet {
-        display: block;
     }
 }
 
@@ -743,18 +743,20 @@ option {
     display: none;
     transition-duration: .5s;
 
-    @include mobile {
-        display: block;
-        font-size: 1rem;
-        color: $font-blue;
-        position: relative;
-        top: auto;
-        padding: 1%;
-    }
+    
 
     @include tablet {
         font-size: 2rem;
         display: block;
+    }
+
+    @include mobile {
+        display: block;
+        font-size: 1.3rem;
+        color: $font-blue;
+        position: relative;
+        top: auto;
+        padding: 1%;
     }
 }
 

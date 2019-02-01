@@ -1211,30 +1211,30 @@ object {
 
 .wpml-ls-item-en {
   right: 26%; }
-  @media (max-width: 705px) {
-    .wpml-ls-item-en {
-      right: auto; } }
   @media (max-width: 1024px) {
     .wpml-ls-item-en {
       right: 40%; } }
+  @media (max-width: 705px) {
+    .wpml-ls-item-en {
+      right: auto; } }
 
 .wpml-ls-item-pt-br {
   right: 30%; }
-  @media (max-width: 705px) {
-    .wpml-ls-item-pt-br {
-      right: auto; } }
   @media (max-width: 1024px) {
     .wpml-ls-item-pt-br {
       right: 43%; } }
+  @media (max-width: 705px) {
+    .wpml-ls-item-pt-br {
+      right: auto; } }
 
 .wpml-ls-item-es {
   right: 28%; }
-  @media (max-width: 705px) {
-    .wpml-ls-item-es {
-      right: auto; } }
   @media (max-width: 1024px) {
     .wpml-ls-item-es {
       right: 46%; } }
+  @media (max-width: 705px) {
+    .wpml-ls-item-es {
+      right: auto; } }
 
 .start-journey-section {
   width: 100%;
@@ -2068,13 +2068,13 @@ option {
   margin-bottom: 5vh; }
   @media (max-width: 705px) {
     .choose-city-section {
-      min-height: 75vh; } }
+      min-height: 55vh; } }
   .choose-city-section .visit-faq-btn {
     background: #15405A;
     color: white; }
     @media (max-width: 705px) {
       .choose-city-section .visit-faq-btn {
-        position: absolute;
+        margin-top: 2vh;
         bottom: 0; } }
 
 .cities-container-front {
@@ -2177,12 +2177,12 @@ option {
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
   border-radius: 5px; }
-  @media (max-width: 705px) {
-    .black-ovrlay-city {
-      display: none; } }
   @media (max-width: 1024px) {
     .black-ovrlay-city {
       display: block; } }
+  @media (max-width: 705px) {
+    .black-ovrlay-city {
+      display: none; } }
 
 .city-link-front {
   text-decoration: none; }
@@ -2201,18 +2201,18 @@ option {
   display: none;
   -webkit-transition-duration: .5s;
           transition-duration: .5s; }
-  @media (max-width: 705px) {
-    .city-name-front {
-      display: block;
-      font-size: 1rem;
-      color: #193F5C;
-      position: relative;
-      top: auto;
-      padding: 1%; } }
   @media (max-width: 1024px) {
     .city-name-front {
       font-size: 2rem;
       display: block; } }
+  @media (max-width: 705px) {
+    .city-name-front {
+      display: block;
+      font-size: 1.3rem;
+      color: #193F5C;
+      position: relative;
+      top: auto;
+      padding: 1%; } }
 
 .choose-title {
   text-align: center;
