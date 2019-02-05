@@ -180,3 +180,119 @@ function team_member_pt() {
 
 }
 add_action( 'init', 'team_member_pt', 0 );
+
+// Register Custom Post Type
+function landing_pages() {
+
+	$labels = array(
+		'name'                  => _x( 'Landing Pages', 'Post Type General Name', 'nexus' ),
+		'singular_name'         => _x( 'Landing Page', 'Post Type Singular Name', 'nexus' ),
+		'menu_name'             => __( 'Landing Pages', 'nexus' ),
+		'name_admin_bar'        => __( 'Landing Page', 'nexus' ),
+		'archives'              => __( 'Page Archives', 'nexus' ),
+		'attributes'            => __( 'Page Attributes', 'nexus' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'nexus' ),
+		'all_items'             => __( 'All Landing Pages', 'nexus' ),
+		'add_new_item'          => __( 'Add New Landing Page', 'nexus' ),
+		'add_new'               => __( 'Add New', 'nexus' ),
+		'new_item'              => __( 'New Page', 'nexus' ),
+		'edit_item'             => __( 'Edit Page', 'nexus' ),
+		'update_item'           => __( 'Update Page', 'nexus' ),
+		'view_item'             => __( 'View Page', 'nexus' ),
+		'view_items'            => __( 'View Pages', 'nexus' ),
+		'search_items'          => __( 'Search Page', 'nexus' ),
+		'not_found'             => __( 'Not found', 'nexus' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'nexus' ),
+		'featured_image'        => __( 'Landing Page Hero Image', 'nexus' ),
+		'set_featured_image'    => __( 'Set Hero Image', 'nexus' ),
+		'remove_featured_image' => __( 'Remove Hero Image', 'nexus' ),
+		'use_featured_image'    => __( 'Use as Hero Image', 'nexus' ),
+		'insert_into_item'      => __( 'Insert into page', 'nexus' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this page', 'nexus' ),
+		'items_list'            => __( 'Pages list', 'nexus' ),
+		'items_list_navigation' => __( 'Page list navigation', 'nexus' ),
+		'filter_items_list'     => __( 'Filter Pages List', 'nexus' ),
+	);
+	$args = array(
+		'label'                 => __( 'Landing Page', 'nexus' ),
+		'description'           => __( 'Landing Pages', 'nexus' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+		'show_in_rest'          => true,
+		'menu_icon'				=> 'dashicons-welcome-widgets-menus'
+	);
+	register_post_type( 'landing_pages', $args );
+
+}
+add_action( 'init', 'landing_pages', 0 );
+
+// Register Custom Post Type
+function student_reviews() {
+
+	$labels = array(
+		'name'                  => _x( 'Student Reviews', 'Post Type General Name', 'nexus' ),
+		'singular_name'         => _x( 'Student Review', 'Post Type Singular Name', 'nexus' ),
+		'menu_name'             => __( 'Student Reviews', 'nexus' ),
+		'name_admin_bar'        => __( 'Student Reviews', 'nexus' ),
+		'archives'              => __( 'Page Archives', 'nexus' ),
+		'attributes'            => __( 'Page Attributes', 'nexus' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'nexus' ),
+		'all_items'             => __( 'All Reviews', 'nexus' ),
+		'add_new_item'          => __( 'Add New Review', 'nexus' ),
+		'add_new'               => __( 'Add New', 'nexus' ),
+		'new_item'              => __( 'New Review', 'nexus' ),
+		'edit_item'             => __( 'Edit Review', 'nexus' ),
+		'update_item'           => __( 'Update Review', 'nexus' ),
+		'view_item'             => __( 'View Review', 'nexus' ),
+		'view_items'            => __( 'View Reviews', 'nexus' ),
+		'search_items'          => __( 'Search Review', 'nexus' ),
+		'not_found'             => __( 'Not found', 'nexus' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'nexus' ),
+		'featured_image'        => __( 'Student Photo', 'nexus' ),
+		'set_featured_image'    => __( 'Set Photo', 'nexus' ),
+		'remove_featured_image' => __( 'Remove Student Photo', 'nexus' ),
+		'use_featured_image'    => __( 'Use as Photo', 'nexus' ),
+		'insert_into_item'      => __( 'Insert into page', 'nexus' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this page', 'nexus' ),
+		'items_list'            => __( 'Pages list', 'nexus' ),
+		'items_list_navigation' => __( 'Page list navigation', 'nexus' ),
+		'filter_items_list'     => __( 'Filter Pages List', 'nexus' ),
+	);
+	$args = array(
+		'label'                 => __( 'Student Review', 'nexus' ),
+		'description'           => __( 'Students Review', 'nexus' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-nametag',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+		'show_in_rest'          => true,
+	);
+	register_post_type( 'student_reviews', $args );
+
+}
+add_action( 'init', 'student_reviews', 0 );
