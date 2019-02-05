@@ -4168,7 +4168,8 @@ option {
       -ms-flex-align: center;
           align-items: center;
   height: 70vh;
-  position: relative; }
+  position: relative;
+  margin-bottom: 5%; }
   @media (max-width: 705px) {
     .people-likes {
       height: auto; } }
