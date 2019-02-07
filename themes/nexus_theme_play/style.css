@@ -5808,3 +5808,183 @@ article {
       background: linear-gradient(to left, #f66f00, #ffb419);
       -webkit-transition-duration: 2s;
               transition-duration: 2s; }
+
+.page-template-page-bcit {
+  margin-top: -46px !important; }
+
+.bcit-main {
+  width: 100%; }
+
+.bcit-hero {
+  height: 100vh;
+  position: relative; }
+  .bcit-hero img {
+    width: 100%;
+    height: 100%; }
+  .bcit-hero .blk-ovrly {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 10; }
+
+.bcit-header {
+  position: absolute;
+  bottom: 1.8%;
+  width: 70%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 11;
+  left: 15%; }
+  .bcit-header .bcit-header-title {
+    width: 30%;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+    .bcit-header .bcit-header-title p {
+      font-size: 3.2rem;
+      margin-top: 8%;
+      color: white;
+      font-family: "Roboto";
+      text-transform: uppercase; }
+  .bcit-header .bcit-header-form {
+    width: 45%; }
+    .bcit-header .bcit-header-form .bcit-form-button {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 5% 5% 10% 5%;
+      width: 80% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 0 !important;
+      font-family: "Roboto"; }
+      .bcit-header .bcit-header-form .bcit-form-button .wpforms-field-large {
+        border-radius: 20px !important; }
+      .bcit-header .bcit-header-form .bcit-form-button .wpforms-title {
+        text-transform: capitalize !important;
+        color: black !important;
+        font-weight: 600 !important; }
+    .bcit-header .bcit-header-form .bcit-form-btn {
+      background: #15405A !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      border-radius: 20px !important;
+      margin-top: 10% !important; }
+
+.learn-more-bcit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  height: 10vh;
+  background: #F3F5F8;
+  margin-top: 0; }
+
+.block-info {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5%; }
+  .block-info img {
+    width: 45%;
+    height: auto; }
+
+.sessions-details p {
+  font-weight: bold; }
+  .sessions-details p:first-of-type {
+    font-size: 1.5rem; }
+
+.sessions-details, .popu-list, .details-list {
+  width: 45%;
+  font-family: "Open Sans"; }
+
+.bcit-site-info {
+  width: 100%;
+  height: 30vh;
+  background: url("../../themes/nexus_theme_play/assets/images/whistler.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .bcit-site-info p, .bcit-site-info a {
+    z-index: 11; }
+  .bcit-site-info p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    font-weight: 600; }
+  .bcit-site-info a {
+    background: #15405A;
+    border-radius: 20px;
+    padding: 1%;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 600;
+    width: 15%;
+    text-align: center;
+    text-decoration: none; }
+    .bcit-site-info a:visited {
+      color: white; }
+
+.footer-ovrly {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; }
+
+.copyright {
+  background: #15405A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .copyright p {
+    color: white; }

@@ -39,11 +39,20 @@
 								<h1 class="landing-page-title"><?php _e(the_title(), 'nexus'); ?></h1>
 							</div>
 							<div class="landing-page-container">
-								<?php while ( have_posts() ) : the_post(); ?>
-									
 
+								<?php 
+									$video = CFS()->get('landing_video');
+									$form = CFS()->get('landing_form');
+
+								while ( have_posts() ) : the_post(); ?>
 									<?php the_content(); ?>
+									<?php if(!empty($video)) { 
+										echo $video;
+									}
 									
+									if(!empty($form)) {
+										echo $form;
+									} ?>	
 								<?php
 								endwhile; // End of the loop.
 								?>
