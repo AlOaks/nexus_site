@@ -5851,7 +5851,7 @@ article {
     -ms-flex-item-align: start;
         align-self: flex-start; }
     .bcit-header .bcit-header-title p {
-      font-size: 3.2rem;
+      font-size: 3rem;
       margin-top: 8%;
       color: white;
       font-family: "Roboto";
@@ -5914,6 +5914,9 @@ article {
   .block-info img {
     width: 45%;
     height: auto; }
+  .block-info p {
+    font-weight: bold;
+    font-size: 1.2rem; }
 
 .sessions-details p {
   font-weight: bold; }
@@ -5922,7 +5925,7 @@ article {
 
 .sessions-details, .popu-list, .details-list {
   width: 45%;
-  font-family: "Open Sans"; }
+  font-family: "Roboto"; }
 
 .bcit-site-info {
   width: 100%;

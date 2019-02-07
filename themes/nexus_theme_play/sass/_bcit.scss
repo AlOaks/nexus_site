@@ -43,7 +43,7 @@
         align-self: flex-start;
 
         p {
-            font-size: 3.2rem;
+            font-size: 3rem;
             margin-top: 8%;
             color: white;
             font-family: $roboto;
@@ -111,6 +111,11 @@
         width: 45%;
         height: auto;
     }
+
+    p {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
 }
 
 .sessions-details {
@@ -127,7 +132,7 @@
 
 .sessions-details, .popu-list, .details-list {
     width: 45%;
-    font-family: $sans;
+    font-family: $roboto;
 }
 
 
