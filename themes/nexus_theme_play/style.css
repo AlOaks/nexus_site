@@ -5852,7 +5852,7 @@ article {
         align-self: flex-start; }
     .bcit-header .bcit-header-title p {
       font-size: 3rem;
-      margin-top: 8%;
+      margin-top: 0;
       color: white;
       font-family: "Roboto";
       text-transform: uppercase; }
