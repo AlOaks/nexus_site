@@ -40,22 +40,9 @@
 					</section>
 					<p class="learn-more-bcit"><?php _e('Know more about ', 'nexus'); ?> <? echo $schoolName; ?></p>
 
-					<? 
-						$date = CFS()->get('info_session_date');
-						$address = CFS()->get('info_session_address');
-						$time = CFS()->get('info_session_time');
-					?>
-
+					
 					<section class="bcit-info">
-						<div class="session-info block-info">
-							<img src='<? echo CFS()->get('info_session_photo'); ?>' >
-							<div class="sessions-details">
-								<p><? _e('Free Info Session', 'nexus'); ?></p>
-								<p><? _e('Date:','nexus'); ?> <? echo $date; ?></p>
-								<p><? _e('Address:', 'nexus'); ?> <? echo $address; ?></p>
-								<p><? _e('Time:', 'nexus'); ?> <? echo $time; ?></p>
-							</div>
-						</div>
+						
 						<div class="popular-programs-div block-info">
 							<div class="popu-list">
 								<p><? _e('Most Popular Programs', 'nexus'); ?></p>
