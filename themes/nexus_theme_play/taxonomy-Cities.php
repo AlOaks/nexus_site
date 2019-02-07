@@ -74,23 +74,26 @@ get_header();
 			<div class="type-programs-container">
 				
 				<?php
+				$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
 
 				$obj = $wp_query->get_queried_object();
 
 				$args= array(
+					'posts_per_page' => 9,
+					'paged' => $paged,
 					'tax_query' => array(
 						array(
 							'taxonomy' => 'Cities',
 							'field' => 'slug',
 							'terms' => $obj->name
 							)
-						),
-						'orderby' => 'rand'
+						)	
 					);
 
-				query_posts($args);
+				// query_posts($args);
+				$queryProg = new WP_query($args);
 						
-				while (have_posts() ) : the_post(); ?>
+				while ($queryProg->have_posts() ) : $queryProg->the_post(); ?>
 
 				<?php 
 					$postID = get_the_ID();
@@ -129,7 +132,7 @@ get_header();
 					
 				?>
 			</div>
-			<?php the_posts_pagination(); ?>
+			<?php echo get_the_posts_pagination(); ?>
 			<section class="start-journey-section">
 				<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
 				<p class="start-description"><?php _e('Let us help you fin the perfect fit!', 'nexus'); ?></p>
