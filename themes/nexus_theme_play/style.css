@@ -5832,7 +5832,7 @@ article {
 
 .bcit-header {
   position: absolute;
-  bottom: 1.8%;
+  bottom: 45px;
   width: 70%;
   height: 70%;
   display: -webkit-box;
