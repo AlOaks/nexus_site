@@ -81,7 +81,7 @@
 				<div class="bcit-site-info">
 						<div class="footer-ovrly"></div>
 						<p><?php _e('I like it! How do I apply?', 'nexus') ?></p>
-						<a href="/contact" class="bcit-btn-footer"><?php _e('I want to learn more', 'nexus'); ?></a>	
+						<a href="#top" class="bcit-btn-footer"><?php _e('I want to learn more', 'nexus'); ?></a>	
 				</div>
 				<div class="copyright">
 					<p>© Copyright 2019 Nexus Education Consulting</p>
