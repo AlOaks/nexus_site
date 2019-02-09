@@ -296,3 +296,61 @@ function student_reviews() {
 
 }
 add_action( 'init', 'student_reviews', 0 );
+
+// Register Custom Post Type
+function schools_nexus() {
+
+	$labels = array(
+		'name'                  => _x( 'Schools', 'Post Type General Name', 'nexus' ),
+		'singular_name'         => _x( 'School', 'Post Type Singular Name', 'nexus' ),
+		'menu_name'             => __( 'Schools', 'nexus' ),
+		'name_admin_bar'        => __( 'Schools', 'nexus' ),
+		'archives'              => __( 'Schools Archives', 'nexus' ),
+		'attributes'            => __( 'School Attributes', 'nexus' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'nexus' ),
+		'all_items'             => __( 'All Schools', 'nexus' ),
+		'add_new_item'          => __( 'Add New School', 'nexus' ),
+		'add_new'               => __( 'Add New', 'nexus' ),
+		'new_item'              => __( 'New School', 'nexus' ),
+		'edit_item'             => __( 'Edit School', 'nexus' ),
+		'update_item'           => __( 'Update School', 'nexus' ),
+		'view_item'             => __( 'View School', 'nexus' ),
+		'view_items'            => __( 'View Schools', 'nexus' ),
+		'search_items'          => __( 'Search School', 'nexus' ),
+		'not_found'             => __( 'Not found', 'nexus' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'nexus' ),
+		'featured_image'        => __( 'School Image', 'nexus' ),
+		'set_featured_image'    => __( 'Set Image', 'nexus' ),
+		'remove_featured_image' => __( 'Remove Image', 'nexus' ),
+		'use_featured_image'    => __( 'Use as Image', 'nexus' ),
+		'insert_into_item'      => __( 'Insert into School', 'nexus' ),
+		'uploaded_to_this_item' => __( 'Uploaded to School', 'nexus' ),
+		'items_list'            => __( 'School List', 'nexus' ),
+		'items_list_navigation' => __( 'School List Navigation', 'nexus' ),
+		'filter_items_list'     => __( 'Filter items list', 'nexus' ),
+	);
+	$args = array(
+		'label'                 => __( 'School', 'nexus' ),
+		'description'           => __( 'Schools On Promotion', 'nexus' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+		'show_in_rest'          => true,
+		'menu_icon'				=> 'dashicons-admin-home'
+	);
+	register_post_type( 'schools', $args );
+
+}
+add_action( 'init', 'schools_nexus', 0 );

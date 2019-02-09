@@ -1,0 +1,122 @@
+.promotions-page {
+    margin-top: 11vh;
+}
+
+.promotions-mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.school-div {
+    background-size: cover !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    position: relative;
+
+    h2, p, a {
+        z-index: 11;
+    }
+
+    h2 {
+        color: white;
+        font-family: $roboto;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: white;
+        font-family: $roboto;
+    }
+
+    a {
+        background: $div-yellow;
+        color: $font-blue;
+        padding: 1%;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: $sans;
+
+        &:visited {
+            text-decoration: none;
+        }
+    }
+
+    &:first-of-type {
+        flex-basis: 100%;
+    }
+
+    &:nth-of-type(2) {
+        flex-basis: 69%;
+        margin-top: 2%;
+    }
+
+    &:nth-of-type(3) {
+        flex-basis: 29%;
+        margin-top: 2%;
+    }
+}
+
+.contact-div {
+    flex-basis: 29%;
+    height: 40vh;
+    margin-top: 2%;
+    background: $div-red;
+    color: $div-white;
+    font-family: $sans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    a {
+        background: $div-yellow;
+        color: $font-blue;
+        padding: 1%;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: $sans;
+
+        &:visited {
+            text-decoration: none;
+        }
+    }
+
+    
+}
+
+.contact-button-school {
+    background: $div-red;
+    color: $font-blue;
+    padding: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: $sans;
+
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+
+.school-ovrly {
+    position: absolute;
+    background: rgba(0,0,0,.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}

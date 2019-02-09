@@ -1,0 +1,146 @@
+.school-title-container {
+    width: 100%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+
+    img {
+        width: 45%;
+    }
+}
+
+.school-info-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    color: $font-blue;
+    font-family: $sans;
+
+    h1 {
+        font-family: $roboto;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            border-bottom: 3px solid $div-yellow;
+            width: 50%;
+            left: 25%;
+            bottom: 0;
+        }
+    }
+    
+    p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.single-school-page {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: $font-blue;
+}
+
+.school-popu-programs {
+    width: 45%;
+
+    h2 {
+        position: relative;
+        font-family: $roboto;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-bottom: 3px solid $div-yellow;
+            width: 20%;
+            left: 40%;
+            bottom: 0;
+            height: 1px;
+        }
+    }
+}
+
+.school-details {
+    width: 45%;
+
+    h2 {
+        position: relative;
+        font-family: $roboto;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-bottom: 3px solid $div-yellow;
+            width: 20%;
+            left: 40%;
+            bottom: 0;
+            height: 1px;
+        }
+    }
+}
+
+.apply-now-section {
+    width: 100%;
+    background: $div-red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.apply-now-div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: $roboto;
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-family: $sans;
+    }
+    
+}
+
+.apply-form {
+    width: 45%;
+}
+
+.apply-school-form {
+
+    .wpforms-field-label {
+        color: white !important;
+    }
+}
+
+.apply-school-btn {
+    background: $div-yellow !important;
+    color: $font-blue !important;
+}
+
+#wpforms-358-field_0-container > div > div:nth-child(2) > label {
+    display: none;
+}
+
+#wpforms-358-field_0-container > div > div.wpforms-field-row-block.wpforms-first.wpforms-one-half > label {
+    display: none;
+}
