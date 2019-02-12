@@ -4655,17 +4655,19 @@ option {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 5vh; }
   .thanks-page-form h2 {
     color: #193F5C;
     font-size: 3rem;
     font-family: "Roboto"; }
   .thanks-page-form p {
-    color: #193F5C; }
+    color: #193F5C;
+    font-family: "Open Sans"; }
   .thanks-page-form a {
     background: #bd2020;
     font-family: "Open Sans";
-    padding: 1px;
+    padding: 1%;
     color: white;
     text-decoration: none;
     border-radius: 5px; }
