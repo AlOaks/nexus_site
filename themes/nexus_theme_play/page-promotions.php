@@ -18,6 +18,8 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div class="promotions-page">
+                <h1><? the_title(); ?></h1>
+                <div class="promotions-desc"><? the_content(); ?></div>
                 <div class="promotions-mosaic">
                     <?
                         $args = array(
@@ -41,7 +43,7 @@ get_header();
                             
                             <div class="school-div" style="background: url(<? echo get_the_post_thumbnail_url(); ?>) no-repeat center;">
                                 <div class="school-ovrly"></div>
-                                <h2 class="school-title"><? the_title(); ?></h2>
+                                <h2 class="school-title title"><? the_title(); ?></h2>
                                 <p class="school-type"><? echo $schoolType; ?></p>
                                 <a class="school-link" href=<? echo get_the_permalink(); ?>><? _e('Learn More', 'nexus'); ?></a>
                             </div>
@@ -49,7 +51,7 @@ get_header();
                         <? } else { ?>
                             
                             <div class="contact-div">
-                                <h2><? _e('Ask about more schools!', 'nexus'); ?></h2>
+                                <h2 class="title"><? _e('Ask about more schools!', 'nexus'); ?></h2>
                                 <a class="contact-button-school" href="../contact"><? _e('Contact Us', 'nexus'); ?></a>
                             </div>
 

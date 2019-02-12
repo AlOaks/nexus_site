@@ -27,7 +27,7 @@ get_header();
 			<section class="single-school-page">
                 <div class="school-popu-programs">
                     <h2><? _e('Popular Programs at ', 'nexus'); ?><? the_title(); ?></h2>
-                    <ul>
+                    <ul class="popu-progs-list">
                         <?
                             $tag = get_the_title();
                             $args = array(
@@ -49,16 +49,37 @@ get_header();
                 </div>
                 <div class="school-details">
                     <h2><? _e('Details', 'nexus'); ?></h2>
-                    <ul>
+                    <ul class="details-list-icons">
                         <? 
-                        
-                            $details = CFS()->get('school_details'); 
-                                
-                            foreach($details as $detail) {
-                                echo '<li>'.$detail['school_detail'].'</li>';
-                            }
-                        
+                            $schoolprogTypes = CFS()->get('school_prog_types');
+                            $schoolLocations = CFS()->get('school_locations');
+                            $schoolFields = CFS()->get('school_fields');
                         ?>
+
+                        <li class="detail-item">
+                            <i class="fas fa-university"></i><? _e('Program Types available here', 'nexus'); ?>
+                            <ul>
+                                <? foreach($schoolprogTypes as $type) { 
+                                    echo '<li class="sub-detail">'.$type['school_type'].'</li>';
+                                } ?>
+                            </ul>
+                        </li>
+                        <li class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i><? _e('Locations', 'nexus'); ?>
+                            <ul>
+                                <? foreach($schoolLocations as $location) { 
+                                    echo '<li class="sub-detail">'.$location['school_location'].'</li>';
+                                } ?>
+                            </ul>
+                        </li>
+                        <li class="detail-item">
+                            <i class="fas fa-microscope"></i><? _e('Fields of Study', 'nexus'); ?>
+                            <ul>
+                                <? foreach($schoolFields as $field) { 
+                                    echo '<li class="sub-detail">'.$field['school_field'].'</li>';
+                                } ?>
+                            </ul>
+                        </li>  
                     </ul>
                 </div>
             </section>

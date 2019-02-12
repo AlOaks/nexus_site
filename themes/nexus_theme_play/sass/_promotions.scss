@@ -1,6 +1,48 @@
+
+
 .promotions-page {
-    margin-top: 11vh;
+    margin-top: 15vh;
+    
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        color: $font-blue;
+        font-family: $roboto;
+        margin-top: 0;
+
+        &:before {
+            content: "";
+            height: 1px;
+            border-bottom: 3px solid $div-yellow;
+            position: absolute;
+            bottom: 0;
+            left: 35%;
+            width: 30%;
+        }
+    }
+
+    h2 {
+        color: $font-blue;
+        text-align: center;
+        font-weight: 300;
+        font-family: $roboto;
+    }
+
+    .promotions-desc {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+            font-family: $sans;
+            color: $font-blue;
+        }
+    }
 }
+
+
+
 
 .promotions-mosaic {
     display: flex;
@@ -21,11 +63,19 @@
     height: 40vh;
     position: relative;
 
+    @include mobile {
+        height: 30vh;
+    }
+
+    @include tablet {
+        height: 30vh;
+    }
+
     h2, p, a {
         z-index: 11;
     }
 
-    h2 {
+    .title {
         color: white;
         font-family: $roboto;
         font-size: 2.5rem;
@@ -40,10 +90,11 @@
     a {
         background: $div-yellow;
         color: $font-blue;
-        padding: 1%;
+        padding: 5px;
         border-radius: 5px;
         text-decoration: none;
         font-family: $sans;
+        font-weight: 600;
 
         &:visited {
             text-decoration: none;
@@ -57,11 +108,27 @@
     &:nth-of-type(2) {
         flex-basis: 69%;
         margin-top: 2%;
+
+        @include tablet {
+            flex-basis: 59%;
+        }
+
+        @include mobile {
+            flex-basis: 100%;
+        }   
     }
 
     &:nth-of-type(3) {
         flex-basis: 29%;
         margin-top: 2%;
+
+        @include tablet {
+            flex-basis: 39%; 
+        }
+
+        @include mobile {
+            flex-basis: 100%;
+        }   
     }
 }
 
@@ -77,17 +144,33 @@
     justify-content: center;
     align-items: center;
 
-    h2 {
+    @include tablet {
+        flex-basis: 39%;
+        height: 30vh;
+    }
+
+    @include mobile {
+        flex-basis: 100%;
+        height: 30vh;
+    }
+
+    
+
+    .title {
         text-align: center;
+        color: white;
+        width: 90%;
+        
     }
 
     a {
         background: $div-yellow;
         color: $font-blue;
-        padding: 1%;
+        padding: 2%;
         border-radius: 5px;
         text-decoration: none;
         font-family: $sans;
+        font-weight: 600;
 
         &:visited {
             text-decoration: none;
@@ -96,20 +179,6 @@
 
     
 }
-
-.contact-button-school {
-    background: $div-red;
-    color: $font-blue;
-    padding: 1%;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: $sans;
-
-    &:visited {
-        text-decoration: none;
-    }
-}
-
 
 .school-ovrly {
     position: absolute;

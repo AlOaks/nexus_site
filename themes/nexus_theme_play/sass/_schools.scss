@@ -75,6 +75,7 @@
 .school-details {
     width: 45%;
 
+
     h2 {
         position: relative;
         font-family: $roboto;
@@ -90,6 +91,35 @@
             height: 1px;
         }
     }
+}
+
+.popu-progs-list {
+
+    li {
+        font-family: $sans;
+    }
+
+}
+
+.details-list-icons {
+    margin-left: 0;
+}
+
+.detail-item {
+
+    list-style-type: none;
+    font-family: $sans;
+    font-weight: 600;
+    margin-bottom: 5%;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+
+.sub-detail {
+    font-weight: normal;
 }
 
 .apply-now-section {
@@ -110,9 +140,21 @@
     align-items: center;
     color: white;
     font-family: $roboto;
+    align-self: flex-start;
 
     h3 {
         font-size: 2.5rem;
+        position: relative; 
+
+        &:before {
+            content: "";
+            height: 1px;
+            border-bottom: 3px solid $div-yellow;
+            width: 30%;
+            left: 35%;
+            bottom: 0;
+            position: absolute;
+        }
     }
 
     p {
