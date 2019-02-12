@@ -4642,6 +4642,34 @@ option {
   color: #ffb419 !important;
   font-size: 1.1rem !important; }
 
+.thanks-page-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .thanks-page-form h2 {
+    color: #193F5C;
+    font-size: 3rem; }
+  .thanks-page-form p {
+    color: #193F5C; }
+  .thanks-page-form a {
+    background: #bd2020;
+    padding: 5px;
+    color: white;
+    text-decoration: none; }
+    .thanks-page-form a:visited {
+      text-decoration: none;
+      color: white; }
+
 .tax-Cities {
   background: white; }
   .tax-Cities .footer-copy {
