@@ -29,7 +29,7 @@ get_header();
 					<h1 class="hero-label keyword"><?php _e('STUDY ABROAD?' ,'nexus'); ?></h1>
 					<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>							
 				</div>
-				<a href="./promotions" class="promotions-button"><? _e('Featured Schools','nexus'); ?></a>
+				<a href="./featured-schools" class="promotions-button"><? _e('Featured Schools','nexus'); ?></a>
 			</section>
 
 
