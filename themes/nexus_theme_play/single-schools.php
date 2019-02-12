@@ -38,7 +38,7 @@ get_header();
                     
                         while ( $popuProgs->have_posts() ) : $popuProgs->the_post(); ?>
                             
-                            <li><? the_title(); ?></li>
+                            <li><a href=<? echo get_the_permalink(); ?>><? the_title(); ?></a></li>
                             
                         <? 
                             endwhile; 

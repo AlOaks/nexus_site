@@ -6220,6 +6220,21 @@ article {
   margin-top: 10vh; }
   .school-title-container img {
     width: 45%; }
+    @media (max-width: 1024px) {
+      .school-title-container img {
+        width: 60%; } }
+    @media (max-width: 705px) {
+      .school-title-container img {
+        display: none; } }
+  @media (max-width: 1024px) {
+    .school-title-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media (max-width: 705px) {
+    .school-title-container {
+      height: auto; } }
 
 .school-info-single {
   display: -webkit-box;
@@ -6238,6 +6253,12 @@ article {
   width: 45%;
   color: #193F5C;
   font-family: "Open Sans"; }
+  @media (max-width: 1024px) {
+    .school-info-single {
+      width: 80%; } }
+  @media (max-width: 705px) {
+    .school-info-single {
+      width: 90%; } }
   .school-info-single h1 {
     font-family: "Roboto";
     position: relative; }
@@ -6264,10 +6285,27 @@ article {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #193F5C; }
+  color: #193F5C;
+  margin-top: 5vh; }
+  @media (max-width: 1024px) {
+    .single-school-page {
+      margin-top: 0;
+      margin-bottom: 3vh; } }
+  @media (max-width: 705px) {
+    .single-school-page {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .school-popu-programs {
   width: 45%; }
+  @media (max-width: 705px) {
+    .school-popu-programs {
+      width: 90%; } }
   .school-popu-programs h2 {
     position: relative;
     font-family: "Roboto";
@@ -6280,9 +6318,17 @@ article {
       left: 40%;
       bottom: 0;
       height: 1px; }
+  .school-popu-programs a {
+    text-decoration: none;
+    color: #193F5C; }
+    .school-popu-programs a:visited {
+      color: #193F5C; }
 
 .school-details {
   width: 45%; }
+  @media (max-width: 705px) {
+    .school-details {
+      width: 90%; } }
   .school-details h2 {
     position: relative;
     font-family: "Roboto";
@@ -6296,11 +6342,18 @@ article {
       bottom: 0;
       height: 1px; }
 
+@media (max-width: 705px) {
+  .popu-progs-list {
+    padding-left: 0; } }
+
 .popu-progs-list li {
   font-family: "Open Sans"; }
 
 .details-list-icons {
   margin-left: 0; }
+  @media (max-width: 705px) {
+    .details-list-icons {
+      padding-left: 5%; } }
 
 .detail-item {
   list-style-type: none;
@@ -6326,6 +6379,12 @@ article {
           align-items: center;
   padding-top: 2.5%;
   padding-bottom: 2.5%; }
+  @media (max-width: 705px) {
+    .apply-now-section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .apply-now-div {
   width: 45%;
@@ -6346,6 +6405,11 @@ article {
   font-family: "Roboto";
   -ms-flex-item-align: start;
       align-self: flex-start; }
+  @media (max-width: 705px) {
+    .apply-now-div {
+      width: 90%;
+      -ms-flex-item-align: center;
+          align-self: center; } }
   .apply-now-div h3 {
     font-size: 2.5rem;
     position: relative; }
@@ -6362,6 +6426,9 @@ article {
 
 .apply-form {
   width: 45%; }
+  @media (max-width: 705px) {
+    .apply-form {
+      width: 90%; } }
 
 .apply-school-form .wpforms-field-label {
   color: white !important; }
