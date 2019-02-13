@@ -44,7 +44,6 @@
 
         p {
             font-size: 3rem;
-            margin-top: 0;
             color: white;
             font-family: $roboto;
             text-transform: uppercase;
@@ -54,35 +53,28 @@
 
     .bcit-header-form {
         width: 45%;
+        background: rgba(255, 255, 255, .6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        .bcit-form-button {
-            background: rgba(255,255,255,.7);
-            padding: 5% 5% 10% 5%;
-            width: 80% !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            margin-bottom: 0 !important;
-            font-family: $roboto;
-
-            .wpforms-field-large {
-                border-radius: 20px !important;
-            }
-
-            .wpforms-title {
-                text-transform: capitalize !important;
-                color: black !important;
-                font-weight: 600 !important;
-            }
+        p {
+            width: 90%;
+            font-size: 1.3rem;
+            font-weight: 600;
+            font-family: $sans;
         }
 
-        .bcit-form-btn {
-            background: $bg-blue !important;
-            width: 100% !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            border-radius: 20px !important;
-            margin-top: 10% !important;
+        label {
+            font-weight: 600;
+            font-family: $sans;
         }
+
+       .edvisor-row input {
+           border-radius: 15px;
+       }
+
     }
 }
 

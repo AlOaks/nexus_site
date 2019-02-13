@@ -5925,33 +5925,35 @@ article {
         align-self: flex-start; }
     .bcit-header .bcit-header-title p {
       font-size: 3rem;
-      margin-top: 0;
       color: white;
       font-family: "Roboto";
       text-transform: uppercase; }
   .bcit-header .bcit-header-form {
-    width: 45%; }
-    .bcit-header .bcit-header-form .bcit-form-button {
-      background: rgba(255, 255, 255, 0.7);
-      padding: 5% 5% 10% 5%;
-      width: 80% !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      margin-bottom: 0 !important;
-      font-family: "Roboto"; }
-      .bcit-header .bcit-header-form .bcit-form-button .wpforms-field-large {
-        border-radius: 20px !important; }
-      .bcit-header .bcit-header-form .bcit-form-button .wpforms-title {
-        text-transform: capitalize !important;
-        color: black !important;
-        font-weight: 600 !important; }
-    .bcit-header .bcit-header-form .bcit-form-btn {
-      background: #15405A !important;
-      width: 100% !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      border-radius: 20px !important;
-      margin-top: 10% !important; }
+    width: 45%;
+    background: rgba(255, 255, 255, 0.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .bcit-header .bcit-header-form p {
+      width: 90%;
+      font-size: 1.3rem;
+      font-weight: 600;
+      font-family: "Open Sans"; }
+    .bcit-header .bcit-header-form label {
+      font-weight: 600;
+      font-family: "Open Sans"; }
+    .bcit-header .bcit-header-form .edvisor-row input {
+      border-radius: 15px; }
 
 .learn-more-bcit {
   display: -webkit-box;
