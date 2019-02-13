@@ -6467,4 +6467,6 @@ article {
     font-weight: 600;
     font-family: "Open Sans"; }
   .apply-form .edvisor-form .edvisor-button {
-    background: #ffb419; }
+    background: #ffb419;
+    margin-left: 35%;
+    width: 30%; }
