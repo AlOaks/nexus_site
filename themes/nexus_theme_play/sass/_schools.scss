@@ -1,6 +1,6 @@
 .school-title-container {
     width: 100%;
-    height: 50vh;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -112,7 +112,6 @@
     }
 
     a {
-        text-decoration: none;
         color: $font-blue;
 
         &:visited { 
@@ -241,22 +240,19 @@
     @include mobile {
         width: 90%;
     }
-}
 
-.apply-school-form {
+    .edvisor-form {
 
-    .wpforms-field-label {
-        color: white !important;
+        label {
+            color: white;
+            font-weight: 600;
+            font-family: $sans;
+        }
+
+        .edvisor-button {
+            background: $div-yellow;
+        }
     }
 }
 
-.apply-school-btn {
-    background: $div-yellow !important;
-    color: $font-blue !important;
-}
 
-
-
-#wpforms-1365-field_6-container {
-    display: none;
-}

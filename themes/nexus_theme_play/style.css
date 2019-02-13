@@ -6239,7 +6239,7 @@ article {
 
 .school-title-container {
   width: 100%;
-  height: 50vh;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -6353,7 +6353,6 @@ article {
       bottom: 0;
       height: 1px; }
   .school-popu-programs a {
-    text-decoration: none;
     color: #193F5C; }
     .school-popu-programs a:visited {
       color: #193F5C; }
@@ -6463,13 +6462,9 @@ article {
   @media (max-width: 705px) {
     .apply-form {
       width: 90%; } }
-
-.apply-school-form .wpforms-field-label {
-  color: white !important; }
-
-.apply-school-btn {
-  background: #ffb419 !important;
-  color: #193F5C !important; }
-
-#wpforms-1365-field_6-container {
-  display: none; }
+  .apply-form .edvisor-form label {
+    color: white;
+    font-weight: 600;
+    font-family: "Open Sans"; }
+  .apply-form .edvisor-form .edvisor-button {
+    background: #ffb419; }
