@@ -1,0 +1,177 @@
+.page-template-page-about {
+    background: white;
+
+    p {
+        line-height: 36px;
+
+       
+
+    }
+
+    .footer-copy {
+        background: $bg-blue;
+    }
+
+    @include mobile {
+        .site-main {
+            display: flex;
+            flex-direction: column;
+    
+
+            .start-journey-section {
+                order: 10;
+            }
+
+        }
+    }
+}
+
+.about-content-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+    padding-top: 2.5%;
+    margin-top: 5vh;
+
+    &:nth-of-type(odd) {
+        
+        h2 {
+            color: $font-blue;
+        }
+
+        p {
+            color: $font-blue;
+        }
+    }
+
+    &:nth-of-type(even) {
+        
+        background: $div-white;
+
+
+        h2 {
+            color: $bg-blue;
+        }
+    }
+
+    p {
+        width: 55%;
+        font-family: $roboto;
+        margin: 0;
+        text-align: center;
+        color: $font-blue;
+
+        @include mobile {
+            width: 85%;
+            font-size: 1rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.about-container {
+    height: 40vh;
+    
+    @include mobile {
+        height: auto;
+    }
+}
+
+.container-title {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 30%;
+        position: absolute;
+        border-bottom: 3px solid $div-yellow;
+        height: 1px;
+        bottom: 0;
+        left: 35%;
+    }
+}
+
+
+
+.purpose-container {
+    position: relative;
+    height: 40vh;
+
+    h2 {
+        z-index: 10;
+    }
+
+    p {
+        z-index: 12;
+    }
+    
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 30%;
+
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.manifest-container {
+    position: relative;
+    height: 40vh;
+
+    h2 {
+        z-index: 10;
+    }
+
+    p {
+        z-index: 12;
+    }
+    
+    img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 30%;
+
+        @include mobile {
+            display: none;
+        }
+
+    }
+}
+
+.contact-btn-faq {
+    text-decoration: none;
+}
+
+
+.beliefs-container {
+
+    ul {
+        padding: 0;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mobile {
+            width: 80%;
+        }
+    }
+    li {
+        color: $font-blue;
+        font-family: $sans;
+        list-style-type: circle;
+        margin-bottom: 3vh;
+    }
+}
+
+
+
+
+

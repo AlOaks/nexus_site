@@ -1,0 +1,956 @@
+
+// HERO IMAGE
+
+.hero-image {
+    background: url('../../themes/nexus_theme_play/assets/images/hero-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: $center;
+    margin-top: 5vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+        margin-top: 0;
+        height: 60vh;
+        background-position: right;
+    }
+}
+
+// .hero-video {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 76vh;
+//     z-index: 100;
+//     background: url('video.jpg');
+//     background-size: cover;
+// }
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-label-div {
+    height: 60%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.hero-label {
+    position: relative;
+    font-family: $sans;
+    color: white;
+    z-index: 100;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+
+    
+    @include mobile {
+        font-size: 1.3rem;
+        margin-top: 10%;
+
+    }
+}
+
+.keyword {
+    color: $font-red;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-style: normal;
+
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+
+.promotions-button {
+    width: 25%;
+    background: $div-yellow;
+    color: $font-blue;
+    font-family: $sans;
+    font-weight: bold;
+    border: none;
+    z-index: 100;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 1s;
+
+    &:visited {
+        color: $font-blue;
+    }
+
+    
+}
+
+
+
+// FRONT PAGE DESCRIPTION
+
+.front-page-description {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    font-size: .0000000000001px;  
+}
+
+// PROGRAM SELECTORS
+
+.program-selectors {
+    background: $div-red;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        height: 30vh;
+    }
+
+}
+
+.programs-form {
+    display: flex;
+    width: 90%;
+    margin: $center;
+    justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.selector {
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    &::placeholder {
+        color: $font-blue;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    @include mobile {
+        margin-bottom: 4%;
+    }
+}
+
+option {
+    color: $font-blue;
+}
+
+.prog-type {
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
+}
+
+.program-types {
+    width: 31%;
+    margin-right: 2%;
+    
+    @include mobile {
+        width: 90%;
+        margin-right: 0;
+    }
+   
+}
+
+.cities {
+    width: 20%;
+    margin-right: 13%;
+
+    @include mobile {
+        width: 90%;
+        margin-right: 0;
+    }
+}
+
+.submit-btn-front{
+    background-color: $div-yellow;
+    border-color: $div-yellow;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: 33%;
+    color: $font-blue;
+    font-size: 1.5rem;
+    font-family: $roboto;
+    font-weight: 900;
+
+    &:hover {
+        background: lighten($div-yellow, 10%);
+    }
+
+    @include mobile {
+        width: 60%;
+        font-size: 1rem;
+    }
+}
+
+// WHY NEXUS
+
+.why-nexus-section {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.why-title {
+    color: $font-blue;
+    width: 80%;
+    text-align: center;
+    margin: $center;
+    padding-top: 3%;
+    font-size: 3.8rem;
+    position: relative;
+    
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 30%;
+        position: absolute;
+        height: 1px;
+        left: 35%;
+        bottom: -8px;
+    }
+
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+
+ 
+.why-items-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: $center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+    @include mobile {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+.why-btn {
+    background: none;
+    position: absolute;
+    border: none;
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 2rem;
+}
+
+.why-btn-left {
+    left: 0;
+    top: 30%;
+    
+}
+
+.why-btn-right {
+    right: 0;
+    top: 30%;
+    
+}
+
+.why-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+
+    img {
+        height: auto;
+        width: 50%;
+    }
+
+    @include mobile {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    @include tablet {
+        width: 100%;
+        flex-shrink: 0;
+    }
+}
+
+.why-item-title {
+    font-family: $roboto;
+    color: $bg-blue;
+}
+
+.why-paragraph {
+    width: 85%;
+    color: $font-blue;
+    text-align: left;
+    font-size: 1.2rem;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+    }
+}
+
+.get-quote-btn {
+    background: $div-red;
+    color: white;
+    width: 22%;
+    font-size: 1rem;
+    padding: 12px 15px;
+    font-family: $sans;
+    font-weight: bold;
+    border-color: $div-red;
+    margin-bottom: 4%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background: red;
+        color: white;
+    }
+
+    @include mobile {
+        width: 70%;
+    }
+    
+    @include tablet {
+        width: 60%;
+    }
+}
+
+// WHY CANADA SECTION 
+
+.why-canada-section {
+    background: $bg-blue;
+    position: relative;
+}
+
+
+
+.why-canada-title, .curious-title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-family: $roboto;
+    font-size: 3rem;
+    position: relative;
+
+    @include mobile {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 20%;
+        position: absolute;
+        height: 1px;
+        left: 40%;
+        bottom: -8px;
+    }
+
+}
+
+.why-canada-title {
+    padding-top: 3%;
+}
+
+
+.slider-canada {
+    width: 55%;
+    height: auto;
+    margin: $center;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include mobile {
+        height: auto;
+        width: 80%;
+    }
+}
+
+.slider-item {
+    min-width: 99.9%;
+    width: 99.9%;
+    height: 100%;
+    
+    h1 {
+        text-align: center;
+        color: $div-red;
+        font-size: 5rem;
+    }
+
+}
+
+.mobile-slide {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.desktop-slide {
+
+    @include mobile {
+        display: none;
+    }
+}
+
+
+
+.slider-btn {
+    position: absolute;
+    height: auto;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    z-index: 100;
+    transition-duration: .5s;
+    background: none;
+
+    &:hover {
+        background: $div-red;
+        transition-duration: .5s;
+    }
+
+    @include mobile {
+        height: 10vh;
+        color: black;
+        background: none;
+
+        &:hover {
+            background: none;
+        }
+    }
+}
+
+.btn-lft {
+    right: 22.5%;
+    top: 50%;
+
+    @include mobile {
+        right: 5%;
+    }
+}
+
+.btn-right {
+    left: 22.5%;
+    top: 50%;
+
+    @include mobile {
+        left: 5%;
+    }
+}
+
+// CURIOUS SECTION
+
+.curious-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bg-blue;
+    padding-bottom: 3%;
+
+    @include mobile {
+        position: relative;
+    }
+}
+
+.curious-title {
+    width: 40%;
+    text-decoration: none;
+    font-size: 2rem;
+
+    @include mobile {
+        font-size: 1.5rem;
+        width: 70%;
+
+        &::before {
+            content: none;
+        }
+    }
+
+    @include tablet {
+        width: 70%;
+    }
+}
+
+.visit-faq-btn {
+    background: $div-yellow;
+    border: none;
+    color: $font-blue;
+    font-family: $sans;
+    margin: $center;
+    width: 22%;
+    font-size: 1rem;
+    padding: 12px 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background: lighten($div-yellow, 20%);
+        color: $font-blue;
+    }
+
+    @include mobile {
+        width: 70%;
+        
+    }
+
+    @include tablet {
+        width: 60%;
+    }
+}
+
+// CHOOSE A CITY SECTION
+
+.choose-city-section {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5vh;
+
+    @include mobile {
+        min-height: 55vh;
+    }
+
+    .visit-faq-btn {
+        background: $bg-blue;
+        color: white;
+
+        @include mobile {
+            margin-top: 2vh;
+            bottom: 0;
+        }
+    }
+}
+
+.cities-container-front{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mobile {
+        height: 60%;
+
+        
+    }
+}
+
+
+
+.cal-div {
+    background: url("../../themes/nexus_theme_play/assets/images/calgary.jpg");
+}
+
+.mon-div {
+    background: url("../../themes/nexus_theme_play/assets/images/montreal.jpg");
+    
+}
+
+.otta-div {
+    background: url("../../themes/nexus_theme_play/assets/images/ottawa.jpg");
+
+}
+
+.toro-div {
+    background: url("../../themes/nexus_theme_play/assets/images/toronto.jpg");
+    
+    
+}
+
+.van-div {
+    background: url("../../themes/nexus_theme_play/assets/images/vancouver.jpeg");
+    background-position: left bottom;
+    background-size: cover;
+    
+}
+
+.vic-div {
+    background: url("../../themes/nexus_theme_play/assets/images/victoria.jpg");
+
+}
+
+.winni-div {
+    background: url("../../themes/nexus_theme_play/assets/images/whistler.jpg");
+
+}
+
+.hali-div {
+    background: url("../../themes/nexus_theme_play/assets/images/halifax.jpg");
+}
+
+.city-link-front {
+    height: 10rem;
+
+    @include mobile {
+        height: 14%;
+        margin-bottom: 3%;
+    }
+
+    &:hover {
+
+        .city-name-front {
+            transition-duration: 2s;
+            display: block;
+        }
+
+        .black-ovrlay-city {
+            transition-duration: .5s;           
+            display: block;
+        }
+    }
+}
+
+
+
+.fifty-div {
+    margin-bottom: 5%;
+    flex-basis: 49%;
+    height: 15rem;
+
+    &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8) {
+        flex-basis: 24%;
+
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
+
+    @include mobile {
+        flex-basis: 100%;
+        margin-top: 0;
+        margin-bottom: 3%;
+        height: auto;
+    }
+
+    
+}
+
+.city-container-frontpage {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    border-radius: 5px;
+    
+
+    @include mobile {
+        background: darken($div-white, 5%);
+    }
+}
+
+.black-ovrlay-city {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transition-duration: .5s;
+    border-radius: 5px;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include mobile {
+        display: none;
+
+    }
+}
+
+.city-link-front {
+    text-decoration: none;
+
+}
+
+.city-name-front {
+    color: white;
+    font-family: $sans;
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    z-index: 10;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    display: none;
+    transition-duration: .5s;
+
+    
+
+    @include tablet {
+        font-size: 2rem;
+        display: block;
+    }
+
+    @include mobile {
+        display: block;
+        font-size: 1.3rem;
+        color: $font-blue;
+        position: relative;
+        top: auto;
+        padding: 1%;
+    }
+}
+
+
+
+
+
+.choose-title {
+    text-align: center;
+    margin-top: 4%;
+    font-size: 3rem;
+    color: $font-blue;
+    position: relative;
+
+    @include mobile {
+        font-size: 1.5rem;
+    }
+    
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 20%;
+        position: absolute;
+        height: 1px;
+        left: 40%;
+        bottom: -8px;
+    }
+}
+
+.choose-faq-btn {
+    position: absolute;
+    left: 39%;
+    bottom: 0;
+    text-align: center;
+
+    &:visited {
+        color: white;
+    }
+
+    @include mobile {
+        left: 10%;
+        bottom: 0;
+        width: 80%;
+        margin-top: 0;
+    }
+    
+}
+
+// STUDENT REVIEW SECTION
+
+.reviews-section {
+    width: 100%;
+    background: white;
+    display: none;
+}
+
+.reviews-title {
+    text-align: center;
+    color: $font-blue;
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 5%;
+    position: relative;
+
+    @include mobile {
+        font-size: 1.5rem;
+    }
+
+    &::before {
+        content: "";
+        border-bottom: 3px solid #FFC54C;
+        width: 10%;
+        position: absolute;
+        height: 1px;
+        left: 45%;
+        bottom: 0;
+    }
+    
+}
+
+.reviews-slider {
+    overflow-x: auto;
+    width: 90%;
+    height: 35vh;
+    margin: $center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include mobile {
+        height: 50vh;
+    }
+}
+
+.review-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    margin: $center;
+    background: $div-white;
+    box-shadow: $shadow;
+
+    @include mobile {
+        flex-direction: column;
+    }
+    
+}
+
+.text-gone {
+    @include mobile {
+        display: none;
+    }
+}
+
+.review-img {
+    height: 100%;
+    width: 23%;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.review-content {
+    width: 65%;
+    color: $font-blue;
+    font-size: 1rem;
+    font-family: $sans;
+    margin: $center;
+
+    @include mobile {
+        font-size: 1rem;
+        margin-top: 10%;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.quote, .unquote {
+    color: $div-yellow;
+    font-size: 4rem;
+    position: absolute;
+
+}
+
+.quote {
+    left: 25%;
+    top: 0rem;
+
+    @include mobile {
+        left: 2rem;
+        top: 13rem;
+    }
+}
+
+.unquote {
+    right: 1rem;
+    bottom: -2rem;
+
+    @include mobile {
+        right: 2rem;
+        
+    }
+}

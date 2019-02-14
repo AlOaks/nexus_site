@@ -1,0 +1,59 @@
+.quote-page-form {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 75%;
+    }
+
+    .edvisor-form {
+        button {
+            margin-top: 5vh;
+        }
+    }
+}
+
+
+.page-template-page-quote {
+    
+    .edvisor-row > label {
+        color: $font-blue;
+        font-family: $sans;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+.edvisor-row {
+    
+    input, textarea, select {
+        background: $div-white;
+    }
+}
+
+
+
+// REGISTRATION FORM
+
+
+.registration-page-form {
+
+    .wpforms-field-label {
+        color: $font-blue;
+    }
+
+    .wpforms-form input[type=text] {
+        background: $div-white;
+    }
+
+    .wpforms-field-label-inline {
+        color: $font-blue !important;
+    }
+}

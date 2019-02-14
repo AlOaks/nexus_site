@@ -1,0 +1,257 @@
+.single-post {
+    background: white;
+
+    .footer-copy {
+        background: $bg-blue !important;
+    }
+}
+
+// .single-hero {
+//     width: 85%;
+//     height: auto;
+//     margin: $center;
+//     margin-top: 15vh;
+//     position: relative;
+
+//     img {
+//         width: 100%;
+//         height: 100%;
+//     }
+
+//     p {
+//         background: rgba(0,0,0,.5);
+//         position: absolute;
+//         color: white;
+//         width: 100%;
+//         margin-bottom: 0;
+//         bottom: 7px;
+//         text-align: right;
+//         padding: 1% 5%;
+//         font-family: $sans;
+//     }
+// }
+
+.single-content {
+    margin-top: 15vh;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $font-blue;
+
+    @include mobile {
+        width: 85%;
+    }
+
+    h1 {
+        color: $font-blue;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 3rem;
+
+        @include mobile {
+            font-size: 2rem;
+        }
+    }
+
+    h2 {
+        font-family: $sans;
+        font-weight: 300;
+        color: $font-blue;
+        border-left: 2px solid $div-yellow;
+        padding-left: 1%;
+    }
+
+    p {
+        font-family: $sans;
+        color: $font-blue;
+        line-height: 2rem;
+    }    
+
+    ul {
+        color: $font-blue;
+        margin-left: 0;
+        font-family: $sans;
+    }
+}
+
+
+.post-date {
+    text-transform: capitalize;
+}
+
+.share-links-container {
+    width: 50%;
+    margin: $center;
+    display: flex;
+    flex-direction: column; 
+
+    h3 {
+        margin: $center;
+        color: $font-red;
+        margin-bottom: 4%;
+        font-size: 1.5rem;
+
+        @include mobile {
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+}
+
+.share-list {
+    display: flex;
+    width: 70%;
+    padding: 0;
+    margin: $center;
+    justify-content: space-between;
+
+    li {
+        list-style-type: none;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+// COMMENTS
+
+.swpm-login-to-comment-msg {
+    color: $font-blue;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $roboto;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5vh;
+    
+    @include mobile {
+        font-size: 1rem;
+    }
+}
+
+.comments-section {
+    width: 100%;
+    background: $div-white;
+}
+
+.comments-title {
+    display: none;
+}
+
+.comments-header {
+    width: 30%;
+    text-align: center;
+    color: $font-blue;
+    font-size: 2rem;
+    font-family: $roboto;
+    // border-bottom: 2px solid $div-yellow;
+    margin: $center;
+    margin-top: 5%;
+    position: relative;
+    padding-top: 3%;
+
+    &:before {
+        content: "";
+        border-bottom: 3px solid $div-yellow;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        left: 25%;
+    }
+}
+
+.comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: $center;
+    margin-top: 5%;
+    color: $font-blue;
+    font-family: $sans;
+    font-weight: bold;
+}
+
+.comment-form-author {
+    order: 1;
+    width: 35%;
+    input {
+        width: 100%;
+    }
+}
+
+.comment-form-email {
+    order: 2;
+    width: 60%;
+
+    input {
+        width: 100%;
+    }
+}
+
+.comment-form-comment {
+    order: 3;
+    width: 100%;
+}
+
+.form-submit {
+    order: 4;
+    width: 100%;
+}
+
+.comment-form-url {
+    display: none;
+}
+
+
+#reply-title {
+    display: none;
+}
+
+.comment-notes {
+    display: none;
+}
+
+// PEOPLE ALSO READ SECTION
+
+
+
+.post-link-single {
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%;
+    background: $div-red;
+    margin: 2% auto 2% auto;
+    color: white;
+    font-family: $sans;
+    font-weight: bold;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: $div-yellow;
+    }
+}
+
+.people-post-name {
+    font-weight: bold;
+    width: 95%;
+    margin: $center !important;
+}
+
+.people-excerpt {
+    font-size: .8rem;
+    width: 95%;
+    margin: $center !important;
+}
+
+// COMMENTS  
+
+.comment {
+    list-style-type: none;
+}

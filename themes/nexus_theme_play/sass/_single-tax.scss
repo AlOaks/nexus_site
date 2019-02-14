@@ -1,0 +1,392 @@
+.tax-Cities {
+    background: white;
+
+    
+
+    .footer-copy {
+        background: $bg-blue;
+    }
+}
+
+.page-title-container {
+    p {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        color: $font-blue;
+        font-family: $sans;
+        font-size: 1.3rem;
+        line-height: 2rem;
+
+        @include mobile {
+            font-size: .8rem;
+        }
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+}
+
+.search-city-container-tax {
+    width: 100%;
+    background: $div-red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+    .tax-programs-btn {
+        margin: 0;
+        width: 20%;
+        background: #ffb419;
+        color: #193F5C;
+        border: none;
+        font-size: 1.2rem;
+        font-family: "Open Sans";
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+
+        @include mobile {
+            font-size: .9rem;
+            width: 30%;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    }
+
+    
+}
+
+
+
+.city-selector {
+    display: none;
+}
+
+.filters-container {
+    width: 100%;
+    display: flex;
+    background: $div-white;
+    height: 15vh;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.duration-selector, .location-selector, .prg-type-select-tax {
+    height: 40%;
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
+    flex-basis: 30%;
+    padding: 0;
+    option {
+        color: $font-blue;
+    }
+
+    @include mobile {
+        width: 50%;
+        margin-bottom: 2.5%;
+        margin-top: 2.5%;
+    }
+}
+
+.prg-type-select-tax {
+    @include mobile {
+        font-size: .8rem;
+    }
+}
+
+
+
+.advanced-filters {
+    text-align: center;
+    color: $font-blue;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    width: 20%;
+    font-size: 1rem;
+    margin-bottom: 5vh;
+    margin-left: 40%;
+
+    i {
+        margin-left: 1%;
+    }
+
+    @include mobile {
+        font-size: .8rem;
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+.apply-filters-btn {
+    flex-basis: 15%;
+    height: 40%;
+    background: $div-yellow;
+    color: $font-blue;
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0;
+
+    &:hover {
+        background: lighten($div-yellow, 20%);
+    }
+
+    @include mobile {
+        font-size: 1.2rem;
+        flex-basis: 35%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+.type-programs-container {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: $font-blue;
+        }
+    }
+
+    
+
+}
+
+
+
+.type-prog-container {
+    order: 2;
+    width: 30%;
+    height: auto;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 1.666%;
+    margin-right: 1.666%;
+
+    @include tablet {
+        width: 46%;
+    }
+
+    &:hover {
+        
+        .program-info-div {
+            background: lighten($div-yellow, 20%);
+        }
+    }
+
+    @include mobile {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 0;
+
+        .program-info-div {
+            background: rgba(255,255,255,.8);
+        }
+
+    }
+
+    p {
+        font-family: $roboto;
+        color: $font-blue;
+        font-size: .8rem;
+        margin: 0;
+
+        
+        @include mobile {
+            font-size: .9rem;
+        }
+    }
+
+    .prog-name-single {
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0;
+
+        @include mobile {
+            font-size: 1.1rem;
+        }
+
+        @include tablet {
+            font-size: .8rem;
+        }
+    }
+
+    .prog-city-single {
+        font-style: italic;
+    }
+
+    
+    a {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        img {
+            height: 13rem;
+        }
+    }
+
+}
+
+.program-info-div {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,.6);
+    width: 100%;
+    height: 35%;
+    padding: 2%;
+
+    @include mobile {
+        bottom: 0;
+        height: 40%;
+    }
+}
+
+.featured {
+    order: 1;
+    position: relative;
+}
+
+#feat-label {
+    background: $div-red;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    padding: 1% 5%;
+    color: white;
+    margin-left: 0;
+}
+
+.pagination {
+    font-size: .8rem;
+    color: gray;
+
+    .nav-links {
+        float: right;
+        margin-right: 7.5%;
+        margin-bottom: 3vh;
+
+        a {
+            color: $font-blue;
+            font-family: $sans;
+            font-size: .9rem;
+
+            &:visited {
+                color: $font-blue;
+            }
+        }
+    }
+}
+
+#more_programs {
+    background: $div-red;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 5%;
+    color: white;
+    margin-bottom: 5%;
+    display: none;
+
+    &:hover {
+        background: red;
+    }
+
+    @include mobile {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+
+.no-programs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+
+    p {
+        color: $div-red;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: $sans;
+        font-size: 2rem;
+        color: $font-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        span {
+            font-size: 4rem;
+            position: relative;
+            margin-bottom: 10%;
+            font-family: $roboto;
+
+            &::before {
+                content: "";
+                border-bottom: 3px solid #FFC54C;
+                width: 40%;
+                position: absolute;
+                height: 1px;
+                left: 30%;
+                bottom: 0;
+            }
+        }
+    }
+
+    .contact-btn {
+        background: $bg-blue;
+        color: white;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        padding: 2% 5%;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+            background: lighten($bg-blue, 10%);
+        }
+
+    }
+}
+

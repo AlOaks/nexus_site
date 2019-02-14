@@ -1,0 +1,389 @@
+.start-journey-section {
+    width: 100%;
+    height: 55vh;
+    background: $div-red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    h1 {
+        margin: 0;
+        font-size: 4rem;
+        color: white;
+        font-family: $roboto;
+        margin-top: 3%;
+        position: relative;
+        text-align: center;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+
+        @include mobile {
+            text-align: center;
+        }
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 30%;
+            bottom: -16px;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        color: white;
+        font-style: italic;
+        font-family: $sans;
+        font-size: 2rem;
+
+        @include mobile {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 85%;
+        }
+    }
+
+    a {
+        color: $font-blue;
+        background: linear-gradient(to left,$div-yellow, $div-yellow-dark);
+        transition-duration: 2s;
+        border: none;
+        font-size: 1.2rem;
+        font-family: $sans;
+        padding: 15px 5rem;
+        margin-bottom: 3%;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+            background: linear-gradient(to left,$div-yellow-dark, $div-yellow);
+            transition-duration: 2s;
+        }
+    }
+}
+
+
+// INFO SECTION
+
+
+
+.general-info {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    padding: 5vh 0;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+}
+
+.footer-title {
+    color: $font-blue;
+    font-size: 2rem;
+
+    position: relative;
+
+        &::before {
+            content: "";
+            border-bottom: 3px solid #FFC54C;
+            width: 40%;
+            position: absolute;
+            height: 1px;
+            left: 0;
+            bottom: -8px;
+        }
+
+    @include mobile {
+        font-size: 1.3rem;
+
+        &::before {
+            left: 30%;
+        }
+    }
+    
+    @include tablet {
+        font-size: 1.3rem;
+        margin-bottom: 5vh;
+    }
+}
+
+
+
+
+.info-div {
+    flex-basis: 22%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $font-blue;
+    font-family: $roboto;
+    
+    a {
+        text-decoration: underline;
+    }
+
+    @include mobile {
+        flex-basis: 100%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        p {
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 5%;
+
+            i {
+                margin-right: 5%;
+            }
+        }
+    }
+   
+}
+
+
+
+.social-logos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+
+    @include mobile {
+        margin-top: 5%;
+    }
+
+    @include tablet {
+        margin-bottom: 5vh;
+    }
+
+}
+
+.social-logo {
+    height: 3rem;
+    width: 3rem;
+
+    @include tablet {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+.join-nexus-fam-btn, .join-logged-in {
+    background: $div-red;
+    border: none;
+    color: white;
+    font-family: $sans;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 8px 0;
+    border-radius: 5px;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: white;
+        background: red;
+    }
+
+    @include mobile {
+        margin-top: 40%;
+        padding: 1%;
+        width: 100%;
+    }
+}
+
+.nexus-social {
+    @include mobile {
+        align-items: center;
+    }
+}
+
+.contact-footer {
+    align-items: left;
+    
+
+    @include mobile {
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        text-align: center;
+        font-weight: bold;
+        width: 50%;
+    }
+
+    ul {
+        li {
+            @include mobile {
+                margin-bottom: 8%;
+            }
+
+            a {
+                width: 100%;
+                
+                &:visited {
+                    color: $font-blue;
+                }
+            }
+            
+        }
+    }
+
+    .phone {
+        @include mobile {
+            order: 1;
+        }
+    }
+
+    .address-nexus {
+        @include mobile {
+            order: 3;
+        }
+    }
+
+    .office-hours {
+        @include mobile {
+            order: 2;
+        }
+    }
+}
+
+
+// COPYRIGHT
+
+.footer-copy {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    background: $bg-blue;
+
+    
+
+    @include mobile {
+        height: 30vh;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-size: .8rem;
+
+    }
+
+    .copyright {
+        color: gray;
+        font-size: 1.1rem;
+        margin: 0;
+        flex-basis: 100%;
+        text-align: center;
+
+        @include mobile {
+            order: 2;
+        }
+    }
+
+    .menu-menu-1-container, .menu-header-mobile-container {
+        width: 60%;
+        height: 90%;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            li {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .menu {
+        color: white;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 0;
+
+        @include mobile {
+            flex-direction: column;
+            padding-left: 0;
+            margin-top: 10%;
+        }
+
+
+        a {
+            color: white;
+            font-family: $sans;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: .9rem;
+        }
+    }
+}
+
+
+.sitemap-item {
+    flex-basis: 22%;
+    font-family: $sans;
+
+    h4 {
+        color: white;
+        margin-bottom: 1%;
+    }
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+
+            list-style-type: none;
+
+            a {
+                color: white;
+                text-decoration: none;
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+.why-nexus-footer {
+    @include mobile {
+        display: none;
+    }
+}

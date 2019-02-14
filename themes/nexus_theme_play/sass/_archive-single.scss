@@ -1,0 +1,139 @@
+.archive-single-page {
+    display: flex;
+    justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.archive-posts {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid lightgray;
+
+    // &:after {
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     width: 5px;
+    //     content: " ";
+    //     right: 0;
+    // }
+
+    @include mobile {
+
+        order: 2;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.post-container-archive {
+    width: 80%;
+    height: 65vh;
+
+
+    img {
+        width: 100%;
+        height: 65%;
+    }
+
+    
+
+    @include mobile {
+        height: 50vh;
+    }
+}
+
+
+
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    
+    @include mobile {
+        order: 1;
+    }
+}
+
+.othr-cats {
+    color: $font-blue;
+    font-size: 1.3rem;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.categories-list-arc {
+    margin: 0;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: $font-blue;
+    font-family: $sans;
+
+    @include mobile {
+        display: none;
+    }
+    
+
+    li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        
+
+        &:after {
+            content: " >";
+        }
+
+        &:visited {
+            color: $font-blue;
+        }
+    }
+}
+
+.categories-list-arc2 {
+    display: none;
+    border-radius: 5px;
+    background: $div-white;
+    margin: $center;
+    width: 85%;
+    margin-bottom: 5%;
+    margin-top: -5%;
+    padding-left: 10px;
+
+    li {
+        padding: 5px 0;
+
+        @include mobile {
+            &:nth-of-type(odd) {
+                background: $div-white;
+            }
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $roboto;
+        font-weight: bold;
+
+        &:visited {
+            color: $font-blue;
+        }
+    }
+}

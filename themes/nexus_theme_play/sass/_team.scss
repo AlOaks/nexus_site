@@ -1,0 +1,146 @@
+.team-container {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.the-team-title {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    color: $font-blue;
+    font-family: $sans;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+
+    @include mobile {
+        font-size: 1.5rem;
+        margin-bottom: 5vh;
+        width: 30%;
+    }
+
+    &:before {
+        content: "";
+        height: 1px;
+        border-bottom: 3px solid $div-yellow;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        width: 20%;
+    }
+}
+
+.member-info {
+    width: 68%;
+    height: 100%;
+    font-family: $sans;
+
+    @include mobile {
+        width: 90%;
+    }
+
+    p {
+        width: 90%;
+
+        @include mobile {
+            width:100%;
+        }
+
+        @include tablet {
+            font-size: .8rem;
+            line-height: 20px;
+        }
+    }
+
+   
+}
+
+
+.member-container {
+    font-family: $roboto;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $font-blue;
+
+    @include mobile {
+        flex-direction: column;
+        width: 90%;
+        border-bottom: 1px solid $div-yellow;
+        padding-bottom: 5%;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    img {
+        border-radius: 100%;
+        width: 28%;
+        height: 100%;
+
+        @include mobile {
+            width: 50%;
+        }
+        
+    }
+
+    &:nth-of-type(even) {
+
+        .member-info {
+            border-right: 1px solid $div-yellow;
+
+            @include mobile {
+                border-right: none;
+            }
+        }
+
+
+        .member-info {
+            order: 2;
+        }
+
+        img {
+            order: 3;   
+
+            @include mobile {
+                order: 2;
+            }
+        }
+    }
+
+    &:nth-of-type(odd) {
+
+        .member-info {
+            border-left: 1px solid $div-yellow;
+            padding-left: 5%;
+
+            @include mobile {
+                border-left: none;
+                padding-left: 0;
+            }
+        }
+
+        @include mobile {
+
+            .member-info {
+                order: 2;
+            }
+    
+            img {
+                order: 1;   
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,50 @@
+# COMMUNITY PROJECT GITIGNORE #
+
+# Ignore OS files #
+# =============== #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+# Ignore logs and databases #
+# ========================= #
+*.log
+*.sql
+error_log
+access_log
+
+# Ignore everything in "wp-content" except the "plugins" and "themes" directories. #
+# ================================================================================ #
+/*
+!.gitignore
+!plugins
+!themes/
+!README.md
+
+# Ignore everything in "plugins" except certain plugins. #
+# ========================================================== #
+plugins/*
+!plugins/nexus-plugin/
+
+# Ignore everything in "themes" except the active theme. #
+# ====================================================== #
+themes/*
+!themes/nexus_theme/
+!themes/nexus_theme_scratch/
+!themes/nexus_theme_play/
+
+# Ignore npm packages #
+# =================== #
+themes/nexus_theme/node_modules/*
+themes/nexus_theme_play/node_modules/*
+themes/nexus_theme_scratch/node_modules/*
+
+# Ignore build files #
+# ================== #
+!themes/nexus_theme/gulpfile.js
+themes/nexus_theme/build/*

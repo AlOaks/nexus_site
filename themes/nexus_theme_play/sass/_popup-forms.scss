@@ -1,0 +1,373 @@
+
+
+.pum-theme-default-theme {
+    background: rgba(0,0,0,.8) !important;
+}
+
+// BOOK CONSULT FORM
+
+#popmake-144, #popmake-88, #popmake-168, #popmake-108, #popmake-634, #popmake-639, #popmake-649, #popmake-645 {
+    top: 5% !important;
+    padding: 0;
+    
+
+    .popmake-content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }  
+}
+
+
+
+.form-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: $bg-blue;
+    width: 50%;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    img {
+        margin-top: 5%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    h2 {
+        color: white;
+        font-family: $roboto;
+        font-size: 2.3rem;
+        font-weight: bold;
+        position: relative;
+
+        &:before {
+            content: "";
+            border-bottom: 3px solid $div-yellow;
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 30%;
+        }
+    }
+}
+
+#popmake-88, #popmake-634, #popmake-639 {
+
+    .edvisor-row > label {
+        color: white;
+        font-size: .8rem;
+    }
+}
+
+.edvisor-form {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+
+    
+
+    .edvisor-button {
+        background: $div-red;
+        color: white;
+        width: 60%;
+        border: none;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-left: 20%;
+    }
+
+    .edvisor-row > select {
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    
+}
+
+.why-nexus-book {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $roboto;
+    background: white;
+
+    @include mobile {
+        display: none;
+    }
+
+    h2 {
+        color: $font-blue;
+        font-size: 2.3rem;
+        font-weight: bold;
+        position: relative;
+        margin-top: 15%;
+
+        &:before {
+            content: "";
+            border-bottom: 3px solid $div-yellow;
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 30%;
+        }
+    }
+
+    ul {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: $center;
+
+        li {
+            color: $font-blue;
+            font-family: $sans;
+            font-weight: 600;
+            font-size: 1.1rem;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 80%;
+
+            img {
+                width: 20%;
+                height: auto;
+                margin-right: 5%;
+            }
+        }
+    }
+}
+
+// LOG IN FORM
+
+#popmake-206, #popmake-162, #popmake-689, #popmake-694 {
+    padding: 0;
+    width: 30%;
+
+    
+    .popmake-content {
+        background: $bg-blue;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        color: white;
+
+        .login-title {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-family: $roboto;
+        }
+
+        img {
+            width: 50%;
+            margin-left: 22%;
+        }
+
+        input {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type="checkbox"] {
+            width: 5%;
+        }
+
+        input[type="submit"] {
+            background: $div-red;
+            color: white;
+            font-family: $sans;
+            box-shadow: $shadow;
+            border: none;
+            font-size: 1.5rem;
+            padding: .5rem;
+            
+        }
+
+        
+    }
+}
+
+#swpm-login-form > div > div.swpm-username-label > label {
+    color:white;
+}
+
+.swpm-login-form-inner {
+    width: 100%;
+    margin-left: 10%;
+
+    a {
+        color: white;
+        &:visited {
+            color: $div-white;
+        }
+    }
+}
+
+.swpm-login-submit {
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 2%;
+}
+
+.pum-close {
+    background: transparent !important;
+    color: red !important;
+    top: 0 !important; 
+    right: 0 !important;
+    font-size: .8rem !important;
+    
+}
+
+
+
+// START YOUR JOURNEY FORM
+
+
+.form-start-form {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: $center;
+
+    span {
+        width: 45%;
+        margin: 5% 5% 5% 0;
+        
+
+        input {
+            width: 100%;
+            line-height: 0;
+
+            &::placeholder {
+                padding: 1% 2%;
+                font-family: $sans;
+                font-size: .8rem;
+                color: gray;
+            }
+        }
+
+        select {
+            width: 100%;
+            box-shadow: none;
+            color: gray;
+            font-size: .8rem;
+
+            option {
+                color: gray;
+            }
+        }
+    }
+}
+
+#popmake-168 {
+    height: 70vh;
+
+    .form-book {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// SING UP FORM 
+.swpm-validate-form {
+
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    label {
+        font-size: .8rem;
+        font-family: $roboto;
+        color: white;
+    }
+
+}
+
+.swpm-registration-membership-level-row {
+    display: none;
+}
+
+.swpm-registration-submit-section input[type="submit"] {
+    background: $div-red;
+    font-family: $roboto;
+    font-weight: bold;
+    box-shadow: $shadow;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+
+.swpm-login-widget-action-msg {
+    color: $div-yellow !important;
+    font-size: 1.1rem !important;
+}
+
+// THANK YOU PAGE 
+
+.thanks-page-form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+    h2 {
+        color: $font-blue;
+        font-size: 3rem;
+        font-family: $roboto;
+    }
+
+    p {
+        color: $font-blue;
+        font-family: $sans;
+    }
+
+    a {
+        background: $div-red;
+        font-family: $sans;
+        padding: 1%;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:visited {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

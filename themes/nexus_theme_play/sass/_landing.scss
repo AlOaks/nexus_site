@@ -1,0 +1,369 @@
+// HERO 
+
+.single-landing_pages {
+    margin-top: -46px !important;
+
+    .wpforms-container {
+
+        @include mobile {
+            width: 100% !important;
+        }
+    }
+}
+
+
+.main-landing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 215vh;
+    justify-content: flex-start;
+    position: relative;
+
+    @include tablet {
+        height: 140vh;
+    }
+
+    @include mobile {
+        height: 195vh;
+    }
+}
+
+
+
+.top-div {
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.hero-ovrlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.blue-ovrly {
+    background: rgba(9, 0, 61, 0.6);
+    top: 0;
+    left: 0;
+}
+
+.white-ovrly {
+    background: rgba(255, 255, 255, .6);
+    bottom: 0;
+    left: 0;
+}
+ 
+.bottom-div {
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+// CONTENT
+
+.landing-main {
+    position: absolute;
+    width: 60%;
+    top: 8%;
+    left: 20%;
+    z-index: 10;
+
+    @include tablet {
+        width: 70%;
+        left: 15%;
+    }
+
+    @include mobile {
+        width: 80%;
+        top: 2.5%;
+        left: 10%;
+    }
+    
+}
+
+.landingpage-title-container {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+        color: $div-white;
+        font-family: $roboto;
+    }
+
+    img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.landing-page-container {
+    color: $div-white;
+    font-family: $sans;
+    text-align: center;
+
+    strong {
+        color: $div-yellow;
+    }
+}
+
+// FORM
+
+
+.get-more-info-form {
+    background: $div-red !important; 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    padding: 5% !important;
+
+    
+
+
+    label {
+        text-align: left !important;
+    }
+
+}
+
+.wpforms-title {
+    text-transform: uppercase !important;
+    font-size: 1.2rem !important;
+    text-align: left;
+
+    
+}
+
+.wpforms-required-label {
+    color:  $div-yellow !important  ;
+}
+
+.get-more-info-btn {
+    background: $div-yellow !important;
+    font-family: $roboto;
+}
+
+// REMEMBER SECTION
+.nexus-club-container {
+    background: $div-white;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.nexus-club-container p {
+    text-align: center;
+    color: $div-red;
+    font-size: 1.6rem;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 5%;
+
+    @include mobile {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+.club-posts-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+    }
+}
+
+.club-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 26%;
+    text-align: center;
+    background: white;
+
+    @include tablet {
+        width: 30%;
+    }
+
+    @include mobile {
+        width: 100%;
+        margin-bottom: 5%;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-blue;
+        font-weight: bold;
+
+        &:visited {
+            color: $font-blue;
+        }
+    }
+
+    p {
+        font-size: .8rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        color: $font-blue;
+        font-weight: 300;
+    }
+
+    img {
+        height: 9rem;
+        width: 100%;
+
+        @include mobile {
+            height: 12rem;
+        }
+    }
+
+
+}
+
+// CLUB MEMBERS
+
+.landing-reviews p {
+    text-align: center;
+    color: $div-red;
+    font-size: 1.6rem;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 5%;
+
+    @include mobile {
+        width: 80%;
+    }
+}
+
+.reviews-container-landing {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        overflow-x: auto;
+    }
+}
+
+.review-single-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 26%;
+    text-align: center;
+
+    @include mobile {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-shrink: 0;
+    }
+
+
+    p {
+        font-size: .8rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        color: $font-blue;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    img {
+        height: 9rem;
+        width: 9rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        margin-bottom: 2%;
+    }
+
+
+}
+
+// JOIN NEXUS
+
+.single-landing_pages {
+
+    .copyright {
+        background: $bg-blue;
+        color: white;
+        text-align: center;
+        font-size: .8rem;
+
+        p {
+            margin: 0;
+            padding: 1px;
+        }
+    }
+
+    .site-info {
+        background: $div-red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        p {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: $roboto;
+        }
+
+        a {
+            color: $font-blue;
+            background: linear-gradient(to left,$div-yellow, $div-yellow-dark);
+            border: none;
+            font-size: 1rem;
+            font-family: $sans;
+            margin-bottom: 10%;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+    
+            &:hover {
+                background: linear-gradient(to left,$div-yellow-dark, $div-yellow);
+                transition-duration: 2s;
+            }
+        }
+    }
+}
+
+.popu-list ul, .details-list ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+

@@ -1,0 +1,154 @@
+.page-template-page-join-us {
+
+    .login-page-form {
+        
+        input[type="submit"] {
+            width: 20%;
+            padding: 1% 0 1% 0;
+    
+            @include mobile {
+                width: 50%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+        }
+    }
+}
+
+.login-page-container {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    background: $bg-blue;
+
+    @include mobile {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.swpm-validate-form label {
+    color: white; 
+}
+
+
+.login-page-info {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    font-family: $roboto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-left: 1px solid $div-white;
+
+    img {
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    ul {
+        margin-top: -5%;
+        padding: 0;
+
+        @include mobile {
+            margin-top: 5%;
+        }
+    }
+
+    @include mobile {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: none;
+        order: 1;
+    }
+}
+
+
+.login-page-form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include mobile {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+#swpm-registration-form > table > tbody > tr:nth-child(8) > td > label > a {
+    color: white;
+}
+
+#swpm-registration-form > table > tbody > tr:nth-child(9) > td > label > a {
+    color: white;
+}
+
+// MEMBER LOGIN PAGE
+
+
+.page-template-page-member-login {
+    .login-page-info {
+        justify-content: center;
+    }
+}
+
+
+#swpm-login-form > div > div.swpm-username-label > label {
+    color: white;
+}
+
+#swpm-login-form > div > div.swpm-password-label > label {
+    color: white;
+}
+#swpm-login-form > div > div.swpm-remember-me > span.swpm-rember-label {
+    color: white;
+}
+
+#forgot_pass {
+    color: white;
+}
+
+#register {
+    color: white;
+}
+
+// PASS RESET
+
+.page-template-page-password-reset {
+
+
+    .login-page-container {
+        height: 45vh;
+        justify-content: center;
+    }
+
+    .login-page-form {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        color: $font-blue;
+    }
+}
