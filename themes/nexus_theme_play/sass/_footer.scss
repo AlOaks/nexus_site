@@ -54,7 +54,7 @@
 
     a {
         color: $font-blue;
-        background: linear-gradient(to left,$div-yellow, $div-yellow-dark);
+        background: $div-yellow;
         transition-duration: 2s;
         border: none;
         font-size: 1.2rem;

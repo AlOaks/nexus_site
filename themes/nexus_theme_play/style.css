@@ -1289,8 +1289,7 @@ object {
         width: 85%; } }
   .start-journey-section a {
     color: #193F5C;
-    background: -webkit-gradient(linear, right top, left top, from(#ffb419), to(#f66f00));
-    background: linear-gradient(to left, #ffb419, #f66f00);
+    background: #ffb419;
     -webkit-transition-duration: 2s;
             transition-duration: 2s;
     border: none;
@@ -1726,10 +1725,6 @@ object {
   font-weight: bold;
   font-size: 1.5rem; }
   .selector::-webkit-input-placeholder {
-    color: #193F5C;
-    font-size: 1.5rem;
-    text-align: center; }
-  .selector:-ms-input-placeholder {
     color: #193F5C;
     font-size: 1.5rem;
     text-align: center; }
@@ -4554,11 +4549,6 @@ option {
       width: 100%;
       line-height: 0; }
       .form-start-form span input::-webkit-input-placeholder {
-        padding: 1% 2%;
-        font-family: "Open Sans";
-        font-size: .8rem;
-        color: gray; }
-      .form-start-form span input:-ms-input-placeholder {
         padding: 1% 2%;
         font-family: "Open Sans";
         font-size: .8rem;
