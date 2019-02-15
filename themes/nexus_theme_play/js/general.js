@@ -277,6 +277,16 @@ $('.duration-selector-single').change(function(e) {
 });
 
 
+// SOCIAL LINKS
+
+if ($('html').is(':lang(es-ES)')) {
+
+    $('.facebook-link').attr('href', 'https://www.facebook.com/nexuseducanada/');
+    $('.linked-link').attr('href', 'https://www.linkedin.com/company/nexus-education-consulting-mx');
+    $('.instagram-link').attr('href', 'https://www.instagram.com/nexuscanada_mx/');
+}
+
+
 
 
 

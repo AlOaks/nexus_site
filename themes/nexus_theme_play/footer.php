@@ -31,10 +31,10 @@
 				<div class="nexus-social info-div">
 					<h2 class="social-title-footer footer-title"><?php _e('Stay Connected', 'nexus'); ?></h2>
 					<div class="social-logos-container">
-						<a target="_blank" href="https://www.facebook.com/nexusintercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?> /></a>
-						<a target="_blank" href="https://ca.linkedin.com/company/nexus-intercambio"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/linkedin.png'; ?> /></a>
-						<a target="_blank" href="https://www.youtube.com/channel/UC9ZM-YLdyElsYY1Te8lbT3w/featured"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
-						<a target="_blank" href="https://www.instagram.com/nexus.intercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
+						<a class="social-links facebook-link" target="_blank" href="https://www.facebook.com/nexusintercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?> /></a>
+						<a class="social-links linked-link" target="_blank" href="https://ca.linkedin.com/company/nexus-intercambio"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/linkedin.png'; ?> /></a>
+						<a class="social-links youtube-link" target="_blank" href="https://www.youtube.com/channel/UC9ZM-YLdyElsYY1Te8lbT3w/featured"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
+						<a class="social-links instagram-link" target="_blank" href="https://www.instagram.com/nexus.intercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
 					</div>
 					<?php 
 					if (is_user_logged_in()) { ?>
