@@ -93,6 +93,10 @@
     border-radius: 5px;
     transition-duration: 1s;
 
+    @include mobile {
+        width: 60%;
+    }
+
     &:visited {
         color: $font-blue;
     }

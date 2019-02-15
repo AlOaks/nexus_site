@@ -1667,6 +1667,9 @@ object {
   border-radius: 5px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s; }
+  @media (max-width: 705px) {
+    .promotions-button {
+      width: 60%; } }
   .promotions-button:visited {
     color: #193F5C; }
 
