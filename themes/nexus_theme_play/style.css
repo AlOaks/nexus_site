@@ -1627,6 +1627,10 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (max-width: 705px) {
+    .hero-label-div {
+      height: auto;
+      margin-top: 5vh; } }
 
 .hero-label {
   position: relative;
@@ -1694,7 +1698,7 @@ object {
           align-items: center; }
   @media (max-width: 705px) {
     .program-selectors {
-      height: 30vh; } }
+      height: 20vh; } }
 
 .programs-form {
   display: -webkit-box;
