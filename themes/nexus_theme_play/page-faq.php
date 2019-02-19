@@ -33,7 +33,7 @@ get_header();
 					?>
 			</section>
 			<section class="start-journey-section">
-				<h1 class="start-title"><?php _e('Have more questions?', 'nexus'); ?></h1>
+				<h2 class="start-title"><?php _e('Have more questions?', 'nexus'); ?></h2>
 				<p class="start-description"><?php _e('Chat with one of our advisors!', 'nexus'); ?></p>
 				<a class="contact-btn contact-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
 			</section>

@@ -20,6 +20,7 @@ get_header();
             <div class="page-title-container">
                 <h1 class="programs-page-title"><?php the_title(); ?></h1>
             </div>
+            <div style="display: none;" class="programshide-content"><? the_content(); ?></div>
             <section class="search-program">
                 <h2 class="hero-title-programs"><?php _e('Where is your next experience going to be? ', 'nexus'); ?></h2>
                 <div class="search-container">
@@ -90,7 +91,7 @@ get_header();
 
             </section>
             <section class="start-journey-section">
-			    <h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>
+			    <h2 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h2>
 			    <p class="start-description"><?php _e('Let us help you find your path to success.', 'nexus'); ?></p>
 			    <a class="contact-btn contact-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
 		    </section>

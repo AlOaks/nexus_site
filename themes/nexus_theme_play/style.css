@@ -1252,7 +1252,7 @@ object {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .start-journey-section h1 {
+  .start-journey-section h2 {
     margin: 0;
     font-size: 4rem;
     color: white;
@@ -1261,12 +1261,12 @@ object {
     position: relative;
     text-align: center; }
     @media (max-width: 1024px) {
-      .start-journey-section h1 {
+      .start-journey-section h2 {
         font-size: 3rem; } }
     @media (max-width: 705px) {
-      .start-journey-section h1 {
+      .start-journey-section h2 {
         text-align: center; } }
-    .start-journey-section h1::before {
+    .start-journey-section h2::before {
       content: "";
       border-bottom: 3px solid #FFC54C;
       width: 40%;
@@ -1275,7 +1275,7 @@ object {
       left: 30%;
       bottom: -16px; }
     @media (max-width: 705px) {
-      .start-journey-section h1 {
+      .start-journey-section h2 {
         font-size: 2rem; } }
   .start-journey-section p {
     color: white;

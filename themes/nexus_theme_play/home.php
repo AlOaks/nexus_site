@@ -26,7 +26,7 @@ get_header();
 					<div class="popular-slider">
 						<button class="popular-btn bttn-lft"><</button>
 						<button class="popular-btn bttn-right">></button>
-						<h1 class="popular-banner"><?php _e('Popular posts', 'nexus'); ?></h1>
+						<h2 class="popular-banner"><?php _e('Popular posts', 'nexus'); ?></h2>
 						
 						
 						<?php 
@@ -103,14 +103,14 @@ get_header();
 								if (!empty($video)) { ?>
 									<div class="video-container">
 										<div class="post-video"><?php echo $video ?></div>
-										<h1 class="video-title"><?php echo $title ?></h1>
+										<h2 class="video-title"><?php echo $title ?></h2>
 									</div>
 								<?php	
 								} else if(empty($video)) {
 								?>
 									<div class="post-container">
 										<?php echo $img; ?>
-										<h1 class="post-title"><?php echo $title; ?></h1>
+										<h2 class="post-title"><?php echo $title; ?></h2>
 										<p class="post-excerpt"><?php echo $excerpt; ?></p>
 										<a class="post-link" href=<?php echo the_permalink(); ?>><?php _e('Read', 'nexus'); ?></a>
 									</div>
@@ -132,7 +132,7 @@ get_header();
 					
 		</section>
 		<section class="start-journey-section">
-			<h1 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h1>
+			<h2 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h2>
 			<p class="start-description"><?php _e('We have more to offer', 'nexus'); ?></p>
 			<a class="contact-btn join-footer"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>

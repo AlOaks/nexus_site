@@ -81,7 +81,7 @@ get_header();
 			</div>
             
             <section class="start-journey-section">
-				<h1 class="start-title"><?php _e('Questions?', 'nexus'); ?></h1>
+				<h2 class="start-title"><?php _e('Questions?', 'nexus'); ?></h2>
 				<p class="start-description"><?php _e("We've got you covered", 'nexus'); ?></p>
 				<a class="contact-btn-faq" href="../faq"><?php _e('See FAQ', 'nexus'); ?></a>
 			</section>

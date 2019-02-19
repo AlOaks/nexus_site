@@ -37,7 +37,7 @@ get_header();
 		?>
 
 		<div class="share-links-container">
-			<h3 class="sharing-title"><?php _e('Like this post? Share it with your friends!', 'nexus'); ?></h1>
+			<h3 class="sharing-title"><?php _e('Like this post? Share it with your friends!', 'nexus'); ?></h3>
 			<ul class="share-list">
 				<li class="share-link"><a href="https://www.facebook.com/sharer.php"><i class="fab fa-facebook"></i></a></li>
 				<li class="share-link"><a href="https://www.linkedin.com/shareArticle"><i class="fab fa-linkedin"></i></a></li>
@@ -86,7 +86,7 @@ get_header();
 			</section>
 
 		<section class="start-journey-section">
-			<h1 class="start-title"><?php _e('Want to read even better posts?', 'nexus'); ?></h1>
+			<h2 class="start-title"><?php _e('Want to read even better posts?', 'nexus'); ?></h2>
 			<p class="start-description"><?php _e('Get access to our club member exclusive content.','nexus'); ?></p>
 			<a class="contact-btn contact-trigger"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>

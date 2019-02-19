@@ -31,9 +31,6 @@
     /* SLIDERS */
 
 
-
-    
-
 $('.btn-lft').click(function() {
     var currentLeft = $('.slider-canada').scrollLeft();
     var slideWidth = $('.slider-item').width();
@@ -41,8 +38,6 @@ $('.btn-lft').click(function() {
     $('.slider-canada').scrollLeft((currentLeft + slideWidth));
 
 });
-
-
 
 $('.btn-left').click(function() {
 
@@ -53,35 +48,12 @@ $('.btn-left').click(function() {
 
 });
 
-
-
-
 $('.btn-right').click(function() {
     var currentRight = $('.slider-canada').scrollLeft();
     var slideWidth = $('.slider-item').width();
 
     $('.slider-canada').scrollLeft((currentRight - slideWidth));
  });
-
-
- function sliding() {
-    var currentRight = $('.slider-canada').scrollLeft();
-    var slideWidth = $('.slider-item').width();
-
-    $('.slider-canada').scrollLeft((currentRight + slideWidth));
-     
- }
-
- function autoSlide() {
-    setInterval(sliding, 5000);
-}
-
-autoSlide();
-
-
-
-
-
 
 
  $('.why-btn-right').click(function() {

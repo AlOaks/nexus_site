@@ -122,7 +122,7 @@ get_header();
 
 
 			<section class="choose-city-section">
-					<h1 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h1>
+					<h2 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h2>
 					<div class="cities-container-front">
 						<a href="cities/vancouver/" class="city-link-front fifty-div vancouver">
 							<div class="city-container-frontpage van-div">
@@ -177,7 +177,7 @@ get_header();
 			</section>	
 
 			<section class="reviews-section">
-				<h1 class="reviews-title"><?php _e("Student's Review", 'nexus'); ?></h1>
+				<h2 class="reviews-title"><?php _e("Student's Review", 'nexus'); ?></h2>
 				<div class="reviews-slider">
 				
 					<div class="review-container">
@@ -202,7 +202,7 @@ get_header();
 				</div>
 			</section>
 			<section class="start-journey-section">
-				<h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>
+				<h2 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h2>
 				<p class="start-description"><?php _e('Let us help you find your path to success', 'nexus'); ?></p>
 				<a class="contact-btn contact-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
 			</section>

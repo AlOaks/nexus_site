@@ -20,8 +20,9 @@ get_header();
             <div class="page-title-container">
                 <h1 class="services-header"><?php the_title(); ?></h1>
             </div>
+            <div style="display: none;" class="services-hide-content"><? the_content(); ?></div>
             <section class="how-we-help-section">
-                <h1 class="how-we-help-title"><?php _e('How We Help You', 'nexus'); ?></h1>
+                <h2 class="how-we-help-title"><?php _e('How We Help You', 'nexus'); ?></h2>
                 <div class="planning steps-div">
                     <div class="step-container">
                         <img class="round-img" src=<?php echo get_template_directory_uri().'/assets/images/01@2x.png'; ?> />
@@ -78,7 +79,7 @@ get_header();
                 </div>
             </section>
             <section class="start-journey-section">
-				<h1 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h1>
+				<h2 class="start-title"><?php _e('Start Your Journey', 'nexus'); ?></h2>
 				<p class="start-description"><?php _e('Let us help you find your path to success', 'nexus'); ?></p>
 				<a class="contact-btn contact-trigger"><?php _e('Contact Us', 'nexus'); ?></a>
 			</section>
