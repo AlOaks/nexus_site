@@ -30,6 +30,8 @@
 
     /* SLIDERS */
 
+
+
     
 
 $('.btn-lft').click(function() {
@@ -60,6 +62,26 @@ $('.btn-right').click(function() {
 
     $('.slider-canada').scrollLeft((currentRight - slideWidth));
  });
+
+
+ function sliding() {
+    var currentRight = $('.slider-canada').scrollLeft();
+    var slideWidth = $('.slider-item').width();
+
+    $('.slider-canada').scrollLeft((currentRight + slideWidth));
+     
+ }
+
+ function autoSlide() {
+    setInterval(sliding, 5000);
+}
+
+autoSlide();
+
+
+
+
+
 
 
  $('.why-btn-right').click(function() {

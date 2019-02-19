@@ -65,7 +65,7 @@ get_header();
 
 
 			<section class="why-nexus-section">
-				<h1 class="why-title"><?php _e('Why hire Nexus?', 'nexus'); ?></h1>
+				<h2 class="why-title"><?php _e('Why hire Nexus?', 'nexus'); ?></h2>
 				<div class="why-items-container">
 				<button class="why-btn-left why-btn"><i class="fas fa-chevron-left"></i></button>
 				<button class="why-btn-right why-btn"><i class="fas fa-chevron-right"></i></button>

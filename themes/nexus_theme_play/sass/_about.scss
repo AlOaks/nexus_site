@@ -13,7 +13,9 @@
     }
 
     @include mobile {
+
         .site-main {
+            
             display: flex;
             flex-direction: column;
     
