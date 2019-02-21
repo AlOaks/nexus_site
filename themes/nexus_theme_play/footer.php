@@ -31,10 +31,10 @@
 				<div class="nexus-social info-div">
 					<h2 class="social-title-footer footer-title"><?php _e('Stay Connected', 'nexus'); ?></h2>
 					<div class="social-logos-container">
-						<a class="social-links facebook-link" target="_blank" href="https://www.facebook.com/nexusintercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?> /></a>
-						<a class="social-links linked-link" target="_blank" href="https://ca.linkedin.com/company/nexus-intercambio"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/linkedin.png'; ?> /></a>
-						<a class="social-links youtube-link" target="_blank" href="https://www.youtube.com/channel/UC9ZM-YLdyElsYY1Te8lbT3w/featured"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
-						<a class="social-links instagram-link" target="_blank" href="https://www.instagram.com/nexus.intercambio/"><img class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
+						<a class="social-links facebook-link" target="_blank" href="https://www.facebook.com/nexusintercambio/"><img alt="icon" class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?> /></a>
+						<a class="social-links linked-link" target="_blank" href="https://ca.linkedin.com/company/nexus-intercambio"><img alt="icon" class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/linkedin.png'; ?> /></a>
+						<a class="social-links youtube-link" target="_blank" href="https://www.youtube.com/channel/UC9ZM-YLdyElsYY1Te8lbT3w/featured"><img alt="icon" class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?> /></a>
+						<a class="social-links instagram-link" target="_blank" href="https://www.instagram.com/nexus.intercambio/"><img alt="icon" class="social-logo" src=<?php echo get_template_directory_uri().'/assets/images/instagram.png'; ?> /></a>
 					</div>
 					<?php 
 					if (is_user_logged_in()) { ?>
@@ -48,15 +48,15 @@
 					<h2 class="contact-title-footer footer-title"><?php _e('Contact Us', 'nexus'); ?></h2>
 					<ul>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i alt="icon" class="fas fa-map-marker-alt"></i>
                             <a href="https://www.google.ca/maps/place/Nexus+Intercambio/@49.2779062,-123.129072,14.75z/data=!4m5!3m4!1s0x0:0xa6fd4d36bf8969be!8m2!3d49.2812913!4d-123.1253663">970 Burrard St<br><?php _e('Room 119 - 1st Floor', 'nexus'); ?><br>Vancouver, BC - V6Z 2R4</a>    
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
+                            <i alt="icon" class="fas fa-phone"></i>
                             <p class="phone-info"> +1 604 288-0787</p>
                         </li>
                         <li>
-                            <i class="far fa-hourglass"></i>
+                            <i alt="icon" class="far fa-hourglass"></i>
                             <p class="hours-info"><?php _e('Mon - Fri', 'nexus'); ?> <span>9am to 5pm</span></p>
                         </li>
                     </ul>

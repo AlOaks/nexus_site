@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://nexuseducanada.com">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<?php wp_head(); ?>
@@ -46,9 +47,9 @@
 			
 		<div class="white-overlay-menu"></div>
 			
-			<a class="nexuslogo-link" href=<?php echo esc_url( home_url( '/' ) ); ?> ><img class="nexuslogo" src=<?php echo get_template_directory_uri().'/assets/images/logoNexus-amy.png' ?>></a>
+			<a class="nexuslogo-link" href=<?php echo esc_url( home_url( '/' ) ); ?> ><img alt="nexus logo" class="nexuslogo" src=<?php echo get_template_directory_uri().'/assets/images/logoNexus-amy.png' ?>></a>
 			<nav id="site-navigation" class="main-navigation">
-			<a class="menu-btn-active"><i class="fas fa-bars"></i></a>
+				<a class="menu-btn-active"><i class="fas fa-bars"></i></a>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

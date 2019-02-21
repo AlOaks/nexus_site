@@ -107,7 +107,7 @@ get_header();
 						$infoDesk = CFS()->get('infographics');
 
 						foreach($infoDesk as $desk) {
-							echo '<img class="slider-item" src="'.$desk['infographic'].'" />';
+							echo '<img alt="canada slide" class="slider-item" src="'.$desk['infographic'].'" />';
 						}
 							
 					?>
@@ -181,19 +181,19 @@ get_header();
 				<div class="reviews-slider">
 				
 					<div class="review-container">
-						<img class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
+						<img alt="review" class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
 						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
 						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
 						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p>
 					</div>
 					<div class="review-container">
-						<img class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
+						<img alt="review" class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
 						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
 						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
 						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p></p>
 					</div>
 					<div class="review-container">
-						<img class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
+						<img alt="review" class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
 						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
 						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
 						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p></p>
