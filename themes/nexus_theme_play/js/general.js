@@ -12,13 +12,30 @@
 
         if (prevScrollpos > currentScrollPos) {
             $('#masthead').removeClass('hiding');
+            // $('#masthead').addClass('header-white');
         } else {
             $('#masthead').addClass('hiding');
+            // $('#masthead').removeClass('header-white');
+
         }
         prevScrollpos = currentScrollPos;
     }
 
+    $(window).on('scroll', function() {
+        if($(window).scrollTop() > 50) {
+            $('#masthead').addClass('header-white');
+        } else {
+            $('#masthead').removeClass('header-white');
+        }
+    });
 
+
+    // ANIMATIONS
+
+    $(window).on('load', function() {
+        $('.hero-label-div').addClass('hero-label-div-shown');
+    })
+    
 
     $('#menu-item-247').click(function() {
         $(this).children('.sub-menu').toogle();

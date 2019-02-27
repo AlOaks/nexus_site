@@ -18,10 +18,23 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<section class="school-title-container">
+
+                <? $video = CFS()->get('school_video'); ?>
+
+                <? if(!empty($video)) {
+                    
+                    echo $video;
+
+                } else { ?>
+
                 <img src=<? echo get_the_post_thumbnail_url(); ?> />
+
+                <? } ?>
                 <div class="school-info-single">
+                <? while (have_posts() ): the_post(); ?>
                     <h1 class="school-page-title"><?php _e(the_title(), 'nexus'); ?></h1>
                     <? the_content(); ?>
+                <? endwhile; ?>
                 </div>
             </section>
 			<section class="single-school-page">

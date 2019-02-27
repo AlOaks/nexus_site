@@ -1,14 +1,18 @@
 
 // HERO IMAGE
 
+html {
+    margin-top: 0 !important;
+}
+
 .hero-image {
-    background: url('../../themes/nexus_theme_play/assets/images/hero-img.jpg');
+    background: url('../../themes/nexus_theme_play/assets/images/fp-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     margin: $center;
-    margin-top: 5vh;
+    // margin-top: 5vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,20 +41,27 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.3);
+    background: $bg-blue;
+    opacity: .3;
     width: 100%;
     height: 100%;
 }
 
 .hero-label-div {
-    height: 60%;
+    height: 0;
     display: flex;
     flex-direction: column;  
+    overflow-y: hidden;
+    transition-duration: 1s;
 
     @include mobile {
         height: auto;
         margin-top: 5vh;
     }
+}
+
+.hero-label-div-shown {
+    height: 45%;
 }
 
 .hero-label {
@@ -63,6 +74,7 @@
     font-weight: 600;
     text-align: center;
     margin-top: 0;
+    // height: 0;
 
     
     @include mobile {
@@ -73,7 +85,7 @@
 }
 
 .keyword {
-    color: $font-red;
+    color: $div-yellow;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-style: normal;
@@ -85,8 +97,8 @@
 
 .promotions-button {
     width: 25%;
-    background: $div-yellow;
-    color: $font-blue;
+    background: $div-red;
+    color: white;
     font-family: $sans;
     font-weight: bold;
     border: none;
@@ -103,7 +115,7 @@
     }
 
     &:visited {
-        color: $font-blue;
+        color: white;
     }
 
     

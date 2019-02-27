@@ -14,6 +14,7 @@
     display: flex;
     width: 13%;
     justify-content: space-between;
+    // color: white;
     
 
     @include mobile {
@@ -58,10 +59,10 @@
 
 .join-link, .log-in-link {
 
-    color: gray;
+    color: white;
 
     &:visited {
-        color: gray
+        color: white
     }
 
     @include mobile {
@@ -93,11 +94,11 @@
 
 
 
-
 .site-header {
     width: 100%;
     height: 14vh;
     background: white;
+    // background: $transparency;
     display: flex;
     position: fixed;
     top: 0;
@@ -158,6 +159,8 @@
         overflow: visible;
     }
 }
+
+
 
 .white-overlay-menu {
     background: rgba(255,255,255,.7);
@@ -230,7 +233,6 @@
 
         @include mobile {
             float: right;
-            background: white;
             display: block;
             color: $div-red;
 
@@ -360,3 +362,68 @@
     }
 
 }
+
+
+
+
+
+.page-template-front-page {
+
+    .site-header {
+        background: $transparency;
+
+        .menu-btn-active {
+            color: $div-yellow;
+        }
+
+        .menu-item {
+            
+            a {
+                color: white;
+
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+
+        .search-link {
+            color: white;
+        }
+
+        .login-link {
+            color: white;
+        }
+    }
+}
+
+.page-template-front-page  {
+
+    .header-white {
+        background: white;
+    
+        .menu-item {
+    
+            a {
+                color: $font-blue;
+
+                &:visited {
+                    color: $font-blue;
+                }
+            }
+        }
+    
+        .search-link {
+            color: gray;
+    
+            &:visited {
+                color: gray;
+            }
+        }
+    
+        .login-link {
+            color: $font-blue;
+        }
+    }
+}
+
