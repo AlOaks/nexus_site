@@ -424,8 +424,18 @@
             a {
                 color: white;
 
+                @include mobile {
+                    color: $font-blue;
+
+                }
+
                 &:visited {
                     color: white;
+
+                    @include mobile {
+                        color: $font-blue;
+    
+                    }
                 }
             }
         }

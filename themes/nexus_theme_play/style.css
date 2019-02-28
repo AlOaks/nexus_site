@@ -1265,8 +1265,14 @@ object {
     color: #ffb419; }
   .page-template-front-page .site-header .menu-item a {
     color: white; }
+    @media (max-width: 705px) {
+      .page-template-front-page .site-header .menu-item a {
+        color: #193F5C; } }
     .page-template-front-page .site-header .menu-item a:visited {
       color: white; }
+      @media (max-width: 705px) {
+        .page-template-front-page .site-header .menu-item a:visited {
+          color: #193F5C; } }
   .page-template-front-page .site-header .search-link {
     color: white; }
   .page-template-front-page .site-header .login-link {
