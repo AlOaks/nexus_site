@@ -1235,6 +1235,12 @@ object {
     .wpml-ls-item-es {
       right: auto; } }
 
+.wpml-ls-slot-5 {
+  background: none; }
+
+.wpml-ls-slot-5.wpml-ls-current-language {
+  background: none; }
+
 .page-template-front-page .site-header {
   background: rgba(0, 0, 0, 0); }
   .page-template-front-page .site-header .menu-btn-active {

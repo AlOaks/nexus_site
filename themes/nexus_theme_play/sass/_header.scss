@@ -364,7 +364,13 @@
 }
 
 
+.wpml-ls-slot-5 {
+    background: none;
+}
 
+.wpml-ls-slot-5.wpml-ls-current-language {
+    background: none;
+}
 
 
 .page-template-front-page {
@@ -402,7 +408,7 @@
     .header-white {
         background: white;
     
-        .menu-item {
+        .menu-item {    
     
             a {
                 color: $font-blue;
