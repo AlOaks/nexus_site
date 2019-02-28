@@ -366,10 +366,18 @@
 
 .wpml-ls-slot-5 {
     background: none;
+
+    &:visited {
+        background: none;
+    }
 }
 
 .wpml-ls-slot-5.wpml-ls-current-language {
     background: none;
+
+    &:visited {
+        background: none;
+    }
 }
 
 

@@ -1237,9 +1237,13 @@ object {
 
 .wpml-ls-slot-5 {
   background: none; }
+  .wpml-ls-slot-5:visited {
+    background: none; }
 
 .wpml-ls-slot-5.wpml-ls-current-language {
   background: none; }
+  .wpml-ls-slot-5.wpml-ls-current-language:visited {
+    background: none; }
 
 .page-template-front-page .site-header {
   background: rgba(0, 0, 0, 0); }
