@@ -1245,6 +1245,11 @@ object {
   .wpml-ls-slot-5.wpml-ls-current-language:visited {
     background: none; }
 
+.wpml-ls-slot-5 a {
+  background: none; }
+  .wpml-ls-slot-5 a:visited {
+    background: none; }
+
 .page-template-front-page .site-header {
   background: rgba(0, 0, 0, 0); }
   .page-template-front-page .site-header .menu-btn-active {
