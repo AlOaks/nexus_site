@@ -402,6 +402,19 @@
     .site-header {
         background: $transparency;
 
+        .sub-menu {
+            
+            li {
+                a {
+                    color: $font-blue;
+
+                    &:visited {
+                        color: $font-blue;
+                    }
+                }
+            }
+        }
+
         .menu-btn-active {
             color: $div-yellow;
         }
@@ -442,6 +455,8 @@
                 }
             }
         }
+
+        
     
         .search-link {
             color: gray;

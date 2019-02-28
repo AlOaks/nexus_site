@@ -1257,6 +1257,10 @@ object {
 
 .page-template-front-page .site-header {
   background: rgba(0, 0, 0, 0); }
+  .page-template-front-page .site-header .sub-menu li a {
+    color: #193F5C; }
+    .page-template-front-page .site-header .sub-menu li a:visited {
+      color: #193F5C; }
   .page-template-front-page .site-header .menu-btn-active {
     color: #ffb419; }
   .page-template-front-page .site-header .menu-item a {
