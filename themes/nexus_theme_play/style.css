@@ -6288,6 +6288,9 @@ article {
     .school-title-container {
       height: auto; } }
 
+.school-type {
+  text-transform: capitalize; }
+
 .school-info-single {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -90,7 +90,7 @@ get_header();
                             'post_type' => 'schools',
                             'posts_per_page' => 1,
                             'order' => 'ASC',
-                            'tag' => 'esl'
+                            'tag' => 'language'
                         ); 
 
                         $privateSchools = new WP_query($args);
