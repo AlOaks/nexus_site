@@ -48,7 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,6 +67,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+        font-size: .8rem;
+    }
 }
 
 
@@ -80,8 +84,32 @@
     height: 65vh;
     position: relative;
 
+    &:first-of-type {
+
+        .school-ovrly {
+            background: linear-gradient($transparency 40%, $bg-blue);
+        }
+
+    }
+
+    &:nth-of-type(2) {
+
+        .school-ovrly {
+            background: linear-gradient($transparency 40%, $div-red);
+        }
+    }
+
+    &:nth-of-type(3) {
+
+        .school-ovrly {
+            background: linear-gradient($transparency 40%, $div-yellow);
+        }
+    }
+
     @include mobile {
         height: 30vh;
+        width: 100%;
+        margin-bottom: 2vh;
     }
 
     @include tablet {
@@ -102,6 +130,10 @@
     p {
         color: white;
         font-family: $roboto;
+
+        @include mobile {
+            font-size: .8rem;
+        }
     }
 
     a {
@@ -113,6 +145,10 @@
         font-weight: 600;
         margin-bottom: 5%;
 
+        @include mobile {
+            font-size: 1.2rem;
+        }
+
         &:visited {
             text-decoration: none;
         }
@@ -123,6 +159,13 @@
         .school-content {
             height: 20vh;
             transition-duration: 1s;
+        }
+
+        @include mobile {
+
+            p {
+                display: none;
+            }
         }
     }
 }
@@ -137,16 +180,13 @@
     z-index: 10;
 }
 
-.private {
-    background: linear-gradient($transparency 40%, $bg-blue);
+.school-div {
 }
 
 .public {
-    background: linear-gradient($transparency 40%, $div-red);
 }
 
 .esl {
-    background: linear-gradient($transparency 40%, $div-yellow);
 
     
 }
