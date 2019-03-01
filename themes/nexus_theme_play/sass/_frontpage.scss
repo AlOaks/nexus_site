@@ -21,7 +21,7 @@ html {
 
     @include mobile {
         margin-top: 0;
-        height: 60vh;
+        height: 85vh;
         background-position: right;
     }
 }
@@ -41,7 +41,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    background: $bg-blue;
+    background: linear-gradient(white, $bg-blue);
     opacity: .3;
     width: 100%;
     height: 100%;
@@ -145,7 +145,7 @@ html {
     align-items: center;
 
     @include mobile {
-        height: 20vh;
+        height: 15vh;
     }
 
 }
@@ -157,8 +157,7 @@ html {
     justify-content: space-around;
 
     @include mobile {
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 }
@@ -180,7 +179,8 @@ html {
     }
 
     @include mobile {
-        margin-bottom: 4%;
+        font-size: 1rem;
+        padding: 7px 5px;
     }
 }
 
@@ -199,7 +199,7 @@ option {
     margin-right: 2%;
     
     @include mobile {
-        width: 90%;
+        width: 50%;
         margin-right: 0;
     }
    
@@ -231,8 +231,8 @@ option {
     }
 
     @include mobile {
-        width: 60%;
-        font-size: 1rem;
+        width: 35%;
+        font-size: .9rem;
     }
 }
 

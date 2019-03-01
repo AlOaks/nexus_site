@@ -1120,6 +1120,7 @@ object {
       .main-navigation .menu {
         display: none;
         right: 0;
+        width: 100%;
         top: 10vh;
         background: white;
         padding: 4%;
@@ -1664,14 +1665,15 @@ html {
   @media (max-width: 705px) {
     .hero-image {
       margin-top: 0;
-      height: 60vh;
+      height: 85vh;
       background-position: right; } }
 
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  background: #15405A;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#15405A));
+  background: linear-gradient(white, #15405A);
   opacity: .3;
   width: 100%;
   height: 100%; }
@@ -1762,7 +1764,7 @@ html {
           align-items: center; }
   @media (max-width: 705px) {
     .program-selectors {
-      height: 20vh; } }
+      height: 15vh; } }
 
 .programs-form {
   display: -webkit-box;
@@ -1774,13 +1776,9 @@ html {
       justify-content: space-around; }
   @media (max-width: 705px) {
     .programs-form {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
@@ -1809,7 +1807,8 @@ html {
     text-align: center; }
   @media (max-width: 705px) {
     .selector {
-      margin-bottom: 4%; } }
+      font-size: 1rem;
+      padding: 7px 5px; } }
 
 option {
   color: #193F5C; }
@@ -1824,7 +1823,7 @@ option {
   margin-right: 2%; }
   @media (max-width: 705px) {
     .program-types {
-      width: 90%;
+      width: 50%;
       margin-right: 0; } }
 
 .cities {
@@ -1849,8 +1848,8 @@ option {
     background: #ffc54c; }
   @media (max-width: 705px) {
     .submit-btn-front {
-      width: 60%;
-      font-size: 1rem; } }
+      width: 35%;
+      font-size: .9rem; } }
 
 .why-nexus-section {
   width: 100%;
