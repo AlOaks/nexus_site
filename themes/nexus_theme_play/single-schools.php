@@ -42,10 +42,12 @@ get_header();
                     <h2><? _e('Popular Programs at ', 'nexus'); ?><? the_title(); ?></h2>
                     <ul class="popu-progs-list">
                         <?
-                            $tag = get_the_title();
+                        
+
+                            $tag = get_the_tags();
                             $args = array(
                                 'post_type' => 'programs',
-                                'tag' => $tag
+                                'tag' => $tag[0]->name;
                             );
                             $popuProgs = new WP_query($args);
                     
