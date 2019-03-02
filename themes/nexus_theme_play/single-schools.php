@@ -45,20 +45,19 @@ get_header();
                         
 
                         $tag = get_the_title();
+
                         $args = array(
                             'post_type' => 'programs',
                             'tag' => $tag
                         );
-                        
+
                         $popuProgs = new WP_query($args);
                     
                         while ( $popuProgs->have_posts() ) : $popuProgs->the_post(); ?>
-
-                            <? if($schoolTag == $school) { ?>
-                            
+   
                             <li><a href=<? echo get_the_permalink(); ?>><? the_title(); ?></a></li>
                             
-                        <? 
+                        <?
                             endwhile; 
                             wp_reset_query();    
                         ?>
