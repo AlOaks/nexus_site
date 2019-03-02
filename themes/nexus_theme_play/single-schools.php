@@ -59,6 +59,7 @@ get_header();
                             
                         <?
                             endwhile; 
+                            
                             wp_reset_query();    
                         ?>
                         
