@@ -6345,7 +6345,7 @@ article {
       width: 50%;
       left: 25%;
       bottom: 0; }
-  .school-info-single p {
+  .school-info-single p, .school-info-single h2, .school-info-single h3, .school-info-single h4, .school-info-single h5 {
     width: 90%;
     margin-left: auto;
     margin-right: auto; }
