@@ -54,7 +54,13 @@ get_header();
 
                         $args = array(
                             'post_type' => 'programs',
-                            'tag' => $schoolName
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'post_tag',
+                                    'field' => 'slug',
+                                    'terms' => $schoolName
+                                )
+                            )
                         );
 
                         $popuProgs = new WP_query($args);
@@ -62,6 +68,8 @@ get_header();
                         while ( $popuProgs->have_posts() ) : $popuProgs->the_post(); ?>
    
                             <li><a href=<?php echo get_the_permalink(); ?>><?php the_title(); ?></a></li>
+
+                            
                             
                         <?php
                             endwhile; 
@@ -81,7 +89,7 @@ get_header();
                         ?>
 
                         <li class="detail-item">
-                            <i class="fas fa-university"></i><? _e('Program Types available here', 'nexus'); ?>
+                            <i class="fas fa-university"></i><?php _e('Program Types available here', 'nexus'); ?>
                             <ul>
                                 <?php foreach($schoolprogTypes as $type) { 
                                     echo '<li class="sub-detail">'.$type['school_type'].'</li>';
