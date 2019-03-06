@@ -39,12 +39,12 @@ get_header();
             </section>
 			<section class="single-school-page">
                 <div class="school-popu-programs">
-                    <h2><?php _e('Popular Programs at ', 'nexus'); ?><?php the_title(); ?></h2>
-                    <ul class="popu-progs-list">
-                        <?php
-                        
 
-                        $tag = get_the_title();
+                <?php $tag = get_the_title(); ?>
+
+                    <h2><?php _e('Popular Programs at ', 'nexus'); ?><?php echo $tag; ?></h2>
+                    <ul class="popu-progs-list">
+                        <?php                       
 
                         $args = array(
                             'post_type' => 'programs',
