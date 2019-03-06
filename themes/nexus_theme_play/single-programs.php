@@ -47,7 +47,7 @@ get_header();
 					<div class="school-logo-container">
 						<img class="school-logo" src=<?php echo $logo; ?> />
 					</div>
-					<p class="program-name"><?php the_title(); ?></p>
+					<h1 class="program-name"><?php the_title(); ?></h1>
 					
 					<ul class="program-info">
 						<li class="program-info-item">
