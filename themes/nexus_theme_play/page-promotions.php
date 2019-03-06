@@ -18,9 +18,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div class="promotions-page">
-                <h1><? the_title(); ?></h1>
+                <h1><?php the_title(); ?></h1>
                 <div class="promotions-mosaic">
-                    <?
+                    <?php
                         $args = array(
                             'post_type' => 'schools',
                             'order' => 'ASC'
@@ -38,21 +38,21 @@ get_header();
 
                         if($promo == true) { ?>
                             
-                            <div class="school-div" style="background: url(<? echo get_the_post_thumbnail_url(); ?>) no-repeat center;">
+                            <div class="school-div" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) no-repeat center;">
                                 <div class="school-ovrly"></div>
-                                <h2 class="school-title title"><? the_title(); ?></h2>
-                                <p class="school-type"><? echo $schoolType; ?></p>
+                                <h2 class="school-title title"><?php the_title(); ?></h2>
+                                <p class="school-type"><?php echo $schoolType; ?></p>
                                 <div class="school-content">
-                                    <? echo $content; ?>
-                                    <a class="school-link" href=<? echo get_the_permalink(); ?>><? _e('Learn More', 'nexus'); ?></a>
+                                    <?php echo $content; ?>
+                                    <a class="school-link" href=<?php echo get_the_permalink(); ?>><?php _e('Learn More', 'nexus'); ?></a>
                                 </div>
                             </div>
 
-                        <? } ?>
-                    <? endwhile; wp_reset_postdata(); ?>
+                        <?php } ?>
+                    <?php endwhile; wp_reset_postdata(); ?>
                     
 
-                <div class="promotions-desc"><? the_content(); ?></div>
+                <div class="promotions-desc"><?php the_content(); ?></div>
 
             </div>
 		</main><!-- #main -->
