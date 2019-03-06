@@ -49,7 +49,6 @@ get_header();
                         $school = get_queried_object();
                         $schoolName = $school->post_title;
 
-                        console($schoolName);
 
 
                         $args = array(
