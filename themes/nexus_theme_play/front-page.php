@@ -25,7 +25,7 @@ get_header();
 					<source src="https://www.youtube.com/watch?v=5lWkZ-JaEOc">
 				</video> -->
 				<div class="hero-label-div">
-					<h1 class="hero-label"><?php _e('Want to <br><span class="keyword">STUDY ABROAD?</span>', 'nexus'); ?></h1>
+					<h1 class="hero-label"><?php _e('Want to', 'nexus'); ?><br><span class="keyword"><?php _e('STUDY ABROAD?'); ?></span></h1>
 					<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>							
 				</div>
 				<a href="./featured-schools" class="promotions-button"><?php _e('Featured Schools','nexus'); ?></a>
