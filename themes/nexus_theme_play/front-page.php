@@ -25,11 +25,10 @@ get_header();
 					<source src="https://www.youtube.com/watch?v=5lWkZ-JaEOc">
 				</video> -->
 				<div class="hero-label-div">
-					<h2 class="hero-label"><? _e('Want to', 'nexus'); ?></h2>
-					<h1 class="hero-label keyword"><?php _e('STUDY ABROAD?' ,'nexus'); ?></h1>
+					<h1 class="hero-label"><?php _e('Want to <br><span class="keyword">STUDY ABROAD?</span>', 'nexus'); ?></h1>
 					<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>							
 				</div>
-				<a href="./featured-schools" class="promotions-button"><? _e('Featured Schools','nexus'); ?></a>
+				<a href="./featured-schools" class="promotions-button"><?php _e('Featured Schools','nexus'); ?></a>
 			</section>
 
 
@@ -127,49 +126,49 @@ get_header();
 						<a href="cities/vancouver/" class="city-link-front fifty-div vancouver">
 							<div class="city-container-frontpage van-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Vancouver</h2>
+								<h3 class="city-name-front">Vancouver</h3>
 							</div>
 						</a>
 						<a href="cities/montreal/" class="city-link-front fifty-div montreal">
 							<div class="city-container-frontpage mon-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Montreal</h2>
+								<h3 class="city-name-front">Montreal</h3>
 							</div>
 						</a>
 						<a href="cities/toronto/" class="city-link-front fifty-div toronto">
 							<div class="city-container-frontpage toro-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Toronto</h2>
+								<h3 class="city-name-front">Toronto</h3>
 							</div>
 						</a>
 						<a href="cities/ottawa/" class="city-link-front fifty-div ottawa">
 							<div class="city-container-frontpage otta-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Ottawa</h2>
+								<h3 class="city-name-front">Ottawa</h3>
 							</div>
 						</a>
 						<a href="cities/calgary/"  class="city-link-front fifty-div calgary">
 							<div class="city-container-frontpage cal-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Calgary</h2>
+								<h3 class="city-name-front">Calgary</h3>
 							</div>
 						</a>					
 						<a href="cities/victoria/" class="city-link-front fifty-div victoria">
 							<div class="city-container-frontpage vic-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Victoria</h2>
+								<h3 class="city-name-front">Victoria</h3>
 							</div>
 						</a>
 						<a href="cities/whistler/" class="city-link-front fifty-div winnipeg">
 							<div class="city-container-frontpage winni-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Whistler</h2>
+								<h3 class="city-name-front">Whistler</h3>
 							</div>
 						</a>
 						<a href="cities/halifax/" class="city-link-front fifty-div winnipeg">
 							<div class="city-container-frontpage hali-div">
 								<div class="black-ovrlay-city"></div>
-								<h2 class="city-name-front">Halifax</h2>
+								<h3 class="city-name-front">Halifax</h3>
 							</div>
 						</a>
 					</div>

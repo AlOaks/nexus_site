@@ -4434,13 +4434,13 @@ option {
     margin-top: 5%;
     width: 70%;
     margin-left: 15%; }
-  .form-book h2 {
+  .form-book p {
     color: white;
     font-family: "Roboto";
     font-size: 2.3rem;
     font-weight: bold;
     position: relative; }
-    .form-book h2:before {
+    .form-book p:before {
       content: "";
       border-bottom: 3px solid #ffb419;
       width: 40%;
@@ -4486,13 +4486,13 @@ option {
   @media (max-width: 705px) {
     .why-nexus-book {
       display: none; } }
-  .why-nexus-book h2 {
+  .why-nexus-book p {
     color: #193F5C;
     font-size: 2.3rem;
     font-weight: bold;
     position: relative;
     margin-top: 15%; }
-    .why-nexus-book h2:before {
+    .why-nexus-book p:before {
       content: "";
       border-bottom: 3px solid #ffb419;
       width: 40%;
