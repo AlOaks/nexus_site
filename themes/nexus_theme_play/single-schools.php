@@ -45,10 +45,16 @@ get_header();
                     <h2><?php _e('Popular Programs at ', 'nexus'); ?><?php echo $tag; ?></h2>
                     <ul class="popu-progs-list">
                         <?php                       
+                        
+                        $school = get_queried_object();
+                        $schoolName = $school->post_title;
+
+                        console($schoolName);
+
 
                         $args = array(
                             'post_type' => 'programs',
-                            'tag' => $tag
+                            'tag' => $schoolName
                         );
 
                         $popuProgs = new WP_query($args);

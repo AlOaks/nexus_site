@@ -411,4 +411,13 @@ function remove_admin_login_header() {
 }
 add_action('get_header', 'remove_admin_login_header');
 
+
+function console( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "<script>console.log( 'PHP Says: " . $output . "' );</script>";
+}
+
    

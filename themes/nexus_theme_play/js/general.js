@@ -1,7 +1,7 @@
 (function($) {
 
 
-    console.log($.fn.jquery);
+    // console.log($.fn.jquery);
 
     /* HEADER */
     var prevScrollpos = window.pageYOffset;
