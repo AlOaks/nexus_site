@@ -4030,14 +4030,14 @@ option {
               align-items: center;
       margin-left: auto;
       margin-right: auto; } }
-  .program-description p, .about-school-description p {
+  .program-description p, .program-description li, .about-school-description p, .about-school-description li {
     color: #193F5C;
     width: 100%;
     font-family: "Open Sans";
     line-height: 36px;
     margin: 0; }
     @media (max-width: 1024px) {
-      .program-description p, .about-school-description p {
+      .program-description p, .program-description li, .about-school-description p, .about-school-description li {
         font-size: .8rem;
         line-height: 27px; } }
 
