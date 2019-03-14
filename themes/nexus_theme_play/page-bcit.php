@@ -88,7 +88,7 @@
 						<div class="why-landing-nexus">
 							<h2><?php _e('Why Nexus?', 'nexus'); ?></h2>
 							<div>
-								<?php _e('From learning a language to studying at a university, we´ll help you find the school and program that best suits your goals. In our personalized counseling service we will explain everything related to studying in Canada and help you solve all your doubts about the subject. What are you waiting for, book a consultation!', 'nexus'); ?>
+								<?php _e('We believe in bringing life changing opportunities to everyone. The way we do it is by providing personalized education consulting services, by listening and understanding the needs of our clients and by offering the necessary services for anyone to complete their dream of studying in Canada. From learning a language to studying at a university, we´ll help you find the school and program that best suits your goals. In our personalized counseling service we will explain everything related to studying in Canada and help you solve all your doubts about the subject. What are you waiting for, book a consultation!', 'nexus'); ?>
 							</div>
 						</div>		
 					</section>
