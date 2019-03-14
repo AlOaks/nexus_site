@@ -91,7 +91,7 @@ get_header();
 					<div class="why-item">
 						<img alt="passport icon" src=<?php echo get_template_directory_uri().'/assets/images/visa.png'; ?> >
 						<h3 class="why-item-title"><?php _e('Visa Procedure', 'nexus'); ?></h3>
-						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! Just pick the program you like the most and we´ll do the rest.', 'nexus'); ?></p>
+						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! We can help you in throughout all the process.', 'nexus'); ?></p>
 					</div>
 				</div>
 				<a class="get-quote-btn menu-item-51 menu-item-25" href="#"><?php _e('Book Consultation', 'nexus'); ?></a>

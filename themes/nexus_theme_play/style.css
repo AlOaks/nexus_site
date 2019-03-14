@@ -6061,7 +6061,55 @@ article {
 
 .sessions-details, .popu-list, .details-list {
   width: 45%;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  color: #193F5C; }
+
+.why-landing-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #F3F5F8; }
+
+.why-landing-school, .why-landing-nexus {
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10vh auto; }
+  .why-landing-school h2, .why-landing-nexus h2 {
+    width: 45%;
+    font-size: 3rem;
+    color: #193F5C;
+    position: relative;
+    text-align: center; }
+    .why-landing-school h2:before, .why-landing-nexus h2:before {
+      content: "";
+      height: 1px;
+      border-bottom: 3px solid #ffb419;
+      position: absolute;
+      width: 30%;
+      left: 35%;
+      bottom: 0; }
+  .why-landing-school div, .why-landing-nexus div {
+    width: 45%;
+    font-family: "Open Sans";
+    color: #193F5C;
+    line-height: 2rem; }
 
 .bcit-site-info {
   width: 100%;

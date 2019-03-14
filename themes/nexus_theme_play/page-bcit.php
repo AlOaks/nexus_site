@@ -31,14 +31,18 @@
                         </section>
                         <section class="bcit-header">
 
-								<?	$form = CFS()->get('bcit_form'); ?>
-								<? $schoolName = get_the_title(); ?> 
+								<?php $form = CFS()->get('bcit_form'); ?>
+								<?php $schoolName = get_the_title(); ?> 
+							
+							<?php while(have_posts() ) : the_post(); ?>
 
                             <div class="bcit-header-title"><?php the_content(); ?></div>
                             <div class="bcit-header-form"><?php echo $form; ?></div>
+
+							<?php endwhile; ?>
                         </section>
 					</section>
-					<p class="learn-more-bcit"><?php _e('Know more about ', 'nexus'); ?> <? echo $schoolName; ?></p>
+					<p class="learn-more-bcit"><?php _e('Know more about ', 'nexus'); ?> <?php echo $schoolName; ?></p>
 
 					
 					<section class="bcit-info">
@@ -47,7 +51,7 @@
 							<div class="popu-list">
 								<p><? _e('Most Popular Programs', 'nexus'); ?></p>
 								<ul>
-									<? 
+									<?php 
 										$popular = CFS()->get('popular_programs'); 
 
 										foreach($popular as $popu) {
@@ -56,14 +60,14 @@
 									?>
 								</ul>
 							</div>
-							<img src='<? echo CFS()->get('popular_programs_photo'); ?>' >
+							<img src='<?php echo CFS()->get('popular_programs_photo'); ?>' >
 						</div>
 						<div class="details-div block-info">
-							<img src='<? echo CFS()->get('details_photo'); ?>' >
+							<img src='<?php echo CFS()->get('details_photo'); ?>' >
 							<div class="details-list">
-								<p><? _e('Details', 'nexus'); ?></p>
+								<p><?php _e('Details', 'nexus'); ?></p>
 								<ul>
-									<? 
+									<?php 
 										$details = CFS()->get('details');
 										
 										foreach($details as $detail) {
@@ -74,6 +78,19 @@
 								</ul>
 							</div>
 						</div>
+					</section>
+					<section class="why-landing-section">
+						<div class="why-landing-school">
+							<div><?php echo CFS()->get('why-school'); ?></div>
+							<h2><?php _e('Why '.$schoolName, 'nexus'); ?></h2>
+
+						</div>
+						<div class="why-landing-nexus">
+							<h2><?php _e('Why Nexus?', 'nexus'); ?></h2>
+							<div>
+								<?php _e('From learning a language to studying at a university, we´ll help you find the school and program that best suits your goals. In our personalized counseling service we will explain everything related to studying in Canada and help you solve all your doubts about the subject. What are you waiting for, book a consultation!', 'nexus'); ?>
+							</div>
+						</div>		
 					</section>
 				</main>
 			</div><!-- #primary -->

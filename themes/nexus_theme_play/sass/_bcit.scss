@@ -127,6 +127,54 @@
 .sessions-details, .popu-list, .details-list {
     width: 45%;
     font-family: $roboto;
+    color: $font-blue;
+}
+
+// WHY's SECTION
+
+
+
+.why-landing-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    background: $div-white;
+}
+
+.why-landing-school, .why-landing-nexus {
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh auto;
+
+    h2 {
+        width: 45%;
+        font-size: 3rem;
+        color: $font-blue;
+        position: relative;
+        text-align: center;
+
+        &:before {
+            content: "";
+            height: 1px;
+            border-bottom: 3px solid $div-yellow;
+            position: absolute;
+            width: 30%;
+            left: 35%;
+            bottom: 0;
+        }
+    }
+
+    div {
+        width: 45%;
+        font-family: $sans;
+        color: $font-blue;
+        line-height: 2rem;
+    }
 }
 
 
