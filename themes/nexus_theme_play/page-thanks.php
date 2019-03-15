@@ -20,9 +20,9 @@ get_header();
 			<div class="page-title-container">
 			</div>
 			<div class="thanks-page-form">
-                <h2><? _e('Thank You!', 'nexus'); ?></h2>
-                <p><? _e('We will get back to you as soon as possible!', 'nexus'); ?></p>
-                <a href="https://nexuseducanada.com"><? _e('Back to home', 'nexus'); ?></a>
+                <h2><?php _e('Thank You!', 'nexus'); ?></h2>
+                <p><?php _e('We will get back to you as soon as possible!', 'nexus'); ?></p>
+                <a href="https://nexuseducanada.com"><?php _e('Back to home', 'nexus'); ?></a>
             </div>
             <section class="start-journey-section">
 			    <h2 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h2>

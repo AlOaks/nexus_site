@@ -37,7 +37,33 @@
 							<?php while(have_posts() ) : the_post(); ?>
 
                             <div class="bcit-header-title"><?php the_content(); ?></div>
-                            <div class="bcit-header-form"><?php echo $form; ?></div>
+                            <div class="bcit-header-form">
+								<p><?php _e('Learn How To Make Your Registration At BCIT Part-Time Courses And Make A Discount On Your Visa Process.', 'nexus'); ?></p>
+								<form id="edvisor-form">
+									<div class="edvisor-row">
+										<label><?php _e('Name', 'nexus'); ?></label>
+										<input type="text" id="edvisor-name" name="name" required />
+									</div>
+									<div class="edvisor-row">
+										<label><?php _e('E-Mail', 'nexus'); ?></label>
+										<input type="email" id="edvisor-email" name="email" required />
+									</div>
+									<div class="edvisor-row">
+										<label><?php _e('Phone', 'nexus'); ?></label>
+										<input type="text" id="edvisor-phone" name="name" required />
+									</div>
+									<div class="edvisor-row">
+										<label><?php _e('Visa Required', 'nexus'); ?></label>
+										<select id="edvisor-canada">
+											<option value="Yes, I am in Canada." selected><?php _e("Yes, I am in Canada.", 'nexus'); ?></option>
+											<option value="No, I am not in Canada"><?php _e('No, I am not in Canada.', 'nexus'); ?></option>
+										</select>
+									</div>
+									
+									<button id="edvisor-button"><?php _e('Submit', 'nexus'); ?></button>
+								</form>
+
+							</div>
 
 							<?php endwhile; ?>
                         </section>

@@ -5600,7 +5600,7 @@ article {
   margin-bottom: 20vh; }
 
 .quote-page-form {
-  width: 65%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto; }
   @media (max-width: 705px) {
@@ -5609,16 +5609,101 @@ article {
   @media (max-width: 1024px) {
     .quote-page-form {
       width: 75%; } }
-  .quote-page-form .edvisor-form button {
-    margin-top: 5vh; }
-
-.page-template-page-quote .edvisor-row > label {
-  color: #193F5C;
-  font-family: "Open Sans";
-  font-size: 1.2rem; }
-
-.edvisor-row input, .edvisor-row textarea, .edvisor-row select {
-  background: #F3F5F8; }
+  .quote-page-form #edvisor-quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .quote-page-form .fieldset {
+    border: none;
+    background: #F3F5F8;
+    -webkit-box-shadow: 1px 1px 10px #15405A;
+            box-shadow: 1px 1px 10px #15405A;
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 5px; }
+  .quote-page-form #user-group, .quote-page-form #objectives-group, .quote-page-form #education-group, .quote-page-form #extras-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    .quote-page-form #user-group #edvisor-age-div, .quote-page-form #user-group #edvisor-status-div, .quote-page-form #objectives-group #edvisor-age-div, .quote-page-form #objectives-group #edvisor-status-div, .quote-page-form #education-group #edvisor-age-div, .quote-page-form #education-group #edvisor-status-div, .quote-page-form #extras-group #edvisor-age-div, .quote-page-form #extras-group #edvisor-status-div {
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%; }
+  .quote-page-form .fieldset-label {
+    color: #193F5C;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .quote-page-form .edvisor-row {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+    margin-right: 0;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .quote-page-form .edvisor-row label, .quote-page-form .edvisor-row input, .quote-page-form .edvisor-row option, .quote-page-form .edvisor-row select, .quote-page-form .edvisor-row textarea, .quote-page-form .edvisor-row p {
+      color: #193F5C;
+      font-family: "Open Sans"; }
+    .quote-page-form .edvisor-row input, .quote-page-form .edvisor-row select {
+      height: 1.6rem; }
+    .quote-page-form .edvisor-row input {
+      -webkit-transition-duration: .5s;
+              transition-duration: .5s; }
+      .quote-page-form .edvisor-row input:focus {
+        height: 2.3rem;
+        background: #15405A;
+        color: white;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
+    .quote-page-form .edvisor-row textarea {
+      -webkit-transition-duration: .5s;
+              transition-duration: .5s; }
+      .quote-page-form .edvisor-row textarea:focus {
+        background: #15405A;
+        color: white;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
+    .quote-page-form .edvisor-row label {
+      font-weight: 600;
+      margin-bottom: 1vh; }
+  .quote-page-form #edvisor-textarea {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95%;
+            flex: 0 0 95%; }
+    .quote-page-form #edvisor-textarea textarea {
+      width: 98.5%; }
+  .quote-page-form #edvisor-quote-btn {
+    width: 30%;
+    background: #bd2020;
+    border: none;
+    color: white;
+    padding: 2%;
+    font-size: 2rem;
+    margin: 0 auto 5vh auto;
+    font-family: "Roboto"; }
+    .quote-page-form #edvisor-quote-btn:hover {
+      background: #dd3333; }
 
 .registration-page-form .wpforms-field-label {
   color: #193F5C; }

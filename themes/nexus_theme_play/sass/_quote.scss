@@ -1,5 +1,5 @@
 .quote-page-form {
-    width: 65%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
@@ -11,32 +11,113 @@
         width: 75%;
     }
 
-    .edvisor-form {
-        button {
-            margin-top: 5vh;
+    #edvisor-quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .fieldset {
+        border: none; 
+        background: $div-white;
+        box-shadow: 1px 1px 10px $bg-blue;
+        width: 100%;
+        margin: 1%;
+        padding: 2%;
+        border-radius: 5px;
+    }
+
+    #user-group, #objectives-group, #education-group, #extras-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        #edvisor-age-div, #edvisor-status-div {
+            flex-basis: 15%;
+        }
+    }
+
+    .fieldset-label {
+        color: $font-blue;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        align-self: flex-start;
+    }
+
+   
+
+    .edvisor-row {
+        flex: 0 0 45%;
+        margin-right: 0;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+
+        label, input, option, select, textarea, p {
+            color: $font-blue;
+            font-family: $sans;
+        }
+
+        input, select {
+            height: 1.6rem;
+        }
+
+
+        input {
+
+            transition-duration: .5s;
+
+            &:focus {
+                height: 2.3rem;
+                background: $bg-blue;
+                color: white;
+                transition-duration: .5s;
+            }
+        }
+
+        textarea {
+
+            transition-duration: .5s;
+
+            &:focus {
+                background: $bg-blue;
+                color: white;
+                transition-duration: .5s;
+            }
+        }
+
+
+        label {
+            font-weight: 600;
+            margin-bottom: 1vh;
+        }
+    }
+
+    #edvisor-textarea {
+        flex: 0 0 95%;
+
+        textarea {
+            width: 98.5%;
+        }
+    }
+
+    #edvisor-quote-btn {
+        width: 30%;
+        background: $div-red;
+        border: none;
+        color: white;
+        padding: 2%;
+        font-size: 2rem;
+        margin: 0 auto 5vh auto;
+        font-family: $roboto;
+
+        &:hover {
+            background: lighten($div-red, 10%);
         }
     }
 }
 
-
-.page-template-page-quote {
-    
-    .edvisor-row > label {
-        color: $font-blue;
-        font-family: $sans;
-        font-size: 1.2rem;
-    }
-
-}
-
-
-
-.edvisor-row {
-    
-    input, textarea, select {
-        background: $div-white;
-    }
-}
 
 
 

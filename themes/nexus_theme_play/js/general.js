@@ -298,7 +298,180 @@ if ($('html').is(':lang(es-ES)')) {
 }
 
 
+// EDVISOR FORMS
 
+var form = $('#edvisor-form');
+var edvisorFormSending = false;
+var edvisorAPI = 'public_ae06b8cda938ab061c9ba0d680d41f85';
+var edvisorURL = 'https://app.edvisor.io/api/v1/student?public_key=';
+var api64 = btoa(edvisorAPI);
+
+form.submit(function(event) {
+
+    event.preventDefault();
+
+    var button = $('#edvisor-button');
+
+    var formData = {
+        'agencyId': '935',
+        'firstname': $('#edvisor-name').val(),
+        'email': $('#edvisor-email').val(),
+        'phone': $('#edvisor-phone').val(),
+        'notes': $('#edvisor-canada').val(),
+    }
+
+    if(!edvisorFormSending) {
+
+        edvisorFormSending = true;
+
+        $.ajax({
+            url: 'https://app.edvisor.io/api/v1/student?public_key=public_ae06b8cda938ab061c9ba0d680d41f85',
+            data: JSON.stringify(formData),
+            type: 'PUT',
+            contentType: 'application/json; chraset=utf-8',
+            processData: false
+        }).done(function() {
+            edvisorFormSending = false;
+            window.location.href="http://localhost/nexus/thanks"
+        }).fail(function(data) {
+            console.log(data);
+            edvisorFormSending = false;
+        });
+    }
+
+});
+
+
+
+// GET QUOTE FORM FUNCTIONS
+
+var quote = $('#edvisor-quote');
+var durationField = $('#edvisor-duration');
+$('#other-duration-div').hide();
+
+durationField.on('change', function() {
+    var duration = durationField.val();
+
+    if(duration === 'Outro') {
+
+        $('#other-duration-div').show();
+    } else {
+        $('#other-duration-div').hide();
+    }
+});
+
+
+// QUOTE FORM SUBMISSION 
+
+var quoteForm = $('#edvisor-quote');
+var edvisorQuoteSending = false;
+
+
+quoteForm.submit(function(submit) {
+    submit.preventDefault();
+
+    var btn = $('#edvisor-quote-btn');
+
+    var quoteData = {
+        'agencyId': '935',
+        'firstname': $('#edvisor-firstname').val(),
+        'lastname': $('#edvisor-lastname').val(),
+        'email': $('#edvisor-email').val(),
+        'phone': $('#edvisor-phone').val(),
+        'address': $('#edvisor-city').val(),
+        'notes': $('#edvisor-objectives').val(),
+    
+        "studentCoursePreferences": [
+            {
+              "name": $('#edvisor-programs').val()
+            }
+        ],
+    
+        "studentSchoolPreferences": [
+            {
+              "name": $('#edvisor-desired-city').val()
+            }
+        ],
+    
+        'customPropertyValues': [
+            {
+                'customPropertyFieldId': 'age',
+                'customPropertyValue': $('#edvisor-age').val()
+            },
+            {
+                'customPropertyFieldId': 'estado-civil',
+                'customPropertyValue': $('#edvisor-status').val()
+            },
+            {
+                'customPropertyFieldId': 'education_level',
+                'customPropertyValue': $('#edvisor-edu-level').val()
+            },
+            {
+                'customPropertyFieldId': 'se-formado',
+                'customPropertyValue': $('#edvisor-seformado').val()
+            },
+            {
+                'customPropertyFieldId': 'língua-de-interesse',
+                'customPropertyValue': $('#edvisor-lang-of-interest').val()
+            },
+            {
+                'customPropertyFieldId': 'english_level',
+                'customPropertyValue': $('#edvisor-level').val()
+            },
+            {
+                'customPropertyFieldId': 'língua-de-interesse',
+                'customPropertyValue': $('#edvisor-lang-of-interest').val()
+            },
+            {
+                'customPropertyFieldId': 'duração',
+                'customPropertyValue': $('#edvisor-duration').val()
+            },
+            {
+                'customPropertyFieldId': 'outro-duração',
+                'customPropertyValue': $('#edvisor-other-duration').val()
+            },
+            {
+                'customPropertyFieldId': 'previsão-de-início',
+                'customPropertyValue': $('#edvisor-desired-start').val()
+            },
+            {
+                'customPropertyFieldId': 'incluir-seguro-saúde',
+                'customPropertyValue': $('#edvisor-insurance').val()
+            },
+            {
+                'customPropertyFieldId': 'incluir-acomodação',
+                'customPropertyValue': $('#edvisor-accommodation').val()
+            },  
+        ]
+    }
+
+
+    if(!edvisorQuoteSending) {
+
+        edvisorQuoteSending = true;
+
+        $.ajax({
+            url: 'https://app.edvisor.io/api/v1/student?public_key=public_ae06b8cda938ab061c9ba0d680d41f85',
+            data: JSON.stringify(quoteData),
+            type: 'PUT',
+            contentType: 'application/json; chraset=utf-8',
+            processData: false
+        }).done(function(response) {
+            edvisorFormSending = false;
+
+            if($('html').is(':lang(en-US)')) {
+                window.location.href="https://nexuseducanada.com/thanks-quote";
+            } else if($('html').is(':lang(es-ES)')) {
+                window.location.href="https://nexuseducanada.com/gracias-cotiza";
+            } else if($('html').is(':lang(pt-BR)')) {
+                window.location.href="https://nexuseducanada.com/obrigado-orcamento";
+            }
+        }).fail(function(data) {
+            edvisorFormSending = false;
+        });
+
+    }
+})
 
 
 })( jQuery );
