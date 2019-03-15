@@ -3,13 +3,15 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include mobile {
-        width: 100%;
-    }
-
     @include tablet {
         width: 75%;
     }
+
+    @include mobile {
+        width: 90%;
+    }
+
+    
 
     #edvisor-quote {
         display: flex;
@@ -33,9 +35,22 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
 
+        #edvisor-age-div {
+
+            @include tablet {
+                width: 25%;
+            }
+        }
+
         #edvisor-age-div, #edvisor-status-div {
             flex-basis: 15%;
+
+            @include mobile {
+                flex-basis: 42%;
+            }            
         }
+
+        
     }
 
     .fieldset-label {
@@ -53,6 +68,10 @@
         padding: 5px;
         display: flex;
         flex-direction: column;
+
+        @include mobile {
+            flex: 0 0 90%;
+        }
 
         label, input, option, select, textarea, p {
             color: $font-blue;
@@ -91,6 +110,14 @@
         label {
             font-weight: 600;
             margin-bottom: 1vh;
+
+            @include tablet {
+                font-size: .8rem;
+            }
+
+            @include mobile {
+                font-size: .8rem;
+            }
         }
     }
 
@@ -111,6 +138,13 @@
         font-size: 2rem;
         margin: 0 auto 5vh auto;
         font-family: $roboto;
+
+        
+
+        @include mobile {
+            width: 50%;
+            font-size: 1.5rem;
+        }
 
         &:hover {
             background: lighten($div-red, 10%);

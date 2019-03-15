@@ -5603,12 +5603,12 @@ article {
   width: 60%;
   margin-left: auto;
   margin-right: auto; }
-  @media (max-width: 705px) {
-    .quote-page-form {
-      width: 100%; } }
   @media (max-width: 1024px) {
     .quote-page-form {
       width: 75%; } }
+  @media (max-width: 705px) {
+    .quote-page-form {
+      width: 90%; } }
   .quote-page-form #edvisor-quote {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5640,9 +5640,16 @@ article {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
+    @media (max-width: 1024px) {
+      .quote-page-form #user-group #edvisor-age-div, .quote-page-form #objectives-group #edvisor-age-div, .quote-page-form #education-group #edvisor-age-div, .quote-page-form #extras-group #edvisor-age-div {
+        width: 25%; } }
     .quote-page-form #user-group #edvisor-age-div, .quote-page-form #user-group #edvisor-status-div, .quote-page-form #objectives-group #edvisor-age-div, .quote-page-form #objectives-group #edvisor-status-div, .quote-page-form #education-group #edvisor-age-div, .quote-page-form #education-group #edvisor-status-div, .quote-page-form #extras-group #edvisor-age-div, .quote-page-form #extras-group #edvisor-status-div {
       -ms-flex-preferred-size: 15%;
           flex-basis: 15%; }
+      @media (max-width: 705px) {
+        .quote-page-form #user-group #edvisor-age-div, .quote-page-form #user-group #edvisor-status-div, .quote-page-form #objectives-group #edvisor-age-div, .quote-page-form #objectives-group #edvisor-status-div, .quote-page-form #education-group #edvisor-age-div, .quote-page-form #education-group #edvisor-status-div, .quote-page-form #extras-group #edvisor-age-div, .quote-page-form #extras-group #edvisor-status-div {
+          -ms-flex-preferred-size: 42%;
+              flex-basis: 42%; } }
   .quote-page-form .fieldset-label {
     color: #193F5C;
     font-family: "Roboto";
@@ -5662,6 +5669,11 @@ article {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    @media (max-width: 705px) {
+      .quote-page-form .edvisor-row {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 90%;
+                flex: 0 0 90%; } }
     .quote-page-form .edvisor-row label, .quote-page-form .edvisor-row input, .quote-page-form .edvisor-row option, .quote-page-form .edvisor-row select, .quote-page-form .edvisor-row textarea, .quote-page-form .edvisor-row p {
       color: #193F5C;
       font-family: "Open Sans"; }
@@ -5687,6 +5699,12 @@ article {
     .quote-page-form .edvisor-row label {
       font-weight: 600;
       margin-bottom: 1vh; }
+      @media (max-width: 1024px) {
+        .quote-page-form .edvisor-row label {
+          font-size: .8rem; } }
+      @media (max-width: 705px) {
+        .quote-page-form .edvisor-row label {
+          font-size: .8rem; } }
   .quote-page-form #edvisor-textarea {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 95%;
@@ -5702,6 +5720,10 @@ article {
     font-size: 2rem;
     margin: 0 auto 5vh auto;
     font-family: "Roboto"; }
+    @media (max-width: 705px) {
+      .quote-page-form #edvisor-quote-btn {
+        width: 50%;
+        font-size: 1.5rem; } }
     .quote-page-form #edvisor-quote-btn:hover {
       background: #dd3333; }
 

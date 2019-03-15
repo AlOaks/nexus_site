@@ -159,7 +159,7 @@ get_header();
 							</select>
 						</div>	
 					</div>
-					<label class="fieldset-label"><?php _e('Includes', 'Edvisor'); ?></label>
+					<label class="fieldset-label"><?php _e('Optionals', 'Edvisor'); ?></label>
 					<div id="extras-group" class="fieldset">
 						<div class="edvisor-row">
 							<label><?php _e('Include Health Insurance*', 'Edvisor'); ?></label>
