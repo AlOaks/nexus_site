@@ -4454,7 +4454,7 @@ option {
   color: white;
   font-size: .8rem; }
 
-.edvisor-book-form {
+#edvisor-book-form {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -4469,12 +4469,12 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .edvisor-book-form label {
+  #edvisor-book-form label {
     font-size: 1.5rem;
     font-family: "Open Sans"; }
-  .edvisor-book-form input {
+  #edvisor-book-form input {
     width: 100%; }
-  .edvisor-book-form button {
+  #edvisor-book-form button {
     color: white;
     background: #bd2020;
     border: none;

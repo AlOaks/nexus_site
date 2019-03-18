@@ -484,7 +484,50 @@ quoteForm.submit(function(submit) {
         });
 
     }
-})
+});
+
+
+// BOOK CONSULTATION FORM
+
+var bookForm = $('#edvisor-book-form');
+var edvisorBookSending = false;
+
+bookForm.submit(function(ev) {
+    ev.preventDefault();
+
+    var bookData = {
+        'agencyid': 935,
+        'firstname': $('#edvisor-book-firstname').val(),
+        'email': $('#edvisor-book-email').val(),
+        'phone': $('#edvisor-book-phone').val()
+    }
+
+
+    if(!edvisorBookSending) {
+
+        edvisorBookSending = true;
+
+        $.ajax({
+            url: 'https://app.edvisor.io/api/v1/student?public_key=public_ae06b8cda938ab061c9ba0d680d41f85',
+            data: JSON.stringify(bookData),
+            type: 'PUT',
+            contentType: 'application/json; chraset=utf-8',
+            processData: false
+        }).done(function(response) {
+            edvisorBookSending = false;
+            bookForm.slideToggle();
+            if($('html').is(':lang(en-US)')) {
+                $('.form-book').append('<div style="width: 80%; margin-left: auto; margin-right: auto; color: white; background: #bd2020; padding: 2.5% 15%">Thank you! We will contact you as soon as possible!</div>');
+            } else if($('html').is(':lang(es-ES)')) {
+                $('.form-book').append('<div style="width: 80%; margin-left: auto; margin-right: auto; color: white; background: #bd2020; padding: 2.5% 15%">¡Gracias! Estaremos en contacto a la brevedad posible.</div>');
+            } else if($('html').is(':lang(pt-BR)')) {
+                $('.form-book').append('<div style="width: 80%; margin-left: auto; margin-right: auto; color: white; background: #bd2020; padding: 2.5% 15%">Obrigado! Entraremos em contato em breve.</div>');
+            }
+        }).fail(function(data) {
+            edvisorBookSending = false;
+        });
+    }
+});
 
 
 })( jQuery );
