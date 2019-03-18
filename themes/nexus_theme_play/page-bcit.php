@@ -53,7 +53,7 @@
 										<input type="text" id="edvisor-bcit-phone" name="name" required />
 									</div>
 									<div class="edvisor-bcit-row">
-										<label><?php _e('Visa Required', 'nexus'); ?></label>
+										<label><?php _e('Are you in Canada?', 'nexus'); ?></label>
 										<select id="edvisor-bcit-canada">
 											<option>--</option>
 											<option value="Yes, I am in Canada."><?php _e("Yes, I am in Canada.", 'nexus'); ?></option>

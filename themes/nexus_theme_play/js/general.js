@@ -303,7 +303,7 @@ if ($('html').is(':lang(es-ES)')) {
 
 // BCIT LANDING FORM
 
-var form = $('#edvisor-form');
+var form = $('#edvisor-bcit-form');
 var edvisorFormSending = false;
 var edvisorAPI = 'public_ae06b8cda938ab061c9ba0d680d41f85';
 var edvisorURL = 'https://app.edvisor.io/api/v1/student?public_key=';
@@ -321,6 +321,11 @@ form.submit(function(event) {
         'email': $('#edvisor-bcit-email').val(),
         'phone': $('#edvisor-bcit-phone').val(),
         'notes': $('#edvisor-bcit-canada').val(),
+        'studentCurrentPipelineStages': [
+            {
+                'studentPipelineStageId': 9087
+            }
+        ]
     }
 
     if(!edvisorFormSending) {
