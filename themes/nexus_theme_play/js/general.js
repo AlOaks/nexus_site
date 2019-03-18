@@ -496,7 +496,7 @@ bookForm.submit(function(ev) {
     ev.preventDefault();
 
     var bookData = {
-        'agencyid': 935,
+        'agencyId': '935',
         'firstname': $('#edvisor-book-firstname').val(),
         'email': $('#edvisor-book-email').val(),
         'phone': $('#edvisor-book-phone').val()
