@@ -300,6 +300,9 @@ if ($('html').is(':lang(es-ES)')) {
 
 // EDVISOR FORMS
 
+
+// BCIT LANDING FORM
+
 var form = $('#edvisor-form');
 var edvisorFormSending = false;
 var edvisorAPI = 'public_ae06b8cda938ab061c9ba0d680d41f85';
@@ -314,10 +317,10 @@ form.submit(function(event) {
 
     var formData = {
         'agencyId': '935',
-        'firstname': $('#edvisor-name').val(),
-        'email': $('#edvisor-email').val(),
-        'phone': $('#edvisor-phone').val(),
-        'notes': $('#edvisor-canada').val(),
+        'firstname': $('#edvisor-bcit-name').val(),
+        'email': $('#edvisor-bcit-email').val(),
+        'phone': $('#edvisor-bcit-phone').val(),
+        'notes': $('#edvisor-bcit-canada').val(),
     }
 
     if(!edvisorFormSending) {
@@ -332,9 +335,14 @@ form.submit(function(event) {
             processData: false
         }).done(function() {
             edvisorFormSending = false;
-            window.location.href="http://localhost/nexus/thanks"
+            if($('html').is(':lang(en-US)')) {
+                window.location.href="https://nexuseducanada.com/thanks-bcit";
+            } else if($('html').is(':lang(es-ES)')) {
+                window.location.href="https://nexuseducanada.com/gracias-bcit";
+            } else if($('html').is(':lang(pt-BR)')) {
+                window.location.href="https://nexuseducanada.com/obrigado-bcit";
+            }
         }).fail(function(data) {
-            console.log(data);
             edvisorFormSending = false;
         });
     }

@@ -51,7 +51,8 @@ get_header();
 						<div class="edvisor-row" id="edvisor-status-div">
 							<label><?php _e('Civil Status*', 'Edvisor'); ?></label>
 							<select id="edvisor-status" required>
-								<option value="Solteiro" selected><?php _e('Single', 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Solteiro"><?php _e('Single', 'Edvisor'); ?></option>
 								<option value="Casado"><?php _e('Married', 'Edvisor'); ?></option>
 							</select>
 						</div>
@@ -61,7 +62,8 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('Education Level*', 'Edvisor'); ?></label>
 							<select id="edvisor-edu-level" required>
-								<option value="Cursando ensino médio" selected><?php _e('In High School', 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Cursando ensino médio"><?php _e('In High School', 'Edvisor'); ?></option>
 								<option value="Ensino medio concluído"><?php _e('High School Finished', 'Edvisor'); ?></option>
 								<option value="Cursando Faculdade"><?php _e('In Bachelor', 'Edvisor'); ?></option>
 								<option value="Faculdade concluída"><?php _e('Bachelor Finished', 'Edvisor'); ?></option>
@@ -76,13 +78,15 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('Language of Interest*', 'Edvisor'); ?></label>
 							<select id="edvisor-lang-of-interest" required>
-								<option value="Inglês" selected><?php _e('English', 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Inglês"><?php _e('English', 'Edvisor'); ?></option>
 								<option value="Francês"><?php _e('French', 'Edvisor'); ?></option>
 							</select>
 						</div>
 						<div class="edvisor-row">
 							<label><?php _e('Current Language Level*', 'Edvisor'); ?></label>
 							<select id="edvisor-level" required>
+								<option>--</option>
 								<option value="Nenhum"><?php _e('None', 'Edvisor'); ?></option>
 								<option value="Básico"><?php _e('Basic', 'Edvisor'); ?></option>
 								<option value="Pré-intermediário"><?php _e('Pre Intermediate', 'Edvisor'); ?></option>
@@ -93,7 +97,7 @@ get_header();
 						</div>		
 					</div>
 					<label class="fieldset-label"><?php _e('Your objectives', 'Edvisor'); ?></label>
-					<div id="objectives-group" class="fieldset">, 
+					<div id="objectives-group" class="fieldset"> 
 						<div class="edvisor-row" id="edvisor-textarea">
 							<label><?php _e('Describe your main objectives*', 'Edvisor'); ?></label>
 							<textarea name="objectives" id="edvisor-objectives" required></textarea>
@@ -101,7 +105,8 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('Programs / Courses*', 'Edvisor'); ?></label>
 							<select id="edvisor-programs" required>
-								<option value="Inglés Geral" selected><?php _e('General English', 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Inglés Geral"><?php _e('General English', 'Edvisor'); ?></option>
 								<option value="Inglés para negocios"><?php _e('Business English', 'Edvisor'); ?></option>
 								<option value="Inglés Academico"><?php _e('Academic English', 'Edvisor'); ?></option>
 								<option value="Preparatorio para exames"><?php _e('Exam Preparation', 'Edvisor'); ?></option>
@@ -114,6 +119,7 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('Duration*', 'Edvisor'); ?></label>
 							<select id="edvisor-duration" required>
+								<option>--</option>
 								<option value="4 semanas"><?php _e('4 weeks', 'Edvisor'); ?></option>
 								<option value="6 semanas"><?php _e('6 weeks', 'Edvisor'); ?></option>
 								<option value="8 semanas"><?php _e('8 weeks', 'Edvisor'); ?></option>
@@ -134,7 +140,8 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('You want to be studying in...*', 'Edvisor'); ?></label>
 							<select id="edvisor-desired-start" required>
-								<option value="Em menos de 3 meses" selected><?php _e('Less than 3 months', 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Em menos de 3 meses"><?php _e('Less than 3 months', 'Edvisor'); ?></option>
 								<option value="De 3 a 6 meses"><?php _e('From 3 to 6 months', 'Edvisor'); ?></option>
 								<option value="De 6 meses a 1 ano"><?php _e('From 6 months to 1 year', 'Edvisor'); ?></option>	
 								<option value="Mais de 1 ano"><?php _e('More than a year', 'Edvisor'); ?></option>
@@ -143,7 +150,8 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('Desired City (if known)', 'Edvisor'); ?></label>
 							<select id="edvisor-desired-city">
-								<option value="Dont Know" selected><?php _e("Don't Know Yet", 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Dont Know"><?php _e("Don't Know Yet", 'Edvisor'); ?></option>
 							<?php 
 								$cities = get_terms(
 									array(
@@ -164,14 +172,16 @@ get_header();
 						<div class="edvisor-row">
 							<label><?php _e('Include Health Insurance*', 'Edvisor'); ?></label>
 							<select id="edvisor-insurance" required>
-								<option value="Sim" selected><?php _e('Yes', 'Edvisor'); ?></option>
+								<option>--</option>
+								<option value="Sim"><?php _e('Yes', 'Edvisor'); ?></option>
 								<option value="Não"><?php _e('No', 'Edvisor'); ?></option>
 							</select>
 						</div>	
 						<div class="edvisor-row">
 							<label><?php _e('Include Accommodation*', 'Edvisor'); ?></label>
-							<select id="edvisor-accommodation" required>
-								<option value="Sim" selected><?php _e('Yes', 'Edvisor'); ?></option>
+							<select id="edvisor-accommodation" required placeholder="-">
+								<option>--</option>
+								<option value="Sim"><?php _e('Yes', 'Edvisor'); ?></option>
 								<option value="Não"><?php _e('No', 'Edvisor'); ?></option>
 							</select>
 						</div>
