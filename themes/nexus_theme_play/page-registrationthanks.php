@@ -36,20 +36,60 @@ $emerContact = $_POST['emergency-name'];
 $emerContactNum = $_POST['emergency-number'];
 $highSchool = $_POST['high-school'];
 $highEnd = $_POST['high-school-end'];
-$higherSchool = $_POST['higher-education'] ?? 'N/A';
-$higherEnd = $_POST['higher-education-end'] ?? 'N/A';
+
+if(isset($_POST['higher-education'])) {
+	$higherSchool = $_POST['higher-education'];
+} else {
+	$higherSchool = 'N/A';
+}
+
+if(isset($_POST['higher-education-end'])) {
+	$higherEnd = $_POST['higher-education-end'];
+} else {
+	$higherEnd = 'N/A';
+}
+
+
 $englishLevel = $_POST['eng-level'];
 $schoolCanada = $_POST['school-to-study'];
 $prgType = $_POST['prgtype'];
 $courseName = $_POST['course-name'];
 $startDate = $_POST['start-date'];
-$duration = $_POST['program-duration'] ?? 'N/A';
+
+if(isset($_POST['program-duration'])) {
+	$duration = $_POST['program-duration'];
+} else {
+	$duration = 'N/A';
+}
+
 $accomm = $_POST['accomm'];
-$length = $_POST['stay-length'] ?? 'N/A';
-$room = $_POST['room'] ?? 'N/A';
-$meals = $_POST['meals'] ?? 'N/A';
+
+if(isset($_POST['stay-length'])) {
+	$length = $_POST['stay-length'];
+} else {
+	$length = 'N/A';
+}
+
+
+if(isset($_POST['stay-length'])) {
+	$room = $_POST['stay-length'];
+} else {
+	$room = 'N/A';
+}
+
+if(isset($_POST['meals'])) {
+	$meals = $_POST['meals'];
+} else {
+	$meals = 'N/A';
+}
 $health = $_POST['health'];
-$coverage = $_POST['health-duration'] ?? 'N/A';
+
+if(isset($_POST['health-duration'])) {
+	$coverage = $_POST['health-duration'];
+} else {
+	$coverage = 'N/A';
+}
+
 $consent = $_POST['privacy-policy'];
 $subject = 'Registration Form from '.$fname;
 
