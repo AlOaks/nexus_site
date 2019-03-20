@@ -409,51 +409,47 @@ quoteForm.submit(function(submit) {
         'customPropertyValues': [
             {
                 'customPropertyFieldId': 'age',
-                'customPropertyValue': $('#edvisor-age').val()
+                'value': $('#edvisor-age').val()
             },
             {
                 'customPropertyFieldId': 'estado-civil',
-                'customPropertyValue': $('#edvisor-status').val()
+                'customOptionSelections': [$('#edvisor-status').val()]
             },
             {
                 'customPropertyFieldId': 'education_level',
-                'customPropertyValue': $('#edvisor-edu-level').val()
+                'customOptionSelections': [$('#edvisor-edu-level').val()]
             },
             {
                 'customPropertyFieldId': 'se-formado',
-                'customPropertyValue': $('#edvisor-seformado').val()
+                'value': $('#edvisor-seformado').val()
             },
             {
                 'customPropertyFieldId': 'língua-de-interesse',
-                'customPropertyValue': $('#edvisor-lang-of-interest').val()
+                'customOptionSelections': [$('#edvisor-lang-of-interest').val()]
             },
             {
                 'customPropertyFieldId': 'english_level',
-                'customPropertyValue': $('#edvisor-level').val()
-            },
-            {
-                'customPropertyFieldId': 'língua-de-interesse',
-                'customPropertyValue': $('#edvisor-lang-of-interest').val()
+                'customOptionSelections': [$('#edvisor-level').val()]
             },
             {
                 'customPropertyFieldId': 'duração',
-                'customPropertyValue': $('#edvisor-duration').val()
+                'customOptionSelections': [$('#edvisor-duration').val()]
             },
             {
                 'customPropertyFieldId': 'outro-duração',
-                'customPropertyValue': $('#edvisor-other-duration').val()
+                'value': $('#edvisor-other-duration').val()
             },
             {
                 'customPropertyFieldId': 'previsão-de-início',
-                'customPropertyValue': $('#edvisor-desired-start').val()
+                'customOptionSelections': [$('#edvisor-desired-start').val()]
             },
             {
                 'customPropertyFieldId': 'incluir-seguro-saúde',
-                'customPropertyValue': $('#edvisor-insurance').val()
+                'customOptionSelections': [$('#edvisor-insurance').val()]
             },
             {
                 'customPropertyFieldId': 'incluir-acomodação',
-                'customPropertyValue': $('#edvisor-accommodation').val()
+                'customOptionSelections': [$('#edvisor-accommodation').val()]
             },  
         ]
     }
@@ -529,5 +525,64 @@ bookForm.submit(function(ev) {
     }
 });
 
+
+// REGISTRATION FORM 
+
+var accommo = $("#reg-accommodation");
+var stay = $("#length-div").hide();
+var room = $("#room-div").hide();
+var meals = $("#meals-div").hide();
+
+accommo.change(function() {
+
+    var accom = $(this).val();
+
+    if(accom === 'Yes') {
+        stay.show();
+        room.show();
+        meals.show();
+    } else {
+        stay.hide();
+        room.hide();
+        meals.hide();
+    }
+});
+
+
+var health = $("#reg-health");
+var coverage = $("#coverage-div").hide();
+
+
+health.change(function() {
+
+    var heal = $(this).val();
+
+    if(heal === 'Yes') {
+        coverage.show();
+    } else {
+        coverage.hide();
+    }
+});
+
+var regisForm = $('#registration-form-php');
+
+regisForm.submit(function(ev) {
+    ev.preventDefault();
+    var emailInput = document.createElement('input');
+    emailInput.setAttribute('type', 'hidden');
+    emailInput.setAttribute('name', 'nexus-email');
+
+    if($('html').is(':lang(en-US)')) {
+        emailInput.setAttribute('value', 'alberto@nexuseducanada.com');
+    } else if($('html').is(':lang(es-ES)')) {
+        emailInput.setAttribute('value', 'alberto@nexuseducanada.com');
+    } else if($('html').is(':lang(pt-BR)')) {
+        emailInput.setAttribute('value', 'carol@nexuseducanada.com');
+    }
+
+    regisForm.append(emailInput);
+
+    regisForm.unbind().submit();
+});
 
 })( jQuery );
