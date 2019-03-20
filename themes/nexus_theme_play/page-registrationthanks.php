@@ -95,51 +95,46 @@ $subject = 'Registration Form from '.$fname;
 
 
 $msg = "
-<html>
-<head>Registration Form Submitted by ".$fname."</head>
-<body>
-	<ul>
-		<li>First Name: ".$fname."</li>
-		<li>Last Name: ".$lname."</li>
-		<li>Gender: ".$gender."</li>
-		<li>Nationality: ".$nation."</li>
-		<li>Birthdate: ".$birth."</li>
-		<li>Marital Status: ".$marital."</li>
-		<li>Children: ".$children."</li>
-		<li>Passport Number: ".$passNum."</li>
-		<li>Passport Expiry: ".$passDate."</li>
-		<li>Address: ".$address."</li>
-		<li>City: ".$city."</li>
-		<li>State / Province: ".$state."</li>
-		<li>Zip Code: ".$zipcode."</li>
-		<li>Mobile Phone: ".$mphone."</li>
-		<li>E-Mail: ".$email."</li>
-		<li>Emergency Contact: ".$emerContact."</li>
-		<li>Emergency Number: ".$emerContactNum."</li>
-		<li>High School: ".$highSchool."</li>
-		<li>High School EndDate: ".$highEnd."</li>
-		<li>Higher Education School: ".$higherSchool."</li>
-		<li>Higher Education End Date: ".$higherEnd."</li>
-		<li>English Level: ".$englishLevel."</li>
-		<li>School to study in: ".$schoolCanada."</li>
-		<li>Program Type: ".$prgType."</li>
-		<li>Name of Program: ".$courseName."</li>
-		<li>Starting Date: ".$startDate."</li>
-		<li>Duration of Program: ".$duration."</li>
-		<li>Accommodation: ".$accomm."</li>
-		<li>Length of Stay: ".$length."</li>
-		<li>Type of Room: ".$room."</li>
-		<li>Meals Included: ".$meals."</li>
-		<li>Health Insurance Included: ".$health."</li>
-		<li>Health Coverage Duration: ".$coverage."</li>
-		<li>Privacy Policy: ".$consent."</li>
-	</ul>
-</body>
-</html>
+
+Registration Form Submitted by ".$fname."
+
+	
+		First Name: ".$fname."
+		Last Name: ".$lname."
+		Gender: ".$gender."
+		Nationality: ".$nation."
+		Birthdate: ".$birth."
+		Marital Status: ".$marital."
+		Children: ".$children."
+		Passport Number: ".$passNum."
+		Passport Expiry: ".$passDate."
+		Address: ".$address."
+		City: ".$city."
+		State / Province: ".$state."
+		Zip Code: ".$zipcode."
+		Mobile Phone: ".$mphone."
+		E-Mail: ".$email."
+		Emergency Contact: ".$emerContact."
+		Emergency Number: ".$emerContactNum."
+		High School: ".$highSchool."
+		High School EndDate: ".$highEnd."
+		Higher Education School: ".$higherSchool."
+		Higher Education End Date: ".$higherEnd."
+		English Level: ".$englishLevel."
+		School to study in: ".$schoolCanada."
+		Program Type: ".$prgType."
+		Name of Program: ".$courseName."
+		Starting Date: ".$startDate."
+		Duration of Program: ".$duration."
+		Accommodation: ".$accomm."
+		Length of Stay: ".$length."
+		Type of Room: ".$room."
+		Meals Included: ".$meals."
+		Health Insurance Included: ".$health."
+		Health Coverage Duration: ".$coverage."
+		Privacy Policy: ".$consent."
 ";
 
-$headers = 'MIME-Version: 1.0';
-$headers .= 'Content-type: text/html; charset=iso-8859-1';	
 $headers .= 'From: Nexus Education Consulting <contact@nexuseducanada.com>';
 
 if($fname && $lname) {
