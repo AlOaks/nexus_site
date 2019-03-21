@@ -573,11 +573,11 @@ regisForm.submit(function(ev) {
     emailInput.setAttribute('name', 'nexus-email');
 
     if($('html').is(':lang(en-US)')) {
-        emailInput.setAttribute('value', 'alberto@nexuseducanada.com');
+        emailInput.setAttribute('value', 'contact@nexuseducanada.com');
     } else if($('html').is(':lang(es-ES)')) {
-        emailInput.setAttribute('value', 'alberto@nexuseducanada.com');
+        emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
     } else if($('html').is(':lang(pt-BR)')) {
-        emailInput.setAttribute('value', 'carol@nexuseducanada.com');
+        emailInput.setAttribute('value', 'contato@nexuseducanada.com');
     }
 
     regisForm.append(emailInput);

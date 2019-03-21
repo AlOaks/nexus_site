@@ -194,7 +194,7 @@ get_header();
 								<option>--</option>
 								<option value="No meals"><?php _e('Without Meals', 'Registration'); ?></option>
 								<option value="2 meals"><?php _e('Two Meals', 'Registration'); ?></option>
-								<option value="3 meals"><?php _e('Three Meals'); ?></option>
+								<option value="3 meals"><?php _e('Three Meals', 'Registration'); ?></option>
 							</select>
 						</div>
 						<div class="registration-row">
