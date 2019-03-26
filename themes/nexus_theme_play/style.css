@@ -6833,3 +6833,107 @@ article {
   font-size: 1.5rem;
   margin-top: 3vh;
   margin-bottom: 3vh; }
+
+#accommodation-form {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.fieldset-label-accom {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #193F5C;
+  font-family: "Roboto";
+  margin-top: 2vh; }
+
+.fieldset-accomm {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightgray));
+  background: linear-gradient(white, lightgray);
+  -webkit-box-shadow: 3px 3px 10px #15405A;
+          box-shadow: 3px 3px 10px #15405A;
+  border-radius: 10px;
+  color: #193F5C;
+  font-family: "Open Sans";
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.accomm-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .accomm-row input, .accomm-row select {
+    height: 2rem; }
+  .accomm-row label {
+    font-family: "Roboto";
+    padding: 2%; }
+
+#accomm-btn {
+  color: white;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  background: #bd2020;
+  padding: 2%;
+  width: 30%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh; }
+
+.pets-set .accomm-row {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%; }
+
+.personal-set .accomm-row {
+  width: 45%; }
+
+.details-set {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.student-set #veggie, .student-set #houseprefer {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%; }
+
+.student-set .accomm-row {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  .student-set .accomm-row textarea, .student-set .accomm-row select {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+
+#prefer-no-pets {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  margin-top: 2vh; }
+  #prefer-no-pets input {
+    width: 20px;
+    height: 20px; }

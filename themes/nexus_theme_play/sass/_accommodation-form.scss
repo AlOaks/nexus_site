@@ -1,0 +1,102 @@
+#accommodation-form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset-label-accom {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $font-blue;
+    font-family: $roboto;
+    margin-top: 2vh;
+}
+
+.fieldset-accomm {
+    background: linear-gradient(white, lightgray);
+    box-shadow: 3px 3px 10px $bg-blue;
+    border-radius: 10px;
+    color: $font-blue;
+    font-family: $sans;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.accomm-row {
+    display: flex;
+    flex-direction: column;
+
+    input, select {
+        height: 2rem;
+    }
+
+    label {
+        font-family: $roboto;
+        padding: 2%;
+    }
+}
+
+#accomm-btn {
+    color: white;
+    font-family: $roboto;
+    font-size: 1.2rem;
+    background: $div-red;
+    padding: 2%;
+    width: 30%;
+    align-self: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.pets-set {
+
+    .accomm-row {
+        flex-basis: 22%;
+    }
+}
+
+.personal-set {
+   .accomm-row {
+       width: 45%;
+   }
+}
+
+.details-set {
+    align-items: center;
+}
+
+.student-set {
+
+    #veggie, #houseprefer {
+        flex-basis: 45%;
+    }
+
+    .accomm-row {
+        flex-basis: 100%;
+
+        
+
+        textarea, select {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+#prefer-no-pets {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 2vh;
+
+    input {
+        width: 20px;
+        height: 20px
+    }
+}
