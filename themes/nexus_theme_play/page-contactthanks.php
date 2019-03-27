@@ -42,16 +42,16 @@ if($verified === true) {
 
         $to = $_POST['nexus-email'];
         $subject = 'Contact Form from '.$name;
-        $msg = "
+        $msg = '
 
-        Contact Form Submitted by ".$name."
+        <h1 style="color: red;">Contact Form Submitted by '.$name.'</h1>
 
-            Name: ".$name."
-            Email: ".$email."
-            Message: ".$message."
-            Privacy Policy: ".$consent."
+            Name: '.$name.'
+            Email: '.$email.'
+            Message: '.$message.'
+            Privacy Policy: '.$consent.'
 
-        ";
+        ';
         $headers .= 'From: Nexus Contact <contacto@nexuseducanada.com>';
 
         // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
