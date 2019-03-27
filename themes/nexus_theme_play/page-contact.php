@@ -27,7 +27,7 @@ $contactToken = createTokenForm("contactform");
 		 	    <div class="form-contact">
                     <h2 class="form-title"><?php _e('Send Us A Message', 'nexus'); ?></h2>
                    
-                    <form id="contact-form-nexus">
+                    <form id="contact-form-nexus" action="https://nexuseducanada.com/thanks-contact" method="post">
                         <input type="hidden" name="tokenField" value="<?php echo $contactToken; ?>" />
                         <div class="contact-row">
                             <label><?php _e('Name', 'ContactForm'); ?></label>
