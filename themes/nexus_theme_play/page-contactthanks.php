@@ -53,6 +53,8 @@ if($verified === true) {
 
         ';
         $headers .= 'From: Nexus Contact <contacto@nexuseducanada.com>';
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
         // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
         mail($to, $subject, $msg, $headers);
