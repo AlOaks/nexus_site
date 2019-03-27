@@ -11,8 +11,11 @@
  *
  * @package nexus_theme_scratch
  */
+session_start();
 
 get_header();
+
+$contactToken = createTokenForm("contactform");
 ?>
 
 	<div id="primary" class="content-area">
@@ -23,7 +26,29 @@ get_header();
 			<section class="contact-page-form">
 		 	    <div class="form-contact">
                     <h2 class="form-title"><?php _e('Send Us A Message', 'nexus'); ?></h2>
-                    <?php the_content(); ?>
+                   
+                    <form id="contact-form-nexus">
+                        <input type="hidden" name="tokenField" value="<?php echo $contactToken; ?>" />
+                        <div class="contact-row">
+                            <label><?php _e('Name', 'ContactForm'); ?></label>
+                            <input type="text" name="contact-name" id="contacto-name"  required />
+                        </div>
+                        <div class="contact-row">
+                            <label>E-mail</label>
+                            <input type="email" name="contact-email" id="contacto-email"  required />
+                        </div>
+                        <div class="contact-row">
+                            <label><?php _e('Your Message', 'ContactForm'); ?></label>
+                            <textarea name="contact-message" id="contacto-message" required></textarea>
+                        </div>
+                        <div class="privacy-policy">
+						    <div class="privacy-radio">
+                                <input type="radio" name="privacy-policy" id="reg-privacy" value="I consent" required />
+                                <label for="reg-privacy"><?php _e('I accept the Terms and Conditions, Privacy Policy & Cookie Policy*', 'ContactForm'); ?></label>
+                            </div>
+					    </div>
+                        <button id="contactform-btn"><?php _e('Submit', 'ContactForm'); ?></button>
+                    </form>
                 </div>
                 <div class="contact-info">
                     <h2 class="info-title"><?php _e('Nexus in Canada', 'nexus'); ?></h2>

@@ -11,8 +11,12 @@
  *
  * @package nexus_theme_scratch
  */
+session_start();
 
 get_header();
+
+$acctoken = createTokenForm('accommform');
+
 ?>
 
 	<div id="primary" class="content-area">
@@ -21,7 +25,8 @@ get_header();
 				<h1 class="type-page-title"><?php _e(the_title(), 'nexus'); ?></h1>
 			</div>
 			<div class="accommmodation-page-form">
-                <form id="accommodation-form" action="https://nexuseducanada.com/thanks-accommodation">
+                <form id="accommodation-form" action="http://localhost/nexus/thanks-accommodation/" method="post">
+                    <input type="hidden" name="tokenField" value="<?php echo $acctoken; ?>">
                     <label class="fieldset-label-accom"><?php _e('Personal Information', 'Accommodation'); ?></label>
                     <div class="fieldset-accomm personal-set">
                         <div class="accomm-row">

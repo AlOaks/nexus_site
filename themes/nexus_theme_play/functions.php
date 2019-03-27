@@ -420,4 +420,75 @@ function console( $data ) {
     echo "<script>console.log( 'PHP Says: " . $output . "' );</script>";
 }
 
-   
+// SECURITY LOG
+
+function createTokenForm($form) {
+
+	$token = md5(uniqid(microtime(), true));
+
+	$_SESSION[$form.'_token'] = $token;
+
+	return $token;
+} 
+
+function tokenVer($form) {
+
+	if(!isset($_SESSION[$form.'_token'])) {
+		return false;
+	}
+
+	if(!isset($_POST['tokenField'])) {
+		return false;
+	}
+
+	if ($_SESSION[$form.'_token'] !== $_POST['tokenField']) {
+		return false;
+    }
+	
+	return true;
+}
+
+function stripcleantohtml($s){
+	// Restores the added slashes (ie.: " I\'m John " for security in output, and escapes them in htmlentities(ie.:  &quot; etc.)
+	// Also strips any <html> tags it may encouter
+	// Use: Anything that shouldn't contain html (pretty much everything that is not a textarea)
+	return htmlentities(trim(strip_tags(stripslashes($s))), ENT_NOQUOTES, "UTF-8");
+}
+
+
+
+function secureLog($where) {
+
+	$ip = $_SERVER["REMOTE_ADDR"]; // Get the IP from superglobal
+	$host = gethostbyaddr($ip);    // Try to locate the host of the attack
+	$date = date("d M Y");
+	
+	// create a logging message with php heredoc syntax
+	$logging = <<<LOG
+		
+		<< Start of Message >>
+		There was a hacking attempt on your form. 
+		Date of Attack: {$date}
+		IP-Adress: {$ip}
+		Host of Attacker: {$host}
+		Point of Attack: {$where}
+		<< End of Message >>
+LOG;
+        
+        // open log file
+		if($handle = fopen('../../securelog.log', 'a')) {
+		
+			fputs($handle, $logging);  // write the Data to file
+			fclose($handle);           // close the file
+			
+		} else {  // if first method is not working, for example because of wrong file permissions, email the data
+		
+        	$toAdmin = 'alberto@nexuseducanada.com';  
+        	$subject = 'HACK ATTEMPT';
+        	$header = 'From: Nexus Secure Log <contacto@nexuseducanada.com>';
+        	if (mail($toAdmin, $subject, $logging, $header)) {
+        		echo "Sent notice to admin.";
+        	}
+
+	}
+}

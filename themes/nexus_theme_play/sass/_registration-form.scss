@@ -73,6 +73,25 @@
     }    
 }
 
+.client-info-more, .client-education-info, .client-info, .clien-canada-info, .optionals-info {
+
+    @include mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .registration-row {
+        
+        @include mobile {
+            width: 90%;
+            align-self: center;
+            flex-basis: 80%;
+        }
+        
+    }
+}
+
 .client-education-info {
 
     .registration-row {

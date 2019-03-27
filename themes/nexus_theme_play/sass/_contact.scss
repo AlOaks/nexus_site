@@ -79,25 +79,62 @@
 
 // WP FORM
 
-.wpforms-container {
-    width: 65% !important;
-    margin-left: 10% !important;
-}
+#contact-form-nexus {
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
 
-.wpforms-submit {
-    background: $div-red !important;
-    width: 50% !important;
-    margin-left: 25% v;
-    border: none !important;
-    color: white !important;
-    border-radius: 5px !important;
-}
+    @include mobile {
+        width: 80%;
+    }
 
-.wpforms-field-label-inline {
-    color: white !important;
-    font-size: .8rem !important;
-}
+    .contact-row {
+        display: flex;
+        flex-direction: column;
 
+        label {
+            color: white;
+            font-family: $sans;
+            margin-top: 1vh;
+        }
+
+        input {
+            color: $font-blue;
+            font-family: $sans;
+            height: 2rem;
+        }
+
+        textarea {
+            height: 20vh;
+        }
+    }
+
+    .privacy-policy {
+
+        color: white;
+        font-size: .8rem;
+    }
+
+    button {
+        color: $font-blue;
+        background: $div-yellow;
+        padding: 5% 10%;
+        font-size: 1.3rem;
+        font-family: $roboto;
+        align-self: center;
+        text-align: center;
+        border: none;
+        width: 37%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+        @include mobile {
+            width: 50%;
+        }
+    }
+
+}
 
 
 .info-title {

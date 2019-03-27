@@ -4,6 +4,14 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
 }
 
 .fieldset-label-accom {
@@ -54,8 +62,17 @@
 
 .pets-set {
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .accomm-row {
         flex-basis: 22%;
+
+        @include mobile {
+            flex-basis: 80%;
+        }
     }
 }
 
@@ -94,6 +111,11 @@
     justify-content: center;
     width: auto;
     margin-top: 2vh;
+
+    @include mobile {
+        width: 60%;
+        align-self: center;
+    }
 
     input {
         width: 20px;

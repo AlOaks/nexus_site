@@ -2686,21 +2686,56 @@ option {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.wpforms-container {
-  width: 65% !important;
-  margin-left: 10% !important; }
-
-.wpforms-submit {
-  background: #bd2020 !important;
-  width: 50% !important;
-  margin-left: 25% v;
-  border: none !important;
-  color: white !important;
-  border-radius: 5px !important; }
-
-.wpforms-field-label-inline {
-  color: white !important;
-  font-size: .8rem !important; }
+#contact-form-nexus {
+  width: 60%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 705px) {
+    #contact-form-nexus {
+      width: 80%; } }
+  #contact-form-nexus .contact-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #contact-form-nexus .contact-row label {
+      color: white;
+      font-family: "Open Sans";
+      margin-top: 1vh; }
+    #contact-form-nexus .contact-row input {
+      color: #193F5C;
+      font-family: "Open Sans";
+      height: 2rem; }
+    #contact-form-nexus .contact-row textarea {
+      height: 20vh; }
+  #contact-form-nexus .privacy-policy {
+    color: white;
+    font-size: .8rem; }
+  #contact-form-nexus button {
+    color: #193F5C;
+    background: #ffb419;
+    padding: 5% 10%;
+    font-size: 1.3rem;
+    font-family: "Roboto";
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+    border: none;
+    width: 37%;
+    margin-top: 2vh;
+    margin-bottom: 2vh; }
+    @media (max-width: 705px) {
+      #contact-form-nexus button {
+        width: 50%; } }
 
 .info-title {
   margin-left: 10%;
@@ -6791,6 +6826,25 @@ article {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%; }
 
+@media (max-width: 705px) {
+  .client-info-more, .client-education-info, .client-info, .clien-canada-info, .optionals-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (max-width: 705px) {
+  .client-info-more .registration-row, .client-education-info .registration-row, .client-info .registration-row, .clien-canada-info .registration-row, .optionals-info .registration-row {
+    width: 90%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%; } }
+
 .client-education-info .registration-row:first-of-type, .client-education-info .registration-row:nth-of-type(3) {
   -ms-flex-preferred-size: 57.5%;
       flex-basis: 57.5%; }
@@ -6845,6 +6899,12 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (max-width: 1024px) {
+    #accommodation-form {
+      width: 80%; } }
+  @media (max-width: 705px) {
+    #accommodation-form {
+      width: 90%; } }
 
 .fieldset-label-accom {
   font-size: 1.2rem;
@@ -6897,9 +6957,23 @@ article {
   margin-top: 3vh;
   margin-bottom: 3vh; }
 
+@media (max-width: 705px) {
+  .pets-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .pets-set .accomm-row {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%; }
+  @media (max-width: 705px) {
+    .pets-set .accomm-row {
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%; } }
 
 .personal-set .accomm-row {
   width: 45%; }
@@ -6934,6 +7008,11 @@ article {
           justify-content: center;
   width: auto;
   margin-top: 2vh; }
+  @media (max-width: 705px) {
+    #prefer-no-pets {
+      width: 60%;
+      -ms-flex-item-align: center;
+          align-self: center; } }
   #prefer-no-pets input {
     width: 20px;
     height: 20px; }

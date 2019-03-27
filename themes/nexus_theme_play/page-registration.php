@@ -11,6 +11,9 @@
  *
  * @package nexus_theme_scratch
  */
+session_start();
+
+$regisToken = createTokenForm('regisform');
 
 get_header();
 ?>
@@ -22,6 +25,7 @@ get_header();
 			</div>
 			<div class="registration-page-form">
 				<form id="registration-form-php" action="https://nexuseducanada.com/thanks-registration" method="post">
+					<input type="hidden" name="tokenField" value="<?php echo $regisToken; ?>">
 					<label class="fieldset-label-reg"><?php _e('About you', 'Registration'); ?></label>
 					<div class="reg-fieldset client-info">
 						<div class="registration-row">
@@ -111,7 +115,7 @@ get_header();
 							<input type="text" name="high-school" id="reg-highschool" required />
 						</div>
 						<div class="registration-row">
-							<label><?php _e('End Date', 'Registration'); ?>
+							<label><?php _e('End Date', 'Registration'); ?></label>
 							<input type="month" name="high-school-end" id="red-highschool-end" required />
 						</div>
 						<div class="registration-row">

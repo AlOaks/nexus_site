@@ -609,4 +609,27 @@ accForm.submit(function(ev) {
     accForm.unbind().submit();
 });
 
+// CONTACT FORM
+
+var contForm = $('#contacto-form-nexus');
+
+contForm.submit(function(ev) {
+    ev.preventDefault();
+    var emailInput = document.createElement('input');
+    emailInput.setAttribute('type', 'hidden');
+    emailInput.setAttribute('name', 'nexus-email');
+
+    if($('html').is(':lang(en-US)')) {
+        emailInput.setAttribute('value', 'contact@nexuseducanada.com');
+    } else if($('html').is(':lang(es-ES)')) {
+        emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
+    } else if($('html').is(':lang(pt-BR)')) {
+        emailInput.setAttribute('value', 'contato@nexuseducanada.com');
+    }
+
+    contForm.append(emailInput);
+
+    contForm.unbind().submit();
+});
+
 })( jQuery );
