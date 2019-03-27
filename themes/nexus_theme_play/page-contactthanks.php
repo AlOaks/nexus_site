@@ -52,7 +52,9 @@ if($verified === true) {
             Privacy Policy: '.$consent.'<br>
 
         ';
-        $headers .= "From: ".$name." <".$email.">";
+        $headers .= "Reply-to: ".$name."<".$email.">\r\n";
+        $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
+        $headers .= "From: ".$name." <".$email.">\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
