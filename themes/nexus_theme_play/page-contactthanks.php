@@ -15,7 +15,7 @@ session_start();
 
 get_header();
 
-$verified = tokenVer('contactform');
+$verified = tokenVer("contactform");
 
 if($verified === true) {
 
@@ -26,36 +26,37 @@ if($verified === true) {
 	foreach ($_POST as $key=>$item) {
 			
 	// Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
-	if (!in_array($key, $allowedAccomFields)) {
-		
-		secureLog('Unknown form fields @ Contact Form');
-		die("Error detected. Please use only the fields in the form");
-		header("refresh:1;url=https://nexuseducanada.com");
-		
-		} else {
-            $lang = stripcleantohtml($_POST['pagelang']);
-            $name = stripcleantohtml($_POST['contact-name']);
-            $email = stripcleantohtml($_POST['contact-email']);
-            $message = stripcleantohtml($_POST['contact-message']);
-            $consent = stripcleantohtml($_POST['privacy-policy']);
+        if (!in_array($key, $allowedAccomFields)) {
+            
+            secureLog('Unknown form fields @ Contact Form');
+            die("Error detected. Please use only the fields in the form");
+            header("refresh:1;url=https://nexuseducanada.com");
+            
+            } else {
+                $lang = stripcleantohtml($_POST['pagelang']);
+                $name = stripcleantohtml($_POST['contact-name']);
+                $email = stripcleantohtml($_POST['contact-email']);
+                $message = stripcleantohtml($_POST['contact-message']);
+                $consent = stripcleantohtml($_POST['privacy-policy']);
 
-            $to = $_POST['nexus-email'];
-            $subject = 'Contact Form from '.$name;
-            $msg = "
+                $to = $_POST['nexus-email'];
+                $subject = 'Contact Form from '.$name;
+                $msg = "
 
-            Contact Form Submitted by ".$name."
+                Contact Form Submitted by ".$name."
 
-                Name: ".$name."
-                Email: ".$email."
-                Message: ".$message."
-                Privacy Policy: ".$consent."
+                    Name: ".$name."
+                    Email: ".$email."
+                    Message: ".$message."
+                    Privacy Policy: ".$consent."
 
-            ";
-            $headers .= 'From: Nexus Contact <contact@nexuseducanada.com>';
-            mail($to, $subject, $msg, $headers);
+                ";
+                $headers .= 'From: Nexus Contact <contacto@nexuseducanada.com>';
+                mail($to, $subject, $msg, $headers);
 
-        }
+            }
     }	
+
 } else {
     secureLog('Form Token @ Contact Form');
     header("refresh:1;url=https://nexuseducanada.com");
