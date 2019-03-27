@@ -34,6 +34,7 @@ if($verified === true) {
 		
 		}
 	}
+	
 	$lang = $_POST['pagelang'];
 	$fname = $_POST['acc-name'];
 	$lname = $_POST['acc-lastname'];
@@ -115,14 +116,14 @@ if($verified === true) {
 			Any Specifics Request: ".stripcleantohtml($specific)."
 			Privacy Policy: ".stripcleantohtml($consent)."
 	";
-	$headers .= 'From: Nexus Accommodation <contact@nexuseducanada.com>';
 
+	$headers .= "Reply-to: ".$name."<".$email.">\r\n";
+	$headers .= "Return-path: Nexus Accommodation <contact@nexuseducanada.com>\r\n";
+	$headers .= "From: Nexus Accommodation Form <".$email.">\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-	mail($to, $subject, $msg, $headers);
-
-
-
-	// echo 'SENT';
+	mail($to, $subject, $msg, $headers);// echo 'SENT';
 	
 } else {
 	secureLog('Form Token @ Accommodation Form');

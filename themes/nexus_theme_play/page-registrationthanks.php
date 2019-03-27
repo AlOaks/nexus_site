@@ -33,132 +33,136 @@ if($verified === true) {
 		die("Error detected. Please use only the fields in the form");
 		header("refresh:1;url=https://nexuseducanada.com");
 		
-		} else {
-			$lang = $_POST['pagelang'];
-			$to = $_POST['nexus-email'];
-			$fname = $_POST['first-name'];
-			$lname = $_POST['last-name'];
-			$gender = $_POST['gender'];
-			$nation = $_POST['nationality'];
-			$birth = $_POST['birthdate'];
-			$marital = $_POST['marital'];
-			$children = $_POST['children'];
-			$passNum = $_POST['passport-no'];
-			$passDate = $_POST['passport-expiry'];
-			$address = $_POST['cur-address'];
-			$city = $_POST['city'];
-			$state = $_POST['state-province'];
-			$zipcode = $_POST['zipcode'];
-			$mphone = $_POST['mobile-phone'];
-			$email = $_POST['email'];
-			$emerContact = $_POST['emergency-name'];
-			$emerContactNum = $_POST['emergency-number'];
-			$highSchool = $_POST['high-school'];
-			$highEnd = $_POST['high-school-end'];
-
-			if(isset($_POST['higher-education'])) {
-				$higherSchool = $_POST['higher-education'];
-			} else {
-				$higherSchool = 'N/A';
-			}
-
-			if(isset($_POST['higher-education-end'])) {
-				$higherEnd = $_POST['higher-education-end'];
-			} else {
-				$higherEnd = 'N/A';
-			}
-
-
-			$englishLevel = $_POST['eng-level'];
-			$schoolCanada = $_POST['school-to-study'];
-			$prgType = $_POST['prgtype'];
-			$courseName = $_POST['course-name'];
-			$startDate = $_POST['start-date'];
-
-			if(isset($_POST['program-duration'])) {
-				$duration = $_POST['program-duration'];
-			} else {
-				$duration = 'N/A';
-			}
-
-			$accomm = $_POST['accomm'];
-
-			if(isset($_POST['stay-length'])) {
-				$length = $_POST['stay-length'];
-			} else {
-				$length = 'N/A';
-			}
-
-
-			if(isset($_POST['room'])) {
-				$room = $_POST['room'];
-			} else {
-				$room = 'N/A';
-			}
-
-			if(isset($_POST['meals'])) {
-				$meals = $_POST['meals'];
-			} else {
-				$meals = 'N/A';
-			}
-			$health = $_POST['health'];
-
-			if(isset($_POST['health-duration'])) {
-				$coverage = $_POST['health-duration'];
-			} else {
-				$coverage = 'N/A';
-			}
-
-			$consent = $_POST['privacy-policy'];
-			$subject = 'Registration Form from '.$fname;
-
-
-			$msg = "
-
-			Registration Form Submitted by ".stripcleantohtml($fname)."
-
-				
-					First Name: ".stripcleantohtml($fname)."
-					Last Name: ".stripcleantohtml($lname)."
-					Gender: ".stripcleantohtml($gender)."
-					Nationality: ".stripcleantohtml($nation)."
-					Birthdate: ".stripcleantohtml($birth)."
-					Marital Status: ".stripcleantohtml($marital)."
-					Children: ".stripcleantohtml($children)."
-					Passport Number: ".stripcleantohtml($passNum)."
-					Passport Expiry: ".stripcleantohtml($passDate)."
-					Address: ".stripcleantohtml($address)."
-					City: ".stripcleantohtml($city)."
-					State / Province: ".stripcleantohtml($state)."
-					Zip Code: ".stripcleantohtml($zipcode)."
-					Mobile Phone: ".stripcleantohtml($mphone)."
-					E-Mail: ".stripcleantohtml($email)."
-					Emergency Contact: ".stripcleantohtml($emerContact)."
-					Emergency Number: ".stripcleantohtml($emerContactNum)."
-					High School: ".stripcleantohtml($highSchool)."
-					High School EndDate: ".stripcleantohtml($highEnd)."
-					Higher Education School: ".stripcleantohtml($higherSchool)."
-					Higher Education End Date: ".stripcleantohtml($higherEnd)."
-					English Level: ".stripcleantohtml($englishLevel)."
-					School to study in: ".stripcleantohtml($schoolCanada)."
-					Program Type: ".stripcleantohtml($prgType)."
-					Name of Program: ".stripcleantohtml($courseName)."
-					Starting Date: ".stripcleantohtml($startDate)."
-					Duration of Program: ".stripcleantohtml($duration)."
-					Accommodation: ".stripcleantohtml($accomm)."
-					Length of Stay: ".stripcleantohtml($length)."
-					Type of Room: ".stripcleantohtml($room)."
-					Meals Included: ".stripcleantohtml($meals)."
-					Health Insurance Included: ".stripcleantohtml($health)."
-					Health Coverage Duration: ".stripcleantohtml($coverage)."
-					Privacy Policy: ".stripcleantohtml($consent)."
-			";
-
-			$headers .= 'From: Nexus Registration <contact@nexuseducanada.com>';
-
-			mail($to, $subject, $msg, $headers);
-		}
+		} 
 	}
+	$lang = $_POST['pagelang'];
+	$to = $_POST['nexus-email'];
+	$fname = $_POST['first-name'];
+	$lname = $_POST['last-name'];
+	$gender = $_POST['gender'];
+	$nation = $_POST['nationality'];
+	$birth = $_POST['birthdate'];
+	$marital = $_POST['marital'];
+	$children = $_POST['children'];
+	$passNum = $_POST['passport-no'];
+	$passDate = $_POST['passport-expiry'];
+	$address = $_POST['cur-address'];
+	$city = $_POST['city'];
+	$state = $_POST['state-province'];
+	$zipcode = $_POST['zipcode'];
+	$mphone = $_POST['mobile-phone'];
+	$email = $_POST['email'];
+	$emerContact = $_POST['emergency-name'];
+	$emerContactNum = $_POST['emergency-number'];
+	$highSchool = $_POST['high-school'];
+	$highEnd = $_POST['high-school-end'];
+
+	if(isset($_POST['higher-education'])) {
+		$higherSchool = $_POST['higher-education'];
+	} else {
+		$higherSchool = 'N/A';
+	}
+
+	if(isset($_POST['higher-education-end'])) {
+		$higherEnd = $_POST['higher-education-end'];
+	} else {
+		$higherEnd = 'N/A';
+	}
+
+
+	$englishLevel = $_POST['eng-level'];
+	$schoolCanada = $_POST['school-to-study'];
+	$prgType = $_POST['prgtype'];
+	$courseName = $_POST['course-name'];
+	$startDate = $_POST['start-date'];
+
+	if(isset($_POST['program-duration'])) {
+		$duration = $_POST['program-duration'];
+	} else {
+		$duration = 'N/A';
+	}
+
+	$accomm = $_POST['accomm'];
+
+	if(isset($_POST['stay-length'])) {
+		$length = $_POST['stay-length'];
+	} else {
+		$length = 'N/A';
+	}
+
+
+	if(isset($_POST['room'])) {
+		$room = $_POST['room'];
+	} else {
+		$room = 'N/A';
+	}
+
+	if(isset($_POST['meals'])) {
+		$meals = $_POST['meals'];
+	} else {
+		$meals = 'N/A';
+	}
+	$health = $_POST['health'];
+
+	if(isset($_POST['health-duration'])) {
+		$coverage = $_POST['health-duration'];
+	} else {
+		$coverage = 'N/A';
+	}
+
+	$consent = $_POST['privacy-policy'];
+	$subject = 'Registration Form from '.$fname;
+
+
+	$msg = "
+
+	Registration Form Submitted by ".stripcleantohtml($fname)."
+
+		
+			First Name: ".stripcleantohtml($fname)."
+			Last Name: ".stripcleantohtml($lname)."
+			Gender: ".stripcleantohtml($gender)."
+			Nationality: ".stripcleantohtml($nation)."
+			Birthdate: ".stripcleantohtml($birth)."
+			Marital Status: ".stripcleantohtml($marital)."
+			Children: ".stripcleantohtml($children)."
+			Passport Number: ".stripcleantohtml($passNum)."
+			Passport Expiry: ".stripcleantohtml($passDate)."
+			Address: ".stripcleantohtml($address)."
+			City: ".stripcleantohtml($city)."
+			State / Province: ".stripcleantohtml($state)."
+			Zip Code: ".stripcleantohtml($zipcode)."
+			Mobile Phone: ".stripcleantohtml($mphone)."
+			E-Mail: ".stripcleantohtml($email)."
+			Emergency Contact: ".stripcleantohtml($emerContact)."
+			Emergency Number: ".stripcleantohtml($emerContactNum)."
+			High School: ".stripcleantohtml($highSchool)."
+			High School EndDate: ".stripcleantohtml($highEnd)."
+			Higher Education School: ".stripcleantohtml($higherSchool)."
+			Higher Education End Date: ".stripcleantohtml($higherEnd)."
+			English Level: ".stripcleantohtml($englishLevel)."
+			School to study in: ".stripcleantohtml($schoolCanada)."
+			Program Type: ".stripcleantohtml($prgType)."
+			Name of Program: ".stripcleantohtml($courseName)."
+			Starting Date: ".stripcleantohtml($startDate)."
+			Duration of Program: ".stripcleantohtml($duration)."
+			Accommodation: ".stripcleantohtml($accomm)."
+			Length of Stay: ".stripcleantohtml($length)."
+			Type of Room: ".stripcleantohtml($room)."
+			Meals Included: ".stripcleantohtml($meals)."
+			Health Insurance Included: ".stripcleantohtml($health)."
+			Health Coverage Duration: ".stripcleantohtml($coverage)."
+			Privacy Policy: ".stripcleantohtml($consent)."
+	";
+
+	$headers .= "Reply-to: ".$name."<".$email.">\r\n";
+	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\r\n";
+	$headers .= "From: Nexus Registration Form <".$email.">\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+	mail($to, $subject, $msg, $headers);
+	
 } else {
 	secureLog('Form Token @ Registration Form');
 	header("refresh:1;url=https://nexuseducanada.com");
