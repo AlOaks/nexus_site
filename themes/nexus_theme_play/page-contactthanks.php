@@ -30,32 +30,32 @@ if($verified === true) {
             
             secureLog('Unknown form fields @ Contact Form');
             die("Error detected. Please use only the fields in the form");
-            header("refresh:1;url=https://nexuseducanada.com");
-            
-            } else {
-                $lang = stripcleantohtml($_POST['pagelang']);
-                $name = stripcleantohtml($_POST['contact-name']);
-                $email = stripcleantohtml($_POST['contact-email']);
-                $message = stripcleantohtml($_POST['contact-message']);
-                $consent = stripcleantohtml($_POST['privacy-policy']);
-
-                $to = $_POST['nexus-email'];
-                $subject = 'Contact Form from '.$name;
-                $msg = "
-
-                Contact Form Submitted by ".$name."
-
-                    Name: ".$name."
-                    Email: ".$email."
-                    Message: ".$message."
-                    Privacy Policy: ".$consent."
-
-                ";
-                $headers .= 'From: Nexus Contact <contacto@nexuseducanada.com>';
-                mail($to, $subject, $msg, $headers);
-
+            // header("refresh:1;url=https://nexuseducanada.com");
             }
-    }	
+    }
+
+        $lang = stripcleantohtml($_POST['pagelang']);
+        $name = stripcleantohtml($_POST['contact-name']);
+        $email = stripcleantohtml($_POST['contact-email']);
+        $message = stripcleantohtml($_POST['contact-message']);
+        $consent = stripcleantohtml($_POST['privacy-policy']);
+
+        $to = $_POST['nexus-email'];
+        $subject = 'Contact Form from '.$name;
+        $msg = "
+
+        Contact Form Submitted by ".$name."
+
+            Name: ".$name."
+            Email: ".$email."
+            Message: ".$message."
+            Privacy Policy: ".$consent."
+
+        ";
+        $headers .= 'From: Nexus Contact <contacto@nexuseducanada.com>';
+
+        // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
+        mail($to, $subject, $msg, $headers);
 
 } else {
     secureLog('Form Token @ Contact Form');

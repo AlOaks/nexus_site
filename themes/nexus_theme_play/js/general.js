@@ -635,7 +635,7 @@ accForm.submit(function(ev) {
 
 // CONTACT FORM
 
-var contForm = $('#contacto-form-nexus');
+var contForm = $('#contact-form-nexus');
 
 contForm.submit(function(ev) {
     ev.preventDefault();
