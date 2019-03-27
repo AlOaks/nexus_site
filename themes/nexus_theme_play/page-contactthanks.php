@@ -46,15 +46,15 @@ if($verified === true) {
 
         <h1 style="color: red;">Contact Form Submitted by '.$name.'</h1>
 
-            Name: '.$name.'
-            Email: '.$email.'
-            Message: '.$message.'
-            Privacy Policy: '.$consent.'
+            Name: '.$name.'<br>
+            Email: '.$email.'<br>
+            Message: '.$message.'<br>
+            Privacy Policy: '.$consent.'<br>
 
         ';
-        $headers .= 'From: Nexus Contact <contacto@nexuseducanada.com>';
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+        $headers .= 'From: '.$name.' <'.$email.'>';
+        $headers .= 'MIME-Version: 1.0\r\n';
+        $headers .= 'Content-Type: text/html; charset=ISO-8859-1\r\n';
 
         // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
         mail($to, $subject, $msg, $headers);
