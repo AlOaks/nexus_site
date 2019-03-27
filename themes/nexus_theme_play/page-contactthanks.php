@@ -52,9 +52,9 @@ if($verified === true) {
             Privacy Policy: '.$consent.'<br>
 
         ';
-        $headers .= 'From: '.$name.' <'.$email.'>';
-        $headers .= 'MIME-Version: 1.0\r\n';
-        $headers .= 'Content-Type: text/html; charset=ISO-8859-1\r\n';
+        $headers .= "From: ".$name." <".$email.">";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
         // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
         mail($to, $subject, $msg, $headers);
