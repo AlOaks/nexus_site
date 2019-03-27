@@ -20,7 +20,7 @@ $verified = tokenVer('contactform');
 if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-	$allowedAccomFields = array('tokenField','nexus-email','contact-name', 'contact-email', 'contact-message', 'privacy-policy');
+	$allowedAccomFields = array('tokenField','pagelang','nexus-email','contact-name', 'contact-email', 'contact-message', 'privacy-policy');
 
 	// Building an array with the $_POST-superglobal 
 	foreach ($_POST as $key=>$item) {
@@ -33,22 +33,23 @@ if($verified === true) {
 		header("refresh:1;url=https://nexuseducanada.com");
 		
 		}
-	}
-
-    $name = $_POST['contact-name'];
-    $email = $_POST['contact-email'];
-    $message = $_POST['contact-message'];
-    $consent = $_POST['privacy-policy'];
+    }
+    
+    $lang = stripcleantohtml($_POST['pagelang']);
+    $name = stripcleantohtml($_POST['contact-name']);
+    $email = stripcleantohtml($_POST['contact-email']);
+    $message = stripcleantohtml($_POST['contact-message']);
+    $consent = stripcleantohtml($_POST['privacy-policy']);
 
 	$to = $_POST['nexus-email'];
-	$subject = 'Contact Form from '.stripcleantohtml($fname);
+	$subject = 'Contact Form from '.$name;
 	$msg = "
 
-	Contact Form Submitted by ".stripcleantohtml($fname)."
+	Contact Form Submitted by ".$name."
 
-        Name: ".stripcleantohtml($name)."
-        Email: ".stripcleantohtml($email)."
-        Message: ".stripcleantohtml($message)."
+        Name: ".$name."
+        Email: ".$email."
+        Message: ".$message."
         Privacy Policy: ".$consent."
 
 	";

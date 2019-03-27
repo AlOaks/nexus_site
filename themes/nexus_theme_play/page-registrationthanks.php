@@ -21,7 +21,7 @@ if($verified === true) {
 
 
 
-	$allowedAccomFields = array('tokenField','meals','health-duration','health','city','accomm','stay-length','room','high-school','higher-education','higher-education-end','eng-level','school-to-study','prgtype','course-name','start-date','program-duration','high-school-end','emergency-number','emergency-name','email','zipcode', 'mobile-phone','state-province','passport-expiry','cur-address','marital','children','passport-no','nexus-email','first-name','last-name','gender','nationality','birthdate','privacy-policy');
+	$allowedAccomFields = array('tokenField','pagelang','meals','health-duration','health','city','accomm','stay-length','room','high-school','higher-education','higher-education-end','eng-level','school-to-study','prgtype','course-name','start-date','program-duration','high-school-end','emergency-number','emergency-name','email','zipcode', 'mobile-phone','state-province','passport-expiry','cur-address','marital','children','passport-no','nexus-email','first-name','last-name','gender','nationality','birthdate','privacy-policy');
 
 	// Building an array with the $_POST-superglobal 
 	foreach ($_POST as $key=>$item) {
@@ -36,7 +36,7 @@ if($verified === true) {
 		}
 	}
 
-
+	$lang = $_POST['pagelang'];
 	$to = $_POST['nexus-email'];
 	$fname = $_POST['first-name'];
 	$lname = $_POST['last-name'];
