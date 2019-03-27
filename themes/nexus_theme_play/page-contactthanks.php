@@ -32,34 +32,30 @@ if($verified === true) {
 		die("Error detected. Please use only the fields in the form");
 		header("refresh:1;url=https://nexuseducanada.com");
 		
-		}
-    }
-    
-    $lang = stripcleantohtml($_POST['pagelang']);
-    $name = stripcleantohtml($_POST['contact-name']);
-    $email = stripcleantohtml($_POST['contact-email']);
-    $message = stripcleantohtml($_POST['contact-message']);
-    $consent = stripcleantohtml($_POST['privacy-policy']);
+		} else {
+            $lang = stripcleantohtml($_POST['pagelang']);
+            $name = stripcleantohtml($_POST['contact-name']);
+            $email = stripcleantohtml($_POST['contact-email']);
+            $message = stripcleantohtml($_POST['contact-message']);
+            $consent = stripcleantohtml($_POST['privacy-policy']);
 
-	$to = $_POST['nexus-email'];
-	$subject = 'Contact Form from '.$name;
-	$msg = "
+            $to = $_POST['nexus-email'];
+            $subject = 'Contact Form from '.$name;
+            $msg = "
 
-	Contact Form Submitted by ".$name."
+            Contact Form Submitted by ".$name."
 
-        Name: ".$name."
-        Email: ".$email."
-        Message: ".$message."
-        Privacy Policy: ".$consent."
+                Name: ".$name."
+                Email: ".$email."
+                Message: ".$message."
+                Privacy Policy: ".$consent."
 
-	";
-	$headers .= 'From: Nexus Contact <contact@nexuseducanada.com>';
+            ";
+            $headers .= 'From: Nexus Contact <contact@nexuseducanada.com>';
+            mail($to, $subject, $msg, $headers);
 
-
-	mail($to, $subject, $msg, $headers);
-
-	// echo 'SENT';
-	
+        }
+    }	
 } else {
     secureLog('Form Token @ Contact Form');
     header("refresh:1;url=https://nexuseducanada.com");
