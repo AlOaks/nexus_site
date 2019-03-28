@@ -7016,3 +7016,266 @@ article {
   #prefer-no-pets input {
     width: 20px;
     height: 20px; }
+
+.page-template-page-monthpromotion {
+  margin-top: -32px !important; }
+
+.monthly-promo-div {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.monthly-promo-hero {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.monthly-promo-header {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%; }
+  .monthly-promo-header .lp-logo {
+    width: 60%; }
+  .monthly-promo-header h1 {
+    color: white;
+    font-family: "Roboto";
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .monthly-promo-header p {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1.2rem; }
+  .monthly-promo-header ul {
+    padding-left: 0;
+    margin-left: 4%;
+    color: #ffb419;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.5rem; }
+
+#month-promotion-form {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  background: rgba(21, 64, 90, 0.5);
+  border: 1px solid #F3F5F8;
+  border-radius: 5px;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  #month-promotion-form .form-title {
+    font-size: 2rem;
+    font-weight: 600; }
+  #month-promotion-form .month-row {
+    width: 100%; }
+    #month-promotion-form .month-row input {
+      width: 100%; }
+  #month-promotion-form label {
+    color: white;
+    font-family: "Open Sans";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  #month-promotion-form button {
+    background: #ffb419;
+    color: #F3F5F8;
+    font-family: "Roboto";
+    padding: 6% 10%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border: none;
+    font-size: 1.5rem; }
+
+.background-month {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; }
+
+.monthly-promo-ovrly {
+  background: black;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.month-info-section {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.promotion-header {
+  width: 95%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .promotion-header img {
+    width: 50%;
+    height: auto; }
+  .promotion-header h2 {
+    color: #193F5C;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+.school-on-promo {
+  width: 95%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .school-on-promo img {
+    width: 50%;
+    height: auto; }
+  .school-on-promo div {
+    padding-left: 5%;
+    color: #193F5C; }
+    .school-on-promo div h2 {
+      color: #ffb419;
+      font-family: "Roboto"; }
+    .school-on-promo div h3 {
+      font-weight: bold; }
+    .school-on-promo div p, .school-on-promo div h3 {
+      color: #193F5C;
+      font-family: "Open Sans"; }
+    .school-on-promo div ul {
+      color: #193F5C;
+      font-weight: bold;
+      font-family: "Open Sans"; }
+
+.ILSC img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.ILSC div {
+  padding-left: 0;
+  padding-right: 5%; }
+
+.get-promotion-btn {
+  color: #F3F5F8;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  background: #ffb419;
+  padding: 1.5% 4%;
+  font-weight: 600;
+  border-radius: 42px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 3vh; }
+  .get-promotion-btn:visited {
+    color: #F3F5F8; }
+
+.review-container-month {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .review-container-month .footer-ovrly {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; }
+  .review-container-month .footer-bkg {
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    position: absolute; }
+
+.month-promo-site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+  .month-promo-site-info i {
+    opacity: .5;
+    font-size: 8rem;
+    position: absolute;
+    left: 33%;
+    top: 0; }
+  .month-promo-site-info img {
+    height: 80%;
+    width: auto; }
+  .month-promo-site-info div {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .month-promo-site-info .review-name {
+    color: #00baf2;
+    font-size: 1.2rem;
+    margin-top: 0; }

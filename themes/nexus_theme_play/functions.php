@@ -137,6 +137,7 @@ function nexus_theme_scratch_scripts() {
 	
 	wp_enqueue_script('ajax-call', get_template_directory_uri().'/build/js/ajax-call.min.js', array('jquery'), null, true);
 	wp_enqueue_script('general-js', get_template_directory_uri().'/build/js/general.min.js', array('jquery'), null, true);
+	wp_enqueue_script('form-js', get_template_directory_uri().'/build/js/form.min.js', array('jquery'), null, true);
 	wp_enqueue_script('ajax-pagination', get_template_directory_uri().'/build/js/ajax-pagination.min.js', array('jquery'), null, true);
 	
 	

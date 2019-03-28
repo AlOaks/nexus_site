@@ -1,0 +1,277 @@
+.page-template-page-monthpromotion {
+    margin-top: -32px !important;
+}
+
+.monthly-promo-div {
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    
+}
+
+.monthly-promo-hero {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.monthly-promo-header {
+    flex-basis: 60%;
+
+    .lp-logo {
+        width: 60%;
+    }
+
+    h1 {
+        color: white;
+        font-family: $roboto;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    p {
+        color: white;
+        font-family: $sans;
+        font-size: 1.2rem;
+    }
+    ul {
+        padding-left: 0;
+        margin-left: 4%;
+        color: $div-yellow;
+        font-family: $sans;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+    }
+}
+
+#month-promotion-form {
+    flex-basis: 35%;
+    background: rgba(21, 64, 90, .5);
+    border: 1px solid $div-white;
+    border-radius: 5px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .form-title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .month-row {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    label {
+        color: white;
+        font-family: $sans;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        background: $div-yellow;
+        color: $div-white;
+        font-family: $roboto;
+        padding: 6% 10%;
+        align-self: center;
+        border: none;
+        font-size: 1.5rem;
+    }
+}
+
+.background-month { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.monthly-promo-ovrly {
+    background: black;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.month-info-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion-header {
+    width: 95%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    h2 {
+        color: $font-blue;
+        font-size: 3rem;
+        font-weight: 600;
+        padding-left: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.school-on-promo {
+    width: 95%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;  
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    div {
+        padding-left: 5%;
+        color: $font-blue;
+
+        h2 {
+            color: $div-yellow;
+            font-family: $roboto;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+
+        p, h3 {
+            color: $font-blue;
+            font-family: $sans;
+        }
+
+        ul {
+            color: $font-blue;
+            font-weight: bold;
+            font-family: $sans;
+        }
+    }
+}
+
+.ILSC {
+    img {
+        order: 2;
+    }
+
+    div {
+        padding-left: 0;
+        padding-right: 5%;
+    }
+}
+
+.get-promotion-btn {
+    color: $div-white;
+    font-family: $roboto;
+    font-size: 1.5rem;
+    background: $div-yellow;
+    padding: 1.5% 4%;
+    font-weight: 600;
+    border-radius: 42px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: center;
+    margin-bottom: 3vh;
+
+    &:visited {
+        color: $div-white;
+    }
+}
+
+
+
+.review-container-month {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    .footer-ovrly {
+        position: absolute;
+        background: rgba(0,0,0,.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+
+    .footer-bkg {
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+}
+
+.month-promo-site-info {
+    display: flex;
+    position: relative;
+    width: 60%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-end;
+
+    i {
+        opacity: .5;
+        font-size: 8rem;
+        position: absolute;
+        left: 33%;
+        top: 0;
+    }
+
+    img {
+        height: 80%;
+        width: auto;
+    }
+
+    div {
+        flex-basis: 60%;
+        color: white;
+        font-family: $sans;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-name {
+        color: rgb(0, 186, 242);
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+}
