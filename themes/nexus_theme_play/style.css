@@ -7133,11 +7133,10 @@ article {
           flex-direction: column; }
 
 .promotion-header {
-  width: 95%;
-  height: 80vh;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 5%;
+  padding: 5% 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7146,7 +7145,19 @@ article {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: #F3F5F8;
+  position: relative; }
+  .promotion-header:after {
+    content: "";
+    height: 34%;
+    width: 100%;
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+    position: absolute;
+    bottom: -50px;
+    left: -5px;
+    background: #F3F5F8; }
   .promotion-header img {
     width: 50%;
     height: auto; }
@@ -7156,7 +7167,8 @@ article {
     font-weight: 600;
     padding-left: 5%;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-align: center; }
 
 .school-on-promo {
   width: 95%;
@@ -7191,12 +7203,12 @@ article {
       font-weight: bold;
       font-family: "Open Sans"; }
 
-.ILSC img {
+.school1 img {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
 
-.ILSC div {
+.school1 div {
   padding-left: 0;
   padding-right: 5%; }
 

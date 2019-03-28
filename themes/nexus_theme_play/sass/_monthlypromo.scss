@@ -116,14 +116,26 @@
 }
 
 .promotion-header {
-    width: 95%;
-    height: 80vh;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 5%;
+    padding: 5% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: $div-white;
+    position: relative;
+
+    &:after {
+        content: "";
+        height: 34%;
+        width: 100%;
+        transform: rotate(-4deg);
+        position: absolute;
+        bottom: -50px;
+        left: -5px;        
+        background: $div-white;
+    }
 
     img {
         width: 50%;
@@ -137,6 +149,7 @@
         padding-left: 5%;
         margin-top: 0;
         margin-bottom: 0;
+        text-align: center;
     }
 }
 
@@ -180,7 +193,7 @@
     }
 }
 
-.ILSC {
+.school1 {
     img {
         order: 2;
     }

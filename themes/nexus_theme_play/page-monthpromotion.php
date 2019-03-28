@@ -61,14 +61,16 @@
                     </section>
                     <section class="month-info-section">
                         <div class="promotion-header">
-                            <img src=<?php echo get_the_post_thumbnail_url(); ?> >
-                            <h2><?php _e('Discover why you should study at any of these schools!', 'Landing Pages'); ?></h2>
+                           
+                            <h2><?php _e('Discover what are the promotions we have for you!', 'Landing Pages'); ?></h2>
                         </div>
                         <?php 
                             $schoolsOnPromo = CFS()->get('schools_promotion_array');
+                            $i = 0;
 
-                            foreach($schoolsOnPromo as $schoolOnPromo) { ?>
-                                <div class="school-on-promo <?php echo $schoolOnPromo['school_name_promo']; ?>">
+                            foreach($schoolsOnPromo as $schoolOnPromo) {  $i++; ?>
+
+                                <div class="school-on-promo <?php echo 'school'.$i; ?>">
                                     <img src=<?php echo $schoolOnPromo['school_image_promo']?> >
                                     <div class="school-on-promo-info">
                                         <h2><?php _e('Why ', 'Landing Pages'); ?><?php echo $schoolOnPromo['school_name_promo']; ?>?</h2>
