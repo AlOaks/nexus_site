@@ -7051,14 +7051,16 @@ article {
   .monthly-promo-header p {
     color: white;
     font-family: "Open Sans";
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin-top: 0; }
   .monthly-promo-header ul {
     padding-left: 0;
     margin-left: 4%;
     color: #ffb419;
     font-family: "Open Sans";
     font-weight: 600;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-bottom: 2vh; }
 
 #month-promotion-form {
   -ms-flex-preferred-size: 35%;

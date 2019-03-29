@@ -73,9 +73,9 @@
                                 <div class="school-on-promo <?php echo 'school'.$i; ?>">
                                     <img src=<?php echo $schoolOnPromo['school_image_promo']?> >
                                     <div class="school-on-promo-info">
-                                        <h2><?php _e('Why ', 'Landing Pages'); ?><?php echo $schoolOnPromo['school_name_promo']; ?>?</h2>
+                                        <h2><?php _e('Why', 'Landing Pages'); ?> <?php echo $schoolOnPromo['school_name_promo']; ?>?</h2>
                                         <p><?php echo $schoolOnPromo['school_description_promo']; ?></p>
-                                        <h3><?php _e('What'); ?> <?php echo $schoolOnPromo['school_name_promo']; ?> <?php _e('has to offer', 'Landing Pages'); ?></h3>
+                                        <h3><?php _e('What', 'Landing Pages'); ?> <?php echo $schoolOnPromo['school_name_promo']; ?> <?php _e('has to offer', 'Landing Pages'); ?></h3>
                                         <ul>
                                             <?php 
                                                 $schoolFeatures = $schoolOnPromo['school_features_promo'];
