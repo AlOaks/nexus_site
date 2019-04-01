@@ -1,0 +1,344 @@
+.page-template-page-events {
+    margin-top: -32px !important;
+
+    @include tablet {
+        margin-top: -46px !important;
+    }
+}
+
+.events-hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.events-hero-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#events-ovrly {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient($div-red, $bg-blue);
+    opacity: .5;
+    z-index: -1;
+}
+
+.events-hero-container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.events-hero-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    color: $div-white;
+
+    @include tablet {
+        width: 80%;
+        align-items: center;
+    }
+
+    img {
+        width: 70%;
+        margin-top: -20%;
+
+        @include tablet {
+            margin-top: 0;
+        }
+    }
+
+    h2 {
+        font-size: 5rem;
+        margin-top: 0;
+        margin-bottom: 2vh;
+
+        @include mobile {
+            font-size: 2.5rem;
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+        }
+    }
+
+    .events-info {
+        font-size: 1.5rem;
+
+        @include mobile {
+            font-size: 1rem;
+        }
+    }
+    
+}
+
+.events-row {
+    width: 100%;
+
+    input {
+        width: 100%;
+    }
+}
+
+#events-form {
+    bottom: 0;
+    width: 35%;
+    height: 50%;
+    left: 15%;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 180, 25, .5);
+    border-radius: 15px;
+    flex-wrap: wrap;
+
+    @include tablet {
+        width: 60%;
+    }
+
+    @include mobile {
+        width: 85%;
+    }
+
+    #subscriber-name, #subscriber-email {
+        flex-basis: 45%;
+    }
+
+
+    .events-form-title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $roboto;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+
+    label {
+        color: $div-white;
+    }
+
+    input {
+        background: $div-white;
+        color: $font-blue;
+        font-family: $sans;
+
+        &::placeholder {
+            color: $font-blue;
+            font-family: $sans;
+        }
+    }
+   
+    button {
+        background: $div-white;
+        color: $font-blue;
+        font-family: $roboto;
+        border: 0;
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-top: 4vh;
+    }
+}
+
+.events-about {
+    background: $bg-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 75%;
+        transform: rotate(-5deg);
+        background: #15405A;
+        position: absolute;
+        z-index: -1;
+        left: -11px;
+        bottom: -60px;
+
+        @include tablet {
+            left: -15px;
+            bottom: -33px;
+        }
+    }
+
+    h3, h2, p {
+        margin: 0;
+        color: $div-white;
+    }
+
+    p {
+        width: 60%;
+        font-family: $sans;
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+
+    .event-about-title {
+        font-size: 2rem;
+        font-family: $roboto;
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+        text-transform: uppercase;
+
+    }
+
+
+}
+
+.events-speakers {
+    height: auto;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 { 
+        font-size: 2.5rem;
+        color: $font-blue;
+        font-family: $roboto;
+        text-transform: uppercase;
+
+    }
+
+    .speakers-big-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+        
+    }
+
+    .speaker-container {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        p {
+            margin: 0;
+            margin-top: 1vh;
+            color: $font-blue;
+            font-family: $sans;
+        }
+
+        .speaker-name {
+            font-weight: bold;
+        }
+        
+        img {
+            border-radius: 100%;
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}
+
+.events-agenda {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $div-red;
+    position: relative;
+    padding-bottom: 10vh;
+    padding-top: 8vh;
+    z-index: -2;
+
+    
+
+    h2 { 
+        font-size: 2rem;
+        color: $div-white;
+        font-family: $roboto;
+        text-transform: uppercase;
+
+    }
+    ul {
+
+        color: $div-white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: $sans;
+        padding-left: 0;
+        margin-left: 0;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+.events-location {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../../themes/nexus_theme_play/assets/images/maps-bg.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    padding: 5vh 0;
+
+    .location-ovrly { 
+        background: black;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    h2 {
+        color: $div-white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $roboto;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $div-white;
+        font-size: 1.2rem;
+        font-family: $sans;
+
+        @include mobile {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    }
+}

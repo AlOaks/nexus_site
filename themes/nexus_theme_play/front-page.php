@@ -94,7 +94,7 @@ get_header();
 						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! We can help you in throughout all the process.', 'nexus'); ?></p>
 					</div>
 				</div>
-				<a class="get-quote-btn menu-item-51 menu-item-25" href="#"><?php _e('Book Consultation', 'nexus'); ?></a>
+				<a class="get-quote-btn menu-item-51 menu-item-25" href="#"><?php _e('Chat with us!', 'nexus'); ?></a>
 			</section>
 
 			<section class="why-canada-section">
