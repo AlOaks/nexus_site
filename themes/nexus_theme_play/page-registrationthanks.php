@@ -15,7 +15,7 @@ session_start();
 
 get_header();
 
-$verifed = tokenVer('regisform');
+$verified = tokenVer('regisform');
 
 if($verified === true) {
 
@@ -158,8 +158,6 @@ if($verified === true) {
 	$headers .= "Reply-to: ".$name."<".$email.">\r\n";
 	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\r\n";
 	$headers .= "From: Nexus Registration Form <".$email.">\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 	mail($to, $subject, $msg, $headers);
 	
@@ -170,7 +168,6 @@ if($verified === true) {
 
 ?>
 <?php
-
 
 
 ?>
