@@ -500,7 +500,8 @@ bookForm.submit(function(ev) {
         'agencyId': 935,
         'firstname': $('#edvisor-book-firstname').val(),
         'email': $('#edvisor-book-email').val(),
-        'phone': $('#edvisor-book-phone').val()
+        'phone': $('#edvisor-book-phone').val(),
+        'notes' : 'Chat with us FORM'
     }
 
 

@@ -50,7 +50,6 @@ get_header();
                         $schoolName = $school->post_title;
 
 
-
                         $args = array(
                             'post_type' => 'programs',
                             'tax_query' => array(
