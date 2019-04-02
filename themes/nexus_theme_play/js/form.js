@@ -58,7 +58,7 @@ regisForm.submit(function(ev) {
         emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
         langInput.setAttribute('value', 'ESP');
 
-    } else if($('html').is(':lang(pt-BR)')) {
+    } else if($('html').is(':lang(pt-br)')) {
         emailInput.setAttribute('value', 'contato@nexuseducanada.com');
         langInput.setAttribute('value', 'POR');
 
@@ -94,7 +94,7 @@ accForm.submit(function(ev) {
         emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
         langInput.setAttribute('value', 'ESP');
 
-    } else if($('html').is(':lang(pt-BR)')) {
+    } else if($('html').is(':lang(pt-br)')) {
         emailInput.setAttribute('value', 'contato@nexuseducanada.com');
         langInput.setAttribute('value', 'POR');
 
@@ -127,7 +127,7 @@ contForm.submit(function(ev) {
     } else if($('html').is(':lang(es-ES)')) {
         emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
         langInput.setAttribute('value', 'ESP');
-    } else if($('html').is(':lang(pt-BR)')) {
+    } else if($('html').is(':lang(pt-br)')) {
         emailInput.setAttribute('value', 'contato@nexuseducanada.com');
         langInput.setAttribute('value', 'POR');
     }
@@ -177,7 +177,7 @@ lpForm.submit(function(ev) {
                 lpForm.append('<p style="color: white; text-transform: uppercase; font-size: 2rem; margin-left: auto; margin-right: auto;">Thank you! We will contact you as soon as possible!</p>');          
             } else if($('html').is(':lang(es-ES)')) {
                 lpForm.append('<p style="color: white; text-transform: uppercase; font-size: 2rem; margin-left: auto; margin-right: auto;">¡Gracias! Pronto estaremos en contacto contigo.</p>');
-            } else if($('html').is(':lang(pt-BR)')) {
+            } else if($('html').is(':lang(pt-br)')) {
                 lpForm.append('<p style="color: white; text-transform: uppercase; font-size: 2rem; margin-left: auto; margin-right: auto;">Obrigado! Entraremos em contato em breve!</p>');
             }
         }).fail(function(data) {
