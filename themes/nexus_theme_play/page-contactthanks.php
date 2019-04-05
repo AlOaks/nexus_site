@@ -17,6 +17,12 @@ get_header();
 
 $verified = tokenVer("contactform");
 
+require("vendor/autoload.php");
+
+use \DrewM\MailChimp\MailChimp;
+
+$mailC = new MailChimp('c5d0f074ef62e6395640869899d38579-us8');
+
 if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on

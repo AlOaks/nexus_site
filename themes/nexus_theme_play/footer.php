@@ -95,7 +95,7 @@
 				<div class="sitemap-item">
 					<h4><?php _e('Company', 'nexus'); ?></h4>
 					<ul class="about">
-						<li><a href="../about"><?php _e('About', 'nexus'); ?></a></li>
+						<li><a href="../the-company"><?php _e('About', 'nexus'); ?></a></li>
 						<li><a href="../contact"><?php _e('Contact', 'nexus'); ?></a></li>
 						<li><a href="../faq"><?php _e('FAQ', 'nexus'); ?></a></li>
 					</ul>

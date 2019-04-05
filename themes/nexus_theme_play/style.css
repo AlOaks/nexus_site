@@ -7205,12 +7205,12 @@ article {
       font-weight: bold;
       font-family: "Open Sans"; }
 
-.school1 img {
+.school1 img, .school3 img {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
 
-.school1 div {
+.school1 div, .school3 div {
   padding-left: 0;
   padding-right: 5%; }
 
