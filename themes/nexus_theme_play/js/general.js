@@ -26,13 +26,13 @@
         prevScrollpos = currentScrollPos;
     }
 
-    $(window).on('scroll', function() {
-        if($(window).scrollTop() > 50) {
-            $('#masthead').addClass('header-white');
-        } else {
-            $('#masthead').removeClass('header-white');
-        }
-    });
+    // $(window).on('scroll', function() {
+    //     if($(window).scrollTop() > 50) {
+    //         $('#masthead').addClass('header-white');
+    //     } else {
+    //         $('#masthead').removeClass('header-white');
+    //     }
+    // });
 
 
     // ANIMATIONS

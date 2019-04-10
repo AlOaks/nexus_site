@@ -157,7 +157,7 @@ if($verified === true) {
 
 	$headers .= "Reply-to: ".$name."<".$email.">\r\n";
 	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\r\n";
-	$headers .= "From: Nexus Registration Form <".$email.">\r\n";
+	$headers .= "From: Nexus Registration Form\r\n";
 
 	mail($to, $subject, $msg, $headers);
 	
