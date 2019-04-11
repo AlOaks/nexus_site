@@ -6,7 +6,6 @@ const rename = require('gulp-rename');
 const cssnano = require('gulp-cssnano');
 const uglify = require('gulp-uglify');
 const eslint = require('gulp-eslint');
-const browserSync = require('browser-sync');
 
 // Create basic Gulp tasks
 
@@ -52,24 +51,11 @@ gulp.task(
 
 // Set-up BrowserSync and watch
 
-gulp.task('browser-sync', function() {
-  const files = [
-    './build/css/*.css',
-    './build/js/*.js',
-    './*.php',
-    './**/*.php'
-  ];
 
-  browserSync.init(files, {
-    proxy: 'localhost:8888/nexus'    
-  });
-
-  gulp.watch(files).on('change', browserSync.reload);
-});
   
 gulp.task('watch', function() {
   gulp.watch('js/*.js', gulp.series('scripts'));
   gulp.watch('sass/*.scss', gulp.series('sass'));
 });
 
-gulp.task('default', gulp.parallel('browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('watch'));

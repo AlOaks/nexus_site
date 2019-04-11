@@ -17,109 +17,64 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<section class="school-title-container">
-
-                <?php $video = CFS()->get('school_video'); ?>
-
-                <?php if(!empty($video)) {
-                    
-                    echo $video;
-
-                } else { ?>
-
-                <img src=<?php echo get_the_post_thumbnail_url(); ?> />
-
-                <?php } ?>
-                <div class="school-info-single">
-                <?php while (have_posts() ): the_post(); ?>
-                    <h1 class="school-page-title"><?php the_title(); ?></h1>
-                    <?php the_content(); ?>
-                <?php endwhile; ?>
-                </div>
-            </section>
-			<section class="single-school-page">
-                <div class="school-popu-programs">
-
-                <?php $tag = get_the_title(); ?>
-
-                    <h2><?php _e('Popular Programs at ', 'nexus'); ?><?php echo $tag; ?></h2>
-                    <ul class="popu-progs-list">
-                        <?php                       
-                        
-                        $school = get_queried_object();
-                        $schoolName = $school->post_title;
-
-
-                        $args = array(
-                            'post_type' => 'programs',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'post_tag',
-                                    'field' => 'slug',
-                                    'terms' => $schoolName
-                                )
-                            )
-                        );
-
-                        $popuProgs = new WP_query($args);
-                    
-                        while ( $popuProgs->have_posts() ) : $popuProgs->the_post(); ?>
-   
-                            <li><a href=<?php echo get_the_permalink(); ?>><?php the_title(); ?></a></li>
-
-                            
-                            
-                        <?php
-                            endwhile; 
-                            
-                            wp_reset_query();    
-                        ?>
-                        
-                    </ul>
-                </div>
-                <div class="school-details">
-                    <h2><?php _e('Details', 'nexus'); ?></h2>
-                    <ul class="details-list-icons">
-                        <?php 
-                            $schoolprogTypes = CFS()->get('school_prog_types');
-                            $schoolLocations = CFS()->get('school_locations');
-                            $schoolFields = CFS()->get('school_fields');
-                        ?>
-
-                        <li class="detail-item">
-                            <i class="fas fa-university"></i><?php _e('Program Types available here', 'nexus'); ?>
-                            <ul>
-                                <?php foreach($schoolprogTypes as $type) { 
-                                    echo '<li class="sub-detail">'.$type['school_type'].'</li>';
-                                } ?>
-                            </ul>
-                        </li>
-                        <li class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i><?php _e('Locations', 'nexus'); ?>
-                            <ul>
-                                <?php foreach($schoolLocations as $location) { 
-                                    echo '<li class="sub-detail">'.$location['school_location'].'</li>';
-                                } ?>
-                            </ul>
-                        </li>
-                        <li class="detail-item">
-                            <i class="fas fa-microscope"></i><?php _e('Fields of Study', 'nexus'); ?>
-                            <ul>
-                                <?php foreach($schoolFields as $field) { 
-                                    echo '<li class="sub-detail">'.$field['school_field'].'</li>';
-                                } ?>
-                            </ul>
-                        </li>  
-                    </ul>
-                </div>
-            </section>
-            <section class="apply-now-section">
-                    <div class="apply-now-div">
-                        <h3><?php _e('Apply now!', 'nexus'); ?></h3>
-                        <p><?php _e('We will guide you through all the process!'); ?></p>
+			<section class="school-onpromo-container">
+                <div class="school-promo-hero">
+                    <div class="school-page-hero-parallax" data-parallax="scroll" data-image-src="<?php echo get_the_post_thumbnail_url(); ?>" ></div>
+                    <div class="school-page-hero-ovrly"></div>
+                    <div class="school-page-heading">
+                        <?php $schoolVid = CFS()->get('school_video'); ?>
+                        <div class="school-vid">
+                            <?php echo $schoolVid; ?>
+                        </div>
+                        <?php $schoolLogo = CFS()->get('school_logo'); ?>
+                        <img class="school-onpromo-logo" src="<?php echo $schoolLogo; ?>" />
                     </div>
-                    <div class="apply-form"><?php echo CFS()->get('school_form'); ?></div>                            
-            </section>
+                </div>
+                <section class="school-desc-section">
+                    <?php while(have_posts()) : the_post();
+                        the_content('<p>', '</p>');
+                    endwhile; ?>
+                    <a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
+                </section>
+                <section class="credentials-section">
+                    <div class="left-side-credentials">
+                        <h3><?php _e('What credentials does', 'Areas Pages'); ?> <?php the_title(); ?> <?php _e('offer?', 'Areas Pages'); ?></h3>
+                    </div>
+                    <?php $credentials = CFS()->get('school_prog_types'); ?>
+                    <ul>
+                        <?php foreach($credentials as $cred) { ?>
+                            <li><?php echo $cred['school_type']; ?></li>
+                        <?php } ?>
+                    </ul>
+                    <div class="credentials-school-triangle"></div>
+                </section>
+                <section class="location-school-sec">
+                    <div data-parallax="scroll" class="location-school-parallax" data-image-src="<?php echo get_template_directory_uri().'/assets/images/black-blur-close-up-6397-compressor.jpg'; ?>" ></div>
+                    <div class="school-location-ovrly"></div>
+                    <div class="location-right-side">
+                        <h3><?php _e('Locations within Canada', 'Areas Pages'); ?></h3>
+                        <?php $locations = CFS()->get('school_locations'); ?>
+                        <ul>
+                            <?php foreach($locations as $loc) { ?>
+                                <li><?php echo $loc['school_location']; ?></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </section>
+                <section class="fields-school-sec">
+                    <div class="fields-school-triangle"></div>
+                    <?php $fieldsSchool = CFS()->get('school_fields'); ?>
+                    <ul>
+                        <?php foreach($fieldsSchool as $field) { ?>
+                            <li><?php echo $field['school_field']; ?></li>
+                        <?php } ?>
+                    </ul>
+                    <div class="right-side-fields">
+                        <h3><?php _e('Fields of Study', 'Areas Pages'); ?></h3>
+                        <a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
+                    </div>
+                </section>
+            </section> 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

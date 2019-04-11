@@ -1,267 +1,224 @@
-.school-title-container {
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 18vh;
+.school-promo-hero {
     position: relative;
-
-    img {
-        width: 45%;
-
-        @include tablet {
-            width: 60%;
-        }
-
-        @include mobile {
-            display: none;
-        }
-    }
-
-    @include tablet {
-        flex-direction: column;
-    }
-
-    @include mobile {
-        height: auto;
-    }
-}
-
-
-.school-type {
-    text-transform: capitalize;
-}
-
-.school-info-single {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 45%;
-    color: $font-blue;
-    font-family: $sans;
+    margin-top: 14vh;
+    padding: 2% 5%;
 
-    @include tablet {
-        width: 80%;
-    }
-
-    @include mobile {
-        width: 90%;
-    }
-
-    h1 {
-        font-family: $roboto;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            height: 1px;
-            border-bottom: 3px solid $div-yellow;
-            width: 50%;
-            left: 25%;
-            bottom: 0;
-        }
+    .school-page-hero-parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 60vh;
+        height: 100vh;
+        z-index: -2;
+        background: transparent;
     }
     
-    p, h2, h3, h4, h5 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-.single-school-page {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    color: $font-blue;
-    margin-top: 5vh;
-
-    @include tablet {
-        margin-top: 0;
-        margin-bottom: 3vh;
-        
+    .school-page-hero-ovrly {
+        background: $bg-blue;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
-    @include mobile {
-        flex-direction: column;
+    .school-page-heading {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-    }
-}
 
-.school-popu-programs {
-    width: 45%;
-
-    @include mobile {
-        width: 90%;
-    }
-
-    h2 {
-        position: relative;
-        font-family: $roboto;
-        text-align: center;
-
-        &::before {
-            content: "";
-            position: absolute;
-            border-bottom: 3px solid $div-yellow;
-            width: 20%;
-            left: 40%;
-            bottom: 0;
-            height: 1px;
+        img {
+            width: 35%;
+            padding: 8% 0 8% 8%;
         }
-    }
 
-    a {
-        color: $font-blue;
-
-        &:visited { 
-            color: $font-blue;
+        .school-vid {
+            width: 45%;
         }
     }
 }
 
-.school-details {
-    width: 45%;
-
-    @include mobile {
-        width: 90%;
-    }
-
-
-    h2 {
-        position: relative;
-        font-family: $roboto;
-        text-align: center;
-
-        &::before {
-            content: "";
-            position: absolute;
-            border-bottom: 3px solid $div-yellow;
-            width: 20%;
-            left: 40%;
-            bottom: 0;
-            height: 1px;
-        }
-    }
-}
-
-.popu-progs-list {
-
-    @include mobile {
-        padding-left: 0;
-    }
-
-    li {
-        font-family: $sans;
-
-        
-    }
-
-}
-
-.details-list-icons {
-    margin-left: 0;
-
-    @include mobile {
-        padding-left: 5%;
-    }
-}
-
-.detail-item {
-
-    list-style-type: none;
-    font-family: $sans;
-    font-weight: 600;
-    margin-bottom: 5%;
-
-    i {
-        margin-right: 10px;
-    }
-}
-
-
-.sub-detail {
-    font-weight: normal;
-}
-
-.apply-now-section {
-    width: 100%;
-    background: $div-red;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-
-    @include mobile {
-        flex-direction: column;
-    }
-}
-
-.apply-now-div {
-    width: 45%;
+.school-desc-section {
+    background: $div-white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    font-family: $roboto;
-    align-self: flex-start;
-
-    @include mobile {
-        width: 90%;
-        align-self: center;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-        position: relative; 
-
-        &:before {
-            content: "";
-            height: 1px;
-            border-bottom: 3px solid $div-yellow;
-            width: 30%;
-            left: 35%;
-            bottom: 0;
-            position: absolute;
-        }
-    }
+    justify-content: space-around;
+    padding: 2%;
 
     p {
+        color: $font-gray;
         font-family: $sans;
+        font-size: 1.2rem;
+        width: 80%;
+        
     }
-    
 }
 
-.apply-form {
-    width: 45%;
+.credentials-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right,#DD3333 50%, #D56C6C 90%);
+    padding: 4%;
+    position: relative;
 
-    @include mobile {
-        width: 90%;
-    }
-
-    .edvisor-form {
-
-        label {
+    .left-side-credentials {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+        h3 {
             color: white;
-            font-weight: 600;
-            font-family: $sans;
+            font-family: $roboto;
+            font-size: 2.5rem;
+            margin-top: 0;
+            text-align: center;
+            padding: 0 12%;
         }
 
-        .edvisor-button {
-            background: $div-yellow;
-            margin-left: 35%;
-            width: 30%;
+        a {
+            background: white;
+            color: $div-red;
+            box-shadow: 0 5px 5px rgba(0,0,0,.65);
+            width: 35%;
+            z-index: 1;
+        }
+    }
+
+    ul {
+        width: 45%;
+        color: white;
+        font-family: $sans;
+        z-index: 1;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+
+        li  {
+            font-size: 2rem;
+            list-style-type: none;
+        }
+    }
+
+    .credentials-school-triangle {
+        width: 0;
+        height: 0;
+        border-image: linear-gradient(to right,#DD3333 50%, #D56C6C 90%);
+        border-top: 20vh solid;
+        border-right: 100vw solid transparent;
+        position: absolute;
+        transform: skewY(-4deg);
+        position: absolute;
+        overflow: hidden;
+        bottom: -5rem;
+    }
+}
+
+.location-school-sec {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .location-school-parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        z-index: -5;
+        background: transparent;
+
+    }
+
+    .location-right-side {
+        color: white;
+        width: 45%;
+
+        h3 {
+            font-size: 2.5rem;
+            font-family: $roboto;
+        }
+
+        ul {
+            font-family: $sans;
+
+            li {
+                list-style-type: none;
+                font-size: 1.8rem;
+            }
         }
     }
 }
 
+.fields-school-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right,#1D3E64 50%, #256E9B 90%);
+    padding: 4%;
+    position: relative;
+    color: white;
 
+
+    ul {
+        width: 45%;
+        margin-left: 10%;
+        margin-right: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            list-style-type: none;
+            font-size: 2rem;
+        }
+    }
+
+    .right-side-fields{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h3 {
+            color: white;
+            font-family: $roboto;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        a {
+            background: white;
+            color: $div-yellow;
+            width: 35%;
+        }
+    }
+
+    .fields-school-triangle {
+        width: 0;
+        height: 0;
+        border-image: linear-gradient(to right,#1D3E64 50%, #256E9B 90%);
+        border-top: 20vh solid;
+        border-right: 100vw solid transparent;
+        position: absolute;
+        transform: skewY(-4deg);
+        position: absolute;
+        overflow: hidden;
+        top: -3rem;
+        z-index: -1;
+    }
+}

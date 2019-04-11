@@ -26,6 +26,120 @@ html {
     }
 }
 
+.hero-image-new {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    margin-top: 14vh;
+    width: 100%;
+
+    @include tablet {
+
+    }
+
+    @include mobile {
+        flex-direction: column;
+        margin-top: 12vh;
+    }
+
+    div {
+        width: 33.3333%;
+        position: relative;
+
+        @include mobile {
+            width: 100%;
+            height: 30vh;
+        }
+
+
+        .hero-div-ovrly {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .3;
+
+        }
+
+        img {
+            height: 100%;
+            
+
+            @include mobile {
+                width: 100%;
+            }
+            
+            
+        }
+    }
+
+    .esl-hero-div {
+        position: relative;
+
+        .hero-div-ovrly {
+            background: $bg-blue;
+            
+        }
+
+        
+    }
+
+    .ws-hero-div {
+        position: relative;
+
+        .hero-div-ovrly {
+            background: $div-red;
+        }
+    }
+
+    .he-hero-div {
+        position: relative;
+
+        .hero-div-ovrly {
+            background: $div-yellow;
+            overflow: hidden;
+        }
+    }
+
+    .hero-div-info {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        z-index: 3;
+        bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        @include mobile {
+            bottom: 10%;
+            height: 20vh;
+        }
+
+        h2, p {
+            margin: 0;
+            color: white;
+        }
+
+        p {
+            @include mobile {
+                font-size: .8rem;
+            }
+        }
+
+        h2 {
+            font-size: 3rem;
+
+            @include mobile {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
 // .hero-video {
 //     position: absolute;
 //     top: 0;
@@ -58,6 +172,67 @@ html {
         height: auto;
         margin-top: 5vh;
     }
+}
+
+.hero-learn-more-btn {
+    background: $div-white;
+    color: $font-blue;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.65);
+    padding: 3% 10%;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 2vh;
+    font-size: 1.2rem;
+    font-family: $roboto;
+    transition-duration: .8s;
+
+    @include mobile {
+        font-size: .8rem;
+        padding: 3% 0;
+        width: 30%;
+    }
+
+    &:visited {
+        color: $font-blue;
+    }
+
+    &:hover {
+        background: linear-gradient(to right, gray, lightgray);
+        color: white;
+        transition-duration: .8s;
+    }
+
+    
+}
+
+
+
+#esl-hero-div-triangle, #ws-hero-div-triangle, #he-hero-div-triangle {
+    width: 0;
+    height: 0;
+    border-right: 33.333vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include mobile {
+        border-right: 70vw solid transparent;
+
+    }
+}
+
+#esl-hero-div-triangle {
+    border-bottom: 50vh solid $bg-blue;
+}
+
+#ws-hero-div-triangle {
+    border-bottom: 50vh solid $div-red;
+}
+
+#he-hero-div-triangle {
+    border-bottom: 50vh solid $div-yellow;
 }
 
 .hero-label-div-shown {
@@ -119,6 +294,59 @@ html {
     }
 
     
+}
+
+// BLOG POST CONTAINER
+
+.front-page-blogpost-container {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 3%;
+    flex-wrap: wrap;
+
+    @include mobile {
+        margin-top: 25vh;
+    }
+
+    img {
+        width: 45%;
+        height: 100%;
+
+        @include mobile {
+            width: 80%;
+        }
+    }
+
+    a {
+        margin-top: 5vh;
+        margin-bottom: 0;
+    }
+
+    .post-data {
+        flex-basis: 45%;
+
+        @include mobile {
+            flex-basis: 100%;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: $font-blue;
+            font-family: $roboto;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+        p {
+            color: $font-blue;
+            font-family: $sans;
+        }
+    }
 }
 
 
@@ -240,7 +468,7 @@ option {
 
 .why-nexus-section {
     width: 100%;
-    background: white;
+    background: $div-white;
     display: flex;
     flex-direction: column;
     align-items: center;

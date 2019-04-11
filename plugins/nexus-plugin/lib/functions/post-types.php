@@ -182,18 +182,18 @@ function team_member_pt() {
 add_action( 'init', 'team_member_pt', 0 );
 
 // Register Custom Post Type
-function landing_pages() {
+function featured_programs() {
 
 	$labels = array(
-		'name'                  => _x( 'Landing Pages', 'Post Type General Name', 'nexus' ),
-		'singular_name'         => _x( 'Landing Page', 'Post Type Singular Name', 'nexus' ),
-		'menu_name'             => __( 'Landing Pages', 'nexus' ),
-		'name_admin_bar'        => __( 'Landing Page', 'nexus' ),
+		'name'                  => _x( 'Featured Programs', 'Post Type General Name', 'nexus' ),
+		'singular_name'         => _x( 'Featured Program', 'Post Type Singular Name', 'nexus' ),
+		'menu_name'             => __( 'Featured Programs', 'nexus' ),
+		'name_admin_bar'        => __( 'Featured Programs', 'nexus' ),
 		'archives'              => __( 'Page Archives', 'nexus' ),
 		'attributes'            => __( 'Page Attributes', 'nexus' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'nexus' ),
-		'all_items'             => __( 'All Landing Pages', 'nexus' ),
-		'add_new_item'          => __( 'Add New Landing Page', 'nexus' ),
+		'all_items'             => __( 'All Featured Programs', 'nexus' ),
+		'add_new_item'          => __( 'Add New Featured Program', 'nexus' ),
 		'add_new'               => __( 'Add New', 'nexus' ),
 		'new_item'              => __( 'New Page', 'nexus' ),
 		'edit_item'             => __( 'Edit Page', 'nexus' ),
@@ -203,7 +203,7 @@ function landing_pages() {
 		'search_items'          => __( 'Search Page', 'nexus' ),
 		'not_found'             => __( 'Not found', 'nexus' ),
 		'not_found_in_trash'    => __( 'Not found in Trash', 'nexus' ),
-		'featured_image'        => __( 'Landing Page Hero Image', 'nexus' ),
+		'featured_image'        => __( 'Featured Program Image', 'nexus' ),
 		'set_featured_image'    => __( 'Set Hero Image', 'nexus' ),
 		'remove_featured_image' => __( 'Remove Hero Image', 'nexus' ),
 		'use_featured_image'    => __( 'Use as Hero Image', 'nexus' ),
@@ -214,8 +214,8 @@ function landing_pages() {
 		'filter_items_list'     => __( 'Filter Pages List', 'nexus' ),
 	);
 	$args = array(
-		'label'                 => __( 'Landing Page', 'nexus' ),
-		'description'           => __( 'Landing Pages', 'nexus' ),
+		'label'                 => __( 'Featured Program', 'nexus' ),
+		'description'           => __( 'Featured Programs', 'nexus' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -234,10 +234,10 @@ function landing_pages() {
 		'show_in_rest'          => true,
 		'menu_icon'				=> 'dashicons-welcome-widgets-menus'
 	);
-	register_post_type( 'landing_pages', $args );
+	register_post_type( 'featured_programs', $args );
 
 }
-add_action( 'init', 'landing_pages', 0 );
+add_action( 'init', 'featured_programs', 0 );
 
 // Register Custom Post Type
 function student_reviews() {

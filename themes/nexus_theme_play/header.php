@@ -26,7 +26,7 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nexus_theme_scratch' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header  class="site-header">
 		<?php 
 			if(is_user_logged_in()) { 
 				$current_user = wp_get_current_user();		

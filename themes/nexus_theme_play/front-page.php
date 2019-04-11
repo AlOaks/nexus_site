@@ -19,46 +19,63 @@ get_header();
 		<main id="main" class="site-main">
 
 
-			<section class="hero-image">
-				<div class="hero-overlay"></div>
-				<!-- <video class="hero-video" loop autoplay muted preload="true" playsinline="true" poster="video.jpg">
-					<source src="https://www.youtube.com/watch?v=5lWkZ-JaEOc">
-				</video> -->
-				<div class="hero-label-div">
-					<h1 class="hero-label"><?php _e('Want to', 'nexus'); ?><br><span class="keyword"><?php _e('STUDY ABROAD?'); ?></span></h1>
-					<h2 class="hero-label"><?php _e('Come to Canada.', 'nexus'); ?></h2>							
+			<section class="hero-image-new">
+				<div class="esl-hero-div">
+					<?php $eslBkg = get_field('esl_background_image'); ?>
+					<img src="<?php echo $eslBkg?>" />
+					<div class="hero-div-ovrly"></div>
+					<div class="hero-div-info">
+						<h2><?php _e('English', 'Front-Page'); ?></h2>
+						<p><?php _e('Learn or improve your english while studying in one of the most amazing countries!', 'Front-Page'); ?></p>
+						<!-- <a class="hero-learn-more-btn" href="http://localhost/nexus/english">Learn More</a> -->
+					</div>
+					<div id="esl-hero-div-triangle"></div>
 				</div>
-				<a href="./featured-schools" class="promotions-button"><?php _e('Featured Schools','nexus'); ?></a>
-			</section>
-
-
-			<section class="program-selectors">
-				<div class="programs-form">
-					<select class="selector program-types">
-						<option class="prog-type" value="Choose type of program" selected><?php _e('Choose City', 'nexus'); ?></option>
-						<?php 
-						
-						$progCities = get_terms([
-							'taxonomy' => 'Cities',
-							'hide_empty' => false
-						]);
-
-							foreach($progCities as $progCity) : ?>
-								<option class='prog-type' value="<?php echo $progCity->name; ?>"><?php _e($progCity->name, 'nexus'); ?></option>
-							
-						<?php
-							endforeach;
-						?>
-					</select>
-					<button class="submit-btn-front"><?php _e('Search Programs', 'nexus'); ?></button>
+				<div class="ws-hero-div">
+					<?php $priBkg = get_field('private_background_image'); ?>
+					<img src="<?php echo $priBkg?>" />
+					<div class="hero-div-ovrly"></div>
+					<div class="hero-div-info">
+						<h2><?php _e('Work & Study', 'Front-Page'); ?></h2>
+						<p><?php _e('Perfect for international students who are looking to kickstart their professional career', 'Front-Page'); ?></p>
+						<!-- <a class="hero-learn-more-btn" href="http://localhost/nexus/work-study">Learn More</a> -->
+					</div>
+					<div id="ws-hero-div-triangle"></div>
 				</div>
+				<div class="he-hero-div">
+					<?php $pubBkg = get_field('public_background_image'); ?>
+					<img src="<?php echo $pubBkg?>" />
+					<div class="hero-div-ovrly"></div>
+					<div class="hero-div-info">
+						<h2><?php _e('Higher Education', 'Front-Page'); ?></h2>
+						<p><?php _e("From bachelors to PHD's, perfect for any young professional", 'Front-Page'); ?></p>
+						<!-- <a class="hero-learn-more-btn" href="http://localhost/nexus/higher-education">Learn More</a> -->
+					</div>
+					<div id="he-hero-div-triangle"></div>
+				</div>
+				
 			</section>
-
 			
 			<section class="front-page-description">
 				<p>
 					<?php echo get_the_content(); ?>
 				</p>
+			</section>
+			<section class="front-page-blogpost-container">
+				<?php 
+					$args = array('p' => 492);
+
+					$newNexus = new WP_query($args);
+
+					while($newNexus->have_posts()) : $newNexus->the_post(); 
+				?>
+				<img class="post-thumbnail" src="<?php echo get_template_directory_uri().'/assets/images/Nexus-Evolution-3.png'; ?>" />
+				<div class="post-data">
+					<h3><?php _e('Meet the new Nexus!', 'Front-Page'); ?></h3>
+					<div><p>Nexus was created in 2009 and has always had the purpose of promoting the culture of exchanges in Brazil. After a few years, we have been led to understand our audience more deeply, to broaden our relationship, and to seek new ways to offer the best educational experience in Canada.</p><p>Over the time we have identified that Nexus can go beyond helping people with the dream of doing a cultural exchange. We believe that we can make an even greater impact in contributing to building a better world by providing a universe of possibilities for each of our clients who want to build a new life in Canada.</p><p><em>We live in constant evolution, transformation, and renewal. And the moment has come to tell you why it’s time for a new Nexus.</em></p></div>
+				</div>
+				<?php endwhile; ?>
+				<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
 			</section>
 
 
@@ -93,111 +110,6 @@ get_header();
 						<h3 class="why-item-title"><?php _e('Visa Procedure', 'nexus'); ?></h3>
 						<p class="why-paragraph"><?php _e('Need a visa to study abroad? Don’t worry, we got you covered! We can help you in throughout all the process.', 'nexus'); ?></p>
 					</div>
-				</div>
-				<a class="get-quote-btn menu-item-51 menu-item-25" href="#"><?php _e('Chat with us!', 'nexus'); ?></a>
-			</section>
-
-			<section class="why-canada-section">
-				<h2 class="why-canada-title"><?php _e('Why Canada?', 'nexus'); ?></h2>
-				<button class="slider-btn btn-lft">></button>
-                <button class="slider-btn btn-right"><</button>
-				<div class="slider-canada desktop-slider">			
-					<?php 
-						$infoDesk = CFS()->get('infographics');
-
-						foreach($infoDesk as $desk) {
-							echo '<img alt="canada slide" class="slider-item" src="'.$desk['infographic'].'" />';
-						}
-							
-					?>
-				</div>
-				
-			</section>
-
-			<section class="curious-section">
-				<h3 class="curious-title"><?php _e('Curious About Canada?', 'nexus'); ?></h3>
-				<a class="visit-faq-btn" href="../faq"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
-			</section>
-
-
-			<section class="choose-city-section">
-					<h2 class="choose-title"><?php _e('Choose a City', 'nexus'); ?></h2>
-					<div class="cities-container-front">
-						<a href="cities/vancouver/" class="city-link-front fifty-div vancouver">
-							<div class="city-container-frontpage van-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Vancouver</h3>
-							</div>
-						</a>
-						<a href="cities/montreal/" class="city-link-front fifty-div montreal">
-							<div class="city-container-frontpage mon-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Montreal</h3>
-							</div>
-						</a>
-						<a href="cities/toronto/" class="city-link-front fifty-div toronto">
-							<div class="city-container-frontpage toro-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Toronto</h3>
-							</div>
-						</a>
-						<a href="cities/ottawa/" class="city-link-front fifty-div ottawa">
-							<div class="city-container-frontpage otta-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Ottawa</h3>
-							</div>
-						</a>
-						<a href="cities/calgary/"  class="city-link-front fifty-div calgary">
-							<div class="city-container-frontpage cal-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Calgary</h3>
-							</div>
-						</a>					
-						<a href="cities/victoria/" class="city-link-front fifty-div victoria">
-							<div class="city-container-frontpage vic-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Victoria</h3>
-							</div>
-						</a>
-						<a href="cities/whistler/" class="city-link-front fifty-div winnipeg">
-							<div class="city-container-frontpage winni-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Whistler</h3>
-							</div>
-						</a>
-						<a href="cities/halifax/" class="city-link-front fifty-div winnipeg">
-							<div class="city-container-frontpage hali-div">
-								<div class="black-ovrlay-city"></div>
-								<h3 class="city-name-front">Halifax</h3>
-							</div>
-						</a>
-					</div>
-					<a class="visit-faq-btn" href="../faq"><?php _e('Visit FAQ Section', 'nexus'); ?></a>
-			</section>	
-
-			<section class="reviews-section">
-				<h2 class="reviews-title"><?php _e("Student's Review", 'nexus'); ?></h2>
-				<div class="reviews-slider">
-				
-					<div class="review-container">
-						<img alt="review" class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
-						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
-						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
-						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p>
-					</div>
-					<div class="review-container">
-						<img alt="review" class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
-						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
-						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
-						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p></p>
-					</div>
-					<div class="review-container">
-						<img alt="review" class="review-img" src=<?php echo get_template_directory_uri()."/assets/images/photo_review.png"; ?> />
-						<p class="review-content"><span class="quote">"</span>I'd like to thank Nexus for all the help<span class="text-gone">, attention and patience with me both before and during my trip.
-						This exchange in Vancouver was undoubtedly one of the best experiences I have ever had in my life, 
-						and all of your help was instrumental in making this trip even more wonderful!</span><span class="unquote">"</span></p></p>
-					</div>
-					
 				</div>
 			</section>
 			<section class="start-journey-section">

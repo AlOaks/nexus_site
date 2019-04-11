@@ -59,10 +59,10 @@
 
 .join-link, .log-in-link {
 
-    color: white;
+    color: $font-blue;
 
     &:visited {
-        color: white
+        color: $font-blue;
     }
 
     @include mobile {
@@ -401,7 +401,7 @@
 .page-template-front-page {
 
     .site-header {
-        background: $transparency;
+        background: white;
 
         .sub-menu {
             
@@ -423,7 +423,7 @@
         .menu-item {
             
             a {
-                color: white;
+                color: $font-blue;
 
                 @include mobile {
                     color: $font-blue;
@@ -431,7 +431,7 @@
                 }
 
                 &:visited {
-                    color: white;
+                    color: $font-blue;;
 
                     @include mobile {
                         color: $font-blue;
@@ -442,11 +442,11 @@
         }
 
         .search-link {
-            color: white;
+            color: $font-blue;
         }
 
         .login-link {
-            color: white;
+            color: $font-blue;
         }
     }
 }
