@@ -1700,7 +1700,8 @@ html {
       height: 100%;
       opacity: .3; }
     .hero-image-new div img {
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
       @media (max-width: 705px) {
         .hero-image-new div img {
           width: 100%; } }
