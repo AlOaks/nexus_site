@@ -21,8 +21,8 @@ get_header();
 
 			<section class="hero-image-new">
 				<div class="esl-hero-div">
-					<?php $eslBkg = get_field('esl_background_image'); ?>
-					<img src="<?php echo $eslBkg?>" />
+					<?php $eslBkg = CFS()->get('esl_background_image'); ?>
+					<img src="<?php echo $eslBkg; ?>" />
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('English', 'Front-Page'); ?></h2>
@@ -32,8 +32,8 @@ get_header();
 					<div id="esl-hero-div-triangle"></div>
 				</div>
 				<div class="ws-hero-div">
-					<?php $priBkg = get_field('private_background_image'); ?>
-					<img src="<?php echo $priBkg?>" />
+					<?php $priBkg = CFS()->get('private_background_image'); ?>
+					<img src="<?php echo $priBkg; ?>" />
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('Work & Study', 'Front-Page'); ?></h2>
@@ -43,8 +43,8 @@ get_header();
 					<div id="ws-hero-div-triangle"></div>
 				</div>
 				<div class="he-hero-div">
-					<?php $pubBkg = get_field('public_background_image'); ?>
-					<img src="<?php echo $pubBkg?>" />
+					<?php $pubBkg = CFS()->get('public_background_image'); ?>
+					<img src="<?php echo $pubBkg; ?>" />
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('Higher Education', 'Front-Page'); ?></h2>
