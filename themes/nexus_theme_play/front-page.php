@@ -33,7 +33,6 @@ get_header();
 				</div>
 				<div class="ws-hero-div">
 					<?php $priBkg = CFS()->get('private_background_image'); ?>
-					<img src="<?php echo $priBkg; ?>" />
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('Work & Study', 'Front-Page'); ?></h2>
@@ -44,7 +43,6 @@ get_header();
 				</div>
 				<div class="he-hero-div">
 					<?php $pubBkg = CFS()->get('public_background_image'); ?>
-					<img src="<?php echo $pubBkg; ?>" />
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('Higher Education', 'Front-Page'); ?></h2>
