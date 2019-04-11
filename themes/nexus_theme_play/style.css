@@ -1740,7 +1740,7 @@ html {
       .hero-image-new .he-hero-div {
         background: url("../../themes/nexus_theme_play/assets/images/higher-education-bkg-mob.jpg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 6rem;
         background-size: cover; } }
     .hero-image-new .he-hero-div .hero-div-ovrly {
       background: #ffb419;
