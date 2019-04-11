@@ -1675,7 +1675,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 70vh;
+  height: 86vh;
   margin-top: 14vh;
   width: 100%; }
   @media (max-width: 705px) {
