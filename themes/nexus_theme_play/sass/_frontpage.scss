@@ -82,9 +82,9 @@ html {
         background-position: center;
 
         @include mobile {
-            background: url('../../themes/nexus_theme_play/assets/images/esl-bkg-mob.jpg');
+            background: url('../../themes/nexus_theme_play/assets/images/english-mob-bkg.jpg');
             background-repeat: no-repeat;
-            background-position: 8rem;
+            background-position: 5rem 0;
             background-size: cover;
 
         }
@@ -100,9 +100,9 @@ html {
     .ws-hero-div {
         position: relative;
 
-        background: url('../../themes/nexus_theme_play/assets/images/work-study-bkg.jpg');
+        background: url('../../themes/nexus_theme_play/assets/images/black-business-man-ws.jpg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 60%;
 
         @include mobile {
             background: url('../../themes/nexus_theme_play/assets/images/work-study-bkg-mob.jpg');

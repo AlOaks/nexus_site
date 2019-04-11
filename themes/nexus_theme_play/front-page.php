@@ -27,7 +27,7 @@ get_header();
 					<div class="hero-div-info">
 						<h2><?php _e('English', 'Front-Page'); ?></h2>
 						<p><?php _e('Learn or improve your english while studying in one of the most amazing countries!', 'Front-Page'); ?></p>
-						<!-- <a class="hero-learn-more-btn" href="http://localhost/nexus/english">Learn More</a> -->
+						<a class="hero-learn-more-btn" href="https://nexuseducanada.com/english"><?php _e('Learn More', 'Front-Page'); ?></a>
 					</div>
 					<div id="esl-hero-div-triangle"></div>
 				</div>
@@ -37,7 +37,7 @@ get_header();
 					<div class="hero-div-info">
 						<h2><?php _e('Work & Study', 'Front-Page'); ?></h2>
 						<p><?php _e('Perfect for international students who are looking to kickstart their professional career', 'Front-Page'); ?></p>
-						<!-- <a class="hero-learn-more-btn" href="http://localhost/nexus/work-study">Learn More</a> -->
+						<a class="hero-learn-more-btn" href="https://nexuseducanada.com/work-study"><?php _e('Learn More', 'Front-Page'); ?></a>
 					</div>
 					<div id="ws-hero-div-triangle"></div>
 				</div>
@@ -46,8 +46,8 @@ get_header();
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('Higher Education', 'Front-Page'); ?></h2>
-						<p><?php _e("From bachelors to PHD's, perfect for any young professional", 'Front-Page'); ?></p>
-						<!-- <a class="hero-learn-more-btn" href="http://localhost/nexus/higher-education">Learn More</a> -->
+						<p><?php _e("Perfect for those with a career driven mindset! Fulfill your academic goals in a public College or University.", 'Front-Page'); ?></p>
+						<a class="hero-learn-more-btn" href="https://nexuseducanada.com/higher-education"><?php _e('Learn More', 'Front-Page'); ?></a>
 					</div>
 					<div id="he-hero-div-triangle"></div>
 				</div>
