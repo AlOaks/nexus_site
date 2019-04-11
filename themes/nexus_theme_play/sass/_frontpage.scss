@@ -77,6 +77,17 @@ html {
 
     .esl-hero-div {
         position: relative;
+        background: url('../../themes/nexus_theme_play/assets/images/esl-bkg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include mobile {
+            background: url('../../themes/nexus_theme_play/assets/images/esl-bkg-mob.jpg');
+            background-repeat: no-repeat;
+            background-position: 8rem;
+            background-size: cover;
+
+        }
 
         .hero-div-ovrly {
             background: $bg-blue;
@@ -89,6 +100,17 @@ html {
     .ws-hero-div {
         position: relative;
 
+        background: url('../../themes/nexus_theme_play/assets/images/work-study-bkg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include mobile {
+            background: url('../../themes/nexus_theme_play/assets/images/work-study-bkg-mob.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
         .hero-div-ovrly {
             background: $div-red;
         }
@@ -96,6 +118,18 @@ html {
 
     .he-hero-div {
         position: relative;
+
+        background: url('../../themes/nexus_theme_play/assets/images/higher-education-bkg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include mobile {
+            background: url('../../themes/nexus_theme_play/assets/images/higher-education-bkg-mob.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
 
         .hero-div-ovrly {
             background: $div-yellow;
@@ -309,7 +343,7 @@ html {
     flex-wrap: wrap;
 
     @include mobile {
-        margin-top: 25vh;
+        margin-top: 5vh;
     }
 
     img {

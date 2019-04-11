@@ -22,7 +22,7 @@ get_header();
 			<section class="hero-image-new">
 				<div class="esl-hero-div">
 					<?php $eslBkg = CFS()->get('esl_background_image'); ?>
-					<img src="<?php echo $eslBkg; ?>" />
+					
 					<div class="hero-div-ovrly"></div>
 					<div class="hero-div-info">
 						<h2><?php _e('English', 'Front-Page'); ?></h2>

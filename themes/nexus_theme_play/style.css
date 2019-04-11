@@ -1706,15 +1706,42 @@ html {
         .hero-image-new div img {
           width: 100%; } }
   .hero-image-new .esl-hero-div {
-    position: relative; }
+    position: relative;
+    background: url("../../themes/nexus_theme_play/assets/images/esl-bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (max-width: 705px) {
+      .hero-image-new .esl-hero-div {
+        background: url("../../themes/nexus_theme_play/assets/images/esl-bkg-mob.jpg");
+        background-repeat: no-repeat;
+        background-position: 8rem;
+        background-size: cover; } }
     .hero-image-new .esl-hero-div .hero-div-ovrly {
       background: #15405A; }
   .hero-image-new .ws-hero-div {
-    position: relative; }
+    position: relative;
+    background: url("../../themes/nexus_theme_play/assets/images/work-study-bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (max-width: 705px) {
+      .hero-image-new .ws-hero-div {
+        background: url("../../themes/nexus_theme_play/assets/images/work-study-bkg-mob.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; } }
     .hero-image-new .ws-hero-div .hero-div-ovrly {
       background: #bd2020; }
   .hero-image-new .he-hero-div {
-    position: relative; }
+    position: relative;
+    background: url("../../themes/nexus_theme_play/assets/images/higher-education-bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (max-width: 705px) {
+      .hero-image-new .he-hero-div {
+        background: url("../../themes/nexus_theme_play/assets/images/higher-education-bkg-mob.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; } }
     .hero-image-new .he-hero-div .hero-div-ovrly {
       background: #ffb419;
       overflow: hidden; }
@@ -1887,7 +1914,7 @@ html {
       flex-wrap: wrap; }
   @media (max-width: 705px) {
     .front-page-blogpost-container {
-      margin-top: 25vh; } }
+      margin-top: 5vh; } }
   .front-page-blogpost-container img {
     width: 45%;
     height: 100%; }
