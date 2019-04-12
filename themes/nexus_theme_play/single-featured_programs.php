@@ -41,7 +41,7 @@ $featProgs = createTokenForm('featProgs');
 							<?php endwhile; ?>
 							</div>
 							<div class="featprogs-form-container">
-								<form action="http://localhost/nexus/featured-thanks" method="post" id="featprogs-form">
+								<form action="https://nexuseducanada.com/featured-thanks" method="post" id="featprogs-form">
 									<label><?php _e('Chat with us!', 'Landing Pages'); ?></label>
 									<?php $featuredProg = get_queried_object(); ?>
 										<input type="hidden" name="tokenField" value="<?php echo $featProgs; ?>" >
