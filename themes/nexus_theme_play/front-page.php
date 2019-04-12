@@ -19,7 +19,7 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php 
-			$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); 
+			$lang = get_locale();
 			console($lang);
 		?>
 
@@ -33,9 +33,9 @@ get_header();
 						<h2><?php _e('English', 'Front-Page'); ?></h2>
 						<p><?php _e('Learn or improve your english while studying in one of the most amazing countries!', 'Front-Page'); ?></p>
 						<?php 
-							if($lang === 'en') { ?>
+							if($lang === 'en_US') { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/english"><?php _e('Learn More', 'Front-Page'); ?></a>
-						<?php } else if($lang === 'es') { ?>
+						<?php } else if($lang === 'es_ES') { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/english?lang=es"><?php _e('Learn More', 'Front-Page'); ?></a>				
 						<?php } else { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/english?lang=pt-br"><?php _e('Learn More', 'Front-Page'); ?></a>
