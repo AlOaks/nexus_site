@@ -20,7 +20,6 @@ get_header();
 
 		<?php 
 			$lang = get_locale();
-			console($lang);
 		?>
 
 

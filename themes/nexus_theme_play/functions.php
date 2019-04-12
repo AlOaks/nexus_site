@@ -422,6 +422,15 @@ function console( $data ) {
     echo "<script>console.log( 'PHP Says: " . $output . "' );</script>";
 }
 
+function show( $data ) {
+    $output = $data;
+
+	echo "<pre>";
+	var_dump($output);
+	echo '</pre>';
+}
+
+
 // SECURITY LOG
 
 function createTokenForm($form) {

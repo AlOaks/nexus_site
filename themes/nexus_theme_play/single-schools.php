@@ -39,9 +39,9 @@ get_header();
                 <section class="credentials-section">
                     <div class="left-side-credentials">
                     <?php $queriedObj = get_queried_object();
-                            console($queriedObj->post_name);
+                          $terms = get_the_terms($queriedObj->ID, 'school_type');                            
 
-                        if($queriedObj->post_name === 'esl' || $queriedObj->post_name === 'ESL') { ?>
+                        if($terms[0]->slug === 'esl') { ?>
                             <h3><?php _e('What', 'Areas Pages'); ?> <?php the_title(); ?> <?php _e('has to offer?', 'Areas Pages'); ?></h3>
                     <?php } else { ?>
                             <h3><?php _e('What credentials does', 'Areas Pages'); ?> <?php the_title(); ?> <?php _e('offer?', 'Areas Pages'); ?></h3>
