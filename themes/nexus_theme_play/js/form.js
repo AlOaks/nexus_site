@@ -7,6 +7,11 @@ var stay = $("#length-div").hide();
 var room = $("#room-div").hide();
 var meals = $("#meals-div").hide();
 
+// PAGE LANG
+
+var pageLng = $('html').attr('lang');
+
+
 accommo.change(function() {
 
     var accom = $(this).val();
@@ -185,6 +190,48 @@ lpForm.submit(function(ev) {
         });
     }
 });
+
+// FEATURED PROGRAMS FORM
+
+var fpForm = $('#featprogs-form');
+var fpFormSending = false;
+
+
+fpForm.submit(function(ev) {
+    ev.preventDefault();
+    var fpData = {
+        'agencyId': 935,
+        'firstname': $('#featprogs-name').val(),
+        'email': $('#featprogs-email').val(),
+        'phone': $('#featprogs-phone').val(),
+        'notes': $('#featprogs-program').val()+' -> in: '+pageLng,
+        'studentCurrentPipelineStages': [
+            {
+              "studentPipelineStageId": 17430
+            }
+          ]
+    }
+
+    if(!fpFormSending) {
+
+        fpFormSending = true;
+
+        $.ajax({
+            url: 'https://app.edvisor.io/api/v1/student?public_key=public_ae06b8cda938ab061c9ba0d680d41f85',
+            data: JSON.stringify(fpData),
+            type: 'PUT',
+            contentType: 'application/json; chraset=utf-8',
+            processData: false
+        }).done(function(response) {
+            fpFormSending = false;
+        }).fail(function(data) {
+            fpFormSending = false;
+        });
+    }
+
+    fpForm.unbind().submit();
+});
+
 
 
 })( jQuery );

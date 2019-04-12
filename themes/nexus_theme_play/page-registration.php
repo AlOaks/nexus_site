@@ -13,9 +13,10 @@
  */
 session_start();
 
+get_header();
+
 $regisToken = createTokenForm('regisform');
 
-get_header();
 ?>
 
 	<div id="primary" class="content-area">

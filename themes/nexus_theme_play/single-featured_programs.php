@@ -41,14 +41,14 @@ $featProgs = createTokenForm('featProgs');
 							<?php endwhile; ?>
 							</div>
 							<div class="featprogs-form-container">
-								<form action="http://localhost/nexus/featured-progs-thanks" method="post" id="featprogs-form">
+								<form action="http://localhost/nexus/featured-thanks" method="post" id="featprogs-form">
 									<label><?php _e('Chat with us!', 'Landing Pages'); ?></label>
 									<?php $featuredProg = get_queried_object(); ?>
-										<input type="hidden" name="featured-token" value="<?php echo $featProgs; ?>" >
-										<input type="hidden" name="featured-program" value="<?php echo $featuredProg->post_title; ?>" >
+										<input type="hidden" name="tokenField" value="<?php echo $featProgs; ?>" >
+										<input type="hidden" name="featprogram" id="featprogs-program" value="<?php echo $featuredProg->post_title; ?>" >
 										<input type="text" name="featname" id="featprogs-name" placeholder="<?php _e('Name', 'Landing Pages'); ?>" />
-										<input type="email" name="featname" id="featprogs-name" placeholder="<?php _e('E-mail', 'Landing Pages'); ?>" />
-										<input type="text" name="featname" id="featprogs-name" placeholder="<?php _e('Phone / Whatsapp', 'Landing Pages'); ?>" />
+										<input type="email" name="featemail" id="featprogs-email" placeholder="<?php _e('E-mail', 'Landing Pages'); ?>" />
+										<input type="text" name="featphone" id="featprogs-phone" placeholder="<?php _e('Phone / Whatsapp', 'Landing Pages'); ?>" />
 										<button id="featprogs-submit"><?php _e('Submit', 'Landing Pages'); ?></button>
 								</form>
 							</div>
