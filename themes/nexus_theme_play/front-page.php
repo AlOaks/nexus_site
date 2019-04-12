@@ -70,7 +70,11 @@ get_header();
 				<img class="post-thumbnail" src="<?php echo get_template_directory_uri().'/assets/images/Nexus-Evolution-3.png'; ?>" />
 				<div class="post-data">
 					<h3><?php _e('Meet the new Nexus!', 'Front-Page'); ?></h3>
-					<div><p>Nexus was created in 2009 and has always had the purpose of promoting the culture of exchanges in Brazil. After a few years, we have been led to understand our audience more deeply, to broaden our relationship, and to seek new ways to offer the best educational experience in Canada.</p><p>Over the time we have identified that Nexus can go beyond helping people with the dream of doing a cultural exchange. We believe that we can make an even greater impact in contributing to building a better world by providing a universe of possibilities for each of our clients who want to build a new life in Canada.</p><p><em>We live in constant evolution, transformation, and renewal. And the moment has come to tell you why it’s time for a new Nexus.</em></p></div>
+					<div>
+						<p><?php _e('Nexus was created in 2009 and has always had the purpose of promoting the culture of exchanges in Brazil. After a few years, we have been led to understand our audience more deeply, to broaden our relationship, and to seek new ways to offer the best educational experience in Canada.', 'New Nexus'); ?></p>
+						<p><?php _e('Over the time we have identified that Nexus can go beyond helping people with the dream of doing a cultural exchange. We believe that we can make an even greater impact in contributing to building a better world by providing a universe of possibilities for each of our clients who want to build a new life in Canada.', 'New Nexus'); ?></p>
+						<p><em><?php _e('We live in constant evolution, transformation, and renewal. And the moment has come to tell you why it’s time for a new Nexus.', 'New Nexus'); ?></em></p>
+					</div>
 				</div>
 				<?php endwhile; ?>
 				<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
