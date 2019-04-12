@@ -39,6 +39,8 @@ get_header();
                 <section class="credentials-section">
                     <div class="left-side-credentials">
                     <?php $queriedObj = get_queried_object();
+                            console($queriedObj->post_name);
+
                         if($queriedObj->post_name === 'esl' || $queriedObj->post_name === 'ESL') { ?>
                             <h3><?php _e('What', 'Areas Pages'); ?> <?php the_title(); ?> <?php _e('has to offer?', 'Areas Pages'); ?></h3>
                     <?php } else { ?>
