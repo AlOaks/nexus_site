@@ -51,9 +51,9 @@ get_header();
 						<h2><?php _e('Work & Study', 'Front-Page'); ?></h2>
 						<p><?php _e('Perfect for international students who are looking to kickstart their professional career', 'Front-Page'); ?></p>
 						<?php 
-							if($lang === 'en') { ?>
+							if($lang === 'en_US') { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/work-study"><?php _e('Learn More', 'Front-Page'); ?></a>
-						<?php } else if($lang === 'es') { ?>
+						<?php } else if($lang === 'es_ES') { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/work-study?lang=es"><?php _e('Learn More', 'Front-Page'); ?></a>				
 						<?php } else { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/work-study?lang=pt-br"><?php _e('Learn More', 'Front-Page'); ?></a>
@@ -68,9 +68,9 @@ get_header();
 						<h2><?php _e('Higher Education', 'Front-Page'); ?></h2>
 						<p><?php _e("Perfect for those with a career driven mindset! Fulfill your academic goals in a public College or University.", 'Front-Page'); ?></p>
 						<?php 
-							if($lang === 'en') { ?>
+							if($lang === 'en_US') { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/higher-education"><?php _e('Learn More', 'Front-Page'); ?></a>
-						<?php } else if($lang === 'es') { ?>
+						<?php } else if($lang === 'es_ES') { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/higher-education?lang=es"><?php _e('Learn More', 'Front-Page'); ?></a>				
 						<?php } else { ?>
 								<a class="hero-learn-more-btn" href="https://nexuseducanada.com/higher-education?lang=pt-br"><?php _e('Learn More', 'Front-Page'); ?></a>
