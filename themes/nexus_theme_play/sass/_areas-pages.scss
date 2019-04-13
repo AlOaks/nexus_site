@@ -283,6 +283,10 @@
 
     p {
         width: 45%;
+
+        @include mobile {
+            width: 80%;
+        }
     }
 
     .right-side-outcome {
@@ -313,6 +317,10 @@
             background: white;
             color: $div-yellow;
             width: 35%;
+
+            @include mobile {
+                width: 50%;
+            }
         }
     }
 
@@ -335,7 +343,6 @@
     background: white;
 
     .half-moon-partners {
-        background: lightgray;
         border-radius: 50%;
         z-index: -10;
         width: 100%;
@@ -363,10 +370,18 @@
         align-items: center;
         width: 80%;
 
+        @include mobile {
+            width: 90%;
+        }
+
         img {
             max-width: 22%;
             max-height: 10rem;
             padding: 3%;
+
+            @include mobile {
+                max-width: 44%;
+            }
         }
     }
 }
