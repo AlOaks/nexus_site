@@ -6170,7 +6170,8 @@ article {
       .featprogs-content-section .sidebar-right ul li {
         color: #525252;
         font-family: "Open Sans";
-        list-style-type: none; }
+        list-style-type: none;
+        margin-top: 1vh; }
 
 .review-container-featured {
   height: 50vh;
