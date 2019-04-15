@@ -74,10 +74,9 @@ $featProgs = createTokenForm('featProgs');
 
 								} ?>	
 							</div>
-							<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
-						</div>
-
 						<?php } ?>
+						<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
+						</div>
 						<div class="sidebar-right">
 							<?php $campus = CFS()->get('school_campus'); ?>
 							<h3><?php _e('Campus', 'Landing Pages'); ?></h3>
