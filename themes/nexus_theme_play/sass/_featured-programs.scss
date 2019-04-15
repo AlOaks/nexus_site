@@ -119,6 +119,18 @@
         flex-direction: column;
         align-items: center;
 
+
+        .graphic-supports {
+            padding-left: 5%;
+
+            h4 {
+                color: $font-blue;
+                font-family: $sans;
+                font-weight: 600;
+            }
+
+        }
+
         h3 {
             color: $font-blue;
             font-size: 2rem;

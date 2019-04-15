@@ -6108,6 +6108,12 @@ article {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .featprogs-content-section .content-div .graphic-supports {
+      padding-left: 5%; }
+      .featprogs-content-section .content-div .graphic-supports h4 {
+        color: #193F5C;
+        font-family: "Open Sans";
+        font-weight: 600; }
     .featprogs-content-section .content-div h3 {
       color: #193F5C;
       font-size: 2rem;
@@ -7596,3 +7602,92 @@ article {
       @media (max-width: 705px) {
         .partners-area-sec .partners-container img {
           max-width: 44%; } }
+
+.unsubscribe-page-form p {
+  color: #193F5C;
+  font-family: "Open Sans";
+  font-weight: 300;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.unsub-success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #193F5C;
+  font-family: "Open Sans"; }
+  .unsub-success h2 {
+    font-family: "Roboto"; }
+    @media (max-width: 705px) {
+      .unsub-success h2 {
+        width: 80%; } }
+  @media (max-width: 705px) {
+    .unsub-success p {
+      width: 80%; } }
+  .unsub-success a {
+    background: #bd2020;
+    border-radius: 10px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1% 2%;
+    text-decoration: none; }
+    .unsub-success a:visited {
+      color: white; }
+
+#unsubscribe-form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F3F5F8;
+  border-radius: 10px;
+  padding: 1%; }
+  @media (max-width: 705px) {
+    #unsubscribe-form {
+      width: 80%; } }
+  #unsubscribe-form .unsub-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%; }
+    #unsubscribe-form .unsub-row label {
+      color: #193F5C;
+      font-family: "Open Sans";
+      font-weight: 300; }
+    #unsubscribe-form .unsub-row input[type="email"] {
+      border-radius: 10px;
+      color: #193F5C; }
+  #unsubscribe-form #unsub-button {
+    width: 40%;
+    background: #bd2020;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 3vh;
+    text-align: center;
+    padding: 2% 5%; }

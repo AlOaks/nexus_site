@@ -1,0 +1,94 @@
+.unsubscribe-page-form {
+    p {
+        color: $font-blue;
+        font-family: $sans;
+        font-weight: 300;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.unsub-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $font-blue;
+    font-family: $sans;
+
+    h2 {
+        font-family: $roboto;
+
+        @include mobile {
+            width: 80%;
+        }
+    }
+
+    p {
+        @include mobile {
+            width: 80%;
+        }
+    }
+
+    a {
+        background: $div-red;
+        border-radius: 10px;
+        color: white;
+        font-family: $roboto;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1% 2%;
+        text-decoration: none;
+
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+
+#unsubscribe-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $div-white;
+    border-radius: 10px;
+    padding: 1%;
+
+    @include mobile {
+        width: 80%;
+    }
+
+    .unsub-row {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        label {
+            color: $font-blue;
+            font-family: $sans;
+            font-weight: 300;
+        }
+
+        input[type="email"] {
+            border-radius: 10px;
+            color: $font-blue;
+        }
+    }
+
+    #unsub-button {
+        width: 40%;
+        background: $div-red;
+        color: white;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        margin-top: 3vh;
+        text-align: center;
+        padding: 2% 5%;
+    }
+}

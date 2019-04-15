@@ -61,9 +61,16 @@ $featProgs = createTokenForm('featProgs');
 							<h3><?php _e('About the school', 'Landing Pages'); ?></h3>
 							<?php $aboutSchool = CFS()->get('about_school'); ?>
 							<p><?php echo $aboutSchool; ?></p>
-							<h3><?php _e('Experience Timeline', 'Landing Pages'); ?></h3>
-							<?php $graphic = CFS()->get('graphic_support'); ?> 
-							<img src="<?php echo $graphic; ?>" />
+							<h3><?php _e('More about this experience', 'Landing Pages'); ?></h3>
+							<div class="graphic-supports">
+								<?php $graphics = CFS()->get('graphic_supports'); ?> 
+								<?php foreach($graphics as $g) { 
+
+									echo '<h4>'.$g['support_title'].'</h4>';
+									echo '<img src="'.$g['support_image'].'" >';
+
+								} ?>	
+							</div>
 							<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
 						</div>
 						<div class="sidebar-right">
