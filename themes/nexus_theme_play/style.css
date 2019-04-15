@@ -1718,6 +1718,12 @@ html {
         background-size: cover; } }
     .hero-image-new .esl-hero-div .hero-div-ovrly {
       background: #15405A; }
+    .hero-image-new .esl-hero-div .hero-div-info a:hover {
+      background: -webkit-gradient(linear, left top, right top, from(#193F5C), to(lightgray));
+      background: linear-gradient(to right, #193F5C, lightgray);
+      color: white;
+      -webkit-transition-duration: .8s;
+              transition-duration: .8s; }
   .hero-image-new .ws-hero-div {
     position: relative;
     background: url("../../themes/nexus_theme_play/assets/images/black-business-man-ws.jpg");
@@ -1731,6 +1737,12 @@ html {
         background-size: cover; } }
     .hero-image-new .ws-hero-div .hero-div-ovrly {
       background: #bd2020; }
+    .hero-image-new .ws-hero-div .hero-div-info a:hover {
+      background: -webkit-gradient(linear, left top, right top, from(#bd2020), to(lightgray));
+      background: linear-gradient(to right, #bd2020, lightgray);
+      color: white;
+      -webkit-transition-duration: .8s;
+              transition-duration: .8s; }
   .hero-image-new .he-hero-div {
     position: relative;
     background: url("../../themes/nexus_theme_play/assets/images/higher-education-bkg.jpg");
@@ -1745,6 +1757,12 @@ html {
     .hero-image-new .he-hero-div .hero-div-ovrly {
       background: #ffb419;
       overflow: hidden; }
+    .hero-image-new .he-hero-div .hero-div-info a:hover {
+      background: -webkit-gradient(linear, left top, right top, from(#ffb419), to(lightgray));
+      background: linear-gradient(to right, #ffb419, lightgray);
+      color: white;
+      -webkit-transition-duration: .8s;
+              transition-duration: .8s; }
   .hero-image-new .hero-div-info {
     position: absolute;
     width: 80%;
@@ -1805,8 +1823,6 @@ html {
 .hero-learn-more-btn {
   background: #F3F5F8;
   color: #193F5C;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
   padding: 3% 10%;
   text-align: center;
   text-decoration: none;
@@ -1824,12 +1840,6 @@ html {
       width: 30%; } }
   .hero-learn-more-btn:visited {
     color: #193F5C; }
-  .hero-learn-more-btn:hover {
-    background: -webkit-gradient(linear, left top, right top, from(gray), to(lightgray));
-    background: linear-gradient(to right, gray, lightgray);
-    color: white;
-    -webkit-transition-duration: .8s;
-            transition-duration: .8s; }
 
 #esl-hero-div-triangle, #ws-hero-div-triangle, #he-hero-div-triangle {
   width: 0;
