@@ -7489,7 +7489,10 @@ article {
     width: 45%; }
     @media (max-width: 705px) {
       .outcome-area-sec p {
-        width: 80%; } }
+        width: 80%;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
   .outcome-area-sec .right-side-outcome {
     width: 45%;
     display: -webkit-box;

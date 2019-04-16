@@ -284,8 +284,10 @@
     p {
         width: 45%;
 
+
         @include mobile {
             width: 80%;
+            order: 2;
         }
     }
 
