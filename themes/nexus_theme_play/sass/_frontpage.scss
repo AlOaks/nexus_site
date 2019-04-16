@@ -94,16 +94,7 @@ html {
             
         }
 
-        .hero-div-info {
-
-            a {
-                &:hover {
-                    background: linear-gradient(to right, $font-blue, lightgray);
-                    color: white;
-                    transition-duration: .8s;
-                }
-            }
-        }
+    
 
         
     }
@@ -126,16 +117,7 @@ html {
             background: $div-red;
         }
 
-        .hero-div-info {
-
-            a {
-                &:hover {
-                    background: linear-gradient(to right, $div-red, lightgray);
-                    color: white;
-                    transition-duration: .8s;
-                }
-            }
-        }
+        
     }
 
     .he-hero-div {
@@ -158,16 +140,7 @@ html {
             overflow: hidden;
         }
 
-        .hero-div-info {
-
-            a {
-                &:hover {
-                    background: linear-gradient(to right, $div-yellow, lightgray);
-                    color: white;
-                    transition-duration: .8s;
-                }
-            }
-        }
+        
     }
 
     .hero-div-info {
@@ -265,9 +238,12 @@ html {
         color: $font-blue;
     }
 
-    
 
-    
+    &:hover {
+        background: $div-yellow-dark;
+        color: white;
+        transition-duration: .8s;
+    }    
 }
 
 
