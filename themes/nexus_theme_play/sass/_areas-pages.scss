@@ -136,7 +136,7 @@
                     }
 
                     &:hover {
-                        color: lighten($bg-blue, 10%);
+                        color: $div-yellow;
                     }
                 }
 
@@ -208,13 +208,13 @@
         width: 0;
         height: 0;
         border-image: linear-gradient(to right,#DD3333 50%, #D56C6C 90%);
-        border-top: 20vh solid;
+        border-top: 30vh solid;
         border-right: 100vw solid transparent;
         position: absolute;
         transform: skewY(-4deg);
         position: absolute;
         overflow: hidden;
-        bottom: -5rem;
+        bottom: -3rem;
     }
 }
 

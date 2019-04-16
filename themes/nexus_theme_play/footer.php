@@ -67,29 +67,17 @@
 				<div class="sitemap-item">
 					<h4>Sitemap</h4>
 					<ul class="site-map">
-						<li><a href="../programs"><?php _e('Programs', 'nexus'); ?></a></li>
 						<li><a href="../services"><?php _e('Services', 'nexus'); ?></a></li>
 						<li><a href="../blog">Blog</a></li>
 						<li><a href="../nexus-club">Nexus Club</a></li>
 					</ul>
 				</div>
 				<div class="sitemap-item">
-					<h4><?php _e('Cities', 'nexus'); ?></h4>
+					<h4><?php _e('Study in Canada', 'nexus'); ?></h4>
 					<ul class="cities">
-						<?php 
-						
-						$cities = get_terms( array(
-								'taxonomy' => 'Cities',
-								'hide_empty' => false
-							));
-						
-						foreach($cities as $city) {
-
-							$link = get_term_link($city);
-							echo '<li><a href="'. esc_url($link).'">'.$city->name.'</a></li>';
-						}
-						
-						?>
+						<li><a href="https://nexuseducanada.com/english"><?php _e('English', 'Footer'); ?></a></li>
+						<li><a href="https://nexuseducanada.com/work-study"><?php _e('Work & Study', 'Footer'); ?></a></li>
+						<li><a href="https://nexuseducanada.com/higher-education"><?php _e('Higher Education', 'Footer'); ?></a></li>
 					</ul>
 				</div>
 				<div class="sitemap-item">

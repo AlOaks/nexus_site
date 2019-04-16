@@ -59,7 +59,7 @@ get_header();
 
                 <div class="area-page-menu">
                     <ul>
-                        <li><a href="#requisites"><?php _e('Requisites', 'Areas Pages'); ?></a></li>
+                        <li><a href="#requisites"><?php _e('Requirements', 'Areas Pages'); ?></a></li>
                         <li><a href="#outcome"><?php _e('Outcome', 'Areas Pages'); ?></a></li>
                         <li><a href="#schools"><?php _e('Schools', 'Areas Pages'); ?></a></li>
                     </ul>

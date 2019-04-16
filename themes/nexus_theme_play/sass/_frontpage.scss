@@ -80,6 +80,8 @@ html {
         background: url('../../themes/nexus_theme_play/assets/images/esl-bkg.jpg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
+
 
         @include mobile {
             background: url('../../themes/nexus_theme_play/assets/images/english-mob-bkg.jpg');
@@ -105,6 +107,7 @@ html {
         background: url('../../themes/nexus_theme_play/assets/images/black-business-man-ws.jpg');
         background-repeat: no-repeat;
         background-position: 60%;
+        background-size: cover;
 
         @include mobile {
             background: url('../../themes/nexus_theme_play/assets/images/work-study-bkg-mob.jpg');
@@ -126,6 +129,8 @@ html {
         background: url('../../themes/nexus_theme_play/assets/images/higher-education-bkg.jpg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
+
 
         @include mobile {
             background: url('../../themes/nexus_theme_play/assets/images/higher-education-bkg-mob.jpg');
@@ -473,8 +478,7 @@ option {
 }
 
 .cities {
-    width: 20%;
-    margin-right: 13%;
+    
 
     @include mobile {
         width: 90%;
