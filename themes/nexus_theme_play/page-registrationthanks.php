@@ -162,7 +162,7 @@ get_header();
     //     $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
     //     $headers .= "From: Nexus Contact Form <".$email.">\r\n";
 
-	$mailed = mail('st-3-8nyxihxd74@glockapps.com', $subject, $msg, $headers);
+	$mailed = mail($to, $subject, $msg, $headers);
 	
 
 
@@ -176,9 +176,7 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="page-title-container">
 			</div>
-			<?php if($mailed === true) {
-				show('Sent');
-			} ?>
+			
 			<div class="thanks-page-form">
                 <h2><?php _e('Thank you for your registration!', 'nexus'); ?></h2>
                 <p><?php _e('We will get back to you as soon as possible!', 'nexus'); ?></p>
