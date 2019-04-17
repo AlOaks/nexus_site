@@ -70,8 +70,6 @@ if($verified === true) {
         // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
         mail($to, $subject, $msg, $headers);
 
-
-
     $newMember = $mailC->post('lists/'.$listID.'/members', [
         'email_address' => $email,
         'merge_fields' => [
