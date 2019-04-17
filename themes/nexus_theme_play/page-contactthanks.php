@@ -68,7 +68,7 @@ if($verified === true) {
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
         // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
-        wp_mail($to, $subject, $msg, $headers);
+        mail($to, $subject, $msg, $headers);
 
 
 
