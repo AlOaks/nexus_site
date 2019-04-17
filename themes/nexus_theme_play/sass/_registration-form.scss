@@ -31,8 +31,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2%;
-    background: linear-gradient($div-white, white);
-    box-shadow: 1px 1px 10px $bg-blue;
+    background: darken($div-white, 10%);
 
 
     input, select {

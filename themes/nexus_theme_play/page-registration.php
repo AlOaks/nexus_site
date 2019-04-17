@@ -13,9 +13,12 @@
  */
 session_start();
 
+// <input type="hidden" name="tokenField" value="<?php echo $regisToken; >
+
+
 get_header();
 
-$regisToken = createTokenForm('regisform');
+// $regisToken = createTokenForm('regisform');
 
 ?>
 
@@ -25,8 +28,7 @@ $regisToken = createTokenForm('regisform');
 				<h1 class="type-page-title"><?php _e(the_title(), 'nexus'); ?></h1>
 			</div>
 			<div class="registration-page-form">
-				<form id="registration-form-php" action="https://nexuseducanada.com/thanks-registration" method="post">
-					<input type="hidden" name="tokenField" value="<?php echo $regisToken; ?>">
+				<form id="registration-form-php" action="http://localhost/nexus/thanks-registration" method="post">
 					<label class="fieldset-label-reg"><?php _e('About you', 'Registration'); ?></label>
 					<div class="reg-fieldset client-info">
 						<div class="registration-row">

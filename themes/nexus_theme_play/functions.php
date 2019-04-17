@@ -477,13 +477,13 @@ function secureLog($where) {
 	// create a logging message with php heredoc syntax
 	$logging = <<<LOG
 		
-		<< Start of Message >>
+		---- Start of Message ----
 		There was a hacking attempt on your form. 
 		Date of Attack: {$date}
 		IP-Adress: {$ip}
 		Host of Attacker: {$host}
 		Point of Attack: {$where}
-		<< End of Message >>
+		---- End of Message ----
 LOG;
         
         // open log file

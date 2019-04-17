@@ -15,13 +15,8 @@ session_start();
 
 get_header();
 
-$verified = tokenVer('regisform');
 
-if($verified === true) {
-
-
-
-	$allowedAccomFields = array('tokenField','pagelang','meals','health-duration','health','city','accomm','stay-length','room','high-school','higher-education','higher-education-end','eng-level','school-to-study','prgtype','course-name','start-date','program-duration','high-school-end','emergency-number','emergency-name','email','zipcode', 'mobile-phone','state-province','passport-expiry','cur-address','marital','children','passport-no','nexus-email','first-name','last-name','gender','nationality','birthdate','privacy-policy');
+	$allowedAccomFields = array('meals','health-duration','health','city','accomm','stay-length','room','high-school','higher-education','higher-education-end','eng-level','school-to-study','prgtype','course-name','start-date','program-duration','high-school-end','emergency-number','emergency-name','email','zipcode', 'mobile-phone','state-province','passport-expiry','cur-address','marital','children','passport-no','nexus-email','first-name','last-name','gender','nationality','birthdate','privacy-policy');
 
 	// Building an array with the $_POST-superglobal 
 	foreach ($_POST as $key=>$item) {
@@ -35,136 +30,141 @@ if($verified === true) {
 		
 		} 
 	}
-	$lang = $_POST['pagelang'];
-	$to = $_POST['nexus-email'];
-	$fname = $_POST['first-name'];
-	$lname = $_POST['last-name'];
-	$gender = $_POST['gender'];
-	$nation = $_POST['nationality'];
-	$birth = $_POST['birthdate'];
-	$marital = $_POST['marital'];
-	$children = $_POST['children'];
-	$passNum = $_POST['passport-no'];
-	$passDate = $_POST['passport-expiry'];
-	$address = $_POST['cur-address'];
-	$city = $_POST['city'];
-	$state = $_POST['state-province'];
-	$zipcode = $_POST['zipcode'];
-	$mphone = $_POST['mobile-phone'];
-	$email = $_POST['email'];
-	$emerContact = $_POST['emergency-name'];
-	$emerContactNum = $_POST['emergency-number'];
-	$highSchool = $_POST['high-school'];
-	$highEnd = $_POST['high-school-end'];
+
+	$to = stripcleantohtml($_POST['nexus-email']);
+	$fname = stripcleantohtml($_POST['first-name']);
+	$lname = stripcleantohtml($_POST['last-name']);
+	$gender = stripcleantohtml($_POST['gender']);
+	$nation = stripcleantohtml($_POST['nationality']);
+	$birth = stripcleantohtml($_POST['birthdate']);
+	$marital = stripcleantohtml($_POST['marital']);
+	$children = stripcleantohtml($_POST['children']);
+	$passNum = stripcleantohtml($_POST['passport-no']);
+	$passDate = stripcleantohtml($_POST['passport-expiry']);
+	$address = stripcleantohtml($_POST['cur-address']);
+	$city = stripcleantohtml($_POST['city']);
+	$state = stripcleantohtml($_POST['state-province']);
+	$zipcode = stripcleantohtml($_POST['zipcode']);
+	$mphone = stripcleantohtml($_POST['mobile-phone']);
+	$email = stripcleantohtml($_POST['email']);
+	$emerContact = stripcleantohtml($_POST['emergency-name']);
+	$emerContactNum = stripcleantohtml($_POST['emergency-number']);
+	$highSchool = stripcleantohtml($_POST['high-school']);
+	$highEnd = stripcleantohtml($_POST['high-school-end']);
 
 	if(isset($_POST['higher-education'])) {
-		$higherSchool = $_POST['higher-education'];
+		$higherSchool = stripcleantohtml($_POST['higher-education']);
 	} else {
 		$higherSchool = 'N/A';
 	}
 
 	if(isset($_POST['higher-education-end'])) {
-		$higherEnd = $_POST['higher-education-end'];
+		$higherEnd = stripcleantohtml($_POST['higher-education-end']);
 	} else {
 		$higherEnd = 'N/A';
 	}
 
 
-	$englishLevel = $_POST['eng-level'];
-	$schoolCanada = $_POST['school-to-study'];
-	$prgType = $_POST['prgtype'];
-	$courseName = $_POST['course-name'];
-	$startDate = $_POST['start-date'];
+	$englishLevel = stripcleantohtml($_POST['eng-level']);
+	$schoolCanada = stripcleantohtml($_POST['school-to-study']);
+	$prgType = stripcleantohtml($_POST['prgtype']);
+	$courseName = stripcleantohtml($_POST['course-name']);
+	$startDate = stripcleantohtml($_POST['start-date']);
 
 	if(isset($_POST['program-duration'])) {
-		$duration = $_POST['program-duration'];
+		$duration = stripcleantohtml($_POST['program-duration']);
 	} else {
 		$duration = 'N/A';
 	}
 
-	$accomm = $_POST['accomm'];
+	$accomm = stripcleantohtml($_POST['accomm']);
 
 	if(isset($_POST['stay-length'])) {
-		$length = $_POST['stay-length'];
+		$length = stripcleantohtml($_POST['stay-length']);
 	} else {
 		$length = 'N/A';
 	}
 
 
 	if(isset($_POST['room'])) {
-		$room = $_POST['room'];
+		$room = stripcleantohtml($_POST['room']);
 	} else {
 		$room = 'N/A';
 	}
 
 	if(isset($_POST['meals'])) {
-		$meals = $_POST['meals'];
+		$meals = stripcleantohtml($_POST['meals']);
 	} else {
 		$meals = 'N/A';
 	}
-	$health = $_POST['health'];
+
+	$health = stripcleantohtml($_POST['health']);
 
 	if(isset($_POST['health-duration'])) {
-		$coverage = $_POST['health-duration'];
+		$coverage = stripcleantohtml($_POST['health-duration']);
 	} else {
 		$coverage = 'N/A';
 	}
 
-	$consent = $_POST['privacy-policy'];
+	$consent = stripcleantohtml($_POST['privacy-policy']);
 	$subject = 'Registration Form from '.$fname;
 
 
 	$msg = "
 
-	Registration Form Submitted by ".stripcleantohtml($fname)."
+	<h1>Registration Form Submitted by ".$fname."</h1>
 
 		
-			First Name: ".stripcleantohtml($fname)."
-			Last Name: ".stripcleantohtml($lname)."
-			Gender: ".stripcleantohtml($gender)."
-			Nationality: ".stripcleantohtml($nation)."
-			Birthdate: ".stripcleantohtml($birth)."
-			Marital Status: ".stripcleantohtml($marital)."
-			Children: ".stripcleantohtml($children)."
-			Passport Number: ".stripcleantohtml($passNum)."
-			Passport Expiry: ".stripcleantohtml($passDate)."
-			Address: ".stripcleantohtml($address)."
-			City: ".stripcleantohtml($city)."
-			State / Province: ".stripcleantohtml($state)."
-			Zip Code: ".stripcleantohtml($zipcode)."
-			Mobile Phone: ".stripcleantohtml($mphone)."
-			E-Mail: ".stripcleantohtml($email)."
-			Emergency Contact: ".stripcleantohtml($emerContact)."
-			Emergency Number: ".stripcleantohtml($emerContactNum)."
-			High School: ".stripcleantohtml($highSchool)."
-			High School EndDate: ".stripcleantohtml($highEnd)."
-			Higher Education School: ".stripcleantohtml($higherSchool)."
-			Higher Education End Date: ".stripcleantohtml($higherEnd)."
-			English Level: ".stripcleantohtml($englishLevel)."
-			School to study in: ".stripcleantohtml($schoolCanada)."
-			Program Type: ".stripcleantohtml($prgType)."
-			Name of Program: ".stripcleantohtml($courseName)."
-			Starting Date: ".stripcleantohtml($startDate)."
-			Duration of Program: ".stripcleantohtml($duration)."
-			Accommodation: ".stripcleantohtml($accomm)."
-			Length of Stay: ".stripcleantohtml($length)."
-			Type of Room: ".stripcleantohtml($room)."
-			Meals Included: ".stripcleantohtml($meals)."
-			Health Insurance Included: ".stripcleantohtml($health)."
-			Health Coverage Duration: ".stripcleantohtml($coverage)."
-			Privacy Policy: ".stripcleantohtml($consent)."
+			First Name: ".$fname."<br>
+			Last Name: ".$lname."<br>
+			Gender: ".$gender."<br>
+			Nationality: ".$nation."<br>
+			Birthdate: ".$birth."<br>
+			Marital Status: ".$marital."<br>
+			Children: ".$children."<br>
+			Passport Number: ".$passNum."<br>
+			Passport Expiry: ".$passDate."<br>
+			Address: ".$address."<br>
+			City: ".$city."<br>
+			State / Province: ".$state."<br>
+			Zip Code: ".$zipcode."<br>
+			Mobile Phone: ".$mphone."<br>
+			E-Mail: ".$email."<br>
+			Emergency Contact: ".$emerContact."<br>
+			Emergency Number: ".$emerContactNum."<br>
+			High School: ".$highSchool."<br>
+			High School EndDate: ".$highEnd."<br>
+			Higher Education School: ".$higherSchool."<br>
+			Higher Education End Date: ".$higherEnd."<br>
+			English Level: ".$englishLevel."<br>
+			School to study in: ".$schoolCanada."<br>
+			Program Type: ".$prgType."<br>
+			Name of Program: ".$courseName."<br>
+			Starting Date: ".$startDate."<br>
+			Duration of Program: ".$duration."<br>
+			Accommodation: ".$accomm."<br>
+			Length of Stay: ".$length."<br>
+			Type of Room: ".$room."<br>
+			Meals Included: ".$meals."<br>
+			Health Insurance Included: ".$health."<br>
+			Health Coverage Duration: ".$coverage."<br>
+			Privacy Policy: ".$consent."<br>
 	";
 
-	$headers .= "Reply-to: ".$name."<".$email.">\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+	$headers .= "Reply-to: ".$fname."<".$email.">\r\n";
 	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\r\n";
 	$headers .= "From: Nexus Registration Form\r\n";
 
-	mail($to, $subject, $msg, $headers);
+	// $headers .= "Reply-to: ".$name."<".$email.">\r\n";
+    //     $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
+    //     $headers .= "From: Nexus Contact Form <".$email.">\r\n";
+
+	$mailed = mail($to, $subject, $msg, $headers);
 	
-} else {
-	secureLog('Form Token @ Registration Form');
-	header("refresh:1;url=https://nexuseducanada.com");
-}
+
 
 ?>
 <?php
@@ -176,6 +176,13 @@ if($verified === true) {
 		<main id="main" class="site-main">
 			<div class="page-title-container">
 			</div>
+			<?php if($mailed === true) {
+				show('Sent');
+				show($to);
+				show($headers);
+				show($msg);
+				show($subject);
+			} ?>
 			<div class="thanks-page-form">
                 <h2><?php _e('Thank you for your registration!', 'nexus'); ?></h2>
                 <p><?php _e('We will get back to you as soon as possible!', 'nexus'); ?></p>

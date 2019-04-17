@@ -6977,10 +6977,7 @@ article {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F3F5F8), to(white));
-  background: linear-gradient(#F3F5F8, white);
-  -webkit-box-shadow: 1px 1px 10px #15405A;
-          box-shadow: 1px 1px 10px #15405A; }
+  background: #d3dae5; }
   .reg-fieldset input, .reg-fieldset select {
     height: 2rem;
     border-radius: 10px;

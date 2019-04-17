@@ -49,7 +49,7 @@ if($verified === true) {
         $consent = stripcleantohtml($_POST['privacy-policy']);
 
         $to = $_POST['nexus-email'];
-        $subject = 'Contact Form from '.$name;
+        $subject = 'Contact Form '.$name;
         $msg = '
 
         <h1 style="color: red;">Contact Form Submitted by '.$name.'</h1>
@@ -60,9 +60,10 @@ if($verified === true) {
             Privacy Policy: '.$consent.'<br>
 
         ';
+        
         $headers .= "Reply-to: ".$name."<".$email.">\r\n";
         $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
-        $headers .= "From: Nexus Contact Form <".$email.">\r\n";
+        $headers .= "From: Nexus Contact Form\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
