@@ -162,7 +162,7 @@ get_header();
     //     $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
     //     $headers .= "From: Nexus Contact Form <".$email.">\r\n";
 
-	$mailed = mail($to, $subject, $msg, $headers);
+	$mailed = wp_mail($to, $subject, $msg, $headers);
 	
 
 
