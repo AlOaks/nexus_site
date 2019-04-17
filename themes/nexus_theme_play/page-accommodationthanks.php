@@ -123,7 +123,7 @@ if($verified === true) {
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-	mail($to, $subject, $msg, $headers);// echo 'SENT';
+	wp_mail($to, $subject, $msg, $headers);// echo 'SENT';
 	
 } else {
 	secureLog('Form Token @ Accommodation Form');
