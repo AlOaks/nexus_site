@@ -176,13 +176,6 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="page-title-container">
 			</div>
-			<?php if($mailed === true) {
-				show('Sent');
-				show($to);
-				show($headers);
-				show($msg);
-				show($subject);
-			} ?>
 			<div class="thanks-page-form">
                 <h2><?php _e('Thank you for your registration!', 'nexus'); ?></h2>
                 <p><?php _e('We will get back to you as soon as possible!', 'nexus'); ?></p>
