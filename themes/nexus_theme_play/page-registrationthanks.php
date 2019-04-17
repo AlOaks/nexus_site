@@ -152,11 +152,11 @@ get_header();
 	";
 
 	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
 
-	$headers .= "Reply-to: ".$fname."<".$email.">\r\n";
-	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\r\n";
-	$headers .= "From: Nexus Registration Form\r\n";
+	$headers .= "Reply-to: ".$fname."<".$email.">\n";
+	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\n";
+	$headers .= "From: Nexus Registration Form\n";
 
 	// $headers .= "Reply-to: ".$name."<".$email.">\r\n";
     //     $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
@@ -176,6 +176,9 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="page-title-container">
 			</div>
+			<?php if($mailed === true) {
+				show('Sent');
+			} ?>
 			<div class="thanks-page-form">
                 <h2><?php _e('Thank you for your registration!', 'nexus'); ?></h2>
                 <p><?php _e('We will get back to you as soon as possible!', 'nexus'); ?></p>
