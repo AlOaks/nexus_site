@@ -6009,8 +6009,7 @@ article {
           -ms-flex-direction: column;
               flex-direction: column;
       height: auto;
-      padding-bottom: 5vh;
-      padding-top: 1vh; } }
+      padding-bottom: 5vh; } }
   .feat-progs-hero .featprogs-hero-parallax {
     height: 100%;
     width: 100%;
@@ -6047,7 +6046,8 @@ article {
         width: 80%;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; } }
+                align-items: center;
+        margin-top: 5vh; } }
     .feat-progs-hero .featprogs-heading img {
       width: 60%;
       height: auto; }
