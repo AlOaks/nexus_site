@@ -122,23 +122,15 @@ contForm.submit(function(ev) {
     emailInput.setAttribute('type', 'hidden');
     emailInput.setAttribute('name', 'nexus-email');
 
-    var langInput = document.createElement('input');
-    langInput.setAttribute('type', 'hidden');
-    langInput.setAttribute('name', 'pagelang');
-
     if($('html').is(':lang(en-US)')) {
         emailInput.setAttribute('value', 'contact@nexuseducanada.com');
-        langInput.setAttribute('value', 'ENG');
     } else if($('html').is(':lang(es-ES)')) {
         emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
-        langInput.setAttribute('value', 'ESP');
     } else if($('html').is(':lang(pt-br)')) {
         emailInput.setAttribute('value', 'contato@nexuseducanada.com');
-        langInput.setAttribute('value', 'POR');
     }
 
     contForm.append(emailInput);
-    contForm.append(langInput);
 
     contForm.unbind().submit();
 });
