@@ -33,7 +33,7 @@ $featProgs = createTokenForm('featProgs');
 							<div class="featprogs-hero-parallax" data-parallax="scroll" data-image-src="<?php echo get_the_post_thumbnail_url(); ?>" ></div>
 							<div class="featprogs-hero-ovrly"></div>
 							<div class="featprogs-heading">
-								<img src="<?php echo get_template_directory_uri().'/assets/images/nexus_logo_white.png'; ?>" />
+								<img src="<?php echo get_template_directory_uri().'/assets/images/logo-nexus-white-and-color.png'; ?>" />
 							<?php while(have_posts()) : the_post(); ?>
 								
 								<?php the_title('<h1>', '</h1>'); ?>

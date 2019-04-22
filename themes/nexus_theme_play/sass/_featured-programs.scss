@@ -1,5 +1,9 @@
 .featured_programs-template-default {
     margin-top: -32px !important;
+
+    @include mobile {
+        margin-top: -46px !important;
+    }
 }
 
 .feat-progs-hero {
@@ -9,6 +13,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5vh;
+        padding-top: 1vh;
+    }
 
     .featprogs-hero-parallax {
         height: 100%;
@@ -39,6 +50,11 @@
         font-family: $sans;
         width: 45%;
 
+        @include mobile {
+            width: 80%;
+            align-items: center;
+        }
+
 
         img {
             width: 60%;
@@ -46,14 +62,21 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 0;
+
+            @include mobile {
+                text-align: center;
+            }
 
         }
 
         h2 {
             margin-top: 0;
 
+            @include mobile {
+                font-size: 1.2rem;
+            }
         }
 
     }
@@ -61,6 +84,11 @@
     .featprogs-form-container {
         width: 30%;
         height: 80%;
+
+        @include mobile {
+            width: 80%;
+            height: 20rem;
+        }
 
 
         form {
@@ -79,6 +107,10 @@
                 color: white;
                 font-size: 3rem;
                 font-family: $sans;
+
+                @include mobile {
+                    font-size: 2rem;
+                }
             }
 
 
@@ -107,6 +139,11 @@
     align-items: flex-start;
     padding-top: 2%;
 
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     .content-div {
         width: 60%;
@@ -115,9 +152,19 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile {
+            width: 85%;
+            order: 2;
+            padding-left: 0;
+        }
+
 
         .graphic-supports {
             padding-left: 5%;
+
+            @include mobile {
+                padding-left: 0;
+            }
 
             h4 {
                 color: $font-blue;
@@ -152,6 +199,11 @@
             width: 50%;
             font-size: 1.5rem;
             font-family: $roboto;
+
+            @include mobile {
+                width: 70%;
+                margin-top: 1vh;
+            }
         }
         
     }
@@ -162,6 +214,13 @@
         border-radius: 10px;
         padding: 2%;
         margin-right: 2%;
+
+        @include mobile {
+            width: 85%;
+            background: white;
+            order: 1;
+            padding: 6%;
+        }
 
         h3 {
             color: $font-blue;
@@ -204,6 +263,11 @@
     display: flex;
     justify-content: space-around;
 
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .footer-bkg {
         height: 100%;
         width: 100%;
@@ -216,6 +280,14 @@
         width: auto;
         align-self: flex-end;
         margin-left: 10%;
+
+        @include mobile {
+            height: auto;
+            width: 35%;
+            order: 2;
+            align-self: center;
+            margin-left: 0;
+        }
     }
 
     .review-month-container {
@@ -224,6 +296,11 @@
         font-family: $sans;
         position: relative;
         align-self: center;
+
+        @include mobile {
+            width: 80%;
+            order: 1;
+        }
 
         i {
             font-size: 5rem;
