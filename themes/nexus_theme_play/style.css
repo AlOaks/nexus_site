@@ -6105,7 +6105,8 @@ article {
       .feat-progs-hero .featprogs-form-container form label {
         color: white;
         font-size: 3rem;
-        font-family: "Open Sans"; }
+        font-family: "Open Sans";
+        text-align: center; }
         @media (max-width: 705px) {
           .feat-progs-hero .featprogs-form-container form label {
             font-size: 2rem; } }
