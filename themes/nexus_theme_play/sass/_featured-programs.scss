@@ -80,18 +80,21 @@
         }
 
         .promo-banner {
-            max-width: 80%;
-            min-width: 60%;
+            
             height: auto;
+            background: url('./assets/images/brushstroke.png');
+            background-size: contain;
+            background-repeat: no-repeat;
 
             p {
                 text-align: center;
-                color: white;
+                width: 85%;
                 font-family: $roboto;
-                padding:5%;
-                background: $div-red;
+                padding: 5%;
                 border-radius: 10px;
                 text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.5rem;
             }
         }
 

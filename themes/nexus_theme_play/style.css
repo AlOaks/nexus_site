@@ -6063,17 +6063,19 @@ article {
         .feat-progs-hero .featprogs-heading h2 {
           font-size: 1.2rem; } }
     .feat-progs-hero .featprogs-heading .promo-banner {
-      max-width: 80%;
-      min-width: 60%;
-      height: auto; }
+      height: auto;
+      background: url("./assets/images/brushstroke.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
       .feat-progs-hero .featprogs-heading .promo-banner p {
         text-align: center;
-        color: white;
+        width: 85%;
         font-family: "Roboto";
         padding: 5%;
-        background: #bd2020;
         border-radius: 10px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem; }
   .feat-progs-hero .featprogs-form-container {
     width: 30%;
     height: 80%; }
