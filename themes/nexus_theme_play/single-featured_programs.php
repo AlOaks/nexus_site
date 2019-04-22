@@ -37,7 +37,10 @@ $featProgs = createTokenForm('featProgs');
 							<?php while(have_posts()) : the_post(); ?>
 								
 								<?php the_title('<h1>', '</h1>'); ?>
-								<h2><?php echo CFS()->get('school_name'); ?></h2>							
+								<h2><?php echo CFS()->get('school_name'); ?></h2>	
+								<div class="promo-banner">
+									<p><?php _e("Get 50% Off Nexus Fee + $150 Discount on Additional Services", "Landing Pages"); ?></p>
+								</div>						
 							<?php endwhile; ?>
 							</div>
 							<div class="featprogs-form-container">
@@ -86,8 +89,8 @@ $featProgs = createTokenForm('featProgs');
 								echo '<li>'.$camp['campus'].'</li>';
 								} ?>
 							</ul>
-							<h3><i class="fas fa-clock"></i><?php _e('Class Time', 'Landing Pages'); ?></h3>
-							<p><?php echo CFS()->get('class_time'); ?></p>
+							<h3><i class="fas fa-clock"></i><?php _e('Duration', 'Landing Pages'); ?></h3>
+							<p><?php echo CFS()->get('duration_featured'); ?></p>
 							<h3><i class="fas fa-calendar-minus"></i><?php _e('Start Dates', 'Landing Pages'); ?></h3>
 							<ul>
 								<?php $startDates = CFS()->get('featured_start_dates'); ?>
@@ -113,7 +116,7 @@ $featProgs = createTokenForm('featProgs');
 				<img class="foto-review" src=<?php echo get_template_directory_uri().'/assets/images/foto-review.png'; ?> >
 				<div class="review-month-container">
 					<i class="fas fa-quote-left"></i>
-					<p><?php _e("I was lucky enough to find the Nexus. They helped me through the process of studying at Greystone. Now I'm starting my professional life here in Canada!", 'Landing Pages'); ?></p>
+					<p><?php _e("I was lucky enough to find the Nexus. They helped me through the process of studying in Canada. Now I'm starting my professional life here in Canada!", 'Landing Pages'); ?></p>
 					<p class="review-name">Adriana Ribeiro</p>
 				</div>
 			</section>

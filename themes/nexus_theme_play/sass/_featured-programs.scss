@@ -79,6 +79,22 @@
             }
         }
 
+        .promo-banner {
+            max-width: 80%;
+            min-width: 60%;
+            height: auto;
+
+            p {
+                text-align: center;
+                color: white;
+                font-family: $roboto;
+                padding:5%;
+                background: $div-red;
+                border-radius: 10px;
+                text-transform: uppercase;
+            }
+        }
+
     }
 
     .featprogs-form-container {
