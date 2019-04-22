@@ -28,7 +28,7 @@ $listID = '7dc11a23ab';
 if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-	$allowedAccomFields = array('tokenField','pagelang','nexus-email','contact-name', 'contact-email', 'contact-message', 'privacy-policy');
+	$allowedAccomFields = array('tokenField','nexus-email','contact-name', 'contact-email', 'contact-message', 'privacy-policy');
 
 	// Building an array with the $_POST-superglobal 
 	foreach ($_POST as $key=>$item) {
@@ -42,14 +42,13 @@ if($verified === true) {
             }
     }
 
-        $lang = stripcleantohtml($_POST['pagelang']);
         $name = stripcleantohtml($_POST['contact-name']);
         $email = stripcleantohtml($_POST['contact-email']);
         $message = stripcleantohtml($_POST['contact-message']);
         $consent = stripcleantohtml($_POST['privacy-policy']);
 
         $to = $_POST['nexus-email'];
-        $subject = 'Contact Form '.$name;
+        $subject = 'Contact Form from'.$name;
         $msg = '
 
         <h1 style="color: red;">Contact Form Submitted by '.$name.'</h1>
@@ -58,6 +57,7 @@ if($verified === true) {
             Email: '.$email.'<br>
             Message: '.$message.'<br>
             Privacy Policy: '.$consent.'<br>
+            Language: '.$lang.'<br>
 
         ';
         

@@ -78,31 +78,31 @@ $featProgs = createTokenForm('featProgs');
 						<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
 						</div>
 						<div class="sidebar-right">
+							<h3><i class="fas fa-money-check-alt"></i><?php _e('Fees', 'Landing Pages'); ?></h3>
+							<p><?php echo CFS()->get('fees'); ?>**</p>
 							<?php $campus = CFS()->get('school_campus'); ?>
-							<h3><?php _e('Campus', 'Landing Pages'); ?></h3>
+							<h3><i class="fas fa-university"></i><?php _e('Campus', 'Landing Pages'); ?></h3>
 							<ul><?php foreach($campus as $camp) {
 								echo '<li>'.$camp['campus'].'</li>';
 								} ?>
 							</ul>
-							<h3><?php _e('Class Time', 'Landing Pages'); ?></h3>
+							<h3><i class="fas fa-clock"></i><?php _e('Class Time', 'Landing Pages'); ?></h3>
 							<p><?php echo CFS()->get('class_time'); ?></p>
-							<h3><?php _e('Fees', 'Landing Pages'); ?></h3>
-							<p><?php echo CFS()->get('fees'); ?>*</p>
-							<h3><?php _e('Start Dates', 'Landing Pages'); ?></h3>
+							<h3><i class="fas fa-calendar-minus"></i><?php _e('Start Dates', 'Landing Pages'); ?></h3>
 							<ul>
 								<?php $startDates = CFS()->get('featured_start_dates'); ?>
 								<?php foreach($startDates as $date) {
 									echo '<li>'.$date['start_date'].'</li>';
 								} ?>
 							</ul>
-							<h3><?php _e('Requirements', 'Landing Pages'); ?></h3>
+							<h3><i class="fas fa-tasks"></i><?php _e('Requirements', 'Landing Pages'); ?></h3>
 							<ul>
 								<?php $requires = CFS()->get('requirements_featured'); ?>
 								<?php foreach($requires as $req) {
 									echo '<li>'.$req['requirement'].'</li>';
 								} ?>
 							</ul>
-							<p><?php _e('*Only for tuition fee. Additional fees may apply', 'Landing Pages'); ?></p>
+							<p>*<?php _e('*Only for tuition fee. Additional fees may apply', 'Landing Pages'); ?></p>
 						</div>
 
 					</section>	

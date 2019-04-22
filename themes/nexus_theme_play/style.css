@@ -6138,6 +6138,8 @@ article {
       color: #193F5C;
       font-size: 1.2rem;
       font-family: "Open Sans"; }
+      .featprogs-content-section .sidebar-right h3 i {
+        margin-right: .5vw; }
     .featprogs-content-section .sidebar-right p {
       color: #525252;
       font-family: "Open Sans"; }
