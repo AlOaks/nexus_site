@@ -55,14 +55,21 @@
             margin-top: 8vh;
         }
 
+        .logos-box {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            align-items: center;
 
-        img {
-            width: 60%;
-            height: auto;
+            img {
+                max-width: 50%;
+                width: auto;
+                max-height: 7rem;
+            }
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 3rem;
             margin-bottom: 0;
 
             @include mobile {
@@ -71,32 +78,27 @@
 
         }
 
-        h2 {
-            margin-top: 0;
-
-            @include mobile {
-                font-size: 1.2rem;
-            }
-        }
-
         .promo-banner {
             
             height: auto;
-            background: url('./assets/images/brushstroke.png');
-            background-size: contain;
-            background-repeat: no-repeat;
+            // background: url('./assets/images/brushstroke.png');
+            // background-size: contain;
+            // background-repeat: no-repeat;
 
             p {
                 text-align: center;
                 width: 85%;
                 font-family: $roboto;
-                padding: 5%;
+                padding: 2.5%;
                 border-radius: 10px;
                 text-transform: uppercase;
                 font-weight: bold;
-                font-size: 1.5rem;
+                font-size: 3rem;
+                background: $div-red;
             }
         }
+
+        
 
     }
 
@@ -228,6 +230,94 @@
         
     }
 
+    .nexus-rating {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45vh;
+
+        @include mobile {
+            flex-direction: column;
+            height: auto;
+        }
+        
+        i {
+            color: $div-yellow;
+        }
+
+        .overall-score {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid #0D74B5;
+
+            @include mobile {
+                border-right: 0;
+                border-bottom: 1px solid #0D74B5;
+                width: 80%;
+                padding-bottom: 2vh;    
+                padding-top: 2vh;
+            }
+
+            h3 {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                width: 100%;
+                font-weight: 300;
+            }
+
+            .average-rating {
+                font-size: 6rem;
+                color: $font-blue;
+                margin-bottom: 0;
+            }
+
+            .average-stars {
+                i {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+
+        .individual-scores {
+            width: 45%;
+            height: 65%;
+
+            @include mobile {
+                width: 80%;
+                margin-top: 2vh;
+            }
+            
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                font-family: $roboto;
+                width: 80%;
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                li {
+                    list-style-type: none;
+                    color: $font-blue;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
     .sidebar-right {
         width: 25%;
         background: lightgray;
@@ -241,6 +331,8 @@
             order: 1;
             padding: 6%;
         }
+
+        
 
         h3 {
             color: $font-blue;
@@ -271,6 +363,21 @@
                 list-style-type: none;
                 margin-top: 1vh;
             }
+        }
+
+        .permitted-work {
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+
+            p {
+                margin: 0;
+                padding: 2%;
+                font-size: 2rem;
+                color: $font-blue;
+                font-family: $roboto;
+            }
+            
         }
     }
 }

@@ -138,6 +138,7 @@ function nexus_theme_scratch_scripts() {
 	wp_enqueue_script('ajax-call', get_template_directory_uri().'/build/js/ajax-call.min.js', array('jquery'), null, true);
 	wp_enqueue_script('general-js', get_template_directory_uri().'/build/js/general.min.js', array('jquery'), null, true);
 	wp_enqueue_script('form-js', get_template_directory_uri().'/build/js/form.min.js', array('jquery'), null, true);
+	wp_enqueue_script('rating-js', get_template_directory_uri().'/build/js/rating.min.js', array('jquery'), null, true);
 	wp_enqueue_script('ajax-pagination', get_template_directory_uri().'/build/js/ajax-pagination.min.js', array('jquery'), null, true);
 	wp_enqueue_script('parallax', 'https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js', array('jquery'), null, true);
 
@@ -162,6 +163,14 @@ function nexus_theme_scratch_scripts() {
 		'price8' => CFS()->get('price_8'),
 		'price12' => CFS()->get('price_12'),
 		'price24' => CFS()->get('price_24'),
+	));
+
+	wp_localize_script('rating-js', 'ratings_vars', array(
+		'expRating' => CFS()->get('exp_rating'),
+		'culRating' => CFS()->get('cul_rating'),
+		'jobRating' => CFS()->get('job_rating'),
+		'valRating' => CFS()->get('val_rating'),
+		'locRating' => CFS()->get('loc_rating')
 	));
 
 

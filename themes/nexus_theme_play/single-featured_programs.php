@@ -12,6 +12,9 @@ session_start();
 
 $featProgs = createTokenForm('featProgs');
 
+// <?php $aboutSchool = CFS()->get('about_school'); 
+//	<p><?php echo $aboutSchool; </p>
+
 
 ?>
 <!doctype html>
@@ -33,14 +36,16 @@ $featProgs = createTokenForm('featProgs');
 							<div class="featprogs-hero-parallax" data-parallax="scroll" data-image-src="<?php echo get_the_post_thumbnail_url(); ?>" ></div>
 							<div class="featprogs-hero-ovrly"></div>
 							<div class="featprogs-heading">
+							<div class="logos-box">
 								<img src="<?php echo get_template_directory_uri().'/assets/images/logo-nexus-white-and-color.png'; ?>" />
+								<img src="<?php echo CFS()->get('feat_school_logo'); ?>">
+							</div>
 							<?php while(have_posts()) : the_post(); ?>
 								
 								<?php the_title('<h1>', '</h1>'); ?>
-								<h2><?php echo CFS()->get('school_name'); ?></h2>	
 								<div class="promo-banner">
-									<p><?php _e("Get 50% Off Nexus Fee + $150 Discount on Additional Services", "Landing Pages"); ?></p>
-								</div>						
+									<p><?php _e("Get $300 CAD Off!", "Landing Pages"); ?></p>
+								</div>	
 							<?php endwhile; ?>
 							</div>
 							<div class="featprogs-form-container">
@@ -62,8 +67,23 @@ $featProgs = createTokenForm('featProgs');
 							<h3><?php _e('About the program', 'Landing Pages'); ?></h3>
 							<?php the_content('<p>', '</p>'); ?>
 							<h3><?php _e('About the school', 'Landing Pages'); ?></h3>
-							<?php $aboutSchool = CFS()->get('about_school'); ?>
-							<p><?php echo $aboutSchool; ?></p>
+							<div class="nexus-rating">
+								<div class="overall-score">
+									<h3><?php _e('Nexus Score', 'Landing Pages'); ?></h3>
+									<p class="average-rating"></p>
+									<div class="average-stars"></div>
+								</div>
+								<div class="individual-scores">
+									<ul>
+										<li><?php _e('Experience', 'Landing Pages'); ?>: <span class="exp-rating"></span></li>
+										<li><?php _e('Culturalism', 'Landing Pages'); ?>: <span class="cul-rating"></span></li>
+										<li><?php _e('Job Oportunities', 'Landing Pages'); ?>: <span class="job-rating"></span></li>
+										<li><?php _e('Value / Price', 'Landing Pages'); ?>: <span class="val-rating"></span></li>
+										<li><?php _e('Location', 'Landing Pages'); ?>: <span class="loc-rating"></span></li>
+									</ul>
+								</div>
+							</div>
+							
 							<?php $graphics = CFS()->get('graphic_supports'); ?> 
 							
 						<?php if($graphics) { ?>
@@ -81,7 +101,16 @@ $featProgs = createTokenForm('featProgs');
 						<a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('Chat with us!', 'Front-page'); ?></a>
 						</div>
 						<div class="sidebar-right">
-							<h3><i class="fas fa-money-check-alt"></i><?php _e('Fees', 'Landing Pages'); ?></h3>
+							<?php 
+								$work = CFS()->get('allow_work'); 
+
+							if($work == true) { ?>
+									<div class="permitted-work">										
+										<p><?php _e('Allowed to work', 'Landing Pages'); ?></p>
+									</div>					
+
+							<?php } ?>	
+							<h3><i class="fas fa-money-check-alt"></i><?php _e('Tuition Fee', 'Landing Pages'); ?></h3>
 							<p><?php echo CFS()->get('fees'); ?>**</p>
 							<?php $campus = CFS()->get('school_campus'); ?>
 							<h3><i class="fas fa-university"></i><?php _e('Campus', 'Landing Pages'); ?></h3>

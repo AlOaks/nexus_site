@@ -6048,34 +6048,39 @@ article {
             -ms-flex-align: center;
                 align-items: center;
         margin-top: 8vh; } }
-    .feat-progs-hero .featprogs-heading img {
-      width: 60%;
-      height: auto; }
+    .feat-progs-hero .featprogs-heading .logos-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 80%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .feat-progs-hero .featprogs-heading .logos-box img {
+        max-width: 50%;
+        width: auto;
+        max-height: 7rem; }
     .feat-progs-hero .featprogs-heading h1 {
-      font-size: 2rem;
+      font-size: 3rem;
       margin-bottom: 0; }
       @media (max-width: 705px) {
         .feat-progs-hero .featprogs-heading h1 {
           text-align: center; } }
-    .feat-progs-hero .featprogs-heading h2 {
-      margin-top: 0; }
-      @media (max-width: 705px) {
-        .feat-progs-hero .featprogs-heading h2 {
-          font-size: 1.2rem; } }
     .feat-progs-hero .featprogs-heading .promo-banner {
-      height: auto;
-      background: url("./assets/images/brushstroke.png");
-      background-size: contain;
-      background-repeat: no-repeat; }
+      height: auto; }
       .feat-progs-hero .featprogs-heading .promo-banner p {
         text-align: center;
         width: 85%;
         font-family: "Roboto";
-        padding: 5%;
+        padding: 2.5%;
         border-radius: 10px;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5rem; }
+        font-size: 3rem;
+        background: #bd2020; }
   .feat-progs-hero .featprogs-form-container {
     width: 30%;
     height: 80%; }
@@ -6197,6 +6202,96 @@ article {
         .featprogs-content-section .content-div a {
           width: 70%;
           margin-top: 1vh; } }
+  .featprogs-content-section .nexus-rating {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 45vh; }
+    @media (max-width: 705px) {
+      .featprogs-content-section .nexus-rating {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: auto; } }
+    .featprogs-content-section .nexus-rating i {
+      color: #ffb419; }
+    .featprogs-content-section .nexus-rating .overall-score {
+      width: 45%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-right: 1px solid #0D74B5; }
+      @media (max-width: 705px) {
+        .featprogs-content-section .nexus-rating .overall-score {
+          border-right: 0;
+          border-bottom: 1px solid #0D74B5;
+          width: 80%;
+          padding-bottom: 2vh;
+          padding-top: 2vh; } }
+      .featprogs-content-section .nexus-rating .overall-score h3 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        font-weight: 300; }
+      .featprogs-content-section .nexus-rating .overall-score .average-rating {
+        font-size: 6rem;
+        color: #193F5C;
+        margin-bottom: 0; }
+      .featprogs-content-section .nexus-rating .overall-score .average-stars i {
+        font-size: 2rem; }
+    .featprogs-content-section .nexus-rating .individual-scores {
+      width: 45%;
+      height: 65%; }
+      @media (max-width: 705px) {
+        .featprogs-content-section .nexus-rating .individual-scores {
+          width: 80%;
+          margin-top: 2vh; } }
+      .featprogs-content-section .nexus-rating .individual-scores ul {
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: 100%;
+        font-family: "Roboto";
+        width: 80%; }
+        @media (max-width: 705px) {
+          .featprogs-content-section .nexus-rating .individual-scores ul {
+            width: 100%; } }
+        .featprogs-content-section .nexus-rating .individual-scores ul li {
+          list-style-type: none;
+          color: #193F5C;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 100%;
+          font-weight: bold; }
   .featprogs-content-section .sidebar-right {
     width: 25%;
     background: lightgray;
@@ -6230,6 +6325,16 @@ article {
         font-family: "Open Sans";
         list-style-type: none;
         margin-top: 1vh; }
+    .featprogs-content-section .sidebar-right .permitted-work {
+      border-radius: 10px;
+      width: 100%;
+      text-align: center; }
+      .featprogs-content-section .sidebar-right .permitted-work p {
+        margin: 0;
+        padding: 2%;
+        font-size: 2rem;
+        color: #193F5C;
+        font-family: "Roboto"; }
 
 .review-container-featured {
   height: 50vh;
