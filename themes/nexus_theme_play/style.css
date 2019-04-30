@@ -6883,7 +6883,7 @@ article {
               align-items: center;
       width: auto;
       height: auto;
-      padding: 4%;
+      padding: 5%;
       border-radius: 10px;
       margin-top: -5vh;
       z-index: 10;
@@ -7158,7 +7158,14 @@ article {
   .column-amenities h4 i, .column-nation h4 i, .column-awards h4 i {
     margin-right: 2%; }
   .column-amenities li, .column-nation li, .column-awards li {
-    list-style-type: none; }
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2%; }
     .column-amenities li i, .column-nation li i, .column-awards li i {
       margin-right: 2%; }
 
@@ -7168,7 +7175,7 @@ article {
   .column-amenities ul li {
     list-style-type: none; }
     .column-amenities ul li img {
-      height: 1rem;
+      height: 2rem;
       width: auto;
       margin-right: 2%; }
 
