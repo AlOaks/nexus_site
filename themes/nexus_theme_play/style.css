@@ -7141,7 +7141,8 @@ article {
         margin-top: 3%; }
 
 .column-amenities, .column-nation, .column-awards {
-  width: 30%; }
+  width: 30%;
+  color: #193F5C; }
   .column-amenities h3, .column-nation h3, .column-awards h3 {
     font-family: "Roboto";
     text-align: center;
