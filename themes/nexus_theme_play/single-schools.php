@@ -118,7 +118,7 @@ get_header();
                         </ul>
                     </div>
                     <div class="column-nation">
-                        <h3><?php _e('Nationalitiy Mix', 'School Pages'); ?></h3>
+                        <h3><?php _e('Nationality Mix', 'School Pages'); ?></h3>
                         <canvas id="chart"></canvas>
                     </div>
                     <div class="column-awards">
