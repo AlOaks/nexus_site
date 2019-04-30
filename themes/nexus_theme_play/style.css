@@ -6827,6 +6827,9 @@ article {
   padding: 2% 0%;
   height: 70vh;
   padding-top: 0; }
+  @media (max-width: 705px) {
+    .school-promo-hero {
+      height: 50vh; } }
   .school-promo-hero .school-page-hero-parallax {
     position: absolute;
     top: 0;
@@ -6893,7 +6896,7 @@ article {
       max-height: 20vh; }
       @media (max-width: 705px) {
         .school-promo-hero .school-page-heading img {
-          width: 50%;
+          max-width: 70vw;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; } }
@@ -6914,9 +6917,20 @@ article {
   .school-desc-section .school-vid {
     width: 45%;
     height: auto; }
+    @media (max-width: 705px) {
+      .school-desc-section .school-vid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
     .school-desc-section .school-vid iframe {
       width: 100%;
       height: 45vh; }
+      @media (max-width: 705px) {
+        .school-desc-section .school-vid iframe {
+          width: 90%;
+          height: 30vh;
+          margin-left: auto;
+          margin-right: auto; } }
     @media (max-width: 705px) {
       .school-desc-section .school-vid {
         width: 100%;
@@ -6946,6 +6960,10 @@ article {
       -ms-flex-align: center;
           align-items: center;
   padding: 1%; }
+  @media (max-width: 705px) {
+    .chat-with-us-div {
+      padding-top: 2%;
+      padding-bottom: 2%; } }
   .chat-with-us-div a {
     color: white;
     background: #f66f00;
@@ -6964,6 +6982,9 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 705px) {
+    .nexus-rating-school-month {
+      padding-bottom: 8%; } }
   .nexus-rating-school-month .nexus-rating-school {
     width: 90%;
     display: -webkit-box;
@@ -7071,10 +7092,22 @@ article {
       align-self: flex-start;
   width: 90%;
   margin: 3% auto; }
+  @media (max-width: 705px) {
+    .columns-school {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .columns-school .column-details, .columns-school .column-areas, .columns-school .column-outcomes {
     width: 30%;
     color: #193F5C;
     font-family: "Open Sans"; }
+    @media (max-width: 705px) {
+      .columns-school .column-details, .columns-school .column-areas, .columns-school .column-outcomes {
+        width: 80%; } }
     .columns-school .column-details h3, .columns-school .column-areas h3, .columns-school .column-outcomes h3 {
       font-family: "Roboto";
       text-align: center;
@@ -7099,6 +7132,9 @@ article {
     padding: 0 2%;
     border-top: none;
     border-bottom: none; }
+    @media (max-width: 705px) {
+      .columns-school .column-areas {
+        border: none; } }
     .columns-school .column-areas ul {
       margin-left: 0;
       padding-left: 0; }
@@ -7143,6 +7179,9 @@ article {
 .column-amenities, .column-nation, .column-awards {
   width: 30%;
   color: #193F5C; }
+  @media (max-width: 705px) {
+    .column-amenities, .column-nation, .column-awards {
+      width: 80%; } }
   .column-amenities h3, .column-nation h3, .column-awards h3 {
     font-family: "Roboto";
     text-align: center;
