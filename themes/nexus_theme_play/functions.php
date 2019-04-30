@@ -139,8 +139,10 @@ function nexus_theme_scratch_scripts() {
 	wp_enqueue_script('general-js', get_template_directory_uri().'/build/js/general.min.js', array('jquery'), null, true);
 	wp_enqueue_script('form-js', get_template_directory_uri().'/build/js/form.min.js', array('jquery'), null, true);
 	wp_enqueue_script('rating-js', get_template_directory_uri().'/build/js/rating.min.js', array('jquery'), null, true);
+	wp_enqueue_script('pie-js', get_template_directory_uri().'/build/js/pie.min.js', array('jquery', 'chart'), null, true);
 	wp_enqueue_script('ajax-pagination', get_template_directory_uri().'/build/js/ajax-pagination.min.js', array('jquery'), null, true);
 	wp_enqueue_script('parallax', 'https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js', array('jquery'), null, true);
+	wp_enqueue_script('chart', 'https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js', array('jquery'), null, true);
 
 	
 	wp_enqueue_style( 'nexus_theme_scratch-style', get_stylesheet_uri() );	
@@ -165,14 +167,33 @@ function nexus_theme_scratch_scripts() {
 		'price24' => CFS()->get('price_24'),
 	));
 
-	wp_localize_script('rating-js', 'ratings_vars', array(
-		'expRating' => CFS()->get('exp_rating'),
-		'culRating' => CFS()->get('cul_rating'),
-		'jobRating' => CFS()->get('job_rating'),
-		'valRating' => CFS()->get('val_rating'),
-		'locRating' => CFS()->get('loc_rating')
+	wp_localize_script('rating-js', 'ratings_esl', array(
+		'natMix' => CFS()->get('mix_rating'),
+		'acaQuality' => CFS()->get('qua_rating'),
+		'offCampus' => CFS()->get('act_rating'),
+		'eleClasses' => CFS()->get('cla_rating'),
+		'pathOptions' => CFS()->get('pat_rating')
 	));
 
+	wp_localize_script('rating-js', 'ratings_pub', array(
+		'pubNatMix' => CFS()->get('pub_mix_rating'),
+		'valPrice' => CFS()->get('val_rating'),
+		'carService' => CFS()->get('car_rating'),
+		'creditTransfer' => CFS()->get('cre_rating'),
+		'indRep' => CFS()->get('rep_rating')
+	));
+
+	wp_localize_script('rating-js', 'ratings_pri', array(
+		'privNatMix' => CFS()->get('priv_mix_rating'),
+		'jobPlace' => CFS()->get('job_rating'),
+		'priValPrice' => CFS()->get('priv_val_rating'),
+		'privCarService' => CFS()->get('priv_car_rating'),
+		'flexClasses' => CFS()->get('flex_rating')
+	));
+
+	wp_localize_script('pie-js', 'pie_vars', array(
+		'nationalities_array' => CFS()->get('nationalities')
+	));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
