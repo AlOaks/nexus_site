@@ -126,7 +126,7 @@ get_header();
                         <?php $awards = CFS()->get('awards'); ?>
                         <ul>
                             <?php foreach($awards as $award) : ?>
-                            <li><img src="<?php echo $award['award']; ?>" alt="award"></li>
+                            <li><img src=<?php echo $award['award']; ?> alt="award"></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>

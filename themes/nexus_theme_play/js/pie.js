@@ -23,8 +23,7 @@
     var nationsNum = getFieldsNum(nationalities, "nation_percent");
     var nations = getFields(nationalities, "nationality");
 
-    console.log(nationsNum);
-    console.log(nations);
+    
 
     data = {
         labels: nations,
