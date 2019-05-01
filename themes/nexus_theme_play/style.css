@@ -6081,6 +6081,10 @@ article {
         font-weight: bold;
         font-size: 3rem;
         background: #bd2020; }
+        @media (max-width: 705px) {
+          .feat-progs-hero .featprogs-heading .promo-banner p {
+            width: 100%;
+            font-size: 2rem; } }
   .feat-progs-hero .featprogs-form-container {
     width: 30%;
     height: 80%; }
