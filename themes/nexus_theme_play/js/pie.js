@@ -138,7 +138,7 @@
                     'rgb(255, 255, 255)'
                 ],
                 borderWidth: 0,
-                label: 'Avg Salary Canada'
+                label: 'Avg Salary Canada / year'
             }]
         };
 
