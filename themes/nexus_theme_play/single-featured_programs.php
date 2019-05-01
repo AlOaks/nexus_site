@@ -19,7 +19,6 @@ $featProgs = createTokenForm('featProgs');
 
 $school = CFS()->get('school_name');
 
-console($school);
 
 $args = array(
 	'post_type' => 'schools',
@@ -33,7 +32,6 @@ while($schoolRating->have_posts()) : $schoolRating->the_post();
 
 endwhile;
 
-console($schoolType);
 ?>
 
 <!doctype html>
