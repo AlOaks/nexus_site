@@ -77,11 +77,14 @@
     // SALARIES CHARTS
     var salaries = pie_vars.salary_array;
 
+    
+
 
     if(salaries) {
 
         var areasNames = getFields(createArray(salaries, "area_name"), "area_name");
         var areasSalaries = getFieldsNum(createArray(salaries, "area_avg_salary"), "area_avg_salary");
+
 
 
         var dataSalary = {
@@ -98,7 +101,6 @@
                     'rgb(255, 255, 255)'
                 ],
                 borderWidth: 0,
-                label: 'Avg Salary in Canada / year'
             }]
         };
 
@@ -108,6 +110,23 @@
             type: 'horizontalBar',
             data: dataSalary,
             options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            stepSize: 20000,
+                            beginAtZero: true
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'CAD / year'
+                        }
+                    }],
+                    
+                }
+                
             }
         });
 
@@ -138,7 +157,6 @@
                     'rgb(255, 255, 255)'
                 ],
                 borderWidth: 0,
-                label: 'Avg Salary Canada / year'
             }]
         };
 
@@ -148,6 +166,23 @@
             type: 'horizontalBar',
             data: dataSalary,
             options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            stepSize: 20000,
+                            beginAtZero: true
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'CAD / year'
+                        }
+                    }],
+                    
+                }
+                
             }
         });
     }
