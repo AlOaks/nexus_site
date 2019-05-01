@@ -27,10 +27,6 @@ while($schoolRating->have_posts()) : $schoolRating->the_post();
 
 
 	$schoolType = get_the_terms(get_the_ID(), 'school_type')[0]->slug;
-	// console($schoolType);
-
-
-	$natMix = CFS()->get('mix_rating');
 
 endwhile;
 
@@ -104,7 +100,7 @@ console($schoolType);
 									<p class="average-priv-rating-lp average-rating-number"></p>
 									<div class="average-priv-stars-lp"></div>
 
-									<?php } else { ?>
+									<?php } else if($schoolType == 'higher-education'){ ?>
 
 									<p class="average-pub-rating-lp average-rating-number"></p>
 									<div class="average-pub-stars-lp"></div>
@@ -129,7 +125,7 @@ console($schoolType);
 											<li><?php _e('Job Placement', 'School Pages'); ?>: <span class="job-rating-lp"></span></li>
 											<li><?php _e('Schedule Flexibility', 'School Pages'); ?>: <span class="flex-rating-lp"></span></li>
 
-									<?php } else { ?>
+									<?php } else if($schoolType == 'higher-education') { ?>
 
 											<li><?php _e('Nationality Mix', 'School Pages'); ?>: <span class="pub-nat-rating-lp"></span></li>
 											<li><?php _e('Career Services', 'School Pages'); ?>: <span class="pub-car-rating-lp"></span></li>

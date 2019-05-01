@@ -194,11 +194,6 @@ function nexus_theme_scratch_scripts() {
 		'salary_array' => CFS()->get('salaries'),
 		'salary_pub' => CFS()->get('salaries_pub')
 	));
-
-	// wp_localize_script('pie-js', 'salary_vars',	array(
-	// 	'salary_array' => CFS()->get('salaries'),
-	// ));
-
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
