@@ -200,6 +200,7 @@ console($schoolType);
 				</main>
 			</div><!-- #primary -->
 			<section class="review-container-featured">
+				<div class="footer-lp-ovrly"></div>
 				<img class="footer-bkg" src=<?php echo get_template_directory_uri().'/assets/images/hero-img.jpg'; ?>>
 				<img class="foto-review" src=<?php echo get_template_directory_uri().'/assets/images/foto-review.png'; ?> >
 				<div class="review-month-container">

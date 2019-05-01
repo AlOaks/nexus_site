@@ -190,14 +190,21 @@ function nexus_theme_scratch_scripts() {
 	));
 
 	wp_localize_script('pie-js', 'pie_vars', array(
-		'nationalities_array' => CFS()->get('nationalities')
+		'nationalities_array' => CFS()->get('nationalities'),
+		'salary_array' => CFS()->get('salaries'),
 	));
 
+	// wp_localize_script('pie-js', 'salary_vars',	array(
+	// 	'salary_array' => CFS()->get('salaries'),
+	// ));
+
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'nexus_theme_scratch_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
