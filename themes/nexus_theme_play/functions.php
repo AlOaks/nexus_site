@@ -192,6 +192,7 @@ function nexus_theme_scratch_scripts() {
 	wp_localize_script('pie-js', 'pie_vars', array(
 		'nationalities_array' => CFS()->get('nationalities'),
 		'salary_array' => CFS()->get('salaries'),
+		'salary_pub' => CFS()->get('salaries_pub')
 	));
 
 	// wp_localize_script('pie-js', 'salary_vars',	array(
