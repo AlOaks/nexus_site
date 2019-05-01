@@ -57,12 +57,12 @@
 
         .logos-box {
             display: flex;
-            width: 80%;
+            width: 85%;
             justify-content: space-between;
             align-items: center;
 
             img {
-                max-width: 50%;
+                max-width: 45%;
                 width: auto;
                 max-height: 7rem;
             }
@@ -293,6 +293,7 @@
 
             @include mobile {
                 width: 80%;
+                height: auto;
                 margin-top: 2vh;
             }
             
@@ -307,7 +308,9 @@
                 width: 80%;
 
                 @include mobile {
+                    justify-content: flex-start;
                     width: 100%;
+                    height: auto;
                 }
 
                 li {
@@ -317,6 +320,7 @@
                     justify-content: space-between;
                     width: 100%;
                     font-weight: bold;
+                    margin-bottom: 5%;
                 }
             }
         }

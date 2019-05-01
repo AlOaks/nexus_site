@@ -6052,7 +6052,7 @@ article {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 80%;
+      width: 85%;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
@@ -6060,7 +6060,7 @@ article {
           -ms-flex-align: center;
               align-items: center; }
       .feat-progs-hero .featprogs-heading .logos-box img {
-        max-width: 50%;
+        max-width: 45%;
         width: auto;
         max-height: 7rem; }
     .feat-progs-hero .featprogs-heading h1 {
@@ -6263,6 +6263,7 @@ article {
       @media (max-width: 705px) {
         .featprogs-content-section .nexus-rating-school-lp .individual-scores {
           width: 80%;
+          height: auto;
           margin-top: 2vh; } }
       .featprogs-content-section .nexus-rating-school-lp .individual-scores ul {
         margin: 0;
@@ -6282,7 +6283,11 @@ article {
         width: 80%; }
         @media (max-width: 705px) {
           .featprogs-content-section .nexus-rating-school-lp .individual-scores ul {
-            width: 100%; } }
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            width: 100%;
+            height: auto; } }
         .featprogs-content-section .nexus-rating-school-lp .individual-scores ul li {
           list-style-type: none;
           color: #193F5C;
@@ -6293,7 +6298,8 @@ article {
               -ms-flex-pack: justify;
                   justify-content: space-between;
           width: 100%;
-          font-weight: bold; }
+          font-weight: bold;
+          margin-bottom: 5%; }
   .featprogs-content-section .sidebar-right {
     width: 25%;
     background: lightgray;
