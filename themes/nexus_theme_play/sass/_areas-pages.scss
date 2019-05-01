@@ -54,7 +54,7 @@
     }
 
     .school-of-month-div {
-        background: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, .7);
         width: 30%;
         padding: 2%;
         height: 70%;
@@ -69,11 +69,14 @@
         }
 
         h2 {
-            color: white;
+            // color: white;
             font-size: 2rem;
             font-family: $roboto;
-            font-weight: 300;
+            // font-weight: 300;
             margin: 0;
+            text-align: center;
+            color: $div-red;
+            font-weight: bold;
         }
 
         img {
@@ -83,7 +86,7 @@
             max-height: 50%;
 
             @include mobile {
-                width: 40%;
+                width: 80%;
                 margin-bottom: 5%;
             }
         }

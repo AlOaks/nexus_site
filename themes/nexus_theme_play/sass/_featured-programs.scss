@@ -230,7 +230,11 @@
         
     }
 
-    .nexus-rating {
+    .nexus-rating-school-month-lp {
+        width: 100%;
+    }
+
+    .nexus-rating-school-lp {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -269,7 +273,7 @@
                 font-weight: 300;
             }
 
-            .average-rating {
+            .average-rating-number {
                 font-size: 6rem;
                 color: $font-blue;
                 margin-bottom: 0;

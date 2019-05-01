@@ -55,8 +55,17 @@
     $('.cla-rating').html(getRating(eleClasses));
     $('.pat-rating').html(getRating(pathOptions));
 
+    $('.nat-rating-lp').html(getRating(natMix));
+    $('.qua-rating-lp').html(getRating(acaQuality));
+    $('.off-rating-lp').html(getRating(offCampus));
+    $('.cla-rating-lp').html(getRating(eleClasses));
+    $('.pat-rating-lp').html(getRating(pathOptions));
+
     $('.average-rating').html(getAverageRating(natMix, acaQuality, offCampus, eleClasses, pathOptions));
     $('.average-stars').html(getRating(averageRating));
+
+    $('.average-rating-lp').html(getAverageRating(natMix, acaQuality, offCampus, eleClasses, pathOptions));
+    $('.average-stars-lp').html(getRating(averageRating));
 
 
     // PUBLIC
@@ -75,8 +84,17 @@
     $('.rep-rating').html(getRating(indRep));
     $('.transfer-rating').html(getRating(creditTransfer));
 
+    $('.pub-nat-rating-lp').html(getRating(pubNat));
+    $('.pub-car-rating-lp').html(getRating(carService));
+    $('.pub-val-rating-lp').html(getRating(valPrice));
+    $('.rep-rating-lp').html(getRating(indRep));
+    $('.transfer-rating-lp').html(getRating(creditTransfer));
+
     $('.average-pub-rating').html(getAverageRating(pubNat, carService, valPrice, indRep, creditTransfer));
     $('.average-pub-stars').html(getRating(averagePubRating));
+
+    $('.average-pub-rating-lp').html(getAverageRating(pubNat, carService, valPrice, indRep, creditTransfer));
+    $('.average-pub-stars-lp').html(getRating(averagePubRating));
 
 
     // PRIVATE
@@ -95,8 +113,22 @@
     $('.job-rating').html(getRating(jobPlace));
     $('.flex-rating').html(getRating(flexClass));
 
+    $('.priv-nat-rating-lp').html(getRating(privNat));
+    $('.priv-car-rating-lp').html(getRating(privCarService));
+    $('.priv-val-rating-lp').html(getRating(priValPrice));
+    $('.job-rating-lp').html(getRating(jobPlace));
+    $('.flex-rating-lp').html(getRating(flexClass));
+
+
     $('.average-priv-rating').html(getAverageRating(privNat, privCarService, priValPrice, jobPlace, flexClass));
     $('.average-priv-stars').html(getRating(averagePrivRating));
+
+    $('.average-priv-rating-lp').html(getAverageRating(privNat, privCarService, priValPrice, jobPlace, flexClass));
+    $('.average-priv-stars-lp').html(getRating(averagePrivRating));
+
+    
+
+
 
 
 })( jQuery );

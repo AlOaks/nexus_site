@@ -6202,7 +6202,9 @@ article {
         .featprogs-content-section .content-div a {
           width: 70%;
           margin-top: 1vh; } }
-  .featprogs-content-section .nexus-rating {
+  .featprogs-content-section .nexus-rating-school-month-lp {
+    width: 100%; }
+  .featprogs-content-section .nexus-rating-school-lp {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6215,15 +6217,15 @@ article {
             align-items: center;
     height: 45vh; }
     @media (max-width: 705px) {
-      .featprogs-content-section .nexus-rating {
+      .featprogs-content-section .nexus-rating-school-lp {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         height: auto; } }
-    .featprogs-content-section .nexus-rating i {
+    .featprogs-content-section .nexus-rating-school-lp i {
       color: #ffb419; }
-    .featprogs-content-section .nexus-rating .overall-score {
+    .featprogs-content-section .nexus-rating-school-lp .overall-score {
       width: 45%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -6237,32 +6239,32 @@ article {
               align-items: center;
       border-right: 1px solid #0D74B5; }
       @media (max-width: 705px) {
-        .featprogs-content-section .nexus-rating .overall-score {
+        .featprogs-content-section .nexus-rating-school-lp .overall-score {
           border-right: 0;
           border-bottom: 1px solid #0D74B5;
           width: 80%;
           padding-bottom: 2vh;
           padding-top: 2vh; } }
-      .featprogs-content-section .nexus-rating .overall-score h3 {
+      .featprogs-content-section .nexus-rating-school-lp .overall-score h3 {
         padding: 0;
         margin: 0;
         text-align: center;
         width: 100%;
         font-weight: 300; }
-      .featprogs-content-section .nexus-rating .overall-score .average-rating {
+      .featprogs-content-section .nexus-rating-school-lp .overall-score .average-rating-number {
         font-size: 6rem;
         color: #193F5C;
         margin-bottom: 0; }
-      .featprogs-content-section .nexus-rating .overall-score .average-stars i {
+      .featprogs-content-section .nexus-rating-school-lp .overall-score .average-stars i {
         font-size: 2rem; }
-    .featprogs-content-section .nexus-rating .individual-scores {
+    .featprogs-content-section .nexus-rating-school-lp .individual-scores {
       width: 45%;
       height: 65%; }
       @media (max-width: 705px) {
-        .featprogs-content-section .nexus-rating .individual-scores {
+        .featprogs-content-section .nexus-rating-school-lp .individual-scores {
           width: 80%;
           margin-top: 2vh; } }
-      .featprogs-content-section .nexus-rating .individual-scores ul {
+      .featprogs-content-section .nexus-rating-school-lp .individual-scores ul {
         margin: 0;
         padding: 0;
         display: -webkit-box;
@@ -6279,9 +6281,9 @@ article {
         font-family: "Roboto";
         width: 80%; }
         @media (max-width: 705px) {
-          .featprogs-content-section .nexus-rating .individual-scores ul {
+          .featprogs-content-section .nexus-rating-school-lp .individual-scores ul {
             width: 100%; } }
-        .featprogs-content-section .nexus-rating .individual-scores ul li {
+        .featprogs-content-section .nexus-rating-school-lp .individual-scores ul li {
           list-style-type: none;
           color: #193F5C;
           display: -webkit-box;
@@ -7572,7 +7574,7 @@ article {
       font-family: "Roboto";
       font-weight: 300; }
   .area-page-hero .school-of-month-div {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     width: 30%;
     padding: 2%;
     height: 70%;
@@ -7593,11 +7595,12 @@ article {
       .area-page-hero .school-of-month-div {
         width: 80%; } }
     .area-page-hero .school-of-month-div h2 {
-      color: white;
       font-size: 2rem;
       font-family: "Roboto";
-      font-weight: 300;
-      margin: 0; }
+      margin: 0;
+      text-align: center;
+      color: #bd2020;
+      font-weight: bold; }
     .area-page-hero .school-of-month-div img {
       max-width: 80%;
       min-width: 40%;
@@ -7605,7 +7608,7 @@ article {
       max-height: 50%; }
       @media (max-width: 705px) {
         .area-page-hero .school-of-month-div img {
-          width: 40%;
+          width: 80%;
           margin-bottom: 5%; } }
     .area-page-hero .school-of-month-div a {
       background: #bd2020;

@@ -31,7 +31,6 @@ get_header();
                     </div>
                 </div>
 
-                
                 <section class="school-desc-section">
                     <?php $schoolVid = CFS()->get('school_video'); ?>
                     <div class="school-vid">
@@ -52,7 +51,7 @@ get_header();
                 <section class="nexus-rating-school-month">
                     <div class="nexus-rating-school">
                         <div class="overall-score">
-                            <h3><?php _e('Nexus Score', 'School Pages'); ?></h3>
+                            <h3><?php _e('Overall Score', 'School Pages'); ?></h3>
                             <?php if($schoolType == 'esl') { ?>
 
                                 <p class="average-rating average-rating-number"></p>
@@ -77,7 +76,7 @@ get_header();
                                 
                                     <li><?php _e('Nationality Mix', 'School Pages'); ?>: <span class="nat-rating"></span></li>
                                     <li><?php _e('Academic Quality', 'School Pages'); ?>: <span class="qua-rating"></span></li>
-                                    <li><?php _e('Off Campus Activities', 'School Pages'); ?>: <span class="off-rating"></span></li>
+                                    <li><?php _e('Activities', 'School Pages'); ?>: <span class="off-rating"></span></li>
                                     <li><?php _e('Elective Classes', 'School Pages'); ?>: <span class="cla-rating"></span></li>
                                     <li><?php _e('Pathway Options', 'School Pages'); ?>: <span class="pat-rating"></span></li>
                                 
@@ -118,7 +117,7 @@ get_header();
                         </ul>
                     </div>
                     <div class="column-nation">
-                        <h3><?php _e('Nationality Mix', 'School Pages'); ?></h3>
+                        <h3><?php _e('Top 6 Countries', 'School Pages'); ?></h3>
                         <canvas id="chart"></canvas>
                     </div>
                     <div class="column-awards">

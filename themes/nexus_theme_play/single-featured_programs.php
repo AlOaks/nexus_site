@@ -16,7 +16,28 @@ $featProgs = createTokenForm('featProgs');
 //	<p><?php echo $aboutSchool; </p>
 
 
+
+$school = CFS()->get('school_name');
+$args = array(
+	'post_type' => 'schools',
+	's' => $school
+);
+$schoolRating = new WP_query($args);
+while($schoolRating->have_posts()) : $schoolRating->the_post();	
+
+
+	$schoolType = get_the_terms(get_the_ID(), 'school_type')[0]->slug;
+	// console($schoolType);
+
+
+	$natMix = CFS()->get('mix_rating');
+
+endwhile;
+
+console($schoolType);
+
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -67,23 +88,61 @@ $featProgs = createTokenForm('featProgs');
 							<h3><?php _e('About the program', 'Landing Pages'); ?></h3>
 							<?php the_content('<p>', '</p>'); ?>
 							<h3><?php _e('About the school', 'Landing Pages'); ?></h3>
-							<div class="nexus-rating">
+							<div class="nexus-rating-school-month-lp">
+								<div class="nexus-rating-school-lp">
+
+							
 								<div class="overall-score">
-									<h3><?php _e('Nexus Score', 'Landing Pages'); ?></h3>
-									<p class="average-rating"></p>
-									<div class="average-stars"></div>
+									<h3><?php _e('Overall Score', 'School Pages'); ?></h3>
+									<?php if($schoolType == 'esl') { ?>
+
+									<p class="average-rating-lp average-rating-number"></p>
+									<div class="average-stars-lp"></div>
+
+									<?php } else if($schoolType == 'work-n-study') { ?>
+
+									<p class="average-priv-rating-lp average-rating-number"></p>
+									<div class="average-priv-stars-lp"></div>
+
+									<?php } else { ?>
+
+									<p class="average-pub-rating-lp average-rating-number"></p>
+									<div class="average-pub-stars-lp"></div>
+
+									<?php } ?>
 								</div>
 								<div class="individual-scores">
 									<ul>
-										<li><?php _e('Experience', 'Landing Pages'); ?>: <span class="exp-rating"></span></li>
-										<li><?php _e('Culturalism', 'Landing Pages'); ?>: <span class="cul-rating"></span></li>
-										<li><?php _e('Job Oportunities', 'Landing Pages'); ?>: <span class="job-rating"></span></li>
-										<li><?php _e('Value / Price', 'Landing Pages'); ?>: <span class="val-rating"></span></li>
-										<li><?php _e('Location', 'Landing Pages'); ?>: <span class="loc-rating"></span></li>
+									<?php if($schoolType == 'esl') { ?>
+										
+											<li><?php _e('Nationality Mix', 'School Pages'); ?>: <span class="nat-rating-lp"></span></li>
+											<li><?php _e('Academic Quality', 'School Pages'); ?>: <span class="qua-rating-lp"></span></li>
+											<li><?php _e('Activities', 'School Pages'); ?>: <span class="off-rating-lp"></span></li>
+											<li><?php _e('Elective Classes', 'School Pages'); ?>: <span class="cla-rating-lp"></span></li>
+											<li><?php _e('Pathway Options', 'School Pages'); ?>: <span class="pat-rating-lp"></span></li>
+										
+									<?php } else if($schoolType == 'work-n-study') { ?>
+
+											<li><?php _e('Nationality Mix', 'School Pages'); ?>: <span class="priv-nat-rating-lp"></span></li>
+											<li><?php _e('Career Services', 'School Pages'); ?>: <span class="priv-car-rating-lp"></span></li>
+											<li><?php _e('Value / Price', 'School Pages'); ?>: <span class="priv-val-rating-lp"></span></li>
+											<li><?php _e('Job Placement', 'School Pages'); ?>: <span class="job-rating-lp"></span></li>
+											<li><?php _e('Schedule Flexibility', 'School Pages'); ?>: <span class="flex-rating-lp"></span></li>
+
+									<?php } else { ?>
+
+											<li><?php _e('Nationality Mix', 'School Pages'); ?>: <span class="pub-nat-rating-lp"></span></li>
+											<li><?php _e('Career Services', 'School Pages'); ?>: <span class="pub-car-rating-lp"></span></li>
+											<li><?php _e('Value / Price', 'School Pages'); ?>: <span class="pub-val-rating-lp"></span></li>
+											<li><?php _e('Industry Reputation', 'School Pages'); ?>: <span class="rep-rating-lp"></span></li>
+											<li><?php _e('Credit Transferability', 'School Pages'); ?>: <span class="transfer-rating-lp"></span></li>
+
+									<?php } ?>
 									</ul>
 								</div>
 							</div>
-							
+
+							</div>
 							<?php $graphics = CFS()->get('graphic_supports'); ?> 
 							
 						<?php if($graphics) { ?>
