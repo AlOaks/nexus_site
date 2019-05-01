@@ -7139,6 +7139,8 @@ article {
       list-style-type: none; }
       .columns-school .column-details li i, .columns-school .column-areas li i, .columns-school .column-outcomes li i {
         margin-right: 2%; }
+    .columns-school .column-details .details-li li, .columns-school .column-areas .details-li li, .columns-school .column-outcomes .details-li li {
+      list-style-type: disc; }
   .columns-school .column-areas {
     border: 1px solid blue;
     padding: 0 2%;
@@ -7148,8 +7150,7 @@ article {
       .columns-school .column-areas {
         border: none; } }
     .columns-school .column-areas ul {
-      margin-left: 0;
-      padding-left: 0; }
+      margin-left: 0; }
       .columns-school .column-areas ul li {
         margin-bottom: 5%; }
   .columns-school .column-outcomes ul {

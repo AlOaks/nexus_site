@@ -44,7 +44,6 @@
         var nationsNum = getFieldsNum(nationalities, "nation_percent");
         var nations = getFields(nationalities, "nationality");
 
-        console.log(nationalities);
 
         data = {
             labels: nations,
@@ -84,7 +83,6 @@
         var areasNames = getFields(createArray(salaries, "area_name"), "area_name");
         var areasSalaries = getFieldsNum(createArray(salaries, "area_avg_salary"), "area_avg_salary");
 
-        console.log(areasNames);
 
         var dataSalary = {
             labels: areasNames,
@@ -125,7 +123,6 @@
         var areasNames = getFields(createArray(salariesPub, "area_name"), "area_name");
         var areasSalaries = getFieldsNum(createArray(salariesPub, "area_avg_salary"), "area_avg_salary");
 
-        console.log(areasNames);
 
         var dataSalary = {
             labels: areasNames,

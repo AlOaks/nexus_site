@@ -137,7 +137,7 @@ get_header();
                         <div class="details-lists">
                             <h4><i class="fas fa-map-marker-alt"></i><?php _e('Locations', 'School Pages'); ?></h4>
                             <?php $locations = CFS()->get('school_locations'); ?>
-                            <ul>
+                            <ul class="details-li">
                                 <?php foreach($locations as $loc) {
                                     echo '<li>'.$loc['school_location'].'</li>';
                                 } ?>
@@ -146,7 +146,7 @@ get_header();
                         <div class="details-lists">
                             <h4><i class="fas fa-tasks"></i><?php _e('Requirements', 'School Pages'); ?></h4>
                             <?php $requirements = CFS()->get('school_require'); ?>
-                            <ul>
+                            <ul class="details-li">
                                 <?php foreach($requirements as $req) {
                                     echo '<li>'.$req['school_req'].'</li>';
                                 } ?>
@@ -155,9 +155,9 @@ get_header();
                         <div class="details-lists">
                             <h4><i class="fas fa-calendar"></i><?php _e('Start Dates', 'School Pages'); ?></h4>
                             <?php $dates = CFS()->get('start_dates_school'); ?>
-                            <ul>
+                            <ul class="details-li">
                                 <?php foreach($dates as $dat) {
-                                    echo '<li>'.date( 'F j, Y', strtotime($dat['start_date'])).'</li>';
+                                    echo '<li>'.$dat['start_date'].'</li>';
                                 } ?>
                             </ul>
                         </div>
@@ -165,7 +165,7 @@ get_header();
                     <div class="column-areas">
                         <h3><?php _e('Areas of Study', 'School Pages'); ?></h3>
                         <?php $areas = CFS()->get('school_fields'); ?>
-                        <ul>
+                        <ul class="details-li">
                             <?php foreach($areas as $area) {
                                 echo '<li>'.$area['school_field'].'</li>'; 
                             } ?>

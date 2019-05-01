@@ -301,14 +301,23 @@
                margin-right: 2%;
            }
        }
+
        
        li {
-           list-style-type: none;
+           list-style-type: none; 
 
            i {
                margin-right: 2%;
            }
        }
+
+       .details-li {
+        li {
+            list-style-type: disc;   
+        }
+    }
+
+       
    }
 
    .column-areas {
@@ -323,7 +332,6 @@
 
        ul {
             margin-left: 0;
-            padding-left: 0;
 
             li {
                 margin-bottom: 5%;
@@ -386,6 +394,8 @@
         }   
     }
 }
+
+
 
 
 // ESL
