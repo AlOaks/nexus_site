@@ -56,7 +56,7 @@
 					'menu_id'        => 'primary-menu',
 				) );
 				?>
-			</nav><!-- #site-navigation -->
+			</nav> 
 		</section>
 
 	</header><!-- #masthead -->

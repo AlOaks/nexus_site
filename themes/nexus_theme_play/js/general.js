@@ -50,6 +50,10 @@
         $(this).children('.sub-menu').toogle();
     });
 
+    $('#menu-item-2064').click(function() {
+        $(this).children('.sub-menu').toogle();
+    });
+
     /* SLIDERS */
 
 
