@@ -24,6 +24,7 @@ use \DrewM\MailChimp\MailChimp;
 $mailC = new MailChimp('c5d0f074ef62e6395640869899d38579-us8');
 $listID = 'b7f483ccf1';
 
+
 if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on

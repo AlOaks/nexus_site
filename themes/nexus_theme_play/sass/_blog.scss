@@ -30,14 +30,13 @@
     //     display: none;
     // }
 
-    @include mobile {
-        height: 30vh;
-    }
-
     @include tablet {
         height: 27rem;
     }
 
+    @include mobile {
+        height: 30vh;
+    }
 }
 
 .popular-btn {
@@ -347,6 +346,10 @@
     padding: 1% 3%;
     font-family: $roboto;
     border-radius: 5px;
+
+    @include mobile {
+        width: auto;
+    }
 
     &:hover {
         background: red;
