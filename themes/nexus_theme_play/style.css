@@ -1010,9 +1010,13 @@ object {
   position: relative;
   z-index: 999999; }
 
-#menu-item-2064 > a {
+#menu-item-2064 {
   position: relative;
-  z-index: 999999; }
+  z-index: 999998;
+  height: 5%; }
+  #menu-item-2064 a {
+    position: relative;
+    z-index: 999999; }
 
 .site-header {
   width: 100%;

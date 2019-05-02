@@ -91,9 +91,15 @@
     z-index: 999999;
 }
 
-#menu-item-2064 > a {
+#menu-item-2064  {
     position: relative;
-    z-index: 999999;
+    z-index: 999998;
+    height: 5%;
+
+    a {
+        position: relative;
+        z-index: 999999
+    }
 }
 
 
