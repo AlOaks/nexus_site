@@ -86,7 +86,12 @@
     }
 }
 
-#menu-item-2064, #menu-item-246, #menu-item-247 > a {
+#menu-item-246, #menu-item-247 > a {
+    position: relative;
+    z-index: 999999;
+}
+
+#menu-item-2064 > a {
     position: relative;
     z-index: 999999;
 }
