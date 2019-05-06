@@ -3397,7 +3397,6 @@ option {
   .post-container img, .post-container-archive img {
     width: 100%; }
   .post-container h2, .post-container-archive h2 {
-    margin-bottom: 0;
     font-size: 1rem; }
   .post-container p, .post-container-archive p {
     color: #193F5C;
