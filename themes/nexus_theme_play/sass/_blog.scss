@@ -301,7 +301,7 @@
 
 
 .post-container, .post-container-archive {
-    height: 25rem;
+    height: auto;
 
     @include mobile {
         height: 40vh;
@@ -313,7 +313,6 @@
 
     h2{
         margin-bottom: 0;
-        margin-top: -1rem;
         font-size: 1rem;
     }
 
