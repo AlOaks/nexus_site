@@ -506,7 +506,7 @@ bookForm.submit(function(ev) {
         'lastname': $('#edvisor-book-lastname').val(),
         'email': $('#edvisor-book-email').val(),
         'phone': $('#edvisor-book-phone').val(),
-        'notes' : 'Chat with us FORM'
+        'notes' : 'Chat with us FORM from '+$('#edvisor-book-country').val()
     }
 
 
