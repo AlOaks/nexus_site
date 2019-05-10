@@ -89,11 +89,11 @@
                 text-align: center;
                 width: 85%;
                 font-family: $roboto;
-                padding: 2.5%;
+                padding: 2% 1%;
                 border-radius: 10px;
                 text-transform: uppercase;
                 font-weight: bold;
-                font-size: 3rem;
+                font-size: 2rem;
                 background: $div-red;
 
                 @include mobile {
