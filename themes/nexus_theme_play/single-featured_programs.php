@@ -61,7 +61,7 @@ endwhile;
 								
 								<?php the_title('<h1>', '</h1>'); ?>
 								<div class="promo-banner">
-									<p><?php _e("Get $300 CAD Off!", "Landing Pages"); ?></p>
+									<p><?php echo CFS()->get('feat_promotion'); ?></p>
 								</div>	
 							<?php endwhile; ?>
 							</div>
