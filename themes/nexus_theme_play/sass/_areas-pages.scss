@@ -255,6 +255,7 @@
 
             @include mobile {
                 text-align: center;
+                font-size: 2rem;
             }
         }
 
@@ -307,6 +308,7 @@
     @include mobile {
         flex-direction: column;
         justify-content: flex-start;
+        height: 550px;
     }
 
     .area-requisites-parallax {
@@ -392,7 +394,7 @@
 
             @include mobile {
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 z-index: 1;
 
             }
@@ -404,7 +406,7 @@
             width: 35%;
 
             @include mobile {
-                width: 50%;
+                width: 70%;
             }
         }
     }

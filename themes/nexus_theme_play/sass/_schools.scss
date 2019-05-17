@@ -55,14 +55,16 @@
         color: white;
         font-family: $roboto;
 
-        @include mobile {
-            margin-top: auto;
-        }
-
         h1 {
-            font-size: 2.6rem;
             text-align: center;
         }
+
+        @include mobile {
+            margin-top: auto;
+            font-size: 1rem;
+        }
+
+        
     }
 
     .schoolmonth-banner {
