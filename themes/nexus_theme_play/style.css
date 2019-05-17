@@ -6567,7 +6567,8 @@ article {
           -ms-flex-direction: column;
               flex-direction: column; } }
   .outcome-area-sec p {
-    width: 45%; }
+    width: 45%;
+    z-index: 1; }
     @media (max-width: 800px) {
       .outcome-area-sec p {
         width: 80%;
