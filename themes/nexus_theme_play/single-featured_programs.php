@@ -211,7 +211,7 @@ $schoolQuery = new WP_query($args);
 						</div>
 						<div class="column-nation">
 							<h3><?php _e('Top 6 Countries', 'School Pages'); ?></h3>
-							<canvas id="chart"></canvas>
+							<img src=<?php echo $salaryChart; ?> />
 						</div>
 						<div class="column-awards">
 							<h3><?php _e('Awards', 'School Pages'); ?></h3>
