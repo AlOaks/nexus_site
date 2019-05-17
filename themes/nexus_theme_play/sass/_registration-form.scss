@@ -146,6 +146,10 @@
     color: $font-blue;
     font-family: $sans;
     margin-top: 2vh;
+
+    .policy-label {
+        font-weight: bold;
+    }
 }
 
 #registration-button {

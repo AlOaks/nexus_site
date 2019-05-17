@@ -13,16 +13,30 @@
  */
 
 get_header();
+$lang = get_locale();
+	
 ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="slick-slider">
+			<?php 
+				$args = array('post_type' => 'schools'); 
+				$schools = new WP_query($args);
 
-		<?php 
-			$lang = get_locale();
-		?>
+				while($schools->have_posts()) : $schools->the_post();
 
+				$promoBanner = CFS()->get('promo_banner');
 
+				if($promoBanner) {
+			?>
+				<section class="school-slide <?php echo $schools->name; ?>" >
+					<img  alt="<?php echo get_the_title(); ?>" src=<?php echo $promoBanner; ?> >
+					<a href="<?php echo get_the_permalink(); ?>"><?php _e('Learn More', 'School Pages'); ?></a>
+				</section>
+
+			<?php } endwhile; wp_reset_query(); ?>
+			</div>
 			<section class="hero-image-new">
 				<div class="esl-hero-div">
 					<?php $eslBkg = CFS()->get('esl_background_image'); ?>

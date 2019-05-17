@@ -26,37 +26,37 @@ get_header();
                             <?php the_content('<p>', '</p>'); ?>
                     <?php endwhile; wp_reset_query(); ?>
                 </div>
-                <?php 
-                    $args = array(
-                        'post_type' => 'schools',
-                        // 'posts_per_page' => -1,
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'school_type',
-                                'field'=> 'slug',
-                                'terms' => 'work-n-study'
+                <div class="area-slider">
+                    <div class="area-slider-in">
+                    <?php 
+                        $args = array(
+                            'post_type' => 'schools',
+                            // 'posts_per_page' => -1,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'school_type',
+                                    'field'=> 'slug',
+                                    'terms' => 'work-n-study'
+                                )
                             )
-                        )
-                    );
+                        );
 
-                    $monthSchool = new WP_query($args);
+                        $MPISchool = new WP_query($args);
 
-                while($monthSchool->have_posts()) : $monthSchool->the_post(); 
+                        while($MPISchool->have_posts()) : $MPISchool->the_post(); 
 
-                    $onPromotion = CFS()->get('on_promo');
+                                $promoBanner = CFS()->get('promo_banner');
 
-                    if($onPromotion === 1) { ?>
-                        <div class="school-of-month-div">
-                            <h2><?php _e('School of the month!', 'Areas Pages'); ?></h2>
-                            <img class="school-month-logo" src="<?php echo CFS()->get('school_logo'); ?>" />
-                            <a href="<?php echo get_the_permalink(); ?>"><?php _e('Learn more', 'Areas Pages'); ?></a>
-                        </div>
-                    <?php } ?>
-                <?php 
-                    endwhile; 
-                    wp_reset_query();
-                ?>
-
+                            if($promoBanner) {
+                        ?>
+                            <section class="area-slide" >
+                                <img  alt="<?php echo get_the_title(); ?> image" src=<?php echo $promoBanner; ?> >
+					            <a href="<?php echo get_the_permalink(); ?>"><?php _e('Learn More', 'School Pages'); ?></a>
+                            </section>
+                        <?php } endwhile; wp_reset_query(); ?>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
                 <div class="area-page-menu">
                     <ul>
                         <li><a href="#requisites"><?php _e('Requirements', 'Areas Pages'); ?></a></li>
@@ -75,7 +75,7 @@ get_header();
                 <div class="about-area-triangle"></div>
             </section>
             <section id="requisites" class="requisites-area-sec">
-                <div data-parallax="scroll" class="area-requisites-parallax" data-image-src="<?php echo get_template_directory_uri().'/assets/images/quebec.jpg'; ?>" ></div>
+                <div data-parallax="scroll" class="area-requisites-parallax" data-image-src="<?php echo get_template_directory_uri().'/assets/images/hero-img.jpg'; ?>" ></div>
                 <div class="area-requisites-ovrly"></div>
                 <div class="requisites-right-side">
                     <h3><?php _e('What do I need?', 'Areas Pages'); ?></h3>

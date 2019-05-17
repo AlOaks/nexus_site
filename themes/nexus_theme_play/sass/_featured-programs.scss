@@ -1,6 +1,15 @@
 .featured_programs-template-default {
     margin-top: -32px !important;
 
+    .chat-with-us-div {
+        a {
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: $roboto;
+            font-weight: bold;
+        }
+    }
+
     @include mobile {
         margin-top: -46px !important;
     }
@@ -13,6 +22,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    &:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        z-index: -1;
+    }
 
     @include mobile {
         flex-direction: column;
@@ -30,16 +50,16 @@
         z-index: -2;
     }
 
-    .featprogs-hero-ovrly {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: black;
-        opacity: .4;
-        z-index: -1;
-    }
+    // .featprogs-hero-ovrly {
+    //     position: fixed;
+    //     height: 100%;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     background: black;
+    //     opacity: .4;
+    //     z-index: -1;
+    // }
 
     .featprogs-heading {
         display: flex;
@@ -74,6 +94,7 @@
 
             @include mobile {
                 text-align: center;
+                font-size: 2.5rem;
             }
 
         }
@@ -81,6 +102,10 @@
         .promo-banner {
             
             height: auto;
+
+            @include mobile {
+                width: 100%;
+            }
             // background: url('./assets/images/brushstroke.png');
             // background-size: contain;
             // background-repeat: no-repeat;
@@ -140,8 +165,12 @@
                 }
             }
 
+            select {
+                color: gray;
+            }
 
-            input {
+
+            input, select {
                 width: 80%;
                 height: 2rem;
                 border-radius: 10px;
@@ -154,243 +183,29 @@
                 font-family: $roboto;
                 border: none;
                 font-size: 1.5rem;
+                width: 50%;
             }
         }
     }    
 }
 
-.featprogs-content-section {
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 2%;
-
-    @include mobile {
-        flex-direction: column;
-        align-items: center;
-    }
 
 
-    .content-div {
-        width: 60%;
-        padding-left: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @include mobile {
-            width: 85%;
-            order: 2;
-            padding-left: 0;
-        }
-
-
-        .graphic-supports {
-            padding-left: 5%;
-
-            @include mobile {
-                padding-left: 0;
-            }
-
-            h4 {
-                color: $font-blue;
-                font-family: $sans;
-                font-weight: 600;
-            }
-
-        }
-
-        h3 {
-            color: $font-blue;
-            font-size: 2rem;
-            font-family: $sans;
-            align-self: flex-start;
-            margin-bottom: 0;
-
-            &:first-of-type {
-                margin-top: 0;
-                padding-top: 2vh;
-            }
-        }
-
-        p {
-            color: $font-gray;
-            font-family: $sans;
-            margin-top: 0;
-        }
-
-        a {
-            margin-top: 15vh;
-            align-self: center;
-            width: 50%;
-            font-size: 1.5rem;
-            font-family: $roboto;
-
-            @include mobile {
-                width: 70%;
-                margin-top: 1vh;
-            }
-        }
-        
-    }
-
-    .nexus-rating-school-month-lp {
-        width: 100%;
-    }
-
-    .nexus-rating-school-lp {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 45vh;
-
-        @include mobile {
-            flex-direction: column;
-            height: auto;
-        }
-        
-        i {
-            color: $div-yellow;
-        }
-
-        .overall-score {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-right: 1px solid #0D74B5;
-
-            @include mobile {
-                border-right: 0;
-                border-bottom: 1px solid #0D74B5;
-                width: 80%;
-                padding-bottom: 2vh;    
-                padding-top: 2vh;
-            }
-
-            h3 {
-                padding: 0;
-                margin: 0;
+.single-featured_programs {
+    .school-options {
+        .option {
+            a {
+                color: white;
                 text-align: center;
-                width: 100%;
-                font-weight: 300;
-            }
-
-            .average-rating-number {
-                font-size: 6rem;
-                color: $font-blue;
-                margin-bottom: 0;
-            }
-
-            .average-stars {
-                i {
-                    font-size: 2rem;
-                }
-            }
-
-        }
-
-        .individual-scores {
-            width: 45%;
-            height: 65%;
-
-            @include mobile {
-                width: 80%;
-                height: auto;
-                margin-top: 2vh;
-            }
-            
-            ul {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                height: 100%;
                 font-family: $roboto;
-                width: 80%;
+                text-decoration: none;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
 
-                @include mobile {
-                    justify-content: flex-start;
-                    width: 100%;
-                    height: auto;
-                }
-
-                li {
-                    list-style-type: none;
-                    color: $font-blue;
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    font-weight: bold;
-                    margin-bottom: 5%;
+                &:visited {
+                    color: white;
                 }
             }
-        }
-    }
-
-    .sidebar-right {
-        width: 25%;
-        background: lightgray;
-        border-radius: 10px;
-        padding: 2%;
-        margin-right: 2%;
-
-        @include mobile {
-            width: 85%;
-            background: white;
-            order: 1;
-            padding: 6%;
-        }
-
-        
-
-        h3 {
-            color: $font-blue;
-            font-size: 1.2rem;
-            font-family: $sans;
-
-            i {
-                margin-right: .5vw;
-            }
-        }
-
-        p {
-            color: darken($font-gray, 10%);
-            font-family: $sans;
-
-            &:last-of-type {
-                font-size: .8rem;
-            }
-        }
-
-        ul {
-            margin-left: 0;
-            padding-left: 0;
-
-            li {
-                color: darken($font-gray, 10%);
-                font-family: $sans;
-                list-style-type: none;
-                margin-top: 1vh;
-            }
-        }
-
-        .permitted-work {
-            border-radius: 10px;
-            width: 100%;
-            text-align: center;
-
-            p {
-                margin: 0;
-                padding: 2%;
-                font-size: 2rem;
-                color: $font-blue;
-                font-family: $roboto;
-            }
-            
         }
     }
 }

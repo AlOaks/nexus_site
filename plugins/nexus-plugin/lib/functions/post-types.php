@@ -185,15 +185,15 @@ add_action( 'init', 'team_member_pt', 0 );
 function featured_programs() {
 
 	$labels = array(
-		'name'                  => _x( 'Featured Programs', 'Post Type General Name', 'nexus' ),
+		'name'                  => _x( 'MIP Schools', 'Post Type General Name', 'nexus' ),
 		'singular_name'         => _x( 'Featured Program', 'Post Type Singular Name', 'nexus' ),
-		'menu_name'             => __( 'Featured Programs', 'nexus' ),
-		'name_admin_bar'        => __( 'Featured Programs', 'nexus' ),
+		'menu_name'             => __( 'MIP Schools', 'nexus' ),
+		'name_admin_bar'        => __( 'MIP Schools', 'nexus' ),
 		'archives'              => __( 'Page Archives', 'nexus' ),
 		'attributes'            => __( 'Page Attributes', 'nexus' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'nexus' ),
-		'all_items'             => __( 'All Featured Programs', 'nexus' ),
-		'add_new_item'          => __( 'Add New Featured Program', 'nexus' ),
+		'all_items'             => __( 'All Schools', 'nexus' ),
+		'add_new_item'          => __( 'Add New School', 'nexus' ),
 		'add_new'               => __( 'Add New', 'nexus' ),
 		'new_item'              => __( 'New Page', 'nexus' ),
 		'edit_item'             => __( 'Edit Page', 'nexus' ),
@@ -215,7 +215,7 @@ function featured_programs() {
 	);
 	$args = array(
 		'label'                 => __( 'Featured Program', 'nexus' ),
-		'description'           => __( 'Featured Programs', 'nexus' ),
+		'description'           => __( 'Marketing Incentive Program Schools', 'nexus' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),

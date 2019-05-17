@@ -218,10 +218,15 @@ get_header();
 						</div>
 					</div>
 					<div class="privacy-policy">
-							<label><?php _e('Privacy Policy', 'Registration'); ?></label>
+						<label class="policy-label"><?php _e('Privacy Policy', 'Registration'); ?></label>
 						<div class="privacy-radio">
 							<input type="radio" name="privacy-policy" id="reg-privacy" value="I consent" required />
 							<label for="reg-privacy"><?php _e('I consent to having this website store my submitted information so they can respond to my inquiry.', 'Registration'); ?></label>
+						</div>
+						<label class="policy-label"><?php _e('Terms and Conditions', 'Registration'); ?></label>
+						<div class="privacy-radio">
+							<input type="radio" name="privacy-policy" id="reg-privacy" value="I consent" required />
+							<label for="reg-privacy"><?php _e('I read and accept the ', 'Registration'); ?><a href="<?php echo get_template_directory_uri().'/assets/terms-and-conditions-nexus-education-consulting.pdf'; ?>"><?php _e('Terms and Conditions', 'Registration'); ?>.</a></label>
 						</div>
 					</div>
 					<button id="registration-button"><?php _e('Submit', 'Registration'); ?></button>

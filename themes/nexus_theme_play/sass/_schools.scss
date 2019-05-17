@@ -8,8 +8,15 @@
     height: 70vh;
     padding-top: 0;
 
-    @include mobile {
-        height: 50vh;
+    &:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.4);
+        z-index: -1;
     }
 
     .school-page-hero-parallax {
@@ -22,17 +29,6 @@
         z-index: -2;
         background: transparent;
     }
-    
-    .school-page-hero-ovrly {
-        background: $bg-blue;
-        opacity: .5;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
 
     .blue-stripe-top {
         height: 10vh;
@@ -41,11 +37,48 @@
         position: relative;
     }
 
+    .schoolmonth-hook {
+        font-size: 3rem;
+        color: white;
+        font-family: $roboto;
+
+        @include mobile {
+            margin-top: auto;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+        }
+    }
+
+    .schoolmonth-banner {
+        font-size: 2rem;
+        background: $div-red;
+        color: white;
+        font-family: $roboto;
+        border-radius: 10px;
+        padding: 1% 5%;
+        font-weight: bold;
+
+        @include mobile {
+            margin-bottom: 25%;
+        }
+
+       
+        p {
+            margin: 0;
+            text-align: center;
+
+        }
+    } 
+
     .school-page-heading {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        // width: 80%;
 
         @include mobile {
             flex-direction: column;
@@ -75,6 +108,142 @@
             @include mobile {
                 max-width: 70vw;
                 order: 1;
+            }
+        }
+    }
+}
+
+.school-options {
+    background: white;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10%;
+    }
+    
+    .option {
+        width: 30%;
+        padding: 1.5%;
+        border-radius: 10px;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        position: relative;
+        height: 30rem;
+        transition-duration: .8s;
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+        @include mobile {
+            width: 95%;
+            margin-bottom: 5%;
+            padding: 5%;
+            height: auto;
+        }
+
+        &:first-of-type {
+            a {
+                background: $bg-blue;
+
+                &:hover {
+                    background: lighten($bg-blue, 10%);
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            a {
+                background: $div-red;
+
+                &:hover {
+                    background: lighten($div-red, 10%);
+                }
+            }
+        }
+
+        &:nth-of-type(3) {
+            a {
+                background: $div-yellow;
+
+                &:hover {
+                    background: lighten($div-yellow, 10%);
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 15px rgb(0,0,0);
+            transition-duration: .5s;
+            width: 35%;
+
+            @include mobile {
+                width: 95%;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            width: 100%;
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            font-size: 3rem;
+        }
+
+        h3 {
+            margin: 0;
+            text-align: center;
+            font-size: 2rem;
+            font-family: $roboto;
+            position: relative;
+            z-index: 2;
+
+            &:after {
+                content: "";
+                width: 80%;
+                height: 1px;
+                background: $div-white;
+                bottom: 0;
+                left: 10%;
+                position: absolute;
+            }
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 25%;
+            margin-top: 5%;
+            font-family: $sans;
+
+            li {
+                list-style-type: none;
+                margin-top: 2%;
+
+                i {
+                    margin-right: 2%;
+                }
             }
         }
 
@@ -158,13 +327,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
 
     @include mobile {
         padding-bottom: 8%;
+        flex-direction: column;
+    }
+
+    .side-bar-details {
+        width: 35%;
+        background: $div-white;
+        color: $font-blue;
+        position: relative;
+        padding: 0 2%;
+        border-radius: 10px;
+
+        @include mobile {
+            width: 90%;
+            margin-top: 5%;
+            padding: 5%;
+        }
+
+        i {
+            position: absolute;
+        }
+
+        .fa-quote-left {
+            top: 20%;
+            left: 10%;
+            color: lightgray;
+            font-size: 4rem;
+        }
+
+        .fa-user-alt {
+            bottom: 0;
+            right: 2%;
+            font-size: 8rem;
+            color: lightgray;
+        }
+
+        p {
+            font-family: $sans;
+            z-index: 2;
+            position: relative;
+        }
+
+        h4 {
+            position: relative;
+            z-index: 2;
+            font-family: $sans;
+            font-size: 2rem;
+            text-align: center;
+            margin: 5% 0 0 0;
+        }
     }
 
     .nexus-rating-school {
-        width: 90%;
+        width: 60%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -173,6 +392,7 @@
         @include mobile {
             flex-direction: column;
             height: auto;
+            width: 95%;
         }
         
         i {
@@ -314,6 +534,11 @@
        }
 
        .details-li {
+
+        @include mobile {
+            padding-left: 0;
+        }
+
         li {
             list-style-type: disc;   
         }
@@ -397,9 +622,6 @@
     }
 }
 
-
-
-
 // ESL
 
 .column-amenities, .column-nation, .column-awards {
@@ -452,9 +674,24 @@
     ul {
         padding-left: 0;
         margin-left: 0;
+        flex-direction: column;
+
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+                min-width: 20%;
+                width: 23%;
+                max-width: 30%;
+            }
+        }
 
         li {
             list-style-type: none;
+            width: 60%;
 
             img {
                 height: 2rem;
@@ -462,6 +699,18 @@
                 margin-right: 2%;
             }
         }
+    }
+}
+
+#avg-salary-li {
+    border: 2px solid $font-blue;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 2%;
+
+    img {
+        width: 100%;
+        height: 100%;
     }
 }
 

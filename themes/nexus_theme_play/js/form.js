@@ -196,7 +196,7 @@ fpForm.submit(function(ev) {
         'firstname': $('#featprogs-name').val(),
         'email': $('#featprogs-email').val(),
         'phone': $('#featprogs-phone').val(),
-        'notes': $('#featprogs-program').val()+' -> in: '+pageLng,
+        'notes': 'The student is interested in: ' + $('#featprogs-progs').val() + ' Language: ' + $('#featprogs-lang').val(),
         'studentCurrentPipelineStages': [
             {
               "studentPipelineStageId": 17430

@@ -50,6 +50,11 @@
             font-size: 3rem;
             font-family: $roboto;
             font-weight: 300;
+
+            @include mobile {
+                text-align: center;
+                font-size: 2.5rem;
+            }
         }
     }
 
@@ -148,6 +153,75 @@
     }
 }
 
+// SLIDER
+
+.area-slider {
+    height: 70%;
+    width: 40%;
+    position: relative;
+
+    @include mobile {
+        width: 80vw;
+        height: 50vw;
+
+        .slick-dots {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.area-slider-in {
+    height: 85%;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+
+    .slick-list {
+        height: 100%;
+
+        .slick-track {
+            height: 100%;
+        }
+    }
+
+    .area-slide {
+        height: 100%;
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        flex-direction: column;      
+        
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+            
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background: $div-red;
+            border-radius: 10px;
+            font-weight: bold;
+            padding: 1% 2%;
+            margin-bottom: 2%;
+
+            &:visited {
+                color: white;
+            }
+        }
+    }
+}   
+
+
+// WHAT ARE THESE
+
 
 .what-are-these-sec {
     display: flex;
@@ -218,6 +292,7 @@
         position: absolute;
         overflow: hidden;
         bottom: -3rem;
+        z-index: -1;
     }
 }
 
@@ -300,10 +375,12 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        z-index: 1;
 
         @include mobile {
             width: 80%;
             order: 1;
+            z-index: 1;
         }
 
         h3 {
@@ -315,6 +392,8 @@
             @include mobile {
                 text-align: center;
                 font-size: 2rem;
+                z-index: 1;
+
             }
         }
 
@@ -340,7 +419,7 @@
         position: absolute;
         overflow: hidden;
         top: -3rem;
-        z-index: -1;
+        z-index: 0;
     }
 }
 

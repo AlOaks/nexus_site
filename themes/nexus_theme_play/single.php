@@ -26,7 +26,7 @@ get_header();
 			// If comments are open or we have at least one comment, load up the comment template.
 			
 
-		endwhile; // End of the loop.
+		endwhile; wp_reset_query();// End of the loop.
 		?>
 
 		<div class="share-links-container">
@@ -48,36 +48,24 @@ get_header();
 
 		<section class="people-likes">
 				<p class="people-title"><?php _e('People Also Read', 'nexus'); ?></p>
-				<div class="programs-container-people">
-				<button class="peo-btn-left peo-btn"><i class="fas fa-chevron-left"></i></button>
-				<button class="peo-btn-right peo-btn"><i class="fas fa-chevron-right"></i></button>
+				<div class="posts-container-people">
 					<?php 
-						$args = array(
-							'post_type' => 'post', 	
-							'posts_per_page' => 3,
-							'cat' => 'article'
-							// 'meta_key' => 'postviews_7days',
-							// 'orderby' => 'meta_value_num',
-							// 'order' => 'DESC',
-						);
-						$recommended = new WP_query($args);
+						$args = array('post_type' => 'post', 'posts_per_page' => 3);
+						$posts = new WP_query($args);
 
-						
-						while( $recommended->have_posts() ) : $recommended-> the_post();
+						while($posts->have_posts()) : $posts->the_post(); ?>
 
-						
+					<div class="post">
+						<img class="post-image" src="<?php echo get_the_post_thumbnail_url(); ?>" />
+						<?php 
+						echo '<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>';
+						echo '<p class="post-meta">'.get_the_date().'</p>';
+						echo '<p class="post-excerpt">'.get_the_excerpt().'</p>';
+						?>
+					</div>
 
-					?>	
-						<div class="people-program-container">
-							<?php the_post_thumbnail(); ?>
-							<p class="people-post-name"><?php the_title(); ?></p>
-							<p class="people-excerpt"><?php echo get_the_excerpt(); ?></p>
-							<a class="post-link-single" href=<?php echo get_the_permalink(); ?>><?php _e('Read', 'nexus'); ?></a>
-						</div>
-					<?php		
-						endwhile; // End of the loop.
-					?>
-				</div>			
+					<?php endwhile; ?>
+				</div>		
 			</section>
 
 		<section class="start-journey-section">

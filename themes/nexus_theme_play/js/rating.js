@@ -126,9 +126,5 @@
     $('.average-priv-rating-lp').html(getAverageRating(privNat, privCarService, priValPrice, jobPlace, flexClass));
     $('.average-priv-stars-lp').html(getRating(averagePrivRating));
 
-    
-
-
-
 
 })( jQuery );

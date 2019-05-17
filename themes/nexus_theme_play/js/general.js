@@ -536,4 +536,22 @@ bookForm.submit(function(ev) {
     }
 });
 
+
+// SCHOOLS ANIMATIONS
+
+$('.option').children('a').hide();
+
+var windowWidth = $(window).width();
+var mobileSize = 801;
+
+if(windowWidth < mobileSize) {
+    $('.option').children('a').show();
+}
+
+$('.option').hover(function() {
+    $(this).children('a').slideDown();
+}, function() {
+    $(this).children('a').slideUp();
+});
+
 })( jQuery );

@@ -28,7 +28,7 @@ $listID = 'b7f483ccf1';
 if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-	$allowedAccomFields = array('tokenField', 'nexus-email', 'featprogram','featname', 'featemail', 'featphone');
+	$allowedAccomFields = array('tokenField', 'nexus-email', 'featprogram', 'featlanguage', 'featname', 'featemail', 'featphone');
 
 	// Building an array with the $_POST-superglobal 
 	foreach ($_POST as $key=>$item) {
