@@ -126,10 +126,10 @@ $schoolQuery = new WP_query($args);
 						?>
 								<div class="option" style="background: no-repeat center url(<?php echo $opt['option_bkg'];?>);">
 									<h3><?php echo $opt['option_title']; ?></h3>
-									<ul>
-										<li><i class="fas fa-calendar"></i><?php echo $opt['option_duration']; ?></li>
-										<li><i class="fas fa-briefcase"></i><?php echo $work; ?></li>
-										<li><i class="fas fa-info-circle"></i><?php echo $opt['option_desc']; ?></li>
+									<ul class="option-info">
+										<li class="option-duration"><i class="fas fa-calendar"></i><?php echo $opt['option_duration']; ?></li>
+                                		<li class="option-work"><i class="fas fa-briefcase"></i><?php echo $work; ?></li>
+                                		<li class="option-description"><i class="fas fa-info-circle"></i><?php echo $opt['option_desc']; ?></li>
 									</ul>
 									<a href="#"><?php _e('I like this!', 'Front-page'); ?></a>
 								</div>

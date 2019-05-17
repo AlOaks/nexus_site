@@ -5474,8 +5474,7 @@ article {
       .school-options .option {
         width: 95%;
         margin-bottom: 5%;
-        padding: 5%;
-        height: auto; } }
+        padding: 5%; } }
     .school-options .option:first-of-type a {
       background: #15405A; }
       .school-options .option:first-of-type a:hover {
@@ -5504,7 +5503,9 @@ article {
                 transition-duration: .5s; }
       @media (max-width: 800px) {
         .school-options .option:hover {
-          width: 95%; } }
+          width: 95%; }
+          .school-options .option:hover h3 {
+            font-size: 2rem; } }
     .school-options .option a {
       width: 100%;
       z-index: 2;
