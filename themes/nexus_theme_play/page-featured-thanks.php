@@ -15,7 +15,7 @@ session_start();
 
 get_header();
 
-$verified = tokenVer("featProgs");
+$verified = tokenVer('featSchools');
 
 require("vendor/autoload.php");
 
