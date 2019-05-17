@@ -1032,7 +1032,7 @@ object {
           transition-duration: .5s; }
   @media (max-width: 800px) {
     .site-header {
-      height: 12vh;
+      height: 87px;
       width: 100%;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -5329,7 +5329,8 @@ article {
   padding-top: 0; }
   @media (max-width: 800px) {
     .school-promo-hero {
-      margin-top: 105px; } }
+      margin-top: 100px;
+      height: 380px; } }
   .school-promo-hero:after {
     content: "";
     height: 100%;
@@ -5348,11 +5349,17 @@ article {
     height: 100vh;
     z-index: -2;
     background: transparent; }
+    @media (max-width: 800px) {
+      .school-promo-hero .school-page-hero-parallax {
+        height: 460px; } }
   .school-promo-hero .blue-stripe-top {
     height: 10vh;
     width: 100%;
     background: #15405A;
     position: relative; }
+    @media (max-width: 800px) {
+      .school-promo-hero .blue-stripe-top {
+        height: 75px; } }
   .school-promo-hero .schoolmonth-hook {
     font-size: 3rem;
     color: white;
@@ -5373,7 +5380,8 @@ article {
     font-weight: bold; }
     @media (max-width: 800px) {
       .school-promo-hero .schoolmonth-banner {
-        margin-bottom: 25%; } }
+        margin-bottom: 80px;
+        font-size: 1.5rem; } }
     .school-promo-hero .schoolmonth-banner p {
       margin: 0;
       text-align: center; }
@@ -5415,15 +5423,19 @@ article {
       margin-top: -5vh;
       z-index: 10;
       position: relative; }
+      @media (max-width: 800px) {
+        .school-promo-hero .school-page-heading .schoolmonth-logo-container {
+          margin-top: -30px; } }
     .school-promo-hero .school-page-heading img {
-      max-width: 20vw;
-      max-height: 20vh; }
+      width: 275px;
+      height: auto; }
       @media (max-width: 800px) {
         .school-promo-hero .school-page-heading img {
-          max-width: 70vw;
+          width: 150px;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
-                  order: 1; } }
+                  order: 1;
+          height: auto; } }
 
 .school-options {
   background: white;
@@ -5527,6 +5539,9 @@ article {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       font-size: 3rem; }
+      @media (max-width: 800px) {
+        .school-options .option a {
+          font-size: 1.5rem; } }
     .school-options .option h3 {
       margin: 0;
       text-align: center;
@@ -5536,6 +5551,9 @@ article {
       z-index: 2;
       -webkit-transition-duration: 1s;
               transition-duration: 1s; }
+      @media (max-width: 800px) {
+        .school-options .option h3 {
+          font-size: 2.5rem; } }
       .school-options .option h3:after {
         content: "";
         width: 80%;
