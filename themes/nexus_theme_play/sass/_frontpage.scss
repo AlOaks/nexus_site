@@ -66,6 +66,8 @@ html {
             text-decoration: none;
             padding: 1% 2%;
             border-radius: 10px;
+            width: 15%;
+            text-align: center;
 
             @include mobile {
                 margin-top: 18%;

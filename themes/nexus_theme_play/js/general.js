@@ -540,6 +540,7 @@ bookForm.submit(function(ev) {
 // SCHOOLS ANIMATIONS
 
 $('.option').children('a').hide();
+$('.option-info').hide(); 
 
 var windowWidth = $(window).width();
 var mobileSize = 801;
@@ -550,8 +551,14 @@ if(windowWidth < mobileSize) {
 
 $('.option').hover(function() {
     $(this).children('a').slideDown();
+    $(this).find(".option-info").slideDown('slow');
 }, function() {
     $(this).children('a').slideUp();
+    $(this).find(".option-info").slideUp('slow');
+
 });
+
+
+
 
 })( jQuery );
