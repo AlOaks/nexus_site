@@ -11,14 +11,19 @@
         margin-bottom: 5vh;
         color: white;
         font-size: 2rem;
+        text-align: center;
     }
 
     .search-form {
         width: 50%;
         margin-top: 10vh;
 
+        @include mobile {
+            width: 70%;
+        }
+
         input[type="search"] {
-            width: 80%;
+            width: 70%;
             line-height: normal;
         }
 
@@ -28,6 +33,10 @@
             border: none;
             background: $div-yellow;
             color: $font-blue;
+
+            @include mobile {
+                width: 20%;
+            }
         }
     }
 }

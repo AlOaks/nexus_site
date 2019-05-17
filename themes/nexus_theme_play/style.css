@@ -1657,7 +1657,7 @@ html {
   margin-bottom: 5vh; }
   @media (max-width: 800px) {
     .slick-slider {
-      height: 40vh;
+      height: 300px;
       margin-bottom: 0;
       margin-top: 12vh; } }
   .slick-slider .slick-list {
@@ -1702,7 +1702,8 @@ html {
       text-align: center; }
       @media (max-width: 800px) {
         .slick-slider .school-slide a {
-          margin-top: 18%; } }
+          margin-top: 18%;
+          width: 30%; } }
 
 .slick-dots {
   position: absolute;
@@ -1761,7 +1762,7 @@ html {
   @media (max-width: 800px) {
     .hero-image {
       margin-top: 0;
-      height: 85vh;
+      height: 660px;
       background-position: right; } }
 
 .hero-image-new {
@@ -1778,14 +1779,15 @@ html {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      height: 660px; } }
   .hero-image-new div {
     width: 33.3333%;
     position: relative; }
     @media (max-width: 800px) {
       .hero-image-new div {
         width: 100%;
-        height: 30vh; } }
+        height: 220px; } }
     .hero-image-new div .hero-div-ovrly {
       position: absolute;
       top: 0;
@@ -4443,12 +4445,16 @@ html {
     margin-top: 5vh;
     margin-bottom: 5vh;
     color: white;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-align: center; }
   .search-page .search-form {
     width: 50%;
     margin-top: 10vh; }
+    @media (max-width: 800px) {
+      .search-page .search-form {
+        width: 70%; } }
     .search-page .search-form input[type="search"] {
-      width: 80%;
+      width: 70%;
       line-height: normal; }
     .search-page .search-form input[type="submit"] {
       width: 15%;
@@ -4456,6 +4462,9 @@ html {
       border: none;
       background: #ffb419;
       color: #193F5C; }
+      @media (max-width: 800px) {
+        .search-page .search-form input[type="submit"] {
+          width: 20%; } }
 
 @media (max-width: 800px) {
   .search-results {
@@ -5318,6 +5327,9 @@ article {
   padding: 2% 0%;
   height: 70vh;
   padding-top: 0; }
+  @media (max-width: 800px) {
+    .school-promo-hero {
+      margin-top: 105px; } }
   .school-promo-hero:after {
     content: "";
     height: 100%;

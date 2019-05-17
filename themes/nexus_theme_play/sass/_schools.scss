@@ -8,6 +8,10 @@
     height: 70vh;
     padding-top: 0;
 
+    @include mobile {
+        margin-top: 105px;
+    }
+
     &:after {
         content: "";
         height: 100%;
