@@ -19,14 +19,10 @@ html {
         margin-top: 100px;
     }
 
-    .slick-list {
+    .slick-list {  
 
         @include mobile {
             height: 230px;
-        }
-
-        @include tablet {
-            height: 500px;
         }
 
         .slick-track {
@@ -35,10 +31,6 @@ html {
 
             @include mobile {
                 height: 230px;
-            }
-
-            @include tablet {
-                height: 500px;
             }
         }
     }
