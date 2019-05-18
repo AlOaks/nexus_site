@@ -20,10 +20,26 @@ html {
     }
 
     .slick-list {
-        height: 230px;
+
+        @include mobile {
+            height: 230px;
+        }
+
+        @include tablet {
+            height: 500px;
+        }
 
         .slick-track {
-            height: 230px;
+
+            height: 500px;
+
+            @include mobile {
+                height: 230px;
+            }
+
+            @include tablet {
+                height: 500px;
+            }
         }
     }
 
