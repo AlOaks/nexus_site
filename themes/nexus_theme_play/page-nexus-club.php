@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Club
- *
+ * Template name: Nexus Club
+ * 
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -16,99 +16,67 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
+		<h1 class="page-title">Nexus Club</h1>
 		<main id="main" class="site-main">
-			<div class="page-title-container">
-                <h1 class="services-header">Nexus Club</h1>
-			</div>
-			<section class="club-body">
+			<section class="blog-posts">
+				<?php 
+					$args = array('post_type' => 'premium_content', 'posts_per_page' => 8);
+					$club = new WP_query($args);
+				?>
 
-				<div class="popular-section">
-					<div class="popular-slider">
-						<button class="popular-btn bttn-lft"><</button>
-						<button class="popular-btn bttn-right">></button>
-						<h2 class="popular-banner"><?php _e('Featured posts', 'nexus'); ?></h2>
-						
-						
+				<?php while($club->have_posts()): $club->the_post(); ?>
+					<div class="post">
+						<img class="post-image" src="<?php echo get_the_post_thumbnail_url(); ?>" />
 						<?php 
-							$argsFeat = array(
-								'post_type' => 'premium_content',	
-							); 
-							
-							$premFeat = new WP_query($argsFeat);
-
-							?>
-							
-						<ul class="slides">
-						<?php
-							while ( $premFeat->have_posts() ): $premFeat->the_post(); 
-							$video = CFS()->get('post_video');
-
-							if(empty($video)) { ?>
-									<li class="popular-item">
-										<a class="popular-title" href=<?php echo the_permalink(); ?>>
-											<?php the_post_thumbnail(); ?>
-											<p class="slider-item-title"><?php the_title(); ?></p>
-										</a>
-									</li>
-								
-						<?php 
-							}
-							endwhile; 
-							
-							wp_reset_query();
-							?>
-						</ul>
-					</div>
-				</div>
-				<section class="blog-section">
-						<?php		
-
-						$args2 = array(
-							'post_type' => 'premium_content'
-						);
-						
-						$premposts = new WP_query($args2);
-
-						while ( $premposts->have_posts() ): $premposts->the_post(); 
-							
-								$video = CFS()->get('post_video');
-								$title = get_the_title();
-								$excerpt = get_the_excerpt();
-								$img = get_the_post_thumbnail();
-
-								if (!empty($video)) { ?>
-									<div class="video-container">
-										<div class="post-video"><?php echo $video ?></div>
-										<h2 class="video-title"><?php echo $title ?></h2>
-									</div>
-								<?php	
-								} else if (empty($video)) {
-								?>
-									<div class="post-container">
-										<?php echo $img; ?>
-										<h2 class="post-title"><?php echo $title; ?></h2>
-										<p class="post-excerpt"><?php echo $excerpt; ?></p>
-										<a class="post-link" href=<?php echo the_permalink(); ?>><?php _e('Read', 'nexus'); ?></a>
-									</div>
-								<?php
-								}
-							endwhile;
-
-						wp_reset_query();
+						echo '<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>';
+						echo '<p class="post-meta">'.get_the_date().'</p>';
+						echo '<p class="post-excerpt">'.get_the_excerpt().'</p>';
 						?>
-							
+					</div>
+				<?php endwhile; ?>	
+				<nav role="navigation" class="pagination navigation">
+					<div class="nav-links">
+					<?php 
+						echo paginate_links( array(
+							'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+							'total'        => $club->max_num_pages,
+							'current'      => max( 1, get_query_var( 'paged' ) ),
+							'format'       => '?paged=%#%',
+							'show_all'     => false,
+							'type'         => 'plain',
+							'end_size'     => 2,
+							'mid_size'     => 1,
+							'prev_next'    => true,
+							'prev_text'    => sprintf( '<i></i> %1$s', __( 'Previous', 'Nexus Club' ) ),
+							'next_text'    => sprintf( '%1$s <i></i>', __( 'Next', 'Nexus Club' ) ),
+							'add_args'     => false,
+							'add_fragment' => '',
+						) );
+					?>
+					</div>
+						</nav>
+			</section>	
+			<section class="blog-sidebar">
+				<h3><?php _e('Categories', 'Blog'); ?></h3>
+				<ul>
+				<?php 
+					$cats = get_categories('premium_content');
+
+					foreach($cats as $cat) {
+
+						$catlink = get_category_link($cat->term_id);
 						
-						
-				</section>
-				<div id="more_posts_club"> <?php _e('More Posts', 'nexus'); ?></div>
-					
-		</section>
+						echo '<li><a href="'.$catlink.'">'.$cat->name.'</a></li>';
+					}
+				?>
+				</ul>
+			</section>
+		</main><!-- #main -->
 		<section class="start-journey-section">
 			<h2 class="start-title"><?php _e("Can't find what you're looking for?", 'nexus'); ?></h2>
 			<p class="start-description"><?php _e('We have more to offer', 'nexus'); ?></p>
 			<a class="contact-btn join-footer"><?php _e('Join Nexus Club', 'nexus'); ?></a>
 		</section>
-		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
