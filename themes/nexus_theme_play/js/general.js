@@ -40,17 +40,16 @@
     $(window).on('load', function() {
         $('.hero-label-div').addClass('hero-label-div-shown');
     })
-    
 
-    $('#menu-item-247').click(function() {
+    $('#menu-item-484').click(function() {
         $(this).children('.sub-menu').toogle();
     });
 
-    $('#menu-item-246').click(function() {
+    $('#menu-item-483').click(function() {
         $(this).children('.sub-menu').toogle();
     });
 
-    $('#menu-item-2064').click(function() {
+    $('#menu-item-2148').click(function() {
         $(this).children('.sub-menu').toogle();
     });
 
