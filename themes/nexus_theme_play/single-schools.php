@@ -60,7 +60,7 @@ get_header();
                             <h3><?php echo $opt['option_title']; ?></h3>
                             <ul class="option-info">
                                 <li class="option-duration"><i class="fas fa-calendar"></i><?php echo $opt['option_duration']; ?></li>
-                                <li class="option-work"><i class="fas fa-briefcase"></i><?php echo $work; ?></li>
+                                <li class="option-work"><i class="fas fa-briefcase"></i><?php _e($work, 'Schools'); ?></li>
                                 <li class="option-description"><i class="fas fa-info-circle"></i><?php echo $opt['option_desc']; ?></li>
                             </ul>
                             <a href="#" class="get-quote-btn menu-item-51 menu-item-25"><?php _e('I like this!', 'Front-page'); ?></a>

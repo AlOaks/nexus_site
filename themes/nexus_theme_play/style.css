@@ -5518,7 +5518,8 @@ article {
               box-shadow: 0 0 15px black;
       -webkit-transition-duration: .5s;
               transition-duration: .5s;
-      width: 35%; }
+      width: 35%;
+      height: 600px; }
       .school-options .option:hover h3 {
         font-size: 3rem;
         -webkit-transition-duration: 1s;
