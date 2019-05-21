@@ -587,6 +587,7 @@
        
        li {
            list-style-type: none; 
+           
 
            i {
                margin-right: 2%;
@@ -600,7 +601,15 @@
         }
 
         li {
-            list-style-type: disc;   
+            list-style-type: disc; 
+            
+            p {
+                margin: 0;
+            }
+
+            span {
+                font-style: italic;
+            }  
         }
     }
 

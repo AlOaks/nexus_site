@@ -4235,12 +4235,6 @@ html {
           -ms-flex-order: 1;
               order: 1; } }
 
-.page-template-page-nexus-club {
-  background: white; }
-
-#more_posts_club {
-  display: none; }
-
 .page-template-page-join-us .login-page-form input[type="submit"] {
   width: 20%;
   padding: 1% 0 1% 0; }
@@ -5873,6 +5867,10 @@ article {
         padding-left: 0; } }
     .columns-school .column-details .details-li li, .columns-school .column-areas .details-li li, .columns-school .column-outcomes .details-li li {
       list-style-type: disc; }
+      .columns-school .column-details .details-li li p, .columns-school .column-areas .details-li li p, .columns-school .column-outcomes .details-li li p {
+        margin: 0; }
+      .columns-school .column-details .details-li li span, .columns-school .column-areas .details-li li span, .columns-school .column-outcomes .details-li li span {
+        font-style: italic; }
   .columns-school .column-areas {
     border: 1px solid blue;
     padding: 0 2%;

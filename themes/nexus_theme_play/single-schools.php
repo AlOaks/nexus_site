@@ -217,7 +217,11 @@ get_header();
                         <?php $dates = CFS()->get('start_dates_school'); ?>
                         <ul class="details-li">
                             <?php foreach($dates as $dat) {
-                                echo '<li>'.$dat['start_date'].'</li>';
+                                if($dat['date_description']) {
+                                    echo '<li class="date-w-desc"><p>'.date('F j, Y', strtotime($dat['start_date'])).'</p><span>'.$dat['date_description'].'</span></li>';
+                                } else {
+                                    echo '<li>'.date('F j, Y', strtotime($dat['start_date'])).'</li>';
+                                }
                             } ?>
                         </ul>
                     </div>
