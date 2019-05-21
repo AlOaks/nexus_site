@@ -554,10 +554,18 @@ $('.option').hover(function() {
 }, function() {
     $(this).children('a').slideUp();
     $(this).find(".option-info").slideUp('slow');
-
 });
 
+// FRONT PAGE ANIMATIONS
 
+$('.hero-image-new').hide();
 
+var areasWP = new Waypoint({
+    element: $('.front-page-description'),
+    handler: function() {
+        $('.hero-image-new').slideDown('slow');
+    },
+    offset: '-20%'
+});
 
 })( jQuery );

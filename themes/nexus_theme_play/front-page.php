@@ -30,10 +30,9 @@ $lang = get_locale();
 
 				if($promoBanner) {
 			?>
-				<section class="school-slide <?php echo $schools->name; ?>" >
+				<a  href="<?php echo get_the_permalink(); ?>" class="school-slide <?php echo $schools->name; ?>" >
 					<img  alt="<?php echo get_the_title(); ?>" src=<?php echo $promoBanner; ?> >
-					<a href="<?php echo get_the_permalink(); ?>"><?php _e('Learn More', 'School Pages'); ?></a>
-				</section>
+				</a>
 
 			<?php } endwhile; wp_reset_query(); ?>
 			</div>

@@ -26,7 +26,6 @@
         pauseOnFocus: false,
         appendDots: $('.slider-dots'),
         dots: true
-    })
-
+    });
 
 })( jQuery )

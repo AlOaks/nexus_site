@@ -49,10 +49,9 @@ get_header();
 
                             if($promoBanner) {
                         ?>
-                            <section class="area-slide" >
+                            <a href="<?php echo get_the_permalink(); ?>" class="area-slide" >
                                 <img  alt="<?php echo get_the_title(); ?> image" src=<?php echo $promoBanner; ?> >
-					            <a href="<?php echo get_the_permalink(); ?>"><?php _e('Learn More', 'School Pages'); ?></a>
-                            </section>
+                            </a>
                         <?php } endwhile; wp_reset_query(); ?>
                     </div>
                     <div class="slider-dots"></div>
