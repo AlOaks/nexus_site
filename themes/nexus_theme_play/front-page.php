@@ -36,6 +36,13 @@ $lang = get_locale();
 
 			<?php } endwhile; wp_reset_query(); ?>
 			</div>
+			<div class="keyword-container">
+				<h1 ><?php echo CFS()->get('front_keyword'); ?></h1>
+				<?php the_content(); ?>
+				<div class="bouncing-arrow">
+					<i class="fas fa-chevron-down"></i>
+				</div>
+			</div>
 			<section class="hero-image-new">
 				<div class="esl-hero-div">
 					<?php $eslBkg = CFS()->get('esl_background_image'); ?>

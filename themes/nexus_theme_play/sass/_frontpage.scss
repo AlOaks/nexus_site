@@ -5,9 +5,47 @@ html {
     margin-top: 0 !important;
 }
 
+.keyword-container {
+    text-align: center;
+    color: $font-blue;
+    font-family: $roboto;
+    font-style: italic;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    p {
+        font-size: 1rem;
+        width: 75%;
+        text-align: center;
+        font-style: initial;
+        margin-top: 0;
+
+    }
+
+    .bouncing-arrow {
+        animation: bounce 2s infinite;
+        padding: 20px;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
 
 .slick-slider {
-    height: 70vh;
+    height: 500px;
     margin-top: 14vh;
     position: relative;
     width: 100%;
