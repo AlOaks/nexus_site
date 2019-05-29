@@ -5418,10 +5418,22 @@ article {
     font-family: "Roboto"; }
     .school-promo-hero .schoolmonth-hook h1 {
       text-align: center; }
+      @media (max-width: 900px) {
+        .school-promo-hero .schoolmonth-hook h1 {
+          max-width: 90%; } }
     @media (max-width: 900px) {
       .school-promo-hero .schoolmonth-hook {
         margin-top: auto;
-        font-size: 1rem; } }
+        font-size: 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .school-promo-hero .schoolmonth-banner {
     font-size: 2rem;
     background: #bd2020;
@@ -5831,7 +5843,7 @@ article {
       height: 65%; }
       @media (max-width: 900px) {
         .nexus-rating-school-month .nexus-rating-school .individual-scores {
-          width: 80%;
+          width: 95%;
           margin-top: 2vh; } }
       .nexus-rating-school-month .nexus-rating-school .individual-scores ul {
         margin: 0;
@@ -5874,7 +5886,7 @@ article {
           justify-content: space-evenly;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  width: 90%;
+  width: 100%;
   margin: 3% auto; }
   @media (max-width: 900px) {
     .columns-school {
@@ -5893,7 +5905,7 @@ article {
     margin-right: 1.5%; }
     @media (max-width: 900px) {
       .columns-school .column-details, .columns-school .column-areas, .columns-school .column-outcomes {
-        width: 80%; } }
+        width: 85%; } }
     .columns-school .column-details h3, .columns-school .column-areas h3, .columns-school .column-outcomes h3 {
       font-family: "Roboto";
       text-align: center;

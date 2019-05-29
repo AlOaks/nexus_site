@@ -17,6 +17,8 @@ $featSchools = createTokenForm('featSchools');
 
 $school = get_the_title();
 $pageLang = get_locale();
+
+console($pageLang);
 $salaryChart = CFS()->get('salary_chart');
 
 $args = array(
@@ -293,9 +295,9 @@ $schoolQuery = new WP_query($args);
 								
 							?>
 							<ul>
-								<li><i class="fas fa-passport"></i><?php _e('Immigration Possibilities', 'School Pages'); ?><span><?php echo $immiCh; ?></span></li>
-								<li><i class="fas fa-id-card"></i><?php _e('PGWP', 'School Pages'); ?><span><?php echo $pgwpCh; ?></span></li>
+								<li><i class="fas fa-id-card"></i><?php _e('Post-Grad Work Permit', 'School Pages'); ?><span><?php echo $pgwpCh; ?></span></li>
 								<li><i class="fas fa-user-tie"></i><?php _e('Career Oportunities', 'School Pages'); ?><span class="<?php echo strtolower($label); ?>"><?php echo $label; ?></span></li>
+								<li><i class="fas fa-passport"></i><?php _e('Immigration Possibilities', 'School Pages'); ?><span class="<?php echo strtolower($label); ?>"><?php echo $label; ?></li>								
 								<li id="avg-salary-li">
 									<i class="fas fa-dollar-sign"></i>
 									<?php _e('Average Salary', 'School Pages'); ?>

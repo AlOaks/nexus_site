@@ -57,11 +57,18 @@
 
         h1 {
             text-align: center;
+
+            @include mobile {
+                max-width: 90%;
+            }
         }
 
         @include mobile {
             margin-top: auto;
             font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         
@@ -506,7 +513,7 @@
             height: 65%;
 
             @include mobile {
-                width: 80%;
+                width: 95%;
                 margin-top: 2vh;
             }
             
@@ -542,7 +549,7 @@
     display: flex;
     justify-content: space-evenly;
     align-self: flex-start;
-    width: 90%;
+    width: 100%;
     margin: 3% auto;
 
     @include mobile {
@@ -558,7 +565,7 @@
        margin-right: 1.5%;
 
        @include mobile {
-           width: 80%;
+           width: 85%;
        }
 
        h3 {

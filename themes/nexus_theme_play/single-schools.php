@@ -259,9 +259,9 @@ get_header();
                         
                     ?>
                     <ul>
-                        <li><i class="fas fa-passport"></i><?php _e('Immigration Possibilities', 'School Pages'); ?><span><?php echo $immiCh; ?></span></li>
-                        <li><i class="fas fa-id-card"></i><?php _e('PGWP', 'School Pages'); ?><span><?php echo $pgwpCh; ?></span></li>
-                        <li><i class="fas fa-user-tie"></i><?php _e('Career Oportunities', 'School Pages'); ?><span class="<?php echo strtolower($label); ?>"><?php echo $label; ?></span></li>
+                        <li><i class="fas fa-id-card"></i>Post-Grad Work Permit<span><?php echo $pgwpCh; ?></span></li>
+                        <li><i class="fas fa-user-tie"></i>Career Oportunities<span class="<?php echo strtolower($label); ?>"><?php echo $label; ?></span></li>
+                        <li><i class="fas fa-passport"></i>Immigration Possibilities<span class="<?php echo strtolower($label); ?>"><?php echo $label; ?></li>					
                         <li id="avg-salary-li"><i class="fas fa-dollar-sign"></i><?php _e('Average Salary', 'School Pages'); ?><canvas id="salary-chart"></canvas></li>
                     </ul>
                 </div>
