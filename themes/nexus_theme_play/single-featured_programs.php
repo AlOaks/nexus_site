@@ -100,7 +100,7 @@ $schoolQuery = new WP_query($args);
 										<input type="hidden" id="featprogs-lang" name="featlanguage" value="<?php echo $pageLang; ?>">
 										<input type="text" name="featname" id="featprogs-name" placeholder="<?php _e('Name', 'Landing Pages'); ?>" />
 										<input type="email" name="featemail" id="featprogs-email" placeholder="<?php _e('E-mail', 'Landing Pages'); ?>" />
-										<input type="text" name="featphone" id="featprogs-phone" placeholder="<?php _e('Phone / Whatsapp', 'Landing Pages'); ?>" />
+										<input type="number" name="featphone" id="featprogs-phone" placeholder="<?php _e('Phone / Whatsapp', 'Landing Pages'); ?>" />
 										<select name="featprogram" id="featprogs-progs" required>
 											<option disabled selected><?php _e('Select an Option', 'Landing Pages'); ?></option>
 											<?php 
