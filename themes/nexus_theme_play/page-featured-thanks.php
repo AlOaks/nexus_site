@@ -62,9 +62,6 @@ if($verified === true) {
         ]);
     
 
-} else {
-    // secureLog('Form Token @ Contact Form');
-    // header("refresh:1;url=https://nexuseducanada.com");
 }
 
 
