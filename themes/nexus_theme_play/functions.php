@@ -133,10 +133,8 @@ add_action( 'widgets_init', 'nexus_theme_scratch_widgets_init' );
 
 function nexus_theme_scratch_scripts() {
 	
-	wp_enqueue_script('ajax-call', get_template_directory_uri().'/build/js/ajax-call.min.js', array('jquery'), null, true);
 	wp_enqueue_script('form-js', get_template_directory_uri().'/build/js/form.min.js', array('jquery'), null, true);
 	wp_enqueue_script('pie-js', get_template_directory_uri().'/build/js/pie.min.js', array('jquery', 'chart'), null, true);
-	// wp_enqueue_script('rating-js', get_template_directory_uri().'/build/js/rating.min.js', array('jquery'), null, true);
 	wp_enqueue_script('ajax-pagination', get_template_directory_uri().'/build/js/ajax-pagination.min.js', array('jquery'), null, true);
 	wp_enqueue_script('parallax', 'https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js', array('jquery'), null, true);
 	wp_enqueue_script('chart', 'https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js', array('jquery'), null, true);
