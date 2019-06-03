@@ -34,8 +34,6 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/nexus_theme/
-!themes/nexus_theme_scratch/
 !themes/nexus_theme_play/
 # !themes/nexustesting/
 
