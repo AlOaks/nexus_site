@@ -315,8 +315,10 @@ $schoolQuery = new WP_query($args);
 					<p>© Copyright 2019 Nexus Education Consulting</p>
 				</div><!-- .site-info1 -->
 			</footer><!-- #colophon -->
+			</main>
+			</div>
 		</div><!-- #page -->
-
+								
 	<?php wp_footer(); ?>
 
 	</body>

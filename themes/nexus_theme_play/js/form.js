@@ -224,6 +224,47 @@ fpForm.submit(function(ev) {
     fpForm.unbind().submit();
 });
 
+// LANDING PAGE NEXUS GENERAL
+
+var lpFormNexus = $('#contact-form-carnaval');
+var lpFormNexusSending = false;
+
+
+
+lpFormNexus.submit(function(ev) {
+    ev.preventDefault();
+    var formData = {
+        'agencyId': 935,
+        'firstname': $('#lp-nexus-fname').val(),
+        'lastname': $('#lp-nexus-lname').val(),
+        'email': $('#lp-nexus-email').val(),
+        'phone': $('#lp-nexus-phone').val(),
+        'notes': 'From: General Nexus Landing Page. The student is interested in: ' + $('#lp-nexus-program').val() + ' Language: ' + $('#lp-nexus-lang').val(),
+        'studentCurrentPipelineStages': [
+            {
+              "studentPipelineStageId": 17430
+            }
+        ]
+    }
+
+    if(!lpFormNexusSending) {
+        lpFormNexusSending = true;
+        $.ajax({
+            url: 'https://app.edvisor.io/api/v1/student?public_key=public_ae06b8cda938ab061c9ba0d680d41f85',
+            data: JSON.stringify(formData),
+            type: 'PUT',
+            contentType: 'application/json; chraset=utf-8',
+            processData: false
+        }).done(function(response) {
+            lpFormNexusSending = false;
+        }).fail(function(data) {
+            lpFormNexusSending = false;
+        });
+    }
+
+    lpFormNexus.unbind().submit();
+});
+
 
 
 })( jQuery );

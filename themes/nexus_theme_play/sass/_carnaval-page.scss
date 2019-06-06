@@ -1,0 +1,710 @@
+.hero-section-carnaval {
+    width: 100%;
+    height: 500px;
+
+    .hero-topstripe {
+        background: $bg-blue;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+
+        @include mobile {
+            height: 70px;
+        }
+    }
+
+    .hero-image-carnaval {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        filter: brightness(50%);
+    }
+
+
+    .hero-nexus-logo {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $div-white;
+        z-index: 3;
+        border-radius: 5px;
+        padding: 20px;
+
+        @include mobile {
+            height: 80px;
+            width: auto;
+            top: 30px;
+        }
+    }
+
+    .page-content {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $roboto;
+        color: white;
+
+        @include mobile {
+            top: 15%;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 0;
+
+            @include mobile {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-family: $sans;
+            text-align: center;
+        }
+    }
+}
+
+
+.areas-section-carnaval {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2.5%;
+
+    @include tablet {
+        flex-direction: row;
+        padding: 2.5%;
+        flex-wrap: wrap;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .area-landing-carnaval {
+        height: 30rem;
+        width: 350px;
+        border-radius: 5px;
+        transition-duration: .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        position: relative;
+
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        @include tablet {
+            width: 30%;
+            margin-bottom: 0;
+            height: 25rem;
+        }
+
+
+        &:first-of-type {
+            
+            
+
+            @include mobile {
+                width: 100%;
+                height: 25rem;
+                margin-bottom: 10px; 
+
+                &:hover {
+                    width: 100%;
+                }
+            }
+
+            @include tablet {
+                width: 90%;
+                margin-bottom: 50px;
+                height: 20rem;
+
+                p {
+                    margin-top: 0;
+                }
+
+                &:hover {
+                    width: 95%;
+                }
+            }
+
+            a {
+                background: $bg-blue;
+
+                &:hover {
+                    background: lighten($bg-blue, 10%);
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+
+    
+            @include mobile {
+                width: 100%;
+
+                &:hover {
+                    width: 100%;
+                }
+            }
+
+            @include tablet {
+                width: 40%;
+
+                &:hover {
+                    width: 45%;
+                }
+            }
+            a {
+                background: $div-red;
+
+                &:hover {
+                    background: lighten($div-red, 10%);
+                }
+            }
+        }
+
+        &:nth-of-type(3) {
+
+            @include tablet {
+                width: 40%;
+
+                &:hover {
+                    width: 45%;
+                }
+            }
+
+            @include mobile {
+                width: 100%;
+
+                &:hover {
+                    width: 100%;
+                }
+            }
+            a {
+                background: $div-yellow;
+
+                &:hover {
+                    background: lighten($div-yellow, 10%);
+                }
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.3);
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            transition-duration: 1s;
+            z-index: 0;
+        }
+
+        h3 {
+            color: white;
+            z-index: 1;
+            font-family: $roboto;
+            font-size:2.5rem;
+            position: relative;
+            text-align: center;
+
+            &:after {
+                content: "";
+                height: 1px;
+                background: white;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 30%;
+            }
+        }
+
+        p {
+            height: 0;
+            overflow: hidden;
+            color: white;
+            font-family: $sans;
+            max-width: 90%;
+            z-index: 1;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+        a {
+            
+            width: 100%;
+            background: $bg-blue;
+            position: absolute;
+            bottom: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: white;
+            font-family: $roboto;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            height: 0;
+            overflow: hidden;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            
+            &:visited {
+                color: white;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 15px rgb(0,0,0);
+            transition-duration: 1s;
+            width: 35%;
+
+            h3 {
+                font-size: 2rem;
+                transition-duration: 1s;
+            }
+
+            p {
+                height: 100px;
+                transition-delay: .2s;
+                transition-duration: .5s;
+            }
+
+            a {
+                transition-delay: 1s;
+                transition-duration: .5s;
+                height: 70px;
+            }
+
+            &:after {
+                background: rgba(0,0,0,.5);
+                transition-duration: .5s;
+            }
+
+
+            @include mobile {
+                width: 100%;
+
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.carnaval-testimonial-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5%;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .landing-page-image {
+        width: 45%;
+        height: auto;
+        border-radius: 5px;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .testimonial-carnaval {
+        width: 45%;
+        height: 350px;
+        border-radius: 5px;
+        position: relative;
+        background: $div-white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        @include mobile {
+            width: 100%;
+            height: auto;
+        }
+
+        i {
+            position: absolute;
+            color: lightgray;
+        }
+
+        .fa-quote-left {
+            top: 20%;
+            left: 10%;
+            z-index: 0;
+            font-size: 5rem;
+        }
+
+        .fa-user-alt {
+            right: 0;
+            bottom: 0;
+            font-size: 10rem;
+            z-index: 0;
+        }
+
+        h4 {
+            font-size: 2rem;
+            color: $font-blue;
+            font-family: $roboto;
+            margin-bottom: 0;
+            margin-top: 0;
+            z-index: 1;
+        }
+
+        p {
+            color: $font-blue;
+            font-family: $sans;
+            width: 90%;
+            font-size: .9rem;
+            z-index: 1;
+
+        }
+    }
+}
+
+.form-contact-carnaval {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5%;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: wrap;
+
+    @include tablet {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    @include mobile {
+        padding: 5%;
+        flex-direction: column;
+        height: auto;
+        padding-top: 0;
+    }
+
+    
+
+    .social-info-carnaval {
+        width: 400px;
+        height: 150px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: $div-red;
+
+        @include tablet {
+            width: 40%;
+            height: 350px;
+            order: 3;
+        }
+
+        @include mobile {
+            width: 100%;
+            padding: 2.5%;
+            height: 100px;
+        }
+
+       
+
+        h2 {
+            color: $div-white;
+            font-size: 1.5rem;
+            font-family: $roboto;
+            text-align: center;
+            margin: 0;
+
+            @include mobile {
+                font-size: 1.2rem;
+            }
+        }
+
+        ul {
+            display: flex;
+            width: 90%;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            @include tablet {
+                flex-wrap: wrap;
+            }
+
+            img {
+                display: none;
+            }
+
+            i {
+                font-size: 3rem;
+                color: $div-white;
+                transition-duration: .5s;
+                // display: none;
+
+                @include tablet {
+                    width: 100px;
+                    text-align: center;
+                    font-size: 4rem;
+                }
+
+                @include mobile {
+                    font-size: 3rem;
+                    width: auto;
+                }
+
+                &:hover {
+                    color: lighten($div-yellow, 20%);
+                    transition-duration: .5s;
+                }
+            }
+        }
+
+    }
+
+    .contact-info-carnaval {
+        height: 350px;
+        width: 400px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: lighten($div-yellow, 20%);
+
+        @include tablet {
+            width: 55%;
+            order: 2;
+            margin: 20px 0;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+       
+
+        h3 {
+            color: $font-blue;
+            font-family: $roboto;
+            text-align: center;
+            font-size: 1.5rem;
+            max-width: 90%;
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 60%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 80%;
+
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 90%;
+                color: $font-blue;
+
+                i {
+                    margin-right: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    font-family: $sans;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+    #contact-form-carnaval {
+        width: 60%;
+        height: 600px;
+        border-radius: 5px;
+        background: lightgray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1%;
+
+        @include tablet {
+            flex-direction: row;
+            height: 400px;
+            margin-top: 10px;
+            order: 1;
+        }
+
+        @include mobile {
+            width: 100%;
+            flex-direction: column;
+            padding: 5%;
+            height: auto;
+        }
+    
+       
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            color: $font-blue;
+            font-family: $roboto;
+            margin: 0;
+            position: relative;
+
+            @include mobile {
+                font-size: 2rem;
+            }
+
+            &:after {
+                content: "";
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                height: 3px;
+                background: $div-yellow;
+                width: 25%;
+            }
+        }
+
+        .landing-form-row {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            @include tablet {
+                width: 45%;
+            }
+
+            @include mobile {
+                width: 100%;
+             
+            }
+
+            
+
+            label {
+                color: $font-blue;
+                font-family: $roboto;
+                font-weight: bold;
+            }
+
+            .label-active {
+                
+                @include mobile {
+                    color: red;
+                }
+            }
+
+            input {
+                width: 100%;
+                height: 2.5rem;
+                border-radius: 15px;
+                color: $font-blue;
+                font-family: $sans;
+                padding-left: 10px;
+                font-style: italic;
+
+                &:focus {
+                    outline: none;
+                    label {
+                        color: red;
+                    }
+                }
+            }
+
+           
+
+            select {
+                height: 2.5rem;
+                border-radius: 15px;
+                width: 100%;
+                padding-left: 10px;
+                font-family: $sans;
+                color: $font-blue;
+            }
+        }
+
+        .terms {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            @include mobile {
+                width: 100%;
+                label {
+                    font-size: .9rem;
+                }
+            }
+
+            input {
+                width: 10%;
+                height: 1rem;
+            }
+        }
+
+        .landing-form-submit {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                width: 30%;
+                background: $div-red;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.5rem;
+            }
+        }
+    } 
+}
+
+
+

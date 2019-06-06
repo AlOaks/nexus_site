@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Thanks Contact
+ * Template Name: Thanks General Landing Page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -15,7 +15,7 @@ session_start();
 
 get_header();
 
-$verified = tokenVer("contactform");
+$verified = tokenVer('lpNexusForm');
 
 require("vendor/autoload.php");
 
@@ -23,12 +23,18 @@ use \DrewM\MailChimp\MailChimp;
 
 $mailC = new MailChimp('c5d0f074ef62e6395640869899d38579-us8');
 
-$listID = '7dc11a23ab';
+if($_POST['lpNexusLang'] && $_POST['lpNexusLang'] == 'es_ES') {
+    $listID = '2b7e85bfa8';
+} else if($_POST['lpNexusLang'] == 'en_US') {
+    $listID = '71b439e476';
+} else {
+    $listID = 'b7f483ccf1';
+}
 
-if($verified == true) {
+if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-	$allowedAccomFields = array('tokenField','nexus-email','contact-name', 'contact-email', 'contact-message', 'privacy-policy');
+	$allowedAccomFields = array('lpNexusFirstName', 'lpNexusLastName', 'lpNexusEmail', 'lpNexusPhone', 'lpNexusProgram', 'lpNexusTerms', 'lpNexusCountry', 'lpNexusLang', 'lpNexusToken');
 
 	// Building an array with the $_POST-superglobal 
 	foreach ($_POST as $key=>$item) {
@@ -36,51 +42,26 @@ if($verified == true) {
 	// Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
         if (!in_array($key, $allowedAccomFields)) {
             
-            secureLog('Unknown form fields @ Contact Form');
+            secureLog('Unknown form fields @ Landing Page Form');
             die("Error detected. Please use only the fields in the form");
             // header("refresh:1;url=https://nexuseducanada.com");
             }
     }
+        $fname = stripcleantohtml($_POST['lpNexusFirstName']);
+        $lname = stripcleantohtml($_POST['lpNexusLastName']);
+        $email = stripcleantohtml($_POST['lpNexusEmail']);
+        $phone = stripcleantohtml($_POST['lpNexusPhone']);
+        $program = stripcleantohtml($_POST['lpNexusProgram']);
+        $country = stripcleantohtml($_POST['lpNexusCountry']);
+        $terms = stripcleantohtml($_POST['lpNexusTerms']);
 
-        $name = stripcleantohtml($_POST['contact-name']);
-        $email = stripcleantohtml($_POST['contact-email']);
-        $message = stripcleantohtml($_POST['contact-message']);
-        $consent = stripcleantohtml($_POST['privacy-policy']);
-
-        $to = $_POST['nexus-email'];
-        $subject = 'Contact Form from'.$name;
-        $msg = '
-
-        <h1 style="color: red;">Contact Form Submitted by '.$name.'</h1>
-
-            Name: '.$name.'<br>
-            Email: '.$email.'<br>
-            Message: '.$message.'<br>
-            Privacy Policy: '.$consent.'<br>
-            Language: '.$lang.'<br>
-
-        ';
-        
-        $headers .= "Reply-to: ".$name."<".$email.">\r\n";
-        $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
-        $headers .= "From: Nexus Contact Form\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-        // echo '<h1>'.$to, $name, $email, $message, $consent.'</h1>';
-        wp_mail($to, $subject, $msg, $headers);
-
-    $newMember = $mailC->post('lists/'.$listID.'/members', [
-        'email_address' => $email,
-        'merge_fields' => [
-            'FNAME' => $name
-        ],
-        'status' => 'subscribed'
-    ]);
-
-} else {
-    secureLog('Form Token @ Contact Form');
-    header("refresh:1;url=https://nexuseducanada.com");
+        $newMember = $mailC->post('lists/'.$listID.'/members', [
+            'email_address' => $email,
+            'merge_fields' => [
+                'FNAME' => $fname.' '.$lname,
+            ],
+            'status' => 'subscribed'
+        ]);
 }
 
 
