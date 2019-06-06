@@ -115,6 +115,9 @@ $schoolQuery = new WP_query($args);
 							</div>
 						</div>
 					</section>
+					<section class="feat-landing-content">
+						<?php the_content(); ?>
+					</section>
 					<section class="school-options">
 						<?php 
 

@@ -142,6 +142,25 @@
     }
 }
 
+.feat-landing-content {
+
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $font-blue;
+
+    p {
+        margin: 0;
+        color: $font-blue;
+        font-family: $sans;
+        text-align: center;
+        width: 70%;
+    }
+}
+
 .school-options {
     background: white;
     padding: 2.5%;
