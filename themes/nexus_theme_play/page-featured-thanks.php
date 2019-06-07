@@ -25,10 +25,10 @@ $mailC = new MailChimp('c5d0f074ef62e6395640869899d38579-us8');
 
 if($_POST['featlanguage'] && $_POST['featlanguage'] == 'es_ES') {
     $listID = '2b7e85bfa8';
-} else if($_POST['featlanguage'] == 'en_US') {
-    $listID = '71b439e476';
-} else {
+} else if($_POST['featlanguage'] && $_POST['featlanguage'] == 'pt_BR') {
     $listID = 'b7f483ccf1';
+} else {
+    $listID = '71b439e476';
 }
 
 if($verified === true) {
