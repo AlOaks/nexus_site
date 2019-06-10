@@ -7167,11 +7167,12 @@ article {
         -webkit-transition-duration: 1s;
                 transition-duration: 1s; }
       .areas-section-carnaval .area-landing-carnaval:hover p {
-        height: 100px;
+        height: auto;
         -webkit-transition-delay: .2s;
                 transition-delay: .2s;
         -webkit-transition-duration: .5s;
-                transition-duration: .5s; }
+                transition-duration: .5s;
+        text-align: justify; }
       .areas-section-carnaval .area-landing-carnaval:hover a {
         -webkit-transition-delay: 1s;
                 transition-delay: 1s;
