@@ -99,10 +99,6 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
 
         @include mobile {
             width: 100%;

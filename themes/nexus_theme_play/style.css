@@ -7031,10 +7031,7 @@ article {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+    position: relative; }
     @media (max-width: 900px) {
       .areas-section-carnaval .area-landing-carnaval {
         width: 100%;
