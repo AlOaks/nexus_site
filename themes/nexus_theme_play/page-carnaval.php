@@ -33,17 +33,17 @@ $token = createTokenForm('lpNexusForm');
                         </div>
                     </section>
                     <section class="areas-section-carnaval">
-                        <div class="area-landing-carnaval esl-carnaval" style="background: url(<?php echo CFS()->get('esl_bkg')?>) no-repeat cover center;">
+                        <div class="area-landing-carnaval esl-carnaval" style="background: url(<?php echo CFS()->get('esl_bkg')?>);">
                             <h3><?php _e('ESL', 'Landing Pages'); ?></h3>
                             <p><?php echo CFS()->get('esl_lp_description'); ?></p>
                             <a href="#contact-form-carnaval"><?php _e('Learn More', 'Landing Pages'); ?></a>
                         </div>
-                        <div class="area-landing-carnaval ws-carnaval" style="background: url(<?php echo CFS()->get('ws_bkg'); ?>) no-repeat cover center;">
+                        <div class="area-landing-carnaval ws-carnaval" style="background: url(<?php echo CFS()->get('ws_bkg'); ?>);">
                             <h3><?php _e('Work & Study', 'Landing Pages'); ?></h3>
                             <p><?php echo CFS()->get('ws_lp_description'); ?></p>
                             <a href="#contact-form-carnaval"><?php _e('Learn More', 'Landing Pages'); ?></a>
                         </div>
-                        <div class="area-landing-carnaval he-carnaval" style="background: url(<?php echo CFS()->get('he_bkg'); ?>) no-repeat cover center;">
+                        <div class="area-landing-carnaval he-carnaval" style="background: url(<?php echo CFS()->get('he_bkg'); ?>);">
                             <h3><?php _e('Higher Education', 'Landing Pages'); ?></h3>
                             <p><?php echo CFS()->get('he_lp_description'); ?></p>
                             <a href="#contact-form-carnaval"><?php _e('Learn More', 'Landing Pages'); ?></a>
