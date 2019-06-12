@@ -25,7 +25,7 @@ $mailC = new MailChimp('c5d0f074ef62e6395640869899d38579-us8');
 
 $listID = '7dc11a23ab';
 
-if($verified == true) {
+if($verified === true) {
 
 		// Building a whitelist array with keys which will send through the form, no others would be accepted later on
 	$allowedAccomFields = array('tokenField','nexus-email','contact-name', 'contact-email', 'contact-message', 'privacy-policy');
@@ -79,7 +79,7 @@ if($verified == true) {
     ]);
 
 } else {
-    secureLog('Form Token @ Contact Form');
+    secureLog('Form Token @ Contact Form PHP');
     header("refresh:1;url=https://nexuseducanada.com");
 }
 
