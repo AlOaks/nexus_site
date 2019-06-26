@@ -65,7 +65,7 @@ $lang = get_locale();
 					<div class="carnaval-presign-up" id="presign">
 						<h3><?php echo CFS()->get('presign_up_title'); ?></h3>
 						<p><?php echo CFS()->get('presign_up_description'); ?></p>
-						<form action="http://localhost/nexus/thanks-presignup" method="post">
+						<form action="https://nexsueducanada.com/thanks-presignup" method="post">
 							<input type="hidden" name="presign-lang" value=<?php echo $lang; ?> />
 							<input type="text" name="presign-name" id="presignName" placeholder="<?php _e('Name', 'Landing Page Carnval'); ?>" required />
 							<input type="text" name="presign-last-name" id="presignLastName" placeholder="<?php _e('Last Name', 'Landing Page Carnval'); ?>" required />
