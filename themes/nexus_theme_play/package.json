@@ -4,12 +4,13 @@
   "description": "A starter theme for RED students, based on Underscores.",
   "main": "gulpfile.js",
   "dependencies": {
-    "js-yaml": ">=3.13.1",
     "axios": ">=0.18.1",
-    "tar": ">=2.2.2",
     "braces": ">=2.3.1",
     "fstream": ">=1.0.12",
-    "lodash": ">=4.17.11"
+    "js-yaml": ">=3.13.1",
+    "lodash": ">=4.17.11",
+    "node-sass": "^4.12.0",
+    "tar": ">=2.2.2"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
