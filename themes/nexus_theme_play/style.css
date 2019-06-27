@@ -7761,7 +7761,6 @@ article {
         .carnaval-main .carnaval-contest .promo-contest-container, .carnaval-main .carnaval-promo .promo-contest-container {
           width: 45%; }
           .carnaval-main .carnaval-contest .promo-contest-container h3, .carnaval-main .carnaval-contest .promo-contest-container p, .carnaval-main .carnaval-promo .promo-contest-container h3, .carnaval-main .carnaval-promo .promo-contest-container p {
-            height: 100px;
             margin: 0;
             display: -webkit-box;
             display: -ms-flexbox;
