@@ -53,13 +53,17 @@ $lang = get_locale();
 						?>
 					</div>
 					<div class="carnaval-contest">
-						<h3><?php echo CFS()->get('contest'); ?></h3>
-						<p><?php echo CFS()->get('contest_description'); ?></p>
+						<div class="promo-contest-container">
+							<h3><?php echo CFS()->get('contest'); ?></h3>
+							<p><?php echo CFS()->get('contest_description'); ?></p>
+						</div>
 						<img src="<?php echo CFS()->get('contest_img'); ?>" alt="contest-image" />
 					</div>
 					<div class="carnaval-promo">
-						<h3><?php echo CFS()->get('special_promotion'); ?></h3>
-						<p><?php echo CFS()->get('special_promo_description'); ?></p>
+						<div class="promo-contest-container">
+							<h3><?php echo CFS()->get('special_promotion'); ?></h3>
+							<p><?php echo CFS()->get('special_promo_description'); ?></p>
+						</div>
 						<img src="<?php echo CFS()->get('promo_img'); ?>" alt="promo-image" />
 					</div>
 					<div class="carnaval-presign-up" id="presign">

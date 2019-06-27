@@ -7741,31 +7741,39 @@ article {
             align-items: center;
     color: #193F5C;
     background: #F3F5F8;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto; }
     @media (min-width: 1001px) {
       .carnaval-main .carnaval-contest, .carnaval-main .carnaval-promo {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        height: 500px;
+        height: auto;
         width: 100%;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .carnaval-main .carnaval-contest img, .carnaval-main .carnaval-promo img {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 40px; }
+        .carnaval-main .carnaval-contest .promo-contest-container, .carnaval-main .carnaval-promo .promo-contest-container {
           width: 45%; }
-        .carnaval-main .carnaval-contest h3, .carnaval-main .carnaval-contest p, .carnaval-main .carnaval-promo h3, .carnaval-main .carnaval-promo p {
-          width: 40%;
-          height: 100px;
-          margin: 0;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
+          .carnaval-main .carnaval-contest .promo-contest-container h3, .carnaval-main .carnaval-contest .promo-contest-container p, .carnaval-main .carnaval-promo .promo-contest-container h3, .carnaval-main .carnaval-promo .promo-contest-container p {
+            height: 100px;
+            margin: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+        .carnaval-main .carnaval-contest img, .carnaval-main .carnaval-promo img {
+          width: 45%; } }
     .carnaval-main .carnaval-contest h3, .carnaval-main .carnaval-promo h3 {
       font-size: 1.5rem; }
       @media (min-width: 1001px) {
@@ -7777,16 +7785,18 @@ article {
     border-bottom: none;
     padding-bottom: 0; }
     @media (min-width: 1001px) {
-      .carnaval-main .carnaval-promo img {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
-      .carnaval-main .carnaval-promo h3, .carnaval-main .carnaval-promo p {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-      .carnaval-main .carnaval-promo h3 {
-        height: 160px; } }
+      .carnaval-main .carnaval-promo {
+        padding-bottom: 40px; }
+        .carnaval-main .carnaval-promo img {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+        .carnaval-main .carnaval-promo h3 {
+          height: 160px; }
+        .carnaval-main .carnaval-promo .promo-contest-container {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
   .carnaval-main .carnaval-presign-up {
     display: -webkit-box;
     display: -ms-flexbox;

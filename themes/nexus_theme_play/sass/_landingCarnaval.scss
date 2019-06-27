@@ -158,25 +158,34 @@
         color: $font-blue;
         background: $div-white;
         padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
 
         @include desktop {
             flex-wrap: wrap;
-            height: 500px;
+            height: auto;
             width: 100%;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px;
+
+            .promo-contest-container {
+                width: 45%;
+
+                h3, p {
+                    height: 100px;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
 
             img {
                 width: 45%;
             }
 
-            h3, p {
-                width: 40%;
-                height: 100px;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+            
         }
 
         h3 {
@@ -198,16 +207,19 @@
         padding-bottom: 0;
 
         @include desktop {
+            padding-bottom: 40px;
+
             img {
                 order: 1;
             }
 
-            h3, p {
-                order: 2;
-            }
-
+            
             h3 {
                 height: 160px;
+            }
+
+            .promo-contest-container {
+                order: 2;
             }
         }
     }
