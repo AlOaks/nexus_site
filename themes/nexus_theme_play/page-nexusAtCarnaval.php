@@ -36,7 +36,7 @@ $lang = get_locale();
 						<img class="logo" src=<?php echo get_template_directory_uri().'/assets/images/logo-nexus-white-and-color.png'; ?> alt="nexus-logo" />
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
-						<a href="#presign"><?php _e('Pre-Sign Up', 'Langin Page Carnaval'); ?></a>
+						<a href="#contest"><?php _e('Learn more', 'Langin Page Carnaval'); ?></a>
 					</div>
 					<div class="carnaval-main-description">
 						<h2><?php echo CFS()->get('description_title'); ?></h2>
@@ -52,7 +52,7 @@ $lang = get_locale();
 							}
 						?>
 					</div>
-					<div class="carnaval-contest">
+					<div class="carnaval-contest" id="contest">
 						<div class="promo-contest-container">
 							<h3><?php echo CFS()->get('contest'); ?></h3>
 							<p><?php echo CFS()->get('contest_description'); ?></p>
