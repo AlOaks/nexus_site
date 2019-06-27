@@ -7721,10 +7721,6 @@ article {
     .carnaval-main .carnaval-partners img {
       width: 80%;
       margin-bottom: 15px; }
-      .carnaval-main .carnaval-partners img:last-of-type {
-        height: 100px;
-        width: auto;
-        margin-bottom: 0; }
       @media (min-width: 1001px) {
         .carnaval-main .carnaval-partners img {
           width: 18%; } }
@@ -7872,7 +7868,6 @@ article {
         padding-top: 40px; }
         .carnaval-main .carnaval-presign-up h3, .carnaval-main .carnaval-presign-up p {
           width: 50%;
-          height: 100px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;

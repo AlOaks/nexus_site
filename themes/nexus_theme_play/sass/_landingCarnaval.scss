@@ -139,12 +139,6 @@
             width: 80%;
             margin-bottom: 15px;
 
-            &:last-of-type {
-                height: 100px;
-                width: auto;
-                margin-bottom: 0;
-            }
-
             @include desktop {
                 width: 18%;
             }
@@ -295,7 +289,6 @@
 
             h3, p {
                 width: 50%;
-                height: 100px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
