@@ -15,6 +15,7 @@ session_start();
 
 get_header();
 
+if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	$allowedAccomFields = array('meals','health-duration','health','city','accomm','stay-length','room','high-school','higher-education','higher-education-end','eng-level','school-to-study','prgtype','course-name','start-date','program-duration','high-school-end','emergency-number','emergency-name','email','zipcode', 'mobile-phone','state-province','passport-expiry','cur-address','marital','children','passport-no','nexus-email','first-name','last-name','gender','nationality','birthdate','privacy-policy');
 
@@ -22,13 +23,13 @@ get_header();
 	foreach ($_POST as $key=>$item) {
 			
 	// Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
-	if (!in_array($key, $allowedAccomFields)) {
-		
-		secureLog('Unknown form fields @ Registration Form');
-		die("Error detected. Please use only the fields in the form");
-		header("refresh:1;url=https://nexuseducanada.com");
-		
-		} 
+		if (!in_array($key, $allowedAccomFields)) {
+			
+			secureLog('Unknown form fields @ Registration Form');
+			die("Error detected. Please use only the fields in the form");
+			header("refresh:1;url=https://nexuseducanada.com");
+			
+			} 
 	}
 
 	$to = stripcleantohtml($_POST['nexus-email']);
@@ -112,65 +113,67 @@ get_header();
 
 	$msg = "
 
-	<h1>Registration Form Submitted by ".$fname."</h1>
+	Registration Form Submitted by ".$fname."
 
 		
-			First Name: ".$fname."<br>
-			Last Name: ".$lname."<br>
-			Gender: ".$gender."<br>
-			Nationality: ".$nation."<br>
-			Birthdate: ".$birth."<br>
-			Marital Status: ".$marital."<br>
-			Children: ".$children."<br>
-			Passport Number: ".$passNum."<br>
-			Passport Expiry: ".$passDate."<br>
-			Address: ".$address."<br>
-			City: ".$city."<br>
-			State / Province: ".$state."<br>
-			Zip Code: ".$zipcode."<br>
-			Mobile Phone: ".$mphone."<br>
-			E-Mail: ".$email."<br>
-			Emergency Contact: ".$emerContact."<br>
-			Emergency Number: ".$emerContactNum."<br>
-			High School: ".$highSchool."<br>
-			High School EndDate: ".$highEnd."<br>
-			Higher Education School: ".$higherSchool."<br>
-			Higher Education End Date: ".$higherEnd."<br>
-			English Level: ".$englishLevel."<br>
-			School to study in: ".$schoolCanada."<br>
-			Program Type: ".$prgType."<br>
-			Name of Program: ".$courseName."<br>
-			Starting Date: ".$startDate."<br>
-			Duration of Program: ".$duration."<br>
-			Accommodation: ".$accomm."<br>
-			Length of Stay: ".$length."<br>
-			Type of Room: ".$room."<br>
-			Meals Included: ".$meals."<br>
-			Health Insurance Included: ".$health."<br>
-			Health Coverage Duration: ".$coverage."<br>
-			Privacy Policy: ".$consent."<br>
+			First Name: ".$fname."
+			Last Name: ".$lname."
+			Gender: ".$gender."
+			Nationality: ".$nation."
+			Birthdate: ".$birth."
+			Marital Status: ".$marital."
+			Children: ".$children."
+			Passport Number: ".$passNum."
+			Passport Expiry: ".$passDate."
+			Address: ".$address."
+			City: ".$city."
+			State / Province: ".$state."
+			Zip Code: ".$zipcode."
+			Mobile Phone: ".$mphone."
+			E-Mail: ".$email."
+			Emergency Contact: ".$emerContact."
+			Emergency Number: ".$emerContactNum."
+			High School: ".$highSchool."
+			High School EndDate: ".$highEnd."
+			Higher Education School: ".$higherSchool."
+			Higher Education End Date: ".$higherEnd."
+			English Level: ".$englishLevel."
+			School to study in: ".$schoolCanada."
+			Program Type: ".$prgType."
+			Name of Program: ".$courseName."
+			Starting Date: ".$startDate."
+			Duration of Program: ".$duration."
+			Accommodation: ".$accomm."
+			Length of Stay: ".$length."
+			Type of Room: ".$room."
+			Meals Included: ".$meals."
+			Health Insurance Included: ".$health."
+			Health Coverage Duration: ".$coverage."
+			Privacy Policy: ".$consent."
 	";
 
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
+	// $headers .= "MIME-Version: 1.0\r\n";
+	// $headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
 
-	$headers .= "Reply-to: ".$fname."<".$email.">\n";
-	$headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\n";
-	$headers .= "From: Nexus Registration Form\n";
+	// $headers .= "Reply-to: ".$fname."<".$email.">\n";
+	// $headers .= "Return-path: Nexus Registration <contact@nexuseducanada.com>\n";
+	// $headers .= "From: Nexus Registration Form\n";
 
 	// $headers .= "Reply-to: ".$name."<".$email.">\r\n";
     //     $headers .= "Return-path: Nexus Contact <contact@nexuseducanada.com>\r\n";
     //     $headers .= "From: Nexus Contact Form <".$email.">\r\n";
 
-	$mailed = wp_mail($to, $subject, $msg, $headers);
+	$mailed = wp_mail($to, $subject, $msg);
+} else {
+
+	header("refresh:1;url=https://nexuseducanada.com");
+}
 	
-
-
+	// echo '<pre>';
+	// var_dump($mailed);
+	// echo '</pre>';
 ?>
-<?php
 
-
-?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
