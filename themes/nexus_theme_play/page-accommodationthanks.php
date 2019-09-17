@@ -17,21 +17,21 @@ get_header();
 
 
 
-	// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-$allowedAccomFields = array('acc-name','acc-lastname','acc-nation','acc-birth','acc-address','acc-city','acc-state','acc-zipcode', 'acc-country','acc-phone','acc-email','acc-school','acc-type','acc-room','acc-meals','acc-checkin','acc-checkout','acc-indoorcats','acc-outdoorcats','acc-indoordogs','acc-outdoordogs','acc-prefer','acc-hobbies','acc-meds','acc-veggie','acc-preferhouse','acc-specific','privacy-policy');
+// 	// Building a whitelist array with keys which will send through the form, no others would be accepted later on
+// $allowedAccomFields = array('acc-name','acc-lastname','acc-nation','acc-birth','acc-address','acc-city','acc-state','acc-zipcode', 'acc-country','acc-phone','acc-email','acc-school','acc-type','acc-room','acc-meals','acc-checkin','acc-checkout','acc-indoorcats','acc-outdoorcats','acc-indoordogs','acc-outdoordogs','acc-prefer','acc-hobbies','acc-meds','acc-veggie','acc-preferhouse','acc-specific','privacy-policy');
 
-// Building an array with the $_POST-superglobal 
-foreach ($_POST as $key=>$item) {
+// // Building an array with the $_POST-superglobal 
+// foreach ($_POST as $key=>$item) {
 		
-// Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
-if (!in_array($key, $allowedAccomFields)) {
-	
-	secureLog('Unknown form fields @ Accommodation Form');
-	die("Error detected. Please use only the fields in the form");
-	header("refresh:1;url=https://nexuseducanada.com");
-	
-	}
-}
+// // Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
+// 	if (!in_array($key, $allowedAccomFields)) {
+		
+// 		secureLog('Unknown form fields @ Accommodation Form');
+// 		die("Error detected. Please use only the fields in the form");
+// 		header("refresh:1;url=https://nexuseducanada.com");
+		
+// 	}
+// }
 
 $fname = $_POST['acc-name'];
 $lname = $_POST['acc-lastname'];

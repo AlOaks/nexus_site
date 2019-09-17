@@ -76,6 +76,7 @@ regisForm.submit(function(ev) {
     regisForm.unbind().submit();
 });
 
+
 // CONTACT FORM
 
 var contForm = $('#contact-form-nexus');
