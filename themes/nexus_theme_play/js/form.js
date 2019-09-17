@@ -76,42 +76,6 @@ regisForm.submit(function(ev) {
     regisForm.unbind().submit();
 });
 
-// ACCOMMODATION FORM
-
-
-var accForm = $('#accommodation-form');
-
-accForm.submit(function(ev) {
-    ev.preventDefault();
-    var emailInput = document.createElement('input');
-    emailInput.setAttribute('type', 'hidden');
-    emailInput.setAttribute('name', 'nexus-email');
-
-    var langInput = document.createElement('input');
-    langInput.setAttribute('type', 'hidden');
-    langInput.setAttribute('name', 'pagelang');
-
-    if($('html').is(':lang(en-US)')) {
-        emailInput.setAttribute('value', 'contact@nexuseducanada.com');
-        langInput.setAttribute('value', 'ENG');
-
-    } else if($('html').is(':lang(es-ES)')) {
-        emailInput.setAttribute('value', 'contacto@nexuseducanada.com');
-        langInput.setAttribute('value', 'ESP');
-
-    } else if($('html').is(':lang(pt-br)')) {
-        emailInput.setAttribute('value', 'contato@nexuseducanada.com');
-        langInput.setAttribute('value', 'POR');
-
-    }
-
-    accForm.append(emailInput);
-    accForm.append(langInput);
-
-
-    accForm.unbind().submit();
-});
-
 // CONTACT FORM
 
 var contForm = $('#contact-form-nexus');
