@@ -17,119 +17,114 @@ get_header();
 
 $verified = tokenVer('accommform');
 
-if($verified === true) {
 
-		// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-	$allowedAccomFields = array('tokenField','pagelang','nexus-email','acc-name','acc-lastname','acc-nation','acc-birth','acc-address','acc-city','acc-state','acc-zipcode', 'acc-country','acc-phone','acc-email','acc-school','acc-type','acc-room','acc-meals','acc-checkin','acc-checkout','acc-indoorcats','acc-outdoorcats','acc-indoordogs','acc-outdoordogs','acc-prefer','acc-hobbies','acc-meds','acc-veggie','acc-preferhouse','acc-specific','privacy-policy');
+	// Building a whitelist array with keys which will send through the form, no others would be accepted later on
+$allowedAccomFields = array('tokenField','pagelang','nexus-email','acc-name','acc-lastname','acc-nation','acc-birth','acc-address','acc-city','acc-state','acc-zipcode', 'acc-country','acc-phone','acc-email','acc-school','acc-type','acc-room','acc-meals','acc-checkin','acc-checkout','acc-indoorcats','acc-outdoorcats','acc-indoordogs','acc-outdoordogs','acc-prefer','acc-hobbies','acc-meds','acc-veggie','acc-preferhouse','acc-specific','privacy-policy');
 
-	// Building an array with the $_POST-superglobal 
-	foreach ($_POST as $key=>$item) {
-			
-	// Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
-	if (!in_array($key, $allowedAccomFields)) {
+// Building an array with the $_POST-superglobal 
+foreach ($_POST as $key=>$item) {
 		
-		secureLog('Unknown form fields @ Accommodation Form');
-		die("Error detected. Please use only the fields in the form");
-		header("refresh:1;url=https://nexuseducanada.com");
-		
-		}
-	}
+// Check if the value $key (fieldname from $_POST) can be found in the whitelisting array, if not, die with a short message to the hacker
+if (!in_array($key, $allowedAccomFields)) {
 	
-	$lang = $_POST['pagelang'];
-	$fname = $_POST['acc-name'];
-	$lname = $_POST['acc-lastname'];
-	$nation = $_POST['acc-nation'];
-	$birth = $_POST['acc-birth'];
-	$address = $_POST['acc-address'];
-	$city = $_POST['acc-city'];
-	$state = $_POST['acc-state'];
-	$zipcode = $_POST['acc-zipcode'];
-	$country = $_POST['acc-country'];
-	$mphone = $_POST['acc-phone'];
-	$email = $_POST['acc-email'];
-	$highSchool = $_POST['acc-school'];
-	$acctype = $_POST['acc-type'];
-	$roomtype = $_POST['acc-rooom'];
-	$meals = $_POST['acc-meals'];
-	$checkin = $_POST['acc-checkin'];
-	$checkout = $_POST['acc-checkout'];
-	$incats = $_POST['acc-indoorcats'];
-	$outcats = $_POST['acc-outdoorcats'];
-	$indogs = $_POST['acc-indoordogs'];
-	$outdogs = $_POST['acc-outdoordogs'];
-	$noanimals = $_POST['acc-prefer'];
-	$hobbies = $_POST['acc-hobbies'];
-	$allergies = $_POST['acc-meds'];
-	if(isset($_POST['acc-veggie'])) {
-		$veggie = $_POST['acc-veggie'];
-	} else {
-		$veggie = 'N/A';
-	}
-	if(isset($_POST['acc-preferhouse'])) {
-		$preferhouse = $_POST['acc-preferhouse'];
-	} else {
-		$preferhouse = 'N/A';
-	}
-
-	if(isset($_POST['acc-specific'])) {
-		$specific = $_POST['acc-specific'];
-	} else {
-		$specific = 'N/A';
-	}
-
-	$consent = $_POST['privacy-policy'];
-
-
-
-	$to = $_POST['nexus-email'];
-	$subject = 'Accommodation Form from '.stripcleantohtml($fname);
-	$msg = "
-
-	<h1>Registration Form Submitted by ".stripcleantohtml($fname)."</h1>
-
-		
-			First Name: ".stripcleantohtml($fname)."<br>
-			Last Name: ".stripcleantohtml($lname)."<br>
-			Nationality: ".stripcleantohtml($nation)."<br>
-			Birthdate: ".stripcleantohtml($birth)."<br>
-			Address: ".stripcleantohtml($address)."<br>
-			City: ".stripcleantohtml($city)."<br>
-			State / Province: ".stripcleantohtml($state)."<br>
-			Zip Code: ".stripcleantohtml($zipcode)."<br>
-			Mobile Phone: ".stripcleantohtml($mphone)."<br>
-			E-Mail: ".stripcleantohtml($email)."<br>
-			School: ".stripcleantohtml($highSchool)."<br>
-			Accommodation Type: ".stripcleantohtml($acctype)."<br>
-			Room Type: ".stripcleantohtml($roomtype)."<br>
-			Meals: ".stripcleantohtml($meals)."<br>
-			Check In Date: ".stripcleantohtml($checkin)."<br>
-			Check Out Date: ".stripcleantohtml($checkout)."<br>
-			Indoor Cats: ".stripcleantohtml($incats)."<br>
-			Outdoor Cats: ".stripcleantohtml($outcats)."<br>
-			Indoor Dogs: ".stripcleantohtml($indogs)."<br>
-			Outdoor Dogs: ".stripcleantohtml($outdogs)."<br>
-			No Animals: ".stripcleantohtml($noanimals)."<br>
-			Hobbies: ".stripcleantohtml($hobbies)."<br>
-			Allergies: ".stripcleantohtml($allergies)."<br>
-			Type of Vegetarian: ".stripcleantohtml($veggie)."<br>
-			House Preference: ".stripcleantohtml($preferhouse)."<br>
-			Any Specifics Request: ".stripcleantohtml($specific)."<br>
-			Privacy Policy: ".stripcleantohtml($consent)."<br>
-	";
-
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
-
-	$headers .= "Reply-to: ".$fname."<".$email.">\n";
-	$headers .= "Return-path: Nexus Acommodation <contact@nexuseducanada.com>\n";
-	$headers .= "From: Nexus Acommodation Form\n";
-
-
-	wp_mail($to, $subject, $msg, $headers);// echo 'SENT';
+	secureLog('Unknown form fields @ Accommodation Form');
+	die("Error detected. Please use only the fields in the form");
+	header("refresh:1;url=https://nexuseducanada.com");
 	
-} else {
-	secureLog('Form Token @ Accommodation Form');
+	}
 }
+
+$lang = $_POST['pagelang'];
+$fname = $_POST['acc-name'];
+$lname = $_POST['acc-lastname'];
+$nation = $_POST['acc-nation'];
+$birth = $_POST['acc-birth'];
+$address = $_POST['acc-address'];
+$city = $_POST['acc-city'];
+$state = $_POST['acc-state'];
+$zipcode = $_POST['acc-zipcode'];
+$country = $_POST['acc-country'];
+$mphone = $_POST['acc-phone'];
+$email = $_POST['acc-email'];
+$highSchool = $_POST['acc-school'];
+$acctype = $_POST['acc-type'];
+$roomtype = $_POST['acc-rooom'];
+$meals = $_POST['acc-meals'];
+$checkin = $_POST['acc-checkin'];
+$checkout = $_POST['acc-checkout'];
+$incats = $_POST['acc-indoorcats'];
+$outcats = $_POST['acc-outdoorcats'];
+$indogs = $_POST['acc-indoordogs'];
+$outdogs = $_POST['acc-outdoordogs'];
+$noanimals = $_POST['acc-prefer'];
+$hobbies = $_POST['acc-hobbies'];
+$allergies = $_POST['acc-meds'];
+if(isset($_POST['acc-veggie'])) {
+	$veggie = $_POST['acc-veggie'];
+} else {
+	$veggie = 'N/A';
+}
+if(isset($_POST['acc-preferhouse'])) {
+	$preferhouse = $_POST['acc-preferhouse'];
+} else {
+	$preferhouse = 'N/A';
+}
+
+if(isset($_POST['acc-specific'])) {
+	$specific = $_POST['acc-specific'];
+} else {
+	$specific = 'N/A';
+}
+
+$consent = $_POST['privacy-policy'];
+
+
+
+$to = $_POST['nexus-email'];
+$subject = 'Accommodation Form from '.stripcleantohtml($fname);
+$msg = "
+
+<h1>Registration Form Submitted by ".stripcleantohtml($fname)."</h1>
+
+	
+		First Name: ".stripcleantohtml($fname)."<br>
+		Last Name: ".stripcleantohtml($lname)."<br>
+		Nationality: ".stripcleantohtml($nation)."<br>
+		Birthdate: ".stripcleantohtml($birth)."<br>
+		Address: ".stripcleantohtml($address)."<br>
+		City: ".stripcleantohtml($city)."<br>
+		State / Province: ".stripcleantohtml($state)."<br>
+		Zip Code: ".stripcleantohtml($zipcode)."<br>
+		Mobile Phone: ".stripcleantohtml($mphone)."<br>
+		E-Mail: ".stripcleantohtml($email)."<br>
+		School: ".stripcleantohtml($highSchool)."<br>
+		Accommodation Type: ".stripcleantohtml($acctype)."<br>
+		Room Type: ".stripcleantohtml($roomtype)."<br>
+		Meals: ".stripcleantohtml($meals)."<br>
+		Check In Date: ".stripcleantohtml($checkin)."<br>
+		Check Out Date: ".stripcleantohtml($checkout)."<br>
+		Indoor Cats: ".stripcleantohtml($incats)."<br>
+		Outdoor Cats: ".stripcleantohtml($outcats)."<br>
+		Indoor Dogs: ".stripcleantohtml($indogs)."<br>
+		Outdoor Dogs: ".stripcleantohtml($outdogs)."<br>
+		No Animals: ".stripcleantohtml($noanimals)."<br>
+		Hobbies: ".stripcleantohtml($hobbies)."<br>
+		Allergies: ".stripcleantohtml($allergies)."<br>
+		Type of Vegetarian: ".stripcleantohtml($veggie)."<br>
+		House Preference: ".stripcleantohtml($preferhouse)."<br>
+		Any Specifics Request: ".stripcleantohtml($specific)."<br>
+		Privacy Policy: ".stripcleantohtml($consent)."<br>
+";
+
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
+
+$headers .= "Reply-to: ".$fname."<".$email.">\n";
+$headers .= "Return-path: Nexus Acommodation <contact@nexuseducanada.com>\n";
+$headers .= "From: Nexus Acommodation Form\n";
+
+
+wp_mail($to, $subject, $msg, $headers);// echo 'SENT';
 
 
 ?>
