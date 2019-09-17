@@ -79,36 +79,36 @@ $consent = $_POST['privacy-policy'];
 $subject = 'Accommodation Form from '.stripcleantohtml($fname);
 $msg = "
 
-<h1>Registration Form Submitted by ".stripcleantohtml($fname)."</h1>
+Registration Form Submitted by ".stripcleantohtml($fname)."
 
 	
-		First Name: ".stripcleantohtml($fname)."<br>
-		Last Name: ".stripcleantohtml($lname)."<br>
-		Nationality: ".stripcleantohtml($nation)."<br>
-		Birthdate: ".stripcleantohtml($birth)."<br>
-		Address: ".stripcleantohtml($address)."<br>
-		City: ".stripcleantohtml($city)."<br>
-		State / Province: ".stripcleantohtml($state)."<br>
-		Zip Code: ".stripcleantohtml($zipcode)."<br>
-		Mobile Phone: ".stripcleantohtml($mphone)."<br>
-		E-Mail: ".stripcleantohtml($email)."<br>
-		School: ".stripcleantohtml($highSchool)."<br>
-		Accommodation Type: ".stripcleantohtml($acctype)."<br>
-		Room Type: ".stripcleantohtml($roomtype)."<br>
-		Meals: ".stripcleantohtml($meals)."<br>
-		Check In Date: ".stripcleantohtml($checkin)."<br>
-		Check Out Date: ".stripcleantohtml($checkout)."<br>
-		Indoor Cats: ".stripcleantohtml($incats)."<br>
-		Outdoor Cats: ".stripcleantohtml($outcats)."<br>
-		Indoor Dogs: ".stripcleantohtml($indogs)."<br>
-		Outdoor Dogs: ".stripcleantohtml($outdogs)."<br>
-		No Animals: ".stripcleantohtml($noanimals)."<br>
-		Hobbies: ".stripcleantohtml($hobbies)."<br>
-		Allergies: ".stripcleantohtml($allergies)."<br>
-		Type of Vegetarian: ".stripcleantohtml($veggie)."<br>
-		House Preference: ".stripcleantohtml($preferhouse)."<br>
-		Any Specifics Request: ".stripcleantohtml($specific)."<br>
-		Privacy Policy: ".stripcleantohtml($consent)."<br>
+		First Name: ".stripcleantohtml($fname)."
+		Last Name: ".stripcleantohtml($lname)."
+		Nationality: ".stripcleantohtml($nation)."
+		Birthdate: ".stripcleantohtml($birth)."
+		Address: ".stripcleantohtml($address)."
+		City: ".stripcleantohtml($city)."
+		State / Province: ".stripcleantohtml($state)."
+		Zip Code: ".stripcleantohtml($zipcode)."
+		Mobile Phone: ".stripcleantohtml($mphone)."
+		E-Mail: ".stripcleantohtml($email)."
+		School: ".stripcleantohtml($highSchool)."
+		Accommodation Type: ".stripcleantohtml($acctype)."
+		Room Type: ".stripcleantohtml($roomtype)."
+		Meals: ".stripcleantohtml($meals)."
+		Check In Date: ".stripcleantohtml($checkin)."
+		Check Out Date: ".stripcleantohtml($checkout)."
+		Indoor Cats: ".stripcleantohtml($incats)."
+		Outdoor Cats: ".stripcleantohtml($outcats)."
+		Indoor Dogs: ".stripcleantohtml($indogs)."
+		Outdoor Dogs: ".stripcleantohtml($outdogs)."
+		No Animals: ".stripcleantohtml($noanimals)."
+		Hobbies: ".stripcleantohtml($hobbies)."
+		Allergies: ".stripcleantohtml($allergies)."
+		Type of Vegetarian: ".stripcleantohtml($veggie)."
+		House Preference: ".stripcleantohtml($preferhouse)."
+		Any Specifics Request: ".stripcleantohtml($specific)."
+		Privacy Policy: ".stripcleantohtml($consent)."
 ";
 
 $to = 'contato@nexuseducanada.com';
