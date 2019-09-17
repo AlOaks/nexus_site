@@ -26,7 +26,7 @@ $pageLang = get_locale();
 			</div>
 			<div class="accommmodation-page-form">
                 <form id="accommodation-form" action="https://nexuseducanada.com/thanks-accommodation/" method="post">
-                    <input type="hidde" value=<?php $pageLang; ?>>
+                    <input type="hidden" value=<?php $pageLang; ?>>
                     <label class="fieldset-label-accom"><?php _e('Personal Information', 'Accommodation'); ?></label>
                     <div class="fieldset-accomm personal-set">
                         <div class="accomm-row">
