@@ -15,7 +15,7 @@ session_start();
 
 get_header();
 
-$acctoken = createTokenForm('accommform');
+$pageLang = get_locale();
 
 ?>
 
@@ -26,7 +26,7 @@ $acctoken = createTokenForm('accommform');
 			</div>
 			<div class="accommmodation-page-form">
                 <form id="accommodation-form" action="https://nexuseducanada.com/thanks-accommodation/" method="post">
-                    <input type="hidden" name="tokenField" value="<?php echo $acctoken; ?>">
+                    <input type="hidde" value=<?php $pageLang; ?>>
                     <label class="fieldset-label-accom"><?php _e('Personal Information', 'Accommodation'); ?></label>
                     <div class="fieldset-accomm personal-set">
                         <div class="accomm-row">

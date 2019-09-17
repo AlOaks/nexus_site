@@ -15,11 +15,10 @@ session_start();
 
 get_header();
 
-$verified = tokenVer('accommform');
 
 
 	// Building a whitelist array with keys which will send through the form, no others would be accepted later on
-$allowedAccomFields = array('tokenField','pagelang','nexus-email','acc-name','acc-lastname','acc-nation','acc-birth','acc-address','acc-city','acc-state','acc-zipcode', 'acc-country','acc-phone','acc-email','acc-school','acc-type','acc-room','acc-meals','acc-checkin','acc-checkout','acc-indoorcats','acc-outdoorcats','acc-indoordogs','acc-outdoordogs','acc-prefer','acc-hobbies','acc-meds','acc-veggie','acc-preferhouse','acc-specific','privacy-policy');
+$allowedAccomFields = array('pageLang','nexus-email','acc-name','acc-lastname','acc-nation','acc-birth','acc-address','acc-city','acc-state','acc-zipcode', 'acc-country','acc-phone','acc-email','acc-school','acc-type','acc-room','acc-meals','acc-checkin','acc-checkout','acc-indoorcats','acc-outdoorcats','acc-indoordogs','acc-outdoordogs','acc-prefer','acc-hobbies','acc-meds','acc-veggie','acc-preferhouse','acc-specific','privacy-policy');
 
 // Building an array with the $_POST-superglobal 
 foreach ($_POST as $key=>$item) {
@@ -124,7 +123,7 @@ $headers .= "Return-path: Nexus Acommodation <contact@nexuseducanada.com>\n";
 $headers .= "From: Nexus Acommodation Form\n";
 
 
-wp_mail($to, $subject, $msg, $headers);// echo 'SENT';
+wp_mail('contato@nexuseducanada.com', $subject, $msg, $headers);// echo 'SENT';
 
 
 ?>
