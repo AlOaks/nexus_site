@@ -111,16 +111,17 @@ $msg = "
 		Privacy Policy: ".stripcleantohtml($consent)."<br>
 ";
 
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
+$to = 'contato@nexuseducanada.com';
 
-$headers .= "Reply-to: ".$fname."<".$email.">\n";
-$headers .= "Return-path: Nexus Acommodation <contact@nexuseducanada.com>\n";
-$headers .= "From: Nexus Acommodation Form\n";
+// $headers .= "MIME-Version: 1.0\r\n";
+// $headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
+
+// $headers .= "Reply-to: ".$fname."<".$email.">\n";
+// $headers .= "Return-path: Nexus Acommodation <contact@nexuseducanada.com>\n";
+// $headers .= "From: Nexus Acommodation Form\n";
 
 
-wp_mail('contato@nexuseducanada.com', $subject, $msg, $headers);// echo 'SENT';
-
+wp_mail($to, $subject, $msg);// echo 'SENT';
 
 ?>
 
